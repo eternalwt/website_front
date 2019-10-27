@@ -7,7 +7,7 @@
     <label>
       Name:
       <input type="text" formControlName="username">
-      <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+      <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
         <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
       </div>
     </label>

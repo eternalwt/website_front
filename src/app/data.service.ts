@@ -14,7 +14,7 @@ export class DataService {
   }
 
   login(params) {
-    return this.http.post(environment.baseUrl +  "auth/login", params);
+    return this.http.post(environment.baseUrl +  `auth/login?username=${params.username}&password=${params.password}`, null);
   }
 
 }
