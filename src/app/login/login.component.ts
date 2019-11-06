@@ -32,10 +32,11 @@ export class LoginComponent implements OnInit {
         return;
     }
 
-    //this.messageForm.get("name");
-    //console.log(this.messageForm.value.name);
     this.dataService.login(this.messageForm.value).subscribe(res => {
+      debugger;
       console.log(res);
+    // 1.userId保存到localStorage；2.跳转到后台admin页面
+
     });
 
     this.success = true;

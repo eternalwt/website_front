@@ -2,10 +2,10 @@
     <div class="container">
       <a routerLink="/" class="logo">apptitle</a>
       <nav>
-        <ul>
-          <li><a routerLink="/">{{ appTitle }}</a></li>
-          <li><a routerLink="/about">About</a></li>
-          <li><a routerLink="/contact">Contact us</a></li>
+        <ul *ngFor="let menu of menuList">
+          <li><a routerLink="{{menu.url}}">{{ menu.name }}</a></li>
+          <!-- <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact us</a></li> -->
         </ul>
       </nav>
     </div>

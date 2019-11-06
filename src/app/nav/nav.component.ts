@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-nav',
@@ -9,9 +10,21 @@ export class NavComponent implements OnInit {
 
   appTitle = 'myapp';
 
-  constructor() { }
+  menuList: any;
+  // menuList: any = [{url:"/", name: "MYAPP"}, {url:"/about", name: "About"}, {url: "/contact", name: "Contact us"}];
+
+  constructor(
+    private dataService: DataService
+  ) { }
 
   ngOnInit() {
+    this.dataService.getMenuList(14).subscribe(res => {// todo 把14相关的逻辑写通（先登录，然后转到主页）
+      debugger;
+      if (res["code"] == 1 && res["data"].length > 0) {
+        // todo mock
+        this.menuList = res["data"].map(item => {return {url: item.url, name: item.menuName}});
+      }
+    });
   }
 
 }
