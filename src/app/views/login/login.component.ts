@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../../service/data.service';
+import { StorageService } from 'src/app/service/storage.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +17,9 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private dataService: DataService  
+    private dataService: DataService,
+    private storageService: StorageService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -35,8 +39,16 @@ export class LoginComponent implements OnInit {
     this.dataService.login(this.messageForm.value).subscribe(res => {
       debugger;
       console.log(res);
-    // 1.userId保存到localStorage；2.跳转到后台admin页面
-
+      if (res["code"] == 1) {
+        // 1.userId保存到localStorage；
+        this.storageService.setItem("userId", res["data"]);
+        // 2.跳转到后台admin页面
+        this.router.navigateByUrl("/");
+      }
+      else {
+        // todo
+      }
+    
     });
 
     this.success = true;

@@ -6,4 +6,21 @@ import { Injectable } from '@angular/core';
 export class StorageService {
 
   constructor() { }
+
+  // 保存数据
+  setItem(key,value)
+  {
+      localStorage.setItem(key,value);
+  }
+  // 删除数据
+  removeItem(key)
+  {
+      localStorage.removeItem(key);
+  }
+  // 获取数据
+  getItem(key)
+  {
+      localStorage.getItem(key);
+  }   
+
 }
