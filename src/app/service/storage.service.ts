@@ -21,6 +21,11 @@ export class StorageService {
   getItem(key)
   {
       localStorage.getItem(key);
-  }   
+  }
+
+  //清空
+  clear() {
+    localStorage.clear();
+  }
 
 }

@@ -18,7 +18,7 @@ export class DataService {
   }
 
   logout() {
-    // todo 把localStorage全部清空
+    return this.http.get(environment.baseUrl +  `auth/logout`);
   }
 
   getMenuList(userId: number) {
