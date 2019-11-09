@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatMenuModule, MatSidenavModule, MatDatepickerModule, MatInputModule, MatNativeDateModule } from '@angular/material';
+import { QuillModule } from 'ngx-quill';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,9 +13,10 @@ import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { RegisterComponent } from './views/register/register.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { IndexComponent } from './views/index/index.component';
+import { ArticleComponent } from './views/article/article.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { IndexComponent } from './views/index/index.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    IndexComponent
+    IndexComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { IndexComponent } from './views/index/index.component';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    QuillModule,
 
     MatButtonModule,
     MatMenuModule,
