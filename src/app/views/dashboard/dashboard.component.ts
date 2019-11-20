@@ -28,15 +28,16 @@ export class DashboardComponent implements OnInit {
         bottom: '3%',
         containLabel: true
       },
-      xAxis: {
-        type: 'category',
-        boundaryGap: false,
-        data: ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']
-      },
-      yAxis: {
-        type: 'value',
-        min: 70
-      }
+      // xAxis: {
+      //   type: 'category',
+      //   boundaryGap: false,
+      //   data: ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18']
+      // },
+      // yAxis: {
+      //   type: 'value',
+      //   min: 70
+      // }
+      
     };
   }
 

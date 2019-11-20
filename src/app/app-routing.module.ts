@@ -10,14 +10,18 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 
 
 const routes: Routes = [
+
+
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'about', component: AboutComponent },// todo 下面的路径作为''的children
   { path: 'contact', component: ContactComponent },
 
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent }, //todo 在上面一个todo的基础上，是否单独拿出来，和''平级
   { path: 'register', component: RegisterComponent },
   { path: 'article', component: ArticleComponent },
   { path: 'dashboard', component: DashboardComponent },
+
+  // todo 最后加默认路由或者路由重定向
 
 ];
 
