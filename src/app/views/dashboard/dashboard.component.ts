@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
     let value = [[], []];
     for (let i = 0; i < 2; i++) {
       for (let j = 0; j < 17; j++) {
-        value[i].push(Math.random().toFixed(2));
+        value[i].push((i + Math.random()).toFixed(2));
       }
     }
 
