@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms'
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { ChangeEvent } from '@ckeditor/ckeditor5-angular';
+// import * as DocumentEditor from '@ckeditor/ckeditor5-angular';
+
 
 @Component({
   selector: 'app-article',
@@ -8,36 +12,27 @@ import { FormsModule } from '@angular/forms'
 })
 export class ArticleComponent implements OnInit {
 
+  public Editor = ClassicEditor;
+
+  config = {};
+
   constructor() { }
 
-  config = {
-    toolbar: [
-      //['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-      ['blockquote', 'code-block'],
-  
-      [{ 'header': 1 }, { 'header': 2 }],               // custom button values
-      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-
-      //[{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-      //[{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
-      //[{ 'direction': 'rtl' }],                         // text direction
-  
-      //[{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-      //[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-  
-      //[{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-      //[{ 'font': [] }],
-      //[{ 'align': [] }],
-  
-      //['clean'],                                         // remove formatting button
-  
-      ['link', 'image', 'video']                         // link and image, video
-    ]
-  };
-
-  data = {content: ""};
-
   ngOnInit() {
+  }
+
+  onReady(editor) {
+    // editor.ui.getEditableElement().parentElement.insertBefore(
+    //   editor.ui.view.toolbar.element,
+    //   editor.ui.getEditableElement()
+    // );
+  }
+
+  content = '';
+  onChange({editor}: ChangeEvent) {
+    // const data = editor.getData();
+    // console.log(data);
+    // this.content = data;
   }
 
 }

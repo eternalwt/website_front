@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
         text: '折线图'
       },
       legend: {
+        icon: 'roundRect',
         // type: 'plain',
         type: 'scroll',
         data: [],

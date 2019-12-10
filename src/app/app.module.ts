@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatMenuModule, MatSidenavModule, MatDatepickerModule, MatInputModule, MatNativeDateModule } from '@angular/material';
 import { QuillModule } from 'ngx-quill';
+import {CKEditorModule} from '@ckeditor/ckeditor5-angular' 
 import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,6 +41,7 @@ import { ArticleComponent } from './views/article/article.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     QuillModule.forRoot(),
+    CKEditorModule,
     NgxEchartsModule,
 
     MatButtonModule,
