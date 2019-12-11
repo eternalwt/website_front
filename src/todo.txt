@@ -9,6 +9,12 @@ https://www.cnblogs.com/reaf/p/11230312.html
 
 权限控制、webSocket，周末就把这几个搞定
 
+晚上先把自定义横轴搞定
+
+在 angular 8 中利用 JWT 进行身份认证
+
+把测试环境、生产环境的打包搞好，把严格打包再理解一下
+
 其实问题只剩2个：1.先看angular怎么搭配主题皮肤；2.组件的样式定制
 最简单的方式：找一个angular主题，在次基础上引入组件并自定义样式
 https://blog.csdn.net/liumiaocn/article/details/81329223
@@ -20,7 +26,7 @@ https://blog.csdn.net/liumiaocn/article/details/81329223
 1.把ckeditor配到一个更完善的程度（前后端打通）：
 https://loocode.com/post/10149
 https://blog.csdn.net/nzyalj/article/details/87870762
-2.把quill干掉
+2.把quill干掉（通过在angular.json中配置的方式再试一下quill.js）
 3.学习import as（引入插件）：
 https://www.cnblogs.com/minigrasshopper/p/7692664.html
 https://www.cnblogs.com/minigrasshopper/p/7692813.html
@@ -38,7 +44,6 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 3.interceptor及;
 4.单元测试
 5.两套模板
-6.基础设施（仪表盘、D3等）【可以构建自己的代码库了】
 7.常用的pipe
 8.尝试自己封装5个控件
 
