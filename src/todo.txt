@@ -1,0 +1,90 @@
+搞懂第一个问题：为啥我加的所有页面都有导航栏？【看智能修复代码】【这个问题搞定后，加前端web页面】
+【相关知识】看angular的index，起始页：http://morrisdev.com/2016/10/angular-2-understanding-of-the-structure/
+https://www.jianshu.com/p/733b9fb87551
+我们的app.component.html里面只有<router-outlet></router-outlet>
+再不行的话看一个教程：https://www.tutorialspoint.com/angular7/index.htm
+相关知识【Angular8路由配置（一）】：
+https://segmentfault.com/a/1190000020124888
+https://www.cnblogs.com/reaf/p/11230312.html
+
+权限控制、webSocket，周末就把这几个搞定
+
+其实问题只剩2个：1.先看angular怎么搭配主题皮肤；2.组件的样式定制
+最简单的方式：找一个angular主题，在次基础上引入组件并自定义样式
+https://blog.csdn.net/liumiaocn/article/details/81329223
+
+大屏页面出现了一堆violation：
+[Violation] 'setInterval' handler took 236715ms
+[Violation] Forced reflow while executing JavaScript took XXX ms
+
+1.把ckeditor配到一个更完善的程度（前后端打通）：
+https://loocode.com/post/10149
+https://blog.csdn.net/nzyalj/article/details/87870762
+2.把quill干掉
+3.学习import as（引入插件）：
+https://www.cnblogs.com/minigrasshopper/p/7692664.html
+https://www.cnblogs.com/minigrasshopper/p/7692813.html
+
+  // todo 这是实验性代码
+  download() {
+    // 从blob中读数据 https://javascript.info/blob
+  }
+
+把河北项目的pdf代码移植过来
+
+框架搭建任务：
+1.路由(路由系统的设计要素？对比引入路由系统的优势)
+2.发送请求带token写通（封装）；
+3.interceptor及;
+4.单元测试
+5.两套模板
+6.基础设施（仪表盘、D3等）【可以构建自己的代码库了】
+7.常用的pipe
+8.尝试自己封装5个控件
+
+【学习】搞清楚我们的webSocketService里面Observable的用法
+把 SwWebSocketService 和 interceptor 的代码搞过来
+把SwHttpClientService的代码弄过来，封装了重试、错误处理、下载等机制（还有鉴权等内容把）
+
+下载一个免费（free）模板试一把【已下载，待尝试】
+material design的教程：
+https://material.angular.io/components/categories
+https://www.techiediaries.com/angular-material-tutorial-example/
+新手合并 Angular 7 + Material 2：https://blog.csdn.net/weixin_42027605/article/details/87180454
+Angular Material：
+https://www.tutorialspoint.com/angular6/angular6_materials.htm
+https://www.jianshu.com/p/b5ecc13fde54
+比较Ant Design与Material Design
+@angular/animations
+试一下material design的弹出框
+把material design做一遍：前端先搞一个组件库，然后再看主题
+Angular Material 的设计之美：https://zhuanlan.zhihu.com/p/81174831
+我的那个前端就是material的，把样式搞清楚，然后再推进
+bootstrap4与其他组件样式之间的兼容性：
+1.看看现在的模板是不是都是bootstrap的；
+2.从小问题入手：bootstrap和ckeditor、quill样式之间的兼容性
+angular 4 引用 bootstrap 4 记录总结：https://www.cnblogs.com/xxx91hx/p/7898642.html
+Angular2使用boostrap和ng-bootstrap总结：https://www.cnblogs.com/shawWey/p/7881994.html
+现在用的样式，就是angular material的样式：@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+NG Bootstrap 4.2.0 发布，Bootstrap 的 Angular 集成【把前端的解决方案看清楚，多看一些文章（10到20篇）】：https://www.liangzl.com/get-article-detail-130753.html
+Angular 8 UI Components：
+https://www.jqwidgets.com/angular/
+https://www.telerik.com/kendo-angular-ui
+bootstrap for angular：https://ng-bootstrap.github.io/#/home
+10 Angular and TypeScript Projects to Take You From Zero to Hero 11：https://blog.codewithdan.com/10-angular-and-typescript-projects-to-take-you-from-zero-to-hero/
+Layui elementUI iView
+https://adminlte.io/
+angular-cli 引入ui组件库【admin-lte】：https://www.cnblogs.com/rancho-blog/p/6580185.html
+GitHub开源的10个超棒后台管理面板【含angular的】：https://blog.csdn.net/m0_38106923/article/details/101050788
+3.EasyUI使用angular版本；
+
+在我的项目中先把tab加进去
+
+是否需要：HomeModule、AuthModule
+
+layui是啥？
+
+为啥ngModel需要FormsModule？
+Can't bind to 'ngModel' since it isn't a known property of 'input'：https://blog.csdn.net/Xumuyang_/article/details/89365069
+
+
