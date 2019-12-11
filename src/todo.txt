@@ -46,6 +46,11 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 把 SwWebSocketService 和 interceptor 的代码搞过来
 把SwHttpClientService的代码弄过来，封装了重试、错误处理、下载等机制（还有鉴权等内容把）
 
+Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
+https://www.cnblogs.com/nzbin/p/11150811.html
+https://www.cnblogs.com/nzbin/p/11392311.html
+基于ng-bootstrap的框架？
+
 下载一个免费（free）模板试一把【已下载，待尝试】
 material design的教程：
 https://material.angular.io/components/categories
@@ -87,4 +92,41 @@ layui是啥？
 为啥ngModel需要FormsModule？
 Can't bind to 'ngModel' since it isn't a known property of 'input'：https://blog.csdn.net/Xumuyang_/article/details/89365069
 
+enum的两种写法：
+1.export class，配合static域；
+2.export enum；
+
+dashboard：完成热力图、中国地图
+
+最近学到的前后端分离知识：https://www.cnblogs.com/Java3y/p/11320606.html
+
+前端返回值是否根据后端做一个枚举抽象？
+这些基本功能有了，开始搞：1.样式；2.组件
+移植公司里面的http，增大代码健壮性
+继续搞基础设施，继续推敲每一段代码，提升自己
+解决搭框架之后的第二个问题，怎么加速，能否到github上搜一些代码
+往前进一步：在我的paper-dashboard-angular-master项目中加一个简单的网站模板
+
+ng-bootstrap：
+https://github.com/ng-bootstrap/ng-bootstrap
+https://ng-bootstrap.github.io/#/home
+别人在github上的angular项目（特性教学）：
+https://github.com/PatrickJS/angular-starter
+https://github.com/Ismaestro/angular8-example-app
+https://github.com/ui-router/angular
+
+模板与angular的整合：模板的每个页面都对应angular的一个component（这个心里没底，单独找一下午开一个工程试一下）
+指导思想：用angular/material把后端和前端基础设施逻辑写好，美化界面是最后一步
+
+下一问题：下载angular版的easyUI界面如何跑起来？（ng serve）
+把前端计划变更为前端技术选型【这是非常关键的战略步骤。少即是多，如何能找到正确的选型？】。模板与组件之间的关系搞清楚【看代码对比就OK了，先把我下载的那个看了】。
+真的弄明白，才有可能性
+https://www.imooc.com/article/37896
+网上大部分选型的文章思考深度不够，没有解决快速灵活使用模板开发的问题
+比较easyui各个版本的异同，可以提升理解
+前端框架与bootstrap等模板的整合
+ng-zorro也是前端可视化技术，跟EasyUI等对比一下
+【一旦把这个问题想清楚，能够根据场景组合出最优化的方案，后端再精进几个月，就差不多了】一定要对自己干的事有非常清晰的认识
+
+对比一下easyui和ng-zorro
 
