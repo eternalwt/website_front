@@ -1,4 +1,11 @@
 搞懂第一个问题：为啥我加的所有页面都有导航栏？【看智能修复代码】【这个问题搞定后，加前端web页面】
+router-outlet例子：
+https://www.c-sharpcorner.com/blogs/routeroutlet-in-angular
+https://www.thetechieshouse.com/angular-4-router-outlet/
+https://www.techiediaries.com/angular-router-multiple-outlets/
+<app-root> 相当于是局部页面的占位符。 这个区域是动态加载的，运行时，会被 app.component.html 替换掉。
+<router-outlet></router-outlet>：https://www.jianshu.com/p/6bdfab0f9e1b
+
 【相关知识】看angular的index，起始页：http://morrisdev.com/2016/10/angular-2-understanding-of-the-structure/
 https://www.jianshu.com/p/733b9fb87551
 我们的app.component.html里面只有<router-outlet></router-outlet>
@@ -11,9 +18,27 @@ https://www.cnblogs.com/reaf/p/11230312.html
 
 晚上先把自定义横轴搞定
 
-在 angular 8 中利用 JWT 进行身份认证
+在 angular 8 中利用 JWT 进行身份认证：http://www.luoxiao123.cn/angular-8-jwt-authentication.html
+Anguar 使用interceptor拦截器设置请求头传入jwt token：https://blog.csdn.net/qq_29483485/article/details/82150985
+angular 使用jwt token验证：https://blog.csdn.net/qq_34438958/article/details/76051231
+1.前端封装jwt【用interceptor接收刷新的token。怎么发请求时带token？】
+
+Angular Snippets用法：https://www.cnblogs.com/freeliver54/p/9672627.html
+
+再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
+
+把打开时的鉴权写好
+权限的对应关系是否需要一个单独的表或者放入permission表，做了才知道
+guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
+在 angular 6 中利用 JWT 进行身份认证：https://www.jianshu.com/p/a9a535edf79f
 
 把测试环境、生产环境的打包搞好，把严格打包再理解一下
+
+最简单Angular2教程：使用第三方样式库及模块优化用：
+https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
+http://www.imooc.com/wenda/detail/422226
+https://blog.csdn.net/weixin_41905137/article/details/84866458
+https://www.jianshu.com/p/93994cbc89c0?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 
 其实问题只剩2个：1.先看angular怎么搭配主题皮肤；2.组件的样式定制
 最简单的方式：找一个angular主题，在次基础上引入组件并自定义样式
@@ -90,10 +115,9 @@ GitHub开源的10个超棒后台管理面板【含angular的】：https://blog.c
 
 在我的项目中先把tab加进去
 
-是否需要：HomeModule、AuthModule
-
 layui是啥？
 
+是否需要：HomeModule、AuthModule，搞清楚子module的设计思想
 为啥ngModel需要FormsModule？
 Can't bind to 'ngModel' since it isn't a known property of 'input'：https://blog.csdn.net/Xumuyang_/article/details/89365069
 
@@ -101,7 +125,7 @@ enum的两种写法：
 1.export class，配合static域；
 2.export enum；
 
-dashboard：完成热力图、中国地图
+dashboard：完成热力图、中国地图（没啥难度，需要的只是行动）
 
 最近学到的前后端分离知识：https://www.cnblogs.com/Java3y/p/11320606.html
 
