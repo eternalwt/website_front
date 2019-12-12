@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl("/");
       }
       else {
-        // todo
+        // todo 提示用户名密码错误、显示验证码等
       }
     
     });
