@@ -25,4 +25,8 @@ export class DataService {
     return this.http.get(environment.baseUrl + `menu/selectByUserId?userId=${userId}`);
   }
 
+  addArticle(param) {
+    return this.http.post(environment.baseUrl + `article/add`, param);
+  }
+
 }
