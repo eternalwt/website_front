@@ -1,11 +1,16 @@
 
-标题(angulra material)：
-<input type="text" formControlName="title">
-<br />
+<!-- <form [formGroup]="messageForm" (ngSubmit)="onSubmit()"> -->
 
-正文：
-<ckeditor [editor]="Editor" [(ngModel)]="content" [config]="config" (ready)="onReady($event)"  (change)="onChange($event)"></ckeditor>
-<!-- data="" -->
+    标题(angulra material)：
+    <!-- <input type="text" formControlName="title"> -->
+    <input type="text" [(ngModel)]="title">
+    <br />
+
+    正文：
+    <ckeditor [editor]="Editor" [(ngModel)]="content" [config]="config" (ready)="onReady($event)"  (change)="onChange($event)"></ckeditor>
+    <!-- data="" -->
 
 
-<input type="submit" value="保存" class="cta">
+    <input type="submit" value="保存" class="cta" (click)="onSubmit()">
+
+<!-- </form> -->
