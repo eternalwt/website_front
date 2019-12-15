@@ -7,6 +7,19 @@ https://www.techiediaries.com/angular-router-multiple-outlets/
 <app-root> 相当于是局部页面的占位符。 这个区域是动态加载的，运行时，会被 app.component.html 替换掉。
 <router-outlet></router-outlet>：https://www.jianshu.com/p/6bdfab0f9e1b
 
+【最关键的2个问题】【根据问题来查资料，直接解决问题，才是提升的法宝】
+1.web后端的登录既然已经加了，下一步：0.把redirect做好；1.把样式调好一点；2.把其他页面要权限才能进入做出来
+【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
+2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
+
+在现有的登录页是首页的基础上，开不同的分支，解决不同的问题：
+1.主分支：继续解决每一个细小的知识点，侧重于把每一个功能写通和搞懂；
+2.分支1：把paper-dashboard-angular-master合进去试一下
+3.分支2：angular material2的分支？
+4.分支3：后端管理系统的分支？
+
+是不是先把ng-alain那些下载下来？
+
 【相关知识】看angular的index，起始页：http://morrisdev.com/2016/10/angular-2-understanding-of-the-structure/
 https://www.jianshu.com/p/733b9fb87551
 我们的app.component.html里面只有<router-outlet></router-outlet>
@@ -167,4 +180,10 @@ ng-zorro也是前端可视化技术，跟EasyUI等对比一下
 【一旦把这个问题想清楚，能够根据场景组合出最优化的方案，后端再精进几个月，就差不多了】一定要对自己干的事有非常清晰的认识
 
 对比一下easyui和ng-zorro
+
+=================================================================================
+
+后端首页变登录页的方式：
+1.index.html里面的<app-root></app-root>换成<app-login></app-login>；
+2.app.module.ts里面的bootstrap做替换：bootstrap: [LoginComponent]//AppComponent
 

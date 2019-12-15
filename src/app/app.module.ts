@@ -57,6 +57,6 @@ import { ArticleComponent } from './views/article/article.component';
     // MatCheckboxModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [LoginComponent]//AppComponent
 })
 export class AppModule { }
