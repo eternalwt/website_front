@@ -7,14 +7,27 @@ https://www.techiediaries.com/angular-router-multiple-outlets/
 <app-root> 相当于是局部页面的占位符。 这个区域是动态加载的，运行时，会被 app.component.html 替换掉。
 <router-outlet></router-outlet>：https://www.jianshu.com/p/6bdfab0f9e1b
 
+【jwt先搞定】
+1.把另外几个路由配好（全都配出来）；
+2.把后端路由重新配一下；
+3.需要login的页面权限
+4.logout（前后端彻底搞明白）
+前端Routes能否/有必要做成从后端读取的？
+搞清楚下载的那个模板样式是怎么设置的
+
+【极度重要】单独搞ngx-bootstrap和material2【搞完这两项后，沉住气，再搞主题和shiro再搞一轮，就通了】
+路由已写通，是不是可以添加theme了
+
+GitHub开源的10个超棒后台管理面板（有几个angular的）：https://blog.csdn.net/m0_38106923/article/details/101050788
+
 【最关键的2个问题】【根据问题来查资料，直接解决问题，才是提升的法宝】
 1.web后端的登录既然已经加了，下一步：0.把redirect做好；1.把样式调好一点；2.把其他页面要权限才能进入做出来
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
+2.分支1：尝试给paper-dashboard-angular-master加一个漂亮的登录页【这个问题值得单独拿出来】
 2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
 
 在现有的登录页是首页的基础上，开不同的分支，解决不同的问题：
 1.主分支：继续解决每一个细小的知识点，侧重于把每一个功能写通和搞懂；
-2.分支1：把paper-dashboard-angular-master合进去试一下
 3.分支2：angular material2的分支？
 4.分支3：后端管理系统的分支？
 

@@ -10,8 +10,8 @@ export class NavComponent implements OnInit {
 
   appTitle = 'myapp';
 
-  menuList: any;
-  // menuList: any = [{url:"/", name: "MYAPP"}, {url:"/about", name: "About"}, {url: "/contact", name: "Contact us"}];
+  // menuList: any;
+  menuList: any = [{url:"/", name: "MYAPP"}, {url:"/home/about", name: "About"}, {url: "/home/contact", name: "Contact us"}];
 
   constructor(
     private dataService: DataService
@@ -22,7 +22,7 @@ export class NavComponent implements OnInit {
       // todo 把14相关的逻辑写通（先登录，然后转到主页）
       if (res["code"] == 1 && res["data"].length > 0) {
         // todo mock
-        this.menuList = res["data"].map(item => {return {url: item.url, name: item.menuName}});
+        // this.menuList = res["data"].map(item => {return {url: item.url, name: item.menuName}});
       }
     });
   }

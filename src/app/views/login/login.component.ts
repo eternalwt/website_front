@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         // 1.userId保存到localStorage；
         this.storageService.setItem("userId", res["data"]);
         // 2.跳转到后台admin页面
-        this.router.navigateByUrl("/");
+        this.router.navigateByUrl("/home");
       }
       else {
         // todo 提示用户名密码错误、显示验证码等（Angular Material 2）
