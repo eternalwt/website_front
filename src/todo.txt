@@ -1,27 +1,35 @@
 
-搞懂第一个问题：为啥我加的所有页面都有导航栏？【看智能修复代码】【这个问题搞定后，加前端web页面】
-router-outlet例子：
-https://www.c-sharpcorner.com/blogs/routeroutlet-in-angular
-https://www.thetechieshouse.com/angular-4-router-outlet/
-https://www.techiediaries.com/angular-router-multiple-outlets/
-<app-root> 相当于是局部页面的占位符。 这个区域是动态加载的，运行时，会被 app.component.html 替换掉。
-<router-outlet></router-outlet>：https://www.jianshu.com/p/6bdfab0f9e1b
 
 【jwt先搞定】
+ckeditor的高度
+或许我应该先把阻塞性问题解决，先搞清楚组件和主题的配合
+
 1.把另外几个路由配好（全都配出来）；
 2.把后端路由重新配一下；
-3.需要login的页面权限
+3.怎么调回到登录页？（上一级路由）
+3.需要login的页面权限（1.web后端的登录既然已经加了，下一步：把其他页面要权限才能进入做出来）
 4.logout（前后端彻底搞明白）
 前端Routes能否/有必要做成从后端读取的？
 搞清楚下载的那个模板样式是怎么设置的
+再思考动态组件与路由的关系【自己实现一次？把dynamic-container.module.ts的代码弄过来】：
+https://www.cnblogs.com/keatkeat/p/6349485.html
+https://blog.csdn.net/qq_24352901/article/details/79169491
+
+把下载的代码抄过来（包括service里面的）
+
+RouteModule及加载过程再看一遍
 
 【极度重要】单独搞ngx-bootstrap和material2【搞完这两项后，沉住气，再搞主题和shiro再搞一轮，就通了】
 路由已写通，是不是可以添加theme了
+比较一下admin和lte的功能及可扩展性
+
+angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
+https://blog.csdn.net/daqiang012/article/details/86617513
+https://www.jianshu.com/p/48e5d02a2f88
 
 GitHub开源的10个超棒后台管理面板（有几个angular的）：https://blog.csdn.net/m0_38106923/article/details/101050788
 
-【最关键的2个问题】【根据问题来查资料，直接解决问题，才是提升的法宝】
-1.web后端的登录既然已经加了，下一步：0.把redirect做好；1.把样式调好一点；2.把其他页面要权限才能进入做出来
+思考网站前端怎么处理
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
 2.分支1：尝试给paper-dashboard-angular-master加一个漂亮的登录页【这个问题值得单独拿出来】
 2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
@@ -32,14 +40,6 @@ GitHub开源的10个超棒后台管理面板（有几个angular的）：https://
 4.分支3：后端管理系统的分支？
 
 是不是先把ng-alain那些下载下来？
-
-【相关知识】看angular的index，起始页：http://morrisdev.com/2016/10/angular-2-understanding-of-the-structure/
-https://www.jianshu.com/p/733b9fb87551
-我们的app.component.html里面只有<router-outlet></router-outlet>
-再不行的话看一个教程：https://www.tutorialspoint.com/angular7/index.htm
-相关知识【Angular8路由配置（一）】：
-https://segmentfault.com/a/1190000020124888
-https://www.cnblogs.com/reaf/p/11230312.html
 
 权限控制再往前做一步
 
@@ -57,6 +57,12 @@ Anguar 使用interceptor拦截器设置请求头传入jwt token：https://blog.c
 angular 使用jwt token验证：https://blog.csdn.net/qq_34438958/article/details/76051231
 1.前端封装jwt【用interceptor接收刷新的token。怎么发请求时带token？】
 
+最简单Angular2教程：使用第三方样式库及模块优化用：
+https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
+http://www.imooc.com/wenda/detail/422226
+https://blog.csdn.net/weixin_41905137/article/details/84866458
+https://www.jianshu.com/p/93994cbc89c0?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+
 Angular Snippets用法：https://www.cnblogs.com/freeliver54/p/9672627.html
 
 再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
@@ -68,12 +74,6 @@ guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
 
 把测试环境、生产环境的打包搞好，把严格打包再理解一下
 
-最简单Angular2教程：使用第三方样式库及模块优化用：
-https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
-http://www.imooc.com/wenda/detail/422226
-https://blog.csdn.net/weixin_41905137/article/details/84866458
-https://www.jianshu.com/p/93994cbc89c0?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
-
 其实问题只剩2个：1.先看angular怎么搭配主题皮肤；2.组件的样式定制
 最简单的方式：找一个angular主题，在次基础上引入组件并自定义样式
 https://blog.csdn.net/liumiaocn/article/details/81329223
@@ -81,6 +81,8 @@ https://blog.csdn.net/liumiaocn/article/details/81329223
 大屏页面出现了一堆violation：
 [Violation] 'setInterval' handler took 236715ms
 [Violation] Forced reflow while executing JavaScript took XXX ms
+
+下载的进度问题再过一遍
 
 1.把ckeditor配到一个更完善的程度（前后端打通）：
 https://loocode.com/post/10149
@@ -193,6 +195,12 @@ ng-zorro也是前端可视化技术，跟EasyUI等对比一下
 【一旦把这个问题想清楚，能够根据场景组合出最优化的方案，后端再精进几个月，就差不多了】一定要对自己干的事有非常清晰的认识
 
 对比一下easyui和ng-zorro
+
+jQuery发送请求：http://www.w3school.com.cn/jquery/ajax_post.asp
+POSTMAN之如何获取COOKIE：https://www.cnblogs.com/yecaiye/p/10251747.html
+如何在Postman中使用cookie：https://blog.csdn.net/niedewang/article/details/80481652
+Postman是可以测试文件参数的，在Body form-data里面
+
 
 =================================================================================
 
