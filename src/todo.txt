@@ -19,6 +19,13 @@ https://blog.csdn.net/qq_24352901/article/details/79169491
 
 RouteModule及加载过程再看一遍
 
+Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
+https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
+
+下载ngx-admin代码，看看ngx-admin的登陆路由
+
+或许我还是太急于求成了，搞熟一些组件库和theme，内网还有那么多待解决的问题要嚼烂
+
 【极度重要】单独搞ngx-bootstrap和material2【搞完这两项后，沉住气，再搞主题和shiro再搞一轮，就通了】
 路由已写通，是不是可以添加theme了
 比较一下admin和lte的功能及可扩展性
