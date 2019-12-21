@@ -28,4 +28,18 @@ export class StorageService {
     localStorage.clear();
   }
 
+  // 获取jwt token
+  getAuthorizationToken() {
+    const token = localStorage.getItem("token")
+      ? localStorage.getItem("token")
+      : "";
+    if (token) {
+      const jwt = `Bearer ${token}`;
+      return jwt;
+    } else {
+      // this.router.navigate(["/passport/login"]);
+      console.log("need login");
+    }
+  }
+
 }

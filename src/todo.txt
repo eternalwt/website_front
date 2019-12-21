@@ -1,8 +1,24 @@
 
+几个关联的问题：
+1.【jwt的测试】
+2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
+3.路由守卫的场景？
+4.前后端token、session那一套彻底弄懂：
+5.http的出错处理
+6.下载及进度：把下载的代码抄过来（包括service里面的）
+SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录：https://www.cnblogs.com/javazhiyin/p/11398374.html
 
-【jwt先搞定】
-ckeditor的高度
-或许我应该先把阻塞性问题解决，先搞清楚组件和主题的配合
+
+继续选择管理后台和组件（把阻塞性问题解决，先搞清楚组件和主题的配合）
+最简单Angular2教程：使用第三方样式库及模块优化用：
+https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
+http://www.imooc.com/wenda/detail/422226
+https://blog.csdn.net/weixin_41905137/article/details/84866458
+https://www.jianshu.com/p/93994cbc89c0?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+
+ckeditor的高度（样式指令的关联学习）
+
+发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成。否则以后变了自己再去跟还是不懂
 
 1.把另外几个路由配好（全都配出来）；
 2.把后端路由重新配一下；
@@ -15,19 +31,21 @@ ckeditor的高度
 https://www.cnblogs.com/keatkeat/p/6349485.html
 https://blog.csdn.net/qq_24352901/article/details/79169491
 
-把下载的代码抄过来（包括service里面的）
-
 RouteModule及加载过程再看一遍
 
 Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
 https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
 
-下载ngx-admin代码，看看ngx-admin的登陆路由
+再看指令和ngModel
 
-或许我还是太急于求成了，搞熟一些组件库和theme，内网还有那么多待解决的问题要嚼烂
+下载ngx-admin代码，看看ngx-admin的登陆路由（搞明白后再搞theme）：https://github.com/akveo/ngx-admin
+1.以后从github下载代码：尽量不要下载zip包，直接clone（用好clone和fork，提升生产力，有可能幅度还不小，要重视）；
+
+或许我还是太急于求成了，搞熟一些组件库和theme，内网还有那么多待解决的问题要嚼烂。
+分析一下功利心对成败的影响
 
 【极度重要】单独搞ngx-bootstrap和material2【搞完这两项后，沉住气，再搞主题和shiro再搞一轮，就通了】
-路由已写通，是不是可以添加theme了
+Angular Material 2：https://www.mithunvp.com/angular-material-2-angular-cli-webpack/
 比较一下admin和lte的功能及可扩展性
 
 angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
@@ -60,17 +78,9 @@ https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
 把paper-dashboard-angular-master的代码学习一遍
 
 在 angular 8 中利用 JWT 进行身份认证：http://www.luoxiao123.cn/angular-8-jwt-authentication.html
-Anguar 使用interceptor拦截器设置请求头传入jwt token：https://blog.csdn.net/qq_29483485/article/details/82150985
+Anguar 使用interceptor拦截器设置请求头传入jwt token【写通容易，完全理解不易，把每一行都看懂】：https://blog.csdn.net/qq_29483485/article/details/82150985
 angular 使用jwt token验证：https://blog.csdn.net/qq_34438958/article/details/76051231
 1.前端封装jwt【用interceptor接收刷新的token。怎么发请求时带token？】
-
-最简单Angular2教程：使用第三方样式库及模块优化用：
-https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
-http://www.imooc.com/wenda/detail/422226
-https://blog.csdn.net/weixin_41905137/article/details/84866458
-https://www.jianshu.com/p/93994cbc89c0?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
-
-Angular Snippets用法：https://www.cnblogs.com/freeliver54/p/9672627.html
 
 再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
 

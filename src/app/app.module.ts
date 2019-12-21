@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatMenuModule, MatSidenavModule, MatDatepickerModule, MatInputModule, MatNativeDateModule } from '@angular/material';
 import { QuillModule } from 'ngx-quill';
@@ -19,6 +19,8 @@ import { RegisterComponent } from './views/register/register.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { IndexComponent } from './views/index/index.component';
 import { ArticleComponent } from './views/article/article.component';
+// import { StorageService } from './service/storage.service';
+// import { AuthInterceptor } from './interceptors/http-interceptors';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,16 @@ import { ArticleComponent } from './views/article/article.component';
     // MatButtonModule,
     // MatCheckboxModule
   ],
-  providers: [],
+  providers: [
+    // StorageService,
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: AuthInterceptor,
+    //   multi: true
+    // }
+    
+    //{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
