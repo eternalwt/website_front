@@ -26,7 +26,7 @@ export class AuthInterceptor implements HttpInterceptor {
     const authToken = this.storageService.getAuthorizationToken();
  
     const authReq = req.clone({
-      headers: req.headers.set("Authorization", authToken),
+      headers: req.headers.set("x-auth-token", authToken),
     //   url: req.url.replace(req.url, this.httpService.reqUrl + req.url)
     });
  
@@ -34,7 +34,12 @@ export class AuthInterceptor implements HttpInterceptor {
       tap(
         event => {
           if (event instanceof HttpResponse) {
-            console.log("success");
+            debugger;
+            console.log(event);
+            console.log("intercept success");
+            if (event.headers) {
+                // todo 保存/刷新token
+            }
           }
         },
         error => {

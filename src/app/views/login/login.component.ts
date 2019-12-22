@@ -36,7 +36,8 @@ export class LoginComponent implements OnInit {
         return;
     }
 
-    this.dataService.login(this.messageForm.value).subscribe(res => {
+    // this.dataService.login(this.messageForm.value).subscribe(res => {
+    this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {
       debugger;
       console.log(res);
       if (res["code"] == 1) {

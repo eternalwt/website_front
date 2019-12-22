@@ -20,7 +20,7 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { IndexComponent } from './views/index/index.component';
 import { ArticleComponent } from './views/article/article.component';
 // import { StorageService } from './service/storage.service';
-// import { AuthInterceptor } from './interceptors/http-interceptors';
+import { AuthInterceptor } from './interceptors/http-interceptors';
 
 @NgModule({
   declarations: [
@@ -66,7 +66,7 @@ import { ArticleComponent } from './views/article/article.component';
     //   multi: true
     // }
     
-    //{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })

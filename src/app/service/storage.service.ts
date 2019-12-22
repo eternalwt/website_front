@@ -33,13 +33,15 @@ export class StorageService {
     const token = localStorage.getItem("token")
       ? localStorage.getItem("token")
       : "";
-    if (token) {
-      const jwt = `Bearer ${token}`;
-      return jwt;
-    } else {
-      // this.router.navigate(["/passport/login"]);
-      console.log("need login");
-    }
+
+    return token;
+    // if (token) {
+    //   const jwt = `Bearer ${token}`;
+    //   return jwt;
+    // } else {
+    //   // this.router.navigate(["/passport/login"]);
+    //   console.log("need login");
+    // }
   }
 
 }
