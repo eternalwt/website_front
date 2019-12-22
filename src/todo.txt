@@ -1,6 +1,10 @@
 
-几个关联的问题：
-没有权限的前后端连好（material 2的提示框）
+【几个关联的问题】
+没有权限的前后端连好【这又是个关键的问题】（material 2的提示框）
+发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成。否则以后变了自己再去跟还是不懂
+
+ckeditor的高度（样式指令的关联学习）
+
 2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
 3.路由守卫的场景？
 4.前后端token、session那一套彻底弄懂：
@@ -8,7 +12,6 @@
 6.下载及进度：把下载的代码抄过来（包括service里面的）
 7.上传
 SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录：https://www.cnblogs.com/javazhiyin/p/11398374.html
-ckeditor的高度（样式指令的关联学习）
 
 可以先继续完善3个月的功能和基础设施，不要急
 
@@ -17,8 +20,6 @@ Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
 https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
 看懂INDIGO与material细节与关联
 看那几个布局的文章
-
-发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成。否则以后变了自己再去跟还是不懂
 
 1.把另外几个路由配好（全都配出来）；
 2.把后端路由重新配一下；
