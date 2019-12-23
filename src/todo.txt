@@ -2,7 +2,15 @@
 【几个关联的问题】
 1.给前端刷新token（是不是还是要依靠header？）；
 2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
+3.权限不够则页面和url保持不变
 4.logout（前后端彻底搞明白）
+5.ckeditor的高度（样式指令的关联学习）
+6.把完整的二级菜单移到左侧，上方做好登出、搜索框：
+https://blog.learningtree.com/create-side-menu-angular-2-material-design/
+https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
+https://code-maze.com/angular-material-navigation/
+
+github.com上的angular_front改名
 
 下载的进度问题再过一遍
   // todo 这是实验性代码
@@ -21,8 +29,6 @@ sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereu
 发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
 https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
 
-
-ckeditor的高度（样式指令的关联学习）
 
 2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
 3.路由守卫的场景？
