@@ -10,8 +10,6 @@ https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
-github.com上的angular_front改名
-
 下载的进度问题再过一遍
   // todo 这是实验性代码
   download() {
