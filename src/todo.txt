@@ -1,7 +1,26 @@
 
 【几个关联的问题】
-没有权限的前后端连好【这又是个关键的问题】（material 2的提示框）
-发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成。否则以后变了自己再去跟还是不懂
+1.给前端刷新token（是不是还是要依靠header？）；
+2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
+4.logout（前后端彻底搞明白）
+
+下载的进度问题再过一遍
+  // todo 这是实验性代码
+  download() {
+    // 从blob中读数据 https://javascript.info/blob
+  }
+【学习】搞清楚我们的webSocketService里面Observable的用法
+
+把 SwWebSocketService 和 interceptor 的代码搞过来
+把SwHttpClientService的代码弄过来，封装了重试、错误处理、下载等机制（还有鉴权等内容把）
+把河北项目的pdf代码移植过来
+看一下jwt相关的
+sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereusestrategy.ts、sw-web-socket.service.ts
+把公司里面的代码目录过一遍
+
+发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
+https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
+
 
 ckeditor的高度（样式指令的关联学习）
 
@@ -13,7 +32,7 @@ ckeditor的高度（样式指令的关联学习）
 7.上传
 SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录：https://www.cnblogs.com/javazhiyin/p/11398374.html
 
-可以先继续完善3个月的功能和基础设施，不要急
+可以先继续完善3个月的功能和基础设施，不要急。如果不给自己足够的时间，学习顺序会扭曲混乱
 
 看完material那个教程，这是基础
 Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
@@ -25,7 +44,6 @@ https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-T
 2.把后端路由重新配一下；
 3.怎么调回到登录页？（上一级路由）
 3.需要login的页面权限（1.web后端的登录既然已经加了，下一步：把其他页面要权限才能进入做出来）
-4.logout（前后端彻底搞明白）
 前端Routes能否/有必要做成从后端读取的？
 搞清楚下载的那个模板样式是怎么设置的
 再思考动态组件与路由的关系【自己实现一次？把dynamic-container.module.ts的代码弄过来】：
@@ -36,9 +54,16 @@ RouteModule及加载过程再看一遍
 
 jwt已调通，但是怎么从header里面把token传给前端还没解决，现在是从body里面传的（token刷新的问题）
 
+尝试用合理的分支策略来学习前端
+在现有的登录页是首页的基础上，开不同的分支，解决不同的问题：
+1.主分支：继续解决每一个细小的知识点，侧重于把每一个功能写通和搞懂；
+3.分支2：angular material2的分支？
+4.分支3：后端管理系统的分支？
+
+
 再看指令和ngModel
 
-下载ngx-admin代码，看看ngx-admin的登陆路由（搞明白后再搞theme）：https://github.com/akveo/ngx-admin
+（已下载）看看ngx-admin的登陆路由（搞明白后再搞theme）：https://github.com/akveo/ngx-admin
 1.以后从github下载代码：尽量不要下载zip包，直接clone（用好clone和fork，提升生产力，有可能幅度还不小，要重视）；
 
 或许我还是太急于求成了，搞熟一些组件库和theme，内网还有那么多待解决的问题要嚼烂。
@@ -59,11 +84,6 @@ GitHub开源的10个超棒后台管理面板（有几个angular的）：https://
 2.分支1：尝试给paper-dashboard-angular-master加一个漂亮的登录页【这个问题值得单独拿出来】
 2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
 
-在现有的登录页是首页的基础上，开不同的分支，解决不同的问题：
-1.主分支：继续解决每一个细小的知识点，侧重于把每一个功能写通和搞懂；
-3.分支2：angular material2的分支？
-4.分支3：后端管理系统的分支？
-
 是不是先把ng-alain那些下载下来？
 
 权限控制再往前做一步
@@ -76,12 +96,6 @@ https://www.codemeals.com/angular-tutorials/angular-material/
 https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
 
 把paper-dashboard-angular-master的代码学习一遍
-
-在 angular 8 中利用 JWT 进行身份认证：http://www.luoxiao123.cn/angular-8-jwt-authentication.html
-Anguar 使用interceptor拦截器设置请求头传入jwt token【写通容易，完全理解不易，把每一行都看懂】：https://blog.csdn.net/qq_29483485/article/details/82150985
-angular 使用jwt token验证：https://blog.csdn.net/qq_34438958/article/details/76051231
-1.前端封装jwt【用interceptor接收刷新的token。怎么发请求时带token？】
-angular-jwt：https://www.jianshu.com/p/a9a535edf79f
 
 再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
 
@@ -100,8 +114,6 @@ https://blog.csdn.net/liumiaocn/article/details/81329223
 [Violation] 'setInterval' handler took 236715ms
 [Violation] Forced reflow while executing JavaScript took XXX ms
 
-下载的进度问题再过一遍
-
 1.把ckeditor配到一个更完善的程度（前后端打通）：
 https://loocode.com/post/10149
 https://blog.csdn.net/nzyalj/article/details/87870762
@@ -110,12 +122,6 @@ https://blog.csdn.net/nzyalj/article/details/87870762
 https://www.cnblogs.com/minigrasshopper/p/7692664.html
 https://www.cnblogs.com/minigrasshopper/p/7692813.html
 
-  // todo 这是实验性代码
-  download() {
-    // 从blob中读数据 https://javascript.info/blob
-  }
-
-我们的dashboard代码里面有这样的代码：declare let $;
 
 框架搭建任务：
 1.路由(路由系统的设计要素？对比引入路由系统的优势)
@@ -125,11 +131,6 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 5.两套模板
 7.常用的pipe
 8.尝试自己封装5个控件
-
-【学习】搞清楚我们的webSocketService里面Observable的用法
-把 SwWebSocketService 和 interceptor 的代码搞过来
-把SwHttpClientService的代码弄过来，封装了重试、错误处理、下载等机制（还有鉴权等内容把）
-把河北项目的pdf代码移植过来
 
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
 https://www.cnblogs.com/nzbin/p/11150811.html
