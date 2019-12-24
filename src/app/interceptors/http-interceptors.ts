@@ -46,8 +46,9 @@ export class AuthInterceptor implements HttpInterceptor {
           console.log("failed");
         }
       ),
-      finalize(() => {//请求完成（成功或失败都执行）
-        //this.loadingService.loading(false);
+      finalize(() => {
+        // 请求完成（成功或失败都执行）
+        // this.loadingService.loading(false);
       })
     );
   }

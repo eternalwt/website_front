@@ -8,22 +8,21 @@ export class StorageService {
   constructor() { }
 
   // 保存数据
-  setItem(key,value)
-  {
+  setItem(key, value) {
       localStorage.setItem(key,value);
   }
+
   // 删除数据
-  removeItem(key)
-  {
+  removeItem(key) {
       localStorage.removeItem(key);
   }
+
   // 获取数据
-  getItem(key)
-  {
+  getItem(key) {
       localStorage.getItem(key);
   }
 
-  //清空
+  // 清空
   clear() {
     localStorage.clear();
   }

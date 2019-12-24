@@ -42,14 +42,14 @@ export class WebsocketService {
   createWebSocket(type) {
     let socket = new WebSocket(this.baseUrl + type);
 
-    //打开事件
+    // 打开事件
     socket.onopen = function() {
       debugger;
       console.log("Socket 已打开");
       //socket.send("这是来自客户端的消息" + location.href + new Date());
     };
 
-    //获得消息事件
+    // 获得消息事件
     socket.onmessage = function(msg) {
       debugger;
       console.log(msg.data);

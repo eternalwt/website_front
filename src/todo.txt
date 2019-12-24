@@ -4,25 +4,30 @@
 2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
 3.权限不够则页面和url保持不变
 4.logout（前后端彻底搞明白）
-5.ckeditor的高度（样式指令的关联学习）
-6.把完整的二级菜单移到左侧，上方做好登出、搜索框：
+6.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】，上方做好登出、搜索框：
 https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
+
+【5.ckeditor的高度（样式指令的关联学习）】
 
 下载的进度问题再过一遍
   // todo 这是实验性代码
   download() {
     // 从blob中读数据 https://javascript.info/blob
   }
-【学习】搞清楚我们的webSocketService里面Observable的用法
 
+github提醒我，serialize-javascript要升级到2.1.1版本以上：https://github.com/eternalwt/website_front/network/alert/package-lock.json/serialize-javascript/open
+看看是怎么引入的这个库
+
+【学习】搞清楚我们的webSocketService里面Observable的用法
 把 SwWebSocketService 和 interceptor 的代码搞过来
 把SwHttpClientService的代码弄过来，封装了重试、错误处理、下载等机制（还有鉴权等内容把）
 把河北项目的pdf代码移植过来
-看一下jwt相关的
+看一下jwt相关的代码
 sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereusestrategy.ts、sw-web-socket.service.ts
 把公司里面的代码目录过一遍
+前端代码静态扫描一定要用起来，后端直接用阿里巴巴IDEA插件（后端更熟悉一些），然后配合单元测试
 
 发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
 https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
