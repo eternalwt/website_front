@@ -11,6 +11,8 @@ https://code-maze.com/angular-material-navigation/
 
 【5.ckeditor的高度（样式指令的关联学习）】
 
+试一下把文章类的做成一个module
+
 下载的进度问题再过一遍
   // todo 这是实验性代码
   download() {
