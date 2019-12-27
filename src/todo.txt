@@ -9,8 +9,6 @@ https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
-【5.ckeditor的高度（样式指令的关联学习）】
-
 试一下把文章类的做成一个module
 
 下载的进度问题再过一遍
@@ -21,6 +19,8 @@ https://code-maze.com/angular-material-navigation/
 
 github提醒我，serialize-javascript要升级到2.1.1版本以上：https://github.com/eternalwt/website_front/network/alert/package-lock.json/serialize-javascript/open
 看看是怎么引入的这个库
+
+公司代码package.json的dependencies里面看到了"admni-lte": "^2.4.8"
 
 【学习】搞清楚我们的webSocketService里面Observable的用法
 把 SwWebSocketService 和 interceptor 的代码搞过来
@@ -34,6 +34,7 @@ sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereu
 发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
 https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
 
+把angular material 2的提示框写通
 
 2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
 3.路由守卫的场景？
