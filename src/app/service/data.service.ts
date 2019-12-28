@@ -33,4 +33,8 @@ export class DataService {
     return this.http.post(environment.baseUrl + `article/add`, param);
   }
 
+  listArticle(param) {
+    return this.http.post(environment.baseUrl + "article/list", param);
+  }
+
 }

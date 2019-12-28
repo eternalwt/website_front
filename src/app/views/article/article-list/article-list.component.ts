@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-article-list',
@@ -7,11 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleListComponent implements OnInit {
 
+  // 表格数据
   myDataArray: any = [];
 
-  constructor() { }
+  // 要展示的列
+  columnsToDisplay: any = ['title', 'content'];
+
+  constructor(
+    private dataService: DataService
+  ) { }
 
   ngOnInit() {
+    let param = {pageNum: 1, pageSize: 5};
+    this.dataService.listArticle(param).subscribe(res => {
+      debugger;
+      if (res["data"]["records"]) {
+        // todo 绑定table
+        this.myDataArray = res["data"]["records"];
+        console.log(this.myDataArray);
+      }
+    });
   }
 
 }

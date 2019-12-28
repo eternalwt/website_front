@@ -9,6 +9,8 @@ https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
+添加文章：加用户id和时间
+表格：要能编辑文章
 【周六】
 1.把ArticleList用Material2做好
 2.试一下把文章类的做成一个module
