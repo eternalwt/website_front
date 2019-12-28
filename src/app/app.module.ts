@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatMenuModule, MatSidenavModule, MatDatepickerModule, MatInputModule, MatNativeDateModule } from '@angular/material';
 import { QuillModule } from 'ngx-quill';
 import {CKEditorModule} from '@ckeditor/ckeditor5-angular' 
 import { NgxEchartsModule } from 'ngx-echarts';
+
+import { MatButtonModule, MatMenuModule, MatSidenavModule, MatDatepickerModule, MatInputModule, MatNativeDateModule,
+  MatTableModule, 
+  MatSortModule,
+  MatProgressSpinnerModule} from '@angular/material';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +26,7 @@ import { IndexComponent } from './views/index/index.component';
 import { ArticleComponent } from './views/article/article.component';
 // import { StorageService } from './service/storage.service';
 import { AuthInterceptor } from './interceptors/http-interceptors';
+import { ArticleListComponent } from './views/article/article-list/article-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,8 @@ import { AuthInterceptor } from './interceptors/http-interceptors';
     RegisterComponent,
     DashboardComponent,
     IndexComponent,
-    ArticleComponent
+    ArticleComponent,
+    ArticleListComponent
   ],
   imports: [
     BrowserModule,
@@ -47,11 +54,14 @@ import { AuthInterceptor } from './interceptors/http-interceptors';
     NgxEchartsModule,
 
     MatButtonModule,
+    MatInputModule,
     MatMenuModule,
     MatSidenavModule,
     MatDatepickerModule,
-    MatInputModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTableModule,
+    MatSortModule,
+    MatProgressSpinnerModule
   ],
   // 如果只想这一个组件自己单独用，就不用添加这export，如果还想给自己的子组件(eg:test)，就要export出去
   exports: [

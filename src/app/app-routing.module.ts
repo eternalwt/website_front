@@ -7,6 +7,7 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { ArticleComponent } from './views/article/article.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { ArticleListComponent } from './views/article/article-list/article-list.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,10 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+
   { path: 'article', component: ArticleComponent },
+  { path: 'articlelist', component: ArticleListComponent },
+  
   { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent, children: [
     { path: 'about', component: AboutComponent },// todo 下面的路径作为''的children

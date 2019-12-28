@@ -36,9 +36,8 @@ export class LoginComponent implements OnInit {
         return;
     }
 
-    // this.dataService.login(this.messageForm.value).subscribe(res => {
-    this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {
-      debugger;
+    this.dataService.login(this.messageForm.value).subscribe(res => {
+    // this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {
       console.log(res);
       if (res["code"] == 1) {
         // 1.userId保存到localStorage；
@@ -46,12 +45,10 @@ export class LoginComponent implements OnInit {
         // 2.跳转到后台admin页面
         this.router.navigateByUrl("/home");
       } else {
+        // todo 展示出来：Your name is required、A password is required
         // todo 提示用户名密码错误、显示验证码等（Angular Material 2）
       }
-    
     });
-
-    this.success = true;
   }
 
 }

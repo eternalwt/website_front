@@ -9,7 +9,10 @@ https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
-试一下把文章类的做成一个module
+【周六】
+1.把ArticleList用Material2做好
+2.试一下把文章类的做成一个module
+文章保存后没有redirect
 
 下载的进度问题再过一遍
   // todo 这是实验性代码
