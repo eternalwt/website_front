@@ -1,5 +1,11 @@
 
-1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】
+1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】。使用<mat-menu：
+https://blog.learningtree.com/create-side-menu-angular-2-material-design/
+https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
+https://code-maze.com/angular-material-navigation/
+
+把material 2的内容专门抽一个module（MaterialModule）出来：https://www.codemeals.com/angular-tutorials/angular-material/
+
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
 【几个关联的问题】
@@ -21,11 +27,18 @@ https://code-maze.com/angular-material-navigation/
 2.试一下把文章类的做成一个module
 文章保存后没有redirect，跳转到列表页
 
+发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
+https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
+
+什么叫响应式表单？响应式体现在哪里？
+
 下载的进度问题再过一遍
   // todo 这是实验性代码
   download() {
     // 从blob中读数据 https://javascript.info/blob
   }
+
+只有完整做一下，才能知道自己能获得什么：angular materla 2、indigo.css
 
 github提醒我，serialize-javascript要升级到2.1.1版本以上：https://github.com/eternalwt/website_front/network/alert/package-lock.json/serialize-javascript/open
 看看是怎么引入的这个库
@@ -40,9 +53,6 @@ github提醒我，serialize-javascript要升级到2.1.1版本以上：https://gi
 sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereusestrategy.ts、sw-web-socket.service.ts
 把公司里面的代码目录过一遍
 前端代码静态扫描一定要用起来，后端直接用阿里巴巴IDEA插件（后端更熟悉一些），然后配合单元测试
-
-发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
-https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
 
 2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
 3.路由守卫的场景？
@@ -90,7 +100,13 @@ jwt已调通，但是怎么从header里面把token传给前端还没解决，现
 分析一下功利心对成败的影响
 
 【极度重要】单独搞ngx-bootstrap和material2【搞完这两项后，沉住气，再搞主题和shiro再搞一轮，就通了】
-Angular Material 2：https://www.mithunvp.com/angular-material-2-angular-cli-webpack/
+Angular Material 2：
+Angular Material 2的资料官方github上有：
+https://github.com/angular/components
+把预定义主题用好：~@angular/material/prebuilt-themes/indigo-pink.css：
+https://www.codemeals.com/angular-tutorials/angular-material/
+https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
+
 比较一下admin和lte的功能及可扩展性
 
 angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
@@ -109,11 +125,6 @@ GitHub开源的10个超棒后台管理面板（有几个angular的）：https://
 权限控制再往前做一步
 
 晚上先把自定义横轴搞定
-
-区分好material和material 2之后再玩
-把预定义主题用好：~@angular/material/prebuilt-themes/indigo-pink.css：
-https://www.codemeals.com/angular-tutorials/angular-material/
-https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
 
 把paper-dashboard-angular-master的代码学习一遍
 
