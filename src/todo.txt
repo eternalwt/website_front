@@ -1,10 +1,8 @@
 
 1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】。使用<mat-menu：
-https://blog.learningtree.com/create-side-menu-angular-2-material-design/
-https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
+是不是应该先搞清楚menu和side-nav的区别？
+https://www.tutorialspoint.com/angular_material7/angular_material7_menu.htm
 https://code-maze.com/angular-material-navigation/
-
-把material 2的内容专门抽一个module（MaterialModule）出来：https://www.codemeals.com/angular-tutorials/angular-material/
 
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
@@ -19,7 +17,6 @@ https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
 
-
 添加文章：加用户id和时间
 表格：编辑、删除（把angular material 2的提示框写通）、列出创建者、查看、翻页
 【周六】
@@ -31,6 +28,11 @@ https://code-maze.com/angular-material-navigation/
 https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
 
 什么叫响应式表单？响应式体现在哪里？
+
+看那几个布局的文章
+是不是先把ng-alain那些下载下来？
+把paper-dashboard-angular-master的代码学习一遍
+权限控制再往前做一步
 
 下载的进度问题再过一遍
   // todo 这是实验性代码
@@ -67,8 +69,6 @@ SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录�
 看完material那个教程，这是基础
 Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
 https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
-看懂INDIGO与material细节与关联
-看那几个布局的文章
 
 1.把另外几个路由配好（全都配出来）；
 2.把后端路由重新配一下；
@@ -103,9 +103,6 @@ jwt已调通，但是怎么从header里面把token传给前端还没解决，现
 Angular Material 2：
 Angular Material 2的资料官方github上有：
 https://github.com/angular/components
-把预定义主题用好：~@angular/material/prebuilt-themes/indigo-pink.css：
-https://www.codemeals.com/angular-tutorials/angular-material/
-https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
 
 比较一下admin和lte的功能及可扩展性
 
@@ -115,18 +112,11 @@ https://www.jianshu.com/p/48e5d02a2f88
 
 GitHub开源的10个超棒后台管理面板（有几个angular的）：https://blog.csdn.net/m0_38106923/article/details/101050788
 
-思考网站前端怎么处理
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
+12月31日对前端样式的最新理解：material组件（封装功能） + prebuilt-theme负责颜色 + 布局和宽高 + 图片 + 阴影等更高级定制
+
 2.分支1：尝试给paper-dashboard-angular-master加一个漂亮的登录页【这个问题值得单独拿出来】
 2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
-
-是不是先把ng-alain那些下载下来？
-
-权限控制再往前做一步
-
-晚上先把自定义横轴搞定
-
-把paper-dashboard-angular-master的代码学习一遍
 
 再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
 
