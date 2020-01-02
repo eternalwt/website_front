@@ -1,6 +1,5 @@
 
-1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】。使用<mat-menu：
-是不是应该先搞清楚menu和side-nav的区别？
+1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】。使用side-nav
 https://www.tutorialspoint.com/angular_material7/angular_material7_menu.htm
 https://code-maze.com/angular-material-navigation/
 
@@ -28,6 +27,8 @@ https://code-maze.com/angular-material-navigation/
 https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
 
 什么叫响应式表单？响应式体现在哪里？
+
+看下载的bpus_5_dashboard.zip怎么用起来
 
 看那几个布局的文章
 是不是先把ng-alain那些下载下来？

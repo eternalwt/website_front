@@ -8,16 +8,18 @@ import { RegisterComponent } from './views/register/register.component';
 import { ArticleComponent } from './views/article/article.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
 
+  // todo 配置canActivateChild及与父级的关系：https://www.cnblogs.com/gushiyoyo/p/11271389.html
 
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
 
-  { path: 'article', component: ArticleComponent },
+  { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
   { path: 'articlelist', component: ArticleListComponent },
   
   { path: 'dashboard', component: DashboardComponent },
