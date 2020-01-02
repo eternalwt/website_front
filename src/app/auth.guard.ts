@@ -6,19 +6,24 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
   })
   export class AuthGuard implements CanActivate {
   
-      constructor(private router: Router) {
+      constructor(
+          private router: Router,
+          
+          ) {
   
       }
   
       // 路由守卫
       canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-        //   return this.checkLogin();
-        return true;
+          if (!this.checkPermission()) {
+              alert("no permission");
+              // todo 用angular material 2的弹出框
+          }
+        return this.checkPermission();
       }
   
       // https://blog.csdn.net/yw00yw/article/details/89381043
       checkLogin(): boolean {
-  
           // 判断本地有没有token
           const token = sessionStorage.getItem('access_token');
   
@@ -26,6 +31,10 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
           if (token) { return true; }
   
           this.router.navigate(['/login']);
+          return false;
+      }
+
+      checkPermission(): boolean {
           return false;
       }
   }

@@ -25,6 +25,10 @@ export class DataService {
     return this.http.post(environment.baseUrl +  `auth/jwtlogin?username=${params.username}&password=${params.password}`, null);
   }
 
+  isPermitted() {
+    return this.http.get(environment.baseUrl +  `permission/isPermitted`);
+  }
+
   getMenuList(userId: number) {
     return this.http.get(environment.baseUrl + `menu/selectByUserId?userId=${userId}`);
   }

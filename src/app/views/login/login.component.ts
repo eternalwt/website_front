@@ -42,8 +42,14 @@ export class LoginComponent implements OnInit {
       if (res["code"] == 1) {
         // 1.userId保存到localStorage；
         this.storageService.setItem("userId", res["data"]);
-        // 2.跳转到后台admin页面
-        this.router.navigateByUrl("/home");
+
+        this.dataService.isPermitted().subscribe(res => {
+          debugger;
+          // 2.跳转到后台admin页面
+          this.router.navigateByUrl("/home");
+        });
+
+        
       } else {
         // todo 展示出来：Your name is required、A password is required
         // todo 提示用户名密码错误、显示验证码等（Angular Material 2）

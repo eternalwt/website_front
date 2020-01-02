@@ -5,6 +5,11 @@ https://code-maze.com/angular-material-navigation/
 
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
+Angular7路由守卫CanActivate中从服务器端判断登录状态：
+https://blog.csdn.net/A156348933/article/details/90241323
+（用setTimeout？）https://www.cnblogs.com/Answer1215/p/5924763.html
+放到interceptor里面呢？
+
 【几个关联的问题】
 1.给前端刷新token（是不是还是要依靠header？）；
 2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
@@ -22,6 +27,8 @@ https://code-maze.com/angular-material-navigation/
 1.把ArticleList用Material2做好
 2.试一下把文章类的做成一个module
 文章保存后没有redirect，跳转到列表页
+
+测试、完善路由守卫
 
 发现的问题：rxjs里面不懂的太多pipe、tap、do，不能急于求成，要彻底理解。否则以后变了自己再去跟还是不懂：
 https://stackoverflow.com/questions/47275385/what-are-pipe-and-tap-methods-in-angular-tutorial
