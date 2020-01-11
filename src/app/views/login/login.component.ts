@@ -3,6 +3,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../../service/data.service';
 import { StorageService } from 'src/app/service/storage.service';
 import { Router } from '@angular/router';
+import { of, concat, interval } from 'rxjs';
+import { tap, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -27,6 +29,14 @@ export class LoginComponent implements OnInit {
       username: ['', Validators.required],
       password: ['', Validators.required]
     });
+
+    const ofListObs = of(1, 2, 3);
+    const strObs = of('a', 'b', 'c');
+    const intervalObs = interval(500);
+    const resObs = concat(ofListObs, strObs, intervalObs);
+    resObs.subscribe(res => {
+        console.log(res);
+    });
   }
 
   onSubmit() {
@@ -35,6 +45,18 @@ export class LoginComponent implements OnInit {
     if (this.messageForm.invalid) {
         return;
     }
+
+    const source = of(1, 2, 3, 4, 5);
+// transparently log values from source with 'tap'
+const example = source.pipe(
+  tap(val => console.log(`BEFORE MAP: ${val}`)),
+  map(val => val + 10),
+  tap(val => console.log(`AFTER MAP: ${val}`))
+);
+
+//'tap' does not transform values
+//output: 11...12...13...14...15
+const subscribe = example.subscribe(val => console.log(val));
 
     this.dataService.login(this.messageForm.value).subscribe(res => {
     // this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {

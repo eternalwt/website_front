@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
+import { DataService } from 'src/app/service/data.service';
 
 @Injectable({
     providedIn: 'root'
@@ -8,7 +9,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
   
       constructor(
           private router: Router,
-          
+          private dataService: DataService
           ) {
   
       }
@@ -35,6 +36,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
       }
 
       checkPermission(): boolean {
-          return false;
+        //   return this.dataService.isPermitted();
+        return true;
       }
   }
