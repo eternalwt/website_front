@@ -1,13 +1,29 @@
 
-<app-nav></app-nav>
+<app-toolbar></app-toolbar>
 
-<router-outlet></router-outlet>
+<!-- <app-nav></app-nav>  -->
 
-<h1>Users</h1>
+<!-- <router-outlet></router-outlet>  -->
+
+<!-- <h1>Users</h1>
 
 <ul *ngIf="users">
   <li *ngFor="let user of users.data">
     <img [src]="user.avatar">
     <p>{{ user.first_name }} {{ user.last_name }}</p>
   </li>
-</ul>
+</ul> -->
+
+<mat-sidenav-container class = "tp-container">
+  <mat-sidenav mode = "side" opened>
+     <section class = "tp-section">
+        <span>File</span>
+     </section>
+     <section class = "tp-section">
+        <span>Edit</span>
+     </section>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

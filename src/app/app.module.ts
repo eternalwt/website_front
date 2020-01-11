@@ -21,6 +21,7 @@ import { ArticleComponent } from './views/article/article.component';
 import { AuthInterceptor } from './interceptors/http-interceptors';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
 import { MaterialModule } from './material.module';
+import { ToolbarComponent } from './views/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MaterialModule } from './material.module';
     DashboardComponent,
     IndexComponent,
     ArticleComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

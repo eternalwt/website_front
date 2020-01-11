@@ -19,13 +19,12 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
 
-  { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
-  { path: 'articlelist', component: ArticleListComponent },
-  
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'home', component: HomeComponent, children: [
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard], children: [
     { path: 'about', component: AboutComponent },// todo 下面的路径作为''的children
     { path: 'contact', component: ContactComponent },
+    { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
+    { path: 'articlelist', component: ArticleListComponent, canActivate: [AuthGuard] },
   ]}
 
   

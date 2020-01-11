@@ -1,17 +1,22 @@
 
 1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】。使用side-nav
 https://www.devglan.com/angular/material-sidenav-example
-https://www.tutorialspoint.com/angular_material7/angular_material7_menu.htm
+https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
 https://code-maze.com/angular-material-navigation/
 
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
 完成id-to-name管道
 
+修复ckeditor
+app-nav是否需要？
+
 Angular7路由守卫CanActivate中从服务器端判断登录状态：
 https://blog.csdn.net/A156348933/article/details/90241323
 （用setTimeout？）https://www.cnblogs.com/Answer1215/p/5924763.html
 放到interceptor里面呢？
+
+[Angular Material完全攻略]
 
 Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
 

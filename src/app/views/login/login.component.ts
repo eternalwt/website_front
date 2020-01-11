@@ -38,6 +38,7 @@ export class LoginComponent implements OnInit {
         console.log(res);
     });
   }
+  
 
   onSubmit() {
     this.submitted = true;
@@ -46,17 +47,6 @@ export class LoginComponent implements OnInit {
         return;
     }
 
-    const source = of(1, 2, 3, 4, 5);
-// transparently log values from source with 'tap'
-const example = source.pipe(
-  tap(val => console.log(`BEFORE MAP: ${val}`)),
-  map(val => val + 10),
-  tap(val => console.log(`AFTER MAP: ${val}`))
-);
-
-//'tap' does not transform values
-//output: 11...12...13...14...15
-const subscribe = example.subscribe(val => console.log(val));
 
     this.dataService.login(this.messageForm.value).subscribe(res => {
     // this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {
@@ -65,12 +55,12 @@ const subscribe = example.subscribe(val => console.log(val));
         // 1.userId保存到localStorage；
         this.storageService.setItem("userId", res["data"]);
 
-        this.dataService.isPermitted().subscribe(res => {
-          debugger;
-          // 2.跳转到后台admin页面
-          this.router.navigateByUrl("/home");
-        });
-
+        // this.dataService.isPermitted().subscribe(res => {
+        //   debugger;
+        //   // 2.跳转到后台admin页面
+        //   this.router.navigateByUrl("/home");
+        // });
+        this.router.navigateByUrl("/home");
         
       } else {
         // todo 展示出来：Your name is required、A password is required
