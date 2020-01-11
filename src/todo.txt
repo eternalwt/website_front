@@ -25,6 +25,13 @@ https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
+周末工作：
+2.jwt前后端相关的（看掉最新的shiro那个文章）
+给组件设置样式再深挖一下【ck、能看到代码的component、看不到代码的component】
+1.集成admin-lte；2.集成components
+1.可以利用在家里的时间把大屏的切换规则再仔细考虑一下，看看取数据有没有干扰
+2.横轴定制
+
 把组件里面套组件写通,ng-content
 [class.active]
 
