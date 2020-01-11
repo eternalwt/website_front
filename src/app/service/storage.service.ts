@@ -19,8 +19,9 @@ export class StorageService {
 
   // 获取数据
   getItem(key) {
-      localStorage.getItem(key);
-  }
+      let value = localStorage.getItem(key);
+      return value;
+    }
 
   // 清空
   clear() {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../service/data.service';
+import { StorageService } from 'src/app/service/storage.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,17 +11,21 @@ export class NavComponent implements OnInit {
 
   appTitle = 'myapp';
 
-  // menuList: any;
   menuList: any = [{url:"/", name: "MYAPP"}, {url:"/home/about", name: "About"}, {url: "/home/contact", name: "Contact us"}];
 
   constructor(
-    private dataService: DataService
+    private dataService: DataService,
+    private storageService: StorageService
   ) { }
 
   ngOnInit() {
-    this.dataService.getMenuList(14).subscribe(res => {
-      // todo 把14相关的逻辑写通（先登录，然后转到主页）
+    // 从localstorage获取用户id
+    let userId = Number(this.storageService.getItem("userId"));// todo 判空
+    // todo 前端换成循环
+    this.dataService.getMenuList(userId).subscribe(res => {
       if (res["code"] == 1 && res["data"].length > 0) {
+        // this.menuList;
+        debugger;
       }
     });
   }
