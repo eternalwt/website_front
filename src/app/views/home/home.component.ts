@@ -20,10 +20,4 @@ export class HomeComponent implements OnInit {
     // );
   }
 
-  getMenu() {
-    this.dataService.getMenuList().subscribe(data => {
-      
-    });
-  }
-
 }

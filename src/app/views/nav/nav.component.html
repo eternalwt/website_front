@@ -1,6 +1,5 @@
-<section class = "tp-section">
-  <span>File</span>
-</section>
-<section class = "tp-section">
-  <span>Edit</span>
-</section>
+<ng-container *ngFor="let item of menuList">
+  <section class="tp-section">
+    <span>{{item.menuName}}</span>
+  </section>
+</ng-container>

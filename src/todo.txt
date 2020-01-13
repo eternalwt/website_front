@@ -4,12 +4,19 @@ https://www.devglan.com/angular/material-sidenav-example
 https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
 https://code-maze.com/angular-material-navigation/
 
+1.把后端菜单和前端对应起来（现有的），并思考前端怎样不要先固定（从后端动态获取）；
+2.把网址限制权限调通；
+3.登出；
+4.权限配置继续(角色、菜单)
+3.继续基础设置及material（搜索框等）；
+4.样式
+5.接工程
+
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
 完成id-to-name管道
 
 修复ckeditor
-app-nav是否需要？
 
 Angular7路由守卫CanActivate中从服务器端判断登录状态：
 https://blog.csdn.net/A156348933/article/details/90241323
