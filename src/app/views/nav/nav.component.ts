@@ -20,7 +20,8 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
     // 从localstorage获取用户id
-    let userId = Number(this.storageService.getItem("userId"));// todo 判空
+    // todo 判空
+    let userId = Number(this.storageService.getItem("userId"));
     // 获取对应权限的菜单
     this.dataService.getMenuList(userId).subscribe(res => {
       if (res["code"] == 1 && res["data"].length > 0) {
