@@ -1,18 +1,13 @@
 
-1.把完整的二级菜单移到左侧【其中有一个菜单专门用来做demo】。使用side-nav
-https://www.devglan.com/angular/material-sidenav-example
-https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
-https://code-maze.com/angular-material-navigation/
-
-0.增加菜单的onClick后的导航：router
 1.把后端菜单和前端对应起来（现有的）【为啥有些没读出来？】，并思考前端怎样不要先固定（从后端动态获取）；
 2.把网址限制权限调通；
 3.登出；
 4.权限配置继续(角色、菜单)，使用<mat-checkbox>【看看有什么优势】：
 https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
-5.样式（使左侧菜单不要伸出来，顺带学习flex等布局）
-6.继续基础设置及material（搜索框等）；
-7.继续整合
+5.side-nav二级\三级菜单？
+6.样式（使左侧菜单不要伸出来，顺带学习flex等布局）
+7.继续基础设置及material（搜索框等）；
+8.继续整合
 
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
@@ -297,3 +292,7 @@ Postman是可以测试文件参数的，在Body form-data里面
 1.index.html里面的<app-root></app-root>换成<app-login></app-login>；
 2.app.module.ts里面的bootstrap做替换：bootstrap: [LoginComponent]//AppComponent
 
+side-nav
+https://www.devglan.com/angular/material-sidenav-example
+https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
+https://code-maze.com/angular-material-navigation/
