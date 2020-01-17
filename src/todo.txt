@@ -1,7 +1,7 @@
 
-1.把后端菜单和前端对应起来（现有的）【为啥有些没读出来？】，并思考前端怎样不要先固定（从后端动态获取）；
+1.思考前端路由里面怎样不要先固定（从后端动态获取）；
 2.把网址限制权限调通；
-3.登出；
+3.登出【思考干了什么】；
 4.权限配置继续(角色、菜单)，使用<mat-checkbox>【看看有什么优势】：
 https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
 5.side-nav二级\三级菜单？
@@ -9,6 +9,12 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
 7.继续基础设置及material（搜索框等）；
 8.继续整合
 
+1.（1）把菜单放入sessionStorage；（2）设置canActivated；（3）看看后端是否需要拦截
+2.side-menu是不是可以用于菜单树（能否做多级）；
+
+过年目标：1.基础设置；2.angular material；3.看书
+
+看一下公司里面的权限分配
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
 完成id-to-name管道
@@ -34,12 +40,16 @@ https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
+分两种情况思考，userId是不是应该保存在localStorage里面（和session原理也对比）
+
 周末工作：
 2.jwt前后端相关的（看掉最新的shiro那个文章）
 给组件设置样式再深挖一下【ck、能看到代码的component、看不到代码的component】
 1.集成admin-lte；2.集成components
 1.可以利用在家里的时间把大屏的切换规则再仔细考虑一下，看看取数据有没有干扰
 2.横轴定制
+
+前端的新发现：前端开发出层次性和组合性思维，图标、组件、布局、样式这些元素是可以拆开和组合的
 
 把组件里面套组件写通,ng-content
 [class.active]
