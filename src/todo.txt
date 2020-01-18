@@ -1,4 +1,8 @@
 
+【晚上】
+1.思考路由到底几截的问题；
+2.把登出做好（并思考一下JWT的登出）
+
 1.思考前端路由里面怎样不要先固定（从后端动态获取）；
 2.把网址限制权限调通；
 3.登出【思考干了什么】；
@@ -9,7 +13,7 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
 7.继续基础设置及material（搜索框等）；
 8.继续整合
 
-1.（1）把菜单放入sessionStorage；（2）设置canActivated；（3）看看后端是否需要拦截
+1.菜单权限再看看后端是否需要拦截
 2.side-menu是不是可以用于菜单树（能否做多级）；
 
 过年目标：1.基础设置；2.angular material；3.看书

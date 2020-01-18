@@ -16,11 +16,14 @@ import { DataService } from 'src/app/service/data.service';
   
       // 路由守卫
       canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-          if (!this.checkPermission()) {
-              alert("no permission");
+          if (!this.hasPermission(state.url)) {
+              alert("no permission!");
               // todo 用angular material 2的弹出框
+              // todo 路由不变，页面不抖动
+              // todo 测试：1.点击链接；2.从网址输入
+              return false;
           }
-        return this.checkPermission();
+        return true;
       }
   
       // https://blog.csdn.net/yw00yw/article/details/89381043
@@ -35,8 +38,15 @@ import { DataService } from 'src/app/service/data.service';
           return false;
       }
 
-      checkPermission(): boolean {
-        //   return this.dataService.isPermitted();
-        return true;
+      hasPermission(url: string): boolean {
+        // todo url是否需要判空？这个问题要考虑一下
+        if (sessionStorage.getItem("menu")) {
+          let urlList = url.split("/");
+          if (sessionStorage.getItem("menu").indexOf(urlList[urlList.length - 1]) >= 0)
+          return true;
+        }
+
+        return false;
       }
+
   }

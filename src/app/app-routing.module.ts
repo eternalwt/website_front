@@ -14,15 +14,15 @@ import { AuthGuard } from './auth.guard';
 const routes: Routes = [
 
   // todo 配置canActivateChild及与父级的关系：https://www.cnblogs.com/gushiyoyo/p/11271389.html
-
+  // todo 什么场景适合使用canActivateChild？
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
 
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard], children: [
-    { path: 'about', component: AboutComponent },// todo 下面的路径作为''的children
-    { path: 'contact', component: ContactComponent },
+    { path: 'about', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
+    { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
     { path: 'articlelist', component: ArticleListComponent, canActivate: [AuthGuard] },
   ]}
