@@ -30,13 +30,11 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
 
-    // const ofListObs = of(1, 2, 3);
-    // const strObs = of('a', 'b', 'c');
-    // const intervalObs = interval(500);
-    // const resObs = concat(ofListObs, strObs, intervalObs);
-    // resObs.subscribe(res => {
-    //     console.log(res);
-    // });
+    // todo 如果已经登录，则直接redirect到home
+    if (localStorage.getItem("userId")) {
+      this.router.navigateByUrl("/home");
+    }
+
   }
   
 
