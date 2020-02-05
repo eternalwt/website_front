@@ -1,15 +1,21 @@
 
 【晚上】
 1.思考路由到底几截的问题；
-2.把登出做好（并思考一下JWT的登出）
+2.思考并实现JWT的登出）
+
+【修复ckeditor（ng update和ng audit fix后用不了了）】
+
+
+1.logout写通(redirect)；
+2.继续写权限的赋予；
+3.API返回值的统一管理（再思考一下周亮的抛出异常）
+4.如果已经登录，在登录页面直接跳转到home页面
 
 1.思考前端路由里面怎样不要先固定（从后端动态获取）；
-2.把网址限制权限调通；
-3.登出【思考干了什么】；
 4.权限配置继续(角色、菜单)，使用<mat-checkbox>【看看有什么优势】：
 https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
 5.side-nav二级\三级菜单？
-6.样式（使左侧菜单不要伸出来，顺带学习flex等布局）
+6.样式（学习flex等布局）
 7.继续基础设置及material（搜索框等）；
 8.继续整合
 
@@ -18,21 +24,27 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
 
 过年目标：1.基础设置；2.angular material；3.看书
 
+一个角色列表，点击后右侧是权限的勾选情况【2个组件】
+
 看一下公司里面的权限分配
 2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
 
 完成id-to-name管道
 
-修复ckeditor（ng update和ng audit fix后用不了了）
-
-Angular7路由守卫CanActivate中从服务器端判断登录状态：
+【继续学习别人的做法】Angular7路由守卫CanActivate中从服务器端判断登录状态：
 https://blog.csdn.net/A156348933/article/details/90241323
 （用setTimeout？）https://www.cnblogs.com/Answer1215/p/5924763.html
 放到interceptor里面呢？
 
-[Angular Material完全攻略]
-
+[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
+Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
+material官方全列表：https://material.angular.io/components/dialog/api
+MatDialog：
+https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
+https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
+https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
 Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
+使用material还有个好处，可以尝试一下换界面的工作量
 
 【几个关联的问题】
 1.给前端刷新token（是不是还是要依靠header？）；
@@ -167,6 +179,9 @@ https://github.com/angular/components
 angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
 https://blog.csdn.net/daqiang012/article/details/86617513
 https://www.jianshu.com/p/48e5d02a2f88
+
+angular flex-layout project：https://github.com/angular/flex-layout
+Angular SPA with 3 row (header, main and footer) Angular Flex layout project：https://github.com/kumaran-is/ngx-web-starter
 
 GitHub开源的10个超棒后台管理面板（有几个angular的）：https://blog.csdn.net/m0_38106923/article/details/101050788
 
@@ -310,3 +325,6 @@ side-nav
 https://www.devglan.com/angular/material-sidenav-example
 https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
 https://code-maze.com/angular-material-navigation/
+
+添加dialog已做通一种，第二种方法也试一下：https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
+

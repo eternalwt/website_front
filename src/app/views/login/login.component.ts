@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private dataService: DataService,
     private storageService: StorageService,
-    private router: Router
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -30,13 +30,13 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
 
-    const ofListObs = of(1, 2, 3);
-    const strObs = of('a', 'b', 'c');
-    const intervalObs = interval(500);
-    const resObs = concat(ofListObs, strObs, intervalObs);
-    resObs.subscribe(res => {
-        console.log(res);
-    });
+    // const ofListObs = of(1, 2, 3);
+    // const strObs = of('a', 'b', 'c');
+    // const intervalObs = interval(500);
+    // const resObs = concat(ofListObs, strObs, intervalObs);
+    // resObs.subscribe(res => {
+    //     console.log(res);
+    // });
   }
   
 

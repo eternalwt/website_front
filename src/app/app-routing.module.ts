@@ -8,6 +8,8 @@ import { RegisterComponent } from './views/register/register.component';
 import { ArticleComponent } from './views/article/article.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
+import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
+
 import { AuthGuard } from './auth.guard';
 
 
@@ -20,11 +22,12 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
 
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard], children: [
+  { path: 'home', component: HomeComponent, children: [// , canActivate: [AuthGuard]
     { path: 'about', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
     { path: 'articlelist', component: ArticleListComponent, canActivate: [AuthGuard] },
+    { path: 'permassign', component: PermAssignComponent },
   ]}
 
   

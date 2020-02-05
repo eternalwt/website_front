@@ -8,10 +8,17 @@ import {
     MatNativeDateModule,
     MatTableModule,
     MatSortModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatCardModule,
+    MatCheckboxModule
 } from '@angular/material';
+import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.component';
 
 @NgModule({
+  declarations: [
+    SimpleDialogComponent
+  ],
   imports: [
     MatButtonModule,
     MatInputModule,
@@ -21,7 +28,10 @@ import {
     MatNativeDateModule,
     MatTableModule,
     MatSortModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatDialogModule
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +42,13 @@ import {
     MatNativeDateModule,
     MatTableModule,
     MatSortModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    SimpleDialogComponent,
   ]
 })
 export class MaterialModule {}

@@ -22,6 +22,7 @@ import { AuthInterceptor } from './interceptors/http-interceptors';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
 import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './views/toolbar/toolbar.component';
+import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ToolbarComponent } from './views/toolbar/toolbar.component';
     IndexComponent,
     ArticleComponent,
     ArticleListComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    PermAssignComponent,
   ],
   imports: [
     BrowserModule,
