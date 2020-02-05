@@ -11,7 +11,8 @@ import {
     MatProgressSpinnerModule,
     MatDialogModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule
 } from '@angular/material';
 import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.component';
 
@@ -31,6 +32,7 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatProgressSpinnerModule,
     MatCardModule,
     MatCheckboxModule,
+    MatToolbarModule,
     MatDialogModule
   ],
   exports: [
@@ -45,6 +47,7 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatProgressSpinnerModule,
     MatCardModule,
     MatCheckboxModule,
+    MatToolbarModule,
     MatDialogModule
   ],
   entryComponents: [

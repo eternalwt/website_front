@@ -1,11 +1,17 @@
-<header>
+<!-- <header>
     <div class="container">
         <a routerLink="/" class="logo">apptitle</a>
         <nav>
         <ul>
-            <!-- <li *ngFor="let menu of menuList"><a routerLink="{{menu.url}}">{{ menu.name }}</a></li> -->
             <li (click)="logoutClick()">logout</li>
         </ul>
         </nav>
     </div>
-</header>
+</header> -->
+
+<mat-toolbar color = "primary">
+    <span class="gap"><a routerLink="/" class="logo">LOGO</a></span>
+    <!-- <span>Edit</span> -->
+    <span class="filler"></span>
+    <span style="cursor: pointer;" (click)="logoutClick()">Logout</span>
+ </mat-toolbar>

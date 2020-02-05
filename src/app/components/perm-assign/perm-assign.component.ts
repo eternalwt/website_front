@@ -24,12 +24,15 @@ export class PermAssignComponent implements OnInit {
     ;
 
   ngOnInit() {
-    // 1.读出所有的权限【要能分类】；
+    // 1.读出所有的权限【要能分类】；要能够分级授权
     
 
     // 2.读出各个角色有的权限
     
 
+    // 3.组合得到前端需要的数据
+
+    
   }
 
 }
