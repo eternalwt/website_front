@@ -4,24 +4,22 @@
 
 
 0.【修复ckeditor（ng update和ng audit fix后用不了了）】
-1.继续写权限的赋予【写通】；
-2.API返回值的统一管理（再思考一下周亮的抛出异常，能理解，但是还不能灵活运用）；
-3.toolbar上面加搜索框【这是个重要的问题】；
-4.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
-5.每跳转路由，还是要从后端验证一下，用emit；
-6.分页写通；
+1.继续写权限的修改；
+2.toolbar上面加搜索框【这是个重要的问题】；
+3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
+4.每跳转路由，还是要从后端验证一下，用emit；
+5.分页写通；
 
 
 1.思考前端路由里面怎样不要先固定（从后端动态获取）；
-2.权限配置继续(角色、菜单)，使用<mat-checkbox>【看看有什么优势】：
-https://www.tutorialspoint.com/angular_material7/angular_material7_checkbox.htm
+2.用列表管理角色（分页，还有增删改）；
 3.side-nav二级\三级菜单？
 4.样式（学习flex等布局）
-5.继续基础设置及material（搜索框等）；
+5.继续基础设置及material（后端shiro等、前端搜索框、material等）；
 6.继续整合
 
 【再看一下】
-Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
+Ng-Matero：基于 Angular Material 搭建的中后台管理框架【学习】：
 https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
 
@@ -299,6 +297,8 @@ https://github.com/ui-router/angular
 
 模板与angular的整合：模板的每个页面都对应angular的一个component（这个心里没底，单独找一下午开一个工程试一下）
 指导思想：用angular/material把后端和前端基础设施逻辑写好，美化界面是最后一步
+
+Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets：https://marketplace.visualstudio.com/items?itemName=1tontech.angular-material
 
 下一问题：下载angular版的easyUI界面如何跑起来？（ng serve）
 把前端计划变更为前端技术选型【这是非常关键的战略步骤。少即是多，如何能找到正确的选型？】。模板与组件之间的关系搞清楚【看代码对比就OK了，先把我下载的那个看了】。

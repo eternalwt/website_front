@@ -33,6 +33,18 @@ export class DataService {
     return this.http.get(environment.baseUrl + `menu/selectByUserId?userId=${userId}`);
   }
 
+  getPermissionListByUserId(userId) {
+    return this.http.get(environment.baseUrl + `permission/getPermissionListByUserId?userId=${userId}`);
+  }
+
+  getAllPermissionList() {
+    return this.http.get(environment.baseUrl + `permission/getAllPermissionList`);
+  }
+
+  getRolePermissionListMap() {
+    return this.http.get(environment.baseUrl + `permission/getRolePermissionListMap`);
+  }
+
   addArticle(param) {
     return this.http.post(environment.baseUrl + `article/add`, param);
   }
