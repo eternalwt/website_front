@@ -1,0 +1,48 @@
+写这个页面对控件的使用能提升不少
+<mat-icon>home</mat-icon>为啥icon不起效？
+<br />
+<br />
+
+<table>
+    <tr>
+        <td>菜单名称</td>
+        <td>
+            <mat-form-field class = "tp-full-width">
+                <input matInput placeholder = "菜单名称" value = "">
+             </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>菜单路径</td>
+        <td>
+            <mat-form-field class = "tp-full-width">
+                <input matInput placeholder = "相对URL，例：home" value = "">
+             </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>上级菜单</td>
+        <td>【Expansion Panel + Tree】</td>
+    </tr>
+    <tr>
+        <td>菜单序号</td>
+        <td>
+            <mat-form-field class = "tp-full-width">
+                <input matInput placeholder = "排序" value = "">
+             </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>是否启用</td>【加默认选中】
+        <td>
+            <mat-radio-group class = "tp-radio-group" [(ngModel)] = "inUse">
+                <mat-radio-button class = "tp-radio-button"
+                   *ngFor = "let state of stateList" [value] = "state">
+                   {{state}}
+                </mat-radio-button>
+             </mat-radio-group>
+        </td>
+    </tr>
+</table>
+
+

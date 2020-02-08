@@ -13,7 +13,8 @@ import {
     MatCardModule,
     MatCheckboxModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule
 } from '@angular/material';
 import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.component';
 
@@ -35,7 +36,8 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatCheckboxModule,
     MatToolbarModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule
   ],
   exports: [
     MatButtonModule,
@@ -51,7 +53,8 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatCheckboxModule,
     MatToolbarModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule
   ],
   entryComponents: [
     SimpleDialogComponent,

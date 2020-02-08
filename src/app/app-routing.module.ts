@@ -11,22 +11,24 @@ import { ArticleListComponent } from './views/article/article-list/article-list.
 import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
 
 import { AuthGuard } from './auth.guard';
+import { AddMenuComponent } from './views/menu/add-menu/add-menu.component';
 
 
 const routes: Routes = [
 
   // todo 配置canActivateChild及与父级的关系：https://www.cnblogs.com/gushiyoyo/p/11271389.html
   // todo 什么场景适合使用canActivateChild？
+  // todo 
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, children: [// , canActivate: [AuthGuard]
     { path: 'about', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
     { path: 'articlelist', component: ArticleListComponent, canActivate: [AuthGuard] },
+    { path: 'addmenu', component: AddMenuComponent },
     { path: 'permassign', component: PermAssignComponent },
   ]}
 

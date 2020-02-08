@@ -58,11 +58,8 @@ export class ArticleComponent implements OnInit {
 
     // this.dataService.addArticle(this.messageForm.value).subscribe(res => {
     this.dataService.addArticle({"title": this.title, "content": this.content}).subscribe(res => {
-      debugger;
-      // todo 给提示
-      // else {
-      //   // todo 提示用户名密码错误、显示验证码等（Angular Material 2）
-      // }
+      alert("添加成功");// todo 改成dialog
+      // todo 错误处理：用户名密码错误、显示验证码等
     
     });
 

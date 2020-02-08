@@ -15,19 +15,17 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
       private dialogModel: MatDialog
     ) {}
 
+    // todo 原理好像没搞明白？
     simpleDialog: MatDialogRef<SimpleDialogComponent>;
 
-    dialog() {
+    showMsg() {
       this.simpleDialog = this.dialogModel.open(SimpleDialogComponent);
     }
 
     // 路由守卫
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
       if (!this.hasPermission(state.url)) {
-          // alert("no permission!");
-          this.dialog();
-
-          // todo 用angular material 2的弹出框
+          this.showMsg();
           // todo 路由不变，页面不抖动
           // todo 测试：1.点击链接；2.从网址输入
           return false;

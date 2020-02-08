@@ -23,6 +23,7 @@ import { ArticleListComponent } from './views/article/article-list/article-list.
 import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './views/toolbar/toolbar.component';
 import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
+import { AddMenuComponent } from './views/menu/add-menu/add-menu.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { PermAssignComponent } from './components/perm-assign/perm-assign.compon
     ArticleListComponent,
     ToolbarComponent,
     PermAssignComponent,
+    AddMenuComponent,
   ],
   imports: [
     BrowserModule,

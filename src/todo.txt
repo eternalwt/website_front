@@ -5,10 +5,20 @@
 
 =================================================================
 
-【放假一定要搞定的】
+【2月9日】
+先清5个todo，现在开始感觉到自己开发的难度了
+simple-dialog.component.html里面的文本改成可动态修改的
+菜单的添加
 
+【放假一定要搞定的】
+article.component.ts改名
+我找的angular material教程有一个很大的问题：没有讲事件的用法，因此这个教程的完成度非常低
+0.菜单的添加（正在写）
 1.二级菜单也迫在眉睫了【关联问题：1.后端的修改；2.菜单的添加】
 2.菜单赋予权限还没写【添加、删除、修改】
+
+mat-form-field（form field）是一个重要的控件（和很多都有关联）：
+https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
 
 =================================================================
 
@@ -24,6 +34,9 @@
 4.样式（学习flex等布局）
 5.继续基础设置及material（后端shiro等、前端搜索框、material等）；
 6.继续整合
+7.menu的东西放到一个module里面
+1.菜单权限再看看后端是否需要拦截
+2.side-menu是不是可以用于菜单树（能否做多级）；
 
 ================================================================
 
@@ -31,9 +44,6 @@
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架【学习】：
 https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
-
-1.菜单权限再看看后端是否需要拦截
-2.side-menu是不是可以用于菜单树（能否做多级）；
 
 过年目标：1.基础设置；2.angular material；3.看书
 

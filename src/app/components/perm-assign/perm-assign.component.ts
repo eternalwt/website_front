@@ -69,7 +69,7 @@ export class PermAssignComponent implements OnInit {
     // todo 还有个大漏洞，没有判断checked
 
     this.dataService.updatePermission(menuList).subscribe(res => {
-      alert("permission saved!");// todo 修改成Dialog对话框
+      alert("保存成功!");// todo 1.修改成Dialog对话框；2.如何让用户尽快登出修改权限
     });
     
   }
