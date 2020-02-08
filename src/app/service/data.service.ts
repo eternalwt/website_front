@@ -45,6 +45,10 @@ export class DataService {
     return this.http.get(environment.baseUrl + `permission/getRolePermissionListMap`);
   }
 
+  updatePermission(menuList) {
+    return this.http.post(environment.baseUrl + `permission/updatePermission`, menuList);
+  }
+
   addArticle(param) {
     return this.http.post(environment.baseUrl + `article/add`, param);
   }

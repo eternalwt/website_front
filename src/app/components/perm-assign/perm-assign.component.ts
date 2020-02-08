@@ -56,8 +56,21 @@ export class PermAssignComponent implements OnInit {
 
   savePermission() {
     // todo 保存权限
+    let menuList = [];
+    // todo 组装map。这样是为了后端不再定义vo，这种方法好不好有待商榷
+    // todo 一次性发送给后端【既要保证效率，又要逻辑清晰】
+    for (let i = 0; i < this.menuList.length; i++) {
+      for (let j = 0; j < this.menuList[i].permList.length; j++) {
+        // 使用map还是json？或者两者都试一下？
+        menuList.push({perm: this.menuList[i].permList[j].key, checked: this.menuList[i].permList[j].checked, roleName: this.menuList[i].roleName});
+      }
+    }
 
-    alert("permission saved!");// todo 修改成Dialog对话框
+    // todo 还有个大漏洞，没有判断checked
+
+    this.dataService.updatePermission(menuList).subscribe(res => {
+      alert("permission saved!");// todo 修改成Dialog对话框
+    });
     
   }
 
