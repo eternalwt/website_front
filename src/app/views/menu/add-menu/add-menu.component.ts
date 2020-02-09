@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMenuComponent implements OnInit {
 
-  inUse: string;
   stateList: string[] = ['启用', '不启用'];
+  inUse: string = this.stateList[0];
 
   constructor() { }
 

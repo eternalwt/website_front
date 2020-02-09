@@ -29,6 +29,10 @@ export class DataService {
     return this.http.get(environment.baseUrl +  `permission/isPermitted`);
   }
 
+  addMenu(menu) {
+    return this.http.post(environment.baseUrl + `menu/add`, menu);
+  }
+
   getMenuList(userId: number) {
     return this.http.get(environment.baseUrl + `menu/selectByUserId?userId=${userId}`);
   }

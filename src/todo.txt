@@ -1,34 +1,37 @@
 
 【晚上】
 1.思考路由到底几截的问题；
-2.思考并实现JWT的登出）
+2.思考并实现JWT的登出
 
 =================================================================
 
-【2月9日】
-先清5个todo，现在开始感觉到自己开发的难度了
+【2月10日】继续搞add-menu
+1.【Expansion Panel + Tree】;
+2.showMsg的文本抽出
+3.tab、面包屑进展一点
+
+【2月10日】
+mybatis配置往前推进一点【2小时到半天，测试清楚】
 simple-dialog.component.html里面的文本改成可动态修改的
-菜单的添加
+菜单menu的添加（把这个写通就很困难了，然后再看scheme）
+1.二级菜单【关联问题：1.后端的修改；2.菜单的添加】：是否可以用sidenav加Expansion Panel加List
+《YAST》13.4 Coroutines用到宏
 
 【放假一定要搞定的】
-article.component.ts改名
+article.component.ts改名成add（add要统一）
 我找的angular material教程有一个很大的问题：没有讲事件的用法，因此这个教程的完成度非常低
-0.菜单的添加（正在写）
-1.二级菜单也迫在眉睫了【关联问题：1.后端的修改；2.菜单的添加】
-2.菜单赋予权限还没写【添加、删除、修改】
-
-mat-form-field（form field）是一个重要的控件（和很多都有关联）：
-https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
+0.菜单的添加（正在写），需要先看一下material
+2.菜单功能【添加、删除、修改】
+3.用户的增删改
 
 =================================================================
 
-0.【修复ckeditor（ng update和ng audit fix后用不了了）】
+0.【修复ckeditor（ng update和ng audit fix后用不了了）】，对比一下添加的教程。然后：测试添加文章 - 加了用户id
 2.toolbar上面加搜索框【这是个重要的问题】；
 3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
 4.每跳转路由，还是要从后端验证一下，用emit；
 5.分页写通；
 
-1.思考前端路由里面怎样不要先固定（从后端动态获取）；
 2.用列表管理角色（分页，还有增删改）；
 3.side-nav二级\三级菜单？
 4.样式（学习flex等布局）
@@ -38,17 +41,19 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.ht
 1.菜单权限再看看后端是否需要拦截
 2.side-menu是不是可以用于菜单树（能否做多级）；
 
-================================================================
+=================================================================
 
 【再看一下】
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架【学习】：
 https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
 
-过年目标：1.基础设置；2.angular material；3.看书
+过年目标：1.基础设施；2.angular material；3.看书
+
+angular material的component实现用的是指令，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
 
 看一下公司里面的权限分配
-2.把前后端权限控制写通【要能分配，涉及到列表、勾选、role等，还有shiro的permission再看一下】
+2.把前后端权限控制写通【shiro的permission再看一下】
 
 完成id-to-name管道
 
@@ -90,7 +95,6 @@ https://code-maze.com/angular-material-navigation/
 把组件里面套组件写通,ng-content
 [class.active]
 
-添加文章：加用户id和时间
 表格：编辑、删除（把angular material 2的提示框写通）、列出创建者、查看、翻页
 【周六】
 1.把ArticleList用Material2做好
@@ -351,3 +355,9 @@ https://code-maze.com/angular-material-navigation/
 添加dialog已做通一种，第二种方法也试一下：https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
 
 Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
+
+mat-form-field（form field） is used to create a wrapper over angular components and is used to apply text styles like underline, bold, hints etc：
+https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
+
+mat-icon显示不出来是不是因为没有加CSS：https://github.com/angular/components/issues/7948
+
