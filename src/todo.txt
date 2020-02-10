@@ -8,10 +8,11 @@
 【2月10日】继续搞add-menu
 1.【Expansion Panel + Tree】;
 2.showMsg的文本抽出
-3.tab、面包屑进展一点
+3.tab、面包屑进展一点【很有用的特性】
 
 【2月10日】
-mybatis配置往前推进一点【2小时到半天，测试清楚】
+把我的generator.scm看懂，下一项是语言求值器
+mybatis配置往前推进一点【2小时到半天，测试清楚】这是极为重要的基础设施和能力
 simple-dialog.component.html里面的文本改成可动态修改的
 菜单menu的添加（把这个写通就很困难了，然后再看scheme）
 1.二级菜单【关联问题：1.后端的修改；2.菜单的添加】：是否可以用sidenav加Expansion Panel加List
@@ -23,6 +24,17 @@ article.component.ts改名成add（add要统一）
 0.菜单的添加（正在写），需要先看一下material
 2.菜单功能【添加、删除、修改】
 3.用户的增删改
+
+优先完成：加一个面包屑、加一个tab（这个看起来有点难）
+【2月10日】
+0.继续continuation；继续material的事件
+1.语言求值器
+2.generator往前推进一点【little schemer继续推进】：
+https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thing-with-yield-in-python-and-javascript
+3.mybatis的配置往前推进一点；
+4.后端继续搞（shiro相关的再突破一点）；
+5.前端看看人人网那个哥们儿的框架
+continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写了
 
 =================================================================
 

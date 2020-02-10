@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-add-menu',
@@ -10,11 +11,20 @@ export class AddMenuComponent implements OnInit {
   stateList: string[] = ['启用', '不启用'];
   inUse: string = this.stateList[0];
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   // todo 修改布局
 
   ngOnInit() {
+  }
+
+  addMenu() {
+    let inUse = this.inUse == this.stateList[0];
+    // todo
+    let menu = {};
+    this.dataService.addMenu(menu).subscribe(res => {
+      // todo dialog
+    });
   }
 
 }
