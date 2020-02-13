@@ -5,13 +5,21 @@
 
 =================================================================
 
+测试isPermitted方法
+尝试使用一次updateWrapper
+
 material的设计思想还是没有搞明白
 
 0.把wrapper的用法统一起来（把service过一遍，把wrapper用法彻底搞清楚）；
 1.详细对比mybatis-plus和mybatis功能；
-3.文章列表的分页；
-2.角色、用户的增删查改【测试】；
-4.列表的按条件过滤（先搞一个可行的方案）；
+2.把 shiropermission 看掉，整合2个service：
+https://blog.csdn.net/weixin_38121659/article/details/78715454
+https://blog.csdn.net/yifansj/article/details/77344427
+3.文章列表的分页；(Paginator、Sort Header)：从这个功能学习官网文档的使用
+https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+4.角色、用户的增删查改【前端】及权限分配；
+5.列表的按条件过滤（加 @MultiRequestBody ，先搞一个可行的方案）；
+6.getMenuTree方法（1.和前端联通）
 
 home按钮点不动。把菜单再梳理一遍
 【2月10日】继续搞add-menu，菜单的添加：
@@ -29,12 +37,16 @@ home按钮点不动。把菜单再梳理一遍
 8.二级菜单【关联问题：1.后端的修改；2.菜单的添加】：可以用sidenav加Expansion Panel加List（但是并不简单）
 《YAST》13.4 Coroutines用到宏
 
+从官网学习angular material！！！：https://material.angular.io/components/categories
+
 【放假一定要搞定的】
 article.component.ts改名成add（add要统一）
-我找的angular material教程有一个很大的问题：没有讲事件的用法，因此这个教程的完成度非常低
+我找的angular material教程有一个很大的问题：没有讲事件的用法，因此这个教程的完成度非常低。
+只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+从官网看事件：https://material.angular.io/components/categories
 2.菜单功能【添加、删除、修改】
-3.用户的增删改列表
-4.角色的增删改列表
+3.用户的增删改列表及权限分配
+4.角色的增删改列表及权限分配
 
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
 【2月10日】
@@ -73,7 +85,7 @@ https://www.cnblogs.com/nzbin/p/11392311.html
 
 过年目标：1.基础设施；2.angular material；3.看书
 
-angular material的component实现用的是指令，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
+angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
 
 看一下公司里面的权限分配
 2.把前后端权限控制写通【shiro的permission再看一下】

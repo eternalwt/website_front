@@ -16,7 +16,8 @@ import {
     MatIconModule,
     MatRadioModule,
     MatExpansionModule,
-    MatTreeModule
+    MatTreeModule,
+    MatPaginatorModule
 } from '@angular/material';
 import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.component';
 
@@ -41,7 +42,8 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatIconModule,
     MatRadioModule,
     MatExpansionModule,
-    MatTreeModule
+    MatTreeModule,
+    MatPaginatorModule
   ],
   exports: [
     MatButtonModule,
@@ -60,7 +62,8 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatIconModule,
     MatRadioModule,
     MatExpansionModule,
-    MatTreeModule
+    MatTreeModule,
+    MatPaginatorModule
   ],
   entryComponents: [
     SimpleDialogComponent,
