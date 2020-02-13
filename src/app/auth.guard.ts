@@ -56,4 +56,8 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
       return false;
     }
 
+    // hasPermission(url: string) boolean {
+      
+    // }
+
   }

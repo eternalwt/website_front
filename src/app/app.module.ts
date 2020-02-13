@@ -13,7 +13,7 @@ import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
-import { RegisterComponent } from './views/register/register.component';
+import { RegisterComponent } from './views/user/register/register.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { IndexComponent } from './views/index/index.component';
 import { ArticleComponent } from './views/article/article.component';
@@ -24,6 +24,9 @@ import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './views/toolbar/toolbar.component';
 import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
 import { AddMenuComponent } from './views/menu/add-menu/add-menu.component';
+import { UserListComponent } from './views/user/user-list/user-list.component';
+import { AddRoleComponent } from './views/role/add-role/add-role.component';
+import { RoleListComponent } from './views/role/role-list/role-list.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { AddMenuComponent } from './views/menu/add-menu/add-menu.component';
     ToolbarComponent,
     PermAssignComponent,
     AddMenuComponent,
+    UserListComponent,
+    AddRoleComponent,
+    RoleListComponent,
   ],
   imports: [
     BrowserModule,

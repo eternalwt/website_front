@@ -6,7 +6,7 @@
 
   <label>
     Name:
-    <input type="text" formControlName="username">
+    <input type="text" formControlName="username" value={{username}}>
     <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
       <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
     </div>
@@ -14,7 +14,8 @@
 
   <label>
     password:
-    <textarea formControlName="password"></textarea>
+    <input type="text" formControlName="password" value={{password}}>
+    <!-- <!-- <textarea formControlName="password"></textarea> --> -->
     <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
       <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
     </div>
@@ -22,5 +23,7 @@
   重复密码：
   验证码：
   <input type="submit" value="注册" class="cta">
+
+  <button (click)="saveUser"></button>
 
 </form>
