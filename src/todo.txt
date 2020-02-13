@@ -32,14 +32,14 @@ home按钮点不动。把菜单再梳理一遍
   3.加click事件；
 
 【2月11日】
-2.tab、面包屑进展一点【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
-3.mybatis配置往前推进一点【2小时到半天，测试清楚】这是极为重要的基础设施和能力
-4.语言求值器eval
-5.搞清楚用directive和component封装控件的异同
-6.把我的generator.scm看懂，下一项是语言求值器
-7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
-8.二级菜单【关联问题：1.后端的修改；2.菜单的添加】：可以用sidenav加Expansion Panel加List（但是并不简单）
-《YAST》13.4 Coroutines用到宏
+  2.tab、面包屑进展一点【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
+  3.mybatis配置往前推进一点【2小时到半天，测试清楚】这是极为重要的基础设施和能力
+  4.语言求值器eval
+  5.搞清楚用directive和component封装控件的异同
+  6.把我的generator.scm看懂，下一项是语言求值器
+  7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
+  8.二级菜单【关联问题：1.后端的修改；2.菜单的添加】：可以用sidenav加Expansion Panel加List（但是并不简单）
+  《YAST》13.4 Coroutines用到宏
 
 从官网学习angular material！！！：https://material.angular.io/components/categories
 
