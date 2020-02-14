@@ -5,7 +5,14 @@
 
 =================================================================
 
-【13号】把user和role写好
+用英文再看一次@Bean、@Autowired，看配置
+
+【14号】
+1.前端：把样式修复好；
+2.把分页写个完整的出来，把MultiRequestBody搞清楚【基础设置】
+3.把user和role写好
+4.再看一下那个人主题风格的一致性
+5.继续little schemer
 
 尝试使用一次updateWrapper
 
@@ -16,7 +23,7 @@ https://segmentfault.com/a/1190000016106262
 material的设计思想还是没有搞明白
 
 1.详细对比mybatis-plus和mybatis功能；
-2.把 shiropermission 看掉，整合2个service：
+2.把 shiropermission 看掉：
 https://blog.csdn.net/weixin_38121659/article/details/78715454
 https://blog.csdn.net/yifansj/article/details/77344427
 3.文章列表的分页；(Paginator、Sort Header)：从这个功能学习官网文档的使用
@@ -25,7 +32,6 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 5.列表的按条件过滤（加 @MultiRequestBody ，先搞一个可行的方案）；
 6.getMenuTree方法（1.和前端联通）
 
-home按钮点不动。把菜单再梳理一遍
 【2月10日】继续搞add-menu，菜单的添加：
   1.把其他几个字段准备好；
   2.把数据加到控件里面去；
@@ -171,6 +177,8 @@ switchAll()的作用？
   download() {
     // 从blob中读数据 https://javascript.info/blob
   }
+
+属性值的绑定用错了，应该是这样：[length] = "length"
 
 只有完整做一下，才能知道自己能获得什么：angular materla 2、indigo.css
 

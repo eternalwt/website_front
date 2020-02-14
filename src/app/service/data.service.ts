@@ -38,19 +38,19 @@ export class DataService {
   }
 
   getPermissionListByUserId(userId) {
-    return this.http.get(environment.baseUrl + `permission/getPermissionListByUserId?userId=${userId}`);
+    return this.http.get(environment.baseUrl + `menu/getPermissionListByUserId?userId=${userId}`);
   }
 
   getAllPermissionList() {
-    return this.http.get(environment.baseUrl + `permission/getAllPermissionList`);
+    return this.http.get(environment.baseUrl + `menu/getAllPermissionList`);
   }
 
   getRolePermissionListMap() {
-    return this.http.get(environment.baseUrl + `permission/getRolePermissionListMap`);
+    return this.http.get(environment.baseUrl + `menu/getRolePermissionListMap`);
   }
 
   updatePermission(menuList) {
-    return this.http.post(environment.baseUrl + `permission/updatePermission`, menuList);
+    return this.http.post(environment.baseUrl + `menu/updatePermission`, menuList);
   }
 
   addArticle(param) {

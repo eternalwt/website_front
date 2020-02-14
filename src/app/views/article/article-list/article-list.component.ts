@@ -7,6 +7,10 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./article-list.component.less']
 })
 export class ArticleListComponent implements OnInit {
+  // MatPaginator Inputs
+  length = 100;
+  pageSize = 10;
+  pageSizeOptions: number[] = [10, 20, 50, 200];
 
   // 表格数据
   myDataArray: any = [];
@@ -19,7 +23,7 @@ export class ArticleListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    let param = {pageNum: 1, pageSize: 5};
+    let param = {pageNum: 1, pageSize: this.pageSize};
     this.dataService.listArticle(param).subscribe(res => {
       debugger;
       if (res["data"]["records"]) {
@@ -28,6 +32,10 @@ export class ArticleListComponent implements OnInit {
         console.log(this.myDataArray);
       }
     });
+  }
+
+  pageSizeChange() {
+    alert("page change!");
   }
 
 }
