@@ -22,9 +22,9 @@
     
 </table>
 
-<mat-paginator 
+<mat-paginator style="width: 800px;"
    [length] = "length"
    [pageSize] = "pageSize"
    [pageSizeOptions] = "pageSizeOptions"
-   (page) = "pageSizeChange()">
+   (page) = "pageEvent = pageOptionChange()">
 </mat-paginator>

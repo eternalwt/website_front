@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
+import { PageEvent } from '@angular/material';
 
 @Component({
   selector: 'app-article-list',
@@ -12,6 +13,9 @@ export class ArticleListComponent implements OnInit {
   pageSize = 10;
   pageSizeOptions: number[] = [10, 20, 50, 200];
 
+  // MatPaginator Output
+  pageEvent: PageEvent;
+
   // 表格数据
   myDataArray: any = [];
 
@@ -23,9 +27,9 @@ export class ArticleListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    let param = {pageNum: 1, pageSize: this.pageSize};
+    let pageParam = {pageNum: 1, pageSize: this.pageSize};
+    let param = {condition: {}, pageParam: pageParam};
     this.dataService.listArticle(param).subscribe(res => {
-      debugger;
       if (res["data"]["records"]) {
         // todo 绑定table
         this.myDataArray = res["data"]["records"];
@@ -34,7 +38,9 @@ export class ArticleListComponent implements OnInit {
     });
   }
 
-  pageSizeChange() {
+  pageOptionChange(evt) {
+    debugger;
+    console.log(this.pageEvent);
     alert("page change!");
   }
 

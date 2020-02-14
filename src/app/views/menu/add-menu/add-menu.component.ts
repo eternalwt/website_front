@@ -85,7 +85,10 @@ export class AddMenuComponent implements OnInit {
   inUse: string = this.stateList[0];
   currentMenu: string = "选择父级菜单";
 
-  // constructor(private dataService: DataService) { }
+  menuName: string;// 菜单名称
+  menuUrl: string; // url
+  menuSort: number;// 排序
+
 
   private _getLevel = (node: FileFlatNode) => node.level;
   private _isExpandable = (node: FileFlatNode) => node.expandable;

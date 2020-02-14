@@ -8,7 +8,7 @@
         <td>菜单名称</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "菜单名称" value="">
+                <input matInput placeholder = "菜单名称" value="{{menuName}}">
              </mat-form-field>
         </td>
     </tr>
@@ -16,7 +16,7 @@
         <td>菜单路径</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "相对URL，例：home" value="">
+                <input matInput placeholder = "相对URL，例：home" value="{{menuUrl}}">
              </mat-form-field>
         </td>
     </tr>
@@ -51,7 +51,7 @@
         <td>菜单序号</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "排序" value="">
+                <input matInput type="number" placeholder = "排序" value="{{menuSort}}">
              </mat-form-field>
         </td>
     </tr>
