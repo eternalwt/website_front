@@ -5,17 +5,58 @@
 
 =================================================================
 
-用英文再看一次@Bean、@Autowired，看配置
+用英文再看一次@Bean、@Autowired，看配置。不要过段时间后端又看不懂了
 
-【14号】
-把异常处理加一版，现在的代码太low了
+
+看《美国工厂》
+星期一晚上洗袜子、烤鞋子、扫地、泡脚
+
+【19号只搞定这一个就行】
+1.先调试，观察我的一个请求发送了哪些字段到后端【确定下来】
+判断：我每次根本没有发送cookie，因此我的跟权限有关的很多操作根本没起作用，包括logout、鉴权"roles[admin]"
+angular cookie tutorial：https://tutorialedge.net/typescript/angular/angular-cookies-tutorial/
+Using Cookies in Angular：https://morioh.com/p/00800c628bb1
+Angular Security - Authentication With JSON Web Tokens (JWT): The Complete Guide【前端要彻底搞清楚】：https://blog.angular-university.io/angular-jwt-authentication/
+Cookies vs. Tokens: The Definitive Guide：https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide
+jquery ajax怎么传cookie？
+
+【19号】
+从auth_role表来看，我的id自增策略有问题，需要重新过一遍
+3.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
+
+用户、角色的编辑不管用什么方式先写通再说，再看formControl
+1.淘宝、京东、有道看下快递情况
+2.CKeditor编辑器一定要修复（推进）
+超时后，web界面【自动】跳转到登录页写通
+如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
+mybatis-spring：http://mybatis.org/spring/
+1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】
+2.找5个ngx开头的控件看一下【面包屑、tab先搞】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+前端基础设施选型练习一下
+列表的编辑、删除操作
+富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
+permission还是要看，把shiro彻底搞懂
+
+mybatis配置、mybatis-plus配置【这是极为重要的基础设施和能力】
+SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件注解版”两种方法：https://www.cnblogs.com/xuehuashanghe/p/9593639.html
+
+
 1.前端：把样式修复好；
-2.把分页写个完整的出来（还差一点点）
 3.角色、用户的增删查改【前端】及权限分配；
 4.再看一下那个人主题风格的一致性
-5.继续little schemer【不要急于搞解释器】
 6.3.side-nav二级\三级菜单？二级菜单前后端接通还是要搞一下（是否涉及动态组件？）即便用let-admin等主题，还是要自己封装
-【8.二级菜单的行为：点击后是展开】
+6.上方做好搜索框控件：
+
+【使用let-admin这类主题的思路】
+1.拿到主题后先把主题的各部分封装控件；
+2.看看是否有需要补充的自定义控件；
+3.做项目；
+4.只用主要版本，每半年到1年根据主要的版本变化升级一次，并引入积累的自定义代码；
+5.升级涉及到很多手工合并，在心理和技能上不要抗拒。升级后的代码只用于新项目；
+照着我的计划下去，有望体验一把先写逻辑再换皮肤
+
+// todo 这里subject的principals和session都是null，不对把？难道只有登录那个方法能读到subject？
+//  如果是这样bug出在哪儿？angular和ajax发送请求，是否/怎么附带cookie？
 
 尝试使用一次updateWrapper
 
@@ -35,9 +76,7 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 
   mybatis-plus的配置
 
-【2月11日】
   2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
-  3.mybatis配置往前推进一点【2小时到半天，测试清楚】这是极为重要的基础设施和能力
   4.语言求值器eval
   5.搞清楚用directive和component封装控件的异同
   6.把我的generator.scm看懂，下一项是语言求值器
@@ -74,14 +113,15 @@ continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写�
 3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
 4.每跳转路由，还是要从后端验证一下，用emit；
 
-2.用列表管理角色（分页，还有增删改）；
+2.用列表管理角色（增删改）；
 4.样式（学习flex等布局）
 5.继续基础设置及material（后端shiro等、前端搜索框、material等）；
 6.继续整合
 7.menu的东西放到一个module里面
 1.菜单权限再看看后端是否需要拦截
 2.side-menu是不是可以用于菜单树（能否做多级）；
-测试isPermitted方法，然后继续推进前端鉴权【使用EventEmitter】
+继续推进前端鉴权【使用EventEmitter】
+即使感觉material用不下去，也要更熟练，把遇到的问题搞清楚
 
 根据现有的知识和技能，let-admin是可以直接套在我现有的代码上的
 
@@ -93,6 +133,9 @@ https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
 
 过年目标：1.基础设施；2.angular material；3.看书
+
+关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
+
 
 看一下公司里面的权限分配
 2.把前后端权限控制写通【shiro的permission再看一下】
@@ -113,12 +156,12 @@ https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material
 https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
 Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
 使用material还有个好处，可以尝试一下换界面的工作量
+angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
 
 【几个关联的问题】
 1.给前端刷新token（是不是还是要依靠header？）；
 2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
 3.权限不够则页面和url保持不变
-6.上方做好登出、搜索框：
 https://blog.learningtree.com/create-side-menu-angular-2-material-design/
 https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/

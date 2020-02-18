@@ -29,6 +29,22 @@ export class DataService {
     return this.http.get(environment.baseUrl +  `permission/isPermitted`);
   }
 
+  addUser(param) {
+    return this.http.post(environment.baseUrl + "user/add", param);
+  }
+
+  listUser(param) {
+    return this.http.post(environment.baseUrl + "user/list", param);
+  }
+
+  addRole(param) {
+    return this.http.post(environment.baseUrl + "role/add", param);
+  }
+
+  listRole(param) {
+    return this.http.post(environment.baseUrl + "role/list", param);
+  }
+
   addMenu(menu) {
     return this.http.post(environment.baseUrl + `menu/add`, menu);
   }

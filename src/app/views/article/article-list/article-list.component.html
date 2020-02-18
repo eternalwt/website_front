@@ -1,6 +1,6 @@
-<table mat-table [dataSource]="myDataArray" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataList" class="mat-elevation-z8">
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let myDataArray; columns: columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let dataList; columns: columnsToDisplay"></tr>
 
     <!-- Position Column -->
     <ng-container matColumnDef="title">
@@ -26,5 +26,6 @@
    [length] = "length"
    [pageSize] = "pageSize"
    [pageSizeOptions] = "pageSizeOptions"
+   showFirstLastButtons
    (page) = "pageEvent = pageOptionChange()">
 </mat-paginator>

@@ -21,11 +21,14 @@ export class ToolbarComponent implements OnInit {
 
   logoutClick() {
     // 后端相关操作
-    this.dataService.logout();
-    // 清除localStorage
-    this.storageService.removeItem("userId");
-    // 跳转到登录页面
-    this.router.navigateByUrl("/login");
+    this.dataService.logout().subscribe(res => {
+      if (res && res["code"] == 1) {
+        // 清除localStorage
+        this.storageService.removeItem("userId");
+        // 跳转到登录页面
+        this.router.navigateByUrl("/login");
+      }
+    });
   }
 
 }

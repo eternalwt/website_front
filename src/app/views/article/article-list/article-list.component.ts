@@ -17,7 +17,7 @@ export class ArticleListComponent implements OnInit {
   pageEvent: PageEvent;
 
   // 表格数据
-  myDataArray: any = [];
+  dataList: any = [];
 
   // 要展示的列
   columnsToDisplay: any = ['title', 'content'];
@@ -31,9 +31,7 @@ export class ArticleListComponent implements OnInit {
     let param = {condition: {}, pageParam: pageParam};
     this.dataService.listArticle(param).subscribe(res => {
       if (res["data"]["records"]) {
-        // todo 绑定table
-        this.myDataArray = res["data"]["records"];
-        console.log(this.myDataArray);
+        this.dataList = res["data"]["records"];
       }
     });
   }
