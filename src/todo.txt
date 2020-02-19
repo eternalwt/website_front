@@ -9,7 +9,10 @@
 
 
 看《美国工厂》
-星期一晚上洗袜子、烤鞋子、扫地、泡脚
+星期三晚上烤鞋子，星期五晚上洗澡
+
+STARS-146
+SSNI-658
 
 【19号只搞定这一个就行】
 1.先调试，观察我的一个请求发送了哪些字段到后端【确定下来】
@@ -20,20 +23,34 @@ Angular Security - Authentication With JSON Web Tokens (JWT): The Complete Guide
 Cookies vs. Tokens: The Definitive Guide：https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide
 jquery ajax怎么传cookie？
 
-【19号】
-从auth_role表来看，我的id自增策略有问题，需要重新过一遍
-3.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
+【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
 
-用户、角色的编辑不管用什么方式先写通再说，再看formControl
+【19号】
+1.从auth_role表和添加role功能来看，我的id自增策略有问题，需要重新过一遍【基础设施】
+界面添加的test1、test2为啥登录报异常？
+
+把angular http请求带cookie写通，然后测试subject是否为空
+3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了）
+思考一下面包屑的用处大不大
+2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
+4.CKeditor编辑器一定要修复（推进）
+看10个angular material的文章
+模块权限搞清后，再搞一遍数据权限和systemId
+
+看阿里云
+
+后端还有一堆问题：
+// todo 如何批量插入
+// todo 为啥没加@TableName("auth_user_role")的时候抛异常了没有回滚？再复现一把
+
 1.淘宝、京东、有道看下快递情况
-2.CKeditor编辑器一定要修复（推进）
 超时后，web界面【自动】跳转到登录页写通
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 mybatis-spring：http://mybatis.org/spring/
 1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】
 2.找5个ngx开头的控件看一下【面包屑、tab先搞】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 前端基础设施选型练习一下
-列表的编辑、删除操作
+列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
 permission还是要看，把shiro彻底搞懂
 
@@ -46,6 +63,7 @@ SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件
 4.再看一下那个人主题风格的一致性
 6.3.side-nav二级\三级菜单？二级菜单前后端接通还是要搞一下（是否涉及动态组件？）即便用let-admin等主题，还是要自己封装
 6.上方做好搜索框控件：
+用户的查看做通，便于后期复制到其他功能
 
 【使用let-admin这类主题的思路】
 1.拿到主题后先把主题的各部分封装控件；
@@ -53,6 +71,7 @@ SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件
 3.做项目；
 4.只用主要版本，每半年到1年根据主要的版本变化升级一次，并引入积累的自定义代码；
 5.升级涉及到很多手工合并，在心理和技能上不要抗拒。升级后的代码只用于新项目；
+
 照着我的计划下去，有望体验一把先写逻辑再换皮肤
 
 // todo 这里subject的principals和session都是null，不对把？难道只有登录那个方法能读到subject？

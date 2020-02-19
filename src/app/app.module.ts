@@ -27,6 +27,7 @@ import { AddMenuComponent } from './views/menu/add-menu/add-menu.component';
 import { UserListComponent } from './views/user/user-list/user-list.component';
 import { AddRoleComponent } from './views/role/add-role/add-role.component';
 import { RoleListComponent } from './views/role/role-list/role-list.component';
+import { AddUserComponent } from './views/user/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { RoleListComponent } from './views/role/role-list/role-list.component';
     UserListComponent,
     AddRoleComponent,
     RoleListComponent,
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,

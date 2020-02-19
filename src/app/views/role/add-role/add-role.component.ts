@@ -23,6 +23,9 @@ export class AddRoleComponent implements OnInit {
     this.dataService.addRole(role).subscribe(res => {
       if (res && res["code"] == 1) {
         alert("角色添加成功！"); // todo 用msgBox
+
+        this.roleName = "";
+        this.roleDesc = "";
       }
     });
   }

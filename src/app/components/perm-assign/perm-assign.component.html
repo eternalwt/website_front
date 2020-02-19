@@ -1,5 +1,5 @@
 <ng-container *ngFor="let item of menuList">
-   <h3>权限分配</h3>
+   <span>权限分配</span>
    <h4 class="tp-h2">{{item.roleName}}</h4>
    <section class="tp-section">
       <mat-checkbox class="tp-margin" *ngFor="let perm of item.permList" [(ngModel)] = "perm.checked">{{perm.key}}</mat-checkbox>

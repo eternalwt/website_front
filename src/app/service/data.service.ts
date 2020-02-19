@@ -45,6 +45,10 @@ export class DataService {
     return this.http.post(environment.baseUrl + "role/list", param);
   }
 
+  listAllRole() {
+    return this.http.get(environment.baseUrl + "role/alllist");
+  }
+
   addMenu(menu) {
     return this.http.post(environment.baseUrl + `menu/add`, menu);
   }
