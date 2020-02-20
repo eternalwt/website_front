@@ -31,6 +31,10 @@ export class LoginComponent implements OnInit {
     });
 
     // todo 如果已经登录，则直接redirect到home
+    /* 1.需要根据cookie来判断；
+       2.localStorage应该改成sessionStorage把？另外如何跟rememberMeCookie相关联？；
+       3.再看storage的场景，用好storage（既要发挥作用，又不要搞出一堆状态难以管理）
+    */
     if (localStorage.getItem("userId")) {
       this.router.navigateByUrl("/home");
     }

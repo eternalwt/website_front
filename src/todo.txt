@@ -11,30 +11,40 @@
 看《美国工厂》
 星期五到星期日晚上抽一天洗澡
 
+从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
+其他基础设施
+整合的难度和工作量
+讲github及我的产品策略
+通过打造关系来出售的简单系统（3月要能搞定）
+先进的大数据物联网系统：下半年搞定
+
 STARS-146
 SSNI-658
 
-【19号只搞定这一个就行】
-postman的request headers可以看出是带了cookie的
-根据跟postman对比测试判断：我每次根本没有发送cookie，因此我的跟权限有关的很多操作根本没起作用，包括logout、鉴权"roles[admin]"【再用postman测这个】
-
-
-【先解决：test1账号没有菜单的问题】
-先把chart原有页面的url对好
-1.从auth_role表和添加role功能来看，我的id自增策略有问题，需要重新过一遍【基础设施】
+3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了，FormsModule）【把input标签过一遍】
 4.CKeditor编辑器一定要修复（推进）
 看阿里云短信的收费及使用方式
 2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
-3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了，FormsModule）
+把@Transactional的问题统一测试一遍过一遍
+2.找5个ngx开头的控件看一下【面包屑、tab先搞】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+思考一下面包屑的用处大不大，看10个angular material的文章
+图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
+把chart页面搞定（这个是不是应该结合主题来学习？）
+
+2.我现在的超时机制是不是有问题？界面没有操作，等待一段时间后logout方法里面的subject字段又为空了
+// todo 如果已经登录，则直接redirect到home
+/* 1.需要根据cookie来判断；
+    2.localStorage应该改成sessionStorage把？另外如何跟rememberMeCookie相关联？；
+    3.再看storage的场景，用好storage（既要发挥作用，又不要搞出一堆状态难以管理）
+*/
+
+25号左右应该能达到套界面的出口
 
 
 【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
 
 【19号】
-思考一下面包屑的用处大不大
-看10个angular material的文章
 模块权限搞清后，再搞一遍数据权限和systemId
-把chart页面搞定（这个是不是应该结合主题来学习？）
 
 通知系统设计：
 http://www.woshipm.com/pd/32652.html
@@ -52,7 +62,6 @@ https://zhuanlan.zhihu.com/p/22456973
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 mybatis-spring：http://mybatis.org/spring/
 1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】
-2.找5个ngx开头的控件看一下【面包屑、tab先搞】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 前端基础设施选型练习一下
 列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
@@ -65,7 +74,7 @@ SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件
 1.前端：把样式修复好；
 3.角色、用户的增删查改【前端】及权限分配；
 4.再看一下那个人主题风格的一致性
-6.3.side-nav二级\三级菜单？二级菜单前后端接通还是要搞一下（是否涉及动态组件？）即便用let-admin等主题，还是要自己封装
+6.3.side-nav二级\三级菜单？【尝试梳理设计出用户管理、系统管理等基础菜单】二级菜单前后端接通还是要搞一下（是否涉及动态组件？）即便用let-admin等主题，还是要自己封装
 6.上方做好搜索框控件：
 用户的查看做通，便于后期复制到其他功能
 
@@ -105,6 +114,7 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
   7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
   《YAST》13.4 Coroutines用到宏
   自己想要的基本功能差不多后，再调样式
+  每个表应该都需要加@TableName和IdType.AUTO
 
 从官网学习angular material！！！：https://material.angular.io/components/categories
 

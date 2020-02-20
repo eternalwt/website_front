@@ -24,7 +24,6 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, children: [// , canActivate: [AuthGuard]
     { path: 'adduser', component: AddUserComponent, canActivate: [AuthGuard] },
     { path: 'userlist', component: UserListComponent, canActivate: [AuthGuard] },
@@ -34,6 +33,7 @@ const routes: Routes = [
     { path: 'articlelist', component: ArticleListComponent, canActivate: [AuthGuard] },
     { path: 'addmenu', component: AddMenuComponent },
     { path: 'permassign', component: PermAssignComponent },
+    { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
     { path: 'about', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     
