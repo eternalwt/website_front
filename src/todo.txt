@@ -19,35 +19,29 @@ postman的request headers可以看出是带了cookie的
 根据跟postman对比测试判断：我每次根本没有发送cookie，因此我的跟权限有关的很多操作根本没起作用，包括logout、鉴权"roles[admin]"【再用postman测这个】
 
 
-【先解决：test1账号没有菜单的问题】上方显示当前登录用户名（是为了在ff里面看cookie名称）
+【先解决：test1账号没有菜单的问题】
+先把chart原有页面的url对好
+1.从auth_role表和添加role功能来看，我的id自增策略有问题，需要重新过一遍【基础设施】
+4.CKeditor编辑器一定要修复（推进）
+看阿里云短信的收费及使用方式
+2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
+3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了，FormsModule）
 
-【把angular http请求带cookie写通】
-【方案一】
-使用原生JS cookie或者cookieService用法，在拦截器里面仿造x-auth-token在header里面加Cookie字段，cookie名称是JSESSIONID。
-报错：Refused to set unsafe header "Cookie"：https://blog.csdn.net/qq_33679504/article/details/80736865
-【方案二】
-使用cookie添加{withCredentials: true}后，出现跨域提示：response.setHeader("Access-Control-Allow-Origin",request.getHeader("origin"));
-当请求中携带cookie时, Access-Control-Allow-Origin必须要有确切的指定, 不能是通配符(*)
-1.在interceptor或者单个请求里面添加{withCredentials: true}，并解决前端跨域问题；
-2.看更多文档寻找{withCredentials: true}的拦截器通用解决方案；例如BrowserXhr相关的：https://stackoverflow.com/questions/35602866/how-to-send-cookie-in-request-header-for-all-the-requests-in-angular2
-(1)通过设置response来跨域：https://blog.csdn.net/loya0813/article/details/83862586
-(2)在源码层面确认三种方式的一致性：https://segmentfault.com/a/1190000019550329?utm_source=tag-newest
-(3)OPTIONS的配置：https://www.jianshu.com/p/09781abe53e8
-(3)终极知识：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#简单请求，抓包然后对比看看违反了哪条规则
 
 【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
 
 【19号】
-1.从auth_role表和添加role功能来看，我的id自增策略有问题，需要重新过一遍【基础设施】
-2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
-3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了，FormsModule）
 思考一下面包屑的用处大不大
-4.CKeditor编辑器一定要修复（推进）
 看10个angular material的文章
 模块权限搞清后，再搞一遍数据权限和systemId
+把chart页面搞定（这个是不是应该结合主题来学习？）
 
-看阿里云
-设计系统通知功能（在网上找一些通用设计）
+通知系统设计：
+http://www.woshipm.com/pd/32652.html
+https://www.jianshu.com/p/a89b61b6944d
+http://www.xueui.cn/tutorials/web-course/design-of-web-end-message-center.html
+https://www.zhihu.com/question/25459379
+https://zhuanlan.zhihu.com/p/22456973
 
 后端还有一堆问题：
 // todo 如何批量插入
@@ -116,20 +110,16 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 
 【放假一定要搞定的】
 article.component.ts改名成add（add要统一）
-我找的angular material教程有一个很大的问题：没有讲事件的用法，因此这个教程的完成度非常低。
 只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 从官网看事件：https://material.angular.io/components/categories
 2.菜单功能【添加、删除、修改】
-3.用户的增删改列表及权限分配
-4.角色的增删改列表及权限分配
+对比最新的门户网站技术
 
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
 【2月10日】
-0.继续continuation；继续material的事件
-1.语言求值器
+1.The Little Schemer的解释器
 2.generator往前推进一点【little schemer继续推进】：
 https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thing-with-yield-in-python-and-javascript
-3.mybatis的配置往前推进一点；
 4.后端继续搞（shiro相关的再突破一点）；
 5.前端看看人人网那个哥们儿的框架
 continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写了

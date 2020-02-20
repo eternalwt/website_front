@@ -13,5 +13,6 @@
     <span class="gap"><a routerLink="/" class="logo">Angular CMS</a></span>
     <!-- <span>Edit</span> -->
     <span class="filler"></span>
+    <span>欢迎您，{{this.storageService.getJson("user")["userName"]}}</span>&nbsp;&nbsp;
     <span style="cursor: pointer;" (click)="logoutClick()">Logout</span>
  </mat-toolbar>

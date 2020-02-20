@@ -7,21 +7,32 @@ export class StorageService {
 
   constructor() { }
 
+  // 获取数据
+  getItem(key) {
+    let value = localStorage.getItem(key);
+    return value;
+  }
+
   // 保存数据
   setItem(key, value) {
-      localStorage.setItem(key,value);
+    localStorage.setItem(key, value);
   }
 
   // 删除数据
   removeItem(key) {
-      localStorage.removeItem(key);
+    localStorage.removeItem(key);
   }
 
-  // 获取数据
-  getItem(key) {
-      let value = localStorage.getItem(key);
-      return value;
-    }
+  getJson(key) {
+    let jsonStr = localStorage.getItem(key);
+    let obj = JSON.parse(jsonStr);
+    return obj;
+  }
+
+  setJson(key, obj) {
+    let jsonStr = JSON.stringify(obj);
+    localStorage.setItem(key, jsonStr);
+  }
 
   // 清空
   clear() {

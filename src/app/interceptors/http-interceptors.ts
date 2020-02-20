@@ -24,11 +24,9 @@ export class AuthInterceptor implements HttpInterceptor {
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
     const authToken = this.storageService.getAuthorizationToken();
-    const ck = document.cookie;
-    debugger;
     const authReq = req.clone({
       // headers: req.headers.set("x-auth-token", authToken),
-      //   url: req.url.replace(req.url, this.httpService.reqUrl + req.url)
+      // url: req.url.replace(req.url, this.httpService.reqUrl + req.url)
       withCredentials: true
     });
  

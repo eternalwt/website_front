@@ -59,7 +59,7 @@ export class ArticleComponent implements OnInit {
     // }
 
     // this.dataService.addArticle(this.messageForm.value).subscribe(res => {
-    let article = {"title": this.title, "content": this.content, creatorId: this.storageService.getItem("userId")};
+    let article = {"title": this.title, "content": this.content, creatorId: this.storageService.getJson("user")["id"]};
     this.dataService.addArticle(article).subscribe(res => {
       alert("添加成功");// todo 改成dialog
       // todo 错误处理：用户名密码错误、显示验证码等

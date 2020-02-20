@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
       console.log(res);
       if (res["code"] == 1) {
         // 1.userId保存到localStorage；
-        this.storageService.setItem("userId", res["data"]);
+        this.storageService.setJson("user", res["data"]);
 
         // this.dataService.isPermitted().subscribe(res => {
         //   debugger;

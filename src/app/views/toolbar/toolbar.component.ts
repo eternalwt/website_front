@@ -17,6 +17,7 @@ export class ToolbarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
   }
 
   logoutClick() {
@@ -24,7 +25,7 @@ export class ToolbarComponent implements OnInit {
     this.dataService.logout().subscribe(res => {
       if (res && res["code"] == 1) {
         // 清除localStorage
-        this.storageService.removeItem("userId");
+        this.storageService.removeItem("user");
         // 跳转到登录页面
         this.router.navigateByUrl("/login");
       }

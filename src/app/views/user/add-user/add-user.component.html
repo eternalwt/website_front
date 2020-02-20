@@ -1,0 +1,37 @@
+<label>
+    Name:
+    <input type="text" [(ngModel)]="username">
+    <!-- formControlName="username"
+    <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
+        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+    </div> -->
+</label>
+<br />
+
+<label>
+    password:
+    <input type="text" [(ngModel)]="password">
+    <!-- formControlName="password" -->
+    <!-- <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
+        <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
+    </div> -->
+</label>
+<br />
+
+<!-- <ng-container *ngFor="let item of menuList">
+    <span>权限分配</span>
+    <h4 class="tp-h2">{{item.roleName}}</h4>
+    <section class="tp-section">
+       <mat-checkbox class="tp-margin" *ngFor="let perm of item.permList" [(ngModel)] = "perm.checked">{{perm.key}}</mat-checkbox>
+    </section>
+ </ng-container> -->
+
+ 
+<ng-container>
+    <h4 class="tp-h2">权限分配</h4>
+    <section class="tp-section">
+       <mat-checkbox class="tp-margin" *ngFor="let role of roleList" [(ngModel)] = "role.checked">{{role.roleName}}</mat-checkbox>
+    </section>
+ </ng-container>
+
+<button mat-raised-button color="accent" (click)="saveUser()">Save</button>

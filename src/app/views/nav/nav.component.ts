@@ -9,7 +9,7 @@ import { StorageService } from 'src/app/service/storage.service';
 })
 export class NavComponent implements OnInit {
 
-  appTitle = 'myapp';
+  appTitle = 'Angular CMS';
 
   menuList: any = [{url:"/", name: "MYAPP"}, {url:"/home/about", name: "About"}, {url: "/home/contact", name: "Contact us"}];
 
@@ -21,7 +21,7 @@ export class NavComponent implements OnInit {
   ngOnInit() {
     // 从localstorage获取用户id
     // todo 判空
-    let userId = Number(this.storageService.getItem("userId"));
+    let userId = Number(this.storageService.getJson("user")["id"]);
     // 获取对应权限的菜单
     this.dataService.getMenuList(userId).subscribe(res => {
       if (res["code"] == 1 && res["data"].length > 0) {
