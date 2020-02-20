@@ -69,12 +69,7 @@ import { AddUserComponent } from './views/user/add-user/add-user.component';
   ],
   providers: [
     // StorageService,
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: AuthInterceptor,
-    //   multi: true
-    // }
-    
+    // { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]

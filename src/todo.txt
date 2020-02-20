@@ -9,35 +9,45 @@
 
 
 看《美国工厂》
-星期三晚上烤鞋子，星期五晚上洗澡
+星期五到星期日晚上抽一天洗澡
 
 STARS-146
 SSNI-658
 
 【19号只搞定这一个就行】
-1.先调试，观察我的一个请求发送了哪些字段到后端【确定下来】
-判断：我每次根本没有发送cookie，因此我的跟权限有关的很多操作根本没起作用，包括logout、鉴权"roles[admin]"
-angular cookie tutorial：https://tutorialedge.net/typescript/angular/angular-cookies-tutorial/
-Using Cookies in Angular：https://morioh.com/p/00800c628bb1
-Angular Security - Authentication With JSON Web Tokens (JWT): The Complete Guide【前端要彻底搞清楚】：https://blog.angular-university.io/angular-jwt-authentication/
-Cookies vs. Tokens: The Definitive Guide：https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide
-jquery ajax怎么传cookie？
+postman的request headers可以看出是带了cookie的
+根据跟postman对比测试判断：我每次根本没有发送cookie，因此我的跟权限有关的很多操作根本没起作用，包括logout、鉴权"roles[admin]"【再用postman测这个】
+
+
+【先解决：test1账号没有菜单的问题】上方显示当前登录用户名（是为了在ff里面看cookie名称）
+
+【把angular http请求带cookie写通】
+【方案一】
+使用原生JS cookie或者cookieService用法，在拦截器里面仿造x-auth-token在header里面加Cookie字段，cookie名称是JSESSIONID。
+报错：Refused to set unsafe header "Cookie"：https://blog.csdn.net/qq_33679504/article/details/80736865
+【方案二】
+使用cookie添加{withCredentials: true}后，出现跨域提示：response.setHeader("Access-Control-Allow-Origin",request.getHeader("origin"));
+当请求中携带cookie时, Access-Control-Allow-Origin必须要有确切的指定, 不能是通配符(*)
+1.在interceptor或者单个请求里面添加{withCredentials: true}，并解决前端跨域问题；
+2.看更多文档寻找{withCredentials: true}的拦截器通用解决方案；例如BrowserXhr相关的：https://stackoverflow.com/questions/35602866/how-to-send-cookie-in-request-header-for-all-the-requests-in-angular2
+(1)通过设置response来跨域：https://blog.csdn.net/loya0813/article/details/83862586
+(2)在源码层面确认三种方式的一致性：https://segmentfault.com/a/1190000019550329?utm_source=tag-newest
+(3)OPTIONS的配置：https://www.jianshu.com/p/09781abe53e8
+(3)终极知识：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#简单请求，抓包然后对比看看违反了哪条规则
 
 【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
 
 【19号】
 1.从auth_role表和添加role功能来看，我的id自增策略有问题，需要重新过一遍【基础设施】
-界面添加的test1、test2为啥登录报异常？
-
-把angular http请求带cookie写通，然后测试subject是否为空
-3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了）
-思考一下面包屑的用处大不大
 2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
+3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了，FormsModule）
+思考一下面包屑的用处大不大
 4.CKeditor编辑器一定要修复（推进）
 看10个angular material的文章
 模块权限搞清后，再搞一遍数据权限和systemId
 
 看阿里云
+设计系统通知功能（在网上找一些通用设计）
 
 后端还有一堆问题：
 // todo 如何批量插入
@@ -74,8 +84,7 @@ SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件
 
 照着我的计划下去，有望体验一把先写逻辑再换皮肤
 
-// todo 这里subject的principals和session都是null，不对把？难道只有登录那个方法能读到subject？
-//  如果是这样bug出在哪儿？angular和ajax发送请求，是否/怎么附带cookie？
+v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
 
 尝试使用一次updateWrapper
 
@@ -443,11 +452,18 @@ ng-zorro也是前端可视化技术，跟EasyUI等对比一下
 
 对比一下easyui和ng-zorro
 
+// 把这段代码调通：
+providers: [
+  // StorageService,
+  // { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+  CookieService,
+  { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+],
+
 jQuery发送请求：http://www.w3school.com.cn/jquery/ajax_post.asp
 POSTMAN之如何获取COOKIE：https://www.cnblogs.com/yecaiye/p/10251747.html
 如何在Postman中使用cookie：https://blog.csdn.net/niedewang/article/details/80481652
 Postman是可以测试文件参数的，在Body form-data里面
-
 
 =================================================================================
 
