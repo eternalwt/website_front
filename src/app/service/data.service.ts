@@ -41,6 +41,14 @@ export class DataService {
     return this.http.post(environment.baseUrl + "role/add", param);
   }
 
+  editRole(param) {
+    return this.http.post(environment.baseUrl + "role/edit", param);
+  }
+
+  getRoleById(id) {
+    return this.http.get(environment.baseUrl + `role/getById?id=${id}`)
+  }
+
   listRole(param) {
     return this.http.post(environment.baseUrl + "role/list", param);
   }

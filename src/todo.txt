@@ -5,8 +5,8 @@
 
 =================================================================
 
-用英文再看一次@Bean、@Autowired，看配置。不要过段时间后端又看不懂了
-
+【还要读源码】用英文再看一次@Bean、@Autowired，看配置。不要过段时间后端又看不懂了：
+https://blog.csdn.net/weixin_34452850/article/details/90544868
 
 看《美国工厂》
 星期五到星期日晚上抽一天洗澡
@@ -21,25 +21,63 @@
 STARS-146
 SSNI-658
 
-3.用户、角色的编辑不管用什么方式先写通，再看formControl（到看的时候了，FormsModule）【把input标签过一遍】
-4.CKeditor编辑器一定要修复（推进）
-看阿里云短信的收费及使用方式
-2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】
-把@Transactional的问题统一测试一遍过一遍
-2.找5个ngx开头的控件看一下【面包屑、tab先搞】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
-思考一下面包屑的用处大不大，看10个angular material的文章
-图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
-把chart页面搞定（这个是不是应该结合主题来学习？）
+【把role的edit按钮放到表格后面，这个不难，不要怕】
+bug修复：赋予权限的页面角色没有完整列出来
+准备工作：二级菜单先把前端取数据写好
 
-2.我现在的超时机制是不是有问题？界面没有操作，等待一段时间后logout方法里面的subject字段又为空了
+【是不是我用的是mybatis-plus，应该直接配置mybatis-plus的配置文件】
+mybatis和mybatis-plus的配置要玩的非常熟：
+https://mp.baomidou.com/config/#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE
+https://mybatis.org/mybatis-3/zh/configuration.html
+有没有一种可能，是两部分都要配置？（但是又没测通）：https://www.cnblogs.com/bangpenggao/articles/11328923.html
+
+material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
+Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
+angular material源码
+
+addrole下面控制台有form相关的报错，这个没做好导致编辑功能也有问题
+addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
+模仿add-role的编辑功能完成其他的
+FormControl、FormGroup、FormArray、ControlValueAccessor的用法
+angular的表单已经很强大了，material真的有必要？
+规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
+
+
+把我现有的样式文件过一遍，看看能不能看出啥门道
+
+想要让一个普通类接受 Spring 容器管理的4种方法（含@Bean、@Import注解）：https://www.jianshu.com/p/afd2c49394c2
+查看Import注解源码及讲解：https://blog.csdn.net/panchao888888/article/details/82882279
+1.从最初的MybatisAutoConfiguration的@Configuration类讲解：https://blog.csdn.net/weixin_34452850/article/details/90544868
+问题1：springboot怎么保证三方库中的@Configuration注解也被扫描到？
+2.SqlSessionTemplate：MyBatis的代理类，将SqlSession与Spring的事务进行了整合【进一步熟悉】
+2.MapperFactoryBean初始化【可以尝试打断点跟踪启动流程，提升能力】【这个流程一定要非常熟，然后其他的整合也就懂了】：
+https://blog.csdn.net/qq_43193797/article/details/85011683
+问题2：MapperFactoryBean初始化是怎么初始化的？是被谁调用的？（mapperInterface是怎么初始化的？）
+问题3：有没有注解的都要看懂
+3.@MapperScanner注解原理：https://blog.csdn.net/Shaun_luotao/article/details/87094700
+
+
+【21号】
+思考一下面包屑的用处大不大，看10个angular material的文章
+2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】。
+3.把@Transactional的问题统一测试一遍过一遍：https://blog.csdn.net/weixin_44138309/article/details/100561860
+【把下面的内容彻底搞懂后再搞JWT】【需要进一步搞providers】
+2.我现在的超时机制是不是有问题？界面没有操作，等待一段时间后logout方法里面的subject字段又为空了（测试rememberMe）
 // todo 如果已经登录，则直接redirect到home
 /* 1.需要根据cookie来判断；
     2.localStorage应该改成sessionStorage把？另外如何跟rememberMeCookie相关联？；
     3.再看storage的场景，用好storage（既要发挥作用，又不要搞出一堆状态难以管理）
 */
+5亿整数的大文件，来排个序【用50万个就OK了】
+
+4.CKeditor编辑器一定要修复（推进）
+注册阿里云、腾讯云、百度云账号
+2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
+把chart页面搞定（这个是不是应该结合主题来学习？）
 
 25号左右应该能达到套界面的出口
-
+26号左右应该考虑自行车和child知识了；如果公司降薪，先撑一个月
 
 【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
 
@@ -114,7 +152,7 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
   7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
   《YAST》13.4 Coroutines用到宏
   自己想要的基本功能差不多后，再调样式
-  每个表应该都需要加@TableName和IdType.AUTO
+  每个表应该都需要加@TableName和IdType.AUTO（ALTER TABLE tablename AUTO_INCREMENT =1）
 
 从官网学习angular material！！！：https://material.angular.io/components/categories
 
