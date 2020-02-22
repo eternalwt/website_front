@@ -4,7 +4,6 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { ChangeEvent } from '@ckeditor/ckeditor5-angular';
 import { DataService } from 'src/app/service/data.service';
 import { StorageService } from 'src/app/service/storage.service';
-// import * as DocumentEditor from '@ckeditor/ckeditor5-angular';
 
 
 @Component({

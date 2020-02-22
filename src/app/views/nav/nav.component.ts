@@ -10,8 +10,8 @@ import { StorageService } from 'src/app/service/storage.service';
 export class NavComponent implements OnInit {
 
   appTitle = 'Angular CMS';
-
   menuList: any = [{url:"/", name: "MYAPP"}, {url:"/home/about", name: "About"}, {url: "/home/contact", name: "Contact us"}];
+  menuTree: any;
 
   constructor(
     private dataService: DataService,
@@ -19,7 +19,6 @@ export class NavComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // 从localstorage获取用户id
     // todo 判空
     let userId = Number(this.storageService.getJson("user")["id"]);
     // 获取对应权限的菜单
@@ -31,6 +30,10 @@ export class NavComponent implements OnInit {
         // todo 又遇到和router相关的一个地方了，为了router行为正常，后端保存的是只有一部分路径。改好后鉴权的地方要同步修改
         sessionStorage.setItem("menu", res["data"].map(item => {return item.url}));
       }
+    });
+
+    this.dataService.getMenuTree().subscribe(res => {
+      // todo 绑定菜单树
     });
   }
 

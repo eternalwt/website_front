@@ -38,10 +38,11 @@ export class AddRoleComponent implements OnInit {
   ngOnInit() {
   }
 
-  saveRole() {
+  onSubmit(value) {
+    debugger;
     if (!this.editMode) {
       // 新增
-      let role = {roleName: this.roleName, description: this.roleDesc};
+      let role = {roleName: value.roleName, description: value.roleDesc};
       this.dataService.addRole(role).subscribe(res => {
         if (res && res["code"] == 1) {
           alert("角色添加成功！"); // todo 用msgBox
@@ -53,7 +54,7 @@ export class AddRoleComponent implements OnInit {
     }
     else {
       // 编辑
-      let role = {id: this.id, roleName: this.roleName, description: this.roleDesc};
+      let role = {id: this.id, roleName: value.roleName, description: value.roleDesc};
       this.dataService.editRole(role).subscribe(res => {
         if (res && res["code"] == 1) {
           alert("角色编辑成功！"); // todo 用msgBox

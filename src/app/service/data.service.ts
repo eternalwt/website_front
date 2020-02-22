@@ -73,6 +73,11 @@ export class DataService {
     return this.http.get(environment.baseUrl + `menu/getAllPermissionList`);
   }
 
+  getMenuTree() {
+    return this.http.get(environment.baseUrl + `menu/getMenuTree`);
+  }
+
+  // todo menu没用的方法干掉
   getRolePermissionListMap() {
     return this.http.get(environment.baseUrl + `menu/getRolePermissionListMap`);
   }

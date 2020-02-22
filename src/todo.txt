@@ -5,11 +5,10 @@
 
 =================================================================
 
-【还要读源码】用英文再看一次@Bean、@Autowired，看配置。不要过段时间后端又看不懂了：
-https://blog.csdn.net/weixin_34452850/article/details/90544868
+解释器
 
 看《美国工厂》
-星期五到星期日晚上抽一天洗澡
+星期日晚上洗澡
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
 其他基础设施
@@ -18,12 +17,22 @@ https://blog.csdn.net/weixin_34452850/article/details/90544868
 通过打造关系来出售的简单系统（3月要能搞定）
 先进的大数据物联网系统：下半年搞定
 
-STARS-146
-SSNI-658
+【22号】
+【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
+【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+2.mybatis继续看整合
+3.redis整合（继续）
+5.消息中心推进一点点
+bug修复：赋予权限的页面角色没有完整列出来
+超时后，web界面【自动】跳转到登录页写通
+
+把authrizer配置不够优雅的问题解决【彻底理解spring装配】
+【还要读源码】用英文再看一次@Bean、@Autowired，看配置。不要过段时间后端又看不懂了：
+https://blog.csdn.net/weixin_34452850/article/details/90544868
+
+思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
 
 【把role的edit按钮放到表格后面，这个不难，不要怕】
-bug修复：赋予权限的页面角色没有完整列出来
-准备工作：二级菜单先把前端取数据写好
 
 【是不是我用的是mybatis-plus，应该直接配置mybatis-plus的配置文件】
 mybatis和mybatis-plus的配置要玩的非常熟：
@@ -34,14 +43,12 @@ https://mybatis.org/mybatis-3/zh/configuration.html
 material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
 Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
 angular material源码
-
-addrole下面控制台有form相关的报错，这个没做好导致编辑功能也有问题
-addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
-模仿add-role的编辑功能完成其他的
-FormControl、FormGroup、FormArray、ControlValueAccessor的用法
 angular的表单已经很强大了，material真的有必要？
-规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
 
+【寻找合适的表格控件】
+addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
+模仿add-role的编辑功能完成其他的（其他的有更多需要看的方面）
+规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
 
 把我现有的样式文件过一遍，看看能不能看出啥门道
 
@@ -58,21 +65,11 @@ https://blog.csdn.net/qq_43193797/article/details/85011683
 
 
 【21号】
-思考一下面包屑的用处大不大，看10个angular material的文章
 2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】。
-3.把@Transactional的问题统一测试一遍过一遍：https://blog.csdn.net/weixin_44138309/article/details/100561860
-【把下面的内容彻底搞懂后再搞JWT】【需要进一步搞providers】
-2.我现在的超时机制是不是有问题？界面没有操作，等待一段时间后logout方法里面的subject字段又为空了（测试rememberMe）
-// todo 如果已经登录，则直接redirect到home
-/* 1.需要根据cookie来判断；
-    2.localStorage应该改成sessionStorage把？另外如何跟rememberMeCookie相关联？；
-    3.再看storage的场景，用好storage（既要发挥作用，又不要搞出一堆状态难以管理）
-*/
-5亿整数的大文件，来排个序【用50万个就OK了】
+沉住气：控件打通后再上主题
 
-4.CKeditor编辑器一定要修复（推进）
+5亿整数的大文件，来排个序【用50万个就OK了】
 注册阿里云、腾讯云、百度云账号
-2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
 把chart页面搞定（这个是不是应该结合主题来学习？）
 
@@ -92,11 +89,10 @@ https://www.zhihu.com/question/25459379
 https://zhuanlan.zhihu.com/p/22456973
 
 后端还有一堆问题：
-// todo 如何批量插入
+// todo 原生mybatis如何批量插入
 // todo 为啥没加@TableName("auth_user_role")的时候抛异常了没有回滚？再复现一把
 
 1.淘宝、京东、有道看下快递情况
-超时后，web界面【自动】跳转到登录页写通
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 mybatis-spring：http://mybatis.org/spring/
 1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】
@@ -104,6 +100,7 @@ mybatis-spring：http://mybatis.org/spring/
 列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
 permission还是要看，把shiro彻底搞懂
+把用户信息放左侧，右上角留消息中心
 
 mybatis配置、mybatis-plus配置【这是极为重要的基础设施和能力】
 SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件注解版”两种方法：https://www.cnblogs.com/xuehuashanghe/p/9593639.html
@@ -125,9 +122,9 @@ SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件
 
 照着我的计划下去，有望体验一把先写逻辑再换皮肤
 
-v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
+【把上面的都搞完后，清todo，把前后端复习一遍】
 
-尝试使用一次updateWrapper
+v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
 
 angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
 https://www.cnblogs.com/mttcug/p/7976852.html
@@ -174,7 +171,22 @@ continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写�
 
 =================================================================
 
-0.【修复ckeditor（ng update和ng audit fix后用不了了）】，对比一下添加的教程。然后：测试添加文章 - 加了用户id
+【ckeditor修复引出的问题】
+1.如果不在项目路径下npm install，则package.json里面引用不会加进去；2.在项目路径下npm install，包没有放在全局路径下，不够干净
+0.【修复ckeditor（ng update和ng audit fix后用不了了）】
+现在还有提示：
+found 2 high severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+1.把ckeditor配到一个更完善的程度（前后端打通）：
+https://loocode.com/post/10149
+https://blog.csdn.net/nzyalj/article/details/87870762
+Angular7+Ckeditor5基础功能整合：https://blog.csdn.net/nzyalj/article/details/87870762
+2.把quill干掉（通过在angular.json中配置的方式再试一下quill.js）
+3.学习import as（引入插件）：
+https://www.cnblogs.com/minigrasshopper/p/7692664.html
+https://www.cnblogs.com/minigrasshopper/p/7692813.html
+
+
 2.toolbar上面加搜索框【这是个重要的问题】；
 3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
 4.每跳转路由，还是要从后端验证一下，用emit；
@@ -240,6 +252,15 @@ https://code-maze.com/angular-material-navigation/
 1.集成admin-lte；2.集成components
 1.可以利用在家里的时间把大屏的切换规则再仔细考虑一下，看看取数据有没有干扰
 2.横轴定制
+
+我的add-role使用模板驱动表单还有几个问题：
+1.测试使用单向绑定；2.能否直接用双向绑定解决问题？3.把ngForm用起来，得到最终一致的代码
+模板驱动的有新代码暂时先参考add-role和下面2项：
+https://segmentfault.com/a/1190000011901953
+https://blog.csdn.net/ztguang/article/details/53106962
+【直接上reactive forms，下面2个都要看】：
+https://malcoded.com/posts/angular-fundamentals-reactive-forms/
+https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 前端的新发现：前端开发出层次性和组合性思维，图标、组件、布局、样式这些元素是可以拆开和组合的
 
@@ -386,15 +407,6 @@ https://blog.csdn.net/liumiaocn/article/details/81329223
 大屏页面出现了一堆violation：
 [Violation] 'setInterval' handler took 236715ms
 [Violation] Forced reflow while executing JavaScript took XXX ms
-
-1.把ckeditor配到一个更完善的程度（前后端打通）：
-https://loocode.com/post/10149
-https://blog.csdn.net/nzyalj/article/details/87870762
-2.把quill干掉（通过在angular.json中配置的方式再试一下quill.js）
-3.学习import as（引入插件）：
-https://www.cnblogs.com/minigrasshopper/p/7692664.html
-https://www.cnblogs.com/minigrasshopper/p/7692813.html
-
 
 框架搭建任务：
 1.路由(路由系统的设计要素？对比引入路由系统的优势)

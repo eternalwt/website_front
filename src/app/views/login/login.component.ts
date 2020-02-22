@@ -31,11 +31,14 @@ export class LoginComponent implements OnInit {
     });
 
     // todo 如果已经登录，则直接redirect到home
-    /* 1.需要根据cookie来判断；
+    /* 1.ShiroConfig里面鉴权的地方，除了登录页其他页都需要登录鉴权；
+       2.前端如何使用sessionStorage来做登录页的已登录自动redirect功能？
        2.localStorage应该改成sessionStorage把？另外如何跟rememberMeCookie相关联？；
        3.再看storage的场景，用好storage（既要发挥作用，又不要搞出一堆状态难以管理）
     */
-    if (localStorage.getItem("userId")) {
+    console.log(window.document.cookie);
+    debugger;
+    if (this.storageService.getJson("user")) {
       this.router.navigateByUrl("/home");
     }
 

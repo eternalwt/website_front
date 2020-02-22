@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { QuillModule } from 'ngx-quill';
+// import { QuillModule } from 'ngx-quill';
 import {CKEditorModule} from '@ckeditor/ckeditor5-angular' 
 import { NgxEchartsModule } from 'ngx-echarts';
 import { AppRoutingModule } from './app-routing.module';
@@ -58,7 +58,7 @@ import { AddUserComponent } from './views/user/add-user/add-user.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    QuillModule.forRoot(),
+    // QuillModule.forRoot(),
     CKEditorModule,
     NgxEchartsModule,
   ],
@@ -66,6 +66,7 @@ import { AddUserComponent } from './views/user/add-user/add-user.component';
   exports: [
     // MatButtonModule,
     // MatCheckboxModule
+    CKEditorModule
   ],
   providers: [
     // StorageService,
