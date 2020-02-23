@@ -3,8 +3,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../../service/data.service';
 import { StorageService } from 'src/app/service/storage.service';
 import { Router } from '@angular/router';
-import { of, concat, interval } from 'rxjs';
-import { tap, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -36,8 +34,6 @@ export class LoginComponent implements OnInit {
        2.localStorage应该改成sessionStorage把？另外如何跟rememberMeCookie相关联？；
        3.再看storage的场景，用好storage（既要发挥作用，又不要搞出一堆状态难以管理）
     */
-    console.log(window.document.cookie);
-    debugger;
     if (this.storageService.getJson("user")) {
       this.router.navigateByUrl("/home");
     }
@@ -56,7 +52,7 @@ export class LoginComponent implements OnInit {
     this.dataService.login(this.messageForm.value).subscribe(res => {
     // this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {
       console.log(res);
-      if (res["code"] == 1) {
+      if (res && res["code"] == 1) {
         // 1.userId保存到localStorage；
         this.storageService.setJson("user", res["data"]);
 
@@ -68,7 +64,7 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl("/home");
         
       } else {
-        // todo 展示出来：Your name is required、A password is required
+        alert("登录失败：" + res["msg"]);
         // todo 提示用户名密码错误、显示验证码等（Angular Material 2）
       }
     });

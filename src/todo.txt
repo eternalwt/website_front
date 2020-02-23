@@ -17,22 +17,52 @@
 通过打造关系来出售的简单系统（3月要能搞定）
 先进的大数据物联网系统：下半年搞定
 
-【22号】
+【把add-article的表单稍微规范化一下】
+
+试一下Get Thread Dump按钮
+
+【调整计划：25号之前都搞后端配置】26号再继续搞前端
+
+
+【23号】
+0.再看看别人的文章，很多人并没有配cache把，确认后把我的cachemanager先注释掉
+在缓存这一块，我的思路错了（把几个问题搅在了一起，这也是以前觉得shiro难懂的原因之一）：
+1.完整配置、搞懂springboot+ehcache 3.x；
+2.完整配置、搞懂springboot+redis（不只是shiro需要缓存）；
+3.shiro不注入CacheManager也是可以用的（内置），首先应该从源码层面分析cache的使用，搞懂shiro-ehcache包的作用，然后再配置shiro和ehcache、redis（有可能需要自己注入）；
+应该搜springboot shiro ehcache来配置shiro的cache
+为什么需要shiro-ehcache包？（在哪些地方需要关联？）有没有shiro-redis的包？
+把缓存配置看一遍，自然就有问题和提升了【springboot ehache配置详解】
+超时后，web界面【自动】跳转到登录页写通
+修改密码完成测试一版（测试修改后无需重新登录）
 【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
 【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 2.mybatis继续看整合
-3.redis整合（继续）
+3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
 5.消息中心推进一点点
 bug修复：赋予权限的页面角色没有完整列出来
-超时后，web界面【自动】跳转到登录页写通
-
+把我现有的样式文件过一遍，看看能不能看出啥门道【把我现在没有显示全的问题解决一下】
 把authrizer配置不够优雅的问题解决【彻底理解spring装配】
-【还要读源码】用英文再看一次@Bean、@Autowired，看配置。不要过段时间后端又看不懂了：
-https://blog.csdn.net/weixin_34452850/article/details/90544868
+
+把后端websocket的代码整理干净
+能否使用@Configuration来配置cache和mybatis？
+
+Mybatis使用的设计模式：
+https://blog.csdn.net/u014401141/article/details/86920900
+https://blog.csdn.net/emprere/article/details/100190638
+https://blog.csdn.net/youanyyou/article/details/89368772
+@Mapper注解都没整明白
+Mapper(DAO层)接口如何实例化【先思考，从哪个方向去分析代码，提升解决问题的能力，这一点非常关键】：
+https://blog.csdn.net/tanqidong1992/article/details/48026491
+https://www.cnblogs.com/to-be-continue/p/8260080.html
+https://www.cnblogs.com/handsomeBoys/p/7602084.html
+https://www.cnblogs.com/grasp/p/11813674.html
 
 思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
 
 【把role的edit按钮放到表格后面，这个不难，不要怕】
+
+能否用dbconfig.properties来配置？
 
 【是不是我用的是mybatis-plus，应该直接配置mybatis-plus的配置文件】
 mybatis和mybatis-plus的配置要玩的非常熟：
@@ -49,8 +79,7 @@ angular的表单已经很强大了，material真的有必要？
 addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
 模仿add-role的编辑功能完成其他的（其他的有更多需要看的方面）
 规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
-
-把我现有的样式文件过一遍，看看能不能看出啥门道
+login里面使用的时reactive form，代码里面有几处messageForm、formBuilder
 
 想要让一个普通类接受 Spring 容器管理的4种方法（含@Bean、@Import注解）：https://www.jianshu.com/p/afd2c49394c2
 查看Import注解源码及讲解：https://blog.csdn.net/panchao888888/article/details/82882279
@@ -81,17 +110,6 @@ https://blog.csdn.net/qq_43193797/article/details/85011683
 【19号】
 模块权限搞清后，再搞一遍数据权限和systemId
 
-通知系统设计：
-http://www.woshipm.com/pd/32652.html
-https://www.jianshu.com/p/a89b61b6944d
-http://www.xueui.cn/tutorials/web-course/design-of-web-end-message-center.html
-https://www.zhihu.com/question/25459379
-https://zhuanlan.zhihu.com/p/22456973
-
-后端还有一堆问题：
-// todo 原生mybatis如何批量插入
-// todo 为啥没加@TableName("auth_user_role")的时候抛异常了没有回滚？再复现一把
-
 1.淘宝、京东、有道看下快递情况
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 mybatis-spring：http://mybatis.org/spring/
@@ -101,6 +119,7 @@ mybatis-spring：http://mybatis.org/spring/
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
 permission还是要看，把shiro彻底搞懂
 把用户信息放左侧，右上角留消息中心
+ckeditor图片、附件上传
 
 mybatis配置、mybatis-plus配置【这是极为重要的基础设施和能力】
 SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件注解版”两种方法：https://www.cnblogs.com/xuehuashanghe/p/9593639.html
@@ -161,13 +180,14 @@ article.component.ts改名成add（add要统一）
 对比最新的门户网站技术
 
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
-【2月10日】
 1.The Little Schemer的解释器
 2.generator往前推进一点【little schemer继续推进】：
 https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thing-with-yield-in-python-and-javascript
 4.后端继续搞（shiro相关的再突破一点）；
 5.前端看看人人网那个哥们儿的框架
 continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写了
+
+【再看一眼EasyUI？】EasyUI 下载地址：http://www.jeasyui.cn/download.html
 
 =================================================================
 
@@ -181,7 +201,7 @@ found 2 high severity vulnerabilities
 https://loocode.com/post/10149
 https://blog.csdn.net/nzyalj/article/details/87870762
 Angular7+Ckeditor5基础功能整合：https://blog.csdn.net/nzyalj/article/details/87870762
-2.把quill干掉（通过在angular.json中配置的方式再试一下quill.js）
+2.把quill干掉【代码、package.json等配置文件】
 3.学习import as（引入插件）：
 https://www.cnblogs.com/minigrasshopper/p/7692664.html
 https://www.cnblogs.com/minigrasshopper/p/7692813.html
