@@ -62,10 +62,8 @@ export class LoginComponent implements OnInit {
         //   this.router.navigateByUrl("/home");
         // });
         this.router.navigateByUrl("/home");
-        
       } else {
-        alert("登录失败：" + res["msg"]);
-        // todo 提示用户名密码错误、显示验证码等（Angular Material 2）
+        alert("登录失败：" + res["msg"]);// todo msgBox
       }
     });
   }

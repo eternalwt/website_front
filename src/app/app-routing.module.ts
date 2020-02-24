@@ -5,7 +5,7 @@ import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/user/register/register.component';
-import { ArticleComponent } from './views/article/article.component';
+import { AddArticleComponent } from './views/article/add-article/add-article.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
 import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
@@ -29,7 +29,7 @@ const routes: Routes = [
     { path: 'userlist', component: UserListComponent, canActivate: [AuthGuard] },
     { path: 'addrole', component: AddRoleComponent, canActivate: [AuthGuard] },
     { path: 'rolelist', component: RoleListComponent, canActivate: [AuthGuard] },
-    { path: 'article', component: ArticleComponent, canActivate: [AuthGuard] },
+    { path: 'article', component: AddArticleComponent, canActivate: [AuthGuard] },
     { path: 'articlelist', component: ArticleListComponent, canActivate: [AuthGuard] },
     { path: 'addmenu', component: AddMenuComponent },
     { path: 'permassign', component: PermAssignComponent },

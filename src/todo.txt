@@ -23,23 +23,27 @@
 
 【调整计划：25号之前都搞后端配置】26号再继续搞前端
 
+kafka：思考一下对我的图表大数据系统的帮助？
+https://www.liangzl.com/get-article-detail-38554.html
+https://www.liangzl.com/get-article-detail-134408.html
 
-【23号】
-0.再看看别人的文章，很多人并没有配cache把，确认后把我的cachemanager先注释掉
-在缓存这一块，我的思路错了（把几个问题搅在了一起，这也是以前觉得shiro难懂的原因之一）：
-1.完整配置、搞懂springboot+ehcache 3.x；
-2.完整配置、搞懂springboot+redis（不只是shiro需要缓存）；
-3.shiro不注入CacheManager也是可以用的（内置），首先应该从源码层面分析cache的使用，搞懂shiro-ehcache包的作用，然后再配置shiro和ehcache、redis（有可能需要自己注入）；
-应该搜springboot shiro ehcache来配置shiro的cache
-为什么需要shiro-ehcache包？（在哪些地方需要关联？）有没有shiro-redis的包？
-把缓存配置看一遍，自然就有问题和提升了【springboot ehache配置详解】
+或许我理解错了，angular material的自由度是不是可能比想象的要大？side-nav是不是可以嵌套树控件或者主题里面的部分html？用主题的外观、用side-nav的点击行为？
+
+【24号】
+7.先把article的reactive form搞通，然后把add-role的模板驱动的form再过一遍，然后改造成reactive的，然后搞其他的
+1.把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
+2.x测通、代码写好后，再把2.x的pom配置干掉；
+3.用单元测试的方式再次测试mybatis的配置
+4.spring配置datasource三种方式【要能搞懂原理】：https://www.cnblogs.com/libin6505/p/11001968.html
+  搞懂springboot是怎么使用application.properties文件的（才能把配置彻底搞清楚，例如mybatis的配置）：(1)看懂数据源的默认配置；
+6.配置redis
+
 超时后，web界面【自动】跳转到登录页写通
-修改密码完成测试一版（测试修改后无需重新登录）
 【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
-【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件、msgBox】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 2.mybatis继续看整合
 3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
-5.消息中心推进一点点
+5.消息中心推进一点点（先看看文章）
 bug修复：赋予权限的页面角色没有完整列出来
 把我现有的样式文件过一遍，看看能不能看出啥门道【把我现在没有显示全的问题解决一下】
 把authrizer配置不够优雅的问题解决【彻底理解spring装配】
@@ -47,16 +51,6 @@ bug修复：赋予权限的页面角色没有完整列出来
 把后端websocket的代码整理干净
 能否使用@Configuration来配置cache和mybatis？
 
-Mybatis使用的设计模式：
-https://blog.csdn.net/u014401141/article/details/86920900
-https://blog.csdn.net/emprere/article/details/100190638
-https://blog.csdn.net/youanyyou/article/details/89368772
-@Mapper注解都没整明白
-Mapper(DAO层)接口如何实例化【先思考，从哪个方向去分析代码，提升解决问题的能力，这一点非常关键】：
-https://blog.csdn.net/tanqidong1992/article/details/48026491
-https://www.cnblogs.com/to-be-continue/p/8260080.html
-https://www.cnblogs.com/handsomeBoys/p/7602084.html
-https://www.cnblogs.com/grasp/p/11813674.html
 
 思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
 
@@ -64,11 +58,7 @@ https://www.cnblogs.com/grasp/p/11813674.html
 
 能否用dbconfig.properties来配置？
 
-【是不是我用的是mybatis-plus，应该直接配置mybatis-plus的配置文件】
-mybatis和mybatis-plus的配置要玩的非常熟：
-https://mp.baomidou.com/config/#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE
-https://mybatis.org/mybatis-3/zh/configuration.html
-有没有一种可能，是两部分都要配置？（但是又没测通）：https://www.cnblogs.com/bangpenggao/articles/11328923.html
+angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
 
 material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
 Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
@@ -80,18 +70,6 @@ addrole编辑写通后带来的新问题：如何控制路由、菜单、面包�
 模仿add-role的编辑功能完成其他的（其他的有更多需要看的方面）
 规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
 login里面使用的时reactive form，代码里面有几处messageForm、formBuilder
-
-想要让一个普通类接受 Spring 容器管理的4种方法（含@Bean、@Import注解）：https://www.jianshu.com/p/afd2c49394c2
-查看Import注解源码及讲解：https://blog.csdn.net/panchao888888/article/details/82882279
-1.从最初的MybatisAutoConfiguration的@Configuration类讲解：https://blog.csdn.net/weixin_34452850/article/details/90544868
-问题1：springboot怎么保证三方库中的@Configuration注解也被扫描到？
-2.SqlSessionTemplate：MyBatis的代理类，将SqlSession与Spring的事务进行了整合【进一步熟悉】
-2.MapperFactoryBean初始化【可以尝试打断点跟踪启动流程，提升能力】【这个流程一定要非常熟，然后其他的整合也就懂了】：
-https://blog.csdn.net/qq_43193797/article/details/85011683
-问题2：MapperFactoryBean初始化是怎么初始化的？是被谁调用的？（mapperInterface是怎么初始化的？）
-问题3：有没有注解的都要看懂
-3.@MapperScanner注解原理：https://blog.csdn.net/Shaun_luotao/article/details/87094700
-
 
 【21号】
 2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】。
@@ -159,8 +137,6 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
   2.把数据加到控件里面去；
   3.加click事件；
 
-  mybatis-plus的配置
-
   2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
   4.语言求值器eval
   5.搞清楚用directive和component封装控件的异同
@@ -172,8 +148,6 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 
 从官网学习angular material！！！：https://material.angular.io/components/categories
 
-【放假一定要搞定的】
-article.component.ts改名成add（add要统一）
 只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 从官网看事件：https://material.angular.io/components/categories
 2.菜单功能【添加、删除、修改】
@@ -187,7 +161,11 @@ https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thi
 5.前端看看人人网那个哥们儿的框架
 continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写了
 
+前端是不是可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
+
 【再看一眼EasyUI？】EasyUI 下载地址：http://www.jeasyui.cn/download.html
+
+我的userProfile功能后端已经准备好了，切换前端模板后就可以完善了
 
 =================================================================
 

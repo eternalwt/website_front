@@ -16,7 +16,7 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/user/register/register.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { IndexComponent } from './views/index/index.component';
-import { ArticleComponent } from './views/article/article.component';
+import { AddArticleComponent } from './views/article/add-article/add-article.component';
 // import { StorageService } from './service/storage.service';
 import { AuthInterceptor } from './interceptors/http-interceptors';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
@@ -40,7 +40,7 @@ import { AddUserComponent } from './views/user/add-user/add-user.component';
     RegisterComponent,
     DashboardComponent,
     IndexComponent,
-    ArticleComponent,
+    AddArticleComponent,
     ArticleListComponent,
     ToolbarComponent,
     PermAssignComponent,

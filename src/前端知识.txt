@@ -1,0 +1,2504 @@
+﻿
+横轴最小切换到15分钟（比较难）
+【晚上在家把横轴密度的问题解决】
+横轴滚动
+
+考虑使用influxDB
+
+把promise+RxJS写通，just try
+
+ng generate class Hero
+
+===========================================================================
+
+咸鱼买自行车【逛一下咸鱼】
+
+===========================================================================
+
+【专门花时间来提升这个能力】【在github上，首先去寻找问题有没有答案，其次尝试提问：1.二级菜单；2.table的后端分页】而不是遇到问题直接就放弃了，那样很难提升
+2019了还可以用angular吗？（学严兴杰分析angular和angular material的issue）：https://www.zhihu.com/question/329973345/answer/728704821
+我选择Angular最直接的理由是Ionic4，最好的混合应用框架，没有之一。
+
+原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
+Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
+fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
+
+ReuseTabService
+
+重要基础设施，搜package的站点（ngx-echarts）：https://www.npmjs.com/package/ngx-echarts
+
+写生成器
+Implement yield and send in Scheme：https://www.howtobuildsoftware.com/index.php/how-do/mJR/scheme-coroutine-continuations-guile-delimited-continuations-implement-yield-and-send-in-scheme
+https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thing-with-yield-in-python-and-javascript
+
+把2个教程继续看，今天先写loop和宏，把java和我的项目的那段代码往前推进。
+2个教程再看（更熟练），little schemer的问题解决掉，把笔记的问题解决一下。然后开始搞滑铁卢大学的2门课程和PL
+需要挑战看generator(call/cc)、amb代码了，不要怕
+我的知识储备够了，开始看《Essentials of Programming Languages》
+《中秋节》里面的文章看一些
+
+Explaining JavaScript Closure & Scope Chain with Examples：https://community.risingstack.com/explaining-javascript-closure-scope-chain-examples/
+闭包的场景：
+https://www.zhihu.com/question/19554716
+https://blog.csdn.net/Amy_cloud/article/details/89227362
+
+generator生成器的场景：
+https://blog.csdn.net/cominglately/article/details/78104729
+https://zhuanlan.zhihu.com/p/55989130
+https://www.cnblogs.com/ZheOneAndOnly/p/11411971.html
+
+推进：
+1.有道里面JS保存的问题
+2.Y combinator in JavaScript
+
+
+transpiler：
+https://www.infoq.com/presentations/transpiler-compiler-design/
+https://devopedia.org/transpiler
+http://jarble.github.io/transpiler/
+https://howtodoinjava.com/typescript/transpiler-vs-compiler/
+https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
+
+通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
+
+思考：
+1.Optional和stream的配合
+2.stream里面的flatMap、peek方法，是不是RxJS里面也出现了？
+Infinite Streams（Stream.generate、iterate）是不是可以跟C#的yield、JS的generator对比一下？
+https://stackify.com/streams-guide-java-8/
+
+C:\Users\65695\Documents\WeChat Files\gf164916014\FileStorage\File\2020-01
+
+下一工作日：
+3.大屏自定义横轴及抽象
+思考：达标率周期、库房切换、导出
+
+详细介绍RxJS在Angular中的应用【Observable.fromEvent解释了定义了什么事件。还是要分析http是怎么绑定的】：https://www.jb51.net/article/124393.htm
+除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
+rxjs源码分析
+
+================================================================================
+
+schematics是什么（有可能我已经用到了？）：https://www.jianshu.com/p/3f630cbb543d
+
+【比较一下】
+从事件创建：fromEvent
+从Promise创建：fromPromise
+
+【需要进一步了解的转换操作】
+改变数据形态：map, mapTo, pluck：https://www.learnrxjs.io/learn-rxjs/operators/transformation/pluck
+时间轴上的操作：delay, timeout, throttle, debounce, audit, bufferTime
+
+
+【比较这两种写法的等价性】
+一般在Angular我们 subscribe 会这么写：
+input$.subscribe((event: any) => {
+});
+从语法角度来讲和 subscribe({ next, error, complete }) 是一样的
+
+【看看公司代码是否有用到】如果说 Observable 与 observer 是攻受结合体的话，那么 Subject 就是一个人即攻亦受
+
+【看一下这些名字很诱人的章节】：
+Breakout Game：https://www.learnrxjs.io/learn-rxjs/recipes/breakout-game
+Car Racing Game：https://www.learnrxjs.io/learn-rxjs/recipes/car-racing-game
+Lockscreen：https://www.learnrxjs.io/learn-rxjs/recipes/lockscreen
+Memory Game：https://www.learnrxjs.io/learn-rxjs/recipes/memory-game
+Mine Sweeper Game：https://www.learnrxjs.io/learn-rxjs/recipes/mine-sweeper-game
+Platform Jumper Game：https://www.learnrxjs.io/learn-rxjs/recipes/platform-jumper-game
+Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
+Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
+
+================================================================================
+
+Angular Material Tutorial with examples：https://www.angularjswiki.com/material/
+
+Mat-Icon List : 900+ Angular Material Icons：
+https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
+https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
+Angular Material Buttons : Mat-Button Example：
+https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/
+https://appdividend.com/2018/12/25/angular-material-icon-tutorial-with-example/
+
+晚上：3.把isPermitted【customRealm里面】先写通，再看位置对不对
+
+大屏添加“加载中”效果
+小数点需要做两版：1.；2.
+
+1.横轴的分隔问题；
+2.toFixed的问题研究清楚
+
+一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
+提升概念把握能力及对应的抽象思维能力：bar图、饼图、折线图的dimension、source、series等的概念
+
+Managing Subscriptions in Angular With the Async Pipe：https://alligator.io/angular/async-pipe/
+管道再看一版：
+https://www.concretepage.com/angular-2/angular-2-json-pipe-example
+https://www.concretepage.com/angular-2/angular-2-slice-pipe-example
+
+Angular 9和Yarn 2发布：https://zhuanlan.zhihu.com/p/107678725
+angular9：1.升级后可能和哪些东西有兼容性冲突【搞清楚这一点再思考：是不是2020年底换比较合适】？2.升级一定要开新分支，规范流程：
+https://www.sevenmentor.com/whats-new-in-angular-9-and-what-are-the-new-features-in-angular-9/
+https://www.telerik.com/blogs/top-new-features-of-angular-9
+https://www.chapter247.com/blog/learn-about-all-the-new-features-of-angular-9/
+
+ES6 Tutorial：
+https://www.tutorialspoint.com/es6/index.htm
+https://www.javascripttutorial.net/es6/
+
+比较ng-content与router-outlet
+
+http从observable到subscription都看清楚
+
+Java里面也有NaN（double的除法），把java和JS里面的NaN再学习一下：
+https://www.cnblogs.com/xubiao/p/5461714.html
+https://blog.csdn.net/Dxx_23/article/details/87956408
+https://blog.csdn.net/weixin_44130081/article/details/90207143
+https://segmentfault.com/q/1010000014225843
+https://www.cnblogs.com/cnblogs-jcy/p/8714442.html
+
+响应式编程入门指南 - 通俗易懂 RxJS：https://zhuanlan.zhihu.com/p/102446217
+通俗的方式理解RxJS：https://segmentfault.com/a/1190000008464065
+Hot vs Cold Observables：https://segmentfault.com/a/1190000011052037
+Rxjs的zip和switchMap方法：https://blog.csdn.net/weixin_39460408/article/details/80995242
+【Rxjs】实例讲解zip和combineLatest操作符的区别：https://blog.csdn.net/u010176097/article/details/102579886
+[译] RxJS: 理解 publish 和 share 操作符：https://zhuanlan.zhihu.com/p/33225623
+[译] RxJS: 如何使用 refCount：https://zhuanlan.zhihu.com/p/33621290
+RxJS的核心代码实现？Observable.from(names)生成的observable，是怎么吐值给Observer的？
+rxjs源码分析【Observable、Oserver、Subscription、Operators、Subject、Schedulers】：
+https://blog.csdn.net/zhy13087344578/article/details/79377395
+https://www.cnblogs.com/tangzhirong/p/7424777.html
+https://www.jianshu.com/p/13397a37649e
+RxJS 过滤操作符 debounce，debounceTime，throttle，throttleTime：https://www.jianshu.com/p/66f37e024278
+一定要从big picture来再次overview RxJS。RxJS至少要2周到1个月才能学的比较好
+RxJS的另外四种实现方式（后记）- 同时实现管道和链式编程：
+https://my.oschina.net/langhuihui/blog/2208142
+https://blog.csdn.net/oYiGeHui/article/details/82821125
+关于Angular6版本升级和RXJS6新特性的讲解：https://blog.csdn.net/bangunzheng7426/article/details/101411570
+ pipeable observable（pipe感觉是把operator包起来了）：
+SomeObservable.map(...).throttle(...).subscribe变成pipe(map().throttle()).subscribe
+pipe方法的方法体是啥？
+What are schedulers in RxJS：
+https://blog.strongbrew.io/what-are-schedulers-in-rxjs/
+https://jstobigdata.com/rxjs/rxjs-scheduler/
+
+<div echarts 这种写法是什么意思？问下张润
+echarts.init的方法引echarts
+公司的library是不是就是service公用？
+看一下公司代码返回值的封装（我现在的封装有没有问题）
+验证一下：公司里面是配了页面级的权限（怎么拿的），没有配API级的（其实周亮那天讲的时候就已经有答案了）
+oauth2集成shiro.XDF：http://www.doc88.com/p-1942503494803.html
+
+【重要】大型Angular项目最佳实践：http://www.itboth.com/d/3aMZvu/angularjs
+看一下paper-dashboard-angular的module组织，和看公司代码一样，不要有疲劳感
+是不是应该把一类操作的component做成一个module？例如article的增删查改（深入思考一下这个问题）
+
+es6新出的promise对象以及es7的async await
+promise使用场景：
+https://www.sitepoint.com/overview-javascript-promises/
+https://segmentfault.com/q/1010000019462799
+https://blog.csdn.net/weixin_41559723/article/details/79244460
+嵌套的promise执行顺序：https://www.jianshu.com/p/2c7c5285c7c5
+Promise的模拟实现：https://www.jianshu.com/p/887b523559f2
+
+angular使用tensorflow：https://angularfirebase.com/lessons/tensorflow-js-quick-start/
+tensorflow.js：
+https://www.javascriptjanuary.com/blog/artificial-intelligence-in-javascript-with-tensorflowjs
+https://www.analyticsvidhya.com/blog/2019/06/build-machine-learning-model-in-your-browser-tensorflow-js-deeplearn-js/
+
+
+能否配置apps区分项目
+
+word书签怎么添加、使用、显示和删除标签：https://jingyan.baidu.com/article/948f5924faab49d80ef5f965.html
+
+看看ng-template、ng-container、ng-content与我们系统自定义控件的关系：https://www.jianshu.com/p/388461631b1d
+ng-template使用技巧：https://zhuanlan.zhihu.com/p/50476699
+使用 * 语法糖的结构指令，最终都会转换为 <ng-template> 或 <template> 模板指令，模板内的内容如果不进行处理，是不会在页面中显示的：https://www.jianshu.com/p/388461631b1d
+如何用好ng-template。sw-grid-table里面套了ng-template
+angular 使用 ngTemplateOutlet 指令：https://blog.csdn.net/u013816448/article/details/79245365
+How To Use Ng-Template In Angular? https://www.angularjswiki.com/angular/what-is-ng-template-in-angular/
+
+AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/72843137
+
+一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
+
+module的最佳实践：
+https://www.cnblogs.com/myfan/p/7458568.html
+https://www.tinymind.net.cn/articles/e932f2cc2dd096
+https://cloud.tencent.com/developer/section/1489514
+https://www.cnblogs.com/shitoupi/p/6641230.html
+
+js toFixed()【源码】：https://www.cnblogs.com/garfieldzhong/p/11254610.html
+Math.round为啥可以四舍五入？https://blog.csdn.net/luxxxx/article/details/90177682
+
+结合formControl学习ngModel：NgModel is a directive that creates the FormControl instance from a domain model and binds it to a form control element.（an essential topic of template-driven forms）
+ngModel：https://www.pluralsight.com/guides/keeping-data-in-sync-with-two-way-binding-using-ngmodel
+input如果不用ngModel会怎么用？https://www.jianshu.com/p/fb6861b1a2ab
+ngModel首先是一个指令（directive）【对概念要十分清楚】：
+https://appdividend.com/2018/10/03/angular-ngmodel-directive-example-tutorial/
+https://www.concretepage.com/angular-2/angular-2-ngform-with-ngmodel-directive-example
+https://rangle.io/blog/angular-2-ngmodel-and-custom-form-components/
+对[(ngModel)]的理解：https://blog.csdn.net/m0_37634363/article/details/89138895
+
+注意观察编译过后最终显示的样式标签
+
+大漠穷秋的angular代码：https://gitee.com/learn-angular-series/
+
+java的保留小数为啥比JS的好用很多？
+https://www.cnblogs.com/dichuan/p/7769098.html
+https://blog.csdn.net/hello_word2/article/details/81808827
+
+Web Assambly(wasm)：
+https://dzone.com/articles/webassembly-vs-javascript-is-wasm-faster-than-js-w
+https://blog.logrocket.com/webassembly-how-and-why-559b7f96cd71/
+https://wasmbyexample.dev/
+https://www.chromestatus.com/feature/5453022515691520
+https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html
+https://research.mozilla.org/webassembly/
+https://blogs.unity3d.com/2018/08/15/webassembly-is-here/
+在 NodeJS 中体验 WebAssembly技术(译)：https://zhuanlan.zhihu.com/p/25619626?group_id=823473261282205696
+
+TypeScript Any类型：
+http://www.softwhy.com/article-8869-1.html
+https://segmentfault.com/q/1010000010004506
+https://www.jianshu.com/p/ee0a369b2265
+浅谈 var、let 和 const (三)：https://www.jianshu.com/p/132965500d99
+TypeScript 从入门到精通：https://www.jianshu.com/p/299e79c5b85e
+typescript 难点梳理：
+https://www.jianshu.com/p/1f9ce1e52171
+https://segmentfault.com/a/1190000020300143?utm_source=tag-newest
+
+Avoiding common confusions with modules in Angular：https://indepth.dev/avoiding-common-confusions-with-modules-in-angular/
+
+RouterModule.forRoot vs. RouterModule.forChild：
+https://www.cnblogs.com/sea-breeze/p/9106434.html
+https://www.freelancermap.com/freelancer-tips/12255-forroot-forchild-angular
+观察ModuleWithProviders，我们可以看到providers属性是可选的，他们的区别也是在providers上。我们可以将需要确保完全单例的服务移动到forRoot中去。在主模块中导入模块时通过forRoot方法导入，在子模块中导入模块时直接导入。这样就能确保服务只会注册一次了。【看RouteModule的forRoot代码】：
+https://maoji.github.io/angular2-forroot-forchild/
+
+How to Implement Lazy Loading for Components Sample Application Example：https://www.freakyjolly.com/angular-6-lazy-loading-example/
+
+Angular ng常用命令行：https://www.cnblogs.com/zero-zm/p/9940073.html
+
+JS sort的原理是啥？能否自己实现一下：
+https://www.w3school.com.cn/js/jsref_sort.asp
+https://www.cnblogs.com/saifei/p/9043821.html
+
+用到的关键模块：
+require('amqplib/callback_api');
+require('node_echarts');
+一般模块：
+require('fs');
+require('path');
+
+Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/article/details/83858753
+帮你彻底搞懂JS中的prototype、__proto__与constructor（图解）：https://blog.csdn.net/cc18868876837/article/details/81211729
+
+=========================================================================================
+
+【出产品推荐的方式】
+0.再看一些模板，也可以组件反向适配要用的模板。评估业务，实在不行我可以只用theme，不用组件，或者找一些ngx开头的控件
+
+或许我的思路错了，应该是拿到一个theme中，从中抠控件，然后再辅以少量自己设计的控件
+
+看angular material的代码
+
+1.1.有一个material的主题+material 2【再研究一下主题模板也很重要】；
+1.2.为material 2反向找主题，再定制（和定制admin-lte那个文章一样），这样的主题应该比较多；
+
+2.1.ngx-admin + primeng(UI components)；
+2.2.admin-lte(定制) + primeng(UI components)；
+2.3.ngx-admin + ng-zorro；
+2.4.admin-lte(定制) +  + ng-zorro；
+2.5.lte-admin(定制) + 库里找零散控件或者自己封控件
+2.6.ngx-admin + primeng；
+2.7.ngx-admin + 库里找零散控件或者自己封控件；
+
+3.1.了解ng-alain，看看能使用什么组件
+3.2.jhipster单独研究：https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
+3.3.Angular最佳UI框架：https://www.jianshu.com/p/0051e626b88b
+
+4.看ng-bootstrap、ngx-bootstrap等概念，野鸡FreeNG、ng-matero等
+
+Angular Elements：
+https://angular.io/guide/elements
+https://segmentfault.com/a/1190000015647566
+
+关于Angular样式封装、ng-deep：
+https://segmentfault.com/a/1190000012086737
+https://angular.io/guide/component-styles
+
+angular无用代码扫描
+
+Math.max.apply(null,arr)的原理学习一下：https://www.cnblogs.com/userzf/p/11354242.html
+
+Angular入口组件（entry component）与声明式组件的区别详解【理解了加载，有些东西可以放在entrycomponents里面】：https://www.jb51.net/article/137947.htm
+angular 动态组件类型详解(四种组件类型)：https://www.jb51.net/article/106378.htm
+
+
+=========================================================================================
+
+Angular 2 Tutorial【还是得完整看一遍以免有明显的知识漏洞】：
+https://www.tutorialspoint.com/angular2/index.htm
+https://www.tektutorialshub.com/angular-2-tutorial/
+经常看的一个网站：https://alligator.io/angular/
+
+Angular Material 7(这个是配合material 2的)：https://www.tutorialspoint.com/angular_material7/index.htm
+
+Angular Material Series：https://code-maze.com/angular-material-series/
+Creating Beautiful Apps with Angular Material：https://auth0.com/blog/creating-beautiful-apps-with-angular-material/
+Angular Material Tutorial：
+https://www.tutorialspoint.com/angular_material/index.htm
+https://www.wikitechy.com/tutorials/angular-material/
+https://material.angular.io/components/categories
+如果要学CDK从material网站上有入口：https://material.angular.io/components/table/overview
+Angular Material Data Table: A Complete Example (Server Pagination, Filtering, Sorting)：
+https://www.concretepage.com/angular-material/angular-material-table-sorting-pagination
+https://blog.angular-university.io/angular-material-data-table/
+Angular 8/7 | Edit/ Add/ Delete Rows in Material Table with using Dialogs inline Row Operation：https://www.freakyjolly.com/angular-7-8-edit-add-delete-rows-in-material-table-with-using-dialogs-inline-row-operation/
+Angular Material Inputs：https://www.concretepage.com/angular-material/angular-material-inputs
+mat-table的刷新：https://blog.csdn.net/yorksome/article/details/99698080
+mat-table的样式：
+https://stackoverflow.com/questions/45512823/angular4-material-md-table-column-width-autosizing-like-normal-table
+https://stackoverflow.com/questions/48684560/mat-table-auto-fit-column-width-to-bigger-content
+Angular 8/9 Modal Tutorial with Angular Material Dialog：https://www.positronx.io/angular-8-modal-tutorial-with-angular-material-dialog/
+Angular Modal Popup Example | Angular Material Dialog：https://appdividend.com/2019/02/11/angular-modal-tutorial-with-example-angular-material-dialog/
+Creating UIs with Angular Material Design Components：https://www.sitepoint.com/angular-material-design-components/
+Add AutoComplete in Angular Application using Angular Material：https://www.freakyjolly.com/angular-7-6-add-autocomplete-in-angular-application-using-angular-material/
+
+
+Building An Angular 5 CLI Project With ngx-bootstrap：https://www.c-sharpcorner.com/article/building-an-angular-5-cli-project-with-ngx-bootstrap/
+“ng-bootstrap” and “ngx-bootstrap”：
+https://ngx-universal.herokuapp.com/#/
+https://www.sitepoint.com/bootstrap-ui-libraries-angular-react-vue/
+How to Add Bootstrap to an Angular CLI project：https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
+How to Use Bootstrap 4 with Angular：https://www.bootstrapdash.com/use-bootstrap-4-with-angular/
+Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
+Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
+ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
+
+How to make a custom theme in Angular Material：
+https://www.positronx.io/create-angular-material-8-custom-theme/
+https://www.freecodecamp.org/news/how-to-make-a-custom-theme-in-angular-material-d47122a1e361/
+https://www.tutorialspoint.com/angular_material/angular_material_themes.htm
+https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
+预定义主题（配合Angular Material components使用）：~@angular/material/prebuilt-themes/indigo-pink.css：
+https://www.codemeals.com/angular-tutorials/angular-material/
+https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
+Angular Material: Creating a Custom Theme：
+https://alligator.io/angular/angular-material-custom-theme/
+https://coursetro.com/posts/code/116/Create-your-own-Angular-5-Material-Theme
+https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
+http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
+看懂INDIGO与material细节与关联
+
+How to Integrate Bootstrap with Angular (Angular 6)：https://grokonez.com/frontend/angular/angular-6/how-to-integrate-bootstrap-with-angular-angular-6
+
+看一个angular material2组件的代码，看一个easyui组件的代码【有了主题后，组件或许没有那么重要？还是反过来？要2方面都能达成，最好是能兼容】
+
+指导思想：先搞通一套，然后再孵化
+
+Material Design for Angular：https://www.oschina.net/news/97714/material2-6-3-2-released
+
+Differences Between Angular vs Bootstrap：https://www.educba.com/angular-vs-bootstrap/
+@ng-bootstrap和@angular/material的配合
+Bootstrap or Material Design? What is better for Angular 6?：https://www.futurum.tech/blog/index.php/2018/06/04/bootstrap-or-material-design-what-is-better-for-angular-6/
+On Choosing Material Design for Angular Over UI Bootstrap：https://dzone.com/articles/on-choosing-material-design-for-angular-over-ui-bo
+
+ng2-admin：https://akveo.github.io/ng2-admin/（比较ngx-admin）
+
+搜“ng-bootstrap ngx-bootstrap”
+用ngx-bootstrap，效能会比用bootstrap好很多吗：https://segmentfault.com/q/1010000018916806/
+
+还是要自己先搞清楚，然后再买模板
+
+再回过头看一遍easyui那些。还有个问题，如果他们的UI不一样，怎么兼容？
+jQWidgets
+ng-bootstrap组件库
+
+Maintained Angular Projects：
+https://www.ctolib.com/mip/maintained-angular.html
+
+【我现在的demo组件和主题是material，把这个完整做一遍】
+material的主题：
+https://ampersandacademy.com/tutorials/java/angular-material-6-free-theme
+这个网站有现成的：https://startangular.com/
+https://www.creative-tim.com/product/material-dashboard-angular2
+https://material.angular.io/guide/theming
+https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
+
+angular material 2：
+https://www.gistia.com/beginners-guide-angular-material-2/（material和bootstrap是两套东西）
+https://alligator.io/angular/angular-material-2/
+https://www.mithunvp.com/angular-material-2-angular-cli-webpack/
+https://coursetro.com/posts/code/29/Working-with-Angular-2-Material
+Angular Material 7 教程：https://www.kaifaxueyuan.com/frontend/angular-material7/angular-material7-home.html
+
+搞清楚Angular Material的样式定制（只要搞定一个组件就OK了）
+Angular Material 的设计之美：https://juejin.im/post/5d6fb73e518825168d37d500
+【这句话解决了组件样式与主题包的兼容问题，另一个问题是：主题包如何跟angular的目录结构适配】Angular Material 的样式几乎全部写在了 mixin 中，定制起来非常容易：https://juejin.im/post/5d6fb73e518825168d37d500
+Angular Material 给出了多套主题的设置方法，只需要增加样式控制类就可以了。
+
+【这个跟angular material不是一回事，是否有用？】bootstrap-material-design - Material design theme for Bootstrap 3 and 4：
+
+先从一个小点入手：ng-bootstrap怎么定制样式？
+View Encapsulation in Angular：
+https://www.tektutorialshub.com/angular/angular-view-encapsulation/
+https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
+
+
+<ul>
+  <li *ngFor="let contact of contacts | async">
+    <contact-card [contact]="contact"></contact-card>
+  </li>
+</ul>
+ngFor与async。星号是什么意思？
+https://www.jianshu.com/p/388461631b1d
+
+Angular 结构型指令 NgIf 原理：https://www.imwhite.com.cn/2019/09/angular-understand-structrual-directive/
+而directive则是在已经存在的dom元素上附加一些行为：https://segmentfault.com/a/1190000016106262
+指令分为三类，组件，属性指令和结构性指令：
+https://segmentfault.com/a/1190000008626070?utm_source=tag-newest
+https://www.cnblogs.com/mttcug/p/7976852.html
+Angular4 开发实战：(6) 创建指令(Directive): 
+https://blog.csdn.net/shenlei19911210/article/details/53218074
+http://ghmagical.com/article/page/id/RgIvn9Pai3ks
+Angular4-创建自定义指令Directive学习文档 - 节流指令：https://www.jianshu.com/p/cbb7bb2158e3
+
+npm audit fix：https://www.cnblogs.com/lhuser/p/11107520.html
+
+=========================================================================================
+
+<ng-container 指令：
+https://blog.csdn.net/weixin_39169232/article/details/84901665
+https://www.jianshu.com/p/0f5332f2bbf8
+https://www.jianshu.com/p/388461631b1d
+使用ng-content进行组件内容投射：
+https://www.cnblogs.com/laixiangran/p/8723166.html
+https://www.cnblogs.com/mttcug/p/8004447.html
+https://segmentfault.com/a/1190000014691169
+One of the Angular features that help us the most in building reusable components is Content Projection and ng-content：
+https://blog.angular-university.io/angular-ng-content/
+https://scotch.io/tutorials/angular-2-transclusion-using-ng-content
+自定义标签（组件）里面能套标签也是用ng-content：
+https://alligator.io/angular/content-projection-angular/
+
+
+user_group_user、user_group、user_group_role表的作用：https://zhuanlan.zhihu.com/p/97035035
+
+angular团队做angular的时候，会对webpack改造吗？
+A Beginner’s Guide to Webpack：
+https://www.sitepoint.com/webpack-beginner-guide/
+https://www.jianshu.com/p/42e11515c10f
+
+Dynamic Components【分析到底有多大的作用】：
+https://www.tutorialandexample.com/dynamic-components-in-angular-8/
+https://www.c-sharpcorner.com/article/overview-of-dynamic-components-in-angular/
+https://ultimatecourses.com/blog/angular-dynamic-components-forms
+https://grokonez.com/frontend/angular/angular-dynamic-component-loader-tutorial-with-examples
+https://www.gistia.com/angular-dynamic-components/
+https://malcoded.com/posts/angular-dynamic-components/
+https://indepth.dev/here-is-what-you-need-to-know-about-dynamic-components-in-angular/
+
+写一个Angular装饰器（Decorators）- 学于ng-zorro源码：https://zhuanlan.zhihu.com/p/93366889
+
+搜“angular captcha”或者“springboot captcha”
+
+Angular团队的组件开发套件(CDK)，component dev kit：https://stackoverflow.com/questions/42340649/what-is-cdk-in-angular-material-2-components
+The Angular Material CDK provides us with tools to build awesome and high-quality
+从零开始构建 Angular 组件库（cdk）：https://zhuanlan.zhihu.com/p/51856353
+Angular 练级之旅(6)-CDK的使用：https://zhuanlan.zhihu.com/p/51042392
+10分钟快速上手angular cdk【cdk怎么老和material一起出现】：
+https://hackernoon.com/a-first-look-into-the-angular-cdk-67e68807ed9b
+https://www.jianshu.com/p/0e8ae6506e7a
+https://www.cnblogs.com/wangmiao2606/p/10179287.html
+How to create a custom dropdown using Angular CDK：http://www.prideparrot.com/blog/archive/2019/3/how_to_create_custom_dropdown_cdk
+Angular 7 Drag and Drop example Angular Material CDK：https://grokonez.com/frontend/angular/angular-7/angular-7-drag-and-drop-example-angular-material-cdk
+Angular 6 - Use Angular Elements to build Custom Elements example：https://grokonez.com/frontend/angular/angular-6-elements-use-angular-elements-example-to-build-custom-elements-example
+https://grokonez.com/frontend/angular/angular-7/angular-7-virtual-scroll-example-angular-material-cdk
+
+
+jQuery工作流插件之gooflow流程解决方案：https://blog.csdn.net/WYpersist/article/details/80568095
+腾讯微信开源的工作流：https://github.com/Tencent/tmt-workflow
+
+
+【下周工作】
+1.楼层的管理；
+5.自定义Y轴、导出
+【待完成功能】
+1.工作台布局调整后数据的适配
+3.更改数据同步周期的设置功能
+4.添加echart图表的加载中效果（测试）
+5.数据缓存：已经读取的数据在没有切换筛选条件的情况下，来回切换按钮不再重新加载
+周末需要确认的事项：
+2.拖动到一个周期后，不再让拖动了
+3.横轴的定制（边缘、显示多少段）
+4.bug修复说明（再过一遍）
+5.评估报告要考虑的8方面
+6.周末要把生成zip文件的util弄好，把base64等等再精进一次（提升思维能力）
+
+Typescript引入第三方库之~.d.ts、@types 2种类型声明的用法：https://blog.csdn.net/themagickeyjianan/article/details/84635777
+angular 使用第三方库（利用@types实现）：https://blog.csdn.net/maoguiyou/article/details/80910364
+Angular2 中的依赖包详解：https://www.cnblogs.com/Ceri/p/7718782.html
+
+理解 TypeScript 装饰器（为什么 Angular 不需要 Hooks）：https://zhuanlan.zhihu.com/p/65764702
+
+在angular中，有没有必要把数据模型单独定义（突出数据模型）？https://segmentfault.com/a/1190000015976254
+
+在某个module下加component的方式：https://angularfirebase.com/lessons/how-to-lazy-load-components-in-angular-4-in-three-steps/
+
+更多从官方文档去熟悉更多东西的用法，不要一上来就百度
+
+看一下王健为啥要用pipe(share())。publish + refCount可以简写成share：
+https://www.learnrxjs.io/operators/multicasting/share.html
+https://zhuanlan.zhihu.com/p/33225623
+https://www.cnblogs.com/Answer1215/p/6925452.html?utm_source=itdadao&utm_medium=referral
+RxJS Tutorial for Beginners(看一下Observable.fromPromise源码)：
+https://www.devglan.com/javascript/rxjs-tutorial
+Angular RxJS tap：
+https://www.learnrxjs.io/operators/utility/do.html
+https://www.concretepage.com/angular/angular-rxjs-tap
+Subjects、Scheduler：https://codingcompiler.com/rxjs-tutorial/
+https://www.learnrxjs.io/
+手把手教你实现一个完整的 Promise：
+https://www.cnblogs.com/huansky/p/6064402.html
+https://blog.csdn.net/emily_cd/article/details/79739778
+Promise的调试这2个文章讲了吗：
+https://www.cnblogs.com/wangxiayun/p/10002641.html
+https://www.cnblogs.com/y896926473/articles/8167612.html
+RxJS Observables vs Promise 对比：
+https://www.jianshu.com/p/eb5f6444b502
+https://blog.csdn.net/napolunyishi/article/details/51339006
+https://www.jianshu.com/p/29d701bd613e
+https://juejin.im/entry/595e161c51882568af7f2bd6/
+Observables:
+1.本身的用法（了解这个东西的来龙去脉）；
+2.结合http的用法；
+3.unsubscribe、多个subscribe等用法
+如何使用 RxJS 更优雅地进行定时请求：https://www.cnblogs.com/nzbin/p/10956065.html
+如果不使用Rxjs，代码会变成什么样？会复杂和不优雅很多吗？
+利用Angular2的Observables实现交互控制：https://blog.csdn.net/ztguang/article/details/53107016
+Observable详解：https://segmentfault.com/a/1190000008809168?utm_source=tag-newest
+Rxjs源码解读之Observable：https://www.jianshu.com/p/a0e97678e191
+https://www.jianshu.com/p/0ccfb99f6713
+1.Observable和observer搞明白：https://www.jianshu.com/p/9b9a78afd80c
+obs:Observer<MessageEvent>
+看懂http库与Observable、observer的关联？Get、Post等对应的Observer是啥？【要能学会看代码，如何查看实现？】可不可以理解为subscribe的时候同时触发了？subscribe返回的类型是不是Subscription
+observable的pipe方法
+rxjs 创建操作符create：http://blog.tcs-y.com/2018/11/08/rxjs-operate-create/
+RxJS之Subject主题 ( Angular环境 )：
+https://www.cnblogs.com/sea-breeze/p/8992572.html
+https://blog.csdn.net/qq_34414916/article/details/85201246
+subscribe的时候才会触发后端请求，啥原理？【subscribe源码】
+如何把observable chain进来，能否用pipe方法：https://blog.danieleghidoli.it/2016/10/22/http-rxjs-observables-angular/
+RxJS的Observable概念详解：https://www.jianshu.com/p/674e2f50684f
+理解冷热两种模式下的Observables对于掌握Observables来说至关重要：https://segmentfault.com/a/1190000011052037
+[译] RxJS: 理解 publish 和 share 操作符：https://blog.csdn.net/weixin_34362875/article/details/87975505
+RxJS的另外四种实现方式（序）：https://my.oschina.net/langhuihui/blog/2051754
+使用 RxJS 处理多个 Http 请求：
+https://segmentfault.com/a/1190000010088631
+https://segmentfault.com/q/1010000010566110?sort=created
+https://www.jianshu.com/p/749c66942835
+[译] RxJS 高级缓存：https://zhuanlan.zhihu.com/p/42264563
+响应式编程和流式计算的关联？
+rxjs 创建操作符create：http://blog.tcs-y.com/2018/11/08/rxjs-operate-create/
+每天实现一个Rxjs中的Operator之Observable.create：https://blog.csdn.net/zhaoruda/article/details/82693882
+RxJS之Subject主题 ( Angular环境 )：https://www.cnblogs.com/sea-breeze/p/8992572.html
+1.Observable：
+http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
+https://blog.csdn.net/qq_34414916/article/details/85194098
+https://segmentfault.com/a/1190000008809168?utm_source=tag-newest
+2.RxJS及Promise；
+3.对比Observable和Promise：
+https://blog.csdn.net/chaoxiao1231/article/details/81209069
+4.http库是怎么使用Observable的；
+5.AsyncPipe；
+Angular4最佳实践之unsubscribe：https://sq.163yun.com/blog/article/173601020126662656
+ pipe的场景有哪些。pipe只起一个先包起来的作用把？
+Of\create等和subscribe是怎么连起来的？（有一个emitting的过程）
+那么问题是不是可以转换成：subscriber之间的关系？（subscribe后面再接subscribe？）
+我们的angular工程如果用同步的http请求会怎么样？哪些地方更适合同步请求？同步的http库最流行的是啥？
+如果没有subscribe，http请求能完成吗？
+为什么在subscribe里面，就获取不了前面的调试信息了？这个和线程有关吗？
+http在load事件完成之后进行responseObserver.complete()，自动结束数据流，下面是Http源码中的部分代码：https://sq.163yun.com/blog/article/173601020126662656
+Angular何时需要Unsubscribe：https://segmentfault.com/a/1190000013271183
+搞清楚模块和unsubscription：
+https://blog.csdn.net/qwer8442949/article/details/59524640
+rxjs库里面Subscription类的unsubscribe()用法
+RxJS 5 教程：https://cloud.tencent.com/developer/doc/1257
+An Animated Intro to RxJS：https://css-tricks.com/animated-intro-rxjs/
+Async/Await替代Promise的6个理由：https://www.cnblogs.com/fundebug/p/6667725.html
+捕获未处理的Promise错误：https://www.cnblogs.com/fundebug/p/7655106.html
+toPromise：https://blog.csdn.net/wgp15732622312/article/details/79811099
+promises与observables的区别：
+https://juejin.im/entry/595e161c51882568af7f2bd6/
+https://blog.csdn.net/napolunyishi/article/details/51339006
+https://www.jianshu.com/p/29d701bd613e
+First, Promises are eager and are executed immediately. Observables are not eager and are only executed when subscribed to.
+Second, Promises are asynchronous. Observables can be either synchronous or asynchronous.
+Third, Promises are expected to return only a single value (like a function). Observables can return zero, one or more (infinitely) values.
+You can provide an Observable, Promise, Aray, or Iterable.(RxJS里面可以用作stream的)
+
+
+Angular的10个你可能不知道的有用特性：https://www.zybuluo.com/xuemingdeng/note/1250174
+10个你不知道的Angular实用特性：https://www.jianshu.com/p/d4f9cde8350e
+
+node.js、angular-cli、angular版本、TypeScript的升级
+Node.js && Angular && TypeScript 环境安装与更新：https://www.cnblogs.com/Lulus/p/10659126.html
+通过5个简单步骤升级到Angular 7：https://baijiahao.baidu.com/s?id=1617357492505066279&wfr=spider&for=pc
+Angular4升级为Angular7进阶指南：https://www.jianshu.com/p/05565229ab64
+
+Angular2入门之模块与组件：https://www.jianshu.com/p/1102d886aebe
+【转载】在Angular 2/Typescript中声明全局变量的最佳方式是什么？https://www.cnblogs.com/sybboy/p/8075146.html
+Angular4 - 共享模块：https://blog.csdn.net/It_rod/article/details/79188921
+
+精通Angular之NgClass和NgStyle【学习指令源码】：https://zhuanlan.zhihu.com/p/95490706
+
+知乎angular话题：https://www.zhihu.com/topic/20015467/hot
+
+确认是否需要把less改为sass
+angular4.0使用sass：https://www.cnblogs.com/minigrasshopper/p/7692281.html
+
+使用subscribe在一个文件里面也可以实现发布和订阅，改善代码结构
+
+尝试使用子module（存放的位置）。怎么用好子模块对大型系统至关重要，只是我们还没遇到场景，也缺乏经验。
+
+观察代码验证这句总结：
+组件之间的通信基本都是单向数据流，就是说父组件通过属性绑定把数据传递给子组件，子组件想要修改传入的数据必须通过事件回调和父组件通信
+
+Angular 提供了两种不同的方法来通过表单处理用户输入：FormsModule与ReactiveFormsModule（模板驱动表、响应式表单：template-driven forms and reactive forms）
+响应式表单定义：https://fireship.io/lessons/basics-reactive-forms-in-angular/
+这个里面提到3种表单，还包括模型驱动的：https://blog.thoughtram.io/angular/2016/03/21/template-driven-forms-in-angular-2.html
+template-driven forms：Forms built with this directive can only be tested in an end to end test because this requires the presence of a DOM, but still, this mechanism is very useful and simple to understand.
+Template Driven Form：https://grokonez.com/frontend/angular/angular-6/angular-6-template-driven-form-ngmodel-for-two-way-data-binding
+表单状态相关的属性【angular的封装提供了很多增强功能和便利性】：https://www.cnblogs.com/Ceri/p/8023543.html
+理解Angular的Reactive Form：https://www.jianshu.com/p/f978aefe8788
+Angular4 响应式表单应用以及验证：https://segmentfault.com/a/1190000011764653
+响应式表单中用FormBuilder构建数据模型更方便：https://blog.csdn.net/liweibo348/article/details/83989139
+FormBuilder in Angular 6：https://dzone.com/articles/formbuilder-in-angular-6
+two different approaches to dealing with forms: template driven and reactive forms.
+https://www.tutorialspoint.com/angular6/angular6_forms.htm
+angular响应式表单和模板驱动表单的区别？https://segmentfault.com/q/1010000015235353
+直接学reactive forms：
+https://malcoded.com/posts/angular-fundamentals-reactive-forms/
+https://fireship.io/lessons/basics-reactive-forms-in-angular/
+
+我总计对使用form(标签)必要性的一些理解：
+1.在原始的非ajax非框架的开发中必不可少；2.在现代开发方法中可以增强语义甚至提供操作便利性；3.提交用submit还是button不是最关键的，关键是可以利用form的特性（例如统一数据管理）；4.其他的一些细节方面的考虑：https://www.zhihu.com/question/39739110?sort=created
+
+浅谈 Angular 项目实战（前端工程化）：
+https://www.cnblogs.com/nzbin/p/9038162.html
+https://zhuanlan.zhihu.com/p/37615879
+https://blog.csdn.net/zzh920625/article/details/74857151
+https://blog.csdn.net/mayfla/article/details/78942554
+https://www.jianshu.com/p/88ed70476adb
+如何工程化开发大型angular2项目：
+https://blog.csdn.net/weixin_33922670/article/details/89214443
+https://blog.csdn.net/guiyunfan94/article/details/70670203
+
+看一下每个页面是怎么设置样式的，就能前进一大步
+
+Your global Angular CLI version (8.2.0) is greater than your local
+version (8.0.4). The local Angular CLI version is used.
+
+最小间隔的问题没搞明白，minValueSpan好像不行
+
+如何自己实现一个 React 框架：https://pomb.us/build-your-own-react/
+Java动态追踪技术探究：https://blog.csdn.net/m0_37941483/article/details/103447804
+
+tree-shaking：
+https://www.cnblogs.com/liuxinheng/articles/9964650.html
+https://www.cnblogs.com/smileself/p/9805819.html
+https://blog.csdn.net/huang100qi/article/details/82357141
+https://www.jianshu.com/p/7994b1fc6dfe
+
+CREATING A SINGLETON SERVICE IN ANGULAR2：https://octoperf.com/blog/2016/03/29/singleton-service-using-angular2/
+单例服务：https://angular.cn/guide/singleton-services
+angular 服务的单例模式：
+http://www.xools.net/article/46906111.html
+https://www.cnblogs.com/wbxjiayou/p/6163831.html
+https://segmentfault.com/a/1190000014639165?utm_source=tag-newest
+https://gitee.com/nigulasizhaosier/angular
+
+比较angular和spring的DI：
+https://angularquestions.com/2019/10/10/how-dependency-injection-in-angular-is-different-from-dependency-injection-in-spring/
+关于Ivy，Angular的新引擎（NodeInjector）：https://zhuanlan.zhihu.com/p/93960123
+了解Angular Ivy: Incremental DOM 和 Virtual DOM：https://blog.csdn.net/rockan007/article/details/90716237
+Angular Injector, @Injectable & @Inject：https://www.tektutorialshub.com/angular/angular-injector-injectable-inject/
+自己写依赖注入【和spring的依赖注入进行比较】
+angular 依赖注入：Injector、@Inject、@Injectable、Inject token等名词搞清楚
+https://appdividend.com/2017/10/03/angular-dependency-injection/
+https://www.dotnetcurry.com/angularjs/1446/dependency-injection-di-angular
+https://ultimatecourses.com/blog/angular-dependency-injection
+https://www.concretepage.com/angular/angular-dependency-injection
+https://www.jianshu.com/p/64ec85365ebf
+angular依赖注入：https://www.jianshu.com/p/833deaef0068
+Angular6的服务和依赖注入【讲了一点组件和service的分工】：https://segmentfault.com/a/1190000015391334
+Angular 4 依赖注入教程（系列教程）：https://segmentfault.com/a/1190000009612113
+@Injectable作用及用法：
+https://segmentfault.com/a/1190000006672079
+https://blog.csdn.net/muzizongheng/article/details/85257009
+Angular 4依赖注入教程：
+https://segmentfault.com/a/1190000009645391
+使用新语法进行依赖注入【解决了什么问题？配置更简便？】 - providedIn: 'root' | SomeModule：
+https://blog.csdn.net/wf19930209/article/details/81105811
+https://blog.csdn.net/DataGrand/article/details/92615844
+https://segmentfault.com/a/1190000019500553
+angular源码分析之StaticInjector：
+https://segmentfault.com/a/1190000017382929
+https://zhuanlan.zhihu.com/p/52415789
+
+
+也谈基于NodeJS的全栈式开发：
+https://www.cnblogs.com/webvision/p/4766315.html
+https://www.cnblogs.com/itrena/p/5926850.html
+
+Implement a single-page application with Angular 2：https://developer.ibm.com/tutorials/wa-implement-a-single-page-application-with-angular2/
+
+【荐】Angular 最佳实践：https://blog.csdn.net/fen747042796/article/details/77697614
+实例式探索Angular5最佳实践：https://blog.csdn.net/weixin_33937913/article/details/91461232
+
+jsonp库解读与分析：https://www.jianshu.com/p/bb82bb293b3c
+
+下个季度：以解决问题为抓手，别忘了张旭峰的解决问题能力
+
+zip也是utils，转移到后端文档
+
+Arya for Angular
+
+在Angular6.x中使用 paper.js绘制矩形：https://blog.csdn.net/zhy13087344578/article/details/96432500
+
+JS中的反射
+几个web基础文章（精进一点）：
+http://www.ruanyifeng.com/blog/2019/11/css-position.html
+http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html
+Flexbox 是一维布局系统，适合做局部布局，比如导航栏组件。Grid 是二维布局系统，通常用于整个页面的规划：
+https://www.zhihu.com/question/28691822/answer/270656437
+https://www.zhihu.com/question/284620870/answer/439277945
+CSS 终极之战：Grid VS Flexbox：https://zhuanlan.zhihu.com/p/31952490
+最全～Grid vs Flex：https://zhuanlan.zhihu.com/p/46757975
+grid貌似很新。bootstrap对flex、grid的支持？
+Flex 布局新旧混合写法详解（兼容微信）：https://segmentfault.com/a/1190000003978624
+如何编写轻量级 CSS 框架：https://www.cnblogs.com/nzbin/p/7073601.html
+
+前端响应式详解：https://zhuanlan.zhihu.com/p/77804628
+css display:flex 属性：https://www.jianshu.com/p/d9373a86b748
+阮一峰：CSS定位详解：http://www.ruanyifeng.com/blog/2019/11/css-position.html
+为什么 CSS 这么难学？
+https://www.zhihu.com/question/66167982/answer/239709754
+https://www.zhihu.com/question/322443498/answer/683118910
+【把less改成scss】这让我想起前端流行的一句话，“凡事能用 CSS 完成的就不要用 JS”，这也是我不建议大家用 Less 的原因之一。
+搞懂grid比table好的方面。grid是在CSS中实现，而table是在HTML中实现的
+HTML布局四剑客-Flex,Grid,Table,Float：https://www.cnblogs.com/BigJ/p/layouts.html
+position,float,flex,grid,table前端页面布局方式分析及选择：https://blog.csdn.net/feiyu_may/article/details/83341013
+有一个样式：.custom-btns同时使用了position:absolute;和display:flex，结合position学习布局
+A Complete Guide to Flexbox：
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+A Complete Guide to Grid：
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+学懂grid布局：这篇就够了(译)：https://zhuanlan.zhihu.com/p/60883744
+精读《用 css grid 重新思考布局》：https://zhuanlan.zhihu.com/p/86519309
+flex：思考一下别人设计的合理性（完备、正交）
+Bootstrap 4: 对比普通网格和 Flexbox 网格：https://www.oschina.net/translate/boostrap-4-regular-vs-flex-grid
+Flex布局和Bootstrap布局两者的比较：https://www.cnblogs.com/sexintercourse/p/6732109.html
+bootstrap栅格布局以及bootstrap3和bootstrap4的区别：https://blog.csdn.net/weixin_42041193/article/details/81068002
+三年Angular架构经验总结：https://blog.csdn.net/liujiawei00/article/details/86510428
+javaScript中的暂性死区：https://www.jianshu.com/p/6cf381c2a020
+Promise的特性及实现原理：https://www.jianshu.com/p/b9ec2e3c3ad8
+js中apply和Math.max()函数的问题及区别介绍：https://www.jb51.net/article/137231.htm
+微任务和宏任务：https://www.jianshu.com/p/3f295385c0af
+JavaScript - 垃圾回收机制GC：https://www.jianshu.com/p/10f4aab5eecc
+JavaScript算法面试题 - 不用循环返回12345：https://www.jianshu.com/p/381a86e5181e
+从零开始手撸一个 Json Parser：https://zhuanlan.zhihu.com/p/92866972
+Learning JavaScript Design Patterns：https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+为啥Math.max方法参数不支持数组，但是这样写可以：Math.max.apply(Math, arr);
+(建议精读)原生JS灵魂之问(中)，检验自己是否真的熟悉JavaScript？https://zhuanlan.zhihu.com/p/90017386
+函数式编程、纯函数、高阶函数、闭包、柯里化函数，偏应用，组合和管道，函子，Generator：https://www.jianshu.com/p/8e961790f85b
+如何自行实现reduce函数？
+FUNCTIONAL JAVASCRIPT: TRAVERSING TREES WITH A RECURSIVE REDUCE：https://jrsinclair.com/articles/2019/functional-js-traversing-trees-with-recursive-reduce/
+FUNCTIONAL JAVASCRIPT: FIVE WAYS TO CALCULATE AN AVERAGE WITH ARRAY REDUCE：https://jrsinclair.com/articles/2019/five-ways-to-average-with-js-reduce/
+面试官：你们前后端分离的接口规范是什么？https://zhuanlan.zhihu.com/p/93226923
+关于前端枚举的一点思考：https://ruphi.cn/archives/348/
+js判断空json【有没有面试题的价值】：https://blog.csdn.net/lioldamon/article/details/102813557
+JS进阶 -- MVC 思想：https://www.jianshu.com/p/65033917ff01
+【系列】CSS 最佳实践 + 套路：https://www.jianshu.com/p/d96480c0e6f4
+CSS3 tutorial【要搞懂设计思路】：
+https://www.tutorialrepublic.com/css-tutorial/
+https://css3-tutorial.net/
+https://www.tutorialspoint.com/css/
+javascript Date format(js日期格式化)(转)【0.自己先根据调用方法试写一下，没那么容易；1.对比自己写的以及学习；2.作为我的基础设施；
+3.这段代码是不是正则的一个绝好的应用？5.注意观察补0是怎么完成的】：
+https://www.cnblogs.com/xianfengzhike/p/9656382.html
+
+Interceptors can be really useful for features like caching and logging.
+下面是2种改变请求的方法：
+1.Angular HttpClient: Interceptors：
+(rxjs do的用法？)https://alligator.io/angular/httpclient-interceptors/
+2.（有一些库能完成interceptor的功能）https://scotch.io/@kashyapmukkamala/using-http-interceptor-with-angular2
+angular 7.0 http Interceptor 拦截器【token刷新后前端存储可以放这里吧？再看一下interceptor典型使用】：https://www.jianshu.com/p/165c0b6d1475
+Angular 6 & 7 HTTP Client Interceptor with Error handling：https://scotch.io/@vigneshsithirai/angular-6-7-http-client-interceptor-with-error-handling
+Angular JWT Authorization with Refresh Token and Http Interceptor：https://angular-academy.com/angular-jwt/
+https://debugmode.net/2019/10/31/how-to-use-interceptor-in-angular/
+https://www.tektutorialshub.com/angular/angular-httpclient-http-interceptor/
+https://www.concretepage.com/angular/angular-caching-http-interceptor
+如何在Angular优雅编写HTTP请求:
+https://www.cnblogs.com/oxspirt/p/10635259.html
+https://www.cnblogs.com/koleyang/p/5053158.html
+
+angular4,6 引入第三方插件的方法【可以具体试试jquery、highcharts等】：
+https://www.cnblogs.com/fuzitu/p/10214574.html
+https://blog.csdn.net/qq_27751965/article/details/89223464
+https://www.cnblogs.com/adong69/p/9282138.html
+https://www.jianshu.com/p/02dfbdce5ff6
+
+package.json：
+https://www.cnblogs.com/zhaowinter/p/10905732.html
+https://www.cnblogs.com/rong88/archive/2019/10/12/11664337.html
+https://www.cnblogs.com/blankOne/p/10967481.html
+https://www.cnblogs.com/paris-test/p/9760308.html
+以后的简历应该写熟悉大数据、分布式系统、人工智能的基础理论，然后再列举具体的软件
+angular.json：
+https://segmentfault.com/a/1190000016292354
+https://blog.csdn.net/m0_37723113/article/details/84026796
+
+多tab页路由复用
+zone.js，模板AST，动态组件，观察者模式+依赖注入隐藏状态管理细节...
+Angular 中的容器组件：https://zhuanlan.zhihu.com/p/87333832
+没错，我就是要吹爆Angular：https://zhuanlan.zhihu.com/p/38430368
+
+把echarts这种东西封装成angular版本的要做些啥？
+ngx-echarts文档（根据下载时候对应的名称来查找文档，定位问题）：https://www.npmjs.com/package/ngx-echarts
+一个Echart官网示例中世界地图的例子：https://blog.csdn.net/wallowyou/article/details/53135243#comments
+
+搜“前端 工作流”能搜出来很多工作流程的东西（不是工作流组件）
+
+看一下别人对angular比较深入的观点：https://www.zhihu.com/question/355760849/answer/938934606
+
+5.webSocket继续调试
+canva实践小实例 - 马赛克效果：https://www.cnblogs.com/liugang-vip/p/5442878.html
+Angular2使用Guard和Resolve进行验证和权限控制：https://www.jb51.net/article/112016.htm
+ES6-生成器及其实现：https://www.jianshu.com/p/154804e7b3cf
+get请求里面observe:'response'和默认的'body'有什么区别？梳理一下
+angular的12个经典问题，看看你能答对几个？（里面有提到codelyzer。codelyzer与tslint）：https://gcdn.grapecity.com.cn/showtopic-36569-1-3.html
+模块对动态语言的重要性？
+JS函数名一样，一个2个参数，一个1个参数，为啥不行？
+还有函数名和变量名一样为啥不行？
+有时候人们会简单的把发布订阅模式和观察者模式混为一谈，比如上面的一峰老师，其实两者还是有些区别的。至少它们的英文名称不同：Observer vs Pub-Sub：https://www.jianshu.com/p/e37ca8369162/
+放假：
+1.思考自增id方案；
+2.对比@ViewChild和@Input、@Output
+[译]现代框架存在的根本原因：https://juejin.im/post/5d1df53fe51d4510a5033627
+前端三大框架以及jquery与bootstrap这种框架有什么（概念上、范畴上的）区别？https://www.zhihu.com/question/304757674/answer/546374749
+ES6、7、8、9新特性：
+https://www.jianshu.com/p/9da4aa1c9970
+https://juejin.im/post/5c19c8105188251920597c0d
+JS函数生成器，function* () {}：
+https://www.cnblogs.com/yuzhengbo/p/6807914.html
+https://www.cnblogs.com/jffun-blog/p/9402184.html
+构造器函数：https://www.jianshu.com/p/e5e09b1bb360
+今日头条前端面试题与解析：https://zhuanlan.zhihu.com/p/83218377
+前端面试题-自己实现bind：https://zhuanlan.zhihu.com/p/85438296
+100 行代码实现 Promises/A+ 规范：https://zhuanlan.zhihu.com/p/83965949
+前端面试题 - 自己实现call和apply：https://zhuanlan.zhihu.com/p/83523272
+JS函数式编程【译】1.Javascript函数式编程的力量 举个例子：https://www.cnblogs.com/tolg/p/4672069.html
+使用JavaScript实现“真函数式编程”（旧文搬运）：https://zhuanlan.zhihu.com/p/83963085
+JavaScript一个函数式编程-------求标准差：https://www.cnblogs.com/ctsch/p/6911759.html
+征服 JavaScript 面试：什么是函数组合：https://www.open-open.com/lib/view/open1482980188428.html
+大神是怎样用函数式JavaScript计算数组平均值的：https://www.cnblogs.com/fundebug/p/5-ways-calculate-an-average-with-reduce.html
+为什么你会觉得angular很难？
+https://zhuanlan.zhihu.com/p/51752922
+https://www.zhihu.com/question/35767399/answer/64506437
+angular设计思想：
+https://www.jianshu.com/p/ab7c827ceef6
+https://www.oschina.net/news/49890/angular-20-design-principle
+https://www.jianshu.com/p/b5000e6b0851
+Angular组件篇：https://www.jianshu.com/p/f03c6df14956
+几款流行的angular组件库：https://blog.csdn.net/dengfangfang11/article/details/80326516
+javascript中的同步迭代和异步迭代：https://blog.csdn.net/zgrbsbf/article/details/95180183
+ES9中的异步迭代器（Async iterator）和异步生成器（Async generator）：https://blog.csdn.net/weixin_34162401/article/details/87993867
+ES2018 新特征之：异步迭代器 for-await-of：https://blog.csdn.net/vCa54Lu0KV27w8ZZBd/article/details/80155429
+JavaScript利用闭包实现模块化：
+https://www.cnblogs.com/wswq/p/6282920.html
+https://blog.csdn.net/weixin_34387284/article/details/87955456
+模块化的意义：
+http://caibaojian.com/module-javascript.html
+https://cloud.tencent.com/developer/information/js%E6%A8%A1%E5%9D%97%E5%8C%96%E5%A5%BD%E5%A4%84
+https://juejin.im/post/5d92d0316fb9a04dec52f948
+ES6中的promise generator函数 ES7 asyc/await函数：https://blog.csdn.net/qq_38643776/article/details/90639846
+js 异步编程，async 函数与 Promise、Generator 函数的比较：https://www.cnblogs.com/tianzun-blog/p/8808068.html
+Promise对象：https://www.jmjc.tech/less/73
+我的理解：Promise将多个异步操作之间的时序关系分离出来并管理了起来，将他们以一种平级的关系顺序写出来。将代码的控制结构分离了出来：https://segmentfault.com/a/1190000013141641
+async await：
+https://segmentfault.com/a/1190000007535316
+https://www.jmjc.tech/less/74
+JS 异步(callback→Promise→async/await)：https://segmentfault.com/a/1190000013141641
+JS的异步再看一下【要知道JS里面的异步是什么后面才能用Promise和async/await】
+
+Angular2 前端代码规范：https://blog.csdn.net/aoxi0033/article/details/101818169
+规范的 commit (Angular规范)：https://blog.csdn.net/SJ1551/article/details/100600881
+前端工程化（2）：快速搭建基于angular团队代码提交规范的工作流：https://blog.csdn.net/weixin_34150830/article/details/91390831
+
+
+leafLet地图javascript库：https://leafletjs.com/
+Building Maps in Angular Using Leaflet, Part 1（至少有4部分）: 
+https://alligator.io/angular/angular-and-leaflet/
+
+有没有插件可以直接跳转到class？https://www.jianshu.com/p/de3314d3514e
+
+Angular Snippets用法：
+https://marketplace.visualstudio.com/items?itemName=danwahlin.angular2-snippets
+https://www.sitepoint.com/boosting-workflow-angular-5-snippets-vs-code/
+https://www.cnblogs.com/freeliver54/p/9672627.html
+
+
+一文看懂前端和后端开发：https://www.infoq.cn/article/XUMp-7refE8T9Lwmdeld
+2020年大前端发展趋势：https://blog.csdn.net/xiangzhihong8/article/details/103233487
+2019-2020大前端：
+https://segmentfault.com/a/1190000018264176?utm_source=tag-newest
+https://www.cnblogs.com/lhb25/p/2019-frontend-trending.html
+http://www.imooc.com/article/283259?block_id=tuijian_wz
+https://juejin.im/entry/5c8cc96be51d453cad3147f6
+https://www.infoq.cn/article/K_RFbwfff5MugJXixYDQ
+近些年发展迅猛的虚拟Dom技术类框架Angular、React、Vue，配合Redux、dva等数据流方案，使得大前端的时代已然真正的降临。
+小程序多端框架全面测评：chameleon、Taro、uni-app、mpvue、WePY：https://www.cnblogs.com/fundebug/p/compare-wechat-app-frameworks.html
+
+h5&html5：
+https://www.cnblogs.com/guardian-hb/p/10223417.html
+https://www.cnblogs.com/cwzqianduan/p/9443004.html
+
+前端路由跳转基本原理【如何识别并保持导航区不变？】【看下面相关文档】：
+https://blog.csdn.net/qq_40028324/article/details/85056481（最简单的demo）
+前端路由的前生今世及实现原理：https://blog.csdn.net/yuchangchenTT/article/details/84868567
+https://segmentfault.com/a/1190000018081475
+https://blog.csdn.net/weixin_34008784/article/details/87958243
+https://segmentfault.com/a/1190000010401337
+https://segmentfault.com/a/1190000015123061
+https://segmentfault.com/a/1190000009921327
+
+Angular Universal & Server-side rendering：
+https://alligator.io/angular/angular-universal/
+https://blog.angular-university.io/angular-universal/
+https://malcoded.com/posts/angular-fundamentals-universal-server-side-rendering/
+服务端渲染：
+https://www.cnblogs.com/laixiangran/p/8664480.html
+https://www.cnblogs.com/sgciviolence/p/6961287.html
+从头开始，彻底理解服务端渲染原理(8千字汇总长文)：https://zhuanlan.zhihu.com/p/76967335
+Angular Universal 服务端渲染：https://www.jianshu.com/p/40be228a5ec6
+
+Angular 6 Loading Spinner Example：https://investmentnovel.com/angular-6-loading-spinner-example/
+Angular 6 Charts Example Tutorial From Scratch：https://investmentnovel.com/angular-6-charts-example-tutorial/
+
+ngAfterViewInit() 初始化完组件视图及其子视图之后调用【这句话非常重要，能否在调试时观察加载顺序】：https://www.cnblogs.com/xinjie-just/p/10059468.html
+
+Three.js 3D 动画
+d3.js
+Day1 百度Echarts，蚂蚁金服G2，D3三种主流可视化工具对比：https://zhuanlan.zhihu.com/p/78163830
+
+在angular 项目的根目录下创建 proxy.config.json 文件的作用？
+
+angular官网：https://www.angular.cn/
+Angular 2 Tutorial：https://www.tutorialspoint.com/angular2/index.htm
+Angular2 入门：
+https://www.jianshu.com/p/c8d7885e2761
+https://www.tutorialspoint.com/angular6/index.htm
+https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example
+Angular 2 教程：https://www.runoob.com/angularjs2/angularjs2-tutorial.html
+（这个例子中，DataService是如何用到app中的HttpClientModule的）
+Angular 4 教程：https://www.w3cschool.cn/angular/
+可以看教程了：https://angular.io/tutorial
+Angular 6 Tutorial With Example Using Angular 
+Angular 6 教程：https://www.kaifaxueyuan.com/frontend/angular-6.html
+介绍Angular7最新功能,或许你就开始喜欢上它：https://baijiahao.baidu.com/s?id=1618389718123024252&wfr=spider&for=pc
+解析Angular 7的十大特性：https://blog.csdn.net/cpongo4/article/details/89149219
+英文tutorial：https://www.javatpoint.com/angular-7-tutorial
+Angular7入门辅助教程：https://blog.csdn.net/qq_34414916/article/category/9282944
+Learn Angular 8 Step By Step In 10 Days：https://www.c-sharpcorner.com/article/angular-8-service-day-8/
+为Web开发人员精选的十种Angular教程：http://developer.51cto.com/art/201806/577015.htm
+
+What’s new in Angular 5? https://www.gistia.com/comprehensive-angular-5-guide/
+Angular 6正式版发布，都有哪些新功能：https://blog.csdn.net/xiangzhihong8/article/details/80208330
+Angular7的新特性：https://zhuanlan.zhihu.com/p/47268284
+Angular 8的新特性介绍：https://www.hellojava.com/a/78193.html
+angular8：https://www.oschina.net/news/107068/version-8-of-angular
+Angular 8.2.0 正式发布：https://www.oschina.net/news/108756/angular-8-2-0-released
+Angular 8之升级和新功能摘要：https://blog.csdn.net/wf19930209/article/details/93380228
+
+Angular 6.1启用了ViewEncapsulation.ShadowDom功能
+
+在 angular 8 中利用 JWT 进行身份认证：http://www.luoxiao123.cn/angular-8-jwt-authentication.html
+Anguar 使用interceptor拦截器设置请求头传入jwt token【写通容易，完全理解不易，把每一行都看懂】：https://blog.csdn.net/qq_29483485/article/details/82150985
+angular 使用jwt token验证：https://blog.csdn.net/qq_34438958/article/details/76051231
+1.前端封装jwt【用interceptor接收刷新的token。怎么发请求时带token？】
+angular-jwt：https://www.jianshu.com/p/a9a535edf79f
+
+从blob中读数据 https://javascript.info/blob
+【重在调试，现有的知识是可以解决的】用get或者post，把下载excel调通：
+this.http.get(url, {responseType: 'blob', observe: 'response', headers: headers}).pipe(
+	retry(0),
+	catchError(this.handleError(''))
+);
+Angular HttpClient responseType和observe的坑人行为：https://www.cnblogs.com/wangtingnoblog/p/10322483.html
+angular2/angular4 如何通过$http的post方法请求下载二进制的Excel文件：https://www.cnblogs.com/liugang-vip/p/7016733.html
+You can observe the full response instead of the content only. To do so, you have to pass observe: response into the options parameter of the function call：https://stackoverflow.com/questions/45505619/angular-4-3-3-httpclient-how-get-value-from-the-header-of-a-response
+ArrayBuffer 对象，Blob 对象：
+https://wangdoc.com/javascript/bom/arraybuffer.html
+https://www.jianshu.com/p/54d878aa0237
+ArrayBuffer 对象表示一段二进制数据，用来模拟内存里面的数据，这个对象是 ES6 才写入标准的。然后是blob和arraybuffer的转换：http://qnimate.com/an-introduction-to-javascript-blobs-and-file-interface/
+header里面的Content-Disposition是什么意思？value例子：attachment;fileName=aaa
+
+TypeScript和Node模块解析策略：https://www.cnblogs.com/winfred/p/8179815.html
+node_modules同时支持ts、js语言把？
+
+this.repairRefreshEmitter = new EventEmitter();
+floorChangeEvent = new EventEmitter<any>();
+this.floorChangeEvent.pipe(share()).subscribe();
+
+浅谈HTML5 Web Worker：https://zhuanlan.zhihu.com/p/95021220
+如何在Angular CLI上使用SpreadJS：https://www.grapecity.com.cn/blogs/spreadjs-angularcli
+
+Angular Global CSS styles：
+https://www.tektutorialshub.com/angular/angular-global-css-styles/
+【重要】https://www.tektutorialshub.com/angular/angular-style-binding/
+
+【View Encapsulation strategies】【如何：1.不干扰别人；2.不被别人干扰】
+Angular之 ViewEncapsulation 与 Shadow DOM：
+https://www.tektutorialshub.com/angular/angular-view-encapsulation/
+https://codecraft.tv/courses/angular/components/templates-styles-view-encapsulation/
+
+ngOnChanges当被绑定的输入属性的值发生变化时调用，当然必须是父组件使子组件输入属性值变化时才会调用：https://blog.csdn.net/weixin_38883338/article/details/102762132
+angular中ngOnChanges与组件变化检测的关系：https://www.cnblogs.com/chen8840/p/10572017.html
+https://www.jianshu.com/p/e71b0b95eaa0
+
+angular源码的查看方式：在接口所在的(父)目录下，有esm5、esm2015、fesm5、fesm2015这样的目录，源码在这里面
+Angular 中拦截器的真相和 HttpClient 内部机制：https://zhuanlan.zhihu.com/p/52827695
+激动人心的 Angular HttpClient的源码解析（这个文章主要讲的是特性，没有源码分析）：https://www.jb51.net/article/118292.htm
+
+Error Handling with Angular 6 - Tips and Best Practices：
+https://scotch.io/bar-talk/error-handling-with-angular-6-tips-and-best-practices192
+https://grokonez.com/frontend/angular/angular-6/error-handler-angular-6-httpclient-catcherror-retry-with-node-js-express-example
+Using async-await feature in Angular
+Seven Methods for Debugging Angular Applications：https://angularfirebase.com/lessons/methods-for-debugging-an-angular-application/
+
+
+路由动画：
+https://blog.csdn.net/kuangshp128/article/details/78300241
+https://segmentfault.com/a/1190000011843221
+https://segmentfault.com/a/1190000010708986
+https://zhuanlan.zhihu.com/p/28188826
+https://blog.csdn.net/weixin_30376083/article/details/97981623
+
+了解前端模块化 -- 从构建一个 UI 组件库开始：https://zhuanlan.zhihu.com/p/71168066
+前端组件化
+Angular 2.0支持原生的Shadow DOM，也可以通过模拟(emulated)的方式来支持它，通过设置每个component的encapsulation属性，可以决定每个组件的css的影响范围。
+搞清楚Web Components现状
+使用 Angular 打造框架无关的 web 组件：https://zhuanlan.zhihu.com/p/98621475
+Web Components 入门实例教程：
+https://www.webcomponents.org/introduction
+https://www.robinwieruch.de/web-components-tutorial/
+Web Components尝试：https://segmentfault.com/a/1190000020118679?utm_source=tag-newest
+【尝试一次】http://www.ruanyifeng.com/blog/2019/08/web_components.html
+https://zhuanlan.zhihu.com/p/27241920
+https://yq.aliyun.com/articles/52436/
+微前端与Web Components：https://www.jianshu.com/p/5d3d279ee4b1
+angular/components：https://github.com/angular/components
+Angular doesn’t support web components yet, but there is a branch in angular repository and when I saw it decided to play with it and see how it will work.
+Using Web Components in Angular：https://contentlab.io/using-web-components-in-angular/
+只要能自己封装一些组件，组件的知识不就熟练了吗
+CSS-in-JS，向Web组件化再迈一大步（React中用到styled-components）：
+https://www.jianshu.com/p/cefd3ae73255
+http://www.ruanyifeng.com/blog/2017/04/css_in_js.html
+表面上，React 的写法是 HTML、CSS、JavaScript 混合在一起。但是，实际上不是。现在其实是用 JavaScript 在写 HTML 和 CSS。React 在 JavaScript 里面实现了对 HTML 和 CSS 的封装，我们通过封装去操作 HTML 和 CSS。也就是说，网页的结构和样式都通过 JavaScript 操作。
+https://segmentfault.com/a/1190000019571911?utm_source=tag-newest
+angular里面暂时没有看到css-in-js，可能这就是angular和react等路数的差异把
+
+forRoot：
+https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
+https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
+https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-and-ahead-of-time-compiling-in-angular-7-2-0.htm
+
+ngModel：
+https://www.jianshu.com/p/fb6861b1a2ab
+https://blog.csdn.net/qq_30101131/article/details/88318724
+https://www.jianshu.com/p/3c0b39528a2b
+https://segmentfault.com/q/1010000014780407
+https://www.cnblogs.com/zzy-run-92/p/9396756.html
+
+这样写比原生的有什么优势？源代码怎么写的？【看第一段angular源码】：this.timer = setInterval(() => this.houseSwitch(res), 15000);
+angular4 定时刷新（setInterval的写法与原始JS略有差别，看一下函数实现）：https://blog.csdn.net/MiracleTTT/article/details/80702774
+angular里面的setTimeout：
+
+2018 年的中国你为什么还选择 Angular?https://www.zhihu.com/question/276179716/answer/395921998
+为什么前端讨论的都是各种react，vue源码解析，渲染机制等，没：https://www.zhihu.com/question/274940977/answer/381671128
+为什么用angular的比用vue react的少那么多？
+https://www.zhihu.com/question/355760849/answer/900182192
+https://www.zhihu.com/question/276179716/answer/581004746
+react与vue选型：https://www.zhihu.com/question/347372270
+强烈推荐 Angular，从 TS、RXJS 到响应式表单、拦截器，谷歌团队对每一个复杂问题都提供了最佳实践。
+（拦截器也是复杂问题？）
+
+把这段代码再研究一下：
+response.setContentType("application/excel");
+response.addHeader("Content-Disposition", "attachment;filename=" + new String( (fileName+".xls").getBytes("gb2312"), "ISO8859-1" ));
+
+操作Data的库有UnderScore和Lodash
+lodash,moment,numeral,lazy.js这么多成熟可靠的库可以用啊。
+Lodash辅助函数：Function类别适用于函数类型，比如节流、延迟、缓存、设置钩子等操作；Seq类别常用于创建链式调用，提高执行性能（惰性计算）；Fixed Arity类别固化参数个数，便于柯里化
+
+IPv6 + HTTP/2/3
+
+FileSaver.js 是一款基于 HTML5 完成文件保存的插件，它可以帮我们直接从网页中导出多种格式文件：
+http://www.fly63.com/nav/1287
+https://www.cnblogs.com/jackyWHJ/articles/10435851.html
+
+angular中实现pdf在线预览功能：https://www.cnblogs.com/boreguo/p/11579653.html
+viewerjs图片预览
+viewerjs也是基础设施【把几种方式都对比一下】
+
+Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
+
+angular单元测试和junit一样，最需要关注的是启动原理
+
+Angular封装utils成服务和原生utils有什么不同？哪个是更好的实践，为什么？https://www.zhihu.com/question/65643366
+比较实用export const来写util和export class来写枚举（里面的项是static）的区别
+
+再从模块imports的角度分析一下代码
+
+angular firebase
+
+MutationObserver的基本使用与实际应用场景：https://blog.csdn.net/qq_41882147/article/details/102950757
+
+Atmosphere 2.4.1 发布，异步 WebSocket 框架：https://www.oschina.net/news/68451/atmosphere-2-4-1
+七种WebSocket框架的性能比较：http://www.360doc.com/content/16/0626/08/9200790_570799810.shtml
+Promise.resolve
+
+NgModuleRef
+
+1.了解webSocket session的作用；2.默认连接时长
+WebSocket Session共享：https://www.jianshu.com/p/2c5c4b0349df
+
+websocket长链接和短连接：
+https://www.cnblogs.com/miaozhihang/p/9518584.html
+https://blog.csdn.net/q1312882392/article/details/99621897
+webSocket在angular里面如何快速调试？在后端如何单元测试？
+webSocket官网教程：Using WebSocket to build an interactive web application：https://spring.io/guides/gs/messaging-stomp-websocket/
+faye-websocket 的使用：https://www.jianshu.com/p/2721e8d04fc9
+websocket选型：https://www.jianshu.com/p/809e0ca0403e
+Nodejs实现websocket的4种方式：https://blog.csdn.net/zr15829039341/article/details/65628008
+springboot集成websocket的两种实现方式：https://blog.csdn.net/huiyunfei/article/details/90719351
+关于controller调用controller/service调用service/util调用service/websocket中autowired的解决方法：https://blog.csdn.net/moshowgame/article/details/83415545
+
+WebSocket在线测试工具：http://ws.douqq.com/
+jmeter测试websocket接口：
+https://www.cnblogs.com/nanaheidebk/p/10129936.html
+https://blog.csdn.net/huoyunshen88/article/details/77511788
+
+网页性能检测-performance：
+https://www.jianshu.com/p/0867b7d551ca
+https://www.jianshu.com/p/f4f0c75ac39f
+https://www.jianshu.com/p/25ed4e4b907c
+
+表达式引擎：
+http://www.findsrc.com/java/detail/8664
+http://www.nutzam.com/core/el/overview.html
+https://www.cnblogs.com/csguo/p/7614884.html
+https://www.oschina.net/news/108247/math-engine-2-0-released
+https://blog.csdn.net/keda8997110/article/details/50782848
+https://blog.csdn.net/l1161558158/article/details/102479657
+
+假如我们有一个shareModule来存放公用的组件(Component)、指令(Directive)、管道(Pipe)、服务（Service）【写代码时可不可以这样做？】
+
+zone.js：
+https://www.imwhite.com.cn/2019/10/zone-js-tutorial/
+https://www.imwhite.com.cn/2019/10/zone-js-source-tour/
+https://www.cnblogs.com/justany/p/5864069.html
+https://www.cnblogs.com/whitewolf/p/zone-js.html
+https://blog.csdn.net/github_39212680/article/details/73410009
+https://www.cnblogs.com/justany/p/5864069.html
+https://www.zcfy.cc/article/how-the-hell-does-zone-js-really-work-995.html
+https://www.jianshu.com/p/4aa016cbbcf7
+zone.js原理：
+https://www.zcfy.cc/article/how-the-hell-does-zone-js-really-work-995.html
+https://www.jianshu.com/p/3a929e289dce
+深入理解Angular2变化监测和ngZone：
+https://www.imwhite.com.cn/2019/11/understand-angular-change-detection/
+https://blog.csdn.net/weixin_30682127/article/details/96286509
+https://www.cnblogs.com/steven38-27/p/7698827.html
+https://www.jianshu.com/p/c939d6251c3a
+Angular的变更检测：https://www.cnblogs.com/wangtingnoblog/p/Array_Change.html
+ng2变化监测：https://www.jianshu.com/p/ff260cff3631
+Angular变化检测机制：改善的脏检查：https://blog.csdn.net/fen747042796/article/details/75152336
+数据双向绑定的分析和简单实现：https://wufenfen.github.io/2017/02/27/%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/
+export enum ChangeDetectionStrategy { 
+  OnPush, // 表示变化检测对象的状态为`CheckOnce` 
+  Default, // 表示变化检测对象的状态为`CheckAlways`
+}
+ChangeDetectionStrategy：
+https://www.jianshu.com/p/43567cb187ba
+https://segmentfault.com/a/1190000008754052
+https://www.sohu.com/a/153062679_465944
+https://blog.csdn.net/qq_34829447/article/details/89222001
+Using Zones in Angular for better performance：
+https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html
+https://dzone.com/articles/understanding-ngzone
+https://www.lucidchart.com/techblog/2018/11/09/tracking-javascript-performance-zone-js/
+https://blog.csdn.net/u010977147/article/details/53785733
+
+JS中的异步操作有哪些【先要对这个有明确的意识，在这个基础上再去对库进行分析】：https://blog.csdn.net/pony_pony/article/details/79113813
+
+如何在Angular优雅编写HTTP请求：https://segmentfault.com/a/1190000010570799
+angular开发中如何使用好接口，优雅
+
+惰性加载的性能测试
+惰性加载、预加载【很有用，我的代码需要配上】：
+https://zhuanlan.zhihu.com/p/56596626（为啥跟rxjs有关联？）
+https://www.jianshu.com/p/2c0068bed971
+https://www.cnblogs.com/nangxi/p/7837342.html
+https://my.oschina.net/u/3412211/blog/898466
+https://zhuanlan.zhihu.com/p/43762486
+forRoot先搞清楚【需要惰性加载的知识】：
+https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
+loadChildren使用好像很简单，原理呢？
+preloadingStrategy
+angular4中的模块预加载的控制和实现：https://blog.csdn.net/happykala/article/details/77945000
+
+Angular 模块漫谈：https://www.imwhite.com.cn/2019/02/understand-angular-basic-type-scope/
+入门 Webpack，看这篇就够了：https://segmentfault.com/a/1190000006178770?utm_source=tag-newest
+
+EventEmitter：从命令式 JavaScript class 到声明函数式的华丽转身：https://segmentfault.com/a/1190000014287195?utm_source=tag-newest
+
+Angular2-利用路由复用策略实现tab标签页：https://www.jurieo.com/3337.html
+路由复用：
+https://segmentfault.com/a/1190000015391814?utm_source=tag-newest
+https://www.cnblogs.com/artimis/p/9026069.html
+https://www.cnblogs.com/keatkeat/p/7242769.html
+https://www.cnblogs.com/datiangou/p/10173055.html
+https://www.jianshu.com/p/3bd87aa9cb7d
+http://www.deathghost.cn/article/angular/28
+http://www.imooc.com/wenda/detail/580947
+resolve保证了数据获取后再进行路由跳转，防止因为数据延迟而出现短暂的空组件情况，以此增强用户体验：https://blog.csdn.net/weixin_42854769/article/details/83577949
+Angular路由深入讲解：https://www.jianshu.com/p/e84594f3b935
+
+使用 Puppeteer 自动化 chrome / chromium 操作：https://www.sunzhongwei.com/use-the-puppeteer-automation-chrome-chromium-operation
+Selenium有个新的替代Puppeteer~：https://zhuanlan.zhihu.com/p/87416145
+
+Angular7中使用switchMap改善导航：https://zhuanlan.zhihu.com/p/54656340
+Angular动态创建组件之Portals：https://zhuanlan.zhihu.com/p/59719621
+
+小程序为什么可以简化前端开发？【小程序 + Serverless】
+
+使用Promise和setTimeout进行优雅的sleep【自己先想一下可以怎么实现】：https://blog.csdn.net/fay_maplemei/article/details/80004597
+js的几种sleep函数：
+https://blog.csdn.net/Polaris_tl/article/details/99435320
+https://blog.csdn.net/weixin_33817333/article/details/91437469
+
+搭建最简单的http代理服务器：https://www.imwhite.com.cn/2019/11/setup-simplest-http-proxy/
+
+=============================================================================
+
+【出产品推荐的方式】
+0.再看一些模板，也可以模板反向适配要用的组件
+
+1.1.有一个material的主题+material 2【再研究一下主题模板也很重要】；
+1.2.为material 2反向找主题，再定制（和定制admin-lte那个文章一样），这样的主题应该比较多；
+
+2.1.ngx-admin + primeng(UI components)；
+2.2.admin-lte(定制) + primeng(UI components)；
+2.3.ngx-admin + ng-zorro；
+2.4.admin-lte(定制) +  + ng-zorro；
+
+3.1.了解ng-alain，看看能使用什么组件
+3.2.jhipster单独研究：https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
+3.3.Angular最佳UI框架：https://www.jianshu.com/p/0051e626b88b
+
+4.看ng-bootstrap、ngx-bootstrap等概念，野鸡FreeNG、ng-matero等
+
+easyui直接放过把，看起来太low了
+
+免费模板：https://www.creative-tim.com/templates/angular
+
+搞清楚四大theme：admin-lte、ngx-admin、ng-alain（都是bootstrap的吗？）
+
+bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap 和 ng-zorro 是基于 angular 的组件库，与 bootstrap 不是一类东西。因此：ng-bootstrap、ng-zorro、angular material、material2
+现代的前端开发很多都是基于组件化的开发，每个组件提供模板、样式和交互，只需要用组件定义的标签然后声明式传入属性即可渲染，无需关注模板细节，可以达到快速开发的目的。
+bootstrap 是属于传统形式的开发，通过约定好的模板形式和类名可以达到想要的效果，但带来的问题是每次都要复制 html，而且类名因为全在全局中，可能造成样式冲突。
+如果是组件库开发网站，可以自己写一个公共样式文件，写入 需要重置的样式以及常用的工具类像 float-left，float-right，clearfix 等，或者直接复制 bootstrap 相关的代码也可以。
+
+【admin-lte和ngx-admin】看看哪些是我能用上的，哪些是没有多大用的，哪些即使没有也很容易自己写出来的（配合组件）。思考一下：什么场景组件比主题对项目的成功更关键，什么时候反过来
+admin-lte和ngx-admin分别看看跟组件的配合
+比较一下admin和lte的功能及可扩展性：
+https://www.akveo.com/ngx-admin/pages/dashboard
+https://adminlte.io/themes/dev/AdminLTE/index3.html
+
+Integrate AdminLTE theme to Angular Project：https://www.prishusoft.com/blog/Integrate-AdminLTE-theme-to-Angular-Project.html
+angular-admin-lte【3.0支持bootstrap 4.x】：https://www.npmjs.com/package/angular-admin-lte
+https://ramsatt.com/2019/02/07/angular-2-admin-lte-theme-integration/
+sb-admin-angular-theme：https://startangular.com/product/sb-admin-angular-theme/
+AdminPro Angular 8 and 7 Lite（Free Angular 8 Admin template）：https://www.wrappixel.com/templates/adminpro-angular-lite/
+中后台的前端开发，angular+ng-zorro+echarts，脚手架可以用ngx-admin。整套系统的脚手架可以用jhipster。
+jhipster：https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
+ngx-admin【应该够用，用的组件是ng-zorro？】：
+https://www.akveo.com/ngx-admin/
+https://www.akveo.com/ngx-admin/pages/dashboard
+http://www.fly63.com/nav/1639
+https://segmentfault.com/a/1190000011263385
+https://akveo.github.io/ngx-admin/
+NG-ALAIN 是一个企业级中后台前端/设计解决方案脚手架【应该也够用】：
+https://netlify.ng-alain.com/zh（官网）
+https://github.com/ng-alain/ng-alain
+https://www.cnblogs.com/zhaidq/p/11249315.html
+https://blog.csdn.net/daqiang012/article/details/90632929
+https://www.cnblogs.com/wer-ltm/p/8447323.html
+ng-alain又以delon系列库作为基础（基建类库 @delon（包括：业务组件、ACL访问控制、缓存、授权、动态表单等）
+）。
+ng add ng-alain
+Ng-Alain Mock：https://www.cnblogs.com/xinjie-just/p/12019878.html
+谷歌提出渐进式 web 开发概念，Angular Ignite UI 实现：
+https://www.oschina.net/news/90799/google-release-angular-ignite-ui
+http://tech.it168.com/a2017/1120/3180/000003180619.shtml
+https://github.com/IgniteUI/igniteui-angular
+https://www.infragistics.com/community/blogs/b/infragistics/posts/ignite-ui-for-angular-7
+Angular最佳UI框架：https://www.jianshu.com/p/0051e626b88b
+FreeNG | 基于Angular4的前端UI框架【有一年多没更新了，可以用于学习】：https://imweb.io/topic/59298852473c0f2f7003469e
+angular-material-app（基于最新Angular 7框架与Material 2技术的企业级中后台前端应用框架）：https://gitee.com/425048/angular-material-app
+primeng是“一个极为完善的开源 Angular UI 组件库”？
+【搞懂这些选型至少需要2个月，结合选型要素来学习】
+
+ngx-bootstrap
+ngx-treeview：https://gitee.com/iesc/ngx-treeview
+ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
+ngx-bootstrap：https://blog.csdn.net/kuangshp128/article/details/72395937/
+
+Angular 8 UI Components（jQWidgets）：https://www.jqwidgets.com/angular/
+
+angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
+Material Design Lite：https://getmdl.io/
+
+Free Angular Admin Template：
+https://coreui.io/angular/
+https://bootstrapbay.com/blog/free-angular-templates/
+这个里面有免费版的theme，可以用一下：
+https://startangular.com/themes/（尝试跟别人协作）
+https://www.creative-tim.com/templates/angular-bootstrap
+https://dashboardpack.com/theme-details/architectui-angular-7-dashboard-free/
+https://www.tekmx.com/downloads/angular-material-theme-free-download
+等吃透一些时间后，花100块钱买一些主题，快速形成产品：
+http://www.bluestep.cc/tag/angular-7%E6%A8%A1%E6%9D%BF/
+基于angular4+ng-bootstrap+bootstrap+scss的后台管理系统界面：https://segmentfault.com/a/1190000011562305
+Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/157068422
+前端开发，比较出色的 UI 库有哪些？https://www.zhihu.com/question/353100080/answer/875018512
+Material Design for Bootstrap：https://github.com/FezVrasta/bootstrap-material-design
+我们必须分清六个基本概念：Library，Toolkit，Framework，Design，Boilerplate，Scaffolding：https://www.zhihu.com/question/304757674/answer/546374749
+angular bootstrapping application：https://www.tektutorialshub.com/angular/angular-bootstrapping-application/
+
+NG Add Schematic：https://www.jianshu.com/p/2d59e06e8a77
+基于 Angular7 和 material2 的中后台解决方案（ng-notadd）：https://www.v2ex.com/t/504621
+Getting Started With Angular Material 2：https://alligator.io/angular/angular-material-2/
+看一两个angular material 2控件的实现
+Angular 的 Material Design 风格框架 material2 6.3.2：https://cloud.tencent.com/developer/news/266719
+
+Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
+谷歌 Material Design 从这些方面打破了我的思维局限：https://zhuanlan.zhihu.com/p/24887891
+体验进阶（界面设计方面的一些文章）：https://zhuanlan.zhihu.com/advancedhci
+https://www.zhihu.com/question/28957074/answer/43830077
+【material design的一些模板资源】https://zhuanlan.zhihu.com/p/61410553
+https://www.zhihu.com/question/24276657/answer/68081021
+Material Design的官网：https://material.io/
+重磅教程！帮你全面彻底搞定Material design的学习笔记：http://www.uisdc.com/comprehensive-material-design-note
+新版抢先看！Material Design 的7个重大更新：https://www.uisdc.com/material-design-7-major-updates
+精进：设计思想与设计工具
+图片上的文字，需要淡淡的遮罩确保其可读性。深色的遮罩透明度在20%-40%之间，浅色的遮罩透明度在40%-60%之间。【遮罩和透明度不是一个概念把？】
+Angular 有 ng-bootstrap、OnsenUI 和 material2 等：https://github.com/angular/components
+bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap 和 ng-zorro 是基于 angular 的组件库，与 bootstrap 不是一类东西：https://www.zhihu.com/question/65750588/answer/234349815
+
+前端开发，比较出色的 UI 库有哪些？
+：https://www.zhihu.com/question/353100080/answer/875018512
+
+【重点不是比较各种组件包，而是理解背后的设计思路，这样随便用哪一种都OK】
+在我更新 ng-zorro-antd 8.x 之后，我发现 zorro 的菜单组件的使用已经和 Angular Material 一样了。可见优秀的设计理念会被广泛借鉴。
+Meterial Design搞完后搞一版bootstrap的(Using Bootstrap 4 with Angular 7/8
+)：https://www.techiediaries.com/angular-bootstrap/
+css中的mixin及其用法：https://blog.csdn.net/liya_nan/article/details/81479995
+一些sass下的@mixin自定义样式：http://www.imooc.com/article/15485?block_id=tuijian_wz
+
+从开发上来说，类Bootstrap风格的各种组件库层出不穷，生态非常强大，使得基于Bootstrap做二次开发非常容易。和各种icon、theme、plugins都能很好的搭配。
+
+ng-zorro默认样式的设置：
+https://www.jianshu.com/p/8b887c2aac06
+https://blog.csdn.net/hotboyboy/article/details/89449737
+https://blog.csdn.net/shuididishui007/article/details/81047880
+
+1.看组件库用法、样式设计、布局设计；
+2.看样式包
+3.两者的组合
+4.第三方组件
+5.如果用别人的组件，别人的组件更新后，好不好升级：https://ng-matero.github.io/ng-matero/#/helpers
+以ng-bootstrap为蓝本的模板，以material design为模板的蓝本
+再看easyui和bootstrap的关系
+首先应该比较bootstrap和material design
+关注material design的样式
+https://www.zhihu.com/tardis/sogou/art/34137438
+ionic3
+
+================================================================================
+
+【转】完全理解 redux（从零实现一个 redux）：https://www.jianshu.com/p/3174d2910309
+Introduction to NgRx - NgRx Basics：https://www.codemeals.com/angular-tutorials/introduction-to-ngrx-ngrx-basics/
+Ngrx、RxJs、Redux的初步探究：https://blog.csdn.net/ltl112358/article/details/78551216
+如何用63行代码写一个NgRx Store：https://zhuanlan.zhihu.com/p/96016709
+了解redux的思路：
+https://my.oschina.net/kimyeongnam/blog/1860024
+https://www.jianshu.com/p/59ed5fe5eb9e?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+https://blog.csdn.net/Napoleonxxx/article/details/79327518
+https://blog.csdn.net/gaiery/article/details/84068954
+https://redux.js.org/
+https://www.cnblogs.com/bai1218/p/10104969.html
+https://baijiahao.baidu.com/s?id=1590300061305698080&wfr=spider&for=pc
+【状态管理，非常重要的知识，比zone.js重要。数据规模较小的时候，用service就可以把】
+Angular Tutorial: State Management With NgRx：https://dzone.com/articles/angular-app-state-management-with-ngrx
+Angular NgRx Store Tutorial：https://appdividend.com/2018/01/31/angular-ngrx-store-tutorial-example-scratch/
+Managing State in Angular with ngrx/store（比较一下下面的中文网页为啥看起来low很多）：
+https://auth0.com/blog/managing-state-in-angular-with-ngrx-store/
+https://blog.csdn.net/fen747042796/article/details/74840844
+Angular中使用ngrx/store做状态管理：
+http://www.360doc.com/content/19/0224/10/13819_817162385.shtml
+https://blog.csdn.net/roamingcode/article/details/84568140
+初涉angular之Ngxs状态管理：https://www.jianshu.com/p/f343b8bca096
+Angular 真的需要状态管理么？https://zhuanlan.zhihu.com/p/45121775
+
+前端工具的逻辑：https://www.imwhite.com.cn/2019/10/frontend-tools/
+前端：谈谈面向对象，谈谈依赖注入，谈谈 FRP，谈谈 Kotlin，谈谈可选类型系统，谈谈 SoC 与 SOLID，谈谈整洁架构，谈谈 DevOps
+nodejs是不会凉的：https://www.zhihu.com/question/313414600
+
+要能定位this指向的问题【找this的文章训练一下自己】。通过this代码打断点，打印this等方式来定位找不到方法的问题
+
+ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。
+可以帮助您使用 Web 技术，比如 HTML、CSS 和 Javascript 构建接近原生体验的移动应用程序：
+https://www.runoob.com/ionic/ionic-tutorial.html
+
+最简单Angular2教程：使用第三方样式库及模块优化用：
+https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
+
+mock（基础设施）：
+https://christianlydemann.com/all-you-need-to-know-about-mocking-in-angular-tests/
+https://keyholesoftware.com/2017/01/09/setting-up-angular-2-mockbackend/
+angular mock：https://lzw.me/a/angular-cli-simple-mock.html
+
+ut
+
+Angular also includes the benefits taken from ES6:
+	For/Of loops
+	Improved dependency injection
+	Iterators
+	Reflection
+	Dynamic loading
+	Asynchronous template compilation
+	Simpler Routing
+
+张润：ng-zorro很大，速度慢。用bootstrap的
+
+多端解决新方案：Flutter
+混合开发（angular+ionic+cordova）【手机app】：https://www.jianshu.com/p/d88686cdab72
+ionic4 和 flutter 哪个更好些？https://v2ex.com/t/570412
+React Native、weex、flutter、Ionic：
+https://www.cnblogs.com/imstudy/p/9466781.html
+https://www.jianshu.com/p/5c981193eb16
+https://segmentfault.com/a/1190000018590996
+Electron 中文文档：https://www.w3cschool.cn/electronmanual/
+
+Date的util，要始终抓住format这一点
+
+Timeouts in Angular：https://www.syntaxsuccess.com/viewarticle/timeouts-and-timerwrapper-in-angular-2.0
+Angular 2 & Protractor Timeout: Here’s How to Fix It：https://christianliebel.com/2016/11/angular-2-protractor-timeout-heres-fix/
+
+
+VSCode 下调试 Angular Library：https://www.imwhite.com.cn/2019/04/angular-library-debugging-in-vscode/
+
+Error Handling in Angular 8/9 Tutorial with Examples：https://www.positronx.io/angular-error-handling-tutorial-with-examples/
+
+React + Typescript 工程化治理实践：https://zhuanlan.zhihu.com/p/91754525
+
+6大公共组件、5大坐标系、19种图表：https://blog.csdn.net/luanpeng825485697/article/details/76832209
+19种图表：https://blog.csdn.net/sayWhat_sayHello/article/details/86155066
+js将echarts图表转换成base64位格式编码的图片的原理是啥？
+angular6---引用echarts插件：https://blog.csdn.net/qq_35321405/article/details/80340969
+echarts教程：
+https://www.echartsjs.com/zh/index.html
+https://www.w3cschool.cn/echarts_tutorial/
+echarts先把setOption搞清楚
+折线图的series是独立于x轴、y轴的，饼图的series可以看一下属性设置文档：https://blog.csdn.net/sleepwalker_1992/article/details/82532210
+echarts demo：https://www.echartsjs.com/examples/zh/index.html
+Echarts数据可视化grid直角坐标系（xAxis、yAxis），开发全解+完美注释：https://www.bbsmax.com/A/l1dyPW965e/
+echarts三个y轴的例子：https://blog.csdn.net/ericlee1994/article/details/68482987/
+echarts datazoom、zoomlock：https://blog.csdn.net/qq_32475739/article/details/79099898
+boundaryGap：https://www.cnblogs.com/520BigBear/p/11535664.html
+（3）基于Echarts插件的多维数据可视化设计和实现：https://blog.csdn.net/mulumeng981/article/details/77983485
+使用formatter修改横轴显示：https://segmentfault.com/q/1010000019123675/
+Y轴刻度固定、自定义
+splitLine和splitArea（网格线及网格区域颜色）：https://blog.csdn.net/flygoa/article/details/52942810
+echarts实现加载框loading，去除是hideLoading：
+https://blog.csdn.net/LLL_liuhui/article/details/83375300
+https://blog.csdn.net/ampsycho/article/details/77749188
+ECharts 异步加载数据及loading 动画：https://blog.csdn.net/GrootBaby/article/details/84754339
+echarts工具栏：https://blog.csdn.net/ampsycho/article/details/77749188
+tooltip.formatter：
+https://blog.csdn.net/niexia_/article/details/77891474
+https://blog.csdn.net/Lin_yun_ying/article/details/81231493
+https://blog.csdn.net/purple_lumpy/article/details/83501913
+tooltip.formatter：https://blog.csdn.net/niexia_/article/details/77891474
+回归统计在 echarts 中的实现：https://www.jianshu.com/p/c97273a05167
+ecStat 是 ECharts 的统计和数据挖掘工具。你可以把它当作一个工具库直接用来分析数据；你也可以将其与 ECharts 结合使用，用 ECharts 可视化数据分析的结果：https://github.com/ecomfe/echarts-stat/blob/master/README.zh-CN.md#statistic
+ECharts 统计扩展教程：https://efe.baidu.com/blog/echarts-statistical-extension-tutorial/
+ECharts 统计扩展 ecStat.js, 可以进行回归分析和均值方差计算：https://blog.csdn.net/u010918970/article/details/79354143
+【java】Echarts导出为word文档：https://www.jianshu.com/p/5bd47ab59bbe
+angular7中echarts关系图实战【能否用echarts做简单的工作流前端，后端自己封装？】：https://www.cnblogs.com/nihao94/p/11378177.html
+把echarts热力图搞明白
+echarts从网页上下载图片的原理：找到canvas，通过toDataUrl和动态生成a标签（含download属性）完成
+Echarts学习记录-如何修改x轴和y轴的颜色：https://blog.csdn.net/intelrain/article/details/82599647
+可以通过scale来完成坐标轴的自适应，
+ECharts 3.6.0 发布，新增自定义系列和极坐标柱状图：https://www.ctolib.com/topics-117092.html
+echart的tooltip设置为默认显示（dispatchAction + showTip）。说是要增加一个启动时间才能显示：
+https://segmentfault.com/q/1010000008774796
+https://blog.csdn.net/u013558749/article/details/83826672
+echarts的tooltip提示框：https://blog.csdn.net/qq_34664239/article/details/100076028
+echarts 设置最大和最小的缩放范围（scaleLimit）：https://blog.csdn.net/weixin_40902181/article/details/93621189
+axisPointer的设置：https://www.cnblogs.com/benmumu/p/8316652.html
+
+搞懂2个问题：
+1.为啥a标签的数据连接可以用一个返回流的方法；
+2.echarts使用a标签download的时候，href可以放“data:image/png;base64,xxxxxxxxxxxxxxxxxxx...”这样的字符串
+通过a标签的download属性下载图片：https://blog.csdn.net/hao_0420/article/details/80255281
+html2canvas - Screenshots with JavaScript（原理？）：http://html2canvas.hertzen.com/
+
+More than one module matches：https://blog.csdn.net/MengYan_/article/details/79790962
+
+TypeScript 解决了什么痛点？https://www.zhihu.com/question/308844713/answer/817164546
+
+webStorm开发前端？在现有的server下，webStorm还流行吗？怎么改进的？
+
+把websocket的报错解决掉：https://www.stackextend.com/angular/websocket-with-spring-boot-and-angular/
+Access to XMLHttpRequest at 'http://localhost:8080/website-websocket/info?t=1572782606968' from origin 'http://localhost:4200' has been blocked by CORS policy: The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'. The credentials mode of requests initiated by the XMLHttpRequest is controlled by the withCredentials attribute.
+Creating a custom HttpInterceptor to handle 'withCredentials' in Angular 6+：
+https://weblog.west-wind.com/posts/2019/Apr/07/Creating-a-custom-HttpInterceptor-to-handle-withCredentials
+https://github.com/angular/angular/issues/15805
+Stomp.over did not receive a factory, auto reconnect will not work. Please see https://stomp-js.github.io/api-docs/latest/classes/Stomp.html#over
+
+Angular 4 - 在每个请求中设置withCredentials - cors cookie：http://www.it1352.com/886782.html
+Angular推崇的时前后端分离,所以跨域由哪一方实现成为一个问题。Cross-Origin Resource Sharing跨域资源共享,应该算是现在最为推荐的跨域处理方案：
+https://my.oschina.net/blogshi/blog/303758
+https://zhuanlan.zhihu.com/p/95314531
+前端跨域和后端跨域：
+https://blog.csdn.net/wl_0912/article/details/86480819
+https://blog.csdn.net/qlin_11/article/details/99302292
+跨域踩坑经验总结（内涵：跨域知识科普）【还得看】：https://ningyu1.github.io/site/post/92-cors-ajax/
+
+工作顺序：
+3.ViewContainerRef等高级特性
+4.更方便第debug和提升效率
+建directive并使用
+
+使用 Angular CDK 技术来创建一个消息推送服务(toast service)：https://zhuanlan.zhihu.com/p/56225371
+
+2018年度 Angular In Depth 专栏最佳文章大赏：https://zhuanlan.zhihu.com/p/52934638
+
+调试chrome的Memory功能
+【通过echarts、大数据深入chrome的调试】
+chrome调试窗口的performance菜单【可以用于分析加载、渲染时间】:
+https://www.cnblogs.com/xiaohuochai/p/9182710.html
+https://blog.logrocket.com/better-development-with-chrome-developer-tools-78b7d688438a/
+https://www.issacc.com/debugging-with-chrome/
+chrome 录制脚本
+
+2020年二季度：公司里面的基础设计搞熟
+
+[Angular] Angular 6 localStorage和sessionStorage封装：
+https://www.itsvse.com/thread-5214-1-1.html
+https://blog.csdn.net/zwt_guiji/article/details/80352507
+localstorage以及生成组件/服务指定文件夹：https://blog.csdn.net/u013318615/article/details/78960290
+
+比 EventBus 更高效的事件总线（BusUtils）：https://www.jianshu.com/p/68f670380d86
+Angular5集成eventbus：https://www.jianshu.com/p/d0284ec886c3
+Angular之打造自己的事件总线：https://blog.51cto.com/aonaufly/2403150
+
+import { Events} from '@ionic/angular';
+
+初步部署个人博客到github：https://www.jianshu.com/p/022863eabbb7
+
+==============================================================
+
+【荐】Angular官方代码风格指南：https://blog.csdn.net/fen747042796/article/details/78880424
+Angular代码风格：https://segmentfault.com/a/1190000019327296?utm_source=tag-newest
+Angular代码风格：https://www.jianshu.com/p/90cc5899c40c
+
+
+使用Jest测试JavaScript (入门篇)：https://www.jianshu.com/p/70a4f026a0f1
+
+浅析如何利用angular结合translate为项目实现国际化：https://www.jb51.net/article/99433.htm
+
+==============================================================
+
+angular 配置开发环境、测试环境、生产环境：
+https://www.cnblogs.com/zero-zm/p/9845244.html
+https://www.jianshu.com/p/b30ed075c132
+
+推荐使用@HostListener和@HostBinding，而不是元数据的host属性
+保持单例服务的使用规则，服务用来在特性模块或者应用中共享数据和方法
+把服务注入在最高层的组件／模块中，使得该单例服务能在子组件、子模块中共享
+使用@Injectable装饰服务类，而不是@Inject装饰参数
+跟数据相关的操作，比如xhr请求，本地储存等抽象成服务
+
+如果不用父子组件，eventEmitter通信可以借助service和EventEmitter的subscribe方法【思考一下实现，能否多个地方同时订阅？】：
+https://segmentfault.com/a/1190000011425280?utm_source=tag-newest
+
+比较枚举和export const environment定义方式的不同
+
+Using Angular Augury to Debug Your Code：
+https://www.sitepoint.com/angular-augury-debug-code/
+https://www.c-sharpcorner.com/article/angular-7-routing-and-display-graphical-interface-using-augury-extension/
+augury与编译有关吗？
+AOT与JIT：
+https://segmentfault.com/a/1190000010906373
+https://segmentfault.com/a/1190000011562077
+https://www.jianshu.com/p/6cd8f09bc03f
+
+
+@angular/core里面的内容清单：https://angular.io/api/core
+
+创建Guard和Interface：https://juejin.im/post/5cc69d1cf265da03612ef371
+
+三次握手和四次挥手：https://zhuanlan.zhihu.com/p/86426969
+前端面试题:你知道websocket吗?https://juejin.im/post/5cacb459f265da03a00fb2fe
+看完让你彻底搞懂Websocket原理：https://www.cnblogs.com/fuqiang88/p/5956363.html
+angular中使用SockJS：https://grokonez.com/frontend/angular/angular-6/angular-6-websocket-example-with-spring-boot-websocket-server-sockjs-stomp
+WebSocket with Spring boot and Angular：
+https://www.stackextend.com/angular/websocket-with-spring-boot-and-angular/
+https://www.roytuts.com/messaging-with-stomp-over-websockets-using-spring-and-activemq/
+https://www.javaguides.net/2019/06/spring-boot-angular-8-websocket-example-tutorial.html
+
+双 11 模块 79.34% 的代码是怎样智能生成的？https://zhuanlan.zhihu.com/p/93724953
+
+
+动态组件
+
+ViewContainerRef【本地搭起来后，可以做实验】：
+https://zhuanlan.zhihu.com/p/25730650
+https://zhuanlan.zhihu.com/p/27069744
+
+webpack4 + angular6 + ng-zorro-antd的脚手架：https://segmentfault.com/a/1190000016655736
+使用yeoman快速搭建angular项目：
+https://segmentfault.com/a/1190000009503135
+https://angular-fullstack.github.io/
+
+注意灵活使用 console.dir()：
+https://www.jianshu.com/p/5b00803a49d3
+https://zhuanlan.zhihu.com/p/61378606
+https://zhuanlan.zhihu.com/p/74275837
+https://www.zhihu.com/question/35667558/answer/546849593
+https://zhuanlan.zhihu.com/p/23090041
+
+table控件抽的很奇怪，看看别人成熟的控件，例如easyui。一个团队如果能力不够就开始搞控件这些，会拖慢团队的效率；软件工程里面有很多这种一知半解带来的浪费（难用、让人迷惑等）。
+
+redux源码总共才300行，为什么会出现成千上万篇的博文和各种晦涩难懂的理论？
+https://www.zhihu.com/question/333621770/answer/927862050
+
+我们研发中的问题？
+额外任务：
+1.编写构建脚本，做到每日构建
+
+Exploring JS: JavaScript books for programmers：https://exploringjs.com/
+
+Decorator isn’t a magic. It’s just function-calling：https://blog.lacolaco.net/post/dynamic-component-creation-in-angular-2/
+
+HttpClient最终到底封装的是fetch还是XMLHttpRequest？
+下载直接用subscribe遇到的问题：
+Angular 8 HttpClient “Http failure during parsing”：https://www.jianshu.com/p/64e10c705eb9
+前一次用window.location.href配合GetMapping是可以成功的
+
+angular @input get set【和java相比，关键字写在属性方法前面，且方法是属性第一个字母大写的】：
+https://segmentfault.com/a/1190000008780672?utm_source=tag-newest
+https://blog.csdn.net/railsbug/article/details/79995033
+
+templateRef对应html5的<template>元素：
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template
+https://www.jb51.net/article/114683.htm
+
+枚举用export class，环境用export const environment
+
+HTML5 新的 Input 类型（注意知识更新）：https://www.w3school.com.cn/html5/html_5_form_input_types.asp
+
+如何写出await返回值的效果？
+
+漫谈富文本编辑器：https://zhuanlan.zhihu.com/p/91808544
+ng2-ckeditor、ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts、ngx-ueditor
+quill配置（含问题解决）：
+https://bbs.csdn.net/topics/392984235
+富文本编辑器：
+https://www.cnblogs.com/scott-j/p/9016027.html
+http://www.pianshen.com/article/8407402515/
+https://www.jianshu.com/p/1426a371a7dd
+Angular7+Ckeditor5基础功能整合：https://blog.csdn.net/nzyalj/article/details/87870762
+Ckeditor5用ng-deep设置高度（height）的原理是啥？https://q.cnblogs.com/q/109852/
+富文本插件angular2-froala-wysiwyg：https://blog.csdn.net/i_quite/article/details/82624986
+在 angular6/7 中使用 umeditor 富文本编辑器：https://blog.csdn.net/lurenxie/article/details/93170297
+tinymce富文本编辑器：https://blog.csdn.net/qq_34181830/article/details/55510882
+Angular部署百度UMEditor富文本编辑器：https://blog.csdn.net/PigBiBiX/article/details/77918947
+
+使用Angular CLI时的6个最佳实践和专业技巧：https://segmentfault.com/a/1190000012330491
+如何更好地组织Angular项目：https://zhuanlan.zhihu.com/p/63515048
+
+The standard href element will not work.为啥会被禁掉？
+
+【译】Angular应用中，取消订阅Rxjs Observable 的最佳实践！https://zhuanlan.zhihu.com/p/54678318
+Angular Observable pipe【貌似很好懂，下一步是源码和原理理解】：https://www.concretepage.com/angular/angular-observable-pipe
+pure管道、pmpure管道：https://www.jianshu.com/p/ec2174ba389e
+管道是怎么被编译、怎么被调用的。Pipe是单例的吗？
+管道接口PipeTransform的方法transform的第二个可选参数args?的用法【直接在ts文件里面调用pipe对象(constructor里面初始化)的transform方法】：
+https://ultimatecourses.com/blog/angular-pipes-custom-pipes
+https://fedojo.com/2016/06/05/angular-2-how-to-pass-more-parameters-to-pipe/
+The async pipe will take care of subscribing and unsubscribing for you.
+The Async pipe is considered the best practice when you are getting data in the form of observables：https://www.positronx.io/angular-7-pipes-anatomy-of-angular-pipes/
+Angular Pipes：https://www.ngdevelop.tech/angular/pipes/
+管道介绍及源码：https://www.jianshu.com/p/ec2174ba389e
+async最简单的例子：https://blog.csdn.net/liweibo348/article/details/83992846
+async管道（跟Observable有关）要完全理解后再使用，否则可能踩坑
+angular常用管道与自定义管道（@Pipe）：
+http://www.voidcn.com/article/p-wrskdvpb-boq.html
+https://zhuanlan.zhihu.com/p/58286322
+https://angular.cn/api/common/AsyncPipe
+https://www.cnblogs.com/shcrk/p/9194772.html
+https://www.cnblogs.com/dreamingbaobei/p/9673009.html
+JsonPipe：https://angular.cn/api/common/JsonPipe
+AsyncPipe（搞懂底层原理）：https://angular.cn/api/common/AsyncPipe
+angular中内置的九种过滤器：https://www.cnblogs.com/rainbow8590/p/7239395.html
+
+retry再看一下
+
+【使用angular能带来多大的效率提升？】
+推荐angular的人挺多：https://www.zhihu.com/question/277894570
+为什么我的新项目使用 Angular 而不是 Vue：https://zhuanlan.zhihu.com/p/28348896
+angular框架的开发难度应该比spring更大吧？
+等学会使用后，再回过头来看响应式编程RxJS的Rx思想
+
+应该如何看Angular 源码？https://www.zhihu.com/question/336802797/answer/789236310
+
+OPTIONS请求（OPTIONS preflight request）及跨域相关的知识：https://zhuanlan.zhihu.com/p/75344905
+
+https://www.jianshu.com/p/e606103ddac4
+Angular单元测试系列-Router、Component、Directive、Pipe 以及Service单元测试：https://segmentfault.com/a/1190000009769787
+Testing HttpClient Requests in Angular：https://alligator.io/angular/testing-httpclient/
+英文的angular单元测试资料：
+https://alligator.io/angular/introduction-unit-testing/
+http://angulartestingquickstart.com/
+https://www.sitepoint.com/angular-testing-introduction/
+Angular Test Bed：https://codecraft.tv/courses/angular/unit-testing/angular-test-bed/
+单元测试是不是要先分module、component、service等几个等级
+testbed、fixture
+Unit testing Angular service with HttpClient：https://skryvets.com/blog/2018/02/18/unit-testing-angular-service-with-httpclient/
+TESTING SERVICES WITH HTTP IN ANGULAR：https://blog.thoughtram.io/angular/2016/11/28/testing-services-with-http-in-angular-2.html
+Unit Testing in Angular 4 Using Jasmine and Karma - Part 1：https://dzone.com/articles/unit-testing-in-angular-4-using-jasmine-amp-karma
+把tslint搞熟，这是要用到的东西
+使用Angular CLI进行单元测试和E2E测试：
+https://www.cnblogs.com/cgzl/p/8615357.html
+https://blog.51cto.com/7308310/2325925?source=dra
+https://www.cnblogs.com/Ceri/p/8024055.html
+e2e: 端到端的测试目录，用来做自动测试的：https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
+端到端（e2e）测试：https://www.jianshu.com/p/74b6a2c7c23c
+protractor测试：
+https://www.cnblogs.com/zhenfei-jiang/p/7086725.html
+https://www.w3cschool.cn/intellij_idea_doc/intellij_idea_doc-cxen2zej.html
+https://www.cnblogs.com/haochuang/articles/5784401.html
+https://www.jianshu.com/p/87d712be1f62
+前端经常出现E2E测试这个概念：https://blog.csdn.net/qq_39300332/article/details/81197503
+测试：
+https://www.jianshu.com/p/74b6a2c7c23c
+https://blog.51cto.com/7308310/2325925?source=dra
+前端 E2E 测试的困境：https://www.codercto.com/a/58084.html
+http://pinkyjie.com/2016/02/21/e2e-testing-in-angular/
+
+如何修改项目加载包默认的node_modules路径：https://blog.csdn.net/Ouchieve_111/article/details/70878090
+
+从我接触asp.net开始，表格就一直是个重要的问题
+
+ElementRef简介【重要，里面还谈到了setTimeout的问题，涉及到重大的设计问题】：https://www.w3cschool.cn/angular/angular-un1i24nx.html
+activeRoute._handle里面就用到componentRef
+ComponentRef表示通过ComponentFactory创建的组件的实例：https://www.kancloud.cn/wujie520303/angular2_note/263097
+ElementRef & TemplateRef & ViewContainerRef：https://www.jianshu.com/p/71c2762ddc60
+ComponentFactoryResolver【组件动态加载】：
+https://www.jianshu.com/p/5c523ff5442b
+https://segmentfault.com/a/1190000009175508
+https://www.jianshu.com/p/044c056cf763
+https://www.jianshu.com/p/40dec12a278c
+https://segmentfault.com/a/1190000012100278
+
+一句话概括：
+如果你的是小项目，别管那么多，一个根module解决所有；
+如果你是做中大型的项目，建议按业务模块划分module。
+
+2019前端趋势：
+https://segmentfault.com/a/1190000017764337?utm_source=tag-newest
+https://baijiahao.baidu.com/s?id=1622357257030014082&wfr=spider&for=pc
+https://baijiahao.baidu.com/s?id=1622648508783358969&wfr=spider&for=pc
+https://www.zhihu.com/question/331723321/answer/734861721
+https://zhuanlan.zhihu.com/p/55357377【里面有很多工程化方面的东西，值得细细研究】
+https://zhuanlan.zhihu.com/p/79794291（2019年的框架趋势大致是：前端三大框架已趋于平稳，标准化，向 Web Components 看齐）
+https://www.zhihu.com/question/341967057/answer/803047692
+https://www.zhihu.com/question/308348507/answer/720377178
+CSS in JS
+前端未来几年的发展方向是什么？https://www.zhihu.com/question/286700472/answer/503981729
+
+一步一步搭建前端监控系统：https://www.jianshu.com/p/c4549c28c64f
+
+Angular项目目录结构详解：
+https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
+从HelloWorld去理解Angular程序的组成和启动：https://liumiaocn.blog.csdn.net/article/details/78366404
+
+router源码分析。router的navigate很好理解，跳转到另一个页面呢？前后端交互呢？【跳转为什么是前端局部跳转，把这个问题搞清楚】
+怎么跟网址关联起来的？
+ActivatedRoute可以获取全局信息，全局信息是怎么保存的？
+router和activatedRouter的配合还是没搞清楚
+Angulars Router: the Introduction：https://ultimatecourses.com/blog/angular-component-router
+RouterLink：
+https://www.techiediaries.com/angular-router-routerlink-navigate-navigatebyurl/
+https://alligator.io/angular/navigation-routerlink-navigate-navigatebyurl/
+RouterLink应该是属于属性型指令【下一个问题是，为什么要用方括号？】：https://www.cnblogs.com/banluduxing/p/10402322.html
+
+JavaScript和TypeScript交叉口 - 类型定义文件(*.d.ts)：
+https://www.cnblogs.com/silin6/p/7793753.html
+
+根module
+除了forRoot还有forFeature
+The NgModule ‘forRoot()’ Convention：https://angularfirst.com/the-ngmodule-forroot-convention/
+angular里forRoot的作用：
+https://www.cnblogs.com/chen8840/p/9511264.html
+https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
+搜了2个RouterModule的文章（理解RouterModule.forRoot）：
+https://johnpapa.net/introducing-angular-modules-routing-module/http://www.thejavageek.com/2017/04/10/angular-routing/
+Angular中RouterModule中的forRoot和forChild方法有什么区别？https://segmentfault.com/q/1010000012057819/a-1020000012072693
+When to Use ES2015 Modules Instead of Angular Dependency Injection (and When Not to)：https://angularfirst.com/when-to-use-es2015-modules-instead-of-angular-dependency-injection-and-when-not-to/
+
+Angular 深入理解Router：https://blog.csdn.net/xnh_565175944/article/details/82223852
+
+Angular throwError：https://www.concretepage.com/angular/angular-throwerror
+
+使用 VSCode + ESLint 实践前端编码规范：https://gcdn.grapecity.com.cn/showtopic-36912-1-1.html
+
+了解如下插件的用法：Angular v7 Snippets、IntelliSense for CSS class names in HTML、ng-zorro snippets(基于ng-zorro的代码片段，ng-zorro是Ant Design的Angular版本)、TypeScript Import
+
+前端封装组件没关系，但是很有可能复用度不高。本来前端就是后端数据的展示，具有相当大的灵活性。再遇到我们公司这种项目很多，界面随时要重新设计的情况，
+
+angular也应该看源码解析了，否则看依赖注入那些概念试图去记住没有任何意义
+augury原理可以看一下了。就用我搭的demo
+
+前端MVC、MVW、MVVM框架
+如何自动删掉多余的import
+
+现在用的比较多的单点登录技术是什么？https://www.zhihu.com/question/342103776/answer/798611224
+
+
+【总体理解】
+1.一个组件就是一个用于控制视图模板的JavaScript类
+2.service用来组合后端业务逻辑
+3.module用来组合前端组件、指令、管道
+
+要了解ES6模块与NgModule的关系
+An NgModule describes how the application parts fit together. Every application has at least one Angular module, the root module that you bootstrap to launch the application. By convention, it is usually called AppModule：http://www.ngui.cc/news/show-2148.html
+Angular2学习笔记――NgModule：
+https://www.cnblogs.com/dojo-lzz/p/5878073.html
+https://blog.csdn.net/wf19930209/article/details/79737410
+https://blog.csdn.net/plpldog/article/details/82992779
+关于ngModule：哪些放到exports里面？再看一下根模块【怎么控制组件之间的关系，有没有分层的问题？】
+
+在模块中打包服务与组件
+
+[(ngModel)]的实现原理：
+https://www.cnblogs.com/JennyLin77/p/6141124.html
+https://blog.csdn.net/weixin_33700350/article/details/93450883
+https://www.cnblogs.com/videring/articles/6804766.html
+
+Angular 提出一套打包格式建议名曰：Angular Package Format，包括 FESM2015、FESM5、UMD、ESM2015、ESM5、ES2015 格式：
+https://juejin.im/post/5bab64826fb9a05d2c43b3b4
+https://www.cnblogs.com/linjisong/p/6755987.html
+
+tree-shaking
+
+127.0.0.1 和 localhost的区别：https://blog.csdn.net/root_miss/article/details/82587463
+
+思考：1.对于一个多步骤操作，如果是读取，多调几次后台服务没任何问题，如果是写入最好是放入一个后台函数保证事务性；2.如果熟练使用promise、async/await等，就不会那么忌讳后端多调几次，代码写起来也很整洁。
+
+ng2中已经不存在严格意义上的双向绑定了，这个和vue的v-model是比较像的，比如v-model也等价于:value和@input，同理，[(ngModel)]等价于(ngModelChange)和[ngModel]，同时还会附带一些ng2内置的formControl的东西。
+【自定义组件怎么使用ngModel】
+自定义组件ngModel双向绑定 + floating label：https://www.jianshu.com/p/af7d50e3f73c
+Angular 4 ngModel 双向绑定原理揭秘：https://www.jianshu.com/p/3c0b39528a2b
+[(ngModel)]的实现原理：https://www.cnblogs.com/JennyLin77/p/6141124.html
+https://www.jianshu.com/p/0520e1e8d23d
+https://cloud.tencent.com/developer/information/angular%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86
+https://blog.csdn.net/tempta36/article/details/79494789
+
+angular 数据绑定之[]和{{}}的区别：https://www.jb51.net/article/147913.htm
+Angular2的事件绑定和样式绑定：https://www.jdon.com/idea/js/angular2-event-binding.html
+https://blog.csdn.net/qq_40876059/article/details/89254742
+
+if 我是前端团队 Leader，怎么制定前端协作规范? https://juejin.im/post/5d3a7134f265da1b5d57f1ed
+
+elementRef使用起来很简单，它的设计思想是什么？
+https://segmentfault.com/a/1190000008653690
+https://www.jianshu.com/p/fc6cf8cd6e39
+
+TypeScript是ES6的超集，因此学习typescript之前可以先看看es6的module等内容：https://www.jianshu.com/p/fe3cb09aa380
+angular怎么使用typescript，看这个教程就可以了：https://www.runoob.com/angularjs2/angularjs2-tutorial.html
+[译] Angular: 我们为什么选择TypeScript?：https://segmentfault.com/a/1190000010892897
+TypeScript环境搭建：https://www.cnblogs.com/iflytek/p/10781313.html
+TypeScript的4种编译方式：https://www.cnblogs.com/chuancheng/p/8444483.html
+
+个人的中小型项目前端架构浅谈：https://blog.csdn.net/qq20004604/article/details/70480932
+大型项目前端架构浅谈（8000字原创）：https://juejin.im/post/5cea1f705188250640005472
+「2019 JSConf.Asia - 尤雨溪」在框架设计中寻求平衡：https://juejin.im/post/5d45be46f265da03cf7a70d7
+虚拟 DOM 到底是什么？https://juejin.im/post/5d085ce85188255e1305cda1
+了解什么是微前端：https://juejin.im/post/5d1f19e3f265da1bab29ce5f
+可能是你见过最完善的微前端解决方案：https://zhuanlan.zhihu.com/p/80776391
+微前端的那些事儿：https://www.cnblogs.com/cangqinglang/p/10649448.html
+可能是你见过最完善的微前端解决方案：https://juejin.im/post/5d560292e51d4561a60d9dd9
+实施前端微服务化的方式：https://yq.aliyun.com/articles/647925?spm=a2c4e.11153940.0.0.54f41fadLfIQqz
+使用 Angular 打造微前端架构的 ToB 企业级应用：https://zhuanlan.zhihu.com/p/93813936
+干货分享：蚂蚁金服前端框架和工程化实践：https://juejin.im/post/5d2ee768f265da1bd605da09
+
+XMLHttpRequest 接口和 fetch() API：
+https://www.jianshu.com/p/7762515f8d1a
+https://segmentfault.com/a/1190000013927644
+angular HttpClient入门：
+https://www.jianshu.com/p/a3f7a196e1dd
+
+Angular6之ng build | ng build --aot | ng build --prod 差异：
+https://www.cnblogs.com/timetimetime/p/9106056.html
+https://www.jianshu.com/p/30c6f9aae9c0
+https://www.imooc.com/wenda/detail/385726
+
+Angular 提供了哪些功能
+	动态HTML
+	强大的表单系统 (模板驱动和模型驱动)
+	强大的视图引擎
+	事件处理
+	快速的页面渲染
+	灵活的路由
+	HTTP 服务
+	视图封装
+	AOT、Tree Shaking
+
+Angular CLI Bundle Budgets
+虚拟滚动
+拖放
+Angular Elements
+
+多级路由：loadChildren
+Angular之父子路由：https://blog.51cto.com/aonaufly/2406503
+angular2 路由、子路由、多路由 简解：
+https://www.cnblogs.com/maochunyan/p/9168426.html
+https://blog.csdn.net/xwnxwn/article/details/81840196
+Angular4.0踩坑之路：探索子路由和懒加载：https://www.itsvse.com/thread-7692-1-1.html
+子路由：https://www.cnblogs.com/starof/p/9006207.html
+路由守卫：
+https://www.cnblogs.com/starof/p/9012193.html
+https://blog.csdn.net/qq_39785489/article/details/79879915
+路由守卫是一个非常有用的机制，可以用来鉴权、判断tab页是不是打开过多等
+router guard：
+https://alligator.io/angular/route-guards/
+https://blog.thoughtram.io/angular/2016/07/18/guards-in-angular-2.html
+https://www.tektutorialshub.com/angular/angular-route-guards/
+路由的懒加载：https://angular.io/guide/lazy-loading-ngmodules
+Angular 懒加载的实现：https://blog.csdn.net/idomyway/article/details/84996458
+Angular 中使用惰性加载：http://www.mamicode.com/info-detail-2136687.html
+Angular 5.x之<router-outlet>【angular自己引入了一些标签？了解一下】：
+https://blog.csdn.net/liweibo348/article/details/83795343
+https://www.jianshu.com/p/d2e0223a337d
+angular子路由（插座为父子关系）：https://blog.csdn.net/liweibo348/article/details/83790398
+angular辅助路由（插座为平级的关系）：https://blog.csdn.net/liweibo348/article/details/83791614
+routerLink、outlets
+angular 模块懒加载 与 预加载策略：
+https://blog.csdn.net/xif3681/article/details/84584317
+http://www.pianshen.com/article/7062103432/
+http://www.ngui.cc/news/show-2143.html
+https://www.jianshu.com/p/0b5ac23afa4f
+https://blog.csdn.net/idomyway/article/details/85055105
+Angular2 拦截器（页面请求修改Url+headers传值+获取服务器返回的错误信息）：https://www.jianshu.com/p/fbe4880a0f47
+
+
+Angular NgModule - Ahead Of Time Compilation (AOT) And Lazy Loading：https://blog.angular-university.io/angular2-ngmodule/
+
+如何选择合适的前端框架，告别选择恐惧症：https://kb.cnblogs.com/page/569030/
+框架比较：
+https://www.jianshu.com/p/3a4028fe97d0
+https://blog.csdn.net/wyj19950908/article/details/79605033
+https://wenku.baidu.com/view/0048be05b5daa58da0116c175f0e7cd1842518c7.html
+http://www.360doc.com/content/18/0417/20/13819_746451808.shtml
+http://www.sohu.com/a/165048550_446797
+http://www.fjshuchi.com/news/jdm8heme9db89mm.html
+
+angular一些版本添加的功能：
+https://www.jb51.net/article/109685.htm
+http://www.mycodes.net/down_details.php?id=9435
+https://www.oschina.net/news/100970/angular-7-0-0-released?from=mail-notify
+https://www.linuxidc.com/Linux/2019-02/156684.htm
+
+Angular应用程序生成器架构概述：https://www.zybuluo.com/lsmn/note/1152202
+
+创建组件没有那么费劲，使用命令：ng generate component
+
+JS之解构（ Destructuring）【数组、JSON】：
+https://blog.csdn.net/lu1024188315/article/details/73322541
+
+跟踪的不紧的话，项目里面的人会被搞走，应该每天跟踪进度
+
+vue也能支持typescript，他们在编译层面都是怎么处理的？
+
+angular与webpack：
+https://juejin.im/post/58ec25655c497d0062c3493b
+https://www.cnblogs.com/lillian0525/p/7219966.html
+https://segmentfault.com/a/1190000016655736
+https://segmentfault.com/a/1190000017780020?utm_source=tag-newest
+
+NgForm很有意思，invalid等自动检测，深入读一下代码
+
+ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework)：https://www.runoob.com/ionic/ionic-tutorial.html
+
+注意观察一下：现代前端框架显示时候的自适应都做了哪些适应（产品设计）
+
+Immutable.js了解一下？https://www.jianshu.com/p/0fa8c7456c15
+
+angular-cli的升级？
+Angular 项目升级至 Angular6：http://ju.outofmemory.cn/entry/367993
+
+ng build及后续
+
+Angular4_使用枚举
+
+自定义前端angular组件如何拥有“属性”？以“app-progress-bar”为例，前端要使用[icon]，后端定义一个@Input icon，类型string
+
+学习一个新框架的几个方面：
+1.环境的搭建（含build、各项配置、编码规范等）；
+2.各概念之间的关联、层次关系等（module、component、service等）；
+3.数据的管理和流向；
+4.与原有开发模式/代码结构的区别（比较）：原来是通过id和事件关联html和js，现在是通过component定义来组织。
+5.横向比较：从源码、模式等方面与其他框架比较，例如比较Spring（看整体代码、基本概念的代码、看加载流程、关键函数等）。
+
+angular源码分析：angular的整个加载流程：https://www.cnblogs.com/web2-developer/p/angular-7.html
+
+1.搞懂angular基础；
+2.搞懂和ts的配合；
+3.搞懂node.js及部署；
+4.搞懂ng-zorro等组件，分析一两个的原理：https://www.jianshu.com/p/e4e9022bb43a
+5.看一两个我们系统封装的组件
+Angular Live Development Server
+
+angular编码规范：
+https://www.jianshu.com/p/8f86a3a87584
+https://blog.csdn.net/chelen_jak/article/details/83620589
+
+再次理解MVVM或者前端MVC
+
+npm/cnpm 开发中的命令详解：https://blog.csdn.net/zwt_guiji/article/details/84139447
+webpack4-用之初体验：https://www.cnblogs.com/cangqinglang/p/8964460.html
+
+CSS预处理器：SCSS、Sass、Less、Stylus的区别？https://blog.csdn.net/qq_35430000/article/details/87097696
+Sass与Less：https://www.jianshu.com/p/6489e28e548e
+
+用html实现excel冻结窗口的功能 固定行固定列：https://blog.csdn.net/qq_38130280/article/details/97157881
+
+import体现了组件之间的关联，对搞懂module、component、service之间的关系很有帮助。
+理解module存在的意义（及和component、service等的关系，module之间的关系。再看具体的细节）：https://blog.csdn.net/sunshinessx/article/details/88663858
+我看智能修复里面好多component没配service也在跑，最佳实践是啥？
+【NgModule的imports、declarations、entryComponents】
+这个文章从根模块和路由开始讲起：https://blog.csdn.net/qq_15096707/article/details/54809805
+浅析Angular2子模块以及异步加载：https://www.jb51.net/article/112027.htm
+
+angular路由与路由组件（例如ng-zorro）之间的关联？
+
+你所不知道的Chrome调试技巧（上）：https://blog.csdn.net/qq20004604/article/details/78588300
+你所不知道的Chrome调试技巧（下）：https://blog.csdn.net/qq20004604/article/details/78626690
+九个Console命令，让js调试更简单：https://www.cnblogs.com/fuqiang88/p/8042798.htm
+
+Angular: Don't forget to unsubscribe()：https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
+
+Angular 工具篇之文档管理：https://www.codercto.com/a/26812.html
+使用Compodoc生成angular项目静态文档：
+http://ju.outofmemory.cn/entry/354457
+https://www.jianshu.com/p/65b94206db21
+https://blog.csdn.net/weixin_34146410/article/details/93164025
+https://juejin.im/post/5d04a9a9e51d45778f076d2f
+
+https://baijiahao.baidu.com/s?id=1632625066790753125&wfr=spider&for=pc
+【路由】理解路由和@NgModule之间的关系
+Angular 5.x 学习笔记之Router(路由)应用
+angular5路由快速入门：https://www.jianshu.com/p/8d22d28a8a10
+路由：
+https://www.jianshu.com/p/e72c79c6968e?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+https://www.jianshu.com/p/35c0acdea86c?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+路由重载、路由传参
+
+constructor和ngOnInit差异及适用场景：
+https://blog.csdn.net/u010730126/article/details/64486997
+https://www.jianshu.com/p/d51e9f6dab2d
+
+angular的模板指的是html文件或者@View({})写的内联模板：
+https://www.cnblogs.com/gett/p/5036654.html
+http://www.pig66.com/2018/145_0928/17240085.html
+
+angular源码分析
+
+typescript 中通过构造函数的参数直接定义属性：https://blog.csdn.net/xs20691718/article/details/77507847
+
+水下项目pdf查看器的原理【pdf.js源码】：
+http://47.92.81.142:8063/assets/generic/web/viewer.html?file=http%3A%2F%2F47.92.81.142%3A8039%2Fdct-szkg-hx%2Faas%2FdataDownLoad%2FpreviewStream%3FfileName%3D201906261126262662019.05%E9%A2%86%E9%98%9F%E6%97%A5%E8%AE%B0.pdf
+
+img的设置
+试试<img [src]={{imgUrl}} />？https://stackoverflow.com/questions/44892717/angular-2-4-img-src
+
+
+Angular常见误区：https://zhuanlan.zhihu.com/p/28296615
+Angular 2 constructor 与 ngOnInit：https://zhuanlan.zhihu.com/p/25753211
+再看一遍在威盛时看的lisp
+Angular4订阅(Subscribe)与取消：
+https://blog.csdn.net/River_Continent/article/details/78042110
+https://blog.csdn.net/xu1227233860/article/details/78571528
+https://blog.csdn.net/yaomengzhi/article/details/77477571
+https://blog.csdn.net/wf19930209/article/details/79354411
+
+Angular4_使用枚举：
+https://www.cnblogs.com/jane850113/p/7373288.html
+https://blog.csdn.net/qq_36279445/article/details/78932976
+
+Angular2,取消订阅ngOnDestroy中的事件：https://www.jb51.cc/angularjs/140765.html
+
+JavaScript：从这个角度思考问题：ts文件首先要满足typescript规范
+
+angular-cli是什么：
+https://www.jianshu.com/p/7676f7a246e2
+https://segmentfault.com/a/1190000009771946
+https://www.cnblogs.com/cgzl/p/8594571.html
+https://www.cnblogs.com/jehorn/p/8568109.html
+https://segmentfault.com/a/1190000015564044
+AngularCLI主要特性：http://www.fly63.com/nav/1154
+ng代表的是angular-cli插件：npm install -g angular-cli
+angular-cli是angular自动化构建工具：
+https://cli.angular.io/
+https://www.jianshu.com/p/7676f7a246e2
+angular-cli工程搭建指南：https://www.jianshu.com/p/50064b182b73
+【angular-cli启动了一个server。剩下的问题是：angular-cli需要启动node把？因为npm不是node的包管理系统么？】
+
+看清楚component使用service的语法
+
+把tab组件好好看一下
+看看model的组织和使用，例如audit-task.model.ts
+
+模板字符串（` `）的用途（ES6）：https://blog.csdn.net/zwt_guiji/article/details/81979299
+
+angular中的ts文件可以理解为原生web中的<script>，例document.getElementById：https://blog.csdn.net/hbiao68/article/details/86611457
+
+JavaScript shell安装（如何嵌入代码发挥作用？）：https://blog.csdn.net/SunShinessx/article/details/93163883
+
+FormBuilder：为啥在this.fb.group({})里面没有写status，后面status就丢了？
+FormBuilder的用法
+
+Angular 7/8 SEO: Rendering Your App on Server-side with Angular Universal：
+https://www.techiediaries.com/angular-seo-server-side-rendering-with-angular-universal/
+https://www.techiediaries.com/angular-seo-title-and-meta-tags/
+
+EventEmitter：
+https://www.cnblogs.com/Ceri/p/7686372.html
+https://www.jb51.net/article/137419.htm
+https://segmentfault.com/a/1190000014206309
+https://blog.csdn.net/github_38140984/article/details/83006097
+https://juejin.im/post/5a6a6a36f265da3e317e5d2d
+
+angular4 forkjoin 简单应用：
+https://www.jianshu.com/p/df6824bb331c
+https://blog.csdn.net/weixin_34309543/article/details/86998422
+
+typescript 的类型系统是否太过复杂？https://www.zhihu.com/question/348443486/answer/846395717
+为什么前端框架 react、vue 里会出现生命周期的说法？https://www.zhihu.com/question/341446246/answer/795201094
+
+Angular 4 动态table：https://blog.csdn.net/xiaoguangtouqiang/article/details/85329636
+
+jquery数值范围选择插件jquery rangeslider：http://www.jq22.com/jquery-info571
+
+登录信息保存在SessionStorageStore里面本身就是错的把？如果沿这个思路有没有解决方案？
+继续看一些import：DelonAuthModule、DA_STORE_TOKEN、DA_SERVICE_TOKEN、IStore、ITokenService等。还有跟这个问题相关的provide用法（delon.module.ts）
+下一步可以一个模块一个模块的看，先看关键的ReuseTabService等
+
+组件不应该直接获取或保存数据，它们不应该了解是否在展示假数据。 它们应该聚焦于展示数据，而把数据访问的职责委托给某个服务：https://blog.csdn.net/wjyyhhxit/article/details/81806046
+Angular2 通过service在组件(component)之间传递数据：
+https://www.w3cways.com/2093.html
+https://blog.csdn.net/qq1604165677/article/details/72571707
+
+双向绑定：
+https://www.jianshu.com/p/cee44e8831c9
+https://blog.csdn.net/zhaoruda/article/details/79690329
+https://www.jianshu.com/p/75b59181a5d9
+单向绑定，用单括号（并且在nz-zorro这种组件标签里面）；双向绑定里面带()括号；一个括号表示时间；前端管理；指令(没有界面)
+数据绑定、响应式编程和管道：
+https://www.cnblogs.com/yw0219/p/7764363.html
+https://www.cnblogs.com/yidansheng/p/8721047.html
+理解angular2.0双向数据绑定中的 $event：https://blog.csdn.net/u010977147/article/details/53762254
+
+DOM属性和HTML元素属性：https://www.php.cn/js-tutorial-411598.html
+
+nz-table(NG-ZORRO)【ant-design官方文档是啥？】：
+https://www.cnblogs.com/jiangzhaowei/p/9940309.html
+https://ng.ant.design/docs/introduce/zh
+https://ng.ant.design/components/table/zh
+
+chunk是个什么概念？
+
+angular4 使用 ng build --prod 编译报内存溢出：https://blog.csdn.net/qq_35673617/article/details/85992542
+.spec.ts文件用于单元测试：https://www.jianshu.com/p/bfa50d38b9c5
+Angular单元测试系列：https://segmentfault.com/a/1190000009737119
+Angular 单元测试讲解：https://blog.csdn.net/wf19930209/article/details/80413904
+
+angular有没有可以本地构建静态代码的工具：https://segmentfault.com/q/1010000002500058
+
+ng-zorro是Ant Design的Angular版本。官网：https://ng.ant.design/docs/introduce/zh
+Ant Design：
+https://ant.design/index-cn
+zorro 8.0：https://zhuanlan.zhihu.com/p/71689652?utm_source=qq&utm_medium=social&utm_oi=26983505330176
+Lucene、solr以及elasticsearch之间的区别和联系：
+https://blog.csdn.net/weixin_37886463/article/details/79447063
+https://blog.csdn.net/sinat_27747695/article/details/77433677
+
+====================================================================
+
+TypeScript官网：
+https://www.tslang.cn/docs/home.html
+http://www.typescriptlang.org/index.html
+我们为什么选择TypeScript? https://segmentfault.com/a/1190000010892897
+typeScript是把类型写在后面。看any、Observable
+import和export：https://www.cnblogs.com/niklai/p/5808789.html
+如何编写一个d.ts文件：
+https://segmentfault.com/a/1190000009247663
+https://blog.csdn.net/yushulx/article/details/71450923
+TypeScript 3.4发布，新增const断言：http://www.sohu.com/a/306315321_827544
+
+CheckBox的indeterminate属性：https://www.cnblogs.com/birdshome/archive/2005/01/03/85679.html
+
+其它元数据装饰器用类似的方式来指导 Angular 的行为。 例如@Injectable、@Input和@Output等是一些最常用的装饰器
+Angular 元数据 (Metadata)：https://www.cnblogs.com/zzy-run-92/p/9397725.html
+Angular学习之组件和@Component（组件从技术上来说其实是一个指令）：
+https://blog.csdn.net/ano1010/article/details/83240504
+https://blog.csdn.net/it_rod/article/details/79306364
+Angular4父子组件传递@Input和@Output【对比原生JS的模块化、对比其他语言。这里是否也体现了双向数据传递，为啥angular能方便做到其他语言不行？】：
+https://blog.csdn.net/h273979586/article/details/79853825
+@Inject
+Angular 进阶：从源码理解@Input绑定是如何被编译和实现的：https://segmentfault.com/a/1190000013473028
+angular中的viewchild提供了访问从组件中访问模板中书写的DOM、子组件和指令的功能：
+https://blog.csdn.net/zgrbsbf/article/details/81329398
+https://blog.csdn.net/hbiao68/article/details/86611457
+父子组件传值@Input @Output @ViewChild：https://blog.csdn.net/xfwdxt/article/details/82111016
+@ViewChild：
+https://www.jianshu.com/p/ac5366abfa74
+https://www.jianshu.com/p/d06daea1d669
+Angular2+ ViewChild & ViewChildren解析：https://blog.csdn.net/xwnxwn/article/details/81839285
+Angualr4-@output与@input：https://blog.csdn.net/dfshsdr/article/details/79775240
+ViewChild、ContentChild，从ViewChild与view关联的角度去思考
+Output和Input是两个装饰器，是Angular2专门用来实现跨组件通讯，双向绑定等操作所用的：https://blog.csdn.net/wf19930209/article/details/79349164
+
+Angular 模板 (Templates)：https://www.cnblogs.com/zzy-run-92/p/9396756.html
+
+常用npm包（直接看代码里面的package.json就可以了）：
+@angular/core
+@angular/router
+@angular/forms
+@angular/common
+@angular/common/http
+@angular/platform-browser
+@angular/cdk/portal
+还有一堆@delon相关的
+
+【重要概念】
+Observable详解：https://segmentfault.com/a/1190000008809168
+在Angular2中使用Observable对象（RxJS）：
+https://blog.csdn.net/yuemei_1991/article/details/76408868
+https://blog.csdn.net/qq_30970807/article/details/53771521
+https://blog.csdn.net/xnyssxy/article/details/79868928
+
+Learn Angular Tutorial：
+https://www.codeproject.com/Articles/1207118/Learn-Angular-Tutorial
+https://www.jianshu.com/p/219fc1606ec8
+angular组件：https://www.jianshu.com/p/f03c6df14956
+Angular7。Angular是用TypeScript构建的
+
+VS Code插件之Debugger for Chrome：https://blog.csdn.net/xdcx950288/article/details/80640918
+Visual Studio Code 通过 Chrome插件Type Script断点调试Angular 2：https://www.cnblogs.com/donaldtdz/archive/2017/12/12/8029954.html
+vscode编辑、调试angular：
+https://www.cnblogs.com/savorboard/p/vscode-debugging-angular.html
+https://blog.csdn.net/u012475786/article/details/87348423
+https://www.cnblogs.com/handsomer/p/6815852.html
+https://www.e-learn.cn/content/net/1078256
+
+angular的标签是怎么编译的？应该不难吧？
+理解angular里面的scope及$scope用法
+CLI：https://appdividend.com/2018/05/05/angular-6-tutorial-with-example-using-angular-cli/
+
+VS Code直接调试Angular代码：https://www.cnblogs.com/keitsi/p/10707384.html
+用VSCode可以直接调试Angular代码：https://www.imooc.com/article/20215
+augury不能用于Production Mode
+angular调试的几种方法【借助插件augury等和不借助插件，比较并且看是否可以推荐给大家】：
+https://blog.csdn.net/u010147288/article/details/51463486
+https://www.cnblogs.com/lsc183/p/9915285.html
+https://juejin.im/entry/5a4ce4965188252a3d38659a
+https://blog.csdn.net/homer168/article/details/79359282
+
+Writing a Custom TSLint Rule for Angular：https://rangle.io/blog/custom-tslint-for-angular/
+
+Angular 2 DomSanitizer：https://segmentfault.com/a/1190000008809095
+
+7 Angular Tools That You Should Consider：https://blog.mgechev.com/2017/04/23/angular-tooling-codelyzer-angular-cli-ngrev/
+
+Angular4 中常用的指令入门总结：https://www.jb51.net/article/115968.htm
+Angular2 指令：
+https://www.cnblogs.com/SLchuck/p/5765611.html
+如何快速查看函数是怎么被调用的？【每新接触一门语言，关键还是摸清楚这些工程方面的东西】
+
+angular4.0 创建结构指令：https://blog.csdn.net/u013816448/article/details/79245375
+
+
+r.map操作，再看map的本质
+事件：
+https://www.cnblogs.com/yidansheng/p/8721047.html
+https://www.kaifaxueyuan.com/frontend/angular-6/angular6-event-binding.html
+
+验证：html与html的引用、ts与ts的引用
+装饰器
+OnInit
+
+ES6 扩展运算符 三个点（...）把数组元素合入上一级数组：https://blog.csdn.net/zxt1195229475/article/details/79486142
+
+你也可以使用 TypeScript 和 Dart 来创建 Angular 应用
+
+@delon/auth module Build Status(Simple user authentication, support Json Web Token & Simple Token.)：https://www.npmjs.com/package/@delon/auth
+
+ajax携带cookie：
+https://www.jianshu.com/p/44cbd03cdd68
+https://cloud.tencent.com/developer/article/1467263
+https://www.cnblogs.com/lgl1209/p/11527080.html
+
+Angular6操作cookie：https://blog.csdn.net/qq_43225030/article/details/84663276
+https://stackoverflow.com/questions/34298133/angular-cookies
+angular cookie tutorial：https://tutorialedge.net/typescript/angular/angular-cookies-tutorial/
+Using Cookies in Angular：https://morioh.com/p/00800c628bb1
+Angular Security - Authentication With JSON Web Tokens (JWT): The Complete Guide【前端要彻底搞清楚】：https://blog.angular-university.io/angular-jwt-authentication/
+Cookies vs. Tokens: The Definitive Guide：https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide
+【angular http请求带cookie】
+【方案一】
+使用原生JS cookie或者cookieService用法，在拦截器里面仿造x-auth-token在header里面加Cookie字段，cookie名称是JSESSIONID。
+报错：Refused to set unsafe header "Cookie"：https://blog.csdn.net/qq_33679504/article/details/80736865
+【方案二】
+使用cookie添加{withCredentials: true}后，出现跨域提示：response.setHeader("Access-Control-Allow-Origin",request.getHeader("origin"));
+当请求中携带cookie时, Access-Control-Allow-Origin必须要有确切的指定, 不能是通配符(*)
+1.在interceptor或者单个请求里面添加{withCredentials: true}，并解决前端跨域问题；
+2.看更多文档寻找{withCredentials: true}的拦截器通用解决方案；例如BrowserXhr相关的：https://stackoverflow.com/questions/35602866/how-to-send-cookie-in-request-header-for-all-the-requests-in-angular2
+(1)通过设置response来跨域：https://blog.csdn.net/loya0813/article/details/83862586
+(2)在源码层面确认三种方式的一致性：https://segmentfault.com/a/1190000019550329?utm_source=tag-newest
+(3)OPTIONS的配置：https://www.jianshu.com/p/09781abe53e8
+(3)终极知识：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#简单请求，抓包然后对比看看违反了哪条规则
+
+
+ngAfterContentInit()和ngAfterViewInit()：https://ask.csdn.net/questions/700508
+Angular中Constructor 和 ngOnInit 的本质区别：https://www.jianshu.com/p/d51e9f6dab2d
+this.navigateByUrl("");是干嘛的？
+angular 生命周期钩子的详细介绍：
+https://angular.cn/guide/lifecycle-hooks
+https://www.jianshu.com/p/8f4c15186d7b
+我们需要两样东西来启动应用：1.Angular 的 platformBrowserDynamic().bootstrapModule 函数；2.上文中提到的应用根模块 AppModule
+Angular项目主要文件的作用：https://blog.csdn.net/xnh_565175944/article/details/81022824
+bootstrapModule前干的事情：https://www.baidu.com/link?url=sQs20DPrZED5DTHjLmK6i1fpeuXSMamf2PguSfqWjkI4M3tOh-Hhy42tTgCHe2wn&wd=&eqid=97ef88c40003290b000000025ceccd7c
+
+InjectionToken与OpaqueToken
+
+HMR 即模块热替换(hot module replacement)：
+https://blog.csdn.net/hbts_901111zb/article/details/78982662
+https://www.cnblogs.com/sghy/p/9814487.html
+https://www.jb51.net/article/137769.htm
+
+
+EventEmitter：
+https://www.jianshu.com/p/e37ca8369162
+https://www.cnblogs.com/Ceri/p/7686372.html
+https://www.runoob.com/nodejs/nodejs-event.html
+https://blog.csdn.net/liwusen/article/details/81202676
+
+JS中事件列表：https://blog.csdn.net/chang_jie_518/article/details/80343891
+
+新一代前端自动化测试工具：cypress：https://blog.csdn.net/lpw_cn/article/details/90405530
+
+Node.js Express 框架：https://www.runoob.com/nodejs/nodejs-express-framework.html
+Angular-cli生成组件时自动将组件import到AppModule是如何实现的?https://segmentfault.com/q/1010000010078781/a-1020000010080369
+
+转载 [原生JS]实现移动端的上拉加载&下拉刷新：https://blog.csdn.net/webFront/article/details/95627334
+
+npm install、npm install --save与npm install --save-dev区别：https://blog.csdn.net/qq_30378229/article/details/78463930
+NPM和webpack的关系（转载）：https://blog.csdn.net/cwh0908/article/details/90769823
+NPM是随同NodeJS一起安装的包管理工具
+Angular 开发环境搭建（讲了cnpm）：https://www.cnblogs.com/mengjinluohua/p/8227977.html
+angular环境搭建（已完成）：
+https://www.cnblogs.com/caiquan/p/10097894.html
+https://www.cnblogs.com/watchfree/p/7606075.html
+http://m.zhizuobiao.com/node/node-19061200023/
+http://ju.outofmemory.cn/entry/359835
+https://blog.csdn.net/dreamer66/article/details/82777937
+搭建Angular项目:https://blog.csdn.net/zwt_guiji/article/details/79468799
+一个Angular 5教程：一步一步指导实现你的第一个Angular 5应用程序：https://cloud.tencent.com/developer/article/1343646
+新建项目卡住后用cnpm安装包的方式：https://www.cnblogs.com/onew/p/11330450.html
+部署：
+https://blog.csdn.net/qq_35415307/article/details/80162688
+https://blog.csdn.net/daqiang012/article/details/81915530
+angular-cli与webpack的关系：
+https://www.jianshu.com/p/8e927cd0cd76
+https://www.jianshu.com/p/c64337b4d2c1
+https://blog.csdn.net/onlybymyself/article/details/74783647
+使用全局安装，就可以保持干净的代码目录了：npm install -g echarts --save
+【node_modules的进展（关注node-global和node-cache的设置）】非常关键的一句话：由于webpack在node-global文件夹中做了映射，所以也要将node-global加入path环境变量即可：https://www.cnblogs.com/hualess/p/11541908.html
+npm install echarts --save【为啥没有--save安装就卡住了】
+现在我的包安装方式：1.无法使用--save选项；2.下载下来一个不带node_modules的代码不好install
+1.通过package.json和npm install 两种方式来添加依赖
+3.再熟悉一下angular的设置
+node_modules路径：
+https://blog.csdn.net/yuzhouchangwan1990/article/details/79431982
+https://www.jb51.net/article/140361.htm
+https://www.jianshu.com/p/0d069e36d8ac
+【还是得把node_modules路径的问题解决一下，否则很难在多个项目之间做test。我的node_modules的分离没有完成。要保证：1.在项目目录下能npm install（package.json里面会添加引用）；2.同时不要放在代码目录下】
+2.angular自动下载安装所有依赖包模块：https://blog.csdn.net/Nfboys/article/details/90019578
+npm install包的全局安装路径：https://flaviocopes.com/where-npm-install-packages/
+Angular6、7 自动下载安装所有依赖包模块：https://blog.csdn.net/Nfboys/article/details/90019578
+Webpack、Less、Sass、Gulp、Bower以及这些工具的插件都是Node上开发的---@知乎陈龙
+前端现在有npm （包管理）。而npm是随同Node.js一起安装的。所以前端(vue/angular/react)在开发环境下都是离不开Node.js的(编译、打包等等)
+有了npm，你怎么得到要用的包/模块信息呢？
+初识npm：https://www.cnblogs.com/john-sr/p/6036652.html
+谈一谈NPM：https://cloud.tencent.com/developer/news/216362
+npm完整的教程：http://caibaojian.com/npm/getting-started/what-is-npm.html
+Node.js + Express + Springboot实现前后端分离架构：https://my.oschina.net/u/1185936/blog/1523088
+基于 Node.js 平台，快速、开放、极简的 Web 开发框架：http://www.expressjs.com.cn/
+要能搞清楚前端框架对生产力的提升：1.可以避免写很多类似（重复）的代码，例如双向绑定就可以避免很多取值的代码。搞懂框架就可以少写好多代码
+Angular Cli 升级到最新版本：https://www.cnblogs.com/zero-zm/p/10421680.html
+
+搞清楚我用的版本以后好升级：ng version、node -v
+
+ng lint
+既然知道了tslint是静态检查的核心，那么在angular幻想下怎么配置应该围绕tslint来，首先吃透它：
+https://palantir.github.io/tslint/
+Configure TypeScript, TSLint, and Prettier in VS Code：https://www.seangroff.com/ts-setup/
+Static Code Analysis of Angular 2 and TypeScript Projects：https://blog.mgechev.com/2016/02/29/static-code-analysis-angular-typescript/
+Styling Angular apps using Prettier and TSLint：
+https://christianlydemann.com/style-angular-apps-using-prettier-and-tslint/
+https://web.dev/accessible-angular-with-codelyzer/
+Angular: 执行ng lint后如何快速修改错误：https://www.cnblogs.com/zhenqichai/p/ng-lint-fix-errors.html
+看codelyzer规则【已经替换了，看好在哪里】
+
+tslint的几个问题：
+ERROR: D:/gao/code/website_front/src/app/views/login/login.component.ts:43:23 - == should be ===
+ERROR: D:/gao/code/website_front/src/app/views/nav/nav.component.ts:23:15 - object access via string literals is disallowed
+
+Object.keys()和for-in都不能保证顺序：https://segmentfault.com/a/1190000018306931?utm_source=tag-newest
+
+============================================================================
+
+【样式专区】
+1.CSS实现div高度填满剩余空间
+

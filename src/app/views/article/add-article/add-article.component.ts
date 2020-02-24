@@ -8,10 +8,10 @@ import { StorageService } from 'src/app/service/storage.service';
 
 @Component({
   selector: 'app-article',
-  templateUrl: './article.component.html',
-  styleUrls: ['./article.component.less']
+  templateUrl: './add-article.component.html',
+  styleUrls: ['./add-article.component.less']
 })
-export class ArticleComponent implements OnInit {
+export class AddArticleComponent implements OnInit {
 
   public Editor = ClassicEditor;//ckeditor
   config = {};//ckeditor配置
