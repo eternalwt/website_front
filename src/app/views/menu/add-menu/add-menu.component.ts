@@ -88,7 +88,7 @@ export class AddMenuComponent implements OnInit {
   menuName: string;// 菜单名称
   menuUrl: string; // url
   menuSort: number;// 排序
-
+  menuIcon: string;// 图标
 
   private _getLevel = (node: FileFlatNode) => node.level;
   private _isExpandable = (node: FileFlatNode) => node.expandable;

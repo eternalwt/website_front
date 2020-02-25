@@ -7,19 +7,17 @@
 
 解释器
 
-看《美国工厂》
-星期日晚上洗澡
+下载《美国工厂》
+晚上洗袜子、拖地、看禅道bug
+星期三晚上洗澡
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
 其他基础设施
 整合的难度和工作量
 讲github及我的产品策略
-通过打造关系来出售的简单系统（3月要能搞定）
+通过打造关系来出售的简单系统（五一要能搞定）
 先进的大数据物联网系统：下半年搞定
 
-【把add-article的表单稍微规范化一下】
-
-试一下Get Thread Dump按钮
 
 【调整计划：25号之前都搞后端配置】26号再继续搞前端
 
@@ -27,30 +25,50 @@ kafka：思考一下对我的图表大数据系统的帮助？
 https://www.liangzl.com/get-article-detail-38554.html
 https://www.liangzl.com/get-article-detail-134408.html
 
-或许我理解错了，angular material的自由度是不是可能比想象的要大？side-nav是不是可以嵌套树控件或者主题里面的部分html？用主题的外观、用side-nav的点击行为？
+应该用最直接的办法，放开版本号直接定位shiro-ehcache的bug！！！
 
-【24号】
+【简单任务】
+1.我的mat-toolbar并没用到任何toolbar的特性（需要利用一下）；2.尝试使用flex一维布局
+测试我的定时任务，我的定时任务代码怎么能完全理解？调试webSocket
+Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
+bug修复：赋予权限的页面角色没有完整列出来
+整合rabbitmq
+把home右侧宽度做成计算出来的
+
+
+【25号】
+看angular material样式表、看控件（看material，对后端的表）
+调样式(indigo-pink.css)：1.表格布局；2.按钮和选框的颜色为啥是红色的；3.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？
+或许应该搜material 8？flex layout tutorial
+看material教程，把红点和圆圈做出来
+【把add-article的表单稍微规范化一下】
 7.先把article的reactive form搞通，然后把add-role的模板驱动的form再过一遍，然后改造成reactive的，然后搞其他的
+再次测试mybatis【把这个配置彻底打通】
+推动不了，是不是应该先看mybatis源码了？
+
 1.把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
 2.x测通、代码写好后，再把2.x的pom配置干掉；
 3.用单元测试的方式再次测试mybatis的配置
 4.spring配置datasource三种方式【要能搞懂原理】：https://www.cnblogs.com/libin6505/p/11001968.html
   搞懂springboot是怎么使用application.properties文件的（才能把配置彻底搞清楚，例如mybatis的配置）：(1)看懂数据源的默认配置；
 6.配置redis
+ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts
+
+https://www.npmjs.com/package/
 
 超时后，web界面【自动】跳转到登录页写通
 【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
 【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件、msgBox】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 2.mybatis继续看整合
 3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
+java整合rabbitmq和整合缓存一样，都涉及到JSR标准的问题
 5.消息中心推进一点点（先看看文章）
-bug修复：赋予权限的页面角色没有完整列出来
 把我现有的样式文件过一遍，看看能不能看出啥门道【把我现在没有显示全的问题解决一下】
 把authrizer配置不够优雅的问题解决【彻底理解spring装配】
 
 把后端websocket的代码整理干净
 能否使用@Configuration来配置cache和mybatis？
-
+input、output再看一遍
 
 思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
 
@@ -59,11 +77,13 @@ bug修复：赋予权限的页面角色没有完整列出来
 能否用dbconfig.properties来配置？
 
 angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
-
 material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
 Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
 angular material源码
 angular的表单已经很强大了，material真的有必要？
+Angular Material 8 | Stepper Tutorial With Examples：
+https://www.freakyjolly.com/angular-material-8-stepper-tutorial-with-examples/
+https://www.freakyjolly.com/angular-material-8-datepicker-tutorial-with-examples/
 
 【寻找合适的表格控件】
 addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
@@ -91,7 +111,7 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 1.淘宝、京东、有道看下快递情况
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 mybatis-spring：http://mybatis.org/spring/
-1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】
+1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】（或许我理解错了，angular material的自由度是不是可能比想象的要大？side-nav是不是可以嵌套树控件或者主题里面的部分html？用主题的外观、用side-nav的点击行为？）
 前端基础设施选型练习一下
 列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
@@ -126,12 +146,31 @@ v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.ne
 angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
 https://www.cnblogs.com/mttcug/p/7976852.html
 https://segmentfault.com/a/1190000016106262
-
 material的设计思想还是没有搞明白
-
 3.学习Sort Header：从这个功能学习官网文档的使用
 https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
-5.列表的按条件过滤（加 @MultiRequestBody ，先搞一个可行的方案）；
+从官网学习angular material！！！：https://material.angular.io/components/categories
+只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+从官网看事件：https://material.angular.io/components/categories
+关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
+[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
+Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
+material官方全列表：https://material.angular.io/components/dialog/api
+MatDialog：
+https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
+https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
+https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
+Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
+使用material还有个好处，可以尝试一下换界面的工作量
+angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
+【几个关联的问题】
+1.给前端刷新token（是不是还是要依靠header？）；
+2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
+3.权限不够则页面和url保持不变
+https://blog.learningtree.com/create-side-menu-angular-2-material-design/
+https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
+https://code-maze.com/angular-material-navigation/
+
 
 【2月10日】继续搞add-menu，菜单的添加，分解：
   2.把数据加到控件里面去；
@@ -146,11 +185,6 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
   自己想要的基本功能差不多后，再调样式
   每个表应该都需要加@TableName和IdType.AUTO（ALTER TABLE tablename AUTO_INCREMENT =1）
 
-从官网学习angular material！！！：https://material.angular.io/components/categories
-
-只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
-从官网看事件：https://material.angular.io/components/categories
-2.菜单功能【添加、删除、修改】
 对比最新的门户网站技术
 
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
@@ -191,13 +225,11 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 
 2.用列表管理角色（增删改）；
 4.样式（学习flex等布局）
-5.继续基础设置及material（后端shiro等、前端搜索框、material等）；
 6.继续整合
 7.menu的东西放到一个module里面
 1.菜单权限再看看后端是否需要拦截
 2.side-menu是不是可以用于菜单树（能否做多级）；
 继续推进前端鉴权【使用EventEmitter】
-即使感觉material用不下去，也要更熟练，把遇到的问题搞清楚
 
 根据现有的知识和技能，let-admin是可以直接套在我现有的代码上的
 
@@ -207,10 +239,6 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架【学习】：
 https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
-
-过年目标：1.基础设施；2.angular material；3.看书
-
-关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
 
 
 看一下公司里面的权限分配
@@ -222,25 +250,6 @@ https://www.cnblogs.com/nzbin/p/11392311.html
 https://blog.csdn.net/A156348933/article/details/90241323
 （用setTimeout？）https://www.cnblogs.com/Answer1215/p/5924763.html
 放到interceptor里面呢？
-
-[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
-Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
-material官方全列表：https://material.angular.io/components/dialog/api
-MatDialog：
-https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
-https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
-https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
-Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
-使用material还有个好处，可以尝试一下换界面的工作量
-angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
-
-【几个关联的问题】
-1.给前端刷新token（是不是还是要依靠header？）；
-2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
-3.权限不够则页面和url保持不变
-https://blog.learningtree.com/create-side-menu-angular-2-material-design/
-https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
-https://code-maze.com/angular-material-navigation/
 
 分两种情况思考，userId是不是应该保存在localStorage里面（和session原理也对比）
 
@@ -267,13 +276,26 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 表格：编辑、删除（把angular material 2的提示框写通）、列出创建者、查看、翻页
 【周六】
-1.把ArticleList用Material2做好
 2.试一下把文章类的做成一个module
-文章保存后没有redirect，跳转到列表页
 
 测试、完善路由守卫
 
 把基础设施再搞一般，把material 2搞一轮，把rxjs搞一版，就可以用lte-admin做商用产品了
+
+angular material各个控件开始对后端功能了（先搜索“时间线、后端设计”）
+时间线timeline的后端设计（feed）：
+https://www.php.cn/mysql-tutorials-53724.html
+https://www.cnblogs.com/literoad/archive/2013/03/18/2966921.html
+https://blog.csdn.net/weixin_33806300/article/details/90569157
+http://www.html5dw.com/post/1903
+https://www.liangzl.com/get-article-detail-522.html
+https://mp.weixin.qq.com/s?__biz=MjM5NzQ3ODAwMQ==&mid=404465806&idx=1&sn=3a68a786138538ffc452bca06a4892c8&scene=0#rd
+Feed流的概念：
+https://yq.aliyun.com/articles/224132
+https://www.useit.com.cn/thread-8342-1-1.html
+https://wenku.baidu.com/view/3fb43833ff4733687e21af45b307e87100f6f879.html
+http://www.lmyw.net.cn/?p=619
+https://blog.csdn.net/mituan1234567/article/details/47008451
 
 publish、hot、cold：
 https://www.sitepoint.com/functional-reactive-programming-rxjs/
@@ -290,8 +312,6 @@ RxJs 5 share（）运算符是如何工作的？https://cloud.tencent.com/develo
 switchAll()的作用？
 
 什么叫响应式表单？响应式体现在哪里？
-
-看下载的bpus_5_dashboard.zip怎么用起来
 
 看那几个布局的文章
 是不是先把ng-alain那些下载下来？
@@ -486,8 +506,7 @@ https://github.com/ui-router/angular
 模板与angular的整合：模板的每个页面都对应angular的一个component（这个心里没底，单独找一下午开一个工程试一下）
 指导思想：用angular/material把后端和前端基础设施逻辑写好，美化界面是最后一步
 
-Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets：https://marketplace.visualstudio.com/items?itemName=1tontech.angular-material
-
+对比一下easyui和ng-zorro
 下一问题：下载angular版的easyUI界面如何跑起来？（ng serve）
 把前端计划变更为前端技术选型【这是非常关键的战略步骤。少即是多，如何能找到正确的选型？】。模板与组件之间的关系搞清楚【看代码对比就OK了，先把我下载的那个看了】。
 真的弄明白，才有可能性
@@ -498,7 +517,6 @@ https://www.imooc.com/article/37896
 ng-zorro也是前端可视化技术，跟EasyUI等对比一下
 【一旦把这个问题想清楚，能够根据场景组合出最优化的方案，后端再精进几个月，就差不多了】一定要对自己干的事有非常清晰的认识
 
-对比一下easyui和ng-zorro
 
 // 把这段代码调通：
 providers: [

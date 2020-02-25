@@ -227,9 +227,20 @@ https://www.tinymind.net.cn/articles/e932f2cc2dd096
 https://cloud.tencent.com/developer/section/1489514
 https://www.cnblogs.com/shitoupi/p/6641230.html
 
+使用Chrome DevTools的Timeline分析页面性能：
 js toFixed()【源码】：https://www.cnblogs.com/garfieldzhong/p/11254610.html
 Math.round为啥可以四舍五入？https://blog.csdn.net/luxxxx/article/details/90177682
 
+ngModel：
+https://www.jianshu.com/p/fb6861b1a2ab
+https://blog.csdn.net/qq_30101131/article/details/88318724
+https://www.jianshu.com/p/3c0b39528a2b
+https://segmentfault.com/q/1010000014780407
+https://www.cnblogs.com/zzy-run-92/p/9396756.html
+[(ngModel)]的实现原理：
+https://www.cnblogs.com/JennyLin77/p/6141124.html
+https://blog.csdn.net/weixin_33700350/article/details/93450883
+https://www.cnblogs.com/videring/articles/6804766.html
 结合formControl学习ngModel：NgModel is a directive that creates the FormControl instance from a domain model and binds it to a form control element.（an essential topic of template-driven forms）
 ngModel：https://www.pluralsight.com/guides/keeping-data-in-sync-with-two-way-binding-using-ngmodel
 input如果不用ngModel会怎么用？https://www.jianshu.com/p/fb6861b1a2ab
@@ -238,6 +249,53 @@ https://appdividend.com/2018/10/03/angular-ngmodel-directive-example-tutorial/
 https://www.concretepage.com/angular-2/angular-2-ngform-with-ngmodel-directive-example
 https://rangle.io/blog/angular-2-ngmodel-and-custom-form-components/
 对[(ngModel)]的理解：https://blog.csdn.net/m0_37634363/article/details/89138895
+ng2中已经不存在严格意义上的双向绑定了，这个和vue的v-model是比较像的，比如v-model也等价于:value和@input，同理，[(ngModel)]等价于(ngModelChange)和[ngModel]，同时还会附带一些ng2内置的formControl的东西。
+【自定义组件怎么使用ngModel】
+自定义组件ngModel双向绑定 + floating label：https://www.jianshu.com/p/af7d50e3f73c
+Angular 4 ngModel 双向绑定原理揭秘：https://www.jianshu.com/p/3c0b39528a2b
+[(ngModel)]的实现原理：https://www.cnblogs.com/JennyLin77/p/6141124.html
+https://www.jianshu.com/p/0520e1e8d23d
+https://cloud.tencent.com/developer/information/angular%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86
+https://blog.csdn.net/tempta36/article/details/79494789
+angular 数据绑定之[]和{{}}的区别：https://www.jb51.net/article/147913.htm
+Angular2的事件绑定和样式绑定：https://www.jdon.com/idea/js/angular2-event-binding.html
+https://blog.csdn.net/qq_40876059/article/details/89254742
+
+
+【对模板驱动表单、响应式表单的个人理解】
+1.都是在<form标签行添加指令和submit方法起作用；
+2.绑定数据时：模板驱动在form里面的input上还需附加ngModel指令，响应式的比较干净；
+3.模板驱动式表单单独理解：单向绑定和双向绑定灵活性不同，双向绑定在取值和submit方面都更灵活；
+4.响应式表单有更多概念和高级用法，例如：FormBuilder创建FormGroup|FormArray|FormControl、“FormArray 与 FormGroup 相互嵌套”等：
+https://www.jianshu.com/p/40d22d760f93
+angular4 Form Array：
+https://blog.csdn.net/wjyyhhxit/article/details/92730621
+https://www.jianshu.com/p/40d22d760f93
+http://kavil.com.cn/2018/09/18/AngularFormArray/
+5.观察两种方法validation的异同；
+
+Angular 提供了两种不同的方法来通过表单处理用户输入：FormsModule与ReactiveFormsModule（模板驱动表、响应式表单：template-driven forms and reactive forms）
+响应式表单定义：https://fireship.io/lessons/basics-reactive-forms-in-angular/
+这个里面提到3种表单，还包括模型驱动的：https://blog.thoughtram.io/angular/2016/03/21/template-driven-forms-in-angular-2.html
+two different approaches to dealing with forms: template driven and reactive forms.
+https://www.tutorialspoint.com/angular6/angular6_forms.htm
+Angular Template-Driven Forms：
+https://www.concretepage.com/angular/angular-template-driven-forms
+https://code.tutsplus.com/tutorials/introduction-to-forms-in-angular-4-template-driven-forms--cms-29766
+template-driven forms：Forms built with this directive can only be tested in an end to end test because this requires the presence of a DOM, but still, this mechanism is very useful and simple to understand.
+Template Driven Form：https://grokonez.com/frontend/angular/angular-6/angular-6-template-driven-form-ngmodel-for-two-way-data-binding
+表单状态相关的属性【angular的封装提供了很多增强功能和便利性】：https://www.cnblogs.com/Ceri/p/8023543.html
+理解Angular的Reactive Form：https://www.jianshu.com/p/f978aefe8788
+Angular4 响应式表单应用以及验证：https://segmentfault.com/a/1190000011764653
+响应式表单中用FormBuilder构建数据模型更方便：https://blog.csdn.net/liweibo348/article/details/83989139
+FormBuilder in Angular 6：https://dzone.com/articles/formbuilder-in-angular-6
+angular响应式表单和模板驱动表单的区别？https://segmentfault.com/q/1010000015235353
+直接学reactive forms：
+https://malcoded.com/posts/angular-fundamentals-reactive-forms/
+https://fireship.io/lessons/basics-reactive-forms-in-angular/
+
+我总计对使用form(标签)必要性的一些理解：
+1.在原始的非ajax非框架的开发中必不可少；2.在现代开发方法中可以增强语义甚至提供操作便利性；3.提交用submit还是button不是最关键的，关键是可以利用form的特性（例如统一数据管理）；4.其他的一些细节方面的考虑：https://www.zhihu.com/question/39739110?sort=created
 
 注意观察编译过后最终显示的样式标签
 
@@ -390,6 +448,7 @@ https://coursetro.com/posts/code/116/Create-your-own-Angular-5-Material-Theme
 https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
 看懂INDIGO与material细节与关联
+color-palette的作用？https://materializecss.com/color.html
 
 How to Integrate Bootstrap with Angular (Angular 6)：https://grokonez.com/frontend/angular/angular-6/how-to-integrate-bootstrap-with-angular-angular-6
 
@@ -655,8 +714,19 @@ Angular4 - 共享模块：https://blog.csdn.net/It_rod/article/details/79188921
 
 知乎angular话题：https://www.zhihu.com/topic/20015467/hot
 
-确认是否需要把less改为sass
+【预处理可能要变成写样式的常规方式。与css3的配合？】
+确认是否需要把less改为sass【有这个疑问是因为两者都不懂，如果懂了就不是一个问题】
 angular4.0使用sass：https://www.cnblogs.com/minigrasshopper/p/7692281.html
+【把less改成scss】这让我想起前端流行的一句话，“凡事能用 CSS 完成的就不要用 JS”，这也是我不建议大家用 Less 的原因之一。
+CSS预处理器：SCSS、Sass、Less、Stylus的区别？https://blog.csdn.net/qq_35430000/article/details/87097696
+Sass与Less：
+https://zhuanlan.zhihu.com/p/106558378
+https://zhuanlan.zhihu.com/p/51316352
+https://www.zhihu.com/question/24375983/answer/27584825
+https://www.zhihu.com/question/22285654/answer/20909926
+less tutorial：
+https://tutorialzine.com/2015/07/learn-less-in-10-minutes-or-less
+https://www.tutorialspoint.com/less/index.htm
 
 使用subscribe在一个文件里面也可以实现发布和订阅，改善代码结构
 
@@ -664,26 +734,6 @@ angular4.0使用sass：https://www.cnblogs.com/minigrasshopper/p/7692281.html
 
 观察代码验证这句总结：
 组件之间的通信基本都是单向数据流，就是说父组件通过属性绑定把数据传递给子组件，子组件想要修改传入的数据必须通过事件回调和父组件通信
-
-Angular 提供了两种不同的方法来通过表单处理用户输入：FormsModule与ReactiveFormsModule（模板驱动表、响应式表单：template-driven forms and reactive forms）
-响应式表单定义：https://fireship.io/lessons/basics-reactive-forms-in-angular/
-这个里面提到3种表单，还包括模型驱动的：https://blog.thoughtram.io/angular/2016/03/21/template-driven-forms-in-angular-2.html
-template-driven forms：Forms built with this directive can only be tested in an end to end test because this requires the presence of a DOM, but still, this mechanism is very useful and simple to understand.
-Template Driven Form：https://grokonez.com/frontend/angular/angular-6/angular-6-template-driven-form-ngmodel-for-two-way-data-binding
-表单状态相关的属性【angular的封装提供了很多增强功能和便利性】：https://www.cnblogs.com/Ceri/p/8023543.html
-理解Angular的Reactive Form：https://www.jianshu.com/p/f978aefe8788
-Angular4 响应式表单应用以及验证：https://segmentfault.com/a/1190000011764653
-响应式表单中用FormBuilder构建数据模型更方便：https://blog.csdn.net/liweibo348/article/details/83989139
-FormBuilder in Angular 6：https://dzone.com/articles/formbuilder-in-angular-6
-two different approaches to dealing with forms: template driven and reactive forms.
-https://www.tutorialspoint.com/angular6/angular6_forms.htm
-angular响应式表单和模板驱动表单的区别？https://segmentfault.com/q/1010000015235353
-直接学reactive forms：
-https://malcoded.com/posts/angular-fundamentals-reactive-forms/
-https://fireship.io/lessons/basics-reactive-forms-in-angular/
-
-我总计对使用form(标签)必要性的一些理解：
-1.在原始的非ajax非框架的开发中必不可少；2.在现代开发方法中可以增强语义甚至提供操作便利性；3.提交用submit还是button不是最关键的，关键是可以利用form的特性（例如统一数据管理）；4.其他的一些细节方面的考虑：https://www.zhihu.com/question/39739110?sort=created
 
 浅谈 Angular 项目实战（前端工程化）：
 https://www.cnblogs.com/nzbin/p/9038162.html
@@ -786,7 +836,6 @@ css display:flex 属性：https://www.jianshu.com/p/d9373a86b748
 为什么 CSS 这么难学？
 https://www.zhihu.com/question/66167982/answer/239709754
 https://www.zhihu.com/question/322443498/answer/683118910
-【把less改成scss】这让我想起前端流行的一句话，“凡事能用 CSS 完成的就不要用 JS”，这也是我不建议大家用 Less 的原因之一。
 搞懂grid比table好的方面。grid是在CSS中实现，而table是在HTML中实现的
 HTML布局四剑客-Flex,Grid,Table,Float：https://www.cnblogs.com/BigJ/p/layouts.html
 position,float,flex,grid,table前端页面布局方式分析及选择：https://blog.csdn.net/feiyu_may/article/details/83341013
@@ -870,6 +919,7 @@ Angular 中的容器组件：https://zhuanlan.zhihu.com/p/87333832
 把echarts这种东西封装成angular版本的要做些啥？
 ngx-echarts文档（根据下载时候对应的名称来查找文档，定位问题）：https://www.npmjs.com/package/ngx-echarts
 一个Echart官网示例中世界地图的例子：https://blog.csdn.net/wallowyou/article/details/53135243#comments
+angular7 echarts中国散点图：https://www.jianshu.com/p/a353c841629a
 
 搜“前端 工作流”能搜出来很多工作流程的东西（不是工作流组件）
 
@@ -1117,12 +1167,6 @@ https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
 https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
 https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-and-ahead-of-time-compiling-in-angular-7-2-0.htm
 
-ngModel：
-https://www.jianshu.com/p/fb6861b1a2ab
-https://blog.csdn.net/qq_30101131/article/details/88318724
-https://www.jianshu.com/p/3c0b39528a2b
-https://segmentfault.com/q/1010000014780407
-https://www.cnblogs.com/zzy-run-92/p/9396756.html
 
 这样写比原生的有什么优势？源代码怎么写的？【看第一段angular源码】：this.timer = setInterval(() => this.houseSwitch(res), 15000);
 angular4 定时刷新（setInterval的写法与原始JS略有差别，看一下函数实现）：https://blog.csdn.net/MiracleTTT/article/details/80702774
@@ -1746,6 +1790,25 @@ Angular部署百度UMEditor富文本编辑器：https://blog.csdn.net/PigBiBiX/a
 使用Angular CLI时的6个最佳实践和专业技巧：https://segmentfault.com/a/1190000012330491
 如何更好地组织Angular项目：https://zhuanlan.zhihu.com/p/63515048
 
+
+Grid Layout Tutorial：https://www.qhmit.com/css/grid/tutorial/
+Flexbox Tutorial：https://www.qhmit.com/css/flexbox/tutorial/
+三种布局(盒模型,flex,grid)，丢弃div+css是不是前端会好做多了（也更容易适配多端）？
+flex与grid布局对比：
+https://www.zhihu.com/question/28691822
+http://www.tuansbook.com/newsinfo.php?id=416
+Flex 布局语法教程：
+https://www.runoob.com/w3cnote/flex-grammar.html
+https://www.cnblogs.com/qingchunshiguang/p/8011103.html
+https://www.jianshu.com/p/d9373a86b748/
+
+angular flex layout vs. bootstrap【flex layout是不是更适合搭配material？flex layout相关的主题(theme)？】
+Angular Flex Layout：
+https://blog.csdn.net/wf19930209/article/details/83930354
+https://codinglatte.com/posts/angular/angular-flex-layout-introduction/
+https://alligator.io/angular/flex-layout/
+https://www.angularjswiki.com/flexlayout/
+
 The standard href element will not work.为啥会被禁掉？
 
 【译】Angular应用中，取消订阅Rxjs Observable 的最佳实践！https://zhuanlan.zhihu.com/p/54678318
@@ -1910,11 +1973,6 @@ https://blog.csdn.net/plpldog/article/details/82992779
 
 在模块中打包服务与组件
 
-[(ngModel)]的实现原理：
-https://www.cnblogs.com/JennyLin77/p/6141124.html
-https://blog.csdn.net/weixin_33700350/article/details/93450883
-https://www.cnblogs.com/videring/articles/6804766.html
-
 Angular 提出一套打包格式建议名曰：Angular Package Format，包括 FESM2015、FESM5、UMD、ESM2015、ESM5、ES2015 格式：
 https://juejin.im/post/5bab64826fb9a05d2c43b3b4
 https://www.cnblogs.com/linjisong/p/6755987.html
@@ -1924,19 +1982,6 @@ tree-shaking
 127.0.0.1 和 localhost的区别：https://blog.csdn.net/root_miss/article/details/82587463
 
 思考：1.对于一个多步骤操作，如果是读取，多调几次后台服务没任何问题，如果是写入最好是放入一个后台函数保证事务性；2.如果熟练使用promise、async/await等，就不会那么忌讳后端多调几次，代码写起来也很整洁。
-
-ng2中已经不存在严格意义上的双向绑定了，这个和vue的v-model是比较像的，比如v-model也等价于:value和@input，同理，[(ngModel)]等价于(ngModelChange)和[ngModel]，同时还会附带一些ng2内置的formControl的东西。
-【自定义组件怎么使用ngModel】
-自定义组件ngModel双向绑定 + floating label：https://www.jianshu.com/p/af7d50e3f73c
-Angular 4 ngModel 双向绑定原理揭秘：https://www.jianshu.com/p/3c0b39528a2b
-[(ngModel)]的实现原理：https://www.cnblogs.com/JennyLin77/p/6141124.html
-https://www.jianshu.com/p/0520e1e8d23d
-https://cloud.tencent.com/developer/information/angular%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86
-https://blog.csdn.net/tempta36/article/details/79494789
-
-angular 数据绑定之[]和{{}}的区别：https://www.jb51.net/article/147913.htm
-Angular2的事件绑定和样式绑定：https://www.jdon.com/idea/js/angular2-event-binding.html
-https://blog.csdn.net/qq_40876059/article/details/89254742
 
 if 我是前端团队 Leader，怎么制定前端协作规范? https://juejin.im/post/5d3a7134f265da1b5d57f1ed
 
@@ -2098,9 +2143,6 @@ https://blog.csdn.net/chelen_jak/article/details/83620589
 npm/cnpm 开发中的命令详解：https://blog.csdn.net/zwt_guiji/article/details/84139447
 webpack4-用之初体验：https://www.cnblogs.com/cangqinglang/p/8964460.html
 
-CSS预处理器：SCSS、Sass、Less、Stylus的区别？https://blog.csdn.net/qq_35430000/article/details/87097696
-Sass与Less：https://www.jianshu.com/p/6489e28e548e
-
 用html实现excel冻结窗口的功能 固定行固定列：https://blog.csdn.net/qq_38130280/article/details/97157881
 
 import体现了组件之间的关联，对搞懂module、component、service之间的关系很有帮助。
@@ -2194,9 +2236,6 @@ angular-cli工程搭建指南：https://www.jianshu.com/p/50064b182b73
 angular中的ts文件可以理解为原生web中的<script>，例document.getElementById：https://blog.csdn.net/hbiao68/article/details/86611457
 
 JavaScript shell安装（如何嵌入代码发挥作用？）：https://blog.csdn.net/SunShinessx/article/details/93163883
-
-FormBuilder：为啥在this.fb.group({})里面没有写status，后面status就丢了？
-FormBuilder的用法
 
 Angular 7/8 SEO: Rendering Your App on Server-side with Angular Universal：
 https://www.techiediaries.com/angular-seo-server-side-rendering-with-angular-universal/

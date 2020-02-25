@@ -9,15 +9,20 @@
    </mat-form-field>
 
  <button mat-raised-button color="accent" (click)="saveRole()">Save</button> -->
-
-   角色名称：
-   <input type="text" name="roleName" [(ngModel)]="roleName">
-   <br />
-
-   角色描述：
-   <input type="text" name="roleDesc" [(ngModel)]="roleDesc">
-   <br />
-
+   <div class="wrapper">
+      <div>
+         <label>角色名称</label>
+      </div>
+      <div>
+         <input type="text" name="roleName" [(ngModel)]="roleName">
+      </div>
+   
+      <div>
+         <label>角色描述</label>
+      </div>
+      <div>
+         <input type="text" name="roleDesc" [(ngModel)]="roleDesc">      
+      </div>
+   </div>
    <input type="submit" value="保存" class="cta">
-
 </form>

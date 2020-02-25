@@ -1,5 +1,5 @@
 <ng-container *ngFor="let item of menuList">
   <section class="tp-section">
-    <a [routerLink]="item.url">{{item.menuName}}</a>
+    <mat-icon>{{item.icon}}</mat-icon><a [routerLink]="item.url">{{item.menuName}}</a>
   </section>
 </ng-container>

@@ -1,37 +1,32 @@
-<label>
-    Name:
-    <input type="text" [(ngModel)]="username">
+<div class="wrapper">
+    <div>
+        <label>用户名：</label>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="username">
+    </div>
     <!-- formControlName="username"
     <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
         <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
     </div> -->
-</label>
-<br />
 
-<label>
-    password:
-    <input type="text" [(ngModel)]="password">
+    <div>
+        <label>密码：</label>
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="password">
+    </div>
     <!-- formControlName="password" -->
     <!-- <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
         <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
     </div> -->
-</label>
-<br />
 
-<!-- <ng-container *ngFor="let item of menuList">
-    <span>权限分配</span>
-    <h4 class="tp-h2">{{item.roleName}}</h4>
-    <section class="tp-section">
-       <mat-checkbox class="tp-margin" *ngFor="let perm of item.permList" [(ngModel)] = "perm.checked">{{perm.key}}</mat-checkbox>
-    </section>
- </ng-container> -->
+    <div>
+        <label>权限分配：</label>
+    </div>
+    <div>
+        <mat-checkbox class="tp-margin" *ngFor="let role of roleList" [(ngModel)]="role.checked">{{role.roleName}}</mat-checkbox>
+    </div>
+</div>
 
- 
-<ng-container>
-    <h4 class="tp-h2">权限分配</h4>
-    <section class="tp-section">
-       <mat-checkbox class="tp-margin" *ngFor="let role of roleList" [(ngModel)] = "role.checked">{{role.roleName}}</mat-checkbox>
-    </section>
- </ng-container>
-
-<button mat-raised-button color="accent" (click)="saveUser()">Save</button>
+<button mat-raised-button color="accent" (click)="saveUser()">保存</button>
