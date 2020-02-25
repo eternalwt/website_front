@@ -54,8 +54,10 @@ export class PermAssignComponent implements OnInit {
   }
 
 
+  /**
+   * 保存角色对应的权限
+   */
   savePermission() {
-    // todo 保存权限
     let menuList = [];
     // todo 组装map。这样是为了后端不再定义vo，这种方法好不好有待商榷
     // todo 一次性发送给后端【既要保证效率，又要逻辑清晰】
@@ -67,7 +69,6 @@ export class PermAssignComponent implements OnInit {
     }
 
     // todo 还有个大漏洞，没有判断checked
-
     this.dataService.updatePermission(menuList).subscribe(res => {
       alert("保存成功!");// todo 1.修改成Dialog对话框；2.如何让用户尽快登出修改权限
     });

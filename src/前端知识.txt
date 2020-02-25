@@ -1801,7 +1801,11 @@ Flex 布局语法教程：
 https://www.runoob.com/w3cnote/flex-grammar.html
 https://www.cnblogs.com/qingchunshiguang/p/8011103.html
 https://www.jianshu.com/p/d9373a86b748/
+toolibar里面flex的用法.filler {flex: 1 1 auto;}：https://www.tutorialspoint.com/angular_material7/angular_material7_toolbar.htm
+flex属性用于display:flex元素内部的元素：https://www.cnblogs.com/zhus/p/7161702.html
 
+angular flex-layout project：https://github.com/angular/flex-layout
+Angular SPA with 3 row (header, main and footer) Angular Flex layout project：https://github.com/kumaran-is/ngx-web-starter
 angular flex layout vs. bootstrap【flex layout是不是更适合搭配material？flex layout相关的主题(theme)？】
 Angular Flex Layout：
 https://blog.csdn.net/wf19930209/article/details/83930354
@@ -1908,6 +1912,8 @@ https://www.zhihu.com/question/341967057/answer/803047692
 https://www.zhihu.com/question/308348507/answer/720377178
 CSS in JS
 前端未来几年的发展方向是什么？https://www.zhihu.com/question/286700472/answer/503981729
+2020年前端最火的技术是什么？https://www.zhihu.com/question/365588457/answer/1031109933
+
 
 一步一步搭建前端监控系统：https://www.jianshu.com/p/c4549c28c64f
 

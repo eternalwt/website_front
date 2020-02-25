@@ -5,9 +5,6 @@
 
 =================================================================
 
-解释器
-
-下载《美国工厂》
 晚上洗袜子、拖地、看禅道bug
 星期三晚上洗澡
 
@@ -15,11 +12,11 @@
 其他基础设施
 整合的难度和工作量
 讲github及我的产品策略
+如何进化系统的问题
+
 通过打造关系来出售的简单系统（五一要能搞定）
 先进的大数据物联网系统：下半年搞定
 
-
-【调整计划：25号之前都搞后端配置】26号再继续搞前端
 
 kafka：思考一下对我的图表大数据系统的帮助？
 https://www.liangzl.com/get-article-detail-38554.html
@@ -27,21 +24,32 @@ https://www.liangzl.com/get-article-detail-134408.html
 
 应该用最直接的办法，放开版本号直接定位shiro-ehcache的bug！！！
 
-【简单任务】
-1.我的mat-toolbar并没用到任何toolbar的特性（需要利用一下）；2.尝试使用flex一维布局
-测试我的定时任务，我的定时任务代码怎么能完全理解？调试webSocket
-Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
-bug修复：赋予权限的页面角色没有完整列出来
-整合rabbitmq
-把home右侧宽度做成计算出来的
+【29号周末继续花2天写解释器】
 
+【简单任务】
+  bug修复：赋予权限的页面保存按钮有多个的问题
+  测试我的定时任务，我的定时任务代码怎么能完全理解？调试webSocket
+  Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
+  整合rabbitmq
+  把home右侧宽度做成计算出来的、section样式代码再整体整理一下
+  添加menu先写通，然后再加树控件
+
+再用angular material的menu试一把二级菜单
+二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
+从sidenav再次分析angular material的抽象程度，如果angular material只是封装了结构(标签封装与转换)及行为，那它和样式是解耦的，并且能和其他组件无缝结合【如果只是封装了结构可能还不足以使用，因为组合标签并不难】。再分析其他组件库
+angular的封装是封装出了新的标签和行为（一个控件内部又封装了子控件，才提供了一点功能），要有这个意识
+angular material toolbar：
+https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
+https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
+https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
 
 【25号】
 看angular material样式表、看控件（看material，对后端的表）
-调样式(indigo-pink.css)：1.表格布局；2.按钮和选框的颜色为啥是红色的；3.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？
-或许应该搜material 8？flex layout tutorial
+调样式(indigo-pink.css)：1.表格布局；2.按钮和选框的颜色为啥是红色的；3.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？5.表格的样式
+或许应该搜material 8？
 看material教程，把红点和圆圈做出来
-【把add-article的表单稍微规范化一下】
+【把add-article的表单稍微规范化一下，无用代码干掉】
 7.先把article的reactive form搞通，然后把add-role的模板驱动的form再过一遍，然后改造成reactive的，然后搞其他的
 再次测试mybatis【把这个配置彻底打通】
 推动不了，是不是应该先看mybatis源码了？
@@ -56,9 +64,9 @@ ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts
 
 https://www.npmjs.com/package/
 
-超时后，web界面【自动】跳转到登录页写通
+超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）
 【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
-【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件、msgBox】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 2.mybatis继续看整合
 3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
 java整合rabbitmq和整合缓存一样，都涉及到JSR标准的问题
@@ -111,7 +119,6 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 1.淘宝、京东、有道看下快递情况
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 mybatis-spring：http://mybatis.org/spring/
-1.二级菜单开搞了，勇气；【二级菜单的行为：点击后是展开】（或许我理解错了，angular material的自由度是不是可能比想象的要大？side-nav是不是可以嵌套树控件或者主题里面的部分html？用主题的外观、用side-nav的点击行为？）
 前端基础设施选型练习一下
 列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
@@ -126,7 +133,6 @@ SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件
 1.前端：把样式修复好；
 3.角色、用户的增删查改【前端】及权限分配；
 4.再看一下那个人主题风格的一致性
-6.3.side-nav二级\三级菜单？【尝试梳理设计出用户管理、系统管理等基础菜单】二级菜单前后端接通还是要搞一下（是否涉及动态组件？）即便用let-admin等主题，还是要自己封装
 6.上方做好搜索框控件：
 用户的查看做通，便于后期复制到其他功能
 
@@ -224,7 +230,6 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 4.每跳转路由，还是要从后端验证一下，用emit；
 
 2.用列表管理角色（增删改）；
-4.样式（学习flex等布局）
 6.继续整合
 7.menu的东西放到一个module里面
 1.菜单权限再看看后端是否需要拦截
@@ -396,9 +401,6 @@ angular好用的插件集合（持续更新中）【1.熟悉一些，看看对�
 https://blog.csdn.net/daqiang012/article/details/86617513
 https://www.jianshu.com/p/48e5d02a2f88
 
-angular flex-layout project：https://github.com/angular/flex-layout
-Angular SPA with 3 row (header, main and footer) Angular Flex layout project：https://github.com/kumaran-is/ngx-web-starter
-
 GitHub开源的10个超棒后台管理面板（有几个angular的）：https://blog.csdn.net/m0_38106923/article/details/101050788
 
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
@@ -526,10 +528,10 @@ providers: [
   { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
 ],
 
-jQuery发送请求：http://www.w3school.com.cn/jquery/ajax_post.asp
-POSTMAN之如何获取COOKIE：https://www.cnblogs.com/yecaiye/p/10251747.html
-如何在Postman中使用cookie：https://blog.csdn.net/niedewang/article/details/80481652
-Postman是可以测试文件参数的，在Body form-data里面
+angular material 8：
+https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
+https://www.positronx.io/create-angular-material-8-custom-theme/
+https://devconquer.com/angular/angular-material-8-with-angular-8/
 
 =================================================================================
 

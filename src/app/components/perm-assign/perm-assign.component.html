@@ -1,17 +1,10 @@
-<span>权限分配</span>
+<span>角色权限</span>
 
-<div style="margin-top:20px;" *ngFor="let item of menuList">
+<ng-container style="margin-top:20px;" *ngFor="let item of menuList">
    <h4 class="tp-h2">{{item.roleName}}</h4>
    <section class="tp-section">
-      <mat-checkbox class="tp-margin" *ngFor="let perm of item.permList" [(ngModel)] = "perm.checked">{{perm.key}}</mat-checkbox>
+      <mat-checkbox class="tp-margin" *ngFor="let perm of item.permList" [(ngModel)]="perm.checked">{{perm.key}}</mat-checkbox>
    </section>
-<div>
-
-<!-- <ng-container></ng-container> -->
-
-<!-- <section *ngFor="let item of menuList">
-   <h4 class="tp-h2">{{item.roleName}}</h4>
-   <mat-checkbox class="tp-section" *ngFor="let perm of item.permList" [(ngModel)] = "perm.checked">{{perm.key}}</mat-checkbox>
-</section> -->
+<ng-container>
 
 <button mat-raised-button color="accent" (click)="savePermission()">Save</button>
