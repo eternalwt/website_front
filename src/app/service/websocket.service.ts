@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -7,14 +8,16 @@ export class WebsocketService {
 
   constructor() { }
 
-  baseUrl = "ws://localhost:8080/websocket/";// todo 放入environment里面去
+  wsBaseUrl = environment.wsBaseUrl;
 
   createWebSocket(type) {
-    let socket = new WebSocket(this.baseUrl + type);
+    let socket = new WebSocket(this.wsBaseUrl + type);
 
     // 打开事件
     socket.onopen = function() {
       debugger;
+      // socket.addEventListener
+      // socket.dispatchEvent
       console.log("Socket 已打开");
       //socket.send("这是来自客户端的消息" + location.href + new Date());
     };
@@ -28,13 +31,14 @@ export class WebsocketService {
 
     // 关闭事件
     socket.onclose = function() {
+      // todo 确认关闭时机
       console.log("Socket已关闭");
     };
 
     // 发生了错误事件
     socket.onerror = function() {
         alert("Socket发生了错误");
-        // 自动重新连接【后端加异常处理机制防止消息丢失】
+        // todo 自动重新连接【1.后端加异常处理机制防止消息丢失；2.是不是用stomp更好重发？确认已发了多少包更方便？】
     }
 
     return socket;

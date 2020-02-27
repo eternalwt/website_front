@@ -10,8 +10,6 @@ import { WebsocketService } from 'src/app/service/websocket.service';
   styleUrls: ['./about.component.less']
 })
 export class AboutComponent implements OnInit {
-  title = 'grokonez';
-  description = 'Angular-WebSocket Demo';
  
   greetings: string[] = [];
   disabled = true;

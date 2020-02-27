@@ -24,7 +24,7 @@
 
 进入瓶颈期了，无差别学习一周。另外最近有点发散
 
-websocket【前后端单独搞，前端封装不影响后端】：1.梳理我现有的原生代码；2.确认是否用stompjs封装
+websocket【前后端单独搞，前端封装不影响后端】写通一种方法后，把另一种方法的代码拿走备份（或者直接干掉）
 
 【27号简单任务】
   把上传的那个类建立起来，把上传测通
@@ -40,9 +40,9 @@ websocket【前后端单独搞，前端封装不影响后端】：1.梳理我现
   单独搜DataSource的英文资料，从这里入手
   springboot+druid+mybatis-Plus 配置详解【跟xml方式对比】：https://www.cnblogs.com/shine-rainbow/p/9618100.html
 
-看我现有的页面为啥效果做不好（如何用好indigo.css？），再对比用了theme了是否能做好
+看我现有的页面为啥效果做不好（如何用好indigo.css？），再对比用了theme是否能做好
 
-把配色想清楚，是不是就没有问题了？https://ng-bootstrap.github.io/#/components/alert/examples
+组件把配色想清楚、语言替换搞清楚，是不是就没有问题了？https://ng-bootstrap.github.io/#/components/alert/examples
 
 菜单只能禁用不能删除
 bootstrap与flex【公司里面lte-admin2不能使用bootstrap4会带来哪些过时问题？公司代码package.json的dependencies里面看到了"admin-lte": "^2.4.8"】：
