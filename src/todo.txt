@@ -1,12 +1,12 @@
 
 【晚上】
-1.思考路由到底几截的问题；
 2.思考并实现JWT的登出
 
 =================================================================
 
-晚上洗袜子、拖地、看禅道bug
+晚上拖地（从晚上开始先把扫地包了）、看禅道bug
 星期三晚上洗澡
+26号左右应该考虑自行车和child知识了；如果公司降薪，先撑一个月
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
 其他基础设施
@@ -18,21 +18,47 @@
 先进的大数据物联网系统：下半年搞定
 
 
-kafka：思考一下对我的图表大数据系统的帮助？
-https://www.liangzl.com/get-article-detail-38554.html
-https://www.liangzl.com/get-article-detail-134408.html
+【27号周末继续花2天写解释器】
 
-应该用最直接的办法，放开版本号直接定位shiro-ehcache的bug！！！
+7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
 
-【29号周末继续花2天写解释器】
+进入瓶颈期了，无差别学习一周。另外最近有点发散
 
-【简单任务】
-  bug修复：赋予权限的页面保存按钮有多个的问题
-  测试我的定时任务，我的定时任务代码怎么能完全理解？调试webSocket
+websocket【前后端单独搞，前端封装不影响后端】：1.梳理我现有的原生代码；2.确认是否用stompjs封装
+
+【27号简单任务】
+  把上传的那个类建立起来，把上传测通
+  1.webSocket前后端功能完善、调试；2.重构，例如前端抽service，提供API用起来优雅一点；2.websocket和定时任务怎么结合？
+  上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.pdf预览搞定
+  2.再配一遍mybatis（或者用financial那个工程？改名为boot-basic，搞懂多数据源）
+  3.看消息中心设计，然后继续搞websocket基础设施，确保既能支持消息中心又能支持定时更新数据（把后端websocket的代码整理干净）
+  学习jmeter的使用
+  整合rabbitmq（已安装）
+  1.思考路由到底几截的问题；
   Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
-  整合rabbitmq
   把home右侧宽度做成计算出来的、section样式代码再整体整理一下
-  添加menu先写通，然后再加树控件
+  单独搜DataSource的英文资料，从这里入手
+  springboot+druid+mybatis-Plus 配置详解【跟xml方式对比】：https://www.cnblogs.com/shine-rainbow/p/9618100.html
+
+看我现有的页面为啥效果做不好（如何用好indigo.css？），再对比用了theme了是否能做好
+
+把配色想清楚，是不是就没有问题了？https://ng-bootstrap.github.io/#/components/alert/examples
+
+菜单只能禁用不能删除
+bootstrap与flex【公司里面lte-admin2不能使用bootstrap4会带来哪些过时问题？公司代码package.json的dependencies里面看到了"admin-lte": "^2.4.8"】：
+如果使用bootstrap4，所有样式布局应该先尽量用bootstrap来做，不够的再补充css3
+Flex布局和Bootstrap布局两者的比较（flex布局协助5等分，7等分）：https://www.cnblogs.com/sexintercourse/p/6732109.html
+Bootstrap 3 与 Bootstrap 4 最大的区别就是 Bootstrap 4 使用弹性盒子来布局：https://www.runoob.com/bootstrap4/bootstrap4-flex.html
+Bootstrap4之弹性盒子详解（flexbox）：https://blog.csdn.net/qq_42451979/article/details/80753153
+bootstrap的flex布局比使用原生的方便在哪里？每一个设施相比原生的都好在哪里？
+又思考了一下以前做项目卡在哪里。再看看angular material与样式的关系，最好是能自己封装一些控件，这样才能完全hold住
+bootstrap学习要关注：1.思想（几个分布各解决什么问题）；2.components与angular的结合：
+https://www.tutorialspoint.com/bootstrap4/index.htm
+https://www.bootstrapdash.com/bootstrap-4-tutorial/introduction/
+https://qhmit.com/
+https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
+测试：要用2年以前的浏览器版本来测
+主题的设计和组件的设计风格最好要一致，例如，最好不要用material design的主题，来配合ant design的控件
 
 再用angular material的menu试一把二级菜单
 二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
@@ -72,26 +98,30 @@ https://www.npmjs.com/package/
 java整合rabbitmq和整合缓存一样，都涉及到JSR标准的问题
 5.消息中心推进一点点（先看看文章）
 把我现有的样式文件过一遍，看看能不能看出啥门道【把我现在没有显示全的问题解决一下】
-把authrizer配置不够优雅的问题解决【彻底理解spring装配】
 
-把后端websocket的代码整理干净
 能否使用@Configuration来配置cache和mybatis？
 input、output再看一遍
 
 思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
+对比最新的门户网站技术
+rxjs怎么裸用？怎么测试？现在不用npm都不会写前端了
 
 【把role的edit按钮放到表格后面，这个不难，不要怕】
 
-能否用dbconfig.properties来配置？
+在npm网站上搜ngx-、ng-学习控件
+
+换主题时要确认一下：我现有的功能能不能覆盖到
 
 angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
 material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
 Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
-angular material源码
+angular material源码：https://github.com/angular/components
 angular的表单已经很强大了，material真的有必要？
 Angular Material 8 | Stepper Tutorial With Examples：
 https://www.freakyjolly.com/angular-material-8-stepper-tutorial-with-examples/
 https://www.freakyjolly.com/angular-material-8-datepicker-tutorial-with-examples/
+https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+Angular Material 的设计之美【知道自己在干什么很重要】：https://zhuanlan.zhihu.com/p/81174831
 
 【寻找合适的表格控件】
 addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
@@ -99,7 +129,6 @@ addrole编辑写通后带来的新问题：如何控制路由、菜单、面包�
 规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
 login里面使用的时reactive form，代码里面有几处messageForm、formBuilder
 
-【21号】
 2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】。
 沉住气：控件打通后再上主题
 
@@ -108,13 +137,15 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
 把chart页面搞定（这个是不是应该结合主题来学习？）
 
-25号左右应该能达到套界面的出口
-26号左右应该考虑自行车和child知识了；如果公司降薪，先撑一个月
-
 【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
+【定方案】二次开发或许是个可行的方案，前提是要有源码
 
 【19号】
 模块权限搞清后，再搞一遍数据权限和systemId
+
+把我下载的几个主题看一下，看看定制过程中会不会出现一些小问题，例如删除一些元素后其他元素排列的效果和是否错位
+
+我们系统的选择日期为什么有违和感？不能找到一个bootstrap4风格的控件吗？这也是可以超越公司的一个方面
 
 1.淘宝、京东、有道看下快递情况
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
@@ -178,20 +209,10 @@ https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
 
-【2月10日】继续搞add-menu，菜单的添加，分解：
-  2.把数据加到控件里面去；
-  3.加click事件；
-
   2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
-  4.语言求值器eval
   5.搞清楚用directive和component封装控件的异同
-  6.把我的generator.scm看懂，下一项是语言求值器
-  7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
-  《YAST》13.4 Coroutines用到宏
   自己想要的基本功能差不多后，再调样式
-  每个表应该都需要加@TableName和IdType.AUTO（ALTER TABLE tablename AUTO_INCREMENT =1）
 
-对比最新的门户网站技术
 
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
 1.The Little Schemer的解释器
@@ -244,7 +265,7 @@ https://www.cnblogs.com/minigrasshopper/p/7692813.html
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架【学习】：
 https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
-
+20个让你效率更高的CSS代码技巧：http://www.fly63.com/article/detial/3813
 
 看一下公司里面的权限分配
 2.把前后端权限控制写通【shiro的permission再看一下】
@@ -318,10 +339,9 @@ switchAll()的作用？
 
 什么叫响应式表单？响应式体现在哪里？
 
-看那几个布局的文章
 是不是先把ng-alain那些下载下来？
 把paper-dashboard-angular-master的代码学习一遍
-权限控制再往前做一步
+1.添加menu页面加树控件
 
 下载的进度问题再过一遍
   // todo 这是实验性代码
@@ -331,12 +351,8 @@ switchAll()的作用？
 
 属性值的绑定用错了，应该是这样：[length] = "length"
 
-只有完整做一下，才能知道自己能获得什么：angular materla 2、indigo.css
-
 github提醒我，serialize-javascript要升级到2.1.1版本以上：https://github.com/eternalwt/website_front/network/alert/package-lock.json/serialize-javascript/open
 看看是怎么引入的这个库
-
-公司代码package.json的dependencies里面看到了"admni-lte": "^2.4.8"
 
 【学习】搞清楚我们的webSocketService里面Observable的用法
 把 SwWebSocketService 和 interceptor 的代码搞过来
@@ -360,6 +376,10 @@ SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录�
 看完material那个教程，这是基础
 Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
 https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
+Angular 8 Material Design Tutorial & Example：
+https://www.techiediaries.com/angular-material-tutorial-example/
+https://www.codershood.info/2017/07/15/login-template-using-angular-material/
+
 
 1.把另外几个路由配好（全都配出来）；
 2.把后端路由重新配一下；

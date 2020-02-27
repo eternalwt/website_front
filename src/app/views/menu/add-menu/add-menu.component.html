@@ -3,7 +3,7 @@
         <td>菜单名称</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "菜单名称" value="{{menuName}}">
+                <input matInput placeholder = "菜单名称" [(ngModel)]="menuName">
              </mat-form-field>
         </td>
     </tr>
@@ -11,7 +11,7 @@
         <td>菜单路径</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "相对URL，例：home" value="{{menuUrl}}">
+                <input matInput placeholder = "相对URL，例：home" [(ngModel)]="menuUrl">
              </mat-form-field>
         </td>
     </tr>
@@ -19,7 +19,7 @@
         <td>菜单图标</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "" value="{{menuIcon}}">
+                <input matInput placeholder = "" [(ngModel)]="menuIcon">
              </mat-form-field>
         </td>
     </tr>
@@ -54,7 +54,7 @@
         <td>菜单序号</td>
         <td>
             <mat-form-field class = "tp-full-width">
-                <input matInput type="number" placeholder = "排序" value="{{menuSort}}">
+                <input matInput type="number" placeholder = "排序" [(ngModel)]="menuSort">
              </mat-form-field>
         </td>
     </tr>

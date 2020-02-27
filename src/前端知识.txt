@@ -1,9 +1,10 @@
 ﻿
 横轴最小切换到15分钟（比较难）
 【晚上在家把横轴密度的问题解决】
-横轴滚动
+下一工作日：
+3.大屏自定义横轴及抽象
+思考：达标率周期、库房切换、导出
 
-考虑使用influxDB
 
 把promise+RxJS写通，just try
 
@@ -23,34 +24,24 @@ ng generate class Hero
 Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
 fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
 
+前端必懂EventEmitter，不懂会丢人【再次证明事件机制就是可以对应到发布+订阅模式】：https://www.jianshu.com/p/e37ca8369162（再看各个语言里面事件的实现，自己模拟设计事件，想清楚）。JS里面是把怎么订阅的细节隐藏了，自己想一下：
+<data-audit #md (LocaBool)="locahost()"></data-audit>
+
 ReuseTabService
 
-重要基础设施，搜package的站点（ngx-echarts）：https://www.npmjs.com/package/ngx-echarts
+ng-alain专栏：https://zhuanlan.zhihu.com/ng-alain
+如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
 
-写生成器
-Implement yield and send in Scheme：https://www.howtobuildsoftware.com/index.php/how-do/mJR/scheme-coroutine-continuations-guile-delimited-continuations-implement-yield-and-send-in-scheme
-https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thing-with-yield-in-python-and-javascript
+Angular HTTP best practices (AsyncPipe)：https://yon.fun/angular-http-best-practices/
 
-把2个教程继续看，今天先写loop和宏，把java和我的项目的那段代码往前推进。
-2个教程再看（更熟练），little schemer的问题解决掉，把笔记的问题解决一下。然后开始搞滑铁卢大学的2门课程和PL
-需要挑战看generator(call/cc)、amb代码了，不要怕
-我的知识储备够了，开始看《Essentials of Programming Languages》
-《中秋节》里面的文章看一些
+重要基础设施，搜package的站点（ngx-echarts）：
+https://www.npmjs.com/search?q=ngx-&csrftoken=YJ4PdjxaghrOsWbkewM6pcns3YWN0vsTzewMkZ-SECc
+https://www.npmjs.com/package/ngx-echarts
 
 Explaining JavaScript Closure & Scope Chain with Examples：https://community.risingstack.com/explaining-javascript-closure-scope-chain-examples/
 闭包的场景：
 https://www.zhihu.com/question/19554716
 https://blog.csdn.net/Amy_cloud/article/details/89227362
-
-generator生成器的场景：
-https://blog.csdn.net/cominglately/article/details/78104729
-https://zhuanlan.zhihu.com/p/55989130
-https://www.cnblogs.com/ZheOneAndOnly/p/11411971.html
-
-推进：
-1.有道里面JS保存的问题
-2.Y combinator in JavaScript
-
 
 transpiler：
 https://www.infoq.com/presentations/transpiler-compiler-design/
@@ -60,18 +51,6 @@ https://howtodoinjava.com/typescript/transpiler-vs-compiler/
 https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
 
 通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
-
-思考：
-1.Optional和stream的配合
-2.stream里面的flatMap、peek方法，是不是RxJS里面也出现了？
-Infinite Streams（Stream.generate、iterate）是不是可以跟C#的yield、JS的generator对比一下？
-https://stackify.com/streams-guide-java-8/
-
-C:\Users\65695\Documents\WeChat Files\gf164916014\FileStorage\File\2020-01
-
-下一工作日：
-3.大屏自定义横轴及抽象
-思考：达标率周期、库房切换、导出
 
 详细介绍RxJS在Angular中的应用【Observable.fromEvent解释了定义了什么事件。还是要分析http是怎么绑定的】：https://www.jb51.net/article/124393.htm
 除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
@@ -110,16 +89,11 @@ Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-g
 
 ================================================================================
 
-Angular Material Tutorial with examples：https://www.angularjswiki.com/material/
 
 Mat-Icon List : 900+ Angular Material Icons：
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
 https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
-Angular Material Buttons : Mat-Button Example：
-https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/
-https://appdividend.com/2018/12/25/angular-material-icon-tutorial-with-example/
 
-晚上：3.把isPermitted【customRealm里面】先写通，再看位置对不对
 
 大屏添加“加载中”效果
 小数点需要做两版：1.；2.
@@ -351,6 +325,8 @@ require('path');
 Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/article/details/83858753
 帮你彻底搞懂JS中的prototype、__proto__与constructor（图解）：https://blog.csdn.net/cc18868876837/article/details/81211729
 
+
+
 =========================================================================================
 
 【出产品推荐的方式】
@@ -358,18 +334,20 @@ Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/articl
 
 或许我的思路错了，应该是拿到一个theme中，从中抠控件，然后再辅以少量自己设计的控件
 
-看angular material的代码
+ng2-admin【后来的ngx-admin】：https://akveo.github.io/ng2-admin/
+Angular Material + Bootstrap vs. MDbootstrap for Angular
+【思考一下有了这么强大的主题后，还需要控件吗？】
 
 1.1.有一个material的主题+material 2【再研究一下主题模板也很重要】；
 1.2.为material 2反向找主题，再定制（和定制admin-lte那个文章一样），这样的主题应该比较多；
 
+2.0.bootstrap主题+ng-bootstrap控件；
 2.1.ngx-admin + primeng(UI components)；
 2.2.admin-lte(定制) + primeng(UI components)；
 2.3.ngx-admin + ng-zorro；
 2.4.admin-lte(定制) +  + ng-zorro；
 2.5.lte-admin(定制) + 库里找零散控件或者自己封控件
-2.6.ngx-admin + primeng；
-2.7.ngx-admin + 库里找零散控件或者自己封控件；
+2.6.ngx-admin + 库里找零散控件或者自己封控件；
 
 3.1.了解ng-alain，看看能使用什么组件
 3.2.jhipster单独研究：https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
@@ -400,8 +378,12 @@ https://www.tutorialspoint.com/angular2/index.htm
 https://www.tektutorialshub.com/angular-2-tutorial/
 经常看的一个网站：https://alligator.io/angular/
 
-Angular Material 7(这个是配合material 2的)：https://www.tutorialspoint.com/angular_material7/index.htm
-
+Angular Material 7：https://www.tutorialspoint.com/angular_material7/index.htm
+看angular material的代码
+Angular Material Tutorial with examples：https://www.angularjswiki.com/material/
+Angular Material Buttons : Mat-Button Example：
+https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/
+https://appdividend.com/2018/12/25/angular-material-icon-tutorial-with-example/
 Angular Material Series：https://code-maze.com/angular-material-series/
 Creating Beautiful Apps with Angular Material：https://auth0.com/blog/creating-beautiful-apps-with-angular-material/
 Angular Material Tutorial：
@@ -424,7 +406,8 @@ Creating UIs with Angular Material Design Components：https://www.sitepoint.com
 Add AutoComplete in Angular Application using Angular Material：https://www.freakyjolly.com/angular-7-6-add-autocomplete-in-angular-application-using-angular-material/
 
 
-Building An Angular 5 CLI Project With ngx-bootstrap：https://www.c-sharpcorner.com/article/building-an-angular-5-cli-project-with-ngx-bootstrap/
+搜“ng-bootstrap ngx-bootstrap”
+用ngx-bootstrap，效能会比用bootstrap好很多吗：https://segmentfault.com/q/1010000018916806/Building An Angular 5 CLI Project With ngx-bootstrap：https://www.c-sharpcorner.com/article/building-an-angular-5-cli-project-with-ngx-bootstrap/
 “ng-bootstrap” and “ngx-bootstrap”：
 https://ngx-universal.herokuapp.com/#/
 https://www.sitepoint.com/bootstrap-ui-libraries-angular-react-vue/
@@ -463,16 +446,11 @@ Differences Between Angular vs Bootstrap：https://www.educba.com/angular-vs-boo
 Bootstrap or Material Design? What is better for Angular 6?：https://www.futurum.tech/blog/index.php/2018/06/04/bootstrap-or-material-design-what-is-better-for-angular-6/
 On Choosing Material Design for Angular Over UI Bootstrap：https://dzone.com/articles/on-choosing-material-design-for-angular-over-ui-bo
 
-ng2-admin：https://akveo.github.io/ng2-admin/（比较ngx-admin）
-
-搜“ng-bootstrap ngx-bootstrap”
-用ngx-bootstrap，效能会比用bootstrap好很多吗：https://segmentfault.com/q/1010000018916806/
-
 还是要自己先搞清楚，然后再买模板
 
 再回过头看一遍easyui那些。还有个问题，如果他们的UI不一样，怎么兼容？
 jQWidgets
-ng-bootstrap组件库
+ng-bootstrap是一个angular UI bootstrap库：http://www.fly63.com/nav/1157
 
 Maintained Angular Projects：
 https://www.ctolib.com/mip/maintained-angular.html
@@ -697,6 +675,7 @@ Second, Promises are asynchronous. Observables can be either synchronous or asyn
 Third, Promises are expected to return only a single value (like a function). Observables can return zero, one or more (infinitely) values.
 You can provide an Observable, Promise, Aray, or Iterable.(RxJS里面可以用作stream的)
 
+2018年已过一半，为什么绝大部分前端团队还是无法重视Angular？https://www.zhihu.com/question/290103721/answer/476658794
 
 Angular的10个你可能不知道的有用特性：https://www.zybuluo.com/xuemingdeng/note/1250174
 10个你不知道的Angular实用特性：https://www.jianshu.com/p/d4f9cde8350e
@@ -1210,32 +1189,9 @@ Angular封装utils成服务和原生utils有什么不同？哪个是更好的实
 
 angular firebase
 
-MutationObserver的基本使用与实际应用场景：https://blog.csdn.net/qq_41882147/article/details/102950757
-
-Atmosphere 2.4.1 发布，异步 WebSocket 框架：https://www.oschina.net/news/68451/atmosphere-2-4-1
-七种WebSocket框架的性能比较：http://www.360doc.com/content/16/0626/08/9200790_570799810.shtml
-Promise.resolve
-
 NgModuleRef
 
-1.了解webSocket session的作用；2.默认连接时长
-WebSocket Session共享：https://www.jianshu.com/p/2c5c4b0349df
-
-websocket长链接和短连接：
-https://www.cnblogs.com/miaozhihang/p/9518584.html
-https://blog.csdn.net/q1312882392/article/details/99621897
-webSocket在angular里面如何快速调试？在后端如何单元测试？
-webSocket官网教程：Using WebSocket to build an interactive web application：https://spring.io/guides/gs/messaging-stomp-websocket/
-faye-websocket 的使用：https://www.jianshu.com/p/2721e8d04fc9
-websocket选型：https://www.jianshu.com/p/809e0ca0403e
-Nodejs实现websocket的4种方式：https://blog.csdn.net/zr15829039341/article/details/65628008
-springboot集成websocket的两种实现方式：https://blog.csdn.net/huiyunfei/article/details/90719351
-关于controller调用controller/service调用service/util调用service/websocket中autowired的解决方法：https://blog.csdn.net/moshowgame/article/details/83415545
-
-WebSocket在线测试工具：http://ws.douqq.com/
-jmeter测试websocket接口：
-https://www.cnblogs.com/nanaheidebk/p/10129936.html
-https://blog.csdn.net/huoyunshen88/article/details/77511788
+MutationObserver的基本使用与实际应用场景：https://blog.csdn.net/qq_41882147/article/details/102950757
 
 网页性能检测-performance：
 https://www.jianshu.com/p/0867b7d551ca
@@ -1620,13 +1576,6 @@ TypeScript 解决了什么痛点？https://www.zhihu.com/question/308844713/answ
 
 webStorm开发前端？在现有的server下，webStorm还流行吗？怎么改进的？
 
-把websocket的报错解决掉：https://www.stackextend.com/angular/websocket-with-spring-boot-and-angular/
-Access to XMLHttpRequest at 'http://localhost:8080/website-websocket/info?t=1572782606968' from origin 'http://localhost:4200' has been blocked by CORS policy: The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'. The credentials mode of requests initiated by the XMLHttpRequest is controlled by the withCredentials attribute.
-Creating a custom HttpInterceptor to handle 'withCredentials' in Angular 6+：
-https://weblog.west-wind.com/posts/2019/Apr/07/Creating-a-custom-HttpInterceptor-to-handle-withCredentials
-https://github.com/angular/angular/issues/15805
-Stomp.over did not receive a factory, auto reconnect will not work. Please see https://stomp-js.github.io/api-docs/latest/classes/Stomp.html#over
-
 Angular 4 - 在每个请求中设置withCredentials - cors cookie：http://www.it1352.com/886782.html
 Angular推崇的时前后端分离,所以跨域由哪一方实现成为一个问题。Cross-Origin Resource Sharing跨域资源共享,应该算是现在最为推荐的跨域处理方案：
 https://my.oschina.net/blogshi/blog/303758
@@ -1718,12 +1667,15 @@ WebSocket with Spring boot and Angular：
 https://www.stackextend.com/angular/websocket-with-spring-boot-and-angular/
 https://www.roytuts.com/messaging-with-stomp-over-websockets-using-spring-and-activemq/
 https://www.javaguides.net/2019/06/spring-boot-angular-8-websocket-example-tutorial.html
-
-双 11 模块 79.34% 的代码是怎样智能生成的？https://zhuanlan.zhihu.com/p/93724953
+RxJS WebSocket：
+https://zhuanlan.zhihu.com/p/45178635
+https://tutorialedge.net/typescript/angular/angular-websockets-tutorial/
+https://developpaper.com/on-rxjs-websocket/
+https://www.smartspate.com/websockets-in-angular/
+https://gearheart.io/blog/auto-websocket-reconnection-with-rxjs-with-example/
 
 
 动态组件
-
 ViewContainerRef【本地搭起来后，可以做实验】：
 https://zhuanlan.zhihu.com/p/25730650
 https://zhuanlan.zhihu.com/p/27069744

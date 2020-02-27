@@ -81,6 +81,7 @@ export class AddMenuComponent implements OnInit {
   treeFlattener: MatTreeFlattener<FileNode, FileFlatNode>;
   dataSource: MatTreeFlatDataSource<FileNode, FileFlatNode>;
 
+  // todo inUse的写法能优化不？感觉代码很冗余
   stateList: string[] = ['启用', '不启用'];
   inUse: string = this.stateList[0];
   currentMenu: string = "选择父级菜单";
@@ -118,9 +119,12 @@ export class AddMenuComponent implements OnInit {
   addMenu() {
     let inUse = this.inUse == this.stateList[0];
     // todo
-    let menu = {};
+    let menu = {menuName: this.menuName, url: this.menuUrl, icon: this.menuIcon, sort: this.menuSort, inUser: inUse};
     this.dataService.addMenu(menu).subscribe(res => {
       // todo dialog
+      if (res && res["code"] == 1) {
+         alert("菜单添加成功！");
+      }
     });
   }
 
