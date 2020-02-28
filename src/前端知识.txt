@@ -58,6 +58,8 @@ rxjs源码分析
 
 ================================================================================
 
+Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
+
 schematics是什么（有可能我已经用到了？）：https://www.jianshu.com/p/3f630cbb543d
 
 【比较一下】
@@ -86,6 +88,23 @@ Mine Sweeper Game：https://www.learnrxjs.io/learn-rxjs/recipes/mine-sweeper-gam
 Platform Jumper Game：https://www.learnrxjs.io/learn-rxjs/recipes/platform-jumper-game
 Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
 Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
+
+
+    return this.http.post(`/blog/manager/login`, body)
+      .toPromise()
+      .then(res => res);
+  }
+ 
+  autoLogin(): Promise<any> {
+    const headers = new HttpHeaders();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+    const param = new HttpParams().set("token",localStorage.getItem("token"));
+    return this.http.post(`/blog/manager/autoLogin`, param,{
+      headers:headers
+    })
+    .toPromise()
+    .then(res => res);
+
 
 ================================================================================
 

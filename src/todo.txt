@@ -1,21 +1,16 @@
-
-
 公司项目需要实验的几个方面：1.大屏把数据的获取和加载分开；2.webSocket推送数据（提高完成度）；3.图表代码怎么放入service精简
 看不到图表的问题看看是不是胡高伟的代码出了问题
 47新表数据库新表：pcr_device_data_avg
 
 ===================================================================================
 
-【晚上】
-2.思考并实现JWT的登出
-
 【互联网项目和接项目体现了两个思路：一个是探索性的，一个是确定性的，指导思想要定下来】
 
 ===================================================================================
 
 晚上拖地（从晚上开始先把扫地包了）、看禅道bug、锻炼、杨俊的问题
-星期三晚上洗澡
-26号左右应该考虑自行车和child知识了；如果公司降薪，先撑一个月
+星期日晚上洗澡
+3月5号左右应该考虑自行车和child知识了；如果公司降薪，先撑一个月
 车位租金跟那个人扯一下
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
@@ -30,17 +25,17 @@
 【最近几天效率不行，是不是因为有点贪多、急功近利？】【节制】
 【周五重点】bug分类。看房县新闻，分析局势，剪胡子
 
+============================================================================
 
 【27号周末继续花2天写解释器】
+读一下我的form代码，按钮和input样式先改过来
+7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
 
-7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
+============================================================================
 
 进入瓶颈期了，无差别学习一周。另外最近有点发散
 
 看看最新的主机和显示器，有没有适合放客厅的
-
-section样式代码再整体整理一下
-
 
 【27号简单任务】
   3.再看angular material控件：https://www.tutorialspoint.com/angular_material7/index.htm
@@ -101,7 +96,9 @@ Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/m
 再次测试mybatis【把这个配置彻底打通】
 推动不了，是不是应该先看mybatis源码了？
 
-1.把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
+在把一套控件搞懂之前，另可先不用，自己写
+
+1.【在financial项目中】把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
 2.x测通、代码写好后，再把2.x的pom配置干掉；
 3.用单元测试的方式再次测试mybatis的配置
 4.spring配置datasource三种方式【要能搞懂原理】：https://www.cnblogs.com/libin6505/p/11001968.html
@@ -153,7 +150,6 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】。
 沉住气：控件打通后再上主题
 
-5亿整数的大文件，来排个序【用50万个就OK了】
 注册阿里云、腾讯云、百度云账号
 图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
 把chart页面搞定（这个是不是应该结合主题来学习？）
@@ -237,9 +233,9 @@ https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
 
-  2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
-  5.搞清楚用directive和component封装控件的异同
-  自己想要的基本功能差不多后，再调样式
+2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
+5.搞清楚用directive和component封装控件的异同
+自己想要的基本功能差不多后，再调样式
 
 
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
@@ -250,7 +246,7 @@ https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thi
 5.前端看看人人网那个哥们儿的框架
 continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写了
 
-前端是不是可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
+前端是不是也可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
 
 【再看一眼EasyUI？】EasyUI 下载地址：http://www.jeasyui.cn/download.html
 
@@ -337,19 +333,6 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 把基础设施再搞一般，把material 2搞一轮，把rxjs搞一版，就可以用lte-admin做商用产品了
 
 angular material各个控件开始对后端功能了（先搜索“时间线、后端设计”）
-时间线timeline的后端设计（feed）：
-https://www.php.cn/mysql-tutorials-53724.html
-https://www.cnblogs.com/literoad/archive/2013/03/18/2966921.html
-https://blog.csdn.net/weixin_33806300/article/details/90569157
-http://www.html5dw.com/post/1903
-https://www.liangzl.com/get-article-detail-522.html
-https://mp.weixin.qq.com/s?__biz=MjM5NzQ3ODAwMQ==&mid=404465806&idx=1&sn=3a68a786138538ffc452bca06a4892c8&scene=0#rd
-Feed流的概念：
-https://yq.aliyun.com/articles/224132
-https://www.useit.com.cn/thread-8342-1-1.html
-https://wenku.baidu.com/view/3fb43833ff4733687e21af45b307e87100f6f879.html
-http://www.lmyw.net.cn/?p=619
-https://blog.csdn.net/mituan1234567/article/details/47008451
 
 publish、hot、cold：
 https://www.sitepoint.com/functional-reactive-programming-rxjs/

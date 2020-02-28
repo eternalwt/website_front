@@ -30,6 +30,7 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
           // todo 测试：1.点击链接；2.从网址输入
           return false;
       }
+
       return true;
     }
 
@@ -58,9 +59,5 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
 
       return false;
     }
-
-    // hasPermission(url: string) boolean {
-      
-    // }
 
   }
