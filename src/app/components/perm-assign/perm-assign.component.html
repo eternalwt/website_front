@@ -2,9 +2,9 @@
 
 <ng-container *ngFor="let item of menuList">
    <h4 class="tp-h2">{{item.roleName}}</h4>
-   <section class="tp-section">
+   <div class="tp-section">
       <mat-checkbox *ngFor="let perm of item.permList" class="tp-margin" [(ngModel)]="perm.checked">{{perm.key}}</mat-checkbox>
-   </section>
+   </div>
 </ng-container>
 
 <button mat-raised-button color="accent" (click)="savePermission()">Save</button>

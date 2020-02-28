@@ -35,14 +35,12 @@
 
 7.simple-dialog.component.html里面的文本改成可动态修改的（showMsg的文本抽出）
 
-Spring Boot 整合 EasyUI（application.properties的配置）：https://www.cnblogs.com/jingmoxukong/p/10239821.html
-
 进入瓶颈期了，无差别学习一周。另外最近有点发散
 
 看看最新的主机和显示器，有没有适合放客厅的
 
- Angular + Spring Boot file upload example：
- https://www.roytuts.com/angular-spring-boot-file-upload-example/
+section样式代码再整体整理一下
+
 
 【27号简单任务】
   3.再看angular material控件：https://www.tutorialspoint.com/angular_material7/index.htm
@@ -51,9 +49,7 @@ Spring Boot 整合 EasyUI（application.properties的配置）：https://www.cnb
   上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.word、pdf预览搞定【处于框架思维时，细节思维又消失了，觉得细节麻烦。要能同时保持两种思维】
   2.再配一遍mybatis（或者用financial那个工程？改名为boot-basic，搞懂多数据源）
   3.看消息中心设计，然后继续搞websocket基础设施，确保既能支持消息中心又能支持定时更新数据
-  学习jmeter的使用
   Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
-  把home右侧宽度做成计算出来的、section样式代码再整体整理一下
   单独搜DataSource的英文资料，从这里入手
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
 
