@@ -3,9 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  
   production: false,
+
   baseUrl: 'http://localhost:8080/',
+  
   wsBaseUrl: "ws://localhost:8080/websocket/"
+
 };
 
 /*

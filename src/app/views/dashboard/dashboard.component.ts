@@ -51,6 +51,9 @@ export class DashboardComponent implements OnInit {
         value[i].push((i + Math.random()).toFixed(2));
       }
     }
+    value[1][3] = null;
+    value[1][4] = null;
+    value[1][5] = null;
 
     for (let i = 0; i < 2; i++) {
         this.options.legend.data.push(i.toString());

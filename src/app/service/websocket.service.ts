@@ -10,19 +10,19 @@ export class WebsocketService {
 
   wsBaseUrl = environment.wsBaseUrl;
 
-  createWebSocket(type) {
-    let socket = new WebSocket(this.wsBaseUrl + type);
+  createWebSocket(businessType) {
+    let socket = new WebSocket(this.wsBaseUrl + businessType);
 
     // 打开事件
     socket.onopen = function() {
       debugger;
-      // socket.addEventListener
-      // socket.dispatchEvent
+      // socket.addEventListener 怎么用？
+      // socket.dispatchEvent 怎么用？
       console.log("Socket 已打开");
       //socket.send("这是来自客户端的消息" + location.href + new Date());
     };
 
-    // todo 统一消息解析、多路复用：userId、businessType、msgType、msgBody
+    // todo 统一消息解析、多路复用：userId（便于数据库的一些操作）、businessType、msgType、msgBody
     // 接收消息事件
     socket.onmessage = function(msg) {
       debugger;
