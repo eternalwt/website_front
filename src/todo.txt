@@ -8,9 +8,8 @@
 
 ===================================================================================
 
-晚上拖地（从晚上开始先把扫地包了）、看禅道bug、锻炼、杨俊的问题
-星期日晚上洗澡
-3月5号左右应该考虑自行车和child知识了；如果公司降薪，先撑一个月
+晚上拖卧室地【整理卫生间地面】（从晚上开始先把扫地包了）、洗袜子、看禅道bug、锻炼、杨俊的问题
+星期二晚上洗澡
 车位租金跟那个人扯一下
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
@@ -25,15 +24,92 @@
 【最近几天效率不行，是不是因为有点贪多、急功近利？】【节制】
 【周五重点】bug分类。看房县新闻，分析局势，剪胡子
 
-============================================================================
+====================================================================================
 
-【27号周末继续花2天写解释器】
-读一下我的form代码，按钮和input样式先改过来
+
+搞不动了，3号之前只搞最简单的，恢复心力。
+【如果搞不动了换个思路：框架搭建我已经突破了，下一步可以用2个办法提升：1.面向问题编程；2.面向知识缺陷编程】
+【今晚】擦地、擦厨房，掸灰
+
+3月3号
+搜索material design的主题，看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
+
+jquery会对angular带来什么干扰？再看一轮bootstrap的主题
+
+【如何搭配主题和控件】
+1.控件和主题能不能搭配，首先最关键的问题就是配色。网上有angular material通过thme修改配色的文章【配色也是material使用简便性的一个方面】：
+https://material.angular.io/guide/theming
+2.然后是行为的搭配，再看material design的文章
+3.控件元素大小的改变应该很简单把，大一点小一点也不太影响一致性（相比配色来说）
+下一轮可以放心使用material design的主题替换现有主题了
+找一些控件看看怎么改变配色、怎么改变大小
+看看其他几个组件库怎么修改配色
+【复工之前一定要把主题改一版，哪怕用material design的】
+再看一下angular material 4种主题的效果
+如何将less改为scss？
+The Material Design color system can help you create a color theme that reflects your brand or style：https://material.io/design/color/#
+
+应该首先关注主题，主题有了没有控件也是可以实现功能的，或者自己封装，只是可能看起来没有那么紧凑。
+
+使用angular + material 2 + flex-layout 开发项目：
+https://blog.csdn.net/henrypt/article/details/89214370
+https://blog.csdn.net/henrypt/article/details/89214492
+再看@mixin
+
+列2个ng-bootstrap的主题方案
+@input、@output再看一遍
+Module再看一遍
 7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
+依赖注入【自己写个依赖注入的？】
+ViewEncapsulation
 
-============================================================================
+angular封装弹出框：
+https://www.jianshu.com/p/fbe27a9e0822
+https://www.itsvse.com/forum.php?mod=viewthread&tid=5704&page=1
+https://www.cnblogs.com/xiaojing140421/p/9389259.html
+https://jingyan.baidu.com/article/93f9803f596da7e0e46f55be.html
+https://www.cnblogs.com/cench/p/5448624.html
+
+【看完这个能对material理解很多】基于 Angular7 和 material2 的中后台解决方案（ng-notadd）：https://www.v2ex.com/t/504621
+
+Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
+Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
+ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
+
+
+依赖node_modules配置的2项任务：
+  1.fork一下ng-alain，跑起来
+  2.把paper-dashboard-angular-master的代码学习一遍
+
+使用ng-alain这种东西需要先fork一次，然后新项目以fork出来的版本为基准再fork一次
+
+
+【周末】
+1.2天时间主要用来写解释器；
+动态代理看完后看mybatis源码分析，补一轮java基础（5天）。spring里面用到的动态代理
+2.对着我的2个模板看2套控件，看看控件封装了哪些精妙的操作，对模板带来了哪些互补
+3.ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
+还有搜索ng2-开头的控件
+然后把ng-alain和paper-dashboard弄好（node_modules）
+
+
+【不好搞的话就分前后端分别处理】
+  把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343
+  文件上传前端：1.控件及样式；2.进度
+
+
+
+
+
+
+
+====================================================================================
+
+自己搞虽然保持专注很重要，但是更要注意合理修复，否则一个月就废了
 
 进入瓶颈期了，无差别学习一周。另外最近有点发散
+如何用npm建一个裸的工程？能建立多少种自己需要的工程？
+为什么cookieService没有在package.json里面，而echarts那些就在？
 
 看看最新的主机和显示器，有没有适合放客厅的
 
@@ -43,20 +119,39 @@
   echarts：把图形再熟悉一下，动手一下
   上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.word、pdf预览搞定【处于框架思维时，细节思维又消失了，觉得细节麻烦。要能同时保持两种思维】
   2.再配一遍mybatis（或者用financial那个工程？改名为boot-basic，搞懂多数据源）
-  3.看消息中心设计，然后继续搞websocket基础设施，确保既能支持消息中心又能支持定时更新数据
   Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
   单独搜DataSource的英文资料，从这里入手
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
 
-  把上传的那个类建立起来，把上传测通
-  文件上传前端完全突破：1.单个；2.多个；3.控件及样式；4.进度
-  下载：1.进度【下载完后消息中心提示】；2.打包zip
+读一下我的form代码，按钮和input样式先改过来
 
-  springboot+druid+mybatis-Plus 配置详解【跟xml方式对比】：https://www.cnblogs.com/shine-rainbow/p/9618100.html
+
+学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
+Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
+
+1.添加menu页面加树控件
+
+springboot+druid+mybatis-Plus 配置详解【跟xml方式对比】：https://www.cnblogs.com/shine-rainbow/p/9618100.html
 
 看我现有的页面为啥效果做不好（如何用好indigo.css？），再对比用了theme是否能做好
 
-组件把配色想清楚、语言替换搞清楚，是不是就没有问题了？https://ng-bootstrap.github.io/#/components/alert/examples
+【再确认一下ng-bootstrap和哪个组合最好】
+ng-bootstrap组件把配色想清楚、语言替换搞清楚，是不是就没有问题了？https://ng-bootstrap.github.io/#/components/alert/examples
+Angular2使用boostrap和ng-bootstrap总结：https://www.cnblogs.com/shawWey/p/7881994.html
+bootstrap for angular：https://ng-bootstrap.github.io/#/home
+ng-bootstrap：
+https://github.com/ng-bootstrap/ng-bootstrap
+https://ng-bootstrap.github.io/#/home
+别人在github上的angular项目（特性教学）：
+https://github.com/PatrickJS/angular-starter
+https://github.com/Ismaestro/angular8-example-app
+https://github.com/ui-router/angular
+
+一旦确定了设计风格和主题，那么每引入一个第三方控件，在选型和引入写代码时，必不可少的两个步骤：1.要保持设计风格一致；2.要保证样式和色系等一致
+【双管齐下】
+  1.用现有的material项目练技术
+  2.根据功能点多方位评估ng-alain这样的主题的能力
+
 
 开发OA和开发互联网应用前端和后端技术栈都是不同的
 
@@ -80,11 +175,8 @@ https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
 二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
 从sidenav再次分析angular material的抽象程度，如果angular material只是封装了结构(标签封装与转换)及行为，那它和样式是解耦的，并且能和其他组件无缝结合【如果只是封装了结构可能还不足以使用，因为组合标签并不难】。再分析其他组件库
 angular的封装是封装出了新的标签和行为（一个控件内部又封装了子控件，才提供了一点功能），要有这个意识
-angular material toolbar：
-https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
-https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
-https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
-Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
+
+感觉angular material封装的很怪，提供给我的到底是侧重material design方面的东西多一点，还是易用性方面多一点？感觉没有太多易用性？
 
 【25号】
 看angular material样式表、看控件（看material，对后端的表）
@@ -95,6 +187,7 @@ Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/m
 7.先把article的reactive form搞通，然后把add-role的模板驱动的form再过一遍，然后改造成reactive的，然后搞其他的
 再次测试mybatis【把这个配置彻底打通】
 推动不了，是不是应该先看mybatis源码了？
+多tab页路由复用
 
 在把一套控件搞懂之前，另可先不用，自己写
 
@@ -104,9 +197,6 @@ Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/m
 4.spring配置datasource三种方式【要能搞懂原理】：https://www.cnblogs.com/libin6505/p/11001968.html
   搞懂springboot是怎么使用application.properties文件的（才能把配置彻底搞清楚，例如mybatis的配置）：(1)看懂数据源的默认配置；
 6.配置redis
-ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts
-
-https://www.npmjs.com/package/
 
 超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）
 【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
@@ -118,7 +208,6 @@ java整合rabbitmq和整合缓存一样，都涉及到JSR标准的问题
 把我现有的样式文件过一遍，看看能不能看出啥门道【把我现在没有显示全的问题解决一下】
 
 能否使用@Configuration来配置cache和mybatis？
-input、output再看一遍
 
 思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
 对比最新的门户网站技术
@@ -177,12 +266,17 @@ ckeditor图片、附件上传
 mybatis配置、mybatis-plus配置【这是极为重要的基础设施和能力】
 SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件注解版”两种方法：https://www.cnblogs.com/xuehuashanghe/p/9593639.html
 
-
+绑定dropDown、radio写一版出来
 1.前端：把样式修复好；
 3.角色、用户的增删查改【前端】及权限分配；
 4.再看一下那个人主题风格的一致性
 6.上方做好搜索框控件：
 用户的查看做通，便于后期复制到其他功能
+
+不要没事瞎升级，一定要有路线图：
+1.theme；
+2.node；
+3.angular
 
 【使用let-admin这类主题的思路】
 1.拿到主题后先把主题的各部分封装控件；
@@ -225,7 +319,6 @@ Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angul
 使用material还有个好处，可以尝试一下换界面的工作量
 angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
 【几个关联的问题】
-1.给前端刷新token（是不是还是要依靠header？）；
 2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
 3.权限不够则页面和url保持不变
 https://blog.learningtree.com/create-side-menu-angular-2-material-design/
@@ -237,14 +330,8 @@ https://code-maze.com/angular-material-navigation/
 5.搞清楚用directive和component封装控件的异同
 自己想要的基本功能差不多后，再调样式
 
-
 优先完成：加一个面包屑、加一个tab（这个看起来有点难）
-1.The Little Schemer的解释器
-2.generator往前推进一点【little schemer继续推进】：
-https://stackoverflow.com/questions/44514890/does-call-cc-in-scheme-the-same-thing-with-yield-in-python-and-javascript
-4.后端继续搞（shiro相关的再突破一点）；
 5.前端看看人人网那个哥们儿的框架
-continuation的零散文档可以逐渐干掉了，call/cc可以尝试自己写了
 
 前端是不是也可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
 
@@ -270,18 +357,18 @@ https://www.cnblogs.com/minigrasshopper/p/7692664.html
 https://www.cnblogs.com/minigrasshopper/p/7692813.html
 
 
-2.toolbar上面加搜索框【这是个重要的问题】；
 3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
 4.每跳转路由，还是要从后端验证一下，用emit；
 
 2.用列表管理角色（增删改）；
-6.继续整合
 7.menu的东西放到一个module里面
 1.菜单权限再看看后端是否需要拦截
 2.side-menu是不是可以用于菜单树（能否做多级）；
 继续推进前端鉴权【使用EventEmitter】
 
 根据现有的知识和技能，let-admin是可以直接套在我现有的代码上的
+
+把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343
 
 =================================================================
 
@@ -304,7 +391,6 @@ https://blog.csdn.net/A156348933/article/details/90241323
 分两种情况思考，userId是不是应该保存在localStorage里面（和session原理也对比）
 
 周末工作：
-2.jwt前后端相关的（看掉最新的shiro那个文章）
 给组件设置样式再深挖一下【ck、能看到代码的component、看不到代码的component】
 1.集成admin-lte；2.集成components
 1.可以利用在家里的时间把大屏的切换规则再仔细考虑一下，看看取数据有没有干扰
@@ -332,8 +418,6 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 把基础设施再搞一般，把material 2搞一轮，把rxjs搞一版，就可以用lte-admin做商用产品了
 
-angular material各个控件开始对后端功能了（先搜索“时间线、后端设计”）
-
 publish、hot、cold：
 https://www.sitepoint.com/functional-reactive-programming-rxjs/
 https://ncjamieson.com/understanding-publish-and-share/
@@ -347,12 +431,6 @@ publish + refCount 可以简写成 share：
 RxJs 5 share（）运算符是如何工作的？https://cloud.tencent.com/developer/ask/63185
 2. pipe()作为一种链接运算符的方法，旧的链接方式将不起作用（angular 6）：https://www.jianshu.com/p/ce1a15957a7f
 switchAll()的作用？
-
-什么叫响应式表单？响应式体现在哪里？
-
-是不是先把ng-alain那些下载下来？
-把paper-dashboard-angular-master的代码学习一遍
-1.添加menu页面加树控件
 
 下载的进度问题再过一遍
   // todo 这是实验性代码
@@ -379,7 +457,7 @@ sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereu
 4.前后端token、session那一套彻底弄懂：
 5.http的出错处理
 6.下载及进度：把下载的代码抄过来（包括service里面的）
-7.上传
+7.上传：https://blog.csdn.net/minaki_/article/details/85163343
 SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录：https://www.cnblogs.com/javazhiyin/p/11398374.html
 
 可以先继续完善3个月的功能和基础设施，不要急。如果不给自己足够的时间，学习顺序会扭曲混乱
@@ -437,7 +515,6 @@ GitHub开源的10个超棒后台管理面板（有几个angular的）：https://
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
 12月31日对前端样式的最新理解：material组件（封装功能） + prebuilt-theme负责颜色 + 布局和宽高 + 图片 + 阴影等更高级定制
 
-2.分支1：尝试给paper-dashboard-angular-master加一个漂亮的登录页【这个问题值得单独拿出来】
 2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
 
 再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
@@ -455,13 +532,8 @@ guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
 最简单的方式：找一个angular主题，在次基础上引入组件并自定义样式
 https://blog.csdn.net/liumiaocn/article/details/81329223
 
-大屏页面出现了一堆violation：
-[Violation] 'setInterval' handler took 236715ms
-[Violation] Forced reflow while executing JavaScript took XXX ms
-
 框架搭建任务：
 1.路由(路由系统的设计要素？对比引入路由系统的优势)
-2.发送请求带token写通（封装）；
 3.interceptor及;
 4.单元测试
 5.两套模板
@@ -471,9 +543,7 @@ https://blog.csdn.net/liumiaocn/article/details/81329223
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
 https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
-基于ng-bootstrap的框架？
 
-下载一个免费（free）模板试一把【已下载，待尝试】
 material design的教程：
 https://material.angular.io/components/categories
 https://www.techiediaries.com/angular-material-tutorial-example/
@@ -491,13 +561,11 @@ bootstrap4与其他组件样式之间的兼容性：
 1.看看现在的模板是不是都是bootstrap的；
 2.从小问题入手：bootstrap和ckeditor、quill样式之间的兼容性
 angular 4 引用 bootstrap 4 记录总结：https://www.cnblogs.com/xxx91hx/p/7898642.html
-Angular2使用boostrap和ng-bootstrap总结：https://www.cnblogs.com/shawWey/p/7881994.html
 现在用的样式，就是angular material的样式：@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 NG Bootstrap 4.2.0 发布，Bootstrap 的 Angular 集成【把前端的解决方案看清楚，多看一些文章（10到20篇）】：https://www.liangzl.com/get-article-detail-130753.html
 Angular 8 UI Components：
 https://www.jqwidgets.com/angular/
 https://www.telerik.com/kendo-angular-ui
-bootstrap for angular：https://ng-bootstrap.github.io/#/home
 10 Angular and TypeScript Projects to Take You From Zero to Hero 11：https://blog.codewithdan.com/10-angular-and-typescript-projects-to-take-you-from-zero-to-hero/
 Layui elementUI iView
 https://adminlte.io/
@@ -527,14 +595,7 @@ dashboard：完成热力图、中国地图（没啥难度，需要的只是行�
 继续搞基础设施，继续推敲每一段代码，提升自己
 解决搭框架之后的第二个问题，怎么加速，能否到github上搜一些代码
 往前进一步：在我的paper-dashboard-angular-master项目中加一个简单的网站模板
-
-ng-bootstrap：
-https://github.com/ng-bootstrap/ng-bootstrap
-https://ng-bootstrap.github.io/#/home
-别人在github上的angular项目（特性教学）：
-https://github.com/PatrickJS/angular-starter
-https://github.com/Ismaestro/angular8-example-app
-https://github.com/ui-router/angular
+看一下paper-dashboard-angular的module组织，和看公司代码一样，不要有疲劳感
 
 模板与angular的整合：模板的每个页面都对应angular的一个component（这个心里没底，单独找一下午开一个工程试一下）
 指导思想：用angular/material把后端和前端基础设施逻辑写好，美化界面是最后一步
@@ -584,3 +645,8 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.ht
 
 mat-icon显示不出来是不是因为没有加CSS：https://github.com/angular/components/issues/7948
 
+angular material toolbar：
+https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
+https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
+https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
