@@ -62,7 +62,7 @@ Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
 schematics是什么（有可能我已经用到了？）：https://www.jianshu.com/p/3f630cbb543d
 The 7 Pro Tips To Get Productive With Angular CLI & Schematics：
 https://hackernoon.com/%EF%B8%8F-the-7-pro-tips-to-get-productive-with-angular-cli-schematics-b59783704c54
-
+Angular Schematics 三部曲之 Add：https://zhuanlan.zhihu.com/p/101546474
 
 【比较一下】
 从事件创建：fromEvent
@@ -335,6 +335,7 @@ Angular ng常用命令行：https://www.cnblogs.com/zero-zm/p/9940073.html
 JS sort的原理是啥？能否自己实现一下：
 https://www.w3school.com.cn/js/jsref_sort.asp
 https://www.cnblogs.com/saifei/p/9043821.html
+Math.max.apply(null,arr)的原理学习一下：https://www.cnblogs.com/userzf/p/11354242.html
 
 用到的关键模块：
 require('amqplib/callback_api');
@@ -347,14 +348,11 @@ Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/articl
 帮你彻底搞懂JS中的prototype、__proto__与constructor（图解）：https://blog.csdn.net/cc18868876837/article/details/81211729
 
 
-
 =========================================================================================
 
 【出产品推荐的方式】
 0.再看一些模板，也可以组件反向适配要用的模板。评估业务，实在不行我可以只用theme，不用组件，或者找一些ngx开头的控件
-
 或许我的思路错了，应该是拿到一个theme中，从中抠控件，然后再辅以少量自己设计的控件
-
 ng2-admin【后来的ngx-admin】：https://akveo.github.io/ng2-admin/
 
 1.1.有一个material的主题+material 2【再研究一下主题模板也很重要】；
@@ -384,17 +382,7 @@ https://www.zhihu.com/question/52768631
 
 4.看ng-bootstrap、ngx-bootstrap等概念，野鸡FreeNG、ng-matero等
 
-Angular Elements：
-https://angular.io/guide/elements
-https://segmentfault.com/a/1190000015647566
-
-关于Angular样式封装、ng-deep：
-https://segmentfault.com/a/1190000012086737
-https://angular.io/guide/component-styles
-
 angular无用代码扫描
-
-Math.max.apply(null,arr)的原理学习一下：https://www.cnblogs.com/userzf/p/11354242.html
 
 Angular入口组件（entry component）与声明式组件的区别详解【理解了加载，有些东西可以放在entrycomponents里面】：https://www.jb51.net/article/137947.htm
 angular 动态组件类型详解(四种组件类型)：https://www.jb51.net/article/106378.htm
@@ -409,7 +397,6 @@ https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-i
 https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
 https://codinglatte.com/posts/angular/ui-libraries-and-frameworks-for-angular-6/
 Top 27 Angular Components for Web Developers：https://colorlib.com/wp/angular-components/
-
 
 =========================================================================================
 
@@ -436,6 +423,7 @@ https://www.concretepage.com/angular-material/angular-material-table-sorting-pag
 https://blog.angular-university.io/angular-material-data-table/
 Angular 8/7 | Edit/ Add/ Delete Rows in Material Table with using Dialogs inline Row Operation：https://www.freakyjolly.com/angular-7-8-edit-add-delete-rows-in-material-table-with-using-dialogs-inline-row-operation/
 Angular Material Inputs：https://www.concretepage.com/angular-material/angular-material-inputs
+看一个angular material2组件的代码，看一个easyui组件的代码【有了主题后，组件或许没有那么重要？还是反过来？要2方面都能达成，最好是能兼容】
 mat-table的刷新：https://blog.csdn.net/yorksome/article/details/99698080
 mat-table的样式：
 https://stackoverflow.com/questions/45512823/angular4-material-md-table-column-width-autosizing-like-normal-table
@@ -473,59 +461,60 @@ ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/d
 
 How to Integrate Bootstrap with Angular (Angular 6)：https://grokonez.com/frontend/angular/angular-6/how-to-integrate-bootstrap-with-angular-angular-6
 
-看一个angular material2组件的代码，看一个easyui组件的代码【有了主题后，组件或许没有那么重要？还是反过来？要2方面都能达成，最好是能兼容】
-
 指导思想：先搞通一套，然后再孵化
 
 Differences Between Angular vs Bootstrap：https://www.educba.com/angular-vs-bootstrap/
 @ng-bootstrap和@angular/material的配合
 Bootstrap or Material Design? What is better for Angular 6?：https://www.futurum.tech/blog/index.php/2018/06/04/bootstrap-or-material-design-what-is-better-for-angular-6/
 On Choosing Material Design for Angular Over UI Bootstrap：https://dzone.com/articles/on-choosing-material-design-for-angular-over-ui-bo
+【这个跟angular material不是一回事，是否有用？】bootstrap-material-design - Material design theme for Bootstrap 3 and 4：
 
-还是要自己先搞清楚，然后再买模板
-
-再回过头看一遍easyui那些。还有个问题，如果他们的UI不一样，怎么兼容？
-jQWidgets
-ng-bootstrap是一个angular UI bootstrap库：http://www.fly63.com/nav/1157
+要先搞明白material design，再去用它的主题和控件。Material Design干货：
+https://www.uisdc.com/material-design-knowledge
+http://www.apkbus.com/design/
+Material Design Lite：https://getmdl.io/
+Material Design for Bootstrap：https://github.com/FezVrasta/bootstrap-material-design
+谷歌 Material Design 从这些方面打破了我的思维局限：https://zhuanlan.zhihu.com/p/24887891
+【material design的一些模板资源】https://zhuanlan.zhihu.com/p/61410553
+Material Design的官网：https://material.io/
+重磅教程！帮你全面彻底搞定Material design的学习笔记：http://www.uisdc.com/comprehensive-material-design-note
+新版抢先看！Material Design 的7个重大更新：https://www.uisdc.com/material-design-7-major-updates
+关注material design的样式
+https://www.zhihu.com/tardis/sogou/art/34137438
 
 Maintained Angular Projects：
 https://www.ctolib.com/mip/maintained-angular.html
 
-【我现在的demo组件和主题是material，把这个完整做一遍】
-material的主题：
+angular material的主题（material-dashboard）：
 https://ampersandacademy.com/tutorials/java/angular-material-6-free-theme
+【上面的主题完成度很低，例如：1.没有二级菜单；2.input元素示例太少；3.上方红点样式很差、点击个人弹出菜单样式很差；4.左侧边栏收起后右侧没有联动】
+基于 Angular7 和 material2 的中后台解决方案【ng-notadd，代码跑不起来】：https://www.v2ex.com/t/504621
 这个网站有现成的：https://startangular.com/
 https://www.creative-tim.com/product/material-dashboard-angular2
 https://material.angular.io/guide/theming
 https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
-
 angular material 2：
 https://www.gistia.com/beginners-guide-angular-material-2/（material和bootstrap是两套东西）
 https://alligator.io/angular/angular-material-2/
 https://www.mithunvp.com/angular-material-2-angular-cli-webpack/
 https://coursetro.com/posts/code/29/Working-with-Angular-2-Material
 Angular Material 7 教程：https://www.kaifaxueyuan.com/frontend/angular-material7/angular-material7-home.html
-
 搞清楚Angular Material的样式定制（只要搞定一个组件就OK了）
 Angular Material 的设计之美：https://juejin.im/post/5d6fb73e518825168d37d500
 【这句话解决了组件样式与主题包的兼容问题，另一个问题是：主题包如何跟angular的目录结构适配】Angular Material 的样式几乎全部写在了 mixin 中，定制起来非常容易：https://juejin.im/post/5d6fb73e518825168d37d500
 Angular Material 给出了多套主题的设置方法，只需要增加样式控制类就可以了。
+Angular Material: Containers with the Layout API【视频】：https://egghead.io/lessons/angularjs-angular-material-containers-with-the-layout-api
+Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
 
-【这个跟angular material不是一回事，是否有用？】bootstrap-material-design - Material design theme for Bootstrap 3 and 4：
+blur-admin（这个好像和ngx-admin是一家的啊？）：https://zhuanlan.zhihu.com/p/83311408
 
 先从一个小点入手：ng-bootstrap怎么定制样式？
-View Encapsulation in Angular：
-https://www.tektutorialshub.com/angular/angular-view-encapsulation/
-https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
+ng-bootstrap是一个angular UI bootstrap库：http://www.fly63.com/nav/1157
+基于angular4+ng-bootstrap+bootstrap+scss的后台管理系统界面：https://segmentfault.com/a/1190000011562305
 
+为什么 CSS 这么难学？https://www.zhihu.com/question/66167982/answer/1005439138
 
-<ul>
-  <li *ngFor="let contact of contacts | async">
-    <contact-card [contact]="contact"></contact-card>
-  </li>
-</ul>
-ngFor与async。星号是什么意思？
-https://www.jianshu.com/p/388461631b1d
+angular之ng-container 、ng-template的使用：https://www.jianshu.com/p/388461631b1d
 
 Angular 结构型指令 NgIf 原理：https://www.imwhite.com.cn/2019/09/angular-understand-structrual-directive/
 而directive则是在已经存在的dom元素上附加一些行为：https://segmentfault.com/a/1190000016106262
@@ -539,14 +528,15 @@ Angular4-创建自定义指令Directive学习文档 - 节流指令：https://www
 
 npm audit fix：https://www.cnblogs.com/lhuser/p/11107520.html
 
+jQWidgets
 jQuery是过时了，Github去掉了jQuery代码，BootStrap5也打算去掉jQuery。但并不代表jQuery没有用处了，做页面(Page)的时候还是需要的：https://www.zhihu.com/search?type=content&q=ng-bootstrap
 bootstrap中使用了大量的dom操作，实际的vue开发中，一点jq都不用。
+ng-bootstrap、ngx-bootstrap、react-bootstrap、bootstrap-vue这种项目结合的，这类项目主要作用就是用框架重新实现了Bootstrap原本用jQuery实现的那些Component。现在这样用的越来越少了，而是直接用类似Ant Design这种原生就是用框架实现的组件库。
 前端CSS框架很多比如  Bootstrap、 Bulma、Foundation、Milligram、Pure、Semantic、 UIKit：https://www.zhihu.com/question/265026551
 前端的未来，不在投入哪个门派，不在采用哪个框架，而是你能不能真正解决问题，你的数万个工具在一起是否和谐，你的代码是否健壮这些基本的东西。
+Github 上有什么好看的前端后台项目模板?https://www.zhihu.com/question/309682777/answer/580120248
 
 angular2 中使用第三方组件样式调整：https://blog.csdn.net/cut001/article/details/70924300
-Angular Material: Containers with the Layout API【视频】：https://egghead.io/lessons/angularjs-angular-material-containers-with-the-layout-api
-
 
 =========================================================================================
 
@@ -948,6 +938,23 @@ angular.json：
 https://segmentfault.com/a/1190000016292354
 https://blog.csdn.net/m0_37723113/article/details/84026796
 
+19 packages are looking for funding
+  run `npm fund` for details
+
+为什么 npm 要为每个项目单独安装一遍 node_modules？https://www.cnblogs.com/weiyinfu/p/8471407.html
+如果想要代码目录不出现node_modules，有2个办法：
+  1.公司的办法：要用的组件不写在package.json里面，就不会出现node_modules目录，把全局node_modules跟版本控制关联，统一下发；
+  2.github这种代码必须要在package.json里面声明依赖的组件，用mklink软链接。
+【我现在node_modules全局路径在d盘，缓存在C盘】
+npm config list
+npm config get prefix、npm config get cache：https://www.jianshu.com/p/38e3b6fe5f7a?tdsourcetag=s_pcqq_aiomsg
+更改registry（源）：http://www.mamicode.com/info-detail-1802382.html
+NodeJS模块全局安装路径配置：https://blog.csdn.net/lilongsy/article/details/84728149
+再看--save的选项：
+https://www.cnblogs.com/toggle/p/11044149.html
+https://blog.csdn.net/u012382791/article/details/95453843
+npm install、npm install --save与npm install --save-dev区别：https://blog.csdn.net/qq_30378229/article/details/78463930
+npm 报错node-pre-gyp WARN Using request for node-pre-gyp https download：https://blog.csdn.net/luwenze/article/details/98600860
 如何修改项目加载包默认的node_modules路径：https://blog.csdn.net/Ouchieve_111/article/details/70878090
 用全局安装，就可以保持干净的代码目录了：npm install -g echarts --save
 【node_modules的进展（关注node-global和node-cache的设置）】非常关键的一句话：由于webpack在node-global文件夹中做了映射，所以也要将node-global加入path环境变量即可：https://www.cnblogs.com/hualess/p/11541908.html
@@ -960,7 +967,7 @@ https://blog.csdn.net/yuzhouchangwan1990/article/details/79431982
 https://www.jb51.net/article/140361.htm
 https://www.jianshu.com/p/0d069e36d8ac
 【还是得把node_modules路径的问题解决一下，否则很难在多个项目之间做test。我的node_modules的分离没有完成。要保证：1.在项目目录下能npm install（package.json里面会添加引用）；2.同时不要放在代码目录下】
-2.angular自动下载安装所有依赖包模块：https://blog.csdn.net/Nfboys/article/details/90019578
+2.angular自动下载安装所有依赖包模块：https://blog.csdn.net/Nfboys/article/details/90019578【npm install --scripts-prepend-node-path=auto】
 npm install包的全局安装路径：https://flaviocopes.com/where-npm-install-packages/
 Angular6、7 自动下载安装所有依赖包模块：https://blog.csdn.net/Nfboys/article/details/90019578
 node_modules同时支持ts、js语言把？
@@ -970,10 +977,6 @@ zone.js，模板AST，动态组件，观察者模式+依赖注入隐藏状态管
 Angular 中的容器组件：https://zhuanlan.zhihu.com/p/87333832
 没错，我就是要吹爆Angular：https://zhuanlan.zhihu.com/p/38430368
 
-把echarts这种东西封装成angular版本的要做些啥？
-ngx-echarts文档（根据下载时候对应的名称来查找文档，定位问题）：https://www.npmjs.com/package/ngx-echarts
-一个Echart官网示例中世界地图的例子：https://blog.csdn.net/wallowyou/article/details/53135243#comments
-angular7 echarts中国散点图：https://www.jianshu.com/p/a353c841629a
 
 为什么用angular的比用vue react的少那么多？：https://www.zhihu.com/question/355760849/answer/938934606
 
@@ -1093,9 +1096,6 @@ Angular 6 Charts Example Tutorial From Scratch：https://investmentnovel.com/ang
 
 ngAfterViewInit() 初始化完组件视图及其子视图之后调用【这句话非常重要，能否在调试时观察加载顺序】：https://www.cnblogs.com/xinjie-just/p/10059468.html
 
-Three.js 3D 动画
-d3.js
-Day1 百度Echarts，蚂蚁金服G2，D3三种主流可视化工具对比：https://zhuanlan.zhihu.com/p/78163830
 
 在angular 项目的根目录下创建 proxy.config.json 文件的作用？
 
@@ -1250,7 +1250,9 @@ angular中实现pdf在线预览功能：https://www.cnblogs.com/boreguo/p/115796
 viewerjs图片预览
 viewerjs也是基础设施【把几种方式都对比一下】
 
-Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
+Ant Design Pro是vue的：
+https://www.cnblogs.com/freely/p/10874297.html
+https://www.zhihu.com/question/52768631
 
 angular单元测试和junit一样，最需要关注的是启动原理
 
@@ -1434,7 +1436,6 @@ Angular 8 UI Components（jQWidgets）：https://www.jqwidgets.com/angular/
 
 Theming your Angular Material app：https://material.angular.io/guide/theming#defining-a-custom-theme
 angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
-Material Design Lite：https://getmdl.io/
 
 Free Angular Admin Template：
 https://coreui.io/angular/
@@ -1446,35 +1447,25 @@ https://dashboardpack.com/theme-details/architectui-angular-7-dashboard-free/
 https://www.tekmx.com/downloads/angular-material-theme-free-download
 等吃透一些时间后，花100块钱买一些主题，快速形成产品：
 http://www.bluestep.cc/tag/angular-7%E6%A8%A1%E6%9D%BF/
-基于angular4+ng-bootstrap+bootstrap+scss的后台管理系统界面：https://segmentfault.com/a/1190000011562305
 Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/157068422
 前端开发，比较出色的 UI 库有哪些？https://www.zhihu.com/question/353100080/answer/875018512
-Material Design for Bootstrap：https://github.com/FezVrasta/bootstrap-material-design
 我们必须分清六个基本概念：Library，Toolkit，Framework，Design，Boilerplate，Scaffolding：https://www.zhihu.com/question/304757674/answer/546374749
 angular bootstrapping application：https://www.tektutorialshub.com/angular/angular-bootstrapping-application/
 
 NG Add Schematic：https://www.jianshu.com/p/2d59e06e8a77
-基于 Angular7 和 material2 的中后台解决方案（ng-notadd）：https://www.v2ex.com/t/504621
 Getting Started With Angular Material 2：https://alligator.io/angular/angular-material-2/
 看一两个angular material 2控件的实现
-Angular 的 Material Design 风格框架 material2 6.3.2：https://cloud.tencent.com/developer/news/266719
 
-Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
-谷歌 Material Design 从这些方面打破了我的思维局限：https://zhuanlan.zhihu.com/p/24887891
 体验进阶（界面设计方面的一些文章）：https://zhuanlan.zhihu.com/advancedhci
 https://www.zhihu.com/question/28957074/answer/43830077
-【material design的一些模板资源】https://zhuanlan.zhihu.com/p/61410553
 https://www.zhihu.com/question/24276657/answer/68081021
-Material Design的官网：https://material.io/
-重磅教程！帮你全面彻底搞定Material design的学习笔记：http://www.uisdc.com/comprehensive-material-design-note
-新版抢先看！Material Design 的7个重大更新：https://www.uisdc.com/material-design-7-major-updates
 精进：设计思想与设计工具
 图片上的文字，需要淡淡的遮罩确保其可读性。深色的遮罩透明度在20%-40%之间，浅色的遮罩透明度在40%-60%之间。【遮罩和透明度不是一个概念把？】
 Angular 有 ng-bootstrap、OnsenUI 和 material2 等：https://github.com/angular/components
 bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap 和 ng-zorro 是基于 angular 的组件库，与 bootstrap 不是一类东西：https://www.zhihu.com/question/65750588/answer/234349815
 
-前端开发，比较出色的 UI 库有哪些？
-：https://www.zhihu.com/question/353100080/answer/875018512
+前端开发，比较出色的 UI 库有哪些？：https://www.zhihu.com/question/353100080/answer/875018512
+移动开发：Angular：Ionic 和 NativeScript
 
 【重点不是比较各种组件包，而是理解背后的设计思路，这样随便用哪一种都OK】
 在我更新 ng-zorro-antd 8.x 之后，我发现 zorro 的菜单组件的使用已经和 Angular Material 一样了。可见优秀的设计理念会被广泛借鉴。
@@ -1495,11 +1486,6 @@ https://blog.csdn.net/shuididishui007/article/details/81047880
 3.两者的组合
 4.第三方组件
 5.如果用别人的组件，别人的组件更新后，好不好升级：https://ng-matero.github.io/ng-matero/#/helpers
-以ng-bootstrap为蓝本的模板，以material design为模板的蓝本
-再看easyui和bootstrap的关系
-首先应该比较bootstrap和material design
-关注material design的样式
-https://www.zhihu.com/tardis/sogou/art/34137438
 ionic3
 
 ================================================================================
@@ -1580,6 +1566,22 @@ Error Handling in Angular 8/9 Tutorial with Examples：https://www.positronx.io/
 
 React + Typescript 工程化治理实践：https://zhuanlan.zhihu.com/p/91754525
 
+
+【G2和D3值得学习】
+Three.js 3D 动画
+d3.js
+Day1 百度Echarts，蚂蚁金服G2，D3三种主流可视化工具对比：https://zhuanlan.zhihu.com/p/78163830
+把echarts这种东西封装成angular版本的要做些啥？
+ngx-echarts文档（根据下载时候对应的名称来查找文档，定位问题）：https://www.npmjs.com/package/ngx-echarts
+一个Echart官网示例中世界地图的例子：https://blog.csdn.net/wallowyou/article/details/53135243#comments
+angular7 echarts中国散点图：https://www.jianshu.com/p/a353c841629a
+g2 4.0发布了，g2是一个图形库：https://g2.antv.vision/zh/docs/manual/getting-started
+G2是一个基于统计分析的语义化数据可视化系统。它真正做到了让数据驱动图形：https://segmentfault.com/a/1190000013413771
+D3 vs G2 vs Echarts：
+https://www.jianshu.com/p/7792544e680c
+https://segmentfault.com/a/1190000016469959
+【这就是数据科学】正如其名 The Grammar of Graphics -可视化图形语法，该库有着被称为可视化圣经的《The Grammar of Graphics》作理论支撑，将可视化理论与web技术做了非常好的结合。
+聊下图形语法“The Grammar of Graphics”：https://www.jianshu.com/p/f5f6ba845723?from=timeline&isappinstalled=0
 6大公共组件、5大坐标系、19种图表：https://blog.csdn.net/luanpeng825485697/article/details/76832209
 19种图表：https://blog.csdn.net/sayWhat_sayHello/article/details/86155066
 js将echarts图表转换成base64位格式编码的图片的原理是啥？
@@ -2477,7 +2479,6 @@ Angular-cli生成组件时自动将组件import到AppModule是如何实现的?ht
 
 转载 [原生JS]实现移动端的上拉加载&下拉刷新：https://blog.csdn.net/webFront/article/details/95627334
 
-npm install、npm install --save与npm install --save-dev区别：https://blog.csdn.net/qq_30378229/article/details/78463930
 NPM和webpack的关系（转载）：https://blog.csdn.net/cwh0908/article/details/90769823
 NPM是随同NodeJS一起安装的包管理工具
 Angular 开发环境搭建（讲了cnpm）：https://www.cnblogs.com/mengjinluohua/p/8227977.html

@@ -26,19 +26,32 @@
 
 ====================================================================================
 
+3月3号【周二】
+看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
+把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
+【试一下别人推荐的搜索方式】：https://www.zhihu.com/question/309682777/answer/580120248
+github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
+
+Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
+
+关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
+
+【下面2项看看怎么归类】
+Angular Elements：
+https://angular.io/guide/elements
+https://segmentfault.com/a/1190000015647566
+
+关于Angular样式封装、ng-deep：
+https://segmentfault.com/a/1190000012086737
+https://angular.io/guide/component-styles
 
 搞不动了，3号之前只搞最简单的，恢复心力。
 【如果搞不动了换个思路：框架搭建我已经突破了，下一步可以用2个办法提升：1.面向问题编程；2.面向知识缺陷编程】
 【今晚】擦地、擦厨房，掸灰
 
-3月3号
-搜索material design的主题，看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
-
-jquery会对angular带来什么干扰？再看一轮bootstrap的主题
-
 【如何搭配主题和控件】
 1.控件和主题能不能搭配，首先最关键的问题就是配色。网上有angular material通过thme修改配色的文章【配色也是material使用简便性的一个方面】：
-https://material.angular.io/guide/theming
+https://material.angular.io/guide/theming（angular material的具体操作还是有门槛的）
 2.然后是行为的搭配，再看material design的文章
 3.控件元素大小的改变应该很简单把，大一点小一点也不太影响一致性（相比配色来说）
 下一轮可以放心使用material design的主题替换现有主题了
@@ -57,11 +70,19 @@ https://blog.csdn.net/henrypt/article/details/89214492
 再看@mixin
 
 列2个ng-bootstrap的主题方案
+
+【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
 @input、@output再看一遍
 Module再看一遍
 7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
 依赖注入【自己写个依赖注入的？】
 ViewEncapsulation
+怎样理解Angular2中的ViewContainerRef，ViewRef和TemplateRef？https://www.zhihu.com/question/54554874/answer/140995768
+View Encapsulation in Angular：
+https://www.tektutorialshub.com/angular/angular-view-encapsulation/
+https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
+Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
+
 
 angular封装弹出框：
 https://www.jianshu.com/p/fbe27a9e0822
@@ -77,9 +98,8 @@ Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add
 ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
 
 
-依赖node_modules配置的2项任务：
-  1.fork一下ng-alain，跑起来
-  2.把paper-dashboard-angular-master的代码学习一遍
+1.fork一下ng-alain，跑起来
+2.把paper-dashboard-angular-master的代码学习一遍
 
 使用ng-alain这种东西需要先fork一次，然后新项目以fork出来的版本为基准再fork一次
 
@@ -90,7 +110,7 @@ ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/d
 2.对着我的2个模板看2套控件，看看控件封装了哪些精妙的操作，对模板带来了哪些互补
 3.ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
 还有搜索ng2-开头的控件
-然后把ng-alain和paper-dashboard弄好（node_modules）
+然后把ng-alain和paper-dashboard弄好
 
 
 【不好搞的话就分前后端分别处理】
@@ -341,8 +361,6 @@ https://code-maze.com/angular-material-navigation/
 
 =================================================================
 
-【ckeditor修复引出的问题】
-1.如果不在项目路径下npm install，则package.json里面引用不会加进去；2.在项目路径下npm install，包没有放在全局路径下，不够干净
 0.【修复ckeditor（ng update和ng audit fix后用不了了）】
 现在还有提示：
 found 2 high severity vulnerabilities
@@ -493,7 +511,6 @@ jwt已调通，但是怎么从header里面把token传给前端还没解决，现
 
 再看指令和ngModel
 
-（已下载）看看ngx-admin的登陆路由（搞明白后再搞theme）：https://github.com/akveo/ngx-admin
 1.以后从github下载代码：尽量不要下载zip包，直接clone（用好clone和fork，提升生产力，有可能幅度还不小，要重视）；
 
 或许我还是太急于求成了，搞熟一些组件库和theme，内网还有那么多待解决的问题要嚼烂。
@@ -523,8 +540,6 @@ GitHub开源的10个超棒后台管理面板（有几个angular的）：https://
 权限的对应关系是否需要一个单独的表或者放入permission表，做了才知道
 guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
 在 angular 6 中利用 JWT 进行身份认证：https://www.jianshu.com/p/a9a535edf79f
-
-用别人的控件的最大问题是很容易丧失灵活性，用angular material又遇到这个问题了
 
 把测试环境、生产环境的打包搞好，把严格打包再理解一下
 
