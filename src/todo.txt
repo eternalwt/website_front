@@ -24,13 +24,34 @@
 【最近几天效率不行，是不是因为有点贪多、急功近利？】【节制】
 【周五重点】bug分类。看房县新闻，分析局势，剪胡子
 
-====================================================================================
+==============================================================================================
 
-3月3号【周二】
+【下一步3步走】
+
+1.再搞一轮基础
+  【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
+  @input、@output再看一遍
+  Module再看一遍
+  7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
+  依赖注入【自己写个依赖注入的？】
+  ViewEncapsulation
+  怎样理解Angular2中的ViewContainerRef，ViewRef和TemplateRef？https://www.zhihu.com/question/54554874/answer/140995768
+  View Encapsulation in Angular：
+  https://www.tektutorialshub.com/angular/angular-view-encapsulation/
+  https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
+  Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
+
+2.再过一轮主题、控件、配色方案，试用ngx-控件：
+https://blog.csdn.net/m0_38106923/article/details/101050788
+https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
+https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
+
+3.再搞一轮基础设施，例如预览、富文本的图片上传、excel导出。完了整理本文档
+
+==============================================================================================
+
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
-【试一下别人推荐的搜索方式】：https://www.zhihu.com/question/309682777/answer/580120248
-github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
 
 Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
 
@@ -45,7 +66,6 @@ https://segmentfault.com/a/1190000015647566
 https://segmentfault.com/a/1190000012086737
 https://angular.io/guide/component-styles
 
-搞不动了，3号之前只搞最简单的，恢复心力。
 【如果搞不动了换个思路：框架搭建我已经突破了，下一步可以用2个办法提升：1.面向问题编程；2.面向知识缺陷编程】
 【今晚】擦地、擦厨房，掸灰
 
@@ -71,19 +91,6 @@ https://blog.csdn.net/henrypt/article/details/89214492
 
 列2个ng-bootstrap的主题方案
 
-【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
-@input、@output再看一遍
-Module再看一遍
-7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
-依赖注入【自己写个依赖注入的？】
-ViewEncapsulation
-怎样理解Angular2中的ViewContainerRef，ViewRef和TemplateRef？https://www.zhihu.com/question/54554874/answer/140995768
-View Encapsulation in Angular：
-https://www.tektutorialshub.com/angular/angular-view-encapsulation/
-https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
-Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
-
-
 angular封装弹出框：
 https://www.jianshu.com/p/fbe27a9e0822
 https://www.itsvse.com/forum.php?mod=viewthread&tid=5704&page=1
@@ -97,9 +104,13 @@ Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npm
 Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
 ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
 
+2.把paper-dashboard-angular的代码看一下：https://github.com/creativetimofficial/paper-dashboard-angular
+paper-dashboard-angular不适合直接用，不够完善，并且免费版功能更是少。能不能靠ngx-控件提升完成度？
+【试一下别人推荐的搜索方式】：https://www.zhihu.com/question/309682777/answer/580120248
+github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
+往前进一步：在我的paper-dashboard-angular-master项目中加一个简单的网站模板
+看一下paper-dashboard-angular的module组织，和看公司代码一样，不要有疲劳感
 
-1.fork一下ng-alain，跑起来
-2.把paper-dashboard-angular-master的代码学习一遍
 
 使用ng-alain这种东西需要先fork一次，然后新项目以fork出来的版本为基准再fork一次
 
@@ -110,7 +121,7 @@ ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/d
 2.对着我的2个模板看2套控件，看看控件封装了哪些精妙的操作，对模板带来了哪些互补
 3.ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
 还有搜索ng2-开头的控件
-然后把ng-alain和paper-dashboard弄好
+然后把ng-alain
 
 
 【不好搞的话就分前后端分别处理】
@@ -219,7 +230,7 @@ angular的封装是封装出了新的标签和行为（一个控件内部又封�
 6.配置redis
 
 超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）
-【提高优先级】思考一下面包屑的用处大不大，看10个angular material的文章
+【提高优先级】思考一下面包屑的用处大不大
 【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 2.mybatis继续看整合
 3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
@@ -527,7 +538,8 @@ angular好用的插件集合（持续更新中）【1.熟悉一些，看看对�
 https://blog.csdn.net/daqiang012/article/details/86617513
 https://www.jianshu.com/p/48e5d02a2f88
 
-GitHub开源的10个超棒后台管理面板（有几个angular的）：https://blog.csdn.net/m0_38106923/article/details/101050788
+GitHub开源的10个超棒后台管理面板（有几个angular的），看看通用的除了lte-admin还有哪些较好的（改造）：
+https://blog.csdn.net/m0_38106923/article/details/101050788
 
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
 12月31日对前端样式的最新理解：material组件（封装功能） + prebuilt-theme负责颜色 + 布局和宽高 + 图片 + 阴影等更高级定制
@@ -609,8 +621,6 @@ dashboard：完成热力图、中国地图（没啥难度，需要的只是行�
 移植公司里面的http，增大代码健壮性
 继续搞基础设施，继续推敲每一段代码，提升自己
 解决搭框架之后的第二个问题，怎么加速，能否到github上搜一些代码
-往前进一步：在我的paper-dashboard-angular-master项目中加一个简单的网站模板
-看一下paper-dashboard-angular的module组织，和看公司代码一样，不要有疲劳感
 
 模板与angular的整合：模板的每个页面都对应angular的一个component（这个心里没底，单独找一下午开一个工程试一下）
 指导思想：用angular/material把后端和前端基础设施逻辑写好，美化界面是最后一步
