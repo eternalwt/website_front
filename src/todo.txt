@@ -30,16 +30,21 @@
 
 1.再搞一轮基础
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
-  Module再看一遍
-  7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
   依赖注入【自己写个依赖注入的？】
-  ViewEncapsulation
+  7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
+  Angular 2 ElementRef：
+  Angular 2 ViewChild & ViewChildren：https://zhuanlan.zhihu.com/p/25769523
+  @ViewChild在一个组件里面也能用到（我用过不少次）
+  Angular 2 ContentChild & ContentChildren：https://zhuanlan.zhihu.com/p/25791099
   怎样理解Angular2中的ViewContainerRef，ViewRef和TemplateRef？https://www.zhihu.com/question/54554874/answer/140995768
-  View Encapsulation in Angular：
+  ViewContainerRef：https://hackernoon.com/exploring-angular-dom-abstractions-80b3ebcfc02
+  什么是Shadow DOM？https://segmentfault.com/a/1190000017970486
+  使用 shadow DOM：https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Using_shadow_DOM
+  View Encapsulation in Angular【看看那些自定义组件库有没有用到这个东东】：
   https://www.tektutorialshub.com/angular/angular-view-encapsulation/
   https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
   Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
-  Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
+  
   Auth Guard in Angular 7 Login Example【看看有没有我关心的那个事件的问题】：https://yogeshdotnet.com/auth-guard-in-angular-7-login-example/
   @HostBinder and @HostListner Example in angular 2|4|5|6|7：https://yogeshdotnet.com/hostbinder-and-hostlistner-example-in-angular-24567/
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
@@ -54,9 +59,13 @@ https://blog.csdn.net/qq_36321909/article/details/90520713
 https://blog.csdn.net/Null_Bugs/article/details/100009476
 https://blog.csdn.net/u010313979/article/details/83243664
 https://blog.csdn.net/lyj4495673/article/details/81842220
+BUILDING ANGULAR 2 COMPONENTS ON THE FLY: A DIALOG BOX EXAMPLE：
+  https://www.lucidchart.com/techblog/2016/07/19/building-angular-2-components-on-the-fly-a-dialog-box-example/
 Customizing Bootstrap 3 in Angular 2：https://olepetterdahlmann.com/2016/10/15/customizing-bootstrap-3-in-angular-2/
 
 3.再搞一轮基础设施，例如预览、富文本的图片上传、excel导出。完了整理本文档
+
+4.公司工作：excel的问题再过一遍；做实验；通过外网部署的看前端代码
 
 ==============================================================================================
 
@@ -67,6 +76,10 @@ https://angular-academy.com/angular-architecture-best-practices/
 https://aglowiditsolutions.com/blog/angular-best-practices/
 https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/
 https://code-maze.com/angular-best-practices/
+
+box-sizing有哪些属性：
+https://www.jianshu.com/p/9c7487f4e89a
+https://www.cnblogs.com/jc2182/p/11595623.html
 
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
@@ -153,11 +166,7 @@ github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
   把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343
   文件上传前端：1.控件及样式；2.进度
 
-
-
-
-
-
+echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.html
 
 ====================================================================================
 
@@ -180,7 +189,6 @@ github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
 
 读一下我的form代码，按钮和input样式先改过来
-
 
 学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
 Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
@@ -207,7 +215,6 @@ https://github.com/ui-router/angular
 【双管齐下】
   1.用现有的material项目练技术
   2.根据功能点多方位评估ng-alain这样的主题的能力
-
 
 开发OA和开发互联网应用前端和后端技术栈都是不同的
 
@@ -236,7 +243,7 @@ angular的封装是封装出了新的标签和行为（一个控件内部又封�
 
 【25号】
 看angular material样式表、看控件（看material，对后端的表）
-调样式(indigo-pink.css)：1.表格布局；2.按钮和选框的颜色为啥是红色的；3.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？5.表格的样式
+调样式(indigo-pink.css)：1.表格布局；2.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？5.表格的样式
 或许应该搜material 8？
 看material教程，把红点和圆圈做出来
 【把add-article的表单稍微规范化一下，无用代码干掉】

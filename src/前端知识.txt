@@ -63,6 +63,7 @@ schematics是什么（有可能我已经用到了？）：https://www.jianshu.co
 The 7 Pro Tips To Get Productive With Angular CLI & Schematics：
 https://hackernoon.com/%EF%B8%8F-the-7-pro-tips-to-get-productive-with-angular-cli-schematics-b59783704c54
 Angular Schematics 三部曲之 Add：https://zhuanlan.zhihu.com/p/101546474
+https://zhuanlan.zhihu.com/p/57236454
 
 【比较一下】
 从事件创建：fromEvent
@@ -392,7 +393,6 @@ material design的主题 + angular material
 angular无用代码扫描
 
 Angular入口组件（entry component）与声明式组件的区别详解【理解了加载，有些东西可以放在entrycomponents里面】：https://www.jb51.net/article/137947.htm
-angular 动态组件类型详解(四种组件类型)：https://www.jb51.net/article/106378.htm
 
 Top Angular Component Libraries to Try in 2020：https://aglowiditsolutions.com/blog/top-angular-component-libraries/
 Best Angular UI Component Libraries：https://www.ngdevelop.tech/best-angular-ui-component-libraries/
@@ -494,8 +494,8 @@ https://www.ctolib.com/mip/maintained-angular.html
 
 angular material的主题（material-dashboard）：
 https://ampersandacademy.com/tutorials/java/angular-material-6-free-theme
-【上面的主题完成度很低，例如：1.没有二级菜单；2.input元素示例太少；3.上方红点样式很差、点击个人弹出菜单样式很差；4.左侧边栏收起后右侧没有联动】
-基于 Angular7 和 material2 的中后台解决方案【ng-notadd，代码跑不起来】：https://www.v2ex.com/t/504621
+【上面的主题功能太简单(完成度很低)，【如果有特别简单的项目也不是不可以尝试】。例如：1.没有二级菜单；2.input元素示例太少；3.上方红点样式很差、点击个人弹出菜单样式很差；4.左侧边栏收起后右侧没有联动】
+基于 Angular7 和 material2 的中后台解决方案【ng-notadd，代码跑不起来，如果用的话可以修复一下】：https://www.v2ex.com/t/504621
 这个网站有现成的：https://startangular.com/
 https://www.creative-tim.com/product/material-dashboard-angular2
 https://material.angular.io/guide/theming
@@ -763,7 +763,6 @@ version (8.0.4). The local Angular CLI version is used.
 最小间隔的问题没搞明白，minValueSpan好像不行
 
 如何自己实现一个 React 框架：https://pomb.us/build-your-own-react/
-Java动态追踪技术探究：https://blog.csdn.net/m0_37941483/article/details/103447804
 
 tree-shaking：
 https://www.cnblogs.com/liuxinheng/articles/9964650.html
@@ -1637,7 +1636,6 @@ https://blog.csdn.net/qlin_11/article/details/99302292
 跨域踩坑经验总结（内涵：跨域知识科普）【还得看】：https://ningyu1.github.io/site/post/92-cors-ajax/
 
 工作顺序：
-3.ViewContainerRef等高级特性
 4.更方便第debug和提升效率
 建directive并使用
 
@@ -1713,11 +1711,6 @@ https://developpaper.com/on-rxjs-websocket/
 https://www.smartspate.com/websockets-in-angular/
 https://gearheart.io/blog/auto-websocket-reconnection-with-rxjs-with-example/
 
-
-动态组件
-ViewContainerRef【本地搭起来后，可以做实验】：
-https://zhuanlan.zhihu.com/p/25730650
-https://zhuanlan.zhihu.com/p/27069744
 
 webpack4 + angular6 + ng-zorro-antd的脚手架：https://segmentfault.com/a/1190000016655736
 使用yeoman快速搭建angular项目：
@@ -1801,9 +1794,29 @@ ViewChild、ContentChild，从ViewChild与view关联的角度去思考
 Output和Input是两个装饰器，是Angular2专门用来实现跨组件通讯，双向绑定等操作所用的：https://blog.csdn.net/wf19930209/article/details/79349164
 
 
+ElementRef简介【重要，里面还谈到了setTimeout的问题，涉及到重大的设计问题】：
+https://www.w3cschool.cn/angular/angular-un1i24nx.html
+activeRoute._handle里面就用到componentRef
+ComponentRef表示通过ComponentFactory创建的组件的实例：https://www.kancloud.cn/wujie520303/angular2_note/263097
+ElementRef & TemplateRef & ViewContainerRef：
+https://www.jianshu.com/p/71c2762ddc60
+https://www.cnblogs.com/zero-zm/p/9860253.html
+Angular 2 TemplateRef & ViewContainerRef【这个分析方法很牛B】：https://zhuanlan.zhihu.com/p/25730650
+ComponentFactoryResolver【组件动态加载】：
+https://www.jianshu.com/p/5c523ff5442b
+https://segmentfault.com/a/1190000009175508
+https://www.jianshu.com/p/044c056cf763
+https://www.jianshu.com/p/40dec12a278c
+https://segmentfault.com/a/1190000012100278
 templateRef对应html5的<template>元素：
 https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template
 https://www.jb51.net/article/114683.htm
+动态组件
+ViewContainerRef【本地搭起来后，可以做实验】：
+https://zhuanlan.zhihu.com/p/25730650
+https://zhuanlan.zhihu.com/p/27069744
+angular 动态组件类型详解(四种组件类型)：https://www.jb51.net/article/106378.htm
+
 
 枚举用export class，环境用export const environment
 
@@ -1924,17 +1937,6 @@ https://blog.51cto.com/7308310/2325925?source=dra
 http://pinkyjie.com/2016/02/21/e2e-testing-in-angular/
 
 从我接触asp.net开始，表格就一直是个重要的问题
-
-ElementRef简介【重要，里面还谈到了setTimeout的问题，涉及到重大的设计问题】：https://www.w3cschool.cn/angular/angular-un1i24nx.html
-activeRoute._handle里面就用到componentRef
-ComponentRef表示通过ComponentFactory创建的组件的实例：https://www.kancloud.cn/wujie520303/angular2_note/263097
-ElementRef & TemplateRef & ViewContainerRef：https://www.jianshu.com/p/71c2762ddc60
-ComponentFactoryResolver【组件动态加载】：
-https://www.jianshu.com/p/5c523ff5442b
-https://segmentfault.com/a/1190000009175508
-https://www.jianshu.com/p/044c056cf763
-https://www.jianshu.com/p/40dec12a278c
-https://segmentfault.com/a/1190000012100278
 
 一句话概括：
 如果你的是小项目，别管那么多，一个根module解决所有；
