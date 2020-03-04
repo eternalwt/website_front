@@ -141,8 +141,6 @@ ES6 Tutorial：
 https://www.tutorialspoint.com/es6/index.htm
 https://www.javascripttutorial.net/es6/
 
-比较ng-content与router-outlet
-
 http从observable到subscription都看清楚
 
 Java里面也有NaN（double的除法），把java和JS里面的NaN再学习一下：
@@ -205,7 +203,21 @@ https://www.analyticsvidhya.com/blog/2019/06/build-machine-learning-model-in-you
 
 word书签怎么添加、使用、显示和删除标签：https://jingyan.baidu.com/article/948f5924faab49d80ef5f965.html
 
+比较ng-content(投影)与router-outlet
 看看ng-template、ng-container、ng-content与我们系统自定义控件的关系：https://www.jianshu.com/p/388461631b1d
+<ng-container 指令：
+https://blog.csdn.net/weixin_39169232/article/details/84901665
+https://www.jianshu.com/p/0f5332f2bbf8
+https://www.jianshu.com/p/388461631b1d
+使用ng-content进行组件内容投射：
+https://www.cnblogs.com/laixiangran/p/8723166.html
+https://www.cnblogs.com/mttcug/p/8004447.html
+https://segmentfault.com/a/1190000014691169
+One of the Angular features that help us the most in building reusable components is Content Projection and ng-content：
+https://blog.angular-university.io/angular-ng-content/
+https://scotch.io/tutorials/angular-2-transclusion-using-ng-content
+自定义标签（组件）里面能套标签也是用ng-content：
+https://alligator.io/angular/content-projection-angular/
 ng-template使用技巧：https://zhuanlan.zhihu.com/p/50476699
 使用 * 语法糖的结构指令，最终都会转换为 <ng-template> 或 <template> 模板指令，模板内的内容如果不进行处理，是不会在页面中显示的：https://www.jianshu.com/p/388461631b1d
 如何用好ng-template。sw-grid-table里面套了ng-template
@@ -370,11 +382,6 @@ material design的主题 + angular material
 2.7.ng-alain + ng-zorro
 分析各个类别的优缺点
 
-Ant Design Pro：
-https://www.cnblogs.com/freely/p/10874297.html
-https://www.zhihu.com/question/309682777/answer/580120248
-https://www.zhihu.com/question/52768631
-
 3.2.jhipster单独研究：
 	https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
 	https://www.zhihu.com/question/51082079/answer/157820426
@@ -530,6 +537,8 @@ npm audit fix：https://www.cnblogs.com/lhuser/p/11107520.html
 
 jQWidgets
 jQuery是过时了，Github去掉了jQuery代码，BootStrap5也打算去掉jQuery。但并不代表jQuery没有用处了，做页面(Page)的时候还是需要的：https://www.zhihu.com/search?type=content&q=ng-bootstrap
+和 jQuery 说再见，Bootstrap 5 将移除对其依赖：https://www.oschina.net/news/104410/bootstrap5-will-remove-jquery
+前端三大框架以及jquery与bootstrap这种框架有什么（概念上、范畴上的）区别？https://www.zhihu.com/question/304757674/answer/546374749
 bootstrap中使用了大量的dom操作，实际的vue开发中，一点jq都不用。
 ng-bootstrap、ngx-bootstrap、react-bootstrap、bootstrap-vue这种项目结合的，这类项目主要作用就是用框架重新实现了Bootstrap原本用jQuery实现的那些Component。现在这样用的越来越少了，而是直接用类似Ant Design这种原生就是用框架实现的组件库。
 前端CSS框架很多比如  Bootstrap、 Bulma、Foundation、Milligram、Pure、Semantic、 UIKit：https://www.zhihu.com/question/265026551
@@ -539,20 +548,6 @@ Github 上有什么好看的前端后台项目模板?https://www.zhihu.com/quest
 angular2 中使用第三方组件样式调整：https://blog.csdn.net/cut001/article/details/70924300
 
 =========================================================================================
-
-<ng-container 指令：
-https://blog.csdn.net/weixin_39169232/article/details/84901665
-https://www.jianshu.com/p/0f5332f2bbf8
-https://www.jianshu.com/p/388461631b1d
-使用ng-content进行组件内容投射：
-https://www.cnblogs.com/laixiangran/p/8723166.html
-https://www.cnblogs.com/mttcug/p/8004447.html
-https://segmentfault.com/a/1190000014691169
-One of the Angular features that help us the most in building reusable components is Content Projection and ng-content：
-https://blog.angular-university.io/angular-ng-content/
-https://scotch.io/tutorials/angular-2-transclusion-using-ng-content
-自定义标签（组件）里面能套标签也是用ng-content：
-https://alligator.io/angular/content-projection-angular/
 
 bootstrap 是 css 框架，bootstrap 是属于传统形式的开发，通过约定好的模板形式和类名可以达到想要的效果，但带来的问题是每次都要复制 html，而且类名因为全在全局中，可能造成样式冲突。
 如果是组件库开发网站，可以自己写一个公共样式文件，写入 需要重置的样式以及常用的工具类像 float-left，float-right，clearfix 等，或者直接复制 bootstrap 相关的代码也可以。
@@ -972,15 +967,11 @@ npm install包的全局安装路径：https://flaviocopes.com/where-npm-install-
 Angular6、7 自动下载安装所有依赖包模块：https://blog.csdn.net/Nfboys/article/details/90019578
 node_modules同时支持ts、js语言把？
 
-
 zone.js，模板AST，动态组件，观察者模式+依赖注入隐藏状态管理细节...
 Angular 中的容器组件：https://zhuanlan.zhihu.com/p/87333832
 没错，我就是要吹爆Angular：https://zhuanlan.zhihu.com/p/38430368
-
-
 为什么用angular的比用vue react的少那么多？：https://www.zhihu.com/question/355760849/answer/938934606
 
-5.webSocket继续调试
 canva实践小实例 - 马赛克效果：https://www.cnblogs.com/liugang-vip/p/5442878.html
 Angular2使用Guard和Resolve进行验证和权限控制：https://www.jb51.net/article/112016.htm
 ES6-生成器及其实现：https://www.jianshu.com/p/154804e7b3cf
@@ -990,11 +981,7 @@ angular的12个经典问题，看看你能答对几个？（里面有提到codel
 JS函数名一样，一个2个参数，一个1个参数，为啥不行？
 还有函数名和变量名一样为啥不行？
 有时候人们会简单的把发布订阅模式和观察者模式混为一谈，比如上面的一峰老师，其实两者还是有些区别的。至少它们的英文名称不同：Observer vs Pub-Sub：https://www.jianshu.com/p/e37ca8369162/
-放假：
-1.思考自增id方案；
-2.对比@ViewChild和@Input、@Output
 [译]现代框架存在的根本原因：https://juejin.im/post/5d1df53fe51d4510a5033627
-前端三大框架以及jquery与bootstrap这种框架有什么（概念上、范畴上的）区别？https://www.zhihu.com/question/304757674/answer/546374749
 ES6、7、8、9新特性：
 https://www.jianshu.com/p/9da4aa1c9970
 https://juejin.im/post/5c19c8105188251920597c0d
@@ -1253,6 +1240,7 @@ viewerjs也是基础设施【把几种方式都对比一下】
 Ant Design Pro是vue的：
 https://www.cnblogs.com/freely/p/10874297.html
 https://www.zhihu.com/question/52768631
+https://www.zhihu.com/question/309682777/answer/580120248
 
 angular单元测试和junit一样，最需要关注的是启动原理
 
@@ -1695,15 +1683,6 @@ angular 配置开发环境、测试环境、生产环境：
 https://www.cnblogs.com/zero-zm/p/9845244.html
 https://www.jianshu.com/p/b30ed075c132
 
-推荐使用@HostListener和@HostBinding，而不是元数据的host属性
-保持单例服务的使用规则，服务用来在特性模块或者应用中共享数据和方法
-把服务注入在最高层的组件／模块中，使得该单例服务能在子组件、子模块中共享
-使用@Injectable装饰服务类，而不是@Inject装饰参数
-跟数据相关的操作，比如xhr请求，本地储存等抽象成服务
-
-如果不用父子组件，eventEmitter通信可以借助service和EventEmitter的subscribe方法【思考一下实现，能否多个地方同时订阅？】：
-https://segmentfault.com/a/1190000011425280?utm_source=tag-newest
-
 比较枚举和export const environment定义方式的不同
 
 Using Angular Augury to Debug Your Code：
@@ -1714,7 +1693,6 @@ AOT与JIT：
 https://segmentfault.com/a/1190000010906373
 https://segmentfault.com/a/1190000011562077
 https://www.jianshu.com/p/6cd8f09bc03f
-
 
 @angular/core里面的内容清单：https://angular.io/api/core
 
@@ -1771,9 +1749,57 @@ HttpClient最终到底封装的是fetch还是XMLHttpRequest？
 Angular 8 HttpClient “Http failure during parsing”：https://www.jianshu.com/p/64e10c705eb9
 前一次用window.location.href配合GetMapping是可以成功的
 
+@Self、@Host、@Optional：
+https://www.jianshu.com/p/d4f9cde8350e
+https://segmentfault.com/a/1190000015862547?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com&share_user=1030000000178452
+A curious case of the @Host decorator and Element Injectors in Angular：https://indepth.dev/a-curious-case-of-the-host-decorator-and-element-injectors-in-angular/
+推荐使用@HostListener和@HostBinding，而不是元数据的host属性
+
+保持单例服务的使用规则，服务用来在特性模块或者应用中共享数据和方法
+把服务注入在最高层的组件／模块中，使得该单例服务能在子组件、子模块中共享
+使用@Injectable装饰服务类，而不是@Inject装饰参数
+跟数据相关的操作，比如xhr请求，本地储存等抽象成服务
+如果不用父子组件，eventEmitter通信可以借助service和EventEmitter的subscribe方法【思考一下实现，能否多个地方同时订阅？】：
+https://segmentfault.com/a/1190000011425280?utm_source=tag-newest
+
+angualr：属性绑定[]、事件绑定()、插值{}：https://blog.csdn.net/qq_40876059/article/details/89254742
+“圆括号用于事件绑定，就是触发元素上的事件，绑定的方法就会响应”，那么ngModel也是一个事件？
+How to use @input Decorator in Angular 6,7：https://www.tutscoder.com/how-to-use-input-decorator-in-angular-67/
+让子组件执行父组件的方法(父子组件传值的方式)：https://www.jianshu.com/p/b2d9164c06e5
+Angular is based on a one-directional data flow and does not have two-way data binding.
+Understanding @Output and EventEmitter in Angular：https://dzone.com/articles/understanding-output-and-eventemitter-in-angular
+@Output能不能和EventEmitter以外的其他类型一起用？
 angular @input get set【和java相比，关键字写在属性方法前面，且方法是属性第一个字母大写的】：
 https://segmentfault.com/a/1190000008780672?utm_source=tag-newest
 https://blog.csdn.net/railsbug/article/details/79995033
+@ViewChild场景：the parent needs to access a function inside the child
+Angular @ViewChild: In-Depth Explanation (All Features Covered)：https://blog.angular-university.io/angular-viewchild/
+@ViewChild 与 @ContentChild 的区别：
+  https://www.cnblogs.com/shcrk/p/9236758.html
+  https://www.jianshu.com/p/4a203e5cb6c1
+@ViewChild、@ViewChildren、@ContentChild、@ContentChildren：https://www.joshmorony.com/the-difference-between-viewchildren-and-contentchildren/
+Angular4父子组件传递@Input和@Output【对比原生JS的模块化、对比其他语言。这里是否也体现了双向数据传递，为啥angular能方便做到其他语言不行？】：
+https://blog.csdn.net/h273979586/article/details/79853825
+
+其它元数据装饰器用类似的方式来指导 Angular 的行为。 例如@Injectable、@Input和@Output等是一些最常用的装饰器
+Angular 元数据 (Metadata)：https://www.cnblogs.com/zzy-run-92/p/9397725.html
+Angular学习之组件和@Component（组件从技术上来说其实是一个指令）：
+https://blog.csdn.net/ano1010/article/details/83240504
+https://blog.csdn.net/it_rod/article/details/79306364
+@Inject
+Angular 进阶：从源码理解@Input绑定是如何被编译和实现的：https://segmentfault.com/a/1190000013473028
+angular中的viewchild提供了访问从组件中访问模板中书写的DOM、子组件和指令的功能：
+https://blog.csdn.net/zgrbsbf/article/details/81329398
+https://blog.csdn.net/hbiao68/article/details/86611457
+父子组件传值@Input @Output @ViewChild：https://blog.csdn.net/xfwdxt/article/details/82111016
+@ViewChild：
+https://www.jianshu.com/p/ac5366abfa74
+https://www.jianshu.com/p/d06daea1d669
+Angular2+ ViewChild & ViewChildren解析：https://blog.csdn.net/xwnxwn/article/details/81839285
+Angualr4-@output与@input：https://blog.csdn.net/dfshsdr/article/details/79775240
+ViewChild、ContentChild，从ViewChild与view关联的角度去思考
+Output和Input是两个装饰器，是Angular2专门用来实现跨组件通讯，双向绑定等操作所用的：https://blog.csdn.net/wf19930209/article/details/79349164
+
 
 templateRef对应html5的<template>元素：
 https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template
@@ -1782,6 +1808,8 @@ https://www.jb51.net/article/114683.htm
 枚举用export class，环境用export const environment
 
 HTML5 新的 Input 类型（注意知识更新）：https://www.w3school.com.cn/html5/html_5_form_input_types.asp
+
+angular的表单设计器 angular-form-builder：https://blog.csdn.net/owzalong/article/details/84809754
 
 如何写出await返回值的效果？
 
@@ -2133,8 +2161,6 @@ ng build及后续
 
 Angular4_使用枚举
 
-自定义前端angular组件如何拥有“属性”？以“app-progress-bar”为例，前端要使用[icon]，后端定义一个@Input icon，类型string
-
 学习一个新框架的几个方面：
 1.环境的搭建（含build、各项配置、编码规范等）；
 2.各概念之间的关联、层次关系等（module、component、service等）；
@@ -2333,27 +2359,6 @@ https://blog.csdn.net/yushulx/article/details/71450923
 TypeScript 3.4发布，新增const断言：http://www.sohu.com/a/306315321_827544
 
 CheckBox的indeterminate属性：https://www.cnblogs.com/birdshome/archive/2005/01/03/85679.html
-
-其它元数据装饰器用类似的方式来指导 Angular 的行为。 例如@Injectable、@Input和@Output等是一些最常用的装饰器
-Angular 元数据 (Metadata)：https://www.cnblogs.com/zzy-run-92/p/9397725.html
-Angular学习之组件和@Component（组件从技术上来说其实是一个指令）：
-https://blog.csdn.net/ano1010/article/details/83240504
-https://blog.csdn.net/it_rod/article/details/79306364
-Angular4父子组件传递@Input和@Output【对比原生JS的模块化、对比其他语言。这里是否也体现了双向数据传递，为啥angular能方便做到其他语言不行？】：
-https://blog.csdn.net/h273979586/article/details/79853825
-@Inject
-Angular 进阶：从源码理解@Input绑定是如何被编译和实现的：https://segmentfault.com/a/1190000013473028
-angular中的viewchild提供了访问从组件中访问模板中书写的DOM、子组件和指令的功能：
-https://blog.csdn.net/zgrbsbf/article/details/81329398
-https://blog.csdn.net/hbiao68/article/details/86611457
-父子组件传值@Input @Output @ViewChild：https://blog.csdn.net/xfwdxt/article/details/82111016
-@ViewChild：
-https://www.jianshu.com/p/ac5366abfa74
-https://www.jianshu.com/p/d06daea1d669
-Angular2+ ViewChild & ViewChildren解析：https://blog.csdn.net/xwnxwn/article/details/81839285
-Angualr4-@output与@input：https://blog.csdn.net/dfshsdr/article/details/79775240
-ViewChild、ContentChild，从ViewChild与view关联的角度去思考
-Output和Input是两个装饰器，是Angular2专门用来实现跨组件通讯，双向绑定等操作所用的：https://blog.csdn.net/wf19930209/article/details/79349164
 
 Angular 模板 (Templates)：https://www.cnblogs.com/zzy-run-92/p/9396756.html
 

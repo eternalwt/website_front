@@ -30,7 +30,6 @@
 
 1.再搞一轮基础
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
-  @input、@output再看一遍
   Module再看一遍
   7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
   依赖注入【自己写个依赖注入的？】
@@ -39,16 +38,35 @@
   View Encapsulation in Angular：
   https://www.tektutorialshub.com/angular/angular-view-encapsulation/
   https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
+  Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
   Angular 内嵌视图、宿主视图：https://www.cnblogs.com/zero-zm/p/9860253.html
+  Auth Guard in Angular 7 Login Example【看看有没有我关心的那个事件的问题】：https://yogeshdotnet.com/auth-guard-in-angular-7-login-example/
+  @HostBinder and @HostListner Example in angular 2|4|5|6|7：https://yogeshdotnet.com/hostbinder-and-hostlistner-example-in-angular-24567/
+  angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
 2.再过一轮主题、控件、配色方案，试用ngx-控件：
+angular6 中使用bootstrap：https://www.cnblogs.com/king94Boy/p/9669284.html
 https://blog.csdn.net/m0_38106923/article/details/101050788
 https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
 https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
+angular 8封装组件：
+https://blog.csdn.net/qq_36321909/article/details/90520713
+https://blog.csdn.net/Null_Bugs/article/details/100009476
+https://blog.csdn.net/u010313979/article/details/83243664
+https://blog.csdn.net/lyj4495673/article/details/81842220
+Customizing Bootstrap 3 in Angular 2：https://olepetterdahlmann.com/2016/10/15/customizing-bootstrap-3-in-angular-2/
 
 3.再搞一轮基础设施，例如预览、富文本的图片上传、excel导出。完了整理本文档
 
 ==============================================================================================
+
+angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识】：
+https://www.agiratech.com/top-10-angular-best-practices/
+https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
+https://angular-academy.com/angular-architecture-best-practices/
+https://aglowiditsolutions.com/blog/angular-best-practices/
+https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/
+https://code-maze.com/angular-best-practices/
 
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
@@ -68,6 +86,13 @@ https://angular.io/guide/component-styles
 
 【如果搞不动了换个思路：框架搭建我已经突破了，下一步可以用2个办法提升：1.面向问题编程；2.面向知识缺陷编程】
 【今晚】擦地、擦厨房，掸灰
+
+npm update
+
+【有机会超过公司的几个方面】
+1.前端品质；
+2.大数据技术（linux及技术栈）；
+3.效率：部署(linux)、组件开发、运维
 
 【如何搭配主题和控件】
 1.控件和主题能不能搭配，首先最关键的问题就是配色。网上有angular material通过thme修改配色的文章【配色也是material使用简便性的一个方面】：
