@@ -93,20 +93,20 @@ Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
 Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
 
 
-    return this.http.post(`/blog/manager/login`, body)
-      .toPromise()
-      .then(res => res);
-  }
- 
-  autoLogin(): Promise<any> {
-    const headers = new HttpHeaders();
-    headers.append('Content-Type', 'application/x-www-form-urlencoded');
-    const param = new HttpParams().set("token",localStorage.getItem("token"));
-    return this.http.post(`/blog/manager/autoLogin`, param,{
-      headers:headers
-    })
+  return this.http.post(`/blog/manager/login`, body)
     .toPromise()
     .then(res => res);
+}
+
+autoLogin(): Promise<any> {
+  const headers = new HttpHeaders();
+  headers.append('Content-Type', 'application/x-www-form-urlencoded');
+  const param = new HttpParams().set("token",localStorage.getItem("token"));
+  return this.http.post(`/blog/manager/autoLogin`, param,{
+    headers:headers
+  })
+  .toPromise()
+  .then(res => res);
 
 
 ================================================================================
@@ -229,11 +229,43 @@ AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/7
 
 一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
 
+module：
+我们需要两样东西来启动应用：1.Angular 的 platformBrowserDynamic().bootstrapModule 函数；2.上文中提到的应用根模块 AppModule
+Angular项目主要文件的作用：https://blog.csdn.net/xnh_565175944/article/details/81022824
+bootstrapModule前干的事情：https://www.baidu.com/link?url=sQs20DPrZED5DTHjLmK6i1fpeuXSMamf2PguSfqWjkI4M3tOh-Hhy42tTgCHe2wn&wd=&eqid=97ef88c40003290b000000025ceccd7c
+理解module存在的意义（及和component、service等的关系，module之间的关系。再看具体的细节）：https://blog.csdn.net/sunshinessx/article/details/88663858
+Angular NgModule - Ahead Of Time Compilation (AOT) And Lazy Loading：https://blog.angular-university.io/angular2-ngmodule/
+An NgModule describes how the application parts fit together. Every application has at least one Angular module, the root module that you bootstrap to launch the application. By convention, it is usually called AppModule：http://www.ngui.cc/news/show-2148.html
+Angular2学习笔记――NgModule：
+https://www.cnblogs.com/dojo-lzz/p/5878073.html
+https://blog.csdn.net/wf19930209/article/details/79737410
+https://blog.csdn.net/plpldog/article/details/82992779
+关于ngModule：哪些放到exports里面？再看一下根模块【怎么控制组件之间的关系，有没有分层的问题？】
 module的最佳实践：
 https://www.cnblogs.com/myfan/p/7458568.html
 https://www.tinymind.net.cn/articles/e932f2cc2dd096
 https://cloud.tencent.com/developer/section/1489514
 https://www.cnblogs.com/shitoupi/p/6641230.html
+Avoiding common confusions with modules in Angular：https://indepth.dev/avoiding-common-confusions-with-modules-in-angular/
+RouterModule.forRoot vs. RouterModule.forChild：
+https://www.cnblogs.com/sea-breeze/p/9106434.html
+https://www.freelancermap.com/freelancer-tips/12255-forroot-forchild-angular
+观察ModuleWithProviders，我们可以看到providers属性是可选的，他们的区别也是在providers上。我们可以将需要确保完全单例的服务移动到forRoot中去。在主模块中导入模块时通过forRoot方法导入，在子模块中导入模块时直接导入。这样就能确保服务只会注册一次了。【看RouteModule的forRoot代码】：
+https://maoji.github.io/angular2-forroot-forchild/
+根module
+除了forRoot还有forFeature
+The NgModule ‘forRoot()’ Convention：https://angularfirst.com/the-ngmodule-forroot-convention/
+angular里forRoot的作用：
+https://www.cnblogs.com/chen8840/p/9511264.html
+https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
+搜了2个RouterModule的文章（理解RouterModule.forRoot）：
+https://johnpapa.net/introducing-angular-modules-routing-module/http://www.thejavageek.com/2017/04/10/angular-routing/
+Angular中RouterModule中的forRoot和forChild方法有什么区别？https://segmentfault.com/q/1010000012057819/a-1020000012072693
+When to Use ES2015 Modules Instead of Angular Dependency Injection (and When Not to)：https://angularfirst.com/when-to-use-es2015-modules-instead-of-angular-dependency-injection-and-when-not-to/
+More than one module matches：https://blog.csdn.net/MengYan_/article/details/79790962
+NgModuleRef
+假如我们有一个shareModule来存放公用的组件(Component)、指令(Directive)、管道(Pipe)、服务（Service）【写代码时可不可以这样做？】
+
 
 使用Chrome DevTools的Timeline分析页面性能：
 js toFixed()【源码】：https://www.cnblogs.com/garfieldzhong/p/11254610.html
@@ -333,16 +365,6 @@ typescript 难点梳理：
 https://www.jianshu.com/p/1f9ce1e52171
 https://segmentfault.com/a/1190000020300143?utm_source=tag-newest
 
-Avoiding common confusions with modules in Angular：https://indepth.dev/avoiding-common-confusions-with-modules-in-angular/
-
-RouterModule.forRoot vs. RouterModule.forChild：
-https://www.cnblogs.com/sea-breeze/p/9106434.html
-https://www.freelancermap.com/freelancer-tips/12255-forroot-forchild-angular
-观察ModuleWithProviders，我们可以看到providers属性是可选的，他们的区别也是在providers上。我们可以将需要确保完全单例的服务移动到forRoot中去。在主模块中导入模块时通过forRoot方法导入，在子模块中导入模块时直接导入。这样就能确保服务只会注册一次了。【看RouteModule的forRoot代码】：
-https://maoji.github.io/angular2-forroot-forchild/
-
-How to Implement Lazy Loading for Components Sample Application Example：https://www.freakyjolly.com/angular-6-lazy-loading-example/
-
 Angular ng常用命令行：https://www.cnblogs.com/zero-zm/p/9940073.html
 
 JS sort的原理是啥？能否自己实现一下：
@@ -391,8 +413,6 @@ material design的主题 + angular material
 4.看ng-bootstrap、ngx-bootstrap等概念，野鸡FreeNG、ng-matero等
 
 angular无用代码扫描
-
-Angular入口组件（entry component）与声明式组件的区别详解【理解了加载，有些东西可以放在entrycomponents里面】：https://www.jb51.net/article/137947.htm
 
 Top Angular Component Libraries to Try in 2020：https://aglowiditsolutions.com/blog/top-angular-component-libraries/
 Best Angular UI Component Libraries：https://www.ngdevelop.tech/best-angular-ui-component-libraries/
@@ -611,8 +631,6 @@ Angular2 中的依赖包详解：https://www.cnblogs.com/Ceri/p/7718782.html
 理解 TypeScript 装饰器（为什么 Angular 不需要 Hooks）：https://zhuanlan.zhihu.com/p/65764702
 
 在angular中，有没有必要把数据模型单独定义（突出数据模型）？https://segmentfault.com/a/1190000015976254
-
-在某个module下加component的方式：https://angularfirebase.com/lessons/how-to-lazy-load-components-in-angular-4-in-three-steps/
 
 更多从官方文档去熟悉更多东西的用法，不要一上来就百度
 
@@ -1250,8 +1268,6 @@ Angular封装utils成服务和原生utils有什么不同？哪个是更好的实
 
 angular firebase
 
-NgModuleRef
-
 MutationObserver的基本使用与实际应用场景：https://blog.csdn.net/qq_41882147/article/details/102950757
 
 网页性能检测-performance：
@@ -1266,8 +1282,6 @@ https://www.cnblogs.com/csguo/p/7614884.html
 https://www.oschina.net/news/108247/math-engine-2-0-released
 https://blog.csdn.net/keda8997110/article/details/50782848
 https://blog.csdn.net/l1161558158/article/details/102479657
-
-假如我们有一个shareModule来存放公用的组件(Component)、指令(Directive)、管道(Pipe)、服务（Service）【写代码时可不可以这样做？】
 
 zone.js：
 https://www.imwhite.com.cn/2019/10/zone-js-tutorial/
@@ -1344,7 +1358,6 @@ Angular路由深入讲解：https://www.jianshu.com/p/e84594f3b935
 Selenium有个新的替代Puppeteer~：https://zhuanlan.zhihu.com/p/87416145
 
 Angular7中使用switchMap改善导航：https://zhuanlan.zhihu.com/p/54656340
-Angular动态创建组件之Portals：https://zhuanlan.zhihu.com/p/59719621
 
 小程序为什么可以简化前端开发？【小程序 + Serverless】
 
@@ -1620,8 +1633,6 @@ axisPointer的设置：https://www.cnblogs.com/benmumu/p/8316652.html
 通过a标签的download属性下载图片：https://blog.csdn.net/hao_0420/article/details/80255281
 html2canvas - Screenshots with JavaScript（原理？）：http://html2canvas.hertzen.com/
 
-More than one module matches：https://blog.csdn.net/MengYan_/article/details/79790962
-
 TypeScript 解决了什么痛点？https://www.zhihu.com/question/308844713/answer/817164546
 
 webStorm开发前端？在现有的server下，webStorm还流行吗？怎么改进的？
@@ -1747,6 +1758,12 @@ https://www.jianshu.com/p/d4f9cde8350e
 https://segmentfault.com/a/1190000015862547?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com&share_user=1030000000178452
 A curious case of the @Host decorator and Element Injectors in Angular：https://indepth.dev/a-curious-case-of-the-host-decorator-and-element-injectors-in-angular/
 推荐使用@HostListener和@HostBinding，而不是元数据的host属性
+@HostBinding()和@HostListener()在自定义指令时非常有用。@HostBinding()可以为指令的宿主元素添加类、样式、属性等，而@HostListener()可以监听宿主元素上的事件。
+https://alligator.io/angular/hostbinding-hostlistener/
+https://www.cnblogs.com/twoheads/p/9396418.html
+【什么场景下用自定义指令比较好？】
+@HostBinder and @HostListner Example in angular 2|4|5|6|7：https://yogeshdotnet.com/hostbinder-and-hostlistner-example-in-angular-24567/
+
 
 保持单例服务的使用规则，服务用来在特性模块或者应用中共享数据和方法
 把服务注入在最高层的组件／模块中，使得该单例服务能在子组件、子模块中共享
@@ -1793,7 +1810,7 @@ Angualr4-@output与@input：https://blog.csdn.net/dfshsdr/article/details/797752
 ViewChild、ContentChild，从ViewChild与view关联的角度去思考
 Output和Input是两个装饰器，是Angular2专门用来实现跨组件通讯，双向绑定等操作所用的：https://blog.csdn.net/wf19930209/article/details/79349164
 
-
+新版本 Angular 需要在不同平台上运行，如 Browser 平台，Mobile 平台或者 Web Worker 平台，所以，就需要在特定平台的 API 和框架接口之间进行一层抽象（abstraction）。Angular 中的这层抽象就包括这些引用类型：ElementRef、TemplateRef、ViewRef、ComponentRef 和 ViewContainerRef：httpshttp://www.fly63.com/article/detial/529
 ElementRef简介【重要，里面还谈到了setTimeout的问题，涉及到重大的设计问题】：
 https://www.w3cschool.cn/angular/angular-un1i24nx.html
 activeRoute._handle里面就用到componentRef
@@ -1811,11 +1828,33 @@ https://segmentfault.com/a/1190000012100278
 templateRef对应html5的<template>元素：
 https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template
 https://www.jb51.net/article/114683.htm
-动态组件
+Angular 2 ElementRef：https://zhuanlan.zhihu.com/p/25701316
+Angular 2 ViewChild & ViewChildren：https://zhuanlan.zhihu.com/p/25769523
+@ViewChild在一个组件里面也能用到（我用过不少次）
+Angular 2 ContentChild & ContentChildren：https://zhuanlan.zhihu.com/p/25791099
+怎样理解Angular2中的ViewContainerRef，ViewRef和TemplateRef？https://www.zhihu.com/question/54554874/answer/140995768
+ViewContainerRef：https://hackernoon.com/exploring-angular-dom-abstractions-80b3ebcfc02
+什么是Shadow DOM？https://segmentfault.com/a/1190000017970486
+使用 shadow DOM：https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Using_shadow_DOM
+View Encapsulation in Angular【看看那些自定义组件库有没有用到这个东东】：
+https://www.tektutorialshub.com/angular/angular-view-encapsulation/
+https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
+动态组件（加载速度、耗内存资源等问题？）
 ViewContainerRef【本地搭起来后，可以做实验】：
 https://zhuanlan.zhihu.com/p/25730650
 https://zhuanlan.zhihu.com/p/27069744
 angular 动态组件类型详解(四种组件类型)：https://www.jb51.net/article/106378.htm
+Angular动态创建组件之Portals：https://zhuanlan.zhihu.com/p/59719621
+在某个module下加component的方式：https://angularfirebase.com/lessons/how-to-lazy-load-components-in-angular-4-in-three-steps/
+How to Implement Lazy Loading for Components Sample Application Example：https://www.freakyjolly.com/angular-6-lazy-loading-example/
+Angular入口组件（entry component）与声明式组件的区别详解【理解了加载，有些东西可以放在entrycomponents里面】：
+https://www.jb51.net/article/137947.htm
+entryComponents：
+https://segmentfault.com/a/1190000012159329
+https://www.sahosofttutorials.com/Course/Angular7/135/
+https://www.code-sample.com/2018/04/angular-6-5-4-entry-component.html
+【NgModule的imports、declarations、entryComponents】
+最后我们需要将动态组件添加到 NgModule 的 entryComponents 属性中
 
 
 枚举用export class，环境用export const environment
@@ -1844,6 +1883,7 @@ Angular部署百度UMEditor富文本编辑器：https://blog.csdn.net/PigBiBiX/a
 使用Angular CLI时的6个最佳实践和专业技巧：https://segmentfault.com/a/1190000012330491
 如何更好地组织Angular项目：https://zhuanlan.zhihu.com/p/63515048
 
+为了能够支持跨平台，Angular 2 通过抽象层封装了不同平台的差异，统一了 API 接口。如定义了抽象类 Renderer 、抽象类 RootRenderer 等。此外还定义了以下引用类型：ElementRef、TemplateRef、ViewRef 、ComponentRef 和 ViewContainerRef 等。下面我们就来分析一下 ElementRef 类：
 
 Grid Layout Tutorial：https://www.qhmit.com/css/grid/tutorial/
 Flexbox Tutorial：https://www.qhmit.com/css/flexbox/tutorial/
@@ -1900,7 +1940,24 @@ retry再看一下
 angular框架的开发难度应该比spring更大吧？
 等学会使用后，再回过头来看响应式编程RxJS的Rx思想
 
+Angular Providers: useClass, useValue, useFactory & useExisting：https://www.tektutorialshub.com/angular/angular-providers/
+multi providers
+Introduction To Dependency Injection And Services In Angular 2：https://www.c-sharpcorner.com/article/introduction-to-dependency-injection-and-services-in-angular-2/
+
+Angular 8 Tutorial：https://www.tutorialandexample.com/angular-8-tutorial/
+Learn Angular with free step by step angular tutorials：https://angular-templates.io/tutorials/about/learn-angular-from-scratch-step-by-step
+React vs Angular: Which Is A Better JavaScript Framework? https://technostacks.com/blog/react-vs-angular/
+
 应该如何看Angular 源码？https://www.zhihu.com/question/336802797/answer/789236310
+
+Decorators：
+https://www.codecompiled.com/typescript-tutorials/decorators-in-typescript/
+https://www.tutorialroom.in/angular-component-decorators/
+https://ultimatecourses.com/blog/angular-decorators
+https://rupeshtiwari.com/decorators-in-typescript-and-angular/
+http://nicholasjohnson.com/blog/annotations-vs-decorators/
+
+Angular 4 Interview Questions：https://www.onlineinterviewquestions.com/angularjs-interview-questions/
 
 OPTIONS请求（OPTIONS preflight request）及跨域相关的知识：https://zhuanlan.zhihu.com/p/75344905
 
@@ -1975,17 +2032,6 @@ RouterLink应该是属于属性型指令【下一个问题是，为什么要用�
 JavaScript和TypeScript交叉口 - 类型定义文件(*.d.ts)：
 https://www.cnblogs.com/silin6/p/7793753.html
 
-根module
-除了forRoot还有forFeature
-The NgModule ‘forRoot()’ Convention：https://angularfirst.com/the-ngmodule-forroot-convention/
-angular里forRoot的作用：
-https://www.cnblogs.com/chen8840/p/9511264.html
-https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
-搜了2个RouterModule的文章（理解RouterModule.forRoot）：
-https://johnpapa.net/introducing-angular-modules-routing-module/http://www.thejavageek.com/2017/04/10/angular-routing/
-Angular中RouterModule中的forRoot和forChild方法有什么区别？https://segmentfault.com/q/1010000012057819/a-1020000012072693
-When to Use ES2015 Modules Instead of Angular Dependency Injection (and When Not to)：https://angularfirst.com/when-to-use-es2015-modules-instead-of-angular-dependency-injection-and-when-not-to/
-
 Angular 深入理解Router：https://blog.csdn.net/xnh_565175944/article/details/82223852
 
 Angular throwError：https://www.concretepage.com/angular/angular-throwerror
@@ -2009,14 +2055,6 @@ augury原理可以看一下了。就用我搭的demo
 1.一个组件就是一个用于控制视图模板的JavaScript类
 2.service用来组合后端业务逻辑
 3.module用来组合前端组件、指令、管道
-
-要了解ES6模块与NgModule的关系
-An NgModule describes how the application parts fit together. Every application has at least one Angular module, the root module that you bootstrap to launch the application. By convention, it is usually called AppModule：http://www.ngui.cc/news/show-2148.html
-Angular2学习笔记――NgModule：
-https://www.cnblogs.com/dojo-lzz/p/5878073.html
-https://blog.csdn.net/wf19930209/article/details/79737410
-https://blog.csdn.net/plpldog/article/details/82992779
-关于ngModule：哪些放到exports里面？再看一下根模块【怎么控制组件之间的关系，有没有分层的问题？】
 
 在模块中打包服务与组件
 
@@ -2114,8 +2152,6 @@ https://blog.csdn.net/idomyway/article/details/85055105
 Angular2 拦截器（页面请求修改Url+headers传值+获取服务器返回的错误信息）：https://www.jianshu.com/p/fbe4880a0f47
 
 
-Angular NgModule - Ahead Of Time Compilation (AOT) And Lazy Loading：https://blog.angular-university.io/angular2-ngmodule/
-
 如何选择合适的前端框架，告别选择恐惧症：https://kb.cnblogs.com/page/569030/
 框架比较：
 https://www.jianshu.com/p/3a4028fe97d0
@@ -2191,9 +2227,7 @@ webpack4-用之初体验：https://www.cnblogs.com/cangqinglang/p/8964460.html
 用html实现excel冻结窗口的功能 固定行固定列：https://blog.csdn.net/qq_38130280/article/details/97157881
 
 import体现了组件之间的关联，对搞懂module、component、service之间的关系很有帮助。
-理解module存在的意义（及和component、service等的关系，module之间的关系。再看具体的细节）：https://blog.csdn.net/sunshinessx/article/details/88663858
 我看智能修复里面好多component没配service也在跑，最佳实践是啥？
-【NgModule的imports、declarations、entryComponents】
 这个文章从根模块和路由开始讲起：https://blog.csdn.net/qq_15096707/article/details/54809805
 浅析Angular2子模块以及异步加载：https://www.jb51.net/article/112027.htm
 
@@ -2459,9 +2493,6 @@ this.navigateByUrl("");是干嘛的？
 angular 生命周期钩子的详细介绍：
 https://angular.cn/guide/lifecycle-hooks
 https://www.jianshu.com/p/8f4c15186d7b
-我们需要两样东西来启动应用：1.Angular 的 platformBrowserDynamic().bootstrapModule 函数；2.上文中提到的应用根模块 AppModule
-Angular项目主要文件的作用：https://blog.csdn.net/xnh_565175944/article/details/81022824
-bootstrapModule前干的事情：https://www.baidu.com/link?url=sQs20DPrZED5DTHjLmK6i1fpeuXSMamf2PguSfqWjkI4M3tOh-Hhy42tTgCHe2wn&wd=&eqid=97ef88c40003290b000000025ceccd7c
 
 InjectionToken与OpaqueToken
 

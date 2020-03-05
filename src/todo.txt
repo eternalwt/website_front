@@ -25,6 +25,22 @@
 【周五重点】bug分类。看房县新闻，分析局势，剪胡子
 
 ==============================================================================================
+module需要再好好看一下
+https://www.cnblogs.com/zhaoran/archive/2013/05/24/3097482.html
+https://www.zhihu.com/tardis/sogou/art/28874230
+https://segmentfault.com/a/1190000009175508
+@ViewChild('tpl', { read: ViewContainerRef })写法：
+union type指的应该是 createdDate: string | Date，好处是啥
+https://www.zhihu.com/tardis/sogou/art/93271927
+动态组件场景？
+Many times we have to set up the headers of the request to track the progress of the request etc…
+把add-user这种目录都改掉
+思考一下http封装的必要性：Since Angular v4.3, we have a new and better way to handle HTTP requests with the HttpClient library. Even though the old HttpModule library is working just fine, it is a recommendation to switch to HttpClient. With the HttpClient library, we receive additional benefits. Error handling is much easier by using HttpErrorResponse class. Moreover, we have the ability to listen to the progress events and we have interceptors which allow us to intercept the HTTP requests.
+
+HTML5 Web Worker：
+https://www.runoob.com/html/html5-webworkers.html
+https://zhuanlan.zhihu.com/p/95021220
+https://blog.csdn.net/donspeng/article/details/83684874
 
 【下一步3步走】
 
@@ -32,21 +48,9 @@
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
   依赖注入【自己写个依赖注入的？】
   7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
-  Angular 2 ElementRef：
-  Angular 2 ViewChild & ViewChildren：https://zhuanlan.zhihu.com/p/25769523
-  @ViewChild在一个组件里面也能用到（我用过不少次）
-  Angular 2 ContentChild & ContentChildren：https://zhuanlan.zhihu.com/p/25791099
-  怎样理解Angular2中的ViewContainerRef，ViewRef和TemplateRef？https://www.zhihu.com/question/54554874/answer/140995768
-  ViewContainerRef：https://hackernoon.com/exploring-angular-dom-abstractions-80b3ebcfc02
-  什么是Shadow DOM？https://segmentfault.com/a/1190000017970486
-  使用 shadow DOM：https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Using_shadow_DOM
-  View Encapsulation in Angular【看看那些自定义组件库有没有用到这个东东】：
-  https://www.tektutorialshub.com/angular/angular-view-encapsulation/
-  https://www.thetechieshouse.com/angular-4-viewencapsulation-scoping-styles/
   Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
   
   Auth Guard in Angular 7 Login Example【看看有没有我关心的那个事件的问题】：https://yogeshdotnet.com/auth-guard-in-angular-7-login-example/
-  @HostBinder and @HostListner Example in angular 2|4|5|6|7：https://yogeshdotnet.com/hostbinder-and-hostlistner-example-in-angular-24567/
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
 2.再过一轮主题、控件、配色方案，试用ngx-控件：
@@ -62,10 +66,16 @@ https://blog.csdn.net/lyj4495673/article/details/81842220
 BUILDING ANGULAR 2 COMPONENTS ON THE FLY: A DIALOG BOX EXAMPLE：
   https://www.lucidchart.com/techblog/2016/07/19/building-angular-2-components-on-the-fly-a-dialog-box-example/
 Customizing Bootstrap 3 in Angular 2：https://olepetterdahlmann.com/2016/10/15/customizing-bootstrap-3-in-angular-2/
+Create Custom Textbox In Angular 8 Using Input And Output Decorators：https://www.c-sharpcorner.com/article/create-custom-textbox-in-angular-8-using-input-and-output-decorators/
+
 
 3.再搞一轮基础设施，例如预览、富文本的图片上传、excel导出。完了整理本文档
 
-4.公司工作：excel的问题再过一遍；做实验；通过外网部署的看前端代码
+4.补CS基础
+
+5.公司工作：excel的问题再过一遍；做实验；通过外网部署的看前端代码
+
+为什么说「动态类型一时爽，代码重构火葬场」？https://www.zhihu.com/question/30072490/answer/1057400004
 
 ==============================================================================================
 
