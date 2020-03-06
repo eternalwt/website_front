@@ -57,8 +57,6 @@ rxjs源码分析
 
 ================================================================================
 
-Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
-
 schematics是什么（有可能我已经用到了？）：https://www.jianshu.com/p/3f630cbb543d
 The 7 Pro Tips To Get Productive With Angular CLI & Schematics：
 https://hackernoon.com/%EF%B8%8F-the-7-pro-tips-to-get-productive-with-angular-cli-schematics-b59783704c54
@@ -72,7 +70,6 @@ https://zhuanlan.zhihu.com/p/57236454
 【需要进一步了解的转换操作】
 改变数据形态：map, mapTo, pluck：https://www.learnrxjs.io/learn-rxjs/operators/transformation/pluck
 时间轴上的操作：delay, timeout, throttle, debounce, audit, bufferTime
-
 
 【比较这两种写法的等价性】
 一般在Angular我们 subscribe 会这么写：
@@ -93,9 +90,9 @@ Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
 Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
 
 
-  return this.http.post(`/blog/manager/login`, body)
-    .toPromise()
-    .then(res => res);
+return this.http.post(`/blog/manager/login`, body)
+	.toPromise()
+	.then(res => res);
 }
 
 autoLogin(): Promise<any> {
@@ -108,9 +105,7 @@ autoLogin(): Promise<any> {
   .toPromise()
   .then(res => res);
 
-
 ================================================================================
-
 
 Mat-Icon List : 900+ Angular Material Icons：
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
@@ -137,6 +132,8 @@ https://www.sevenmentor.com/whats-new-in-angular-9-and-what-are-the-new-features
 https://www.telerik.com/blogs/top-new-features-of-angular-9
 https://www.chapter247.com/blog/learn-about-all-the-new-features-of-angular-9/
 Angular 文档已同步翻译至 9.0 正式版！https://zhuanlan.zhihu.com/p/105549656
+angular9里面material也更新了
+angular9的升级：http://www.linuxeden.com/a/61695
 
 ES6 Tutorial：
 https://www.tutorialspoint.com/es6/index.htm
@@ -153,7 +150,9 @@ https://www.cnblogs.com/cnblogs-jcy/p/8714442.html
 
 响应式编程入门指南 - 通俗易懂 RxJS：https://zhuanlan.zhihu.com/p/102446217
 通俗的方式理解RxJS：https://segmentfault.com/a/1190000008464065
-Hot vs Cold Observables：https://segmentfault.com/a/1190000011052037
+Hot vs Cold Observables：
+https://segmentfault.com/a/1190000011052037
+https://angular-2-training-book.rangle.io/observables/cold_vs_hot_observables
 Rxjs的zip和switchMap方法：https://blog.csdn.net/weixin_39460408/article/details/80995242
 【Rxjs】实例讲解zip和combineLatest操作符的区别：https://blog.csdn.net/u010176097/article/details/102579886
 [译] RxJS: 理解 publish 和 share 操作符：https://zhuanlan.zhihu.com/p/33225623
@@ -230,6 +229,16 @@ AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/7
 一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
 
 module：
+https://angular-2-training-book.rangle.io/modules/introduction
+https://www.pluralsight.com/guides/typescript-angular-understanding-modules
+https://malcoded.com/posts/angular-fundamentals-modules/
+https://www.tektutorialshub.com/angular/angular-routing-between-modules/
+https://www.tutorialspoint.com/angular4/angular4_module.htm
+https://www.intertech.com/Blog/angular-module-tutorial-application-structure-using-modules/
+https://johnpapa.net/introducing-angular-modules-feature-modules-2/
+https://stackoverflow.com/questions/40073941/whats-the-difference-between-an-angular-component-and-module
+https://www.tutorialspoint.com/angular6/angular6_module.htm
+
 我们需要两样东西来启动应用：1.Angular 的 platformBrowserDynamic().bootstrapModule 函数；2.上文中提到的应用根模块 AppModule
 Angular项目主要文件的作用：https://blog.csdn.net/xnh_565175944/article/details/81022824
 bootstrapModule前干的事情：https://www.baidu.com/link?url=sQs20DPrZED5DTHjLmK6i1fpeuXSMamf2PguSfqWjkI4M3tOh-Hhy42tTgCHe2wn&wd=&eqid=97ef88c40003290b000000025ceccd7c
@@ -775,9 +784,6 @@ https://blog.csdn.net/guiyunfan94/article/details/70670203
 
 看一下每个页面是怎么设置样式的，就能前进一大步
 
-Your global Angular CLI version (8.2.0) is greater than your local
-version (8.0.4). The local Angular CLI version is used.
-
 最小间隔的问题没搞明白，minValueSpan好像不行
 
 如何自己实现一个 React 框架：https://pomb.us/build-your-own-react/
@@ -787,6 +793,7 @@ https://www.cnblogs.com/liuxinheng/articles/9964650.html
 https://www.cnblogs.com/smileself/p/9805819.html
 https://blog.csdn.net/huang100qi/article/details/82357141
 https://www.jianshu.com/p/7994b1fc6dfe
+https://juejin.im/entry/590c2798ac502e0065312bc7?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
 
 CREATING A SINGLETON SERVICE IN ANGULAR2：https://octoperf.com/blog/2016/03/29/singleton-service-using-angular2/
 单例服务：https://angular.cn/guide/singleton-services
@@ -1339,6 +1346,8 @@ angular4中的模块预加载的控制和实现：https://blog.csdn.net/happykal
 
 Angular 模块漫谈：https://www.imwhite.com.cn/2019/02/understand-angular-basic-type-scope/
 入门 Webpack，看这篇就够了：https://segmentfault.com/a/1190000006178770?utm_source=tag-newest
+
+【react】Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
 
 EventEmitter：从命令式 JavaScript class 到声明函数式的华丽转身：https://segmentfault.com/a/1190000014287195?utm_source=tag-newest
 
@@ -2455,7 +2464,11 @@ https://www.kaifaxueyuan.com/frontend/angular-6/angular6-event-binding.html
 装饰器
 OnInit
 
-ES6 扩展运算符 三个点（...）把数组元素合入上一级数组：https://blog.csdn.net/zxt1195229475/article/details/79486142
+box-sizing：
+https://www.jianshu.com/p/9c7487f4e89a
+https://www.cnblogs.com/jc2182/p/11595623.html
+
+ES6 扩展运算符 三个点（...）把数组元素合入上一级数组（还有深拷贝的问题）：https://blog.csdn.net/zxt1195229475/article/details/79486142
 
 你也可以使用 TypeScript 和 Dart 来创建 Angular 应用
 

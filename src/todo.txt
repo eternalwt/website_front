@@ -54,7 +54,8 @@ https://blog.csdn.net/donspeng/article/details/83684874
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
 2.再过一轮主题、控件、配色方案，试用ngx-控件：
-angular6 中使用bootstrap：https://www.cnblogs.com/king94Boy/p/9669284.html
+angular6 中使用bootstrap：
+https://www.cnblogs.com/king94Boy/p/9669284.html
 https://blog.csdn.net/m0_38106923/article/details/101050788
 https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
 https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
@@ -79,7 +80,7 @@ Create Custom Textbox In Angular 8 Using Input And Output Decorators：https://w
 
 ==============================================================================================
 
-angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识】：
+angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识（module和service细看，思考echarts代码。再思考service的单例）】：
 https://www.agiratech.com/top-10-angular-best-practices/
 https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
 https://angular-academy.com/angular-architecture-best-practices/
@@ -87,9 +88,24 @@ https://aglowiditsolutions.com/blog/angular-best-practices/
 https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/
 https://code-maze.com/angular-best-practices/
 
-box-sizing有哪些属性：
-https://www.jianshu.com/p/9c7487f4e89a
-https://www.cnblogs.com/jc2182/p/11595623.html
+service应该按照业务划分还是按照功能划分？
+
+还是要看material没解决的一些疑问
+试一下我fork的内容如何更新
+编译一下，看我的文件大小
+以前
+tree shaking细节
+
+在产品经理网站再看搜索的设计，结合myql全文检索做站内搜索
+凤凰和feeds再看
+
+angular部署再看一遍
+思考echarts的service怎么写
+列一下我的功能列表
+angular高德地图插件
+所有模块页面采用懒加载（还是没有搞透）
+
+缓存路由状态
 
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚

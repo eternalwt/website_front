@@ -5,16 +5,16 @@ import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/user/register/register.component';
-import { AddArticleComponent } from './views/article/add-article/add-article.component';
+import { AddArticleComponent } from './views/article/article-add/add-article.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
 import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
-import { AddMenuComponent } from './views/menu/add-menu/add-menu.component';
+import { AddMenuComponent } from './views/menu/menu-add/add-menu.component';
 import { UserListComponent } from './views/user/user-list/user-list.component';
-import { AddRoleComponent } from './views/role/add-role/add-role.component';
+import { AddRoleComponent } from './views/role/role-add/add-role.component';
 import { RoleListComponent } from './views/role/role-list/role-list.component';
 import { AuthGuard } from './auth.guard';
-import { AddUserComponent } from './views/user/add-user/add-user.component';
+import { AddUserComponent } from './views/user/user-add/add-user.component';
 
 
 const routes: Routes = [
