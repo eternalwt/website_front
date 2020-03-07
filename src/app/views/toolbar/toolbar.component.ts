@@ -10,6 +10,8 @@ import { StorageService } from 'src/app/service/storage.service';
 })
 export class ToolbarComponent implements OnInit {
 
+  username: string;
+
   constructor(
     private dataService: DataService,
     private router: Router,
@@ -17,7 +19,7 @@ export class ToolbarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    this.username = this.storageService.getJson("user")["userName"];
   }
 
   logoutClick() {
