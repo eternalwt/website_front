@@ -8,13 +8,30 @@
 
 ===================================================================================
 
-【思考一下】使用ngx-admin这种现成的angular项目，为了代码语义清晰需要把不用的控件排除掉、自己命名新建控件；使用adminLTE这种管理模板除了最开始的侧边栏等，也需要根据需要添加component。那么是不是使用AdminLTE这种还更方便一点？
+Spring Boot: Excel, Csv and Pdf view example：https://aboullaite.me/spring-boot-excel-csv-and-pdf-view-example/
+pdf预览的两种方式【office预览就只能用方法2了把】：
+  1.后端response把pdf写入流，并且根据http协议设置http头告诉浏览器文件类型和直接打开的操作；
+  2.前端使用pdf组件，例如ng2-pdf-viewer、pdf.js、simple-pdf-viewer。这种方式相比第一种，是不是控制更加精细？是不是更精美？较大的文件能不能边下边预览？怎么接收文件？怎么根据pdf协议解析流？【要会对前后端数据】
+office文件预览：
+  https://www.pdftron.com/blog/ms-office-sdk/office-viewer-angular/
+  https://github.com/Marcelh1983/angular-document-viewer
+  https://www.c-sharpcorner.com/article/read-data-from-excel-with-preview-in-asp-net-mvc-using-angular/
+
+搜“angular image preview”
+
+Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
+
+【思考一下】使用ngx-admin这种现成的angular项目，为了代码语义清晰需要把不用的控件排除掉、自己命名新建控件；使用adminLTE这种管理模板除了最开始的侧边栏等，也需要根据需要添加component。那么是不是使用AdminLTE这种还更方便一点？这样看来搜索angular组合好的管理框架意义不大了。
+模板之家上的模板也砍得过去（好像还是没有AdminLTE完善），例如下面的，除了不能更新以外，还有什么优劣势？
+http://www.cssmoban.com/cssthemes/9311.shtml
 
 我不是看过ng-bootstrap网页吗？拿这个配lte-admin或者ngx-admin就OK了
 Nebular + ngx-admin？
 Nebular 是一个 Angular 8 UI 库，基于 Eva Design System 规范：https://www.oschina.net/p/nebular
 https://akveo.github.io/nebular/
 http://www.fly63.com/nav/2799
+
+这个里面提到了很多组件：angular Crystal Report、Idle、Wizard、Image-crop：https://www.c-sharpcorner.com/article/learn-mvc-using-angular-pdf-file-viewer/
 
 AdminLTE很强大，它还缺什么常用的控件？它的样式是不是可以很方便的赋给ngx-控件达到整合的目的？
 AdminLTE的表格没有设置一页多少条的功能
@@ -28,18 +45,29 @@ https://ng-bootstrap.github.io/#/home
 ng-bootstrap可以补充AdminLTE的控件【要试，不动手试永远不确定样式整合的效果。感觉ng-bootstrap好多控件和AdminLTE里面完全一样，看一下AdminLTE的代码比较一下就知道了】：
 Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（节省工作量）、Pagination这种是不是可以先看AdminLTE里面的样式，看准了就可以用了（毕竟自己封装@Input、@Output还是有点麻烦）
 
-2.再看看其他admin管理后台
 【最快的搭AdminLTE的办法是用别人改造成的angular版开源的，直接测试、直接开搞，很轻量没有损失】
 
-【做一些编码】
-(1)先看httpClientService；(2)找word、excel的util，并测试；(3)前端的word、pdf预览做起来
+【看两条牛仔裤，降价了买】
+【3月20号左右：1.前端要达到AdminLTE的里程碑；2.找一下有没有项目机会（如果有就不上班了）】
 
-【周末两大抓手】【周日ng-alain再看一下最终选型】
-1.ngx-控件先试用；
-  ng2-dragula、ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
+【做一些编码】
+(1)先看httpClientService；(2)找word、excel的util，并测试；(3)前端的word、pdf预览做起来；(4)看看有没有ngx版的ztree；(5)看springBatch
+
+【周末两大抓手】【周日ngx-admin再看一下、ng-alain再看一下最终选型】
+1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
+  ng2-dragula：
+  ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
   ng2-charts、ng2-select、ng2-table、ng2-tree
   ngx-treeview：https://gitee.com/iesc/ngx-treeview
   ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
+angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
+https://blog.csdn.net/daqiang012/article/details/86617513
+https://www.jianshu.com/p/48e5d02a2f88
+
+自己做控件，适合做简单布局的把html现有元素及现有组件组合起来的，也更好做。一旦遇到树控件、甚至更极端的富文本编辑器，就直接用三方的。思考一下树控件的难度，试着自己做一下。
+
+再看网站模板（模板网站）
+
 2.看看ngx-admin搭配ng-bootstrap怎么样
 3.ngx-bootstrap就是ng-bootstrap的重命名：https://www.npmjs.com/package/ng-bootstrap
 ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular.【用之前应该先评估一下bootstrap有哪些组件】：
@@ -95,11 +123,6 @@ Many times we have to set up the headers of the request to track the progress of
 把add-user这种目录都改掉
 思考一下http封装的必要性：Since Angular v4.3, we have a new and better way to handle HTTP requests with the HttpClient library. Even though the old HttpModule library is working just fine, it is a recommendation to switch to HttpClient. With the HttpClient library, we receive additional benefits. Error handling is much easier by using HttpErrorResponse class. Moreover, we have the ability to listen to the progress events and we have interceptors which allow us to intercept the HTTP requests.
 
-HTML5 Web Worker：
-https://www.runoob.com/html/html5-webworkers.html
-https://zhuanlan.zhihu.com/p/95021220
-https://blog.csdn.net/donspeng/article/details/83684874
-
 【下一步3步走】
 
 1.再搞一轮基础
@@ -138,14 +161,6 @@ Create Custom Textbox In Angular 8 Using Input And Output Decorators：https://w
 
 ==============================================================================================
 
-angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识（module和service细看，思考echarts代码。再思考service的单例）】：
-https://www.agiratech.com/top-10-angular-best-practices/
-https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
-https://angular-academy.com/angular-architecture-best-practices/
-https://aglowiditsolutions.com/blog/angular-best-practices/
-https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/
-https://code-maze.com/angular-best-practices/
-
 service应该按照业务划分还是按照功能划分？
 
 所有模块页面采用懒加载（还是没有搞透）【懒加载与module概念的关系？】
@@ -153,9 +168,6 @@ routing为啥要弄成module【RouterModule.forRoot(routes)】？forRoot是干�
 自己封装控件后，需要单独用一个module管理吗？
 
 还是要看material没解决的一些疑问
-试一下我fork的内容如何更新
-编译一下，看我的文件大小
-以前
 
 在产品经理网站再看搜索的设计，结合myql全文检索做站内搜索
 凤凰和feeds再看
@@ -253,9 +265,11 @@ github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
 
 echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.html
 
+如果这些解决的差不多了，有时间再思考一下门户和内容发布系统
+
 ====================================================================================
 
-自己搞虽然保持专注很重要，但是更要注意合理修复，否则一个月就废了
+自己搞虽然保持专注很重要，但是更要注意合理休息，否则一个月就废了
 
 进入瓶颈期了，无差别学习一周。另外最近有点发散
 如何用npm建一个裸的工程？能建立多少种自己需要的工程？
@@ -276,7 +290,6 @@ echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.
 读一下我的form代码，按钮和input样式先改过来
 
 学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
-Ant Design 4.0 正式版来了！https://zhuanlan.zhihu.com/p/109633620
 
 1.添加menu页面加树控件
 
@@ -648,21 +661,9 @@ https://github.com/angular/components
 
 比较一下admin和lte的功能及可扩展性
 
-angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
-https://blog.csdn.net/daqiang012/article/details/86617513
-https://www.jianshu.com/p/48e5d02a2f88
-
-GitHub开源的10个超棒后台管理面板（有几个angular的），看看通用的除了lte-admin还有哪些较好的（改造）：
-https://blog.csdn.net/m0_38106923/article/details/101050788
-
 【最关键的】样式可以进一大步，只要这个问题解决，我的框架就搭好了，一马平川
 12月31日对前端样式的最新理解：material组件（封装功能） + prebuilt-theme负责颜色 + 布局和宽高 + 图片 + 阴影等更高级定制
 
-2.web前端展示与后端管理的共存【第一步：先加一个静态目录，能显示出来。是否需要再启动一个server？完全可以分开】
-
-再起一个项目搞ng-notadd，同步连接后端，作为生成项目的备选【使用这个的指导思想和工作一样，不是全部搞懂才能出项目。可以直接用，解决和用户前端的协同问题】：https://www.liangzl.com/get-article-detail-131379.html
-
-把打开时的鉴权写好
 权限的对应关系是否需要一个单独的表或者放入permission表，做了才知道
 guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
 在 angular 6 中利用 JWT 进行身份认证：https://www.jianshu.com/p/a9a535edf79f

@@ -239,6 +239,7 @@ AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/7
 
 一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
 
+Angular 的 NgModule 是为了解决什么问题？https://www.zhihu.com/question/376817427/answer/1056417256
 对module的理解：类比java的package，对代码提供更多层次性，还有其他方面的用处。
 module（There are two types of modules, root modules and feature modules）：
 https://angular-2-training-book.rangle.io/modules/introduction
@@ -405,6 +406,15 @@ Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/articl
 帮你彻底搞懂JS中的prototype、__proto__与constructor（图解）：https://blog.csdn.net/cc18868876837/article/details/81211729
 
 
+angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识（module和service细看，思考echarts代码。再思考service的单例）】：
+https://www.agiratech.com/top-10-angular-best-practices/
+https://angular-academy.com/angular-architecture-best-practices/
+https://aglowiditsolutions.com/blog/angular-best-practices/
+https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/【这个里面讲了几个模块的划分，模块的划分是我们现在最缺乏的，当然最终具体的模块划分还是要根据业务来】
+https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
+https://code-maze.com/angular-best-practices/
+
+
 =========================================================================================
 
 【出产品推荐的方式】
@@ -534,6 +544,9 @@ https://www.zhihu.com/tardis/sogou/art/34137438
 Maintained Angular Projects：
 https://www.ctolib.com/mip/maintained-angular.html
 
+
+GitHub开源的10个超棒后台管理面板（有几个看过）：
+https://blog.csdn.net/m0_38106923/article/details/101050788
 9+ angular free admin templates【这里面有几个我看过，可以借鉴一些基本的，例如icons】：https://bootstrapbay.com/blog/free-angular-templates/
 https://www.creative-tim.com/templates/angular-bootstrap
 Free Angular Admin Template：https://coreui.io/angular/【这个也是分免费和专业版的】
@@ -2441,6 +2454,12 @@ OnInit
 box-sizing：
 https://www.jianshu.com/p/9c7487f4e89a
 https://www.cnblogs.com/jc2182/p/11595623.html
+
+HTML5 Web Worker（JavaScript多线程）：
+http://www.ruanyifeng.com/blog/2018/07/web-worker.html
+https://www.runoob.com/html/html5-webworkers.html
+https://zhuanlan.zhihu.com/p/95021220
+https://blog.csdn.net/donspeng/article/details/83684874
 
 ES6 扩展运算符 三个点（...）把数组元素合入上一级数组（还有深拷贝的问题）：https://blog.csdn.net/zxt1195229475/article/details/79486142
 
