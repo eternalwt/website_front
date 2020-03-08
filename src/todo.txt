@@ -8,15 +8,6 @@
 
 ===================================================================================
 
-Spring Boot: Excel, Csv and Pdf view example：https://aboullaite.me/spring-boot-excel-csv-and-pdf-view-example/
-pdf预览的两种方式【office预览就只能用方法2了把】：
-  1.后端response把pdf写入流，并且根据http协议设置http头告诉浏览器文件类型和直接打开的操作；
-  2.前端使用pdf组件，例如ng2-pdf-viewer、pdf.js、simple-pdf-viewer。这种方式相比第一种，是不是控制更加精细？是不是更精美？较大的文件能不能边下边预览？怎么接收文件？怎么根据pdf协议解析流？【要会对前后端数据】
-office文件预览：
-  https://www.pdftron.com/blog/ms-office-sdk/office-viewer-angular/
-  https://github.com/Marcelh1983/angular-document-viewer
-  https://www.c-sharpcorner.com/article/read-data-from-excel-with-preview-in-asp-net-mvc-using-angular/
-
 搜“angular image preview”
 
 Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
@@ -116,12 +107,6 @@ https://www.cnblogs.com/zhaoran/archive/2013/05/24/3097482.html
 https://www.zhihu.com/tardis/sogou/art/28874230
 https://segmentfault.com/a/1190000009175508
 @ViewChild('tpl', { read: ViewContainerRef })写法：
-union type指的应该是 createdDate: string | Date，好处是啥
-https://www.zhihu.com/tardis/sogou/art/93271927
-动态组件场景？
-Many times we have to set up the headers of the request to track the progress of the request etc…
-把add-user这种目录都改掉
-思考一下http封装的必要性：Since Angular v4.3, we have a new and better way to handle HTTP requests with the HttpClient library. Even though the old HttpModule library is working just fine, it is a recommendation to switch to HttpClient. With the HttpClient library, we receive additional benefits. Error handling is much easier by using HttpErrorResponse class. Moreover, we have the ability to listen to the progress events and we have interceptors which allow us to intercept the HTTP requests.
 
 【下一步3步走】
 
@@ -131,7 +116,11 @@ Many times we have to set up the headers of the request to track the progress of
   7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
   Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
   
-  Auth Guard in Angular 7 Login Example【看看有没有我关心的那个事件的问题】：https://yogeshdotnet.com/auth-guard-in-angular-7-login-example/
+1.CanActivate和CanActivateChild再细化一轮
+2.canActivate返回Observable<boolean>
+  https://angular-2-training-book.rangle.io/routing/route_guards
+  https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
+
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
 2.再过一轮主题、控件、配色方案，试用ngx-控件：

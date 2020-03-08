@@ -414,6 +414,14 @@ https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-de
 https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
 https://code-maze.com/angular-best-practices/
 
+HttpClientModule替换HttpModule：Since Angular v4.3, we have a new and better way to handle HTTP requests with the HttpClient library. Even though the old HttpModule library is working just fine, it is a recommendation to switch to HttpClient. With the HttpClient library, we receive additional benefits. Error handling is much easier by using HttpErrorResponse class. Moreover, we have the ability to listen to the progress events and we have interceptors which allow us to intercept the HTTP requests.
+https://stackoverflow.com/questions/45129790/difference-between-httpmodule-and-httpclientmodule
+https://skryvets.com/blog/2017/11/26/simply-about-new-httpclient-in-angular/
+http://www.imooc.com/wenda/detail/576289
+
+union type指的应该是 createdDate: string | Date，好处是啥
+https://www.zhihu.com/tardis/sogou/art/93271927
+动态组件场景？
 
 =========================================================================================
 
@@ -1109,6 +1117,12 @@ https://www.infoq.cn/article/K_RFbwfff5MugJXixYDQ
 h5&html5：
 https://www.cnblogs.com/guardian-hb/p/10223417.html
 https://www.cnblogs.com/cwzqianduan/p/9443004.html
+
+Auth Guard in Angular 7：
+  https://www.freakyjolly.com/angular-7-6-use-auth-guards-canactivate-and-resolve-in-angular-routing-quick-example/
+canActivate方法返回Observable<boolean>可以用于异步请求：
+  https://angular-2-training-book.rangle.io/routing/route_guards
+  https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
 
 前端路由跳转基本原理【如何识别并保持导航区不变？】【看下面相关文档】：
 https://blog.csdn.net/qq_40028324/article/details/85056481（最简单的demo）
