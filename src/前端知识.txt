@@ -4,6 +4,10 @@
 下一工作日：
 3.大屏自定义横轴及抽象
 思考：达标率周期、库房切换、导出
+大屏添加“加载中”效果
+小数点需要做两版：1.；2.
+1.横轴的分隔问题；
+2.toFixed的问题研究清楚
 
 
 把promise+RxJS写通，just try
@@ -118,11 +122,6 @@ Mat-Icon List : 900+ Angular Material Icons：
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
 https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
 
-
-大屏添加“加载中”效果
-小数点需要做两版：1.；2.
-1.横轴的分隔问题；
-2.toFixed的问题研究清楚
 
 一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
 提升概念把握能力及对应的抽象思维能力：bar图、饼图、折线图的dimension、source、series等的概念
@@ -584,6 +583,8 @@ ng-bootstrap是一个angular UI bootstrap库：http://www.fly63.com/nav/1157
 
 angular之ng-container 、ng-template的使用：https://www.jianshu.com/p/388461631b1d
 
+github关键字：admin panel、admin template、dashboard template
+
 Angular 结构型指令 NgIf 原理：https://www.imwhite.com.cn/2019/09/angular-understand-structrual-directive/
 而directive则是在已经存在的dom元素上附加一些行为：https://segmentfault.com/a/1190000016106262
 指令分为三类，组件，属性指令和结构性指令：
@@ -596,6 +597,7 @@ Angular4-创建自定义指令Directive学习文档 - 节流指令：https://www
 
 npm audit fix：https://www.cnblogs.com/lhuser/p/11107520.html
 
+Angular 8 UI Components（jQWidgets）：https://www.jqwidgets.com/angular/
 jQWidgets，有2个方面的东西：1.看看控件的能力；2.看看angular怎么封装（教程里面是直接封装这个把）【既然可以根据thme封装，jquery版的也是可以封装的】：https://www.jqwidgets.com/angular-components-documentation/
 jQuery是过时了，Github去掉了jQuery代码，BootStrap5也打算去掉jQuery。但并不代表jQuery没有用处了，做页面(Page)的时候还是需要的：https://www.zhihu.com/search?type=content&q=ng-bootstrap
 和 jQuery 说再见，Bootstrap 5 将移除对其依赖：https://www.oschina.net/news/104410/bootstrap5-will-remove-jquery
@@ -1131,6 +1133,8 @@ Auth Guard in Angular 7：
 canActivate方法返回Observable<boolean>可以用于异步请求：
   https://angular-2-training-book.rangle.io/routing/route_guards
   https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
+CanActivateChild：
+
 
 前端路由跳转基本原理【如何识别并保持导航区不变？】【看下面相关文档】：
 https://blog.csdn.net/qq_40028324/article/details/85056481（最简单的demo）
@@ -1409,8 +1413,10 @@ http://www.imooc.com/wenda/detail/580947
 resolve保证了数据获取后再进行路由跳转，防止因为数据延迟而出现短暂的空组件情况，以此增强用户体验：https://blog.csdn.net/weixin_42854769/article/details/83577949
 Angular路由深入讲解：https://www.jianshu.com/p/e84594f3b935
 
-使用 Puppeteer 自动化 chrome / chromium 操作：https://www.sunzhongwei.com/use-the-puppeteer-automation-chrome-chromium-operation
 Selenium有个新的替代Puppeteer~：https://zhuanlan.zhihu.com/p/87416145
+使用 Puppeteer 自动化 chrome / chromium 操作：https://www.sunzhongwei.com/use-the-puppeteer-automation-chrome-chromium-operation
+
+漫谈 Angular 定制主题的四种方式（换肤）：https://zhuanlan.zhihu.com/p/72178646
 
 Angular7中使用switchMap改善导航：https://zhuanlan.zhihu.com/p/54656340
 

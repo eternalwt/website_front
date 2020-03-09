@@ -24,6 +24,7 @@
     "@ckeditor/ckeditor5-angular": "^1.1.2",
     "@ckeditor/ckeditor5-build-classic": "^17.0.0",
     "echarts": "^4.4.0",
+    "ng2-pdf-viewer": "^6.1.2",
     "ngx-echarts": "^4.2.2",
     "ngx-quill": "^7.3.9",
     "ngx-treeview": "^6.0.2",

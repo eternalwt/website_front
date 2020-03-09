@@ -11,15 +11,37 @@
 【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
 
 【周一】ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
-搜“ng tree”，就试几个，反正不要钱
-看一个material的代码
-pdf继续做
 我的material的树数据还没对上，这个是要做好的
 弹出框再看（包括目录划分的最佳实践）
-exports对Component和Module都能export吗？
+看一个material的代码
+找二级菜单控件
+ng2-file-upload、ng2-tree
+Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
+了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
+先找一个弹出框组件，然后pdf预览继续做（前后端）【1.比较2个控件；2.前后端对上；3.前端是用弹出框还是什么形式展示】
+再看看我自定义module里面的forRoot
+  
+1.CanActivate和CanActivateChild再细化一轮【canActivateChild理解并用好】
+2.canActivate返回Observable<boolean>
+  https://angular-2-training-book.rangle.io/routing/route_guards
+  https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
 
-【get hands dirty】Angular Tree Dropdown，这不正是我在找的吗：https://googleads.g.doubleclick.net/aclk?sa=L&ai=CZuw-DOxkXpueB4TbqAG_spWQCaXVnbEFjdzCup8Cpp6tjWsQBiD-yZskKAhgnQHIAQGoAwHIAwKqBNIBT9CxmCwpq74mNt1r2lDS81ezquw2dAiiib1qt3P3krxZ2ndnaJiaPEuUA3xwCIWpyGxmz14OOcZsy6-wghByxZyWU4HDDL9xg97qLqbPd9_MAe9kniGtE80PUBV157w28evQfqrT8_fb_E5_OiluRvsrml6h4X7C-jNIbxw5xh5XtCxU1XAZ1Vy6BwP9UYDOR7bEq25N1OwvjX5iHNmlNU30hvCDYH49Impm0oZJuTB1gU3zfS_otwRHtVMTe8HXN1YsiyWOi7ogtrNHfn1OVQuTwASlwMuKNKAGRcAGC4AH5ffiNagHjs4bqAfVyRuoB5PYG6gHn9sbqAe6BqgH8tkbqAemvhuoB-zVG6gH89EbqAfs1RuoB8LaG9gHAdIIBwiAYRABGB-ACgGYCwHICwE&ae=1&num=6&sig=AOD64_1nVyaJk-oFYFsOiYwQbvccup52zg&adurl=https://angularscript.com/angular-tree-dropdown-directive/
-Style encapsulation in Angular：https://www.dunebook.com/style-encapsulation-angular/
+懒加载、预加载用好
+
+mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
+
+【下面2项看看怎么归类】
+Angular Elements：
+https://angular.io/guide/elements
+https://segmentfault.com/a/1190000015647566
+
+关于Angular样式封装、ng-deep：
+https://segmentfault.com/a/1190000012086737
+https://angular.io/guide/component-styles
+
+是不是可以试一下vali-admin？看起来比较轻量【搭配ng-bootstrap搞一次】：https://github.com/pratikborsadiya/vali-admin
+读一下我的form代码，按钮和input样式先改过来。ng build --prod的报错解决掉（熟练）
+ng-bootstrap的文档再清理一次
 
 Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
 
@@ -32,7 +54,6 @@ ngx-admin是Admin Template Based On Nebular Framework：
 https://angularscript.com/admin-template-based-nebular-framework-ngx-admin/
 https://fullstackworld.com/post/efficient-admin-template-using-angular-7-bootstrap-4-and-nebular-ngx-admin
 
-
 这个里面提到了很多组件：angular Crystal Report、Idle、Wizard、Image-crop：https://www.c-sharpcorner.com/article/learn-mvc-using-angular-pdf-file-viewer/
 
 AdminLTE很强大，它还缺什么常用的控件？它的样式是不是可以很方便的赋给ngx-控件达到整合的目的？
@@ -42,7 +63,6 @@ AdminLTE的Advanced Form值得学习一下
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
 
 ngx-progress、ng-circle-progress、ng2-multi-step-form、
-Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
 ngx-dynamic-dashboard-framework：https://github.com/catalogicsoftware/ngx-dynamic-dashboard-framework
 搜“angular image preview”
@@ -63,8 +83,8 @@ Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（�
 
 1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
   ng2-dragula：
-  ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
-  ng2-charts、ng2-select、ng2-table、ng2-tree
+  ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
+  ng2-charts、ng2-select、ng2-table
   ngx-treeview【支持的是Bootstrap 4，因此要在bootstrap4的主题下面使用。根据说明也可以试一下先自定义css，正好两种环境怎么配置样式都了解一下】：
   https://gitee.com/iesc/ngx-treeview
   https://www.npmjs.com/package/ngx-treeview【这个是很有用的，可以先看一下说明】
@@ -85,8 +105,6 @@ https://www.cnblogs.com/NeverCtrl-C/p/8215528.html
 3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial：https://www.techiediaries.com/angular-bootstrap/
 Angular 7/8 & Bootstrap 4 UIs: ng-bootstrap and ngx-bootstrap [Part 1]：https://www.techiediaries.com/angular-bootstrap-ui/
 ngx-admin-lte：https://github.com/TwanoO67/ngx-admin-lte
-
-Angular 8 UI Components（jQWidgets）：https://www.jqwidgets.com/angular/
 
 Theming your Angular Material app：https://material.angular.io/guide/theming#defining-a-custom-theme
 angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
@@ -126,9 +144,6 @@ https://www.zhihu.com/tardis/sogou/art/28874230
 https://segmentfault.com/a/1190000009175508
 @ViewChild('tpl', { read: ViewContainerRef })写法：
 
-是不是可以试一下vali-admin？看起来比较轻量：https://github.com/pratikborsadiya/vali-admin
-admin panel、admin template、dashboard template
-
 后台管理系统的一些文章：
 https://zhuanlan.zhihu.com/p/25415328
 https://zhuanlan.zhihu.com/p/108922013
@@ -149,11 +164,6 @@ http://wiki.cn.mikecrm.com/form-layout
   依赖注入【自己写个依赖注入的？】
   7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
   Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
-  
-1.CanActivate和CanActivateChild再细化一轮
-2.canActivate返回Observable<boolean>
-  https://angular-2-training-book.rangle.io/routing/route_guards
-  https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
 
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
@@ -186,7 +196,6 @@ Create Custom Textbox In Angular 8 Using Input And Output Decorators：https://w
 
 service应该按照业务划分还是按照功能划分？
 
-所有模块页面采用懒加载（还是没有搞透）【懒加载与module概念的关系？】
 routing为啥要弄成module【RouterModule.forRoot(routes)】？forRoot是干嘛的？每加一个component，要有明确的意识放入哪个module
 自己封装控件后，需要单独用一个module管理吗？
 
@@ -205,18 +214,6 @@ angular高德地图插件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
 
 关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
-
-【下面2项看看怎么归类】
-Angular Elements：
-https://angular.io/guide/elements
-https://segmentfault.com/a/1190000015647566
-
-关于Angular样式封装、ng-deep：
-https://segmentfault.com/a/1190000012086737
-https://angular.io/guide/component-styles
-
-【如果搞不动了换个思路：框架搭建我已经突破了，下一步可以用2个办法提升：1.面向问题编程；2.面向知识缺陷编程】
-【今晚】擦地、擦厨房，掸灰
 
 npm update
 
@@ -262,22 +259,17 @@ Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add
 ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
 
 2.把paper-dashboard-angular的代码看一下：https://github.com/creativetimofficial/paper-dashboard-angular
-paper-dashboard-angular不适合直接用，不够完善，并且免费版功能更是少。能不能靠ngx-控件提升完成度？
 【试一下别人推荐的搜索方式】：https://www.zhihu.com/question/309682777/answer/580120248
 github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
 往前进一步：在我的paper-dashboard-angular-master项目中加一个简单的网站模板
 看一下paper-dashboard-angular的module组织，和看公司代码一样，不要有疲劳感
 
-
 使用ng-alain这种东西需要先fork一次，然后新项目以fork出来的版本为基准再fork一次
-
 
 【周末】
 1.2天时间主要用来写解释器；
 动态代理看完后看mybatis源码分析，补一轮java基础（5天）。spring里面用到的动态代理
 2.对着我的2个模板看2套控件，看看控件封装了哪些精妙的操作，对模板带来了哪些互补
-还有搜索ng2-开头的控件
-然后把ng-alain
 
 
 【不好搞的话就分前后端分别处理】
@@ -305,10 +297,7 @@ echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.
   上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.word、pdf预览搞定【处于框架思维时，细节思维又消失了，觉得细节麻烦。要能同时保持两种思维】
   2.再配一遍mybatis（或者用financial那个工程？改名为boot-basic，搞懂多数据源）
   Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
-  单独搜DataSource的英文资料，从这里入手
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
-
-读一下我的form代码，按钮和input样式先改过来
 
 学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
 
@@ -375,8 +364,6 @@ angular的封装是封装出了新的标签和行为（一个控件内部又封�
 1.【在financial项目中】把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
 2.x测通、代码写好后，再把2.x的pom配置干掉；
 3.用单元测试的方式再次测试mybatis的配置
-4.spring配置datasource三种方式【要能搞懂原理】：https://www.cnblogs.com/libin6505/p/11001968.html
-  搞懂springboot是怎么使用application.properties文件的（才能把配置彻底搞清楚，例如mybatis的配置）：(1)看懂数据源的默认配置；
 6.配置redis
 
 超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）

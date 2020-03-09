@@ -61,15 +61,11 @@ import { ThirdpartyCompModule } from './thirdparty-comp.module';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialCompModule,
-    // QuillModule.forRoot(),
     CKEditorModule,
     // NgxEchartsModule,
     ThirdpartyCompModule
   ],
-  // 如果只想这一个组件自己单独用，就不用添加这export，如果还想给自己的子组件(eg:test)，就要export出去
   exports: [
-    // MatButtonModule,
-    // MatCheckboxModule
     CKEditorModule
   ],
   providers: [
