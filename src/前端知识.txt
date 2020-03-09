@@ -39,11 +39,7 @@ fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
 前端必懂EventEmitter，不懂会丢人【再次证明事件机制就是可以对应到发布+订阅模式】：https://www.jianshu.com/p/e37ca8369162（再看各个语言里面事件的实现，自己模拟设计事件，想清楚）。JS里面是把怎么订阅的细节隐藏了，自己想一下：
 <data-audit #md (LocaBool)="locahost()"></data-audit>
 
-ReuseTabService
-
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
-
-Angular HTTP best practices (AsyncPipe)：https://yon.fun/angular-http-best-practices/
 
 重要基础设施，搜package的站点（ngx-echarts）：
 https://www.npmjs.com/search?q=ngx-&csrftoken=YJ4PdjxaghrOsWbkewM6pcns3YWN0vsTzewMkZ-SECc
@@ -101,7 +97,6 @@ Platform Jumper Game：https://www.learnrxjs.io/learn-rxjs/recipes/platform-jump
 Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
 Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
 
-
 return this.http.post(`/blog/manager/login`, body)
 	.toPromise()
 	.then(res => res);
@@ -126,7 +121,6 @@ https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
 
 大屏添加“加载中”效果
 小数点需要做两版：1.；2.
-
 1.横轴的分隔问题；
 2.toFixed的问题研究清楚
 
@@ -283,7 +277,6 @@ The NgModule ‘forRoot()’ Convention：https://angularfirst.com/the-ngmodule-
 搜了2个RouterModule的文章（理解RouterModule.forRoot）：
 https://johnpapa.net/introducing-angular-modules-routing-module/http://www.thejavageek.com/2017/04/10/angular-routing/
 Angular中RouterModule中的forRoot和forChild方法有什么区别？https://segmentfault.com/q/1010000012057819/a-1020000012072693
-Shared Modules In Angular Apps: Providers Best Practices And What Does `forRoot()` Do?：https://www.gurustop.net/blog/2017/02/14/shared-modules-in-angular-apps-providers-best-practices-and-what-does-forroot-do/
 The NgModule ‘forRoot()’ Convention：https://angularfirst.com/the-ngmodule-forroot-convention/
 When to Use ES2015 Modules Instead of Angular Dependency Injection (and When Not to)：https://angularfirst.com/when-to-use-es2015-modules-instead-of-angular-dependency-injection-and-when-not-to/
 More than one module matches：https://blog.csdn.net/MengYan_/article/details/79790962
@@ -414,6 +407,8 @@ https://aglowiditsolutions.com/blog/angular-best-practices/
 https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/【这个里面讲了几个模块的划分，模块的划分是我们现在最缺乏的，当然最终具体的模块划分还是要根据业务来】
 https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
 https://code-maze.com/angular-best-practices/
+Shared Modules In Angular Apps: Providers Best Practices And What Does `forRoot()` Do?：https://www.gurustop.net/blog/2017/02/14/shared-modules-in-angular-apps-providers-best-practices-and-what-does-forroot-do/
+Angular HTTP best practices (AsyncPipe)：https://yon.fun/angular-http-best-practices/
 
 HttpClientModule替换HttpModule：Since Angular v4.3, we have a new and better way to handle HTTP requests with the HttpClient library. Even though the old HttpModule library is working just fine, it is a recommendation to switch to HttpClient. With the HttpClient library, we receive additional benefits. Error handling is much easier by using HttpErrorResponse class. Moreover, we have the ability to listen to the progress events and we have interceptors which allow us to intercept the HTTP requests.
 https://stackoverflow.com/questions/45129790/difference-between-httpmodule-and-httpclientmodule
@@ -612,6 +607,13 @@ ng-bootstrap、ngx-bootstrap、react-bootstrap、bootstrap-vue这种项目结合
 Github 上有什么好看的前端后台项目模板?https://www.zhihu.com/question/309682777/answer/580120248
 
 angular2 中使用第三方组件样式调整：https://blog.csdn.net/cut001/article/details/70924300
+
+Angular Material 并没有布局组件。官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：
+https://github.com/angular/flex-layout
+https://alligator.io/angular/flex-layout/
+【封装的太很真的好用吗？】下面的文章列出了angular flex layout的详细功能和优势：
+https://www.angularjswiki.com/flexlayout/
+https://www.angularjswiki.com/flexlayout/basics/
 
 =========================================================================================
 

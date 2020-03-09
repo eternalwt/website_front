@@ -69,4 +69,4 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     SimpleDialogComponent,
   ]
 })
-export class MaterialModule {}
+export class MaterialCompModule {}

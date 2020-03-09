@@ -20,7 +20,7 @@ import { AddArticleComponent } from './views/article/article-add/add-article.com
 // import { StorageService } from './service/storage.service';
 import { AuthInterceptor } from './interceptors/http-interceptors';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
-import { MaterialModule } from './material.module';
+import { MaterialCompModule } from './material-comp.module';
 import { ToolbarComponent } from './views/toolbar/toolbar.component';
 import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
 import { AddMenuComponent } from './views/menu/menu-add/add-menu.component';
@@ -29,6 +29,7 @@ import { AddRoleComponent } from './views/role/role-add/add-role.component';
 import { RoleListComponent } from './views/role/role-list/role-list.component';
 import { AddUserComponent } from './views/user/user-add/add-user.component';
 import { ThirdPartyComponent } from './views/third-party/third-party.component';
+import { ThirdpartyCompModule } from './thirdparty-comp.module';
 
 @NgModule({
   declarations: [
@@ -59,10 +60,11 @@ import { ThirdPartyComponent } from './views/third-party/third-party.component';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    MaterialCompModule,
     // QuillModule.forRoot(),
     CKEditorModule,
-    NgxEchartsModule,
+    // NgxEchartsModule,
+    ThirdpartyCompModule
   ],
   // 如果只想这一个组件自己单独用，就不用添加这export，如果还想给自己的子组件(eg:test)，就要export出去
   exports: [

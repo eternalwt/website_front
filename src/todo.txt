@@ -12,9 +12,13 @@
 
 【周一】ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 搜“ng tree”，就试几个，反正不要钱
+看一个material的代码
+pdf继续做
+我的material的树数据还没对上，这个是要做好的
+弹出框再看（包括目录划分的最佳实践）
+exports对Component和Module都能export吗？
 
 【get hands dirty】Angular Tree Dropdown，这不正是我在找的吗：https://googleads.g.doubleclick.net/aclk?sa=L&ai=CZuw-DOxkXpueB4TbqAG_spWQCaXVnbEFjdzCup8Cpp6tjWsQBiD-yZskKAhgnQHIAQGoAwHIAwKqBNIBT9CxmCwpq74mNt1r2lDS81ezquw2dAiiib1qt3P3krxZ2ndnaJiaPEuUA3xwCIWpyGxmz14OOcZsy6-wghByxZyWU4HDDL9xg97qLqbPd9_MAe9kniGtE80PUBV157w28evQfqrT8_fb_E5_OiluRvsrml6h4X7C-jNIbxw5xh5XtCxU1XAZ1Vy6BwP9UYDOR7bEq25N1OwvjX5iHNmlNU30hvCDYH49Impm0oZJuTB1gU3zfS_otwRHtVMTe8HXN1YsiyWOi7ogtrNHfn1OVQuTwASlwMuKNKAGRcAGC4AH5ffiNagHjs4bqAfVyRuoB5PYG6gHn9sbqAe6BqgH8tkbqAemvhuoB-zVG6gH89EbqAfs1RuoB8LaG9gHAdIIBwiAYRABGB-ACgGYCwHICwE&ae=1&num=6&sig=AOD64_1nVyaJk-oFYFsOiYwQbvccup52zg&adurl=https://angularscript.com/angular-tree-dropdown-directive/
-Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
 Style encapsulation in Angular：https://www.dunebook.com/style-encapsulation-angular/
 
 Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
@@ -134,8 +138,9 @@ https://zhuanlan.zhihu.com/p/25088922
 Free Bootstrap Themes：
 https://startbootstrap.com/
 https://www.sucaihuo.com/
-如何设计出色的网站后台原型？https://www.zhihu.com/question/31859504/answer/1031232042
-
+如何设计出色的网站后台原型？
+https://www.zhihu.com/question/31859504/answer/1031232042
+http://wiki.cn.mikecrm.com/form-layout
 
 【下一步3步走】
 
