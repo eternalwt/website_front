@@ -18,6 +18,7 @@ ng generate class Hero
 material design
 ant design
 Eva Design System 规范
+Salesforce Lightning Desing System(ng lightning)
 
 经过一段时间的尝试，我对前端框架选型和搭配的理解：
 1.主题的设计规范和控件的设计规范要适配（material design等）；
@@ -552,7 +553,7 @@ https://www.zhihu.com/tardis/sogou/art/34137438
 Maintained Angular Projects：
 https://www.ctolib.com/mip/maintained-angular.html
 
-
+最值得拥有的免费Bootstrap后台管理模板（Vali Admin、ModularAdmin、Metis、Ace）：https://zhuanlan.zhihu.com/p/39945434
 GitHub开源的10个超棒后台管理面板（有几个看过）：
 https://blog.csdn.net/m0_38106923/article/details/101050788
 9+ angular free admin templates【这里面有几个我看过，可以借鉴一些基本的，例如icons】：https://bootstrapbay.com/blog/free-angular-templates/
@@ -563,7 +564,8 @@ https://ampersandacademy.com/tutorials/java/angular-material-6-free-theme
 【上面的主题功能太简单(完成度很低)，【如果有特别简单的项目也不是不可以尝试】。例如：1.没有二级菜单；2.input元素示例太少；3.上方红点样式很差、点击个人弹出菜单样式很差；4.左侧边栏收起后右侧没有联动】
 基于 Angular7 和 material2 的中后台解决方案【ng-notadd，代码跑不起来，如果用的话可以修复一下】：https://www.v2ex.com/t/504621
 这个网站有现成的：https://startangular.com/
-https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
+模板之家上的模板也看得过去（好像还是没有AdminLTE完善），例如下面的，除了不能更新以外，还有什么优劣势？
+http://www.cssmoban.com/cssthemes/9311.shtml
 
 angular material 2：
 https://material.angular.io/guide/theming
@@ -599,7 +601,7 @@ Angular4-创建自定义指令Directive学习文档 - 节流指令：https://www
 
 npm audit fix：https://www.cnblogs.com/lhuser/p/11107520.html
 
-jQWidgets
+jQWidgets，有2个方面的东西：1.看看控件的能力；2.看看angular怎么封装（教程里面是直接封装这个把）【既然可以根据thme封装，jquery版的也是可以封装的】：https://www.jqwidgets.com/angular-components-documentation/
 jQuery是过时了，Github去掉了jQuery代码，BootStrap5也打算去掉jQuery。但并不代表jQuery没有用处了，做页面(Page)的时候还是需要的：https://www.zhihu.com/search?type=content&q=ng-bootstrap
 和 jQuery 说再见，Bootstrap 5 将移除对其依赖：https://www.oschina.net/news/104410/bootstrap5-will-remove-jquery
 前端三大框架以及jquery与bootstrap这种框架有什么（概念上、范畴上的）区别？https://www.zhihu.com/question/304757674/answer/546374749
@@ -866,6 +868,10 @@ angular源码分析之StaticInjector：
 https://segmentfault.com/a/1190000017382929
 https://zhuanlan.zhihu.com/p/52415789
 
+httpClientService上传的进度很好控制，下载呢？
+https://www.ahmedbouchefra.com/angular/angular-9-8-tutorial-example-upload-files-with-formdata-httpclient-rxjs-and-material-progressbar/
+https://www.positronx.io/angular-file-upload-with-progress-bar-tutorial/
+https://www.techiediaries.com/angular-file-upload-progress-bar/
 
 也谈基于NodeJS的全栈式开发：
 https://www.cnblogs.com/webvision/p/4766315.html
@@ -1487,10 +1493,20 @@ https://www.zhihu.com/question/28957074/answer/43830077
 https://www.zhihu.com/question/24276657/answer/68081021
 精进：设计思想与设计工具
 图片上的文字，需要淡淡的遮罩确保其可读性。深色的遮罩透明度在20%-40%之间，浅色的遮罩透明度在40%-60%之间。【遮罩和透明度不是一个概念把？】
-Angular 有 ng-bootstrap、OnsenUI 和 material2 等：https://github.com/angular/components
+Component infrastructure and Material Design components for Angular：https://github.com/angular/components
 bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap 和 ng-zorro 是基于 angular 的组件库，与 bootstrap 不是一类东西：https://www.zhihu.com/question/65750588/answer/234349815
 
-前端开发，比较出色的 UI 库有哪些？：https://www.zhihu.com/question/353100080/answer/875018512
+前端开发，比较出色的 UI 库有哪些？（mobile）：https://www.zhihu.com/question/353100080/answer/875018512
+Onsen UI：https://onsen.io/theme-roller/
+MDBootstrap：https://github.com/mdbootstrap/Bootstrap-4-templates
+Ignite UI：https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting_started.html
+ngSemantic：
+  https://github.com/vladotesanovic/ngSemantic
+  https://github.com/edcarroll/ng2-semantic-ui
+Kendo UI（这个是jquery和angularJS的把？）：
+https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
+
+
 移动开发：Angular：Ionic 和 NativeScript
 
 【重点不是比较各种组件包，而是理解背后的设计思路，这样随便用哪一种都OK】

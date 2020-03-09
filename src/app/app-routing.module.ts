@@ -15,6 +15,7 @@ import { AddRoleComponent } from './views/role/role-add/add-role.component';
 import { RoleListComponent } from './views/role/role-list/role-list.component';
 import { AuthGuard } from './auth.guard';
 import { AddUserComponent } from './views/user/user-add/add-user.component';
+import { ThirdPartyComponent } from './views/third-party/third-party.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
     { path: 'permassign', component: PermAssignComponent },
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
     { path: 'components', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
+    { path: '3rdparty', component: ThirdPartyComponent, canActivate: [AuthGuard] },
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     
   ]}

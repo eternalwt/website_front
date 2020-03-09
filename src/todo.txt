@@ -8,19 +8,26 @@
 
 ===================================================================================
 
-搜“angular image preview”
+【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
+
+【周一】ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
+搜“ng tree”，就试几个，反正不要钱
+
+【get hands dirty】Angular Tree Dropdown，这不正是我在找的吗：https://googleads.g.doubleclick.net/aclk?sa=L&ai=CZuw-DOxkXpueB4TbqAG_spWQCaXVnbEFjdzCup8Cpp6tjWsQBiD-yZskKAhgnQHIAQGoAwHIAwKqBNIBT9CxmCwpq74mNt1r2lDS81ezquw2dAiiib1qt3P3krxZ2ndnaJiaPEuUA3xwCIWpyGxmz14OOcZsy6-wghByxZyWU4HDDL9xg97qLqbPd9_MAe9kniGtE80PUBV157w28evQfqrT8_fb_E5_OiluRvsrml6h4X7C-jNIbxw5xh5XtCxU1XAZ1Vy6BwP9UYDOR7bEq25N1OwvjX5iHNmlNU30hvCDYH49Impm0oZJuTB1gU3zfS_otwRHtVMTe8HXN1YsiyWOi7ogtrNHfn1OVQuTwASlwMuKNKAGRcAGC4AH5ffiNagHjs4bqAfVyRuoB5PYG6gHn9sbqAe6BqgH8tkbqAemvhuoB-zVG6gH89EbqAfs1RuoB8LaG9gHAdIIBwiAYRABGB-ACgGYCwHICwE&ae=1&num=6&sig=AOD64_1nVyaJk-oFYFsOiYwQbvccup52zg&adurl=https://angularscript.com/angular-tree-dropdown-directive/
+Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
+Style encapsulation in Angular：https://www.dunebook.com/style-encapsulation-angular/
 
 Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
 
 【思考一下】使用ngx-admin这种现成的angular项目，为了代码语义清晰需要把不用的控件排除掉、自己命名新建控件；使用adminLTE这种管理模板除了最开始的侧边栏等，也需要根据需要添加component。那么是不是使用AdminLTE这种还更方便一点？这样看来搜索angular组合好的管理框架意义不大了。
-模板之家上的模板也砍得过去（好像还是没有AdminLTE完善），例如下面的，除了不能更新以外，还有什么优劣势？
-http://www.cssmoban.com/cssthemes/9311.shtml
 
-我不是看过ng-bootstrap网页吗？拿这个配lte-admin或者ngx-admin就OK了
-Nebular + ngx-admin？
 Nebular 是一个 Angular 8 UI 库，基于 Eva Design System 规范：https://www.oschina.net/p/nebular
 https://akveo.github.io/nebular/
 http://www.fly63.com/nav/2799
+ngx-admin是Admin Template Based On Nebular Framework：
+https://angularscript.com/admin-template-based-nebular-framework-ngx-admin/
+https://fullstackworld.com/post/efficient-admin-template-using-angular-7-bootstrap-4-and-nebular-ngx-admin
+
 
 这个里面提到了很多组件：angular Crystal Report、Idle、Wizard、Image-crop：https://www.c-sharpcorner.com/article/learn-mvc-using-angular-pdf-file-viewer/
 
@@ -29,6 +36,12 @@ AdminLTE的表格没有设置一页多少条的功能
 AdminLTE的Advanced Form值得学习一下
 
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
+
+ngx-progress、ng-circle-progress、ng2-multi-step-form、
+Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
+【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
+ngx-dynamic-dashboard-framework：https://github.com/catalogicsoftware/ngx-dynamic-dashboard-framework
+搜“angular image preview”
 
 1.看ng-bootstrap能不能覆盖我要的基础组件（对比AdminLTE看功能）：
 https://adminlte.io/themes/v3/index3.html
@@ -42,14 +55,15 @@ Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（�
 【3月20号左右：1.前端要达到AdminLTE的里程碑；2.找一下有没有项目机会（如果有就不上班了）】
 
 【做一些编码】
-(1)先看httpClientService；(2)找word、excel的util，并测试；(3)前端的word、pdf预览做起来；(4)看看有没有ngx版的ztree；(5)看springBatch
+(1)找word、excel的util，并测试；(2)前端的word、pdf预览做起来；(3)看看有没有ngx版的ztree；(4)看springBatch
 
-【周末两大抓手】【周日ngx-admin再看一下、ng-alain再看一下最终选型】
 1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
   ng2-dragula：
   ng2-file-upload、ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
   ng2-charts、ng2-select、ng2-table、ng2-tree
-  ngx-treeview：https://gitee.com/iesc/ngx-treeview
+  ngx-treeview【支持的是Bootstrap 4，因此要在bootstrap4的主题下面使用。根据说明也可以试一下先自定义css，正好两种环境怎么配置样式都了解一下】：
+  https://gitee.com/iesc/ngx-treeview
+  https://www.npmjs.com/package/ngx-treeview【这个是很有用的，可以先看一下说明】
   ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
 angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
 https://blog.csdn.net/daqiang012/article/details/86617513
@@ -57,9 +71,9 @@ https://www.jianshu.com/p/48e5d02a2f88
 
 自己做控件，适合做简单布局的把html现有元素及现有组件组合起来的，也更好做。一旦遇到树控件、甚至更极端的富文本编辑器，就直接用三方的。思考一下树控件的难度，试着自己做一下。
 
-再看网站模板（模板网站）
+把各种设计风格对比一下（界面、行为），这样才知道他们的主题、控件能否共存
 
-2.看看ngx-admin搭配ng-bootstrap怎么样
+2.看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说
 3.ngx-bootstrap就是ng-bootstrap的重命名：https://www.npmjs.com/package/ng-bootstrap
 ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular.【用之前应该先评估一下bootstrap有哪些组件】：
 https://www.npmjs.com/package/ngx-bootstrap
@@ -107,6 +121,21 @@ https://www.cnblogs.com/zhaoran/archive/2013/05/24/3097482.html
 https://www.zhihu.com/tardis/sogou/art/28874230
 https://segmentfault.com/a/1190000009175508
 @ViewChild('tpl', { read: ViewContainerRef })写法：
+
+是不是可以试一下vali-admin？看起来比较轻量：https://github.com/pratikborsadiya/vali-admin
+admin panel、admin template、dashboard template
+
+后台管理系统的一些文章：
+https://zhuanlan.zhihu.com/p/25415328
+https://zhuanlan.zhihu.com/p/108922013
+https://www.zhihu.com/question/31859504/answer/71178836
+https://www.zhihu.com/question/30367057/answer/73817104
+https://zhuanlan.zhihu.com/p/25088922
+Free Bootstrap Themes：
+https://startbootstrap.com/
+https://www.sucaihuo.com/
+如何设计出色的网站后台原型？https://www.zhihu.com/question/31859504/answer/1031232042
+
 
 【下一步3步走】
 
@@ -169,8 +198,6 @@ angular高德地图插件
 
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
-
-Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
 
 关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
 
