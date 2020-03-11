@@ -1,12 +1,18 @@
 <p>third-party npm packages display here!</p>
 
-<section>
-    ngx-tree: https://www.npmjs.com/package/ngx-treeview【这里加一个grid布局】
-    <br />
-    样式再看一下：https://github.com/leovo2708/ngx-treeview/tree/master/src/demo/book
+<tabs>
+    <tab tabTitle="ngx-tree">
+        ngx-tree: https://www.npmjs.com/package/ngx-treeview【这里加一个grid布局】
+        <br />
+        样式再看一下：https://github.com/leovo2708/ngx-treeview/tree/master/src/demo/book
 
-    <ngx-treeview [config]="config" [items]="items" (selectedChange)="onSelectedChange($event)"
-        (filterChange)="onFilterChange($event)">
-    </ngx-treeview>
+        <ngx-treeview [config]="config" [items]="items" (selectedChange)="onSelectedChange($event)"
+            (filterChange)="onFilterChange($event)">
+        </ngx-treeview>
+    </tab>
+    <tab tabTitle="doc-viewer">
+        文档查看【需要看pdf.js代码】：https://github.com/Marcelh1983/angular-document-viewer
+        <ngx-doc-viewer [url]="doc" viewer="office" style="width:100%;height:50vh;"></ngx-doc-viewer>
+    </tab>
+<tabs>
 
-</section>

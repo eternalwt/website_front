@@ -8,19 +8,37 @@
 
 ===================================================================================
 
+【3月20日开始寻找赚钱机会】
+
+每天中午吃完饭在床上歪一个半小时，既能看书，又能休息。
+
+canDeactivate如何提示有未保存信息？
+https://www.concretepage.com/angular-2/angular-candeactivate-guard-example
+https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
+
 【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
 
-【周一】ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
+【周二】
+【两个组件页面加上tab，方便学习使用】【我有一个文档是常用ngx-控件的，找到看一遍】
 我的material的树数据还没对上，这个是要做好的
 弹出框再看（包括目录划分的最佳实践）
+
+ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
+
 看一个material的代码
-找二级菜单控件
-ng2-file-upload、ng2-tree
-Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
+二级菜单控件side nav
+ng2-file-upload
+【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
 先找一个弹出框组件，然后pdf预览继续做（前后端）【1.比较2个控件；2.前后端对上；3.前端是用弹出框还是什么形式展示】
 再看看我自定义module里面的forRoot
-  
+尝试控件的过程，也是一个不断筛选哪些值得下载的过程【还是要和ngx等那一套对比一下】
+
+forRoot：
+https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
+https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
+https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-and-ahead-of-time-compiling-in-angular-7-2-0.htm
+
 1.CanActivate和CanActivateChild再细化一轮【canActivateChild理解并用好】
 2.canActivate返回Observable<boolean>
   https://angular-2-training-book.rangle.io/routing/route_guards
@@ -29,6 +47,8 @@ Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-a
 懒加载、预加载用好
 
 mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
+
+Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
 
 【下面2项看看怎么归类】
 Angular Elements：
@@ -85,9 +105,7 @@ Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（�
   ng2-dragula：
   ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
   ng2-charts、ng2-select、ng2-table
-  ngx-treeview【支持的是Bootstrap 4，因此要在bootstrap4的主题下面使用。根据说明也可以试一下先自定义css，正好两种环境怎么配置样式都了解一下】：
   https://gitee.com/iesc/ngx-treeview
-  https://www.npmjs.com/package/ngx-treeview【这个是很有用的，可以先看一下说明】
   ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
 angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
 https://blog.csdn.net/daqiang012/article/details/86617513

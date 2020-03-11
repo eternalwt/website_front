@@ -16,16 +16,10 @@ export class ThirdPartyComponent implements OnInit {
     maxHeight: 500
   };
 
-  itCategory;
-
-  vegetableCategory = new TreeviewItem({
-    text: 'Vegetable', value: 2, children: [
-      { text: 'Salad', value: 21 },
-      { text: 'Potato', value: 22 }
-    ]
-  });
-
   items: TreeviewItem[];
+
+  // todo viewer的两个问题：1.能否loading；2.能否加载流
+  doc = "http://wjw.nmg.gov.cn/uploadfiles/201901/10/2019011008444528207707.doc";
 
   constructor() { }
 
@@ -81,7 +75,7 @@ export class ThirdPartyComponent implements OnInit {
       ]
     });
     const othersCategory = new TreeviewItem({ text: 'Others', value: 3, checked: false, disabled: true });
-    
+
     return [childrenCategory, itCategory, teenCategory, othersCategory];
   }
 

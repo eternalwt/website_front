@@ -116,7 +116,15 @@ autoLogin(): Promise<any> {
   .toPromise()
   .then(res => res);
 
-================================================================================
+==============================================================================================
+
+【控件学习】【需要把样式问题过一遍】
+控件也有版本更新的问题，后续注意一下
+Google/Office/PDF Document Viewer In Angular：https://angularscript.com/google-office-pdf-document-viewer/
+ngx-treeview：https://www.npmjs.com/package/ngx-treeview
+angular-tabs-component：https://www.npmjs.com/package/angular-tabs-component
+
+==============================================================================================
 
 Mat-Icon List : 900+ Angular Material Icons：
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
@@ -233,7 +241,9 @@ AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/7
 
 一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
 
-Angular 的 NgModule 是为了解决什么问题？https://www.zhihu.com/question/376817427/answer/1056417256
+Angular 的 NgModule 是为了解决什么问题？
+https://www.zhihu.com/question/376817427/answer/1056417256
+https://www.zhihu.com/question/376817427/answer/1069081450
 对module的理解：类比java的package，对代码提供更多层次性，还有其他方面的用处。
 module（There are two types of modules, root modules and feature modules）：
 https://angular-2-training-book.rangle.io/modules/introduction
@@ -1134,7 +1144,10 @@ canActivate方法返回Observable<boolean>可以用于异步请求：
   https://angular-2-training-book.rangle.io/routing/route_guards
   https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
 CanActivateChild：
-
+https://www.c-sharpcorner.com/article/learn-about-guards-in-angular/
+canActivate是路由进入时拦截，canDeactivate可以理解为路由离开时的拦截
+canActivateChild和canLoad使用场景很苛刻：https://segmentfault.com/a/1190000020144286
+Angular的路由延迟加载【上面两项的使用还是要看看】：https://www.jianshu.com/p/52147f023d2f
 
 前端路由跳转基本原理【如何识别并保持导航区不变？】【看下面相关文档】：
 https://blog.csdn.net/qq_40028324/article/details/85056481（最简单的demo）
@@ -1219,7 +1232,6 @@ this.repairRefreshEmitter = new EventEmitter();
 floorChangeEvent = new EventEmitter<any>();
 this.floorChangeEvent.pipe(share()).subscribe();
 
-浅谈HTML5 Web Worker：https://zhuanlan.zhihu.com/p/95021220
 如何在Angular CLI上使用SpreadJS：https://www.grapecity.com.cn/blogs/spreadjs-angularcli
 
 Angular Global CSS styles：
@@ -2498,6 +2510,9 @@ http://www.ruanyifeng.com/blog/2018/07/web-worker.html
 https://www.runoob.com/html/html5-webworkers.html
 https://zhuanlan.zhihu.com/p/95021220
 https://blog.csdn.net/donspeng/article/details/83684874
+浅谈HTML5 Web Worker：https://zhuanlan.zhihu.com/p/95021220
+通过 Angular CLI 使用 Web Worker：https://angular.cn/guide/web-worker
+What’s new in Angular 8: Web worker support and more：https://blog.logrocket.com/whats-new-in-angular-8-web-worker-support-and-more/
 
 ES6 扩展运算符 三个点（...）把数组元素合入上一级数组（还有深拷贝的问题）：https://blog.csdn.net/zxt1195229475/article/details/79486142
 
