@@ -147,6 +147,7 @@ https://www.chapter247.com/blog/learn-about-all-the-new-features-of-angular-9/
 Angular 文档已同步翻译至 9.0 正式版！https://zhuanlan.zhihu.com/p/105549656
 angular9里面material也更新了
 angular9的升级：http://www.linuxeden.com/a/61695
+Angular9新特性以及升级指南：https://zhuanlan.zhihu.com/p/108563871
 
 ES6 Tutorial：
 https://www.tutorialspoint.com/es6/index.htm
@@ -1105,6 +1106,7 @@ https://segmentfault.com/a/1190000007535316
 https://www.jmjc.tech/less/74
 JS 异步(callback→Promise→async/await)：https://segmentfault.com/a/1190000013141641
 JS的异步再看一下【要知道JS里面的异步是什么后面才能用Promise和async/await】
+前端开发，如何优雅的实现这样一个插件机制？https://www.zhihu.com/question/294560351/answer/491165377
 
 Angular2 前端代码规范：https://blog.csdn.net/aoxi0033/article/details/101818169
 规范的 commit (Angular规范)：https://blog.csdn.net/SJ1551/article/details/100600881
@@ -1131,8 +1133,15 @@ https://www.cnblogs.com/lhb25/p/2019-frontend-trending.html
 http://www.imooc.com/article/283259?block_id=tuijian_wz
 https://juejin.im/entry/5c8cc96be51d453cad3147f6
 https://www.infoq.cn/article/K_RFbwfff5MugJXixYDQ
+前端未来几年的发展方向是什么？https://www.zhihu.com/question/286700472/answer/503981729
 近些年发展迅猛的虚拟Dom技术类框架Angular、React、Vue，配合Redux、dva等数据流方案，使得大前端的时代已然真正的降临。
 小程序多端框架全面测评：chameleon、Taro、uni-app、mpvue、WePY：https://www.cnblogs.com/fundebug/p/compare-wechat-app-frameworks.html
+
+Angular Elements 将 Angular component 打包在自定义的 elements 中并让其自启动（self-bootstrapping）。Angular Element 可以被包含在任何 web 应用中，用于创建可复用的微程序。
+Angular Elements【或许在以后是个重要的概念】：
+https://zhuanlan.zhihu.com/p/98754714
+https://angular.io/guide/elements
+https://segmentfault.com/a/1190000015647566
 
 h5&html5：
 https://www.cnblogs.com/guardian-hb/p/10223417.html
