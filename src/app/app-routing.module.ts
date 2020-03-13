@@ -16,6 +16,7 @@ import { RoleListComponent } from './views/role/role-list/role-list.component';
 import { AuthGuard } from './auth.guard';
 import { AddUserComponent } from './views/user/user-add/add-user.component';
 import { ThirdPartyComponent } from './views/third-party/third-party.component';
+import { MainComponent } from './views/main/main.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent, children: [// , canActivate: [AuthGuard]
+    { path: 'main', component: MainComponent, canActivate: [AuthGuard] },
     { path: 'adduser', component: AddUserComponent, canActivate: [AuthGuard] },
     { path: 'userlist', component: UserListComponent, canActivate: [AuthGuard] },
     { path: 'addrole', component: AddRoleComponent, canActivate: [AuthGuard] },

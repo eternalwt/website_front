@@ -19,8 +19,9 @@ https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
 【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
 
 【周二】
+加3个字段
+加消息中心代码
 【我有一个文档是常用ngx-控件的，找到看一遍】
-使用MatGridListModule把home页分为六个格子：https://www.tutorialspoint.com/angular_material7/angular_material7_grid_list.htm
 我的material的树数据还没对上，这个是要做好的
 弹出框再看（包括目录划分的最佳实践）
 

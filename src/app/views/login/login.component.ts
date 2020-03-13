@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit {
         //   // 2.跳转到后台admin页面
         //   this.router.navigateByUrl("/home");
         // });
-        this.router.navigateByUrl("/home");
+        this.router.navigateByUrl("/home/main");
       } else {
         alert("登录失败：" + res["msg"]);// todo msgBox
       }

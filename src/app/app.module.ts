@@ -30,6 +30,7 @@ import { RoleListComponent } from './views/role/role-list/role-list.component';
 import { AddUserComponent } from './views/user/user-add/add-user.component';
 import { ThirdPartyComponent } from './views/third-party/third-party.component';
 import { ThirdpartyCompModule } from './thirdparty-comp.module';
+import { MainComponent } from './views/main/main.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ThirdpartyCompModule } from './thirdparty-comp.module';
     RoleListComponent,
     AddUserComponent,
     ThirdPartyComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
