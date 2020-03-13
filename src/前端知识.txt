@@ -69,6 +69,8 @@ rxjs源码分析
 
 ================================================================================
 
+ECMAScript 2020（ES2020）的新增语法：https://alligator.io/js/es2020/
+
 schematics是什么（有可能我已经用到了？）：https://www.jianshu.com/p/3f630cbb543d
 The 7 Pro Tips To Get Productive With Angular CLI & Schematics：
 https://hackernoon.com/%EF%B8%8F-the-7-pro-tips-to-get-productive-with-angular-cli-schematics-b59783704c54
