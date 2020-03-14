@@ -127,6 +127,7 @@ autoLogin(): Promise<any> {
 Google/Office/PDF Document Viewer In Angular：https://angularscript.com/google-office-pdf-document-viewer/
 ngx-treeview：https://www.npmjs.com/package/ngx-treeview
 angular-tabs-component：https://www.npmjs.com/package/angular-tabs-component
+ng2-file-upload：https://www.cnblogs.com/NeverCtrl-C/p/7778304.html
 
 ==============================================================================================
 
@@ -367,6 +368,7 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 我总计对使用form(标签)必要性的一些理解：
 1.在原始的非ajax非框架的开发中必不可少；2.在现代开发方法中可以增强语义甚至提供操作便利性；3.提交用submit还是button不是最关键的，关键是可以利用form的特性（例如统一数据管理）；4.其他的一些细节方面的考虑：https://www.zhihu.com/question/39739110?sort=created
+Angular 5 自定义文件上传组件（一）：https://www.jianshu.com/p/25ece6099e70
 
 注意观察编译过后最终显示的样式标签
 
@@ -1471,6 +1473,14 @@ bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap
 现代的前端开发很多都是基于组件化的开发，每个组件提供模板、样式和交互，只需要用组件定义的标签然后声明式传入属性即可渲染，无需关注模板细节，可以达到快速开发的目的。
 bootstrap 是属于传统形式的开发，通过约定好的模板形式和类名可以达到想要的效果，但带来的问题是每次都要复制 html，而且类名因为全在全局中，可能造成样式冲突。
 如果是组件库开发网站，可以自己写一个公共样式文件，写入 需要重置的样式以及常用的工具类像 float-left，float-right，clearfix 等，或者直接复制 bootstrap 相关的代码也可以。
+
+Nebular 是一个 Angular 8 UI 库，基于 Eva Design System 规范：
+https://www.oschina.net/p/nebular
+https://akveo.github.io/nebular/
+http://www.fly63.com/nav/2799
+ngx-admin是Admin Template Based On Nebular Framework：
+https://angularscript.com/admin-template-based-nebular-framework-ngx-admin/
+https://fullstackworld.com/post/efficient-admin-template-using-angular-7-bootstrap-4-and-nebular-ngx-admin
 
 【admin-lte和ngx-admin】看看哪些是我能用上的，哪些是没有多大用的，哪些即使没有也很容易自己写出来的（配合组件）。思考一下：什么场景组件比主题对项目的成功更关键，什么时候反过来
 admin-lte和ngx-admin分别看看跟组件的配合

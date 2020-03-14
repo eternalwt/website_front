@@ -2,17 +2,27 @@
 
 <tabs>
     <tab tabTitle="ngx-tree">
-        ngx-tree: https://www.npmjs.com/package/ngx-treeview【这里加一个grid布局】
-        <br />
-        样式再看一下：https://github.com/leovo2708/ngx-treeview/tree/master/src/demo/book
-
+        <section>
+            ngx-tree: https://www.npmjs.com/package/ngx-treeview【这里加一个grid布局】
+            <br />
+            样式再看一下：https://github.com/leovo2708/ngx-treeview/tree/master/src/demo/book
+        </section>
         <ngx-treeview [config]="config" [items]="items" (selectedChange)="onSelectedChange($event)"
             (filterChange)="onFilterChange($event)">
         </ngx-treeview>
     </tab>
     <tab tabTitle="doc-viewer">
-        文档查看【需要看pdf.js代码】：https://github.com/Marcelh1983/angular-document-viewer
+        <section>
+            文档查看【需要看pdf.js代码】：https://github.com/Marcelh1983/angular-document-viewer
+        </section>
         <ngx-doc-viewer [url]="doc" viewer="office" style="width:100%;height:50vh;"></ngx-doc-viewer>
+    </tab>
+    <tab tabTitle="uploader">
+        <section>
+            使用ng2-file-upload做文件上传：https://www.cnblogs.com/NeverCtrl-C/p/7778304.html
+        </section>
+        <input type="file" ng2FileSelect [uploader]="uploader" (change)="selectedFileOnChanged($event)" />
+        <button (click)="uploadFile()">点击上传</button>
     </tab>
 <tabs>
 

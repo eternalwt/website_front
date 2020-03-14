@@ -27,9 +27,9 @@ https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
 
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 
-看一个material的代码
+看一个material的代码，看一个ngx-代码。只有看过代码，才能放心用
+
 二级菜单控件side nav
-ng2-file-upload
 【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
 先找一个弹出框组件
@@ -75,13 +75,6 @@ ng-bootstrap的文档再清理一次
 Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
 
 【思考一下】使用ngx-admin这种现成的angular项目，为了代码语义清晰需要把不用的控件排除掉、自己命名新建控件；使用adminLTE这种管理模板除了最开始的侧边栏等，也需要根据需要添加component。那么是不是使用AdminLTE这种还更方便一点？这样看来搜索angular组合好的管理框架意义不大了。
-
-Nebular 是一个 Angular 8 UI 库，基于 Eva Design System 规范：https://www.oschina.net/p/nebular
-https://akveo.github.io/nebular/
-http://www.fly63.com/nav/2799
-ngx-admin是Admin Template Based On Nebular Framework：
-https://angularscript.com/admin-template-based-nebular-framework-ngx-admin/
-https://fullstackworld.com/post/efficient-admin-template-using-angular-7-bootstrap-4-and-nebular-ngx-admin
 
 这个里面提到了很多组件：angular Crystal Report、Idle、Wizard、Image-crop：https://www.c-sharpcorner.com/article/learn-mvc-using-angular-pdf-file-viewer/
 

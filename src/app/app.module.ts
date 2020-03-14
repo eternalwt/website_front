@@ -22,7 +22,7 @@ import { AuthInterceptor } from './interceptors/http-interceptors';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
 import { MaterialCompModule } from './material-comp.module';
 import { ToolbarComponent } from './views/toolbar/toolbar.component';
-import { PermAssignComponent } from './components/perm-assign/perm-assign.component';
+import { PermAssignComponent } from './views/perm/perm-assign/perm-assign.component';
 import { AddMenuComponent } from './views/menu/menu-add/add-menu.component';
 import { UserListComponent } from './views/user/user-list/user-list.component';
 import { AddRoleComponent } from './views/role/role-add/add-role.component';
