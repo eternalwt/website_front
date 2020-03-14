@@ -18,9 +18,9 @@ https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
 
 【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
 
-【周二】
-加3个字段
-加消息中心代码
+【周六】
+加消息中心代码【既能按角色全部选择，又能勾选；角色限制；websocket】
+今天把消息中心做出来，把用户列表的角色加上去
 【我有一个文档是常用ngx-控件的，找到看一遍】
 我的material的树数据还没对上，这个是要做好的
 弹出框再看（包括目录划分的最佳实践）
@@ -32,7 +32,7 @@ ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 ng2-file-upload
 【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
-先找一个弹出框组件，然后pdf预览继续做（前后端）【1.比较2个控件；2.前后端对上；3.前端是用弹出框还是什么形式展示】
+先找一个弹出框组件
 尝试控件的过程，也是一个不断筛选哪些值得下载的过程【还是要和ngx等那一套对比一下】
 
 再看看我自定义module里面的forRoot
@@ -51,8 +51,6 @@ https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-
 mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
 
 Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
-
-今天把用户表加3个字段和消息中心做出来
 
 关于Angular样式封装、ng-deep：
 https://segmentfault.com/a/1190000012086737

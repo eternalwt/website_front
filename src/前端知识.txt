@@ -67,6 +67,8 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
 rxjs源码分析
 
+写一个CSS样式之前，一定要搞清楚为什么那样写，是可以写好的：https://www.bitdegree.org/learn/css-display
+
 ================================================================================
 
 ECMAScript 2020（ES2020）的新增语法：https://alligator.io/js/es2020/
@@ -659,8 +661,9 @@ https://indepth.dev/here-is-what-you-need-to-know-about-dynamic-components-in-an
 
 搜“angular captcha”或者“springboot captcha”
 
+使用<ng-content>实现嵌入包含（transclusion）：https://segmentfault.com/a/1190000014691169
+
 The goal of the CDK is to give developers more tools to build awesome components for the web. This will be especially useful for projects that want to take advantage of the features of Angular Material without adopting the Material Design visual language. — Angular Team
-【如果使用CDK“构建组件库的门槛已经大幅度降低”，那又是一个好消息】
 如果要学CDK从material网站上有入口：https://material.angular.io/components/table/overview
 从零开始构建 Angular 组件库（cdk）：https://zhuanlan.zhihu.com/p/51856353
 Angular团队的组件开发套件(CDK)，component dev kit：https://stackoverflow.com/questions/42340649/what-is-cdk-in-angular-material-2-components
@@ -690,9 +693,10 @@ angular流程引擎集成：https://www.cnblogs.com/william-xu/p/11115588.html
 Typescript引入第三方库之~.d.ts、@types 2种类型声明的用法：https://blog.csdn.net/themagickeyjianan/article/details/84635777
 angular 使用第三方库（利用@types实现）：https://blog.csdn.net/maoguiyou/article/details/80910364
 Angular2 中的依赖包详解：https://www.cnblogs.com/Ceri/p/7718782.html
+使用 Angular 和 RxJS 实现的无限滚动加载：https://www.cnblogs.com/sybboy/p/8778497.html
 
 理解 TypeScript 装饰器（为什么 Angular 不需要 Hooks）：https://zhuanlan.zhihu.com/p/65764702
-
+angular源码分析：angular中的依赖注入式如何实现的：https://www.cnblogs.com/web2-developer/p/angular-2.html
 在angular中，有没有必要把数据模型单独定义（突出数据模型）？https://segmentfault.com/a/1190000015976254
 
 更多从官方文档去熟悉更多东西的用法，不要一上来就百度
