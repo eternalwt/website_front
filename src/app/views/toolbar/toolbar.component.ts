@@ -12,6 +12,8 @@ export class ToolbarComponent implements OnInit {
 
   username: string;
 
+  searchItem: string;
+
   constructor(
     private dataService: DataService,
     private router: Router,

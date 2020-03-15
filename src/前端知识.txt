@@ -128,6 +128,9 @@ Google/Office/PDF Document Viewer In Angular：https://angularscript.com/google-
 ngx-treeview：https://www.npmjs.com/package/ngx-treeview
 angular-tabs-component：https://www.npmjs.com/package/angular-tabs-component
 ng2-file-upload：https://www.cnblogs.com/NeverCtrl-C/p/7778304.html
+Angular File Upload【好像很强大】：https://www.npmjs.com/package/angular-file-upload
+ngx-echarts
+
 
 ==============================================================================================
 
@@ -509,6 +512,11 @@ https://stackoverflow.com/questions/45512823/angular4-material-md-table-column-w
 https://stackoverflow.com/questions/48684560/mat-table-auto-fit-column-width-to-bigger-content
 Angular 8/9 Modal Tutorial with Angular Material Dialog：https://www.positronx.io/angular-8-modal-tutorial-with-angular-material-dialog/
 Angular Modal Popup Example | Angular Material Dialog：https://appdividend.com/2019/02/11/angular-modal-tutorial-with-example-angular-material-dialog/
+Angular Material Dialog: A Complete Example【这个里面讲了input】：https://blog.angular-university.io/angular-material-dialog/
+MatDialog（DialogData）：
+https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
+https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
+https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
 Creating UIs with Angular Material Design Components：https://www.sitepoint.com/angular-material-design-components/
 Add AutoComplete in Angular Application using Angular Material：https://www.freakyjolly.com/angular-7-6-add-autocomplete-in-angular-application-using-angular-material/
 How to make a custom theme in Angular Material：
@@ -854,6 +862,13 @@ https://www.cnblogs.com/smileself/p/9805819.html
 https://blog.csdn.net/huang100qi/article/details/82357141
 https://www.jianshu.com/p/7994b1fc6dfe
 https://juejin.im/entry/590c2798ac502e0065312bc7?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
+
+Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
+小试 Material Design：一大波养眼妹纸：https://segmentfault.com/a/1190000002389036
+Angular Material UI Dialog的使用：https://www.jianshu.com/p/bce25fef312e
+
+自己动手实现一个 Flex 布局框架：https://segmentfault.com/a/1190000007167682
+angular组件－特殊的瀑布流（原创）：https://segmentfault.com/a/1190000006921007
 
 CREATING A SINGLETON SERVICE IN ANGULAR2：https://octoperf.com/blog/2016/03/29/singleton-service-using-angular2/
 单例服务：https://angular.cn/guide/singleton-services

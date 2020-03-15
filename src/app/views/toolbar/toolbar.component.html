@@ -1,7 +1,7 @@
-<mat-toolbar color = "primary">
+<mat-toolbar color="primary">
     <span><a routerLink="/"  class="mat-h1">Angular CMS</a></span>
-    <!-- <span>Edit</span> -->
-    <span class="filler"></span>
+    <span class="filler"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input style="width:200px;" matInput placeholder="search" value="{{searchItem}}">&nbsp;&nbsp;&nbsp;&nbsp;
     <span>欢迎您，{{username}}</span>&nbsp;&nbsp;
     <span style="cursor: pointer;" (click)="logoutClick()">Logout</span>
  </mat-toolbar>

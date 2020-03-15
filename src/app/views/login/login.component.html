@@ -13,7 +13,8 @@
 
   <label>
     password:
-    <textarea formControlName="password"></textarea>
+    <!-- <textarea formControlName="password"></textarea> -->
+    <input type="password" formControlName="password">
     <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
       <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
     </div>

@@ -31,6 +31,7 @@ import { AddUserComponent } from './views/user/user-add/add-user.component';
 import { ThirdPartyComponent } from './views/third-party/third-party.component';
 import { ThirdpartyCompModule } from './thirdparty-comp.module';
 import { MainComponent } from './views/main/main.component';
+import { MsgComponent } from './views/msg/msg.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { MainComponent } from './views/main/main.component';
     AddUserComponent,
     ThirdPartyComponent,
     MainComponent,
+    MsgComponent,
   ],
   imports: [
     BrowserModule,

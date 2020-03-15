@@ -17,6 +17,7 @@ import { AuthGuard } from './auth.guard';
 import { AddUserComponent } from './views/user/user-add/add-user.component';
 import { ThirdPartyComponent } from './views/third-party/third-party.component';
 import { MainComponent } from './views/main/main.component';
+import { MsgComponent } from './views/msg/msg.component';
 
 
 const routes: Routes = [
@@ -39,6 +40,7 @@ const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
     { path: 'components', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
     { path: '3rdparty', component: ThirdPartyComponent, canActivate: [AuthGuard] },
+    { path: 'message', component: MsgComponent, canActivate: [AuthGuard] },
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     
   ]}

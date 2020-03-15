@@ -1,3 +1,4 @@
+
 公司项目需要实验的几个方面：1.大屏把数据的获取和加载分开；2.webSocket推送数据（提高完成度）；3.图表代码怎么放入service精简
 看不到图表的问题看看是不是胡高伟的代码出了问题
 47新表数据库新表：pcr_device_data_avg
@@ -19,18 +20,29 @@ https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
 【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
 
 【周六】
-加消息中心代码【既能按角色全部选择，又能勾选；角色限制；websocket】
+出bug了，菜单出现了2次
+【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
+把铃铛区做出来，把圆形用户头像及下拉列表登出做出来
+把mainPage做好，仿造AdminLTE，至少做一个文章列表和更多、地图、工作流等，最好做6个区域
+menu没有根据in_use过滤
+加消息中心代码【既能按角色全部选择，又能勾选；角色限制；toast；websocket】Expansion Panel + 复选框：https://www.tutorialspoint.com/angular_material7/angular_material7_expansion_panel.htm
+toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
 今天把消息中心做出来，把用户列表的角色加上去
-【我有一个文档是常用ngx-控件的，找到看一遍】
-我的material的树数据还没对上，这个是要做好的
+我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
+面包屑先想想怎么用，然后看是不是先加一个凑数
 弹出框再看（包括目录划分的最佳实践）
+从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
+搜索框优化或换掉，我都搜索框还可以做的更好
+auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
+【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
+样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
+二级菜单控件side nav
+【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 
 看一个material的代码，看一个ngx-代码。只有看过代码，才能放心用
 
-二级菜单控件side nav
-【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
 先找一个弹出框组件
 尝试控件的过程，也是一个不断筛选哪些值得下载的过程【还是要和ngx等那一套对比一下】
@@ -49,8 +61,6 @@ https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-
 懒加载、预加载用好
 
 mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
-
-Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
 
 关于Angular样式封装、ng-deep：
 https://segmentfault.com/a/1190000012086737
@@ -81,10 +91,8 @@ Spring Batch Tutorial: Reading Information From an Excel File：https://www.petr
 AdminLTE很强大，它还缺什么常用的控件？它的样式是不是可以很方便的赋给ngx-控件达到整合的目的？
 AdminLTE的表格没有设置一页多少条的功能
 AdminLTE的Advanced Form值得学习一下
-
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
 
-ngx-progress、ng-circle-progress、ng2-multi-step-form、
 【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
 ngx-dynamic-dashboard-framework：https://github.com/catalogicsoftware/ngx-dynamic-dashboard-framework
 搜“angular image preview”
@@ -101,14 +109,15 @@ Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（�
 【3月20号左右：1.前端要达到AdminLTE的里程碑；2.找一下有没有项目机会（如果有就不上班了）】
 
 【做一些编码】
-(1)找word、excel的util，并测试；(2)前端的word、pdf预览做起来；(3)看看有没有ngx版的ztree；(4)看springBatch
+(1)找word、excel的util，并测试；(2)看看有没有ngx版的ztree；(3)看springBatch
 
 1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
   ng2-dragula：
-  ngx-bootstrap、ngx-color-picker、ngx-echarts：https://www.npmjs.com/package/
+  ngx-bootstrap、ngx-color-picker：https://www.npmjs.com/package/
   ng2-charts、ng2-select、ng2-table
-  https://gitee.com/iesc/ngx-treeview
+  ngx-progress、ng-circle-progress、ng2-multi-step-form
   ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
+  ngx-mask：https://github.com/JsDaddy/ngx-mask
 angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
 https://blog.csdn.net/daqiang012/article/details/86617513
 https://www.jianshu.com/p/48e5d02a2f88
@@ -497,10 +506,6 @@ https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
 [Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
 Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
 material官方全列表：https://material.angular.io/components/dialog/api
-MatDialog：
-https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
-https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
-https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
 Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
 使用material还有个好处，可以尝试一下换界面的工作量
 angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
@@ -803,10 +808,6 @@ side-nav
 https://www.devglan.com/angular/material-sidenav-example
 https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
 https://code-maze.com/angular-material-navigation/
-
-添加dialog已做通一种，第二种方法也试一下：https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
-
-Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
 
 mat-form-field（form field） is used to create a wrapper over angular components and is used to apply text styles like underline, bold, hints etc：
 https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
