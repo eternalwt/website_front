@@ -132,6 +132,14 @@ Angular File Upload【好像很强大】：https://www.npmjs.com/package/angular
 ngx-echarts
 
 
+这个里面控件看到第6页了：
+https://angularscript.com/category/page/6/
+https://angularscript.com/pretty-checkbox-components-for-angular/
+https://angularscript.com/3d-product-viewer/
+https://angularscript.com/image-carousel-gallery/
+https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwig/
+
+
 ==============================================================================================
 
 Mat-Icon List : 900+ Angular Material Icons：
