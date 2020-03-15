@@ -1,0 +1,32 @@
+<p style="margin-left:25px;">
+    <mat-checkbox class="tp-margin" [(ngModel)]="checked" [(indeterminate)]="indeterminate"
+        [labelPosition]="labelPosition" [disabled]="disabled">
+        Select All
+    </mat-checkbox>
+</p>
+
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <mat-checkbox class="tp-margin" [(ngModel)]="checked" [(indeterminate)]="indeterminate"
+                [labelPosition]="labelPosition" [disabled]="disabled">
+                Role Name
+            </mat-checkbox>
+        </mat-panel-title>
+        <mat-panel-description>
+            Role Name Description
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+        <input matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Age">
+    </mat-form-field>
+</mat-expansion-panel>
+
+<mat-divider></mat-divider>
+
+<textarea style="display:block;width:100%;margin:20px 0 20px 0" rows="10"></textarea>
+
+<button mat-raised-button color="accent" (click)="saveUser()">发送</button>

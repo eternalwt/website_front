@@ -20,7 +20,6 @@ https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
 【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
 
 【周六】
-出bug了，菜单出现了2次
 【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
 把铃铛区做出来，把圆形用户头像及下拉列表登出做出来
 把mainPage做好，仿造AdminLTE，至少做一个文章列表和更多、地图、工作流等，最好做6个区域
@@ -29,10 +28,20 @@ menu没有根据in_use过滤
 toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
 今天把消息中心做出来，把用户列表的角色加上去
 我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
-面包屑先想想怎么用，然后看是不是先加一个凑数
+面包屑先想想怎么用，然后看是不是先加一个凑数。我能想到都一个用法：搜索等不对应菜单都功能，返回上一级等：
+http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
+面包屑是不是最好做成可关闭的？在有主类别和子类别都展示都地方可以用面包屑
+ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
+ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
+（material）mat-file-upload：https://angularscript.com/file-select-upload-material/
+
 弹出框再看（包括目录划分的最佳实践）
 从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
 搜索框优化或换掉，我都搜索框还可以做的更好
+搜索框设计：
+http://www.woshipm.com/pd/907780.html
+http://www.woshipm.com/pd/1799366.html（待看）
+https://www.jianshu.com/p/8cbcd13d07b2
 auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
 【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
 样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
@@ -529,6 +538,8 @@ https://code-maze.com/angular-material-navigation/
 【再看一眼EasyUI？】EasyUI 下载地址：http://www.jeasyui.cn/download.html
 
 我的userProfile功能后端已经准备好了，切换前端模板后就可以完善了
+
+如果从github上fork一个控件自己修改后，是用npm包都格式使用，还是用component的格式使用？
 
 =================================================================
 
