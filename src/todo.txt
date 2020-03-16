@@ -21,10 +21,12 @@ https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
 
 【周六】
 【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
+二级菜单控件side nav
+【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 把铃铛区做出来，把圆形用户头像及下拉列表登出做出来
 把mainPage做好，仿造AdminLTE，至少做一个文章列表和更多、地图、工作流等，最好做6个区域
 menu没有根据in_use过滤
-加消息中心代码【既能按角色全部选择，又能勾选；角色限制；toast；websocket】Expansion Panel + 复选框：https://www.tutorialspoint.com/angular_material7/angular_material7_expansion_panel.htm
+加消息中心代码【既能按角色全部选择，又能勾选；角色限制；toast；websocket】
 toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
 今天把消息中心做出来，把用户列表的角色加上去
 我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
@@ -34,6 +36,7 @@ http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
 ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
 ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
 （material）mat-file-upload：https://angularscript.com/file-select-upload-material/
+
 
 弹出框再看（包括目录划分的最佳实践）
 从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
@@ -45,8 +48,6 @@ https://www.jianshu.com/p/8cbcd13d07b2
 auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
 【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
 样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
-二级菜单控件side nav
-【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
 infinite scroll
 
 
@@ -331,21 +332,17 @@ echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.
 看看最新的主机和显示器，有没有适合放客厅的
 
 【27号简单任务】
-  3.再看angular material控件：https://www.tutorialspoint.com/angular_material7/index.htm
+  再看angular material控件：https://www.tutorialspoint.com/angular_material7/index.htm
+  Expansion Panel：https://www.tutorialspoint.com/angular_material7/angular_material7_expansion_panel.htm
   整合rabbitmq（已安装）
   echarts：把图形再熟悉一下，动手一下
   上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.word、pdf预览搞定【处于框架思维时，细节思维又消失了，觉得细节麻烦。要能同时保持两种思维】
-  2.再配一遍mybatis（或者用financial那个工程？改名为boot-basic，搞懂多数据源）
   Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
 
 学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
 
-1.添加menu页面加树控件
-
 springboot+druid+mybatis-Plus 配置详解【跟xml方式对比】：https://www.cnblogs.com/shine-rainbow/p/9618100.html
-
-看我现有的页面为啥效果做不好（如何用好indigo.css？），再对比用了theme是否能做好
 
 【再确认一下ng-bootstrap和哪个组合最好】
 ng-bootstrap组件把配色想清楚、语言替换搞清楚，是不是就没有问题了？https://ng-bootstrap.github.io/#/components/alert/examples

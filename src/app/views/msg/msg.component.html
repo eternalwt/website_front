@@ -5,16 +5,16 @@
     </mat-checkbox>
 </p>
 
-<mat-expansion-panel>
+<mat-expansion-panel *ngFor="let item of roleList" style="margin-bottom: 15px;">
     <mat-expansion-panel-header>
         <mat-panel-title>
             <mat-checkbox class="tp-margin" [(ngModel)]="checked" [(indeterminate)]="indeterminate"
                 [labelPosition]="labelPosition" [disabled]="disabled">
-                Role Name
+                {{item.roleName}}
             </mat-checkbox>
         </mat-panel-title>
         <mat-panel-description>
-            Role Name Description
+            {{item.roleDescription}}
         </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-form-field>
@@ -27,6 +27,7 @@
 
 <mat-divider></mat-divider>
 
+<p>Message Content:</p>
 <textarea style="display:block;width:100%;margin:20px 0 20px 0" rows="10"></textarea>
 
 <button mat-raised-button color="accent" (click)="saveUser()">发送</button>
