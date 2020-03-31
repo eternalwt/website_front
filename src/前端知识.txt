@@ -8,7 +8,7 @@
 小数点需要做两版：1.；2.
 1.横轴的分隔问题；
 2.toFixed的问题研究清楚
-
+预防性保护的问题：表现层太重了
 
 把promise+RxJS写通，just try
 
@@ -63,10 +63,6 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 
 通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
 
-详细介绍RxJS在Angular中的应用【Observable.fromEvent解释了定义了什么事件。还是要分析http是怎么绑定的】：https://www.jb51.net/article/124393.htm
-除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
-rxjs源码分析
-
 写一个CSS样式之前，一定要搞清楚为什么那样写，是可以写好的：https://www.bitdegree.org/learn/css-display
 
 ================================================================================
@@ -93,8 +89,6 @@ input$.subscribe((event: any) => {
 });
 从语法角度来讲和 subscribe({ next, error, complete }) 是一样的
 
-【看看公司代码是否有用到】如果说 Observable 与 observer 是攻受结合体的话，那么 Subject 就是一个人即攻亦受
-
 【看一下这些名字很诱人的章节】：
 Breakout Game：https://www.learnrxjs.io/learn-rxjs/recipes/breakout-game
 Car Racing Game：https://www.learnrxjs.io/learn-rxjs/recipes/car-racing-game
@@ -119,6 +113,9 @@ autoLogin(): Promise<any> {
   })
   .toPromise()
   .then(res => res);
+
+NGXS, Akita是啥？（NgRx我知道）
+试看NgRx源码
 
 ==============================================================================================
 
@@ -169,7 +166,12 @@ ES6 Tutorial：
 https://www.tutorialspoint.com/es6/index.htm
 https://www.javascripttutorial.net/es6/
 
-http从observable到subscription都看清楚
+浏览器在 2020 年可以干什么？https://github.com/luruke/browser-2020/blob/master/README.md
+
+How to Modularize an Angular Application：
+https://dzone.com/articles/howto-modularize-an-angular-application-by-example?fromrel=true
+Refresh an Angular Component without reloading the same Component：
+https://dzone.com/articles/refresh-angular-component-without-reload-or-naviga?fromrel=true
 
 Java里面也有NaN（double的除法），把java和JS里面的NaN再学习一下：
 https://www.cnblogs.com/xubiao/p/5461714.html
@@ -204,6 +206,16 @@ pipe方法的方法体是啥？
 What are schedulers in RxJS：
 https://blog.strongbrew.io/what-are-schedulers-in-rxjs/
 https://jstobigdata.com/rxjs/rxjs-scheduler/
+http从observable到subscription都看清楚
+【看看公司代码是否有用到】如果说 Observable 与 observer 是攻受结合体的话，那么 Subject 就是一个人即攻亦受
+详细介绍RxJS在Angular中的应用【Observable.fromEvent解释了定义了什么事件。还是要分析http是怎么绑定的】：https://www.jb51.net/article/124393.htm
+除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
+rxjs源码分析
+Observable详解：https://segmentfault.com/a/1190000008809168
+在Angular2中使用Observable对象（RxJS）：
+https://blog.csdn.net/yuemei_1991/article/details/76408868
+https://blog.csdn.net/qq_30970807/article/details/53771521
+https://blog.csdn.net/xnyssxy/article/details/79868928
 
 <div echarts 这种写法是什么意思？问下张润
 echarts.init的方法引echarts
@@ -230,6 +242,10 @@ https://www.analyticsvidhya.com/blog/2019/06/build-machine-learning-model-in-you
 
 
 能否配置apps区分项目
+
+前端yarn：
+https://blog.csdn.net/idomyway/article/details/88411836
+https://yarn.bootcss.com/
 
 word书签怎么添加、使用、显示和删除标签：https://jingyan.baidu.com/article/948f5924faab49d80ef5f965.html
 
@@ -429,7 +445,7 @@ Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/articl
 
 angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识（module和service细看，思考echarts代码。再思考service的单例）】：
 https://www.agiratech.com/top-10-angular-best-practices/
-https://angular-academy.com/angular-architecture-best-practices/
+https://angular-academy.com/angular-architecture-best-practices/【代码能否根据这个尝试分层】一类函数就是一个facade的概念？
 https://aglowiditsolutions.com/blog/angular-best-practices/
 https://www.cmarix.com/angular-development-in-2020-best-practices-for-angular-developers/【这个里面讲了几个模块的划分，模块的划分是我们现在最缺乏的，当然最终具体的模块划分还是要根据业务来】
 https://www.tektutorialshub.com/angular/angular-folder-structure-best-practices/
@@ -475,6 +491,11 @@ material design的主题 + angular material
 
 4.看ng-bootstrap、ngx-bootstrap等概念，野鸡ng-matero等
 
+【自己实现ngFor】
+通过trackBy提高Angular *ngFor性能：https://pdf-lib.org/Home/Details/9931
+
+状态管理单独学习一下
+
 angular无用代码扫描
 
 Top Angular Component Libraries to Try in 2020：https://aglowiditsolutions.com/blog/top-angular-component-libraries/
@@ -488,7 +509,9 @@ https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
 https://codinglatte.com/posts/angular/ui-libraries-and-frameworks-for-angular-6/
 Top 27 Angular Components for Web Developers：https://colorlib.com/wp/angular-components/
 
-=========================================================================================
+看看这个async的用法：<li *ngFor="let customer of customers | async; let i=index">
+
+==============================================================================================
 
 Angular 2 Tutorial【还是得完整看一遍以免有明显的知识漏洞】：
 https://www.tutorialspoint.com/angular2/index.htm
@@ -860,16 +883,7 @@ https://blog.csdn.net/guiyunfan94/article/details/70670203
 
 看一下每个页面是怎么设置样式的，就能前进一大步
 
-最小间隔的问题没搞明白，minValueSpan好像不行
-
 如何自己实现一个 React 框架：https://pomb.us/build-your-own-react/
-
-tree-shaking：
-https://www.cnblogs.com/liuxinheng/articles/9964650.html
-https://www.cnblogs.com/smileself/p/9805819.html
-https://blog.csdn.net/huang100qi/article/details/82357141
-https://www.jianshu.com/p/7994b1fc6dfe
-https://juejin.im/entry/590c2798ac502e0065312bc7?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
 
 Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
 小试 Material Design：一大波养眼妹纸：https://segmentfault.com/a/1190000002389036
@@ -1602,9 +1616,6 @@ ionic3
 ================================================================================
 
 【转】完全理解 redux（从零实现一个 redux）：https://www.jianshu.com/p/3174d2910309
-Introduction to NgRx - NgRx Basics：https://www.codemeals.com/angular-tutorials/introduction-to-ngrx-ngrx-basics/
-Ngrx、RxJs、Redux的初步探究：https://blog.csdn.net/ltl112358/article/details/78551216
-如何用63行代码写一个NgRx Store：https://zhuanlan.zhihu.com/p/96016709
 了解redux的思路：
 https://my.oschina.net/kimyeongnam/blog/1860024
 https://www.jianshu.com/p/59ed5fe5eb9e?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
@@ -1614,7 +1625,15 @@ https://redux.js.org/
 https://www.cnblogs.com/bai1218/p/10104969.html
 https://baijiahao.baidu.com/s?id=1590300061305698080&wfr=spider&for=pc
 【状态管理，非常重要的知识，比zone.js重要。数据规模较小的时候，用service就可以把】
-Angular Tutorial: State Management With NgRx：https://dzone.com/articles/angular-app-state-management-with-ngrx
+Ngrx、RxJs、Redux的初步探究：https://blog.csdn.net/ltl112358/article/details/78551216
+如何用63行代码写一个NgRx Store：https://zhuanlan.zhihu.com/p/96016709
+Beginner's Guide to ngrx and Angular：https://stackabuse.com/beginners-guide-to-ngrx-and-angular/
+Introduction to NgRx - NgRx Basics：
+https://www.codemeals.com/angular-tutorials/introduction-to-ngrx-ngrx-basics/
+Angular Tutorial: State Management With NgRx：
+https://dzone.com/articles/angular-app-state-management-with-ngrx
+https://www.intertech.com/Blog/ngrx-tutorial-quickly-adding-ngrx-to-your-angular-6-project/
+https://www.intertech.com/Blog/ngrx-tutorial-actions-reducers-and-effects/
 Angular NgRx Store Tutorial：https://appdividend.com/2018/01/31/angular-ngrx-store-tutorial-example-scratch/
 Managing State in Angular with ngrx/store（比较一下下面的中文网页为啥看起来low很多）：
 https://auth0.com/blog/managing-state-in-angular-with-ngrx-store/
@@ -2492,13 +2511,6 @@ CheckBox的indeterminate属性：https://www.cnblogs.com/birdshome/archive/2005/
 
 Angular 模板 (Templates)：https://www.cnblogs.com/zzy-run-92/p/9396756.html
 
-【重要概念】
-Observable详解：https://segmentfault.com/a/1190000008809168
-在Angular2中使用Observable对象（RxJS）：
-https://blog.csdn.net/yuemei_1991/article/details/76408868
-https://blog.csdn.net/qq_30970807/article/details/53771521
-https://blog.csdn.net/xnyssxy/article/details/79868928
-
 Learn Angular Tutorial：
 https://www.codeproject.com/Articles/1207118/Learn-Angular-Tutorial
 https://www.jianshu.com/p/219fc1606ec8
@@ -2669,6 +2681,13 @@ Angular: 执行ng lint后如何快速修改错误：https://www.cnblogs.com/zhen
 tslint的几个问题：
 ERROR: D:/gao/code/website_front/src/app/views/login/login.component.ts:43:23 - == should be ===
 ERROR: D:/gao/code/website_front/src/app/views/nav/nav.component.ts:23:15 - object access via string literals is disallowed
+
+tree-shaking：
+https://www.cnblogs.com/liuxinheng/articles/9964650.html
+https://www.cnblogs.com/smileself/p/9805819.html
+https://blog.csdn.net/huang100qi/article/details/82357141
+https://www.jianshu.com/p/7994b1fc6dfe
+https://juejin.im/entry/590c2798ac502e0065312bc7?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
 
 Object.keys()和for-in都不能保证顺序：https://segmentfault.com/a/1190000018306931?utm_source=tag-newest
 

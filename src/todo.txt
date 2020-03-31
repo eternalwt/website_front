@@ -10,8 +10,11 @@
 ===================================================================================
 
 【3月20日开始寻找赚钱机会】
+年过完了，精神需要放松一下，知止。如果实在推进不动，就看看最佳实践，继续看echarts、整合vali和ng-bootstrap。晚上再看看python也行。
 
 每天中午吃完饭在床上歪一个半小时，既能看书，又能休息。
+
+新建angular工程时，如果不选择路由系统，是不是就可以打造多页面工程？
 
 canDeactivate如何提示有未保存信息？
 https://www.concretepage.com/angular-2/angular-candeactivate-guard-example
@@ -30,7 +33,7 @@ menu没有根据in_use过滤
 toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
 今天把消息中心做出来，把用户列表的角色加上去
 我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
-面包屑先想想怎么用，然后看是不是先加一个凑数。我能想到都一个用法：搜索等不对应菜单都功能，返回上一级等：
+面包屑先想想怎么用，然后看是不是先加一个凑数。我能想到都一个用法：搜索等不对应菜单的功能，返回上一级等：
 http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
 面包屑是不是最好做成可关闭的？在有主类别和子类别都展示都地方可以用面包屑
 ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
@@ -49,7 +52,6 @@ auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有aut
 【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
 样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
 infinite scroll
-
 
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 
