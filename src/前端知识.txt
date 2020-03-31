@@ -2159,6 +2159,7 @@ Angular项目目录结构详解：
 https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
 从HelloWorld去理解Angular程序的组成和启动：https://liumiaocn.blog.csdn.net/article/details/78366404
 
+angular6 监听路由变化、获取路由名称：https://blog.csdn.net/weixin_42080477/article/details/97663956
 router源码分析。router的navigate很好理解，跳转到另一个页面呢？前后端交互呢？【跳转为什么是前端局部跳转，把这个问题搞清楚】
 怎么跟网址关联起来的？
 ActivatedRoute可以获取全局信息，全局信息是怎么保存的？

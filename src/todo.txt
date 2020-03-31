@@ -12,7 +12,7 @@
 三件事：
 1.没权限网址不变该试一下了
 2.弹出框先在现在的基础上搞，然后也得搞一个ng的
-3.面包屑搞完
+3.使用reset来清空内容【把父类那个最佳实践加上去】
 
 【3月20日开始寻找赚钱机会】
 年过完了，精神需要放松一下，知止。如果实在推进不动，就看看最佳实践，继续看echarts、整合vali和ng-bootstrap。晚上再看看python也行。
@@ -45,7 +45,7 @@ http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
 ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
 ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
 （material）mat-file-upload：https://angularscript.com/file-select-upload-material/
-xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb
+xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb【遇到一个新的问题：如何显示菜单名称？】
 
 
 弹出框再看（包括目录划分的最佳实践）
@@ -408,8 +408,7 @@ angular的封装是封装出了新的标签和行为（一个控件内部又封�
 6.配置redis
 
 超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）
-【提高优先级】思考一下面包屑的用处大不大
-【提高优先级】2.找5个ngx开头的控件看一下【面包屑、tab先搞、二级菜单、表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+【提高优先级】2.找5个ngx开头的控件看一下【表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 2.mybatis继续看整合
 3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
 java整合rabbitmq和整合缓存一样，都涉及到JSR标准的问题
@@ -437,7 +436,6 @@ https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
 Angular Material 的设计之美【知道自己在干什么很重要】：https://zhuanlan.zhihu.com/p/81174831
 
 【寻找合适的表格控件】
-addrole编辑写通后带来的新问题：如何控制路由、菜单、面包屑（思考清楚）。使用reset来清空内容
 模仿add-role的编辑功能完成其他的（其他的有更多需要看的方面）
 规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
 login里面使用的时reactive form，代码里面有几处messageForm、formBuilder
