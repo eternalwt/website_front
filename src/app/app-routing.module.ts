@@ -38,7 +38,7 @@ const routes: Routes = [
     { path: 'addmenu', component: AddMenuComponent },
     { path: 'permassign', component: PermAssignComponent },
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-    { path: 'components', component: AboutComponent, canActivate: [AuthGuard] },// todo 下面的路径作为''的children
+    { path: 'components', component: AboutComponent, canActivate: [AuthGuard] },
     { path: '3rdparty', component: ThirdPartyComponent, canActivate: [AuthGuard] },
     { path: 'message', component: MsgComponent, canActivate: [AuthGuard] },
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },

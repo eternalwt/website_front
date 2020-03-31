@@ -24,5 +24,13 @@
         <input type="file" ng2FileSelect [uploader]="uploader" (change)="selectedFileOnChanged($event)" />
         <button (click)="uploadFile()">点击上传</button>
     </tab>
+    <tab tabTitle="breadcrumb">
+        https://github.com/udayvunnam/xng-breadcrumb
+        <xng-breadcrumb separator=">"></xng-breadcrumb>
+        <!-- <xng-breadcrumb [separator]="iconTemplate"></xng-breadcrumb> -->
+        <ng-template #iconTemplate>
+            <mat-icon>arrow_right</mat-icon>
+        </ng-template>
+    </tab>
 <tabs>
 

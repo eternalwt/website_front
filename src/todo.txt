@@ -9,12 +9,18 @@
 
 ===================================================================================
 
+三件事：
+1.没权限网址不变该试一下了
+2.弹出框先在现在的基础上搞，然后也得搞一个ng的
+3.面包屑搞完
+
 【3月20日开始寻找赚钱机会】
 年过完了，精神需要放松一下，知止。如果实在推进不动，就看看最佳实践，继续看echarts、整合vali和ng-bootstrap。晚上再看看python也行。
 
 每天中午吃完饭在床上歪一个半小时，既能看书，又能休息。
 
 新建angular工程时，如果不选择路由系统，是不是就可以打造多页面工程？
+https://stackoverflow.com/questions/50785182/angular-6-multi-page-application-mpa-is-possible
 
 canDeactivate如何提示有未保存信息？
 https://www.concretepage.com/angular-2/angular-candeactivate-guard-example
@@ -39,6 +45,7 @@ http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
 ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
 ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
 （material）mat-file-upload：https://angularscript.com/file-select-upload-material/
+xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb
 
 
 弹出框再看（包括目录划分的最佳实践）
@@ -72,10 +79,12 @@ https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-
   https://angular-2-training-book.rangle.io/routing/route_guards
   https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
 
-懒加载、预加载用好
 
 mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
 
+关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
+
+Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
 关于Angular样式封装、ng-deep：
 https://segmentfault.com/a/1190000012086737
 https://angular.io/guide/component-styles
@@ -106,6 +115,7 @@ AdminLTE很强大，它还缺什么常用的控件？它的样式是不是可以
 AdminLTE的表格没有设置一页多少条的功能
 AdminLTE的Advanced Form值得学习一下
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
+【最快的搭AdminLTE的办法是用别人改造成的angular版开源的，直接测试、直接开搞，很轻量没有损失】
 
 【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
 ngx-dynamic-dashboard-framework：https://github.com/catalogicsoftware/ngx-dynamic-dashboard-framework
@@ -117,13 +127,12 @@ https://ng-bootstrap.github.io/#/home
 ng-bootstrap可以补充AdminLTE的控件【要试，不动手试永远不确定样式整合的效果。感觉ng-bootstrap好多控件和AdminLTE里面完全一样，看一下AdminLTE的代码比较一下就知道了】：
 Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（节省工作量）、Pagination这种是不是可以先看AdminLTE里面的样式，看准了就可以用了（毕竟自己封装@Input、@Output还是有点麻烦）
 
-【最快的搭AdminLTE的办法是用别人改造成的angular版开源的，直接测试、直接开搞，很轻量没有损失】
 
 【看两条牛仔裤，降价了买】
 【3月20号左右：1.前端要达到AdminLTE的里程碑；2.找一下有没有项目机会（如果有就不上班了）】
 
 【做一些编码】
-(1)找word、excel的util，并测试；(2)看看有没有ngx版的ztree；(3)看springBatch
+(1)找word、excel的util，并测试；(3)看springBatch
 
 1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
   ng2-dragula：
@@ -162,10 +171,6 @@ Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/4641
 前端开发，比较出色的 UI 库有哪些？https://www.zhihu.com/question/353100080/answer/875018512
 
 ===================================================================================
-
-晚上拖卧室地【整理卫生间地面】（从晚上开始先把扫地包了）、洗袜子、锻炼、杨俊的问题
-星期二晚上洗澡
-车位租金跟那个人扯一下
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
 其他基础设施
@@ -206,7 +211,6 @@ http://wiki.cn.mikecrm.com/form-layout
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
   依赖注入【自己写个依赖注入的？】
   7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
-  Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
 
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
@@ -255,8 +259,6 @@ angular高德地图插件
 
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
-
-关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
 
 npm update
 
@@ -530,9 +532,6 @@ https://code-maze.com/angular-material-navigation/
 2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
 5.搞清楚用directive和component封装控件的异同
 自己想要的基本功能差不多后，再调样式
-
-优先完成：加一个面包屑、加一个tab（这个看起来有点难）
-5.前端看看人人网那个哥们儿的框架
 
 前端是不是也可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
 

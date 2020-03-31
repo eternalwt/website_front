@@ -37,6 +37,7 @@
     "sockjs-client": "^1.4.0",
     "stompjs": "^2.3.3",
     "tslib": "^1.10.0",
+    "xng-breadcrumb": "^5.0.1",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {

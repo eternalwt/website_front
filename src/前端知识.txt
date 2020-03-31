@@ -16,8 +16,6 @@ ng generate class Hero
 
 ===========================================================================
 
-咸鱼买自行车【逛一下咸鱼】
-
 【找一些设计规范看看】
 material design
 ant design
@@ -116,6 +114,10 @@ autoLogin(): Promise<any> {
 
 NGXS, Akita是啥？（NgRx我知道）
 试看NgRx源码
+
+material的下拉框是把区域撑开，这样的设计思路特点是啥？
+
+浅谈JS中 reduce() 的用法：https://www.jianshu.com/p/541b84c9df90
 
 ==============================================================================================
 
@@ -291,7 +293,6 @@ https://www.tutorialspoint.com/angular6/angular6_module.htm
 Angular项目主要文件的作用：https://blog.csdn.net/xnh_565175944/article/details/81022824
 bootstrapModule前干的事情：https://www.baidu.com/link?url=sQs20DPrZED5DTHjLmK6i1fpeuXSMamf2PguSfqWjkI4M3tOh-Hhy42tTgCHe2wn&wd=&eqid=97ef88c40003290b000000025ceccd7c
 理解module存在的意义（及和component、service等的关系，module之间的关系。再看具体的细节）：https://blog.csdn.net/sunshinessx/article/details/88663858
-Angular NgModule - Ahead Of Time Compilation (AOT) And Lazy Loading：https://blog.angular-university.io/angular2-ngmodule/
 An NgModule describes how the application parts fit together. Every application has at least one Angular module, the root module that you bootstrap to launch the application. By convention, it is usually called AppModule：http://www.ngui.cc/news/show-2148.html
 Angular2学习笔记――NgModule：
 https://www.cnblogs.com/dojo-lzz/p/5878073.html
@@ -1458,9 +1459,17 @@ https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
 loadChildren使用好像很简单，原理呢？
 preloadingStrategy
 angular4中的模块预加载的控制和实现：https://blog.csdn.net/happykala/article/details/77945000
+Lazy loading in Angular：https://www.tektutorialshub.com/angular/angular-lazy-loading/
 路由的懒加载：https://angular.io/guide/lazy-loading-ngmodules
+How to Implement Lazy Loading for Components Sample Application Example：https://www.freakyjolly.com/angular-6-lazy-loading-example/
 Angular 懒加载的实现：https://blog.csdn.net/idomyway/article/details/84996458
-Angular 中使用惰性加载：http://www.mamicode.com/info-detail-2136687.html
+https://alligator.io/angular/lazy-loading/
+Angular NgModule - Ahead Of Time Compilation (AOT) And Lazy Loading：https://blog.angular-university.io/angular2-ngmodule/
+懒加载、预加载用好：https://zhuanlan.zhihu.com/p/56596626
+Lazy Loading最佳实践？
+Lazy Loading思考还好理解，看了一点点，继续看并思考怎么用好：
+https://www.tektutorialshub.com/angular/angular-lazy-loading/
+https://johnpapa.net/angular-9-lazy-loading-components/
 
 Angular 模块漫谈：https://www.imwhite.com.cn/2019/02/understand-angular-basic-type-scope/
 入门 Webpack，看这篇就够了：https://segmentfault.com/a/1190000006178770?utm_source=tag-newest
@@ -1978,7 +1987,6 @@ https://zhuanlan.zhihu.com/p/27069744
 angular 动态组件类型详解(四种组件类型)：https://www.jb51.net/article/106378.htm
 Angular动态创建组件之Portals：https://zhuanlan.zhihu.com/p/59719621
 在某个module下加component的方式：https://angularfirebase.com/lessons/how-to-lazy-load-components-in-angular-4-in-three-steps/
-How to Implement Lazy Loading for Components Sample Application Example：https://www.freakyjolly.com/angular-6-lazy-loading-example/
 Angular入口组件（entry component）与声明式组件的区别详解【理解了加载，有些东西可以放在entrycomponents里面】：
 https://www.jb51.net/article/137947.htm
 entryComponents：

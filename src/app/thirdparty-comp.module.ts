@@ -6,6 +6,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { NgxDocViewerModule } from 'ngx-doc-viewer';
 import { TabModule } from 'angular-tabs-component';
 import { FileUploadModule } from 'ng2-file-upload';
+import {BreadcrumbModule} from 'xng-breadcrumb';
 
 @NgModule({
   declarations: [],
@@ -16,17 +17,17 @@ import { FileUploadModule } from 'ng2-file-upload';
     PdfViewerModule,
     NgxDocViewerModule,
     TabModule,
-    FileUploadModule
+    FileUploadModule,
+    BreadcrumbModule
   ],
   exports: [
-    // MatButtonModule,
-    // MatCheckboxModule
     NgxEchartsModule,
     TreeviewModule,
     PdfViewerModule,
     NgxDocViewerModule,
     TabModule,
-    FileUploadModule
+    FileUploadModule,
+    BreadcrumbModule
   ]
 })
 export class ThirdpartyCompModule { }
