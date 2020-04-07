@@ -7,6 +7,7 @@ import { NgxDocViewerModule } from 'ngx-doc-viewer';
 import { TabModule } from 'angular-tabs-component';
 import { FileUploadModule } from 'ng2-file-upload';
 import {BreadcrumbModule} from 'xng-breadcrumb';
+import { NgxMultiModalModule } from 'ngx-multi-modal';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import {BreadcrumbModule} from 'xng-breadcrumb';
     NgxDocViewerModule,
     TabModule,
     FileUploadModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    NgxMultiModalModule
   ],
   exports: [
     NgxEchartsModule,
@@ -27,7 +29,8 @@ import {BreadcrumbModule} from 'xng-breadcrumb';
     NgxDocViewerModule,
     TabModule,
     FileUploadModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    NgxMultiModalModule
   ]
 })
 export class ThirdpartyCompModule { }

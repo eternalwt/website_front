@@ -63,6 +63,8 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 
 写一个CSS样式之前，一定要搞清楚为什么那样写，是可以写好的：https://www.bitdegree.org/learn/css-display
 
+几款前端开源模板：https://blog.csdn.net/sinat_40770656/article/details/95058150
+
 ================================================================================
 
 ECMAScript 2020（ES2020）的新增语法：https://alligator.io/js/es2020/
@@ -275,6 +277,9 @@ How To Use Ng-Template In Angular? https://www.angularjswiki.com/angular/what-is
 AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/72843137
 
 一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
+
+ECharts 前段时间发布了超亮眼的 GL，相对于之前已经圈粉无数的 ECharst-X 而言，ECharst GL更是帅到爆，无论是性能、颜值、类型都有了巨大的飞跃：
+https://efe.baidu.com/blog/building-realistic-map-with-echarts-gl/
 
 Angular 的 NgModule 是为了解决什么问题？
 https://www.zhihu.com/question/376817427/answer/1056417256
@@ -1708,7 +1713,7 @@ React + Typescript 工程化治理实践：https://zhuanlan.zhihu.com/p/91754525
 
 【G2和D3值得学习】
 Three.js 3D 动画
-d3.js
+d3.js教程：https://observablehq.com/@d3/learn-d3
 Day1 百度Echarts，蚂蚁金服G2，D3三种主流可视化工具对比：https://zhuanlan.zhihu.com/p/78163830
 把echarts这种东西封装成angular版本的要做些啥？
 ngx-echarts文档（根据下载时候对应的名称来查找文档，定位问题）：https://www.npmjs.com/package/ngx-echarts
@@ -2151,13 +2156,11 @@ https://www.zhihu.com/question/308348507/answer/720377178
 CSS in JS
 前端未来几年的发展方向是什么？https://www.zhihu.com/question/286700472/answer/503981729
 2020年前端最火的技术是什么？https://www.zhihu.com/question/365588457/answer/1031109933
-
+Angular 过时了吗?https://www.zhihu.com/question/383137600
 
 一步一步搭建前端监控系统：https://www.jianshu.com/p/c4549c28c64f
 
-Angular项目目录结构详解：
-https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
-从HelloWorld去理解Angular程序的组成和启动：https://liumiaocn.blog.csdn.net/article/details/78366404
+Bootstrapping multiple Angular 2 applications on the same page：https://blog.sstorie.com/bootstrapping-multiple-angular-2-applications-on-the-same-page/
 
 angular6 监听路由变化、获取路由名称：https://blog.csdn.net/weixin_42080477/article/details/97663956
 router源码分析。router的navigate很好理解，跳转到另一个页面呢？前后端交互呢？【跳转为什么是前端局部跳转，把这个问题搞清楚】

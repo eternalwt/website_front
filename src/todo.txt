@@ -9,10 +9,50 @@
 
 ===================================================================================
 
+不会读控件代码的话，就没办法彻底搞定
+
+primeng、ngx-admin、ng-zorro
+AdminLTE是不是有JQ问题？
+
+试分析几个控件源码
+PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
+ng-zorro源码
+ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com/haogj/p/11210861.html
+实现5个控件练手（biying搜索学习）【从primeng寻找灵感？】：modal，不是那么好实现的
+
+再看一遍英文angular教程
+
 三件事：
-1.没权限网址不变该试一下了
-2.弹出框先在现在的基础上搞，然后也得搞一个ng的
-3.使用reset来清空内容【把父类那个最佳实践加上去】
+0.3RD_PARTY页面第一次进入有tab控件的报错“Cannot set property 'active' of undefined”【如果不会读代码、不能改代码就不行】
+1.使用reset来清空内容【把父类那个最佳实践加上去】。表单再突破一次
+2.弹出框先在现在的基础上搞，然后也得搞一个ng的【如果不会读代码、不能改代码就不行】
+从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
+ng-bootstrap：https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
+PrimeNG的封装：
+https://www.npmjs.com/package/@al/ng-generic-components
+https://www.npmjs.com/package/@al/ng-navigation-components
+
+加ng-gallery：
+https://www.npmjs.com/package/ng-gallery
+https://www.npmjs.com/package/ngx-gallery-images
+ngx-multi-modal【把forRoot看懂再说】：https://www.npmjs.com/package/ngx-multi-modal
+angular-notifier：https://www.npmjs.com/package/angular-notifier
+加ngToast：https://www.npmjs.com/package/ng-toast
+
+【是不是要再次转换思路】
+1.看primeng等控件（那2个一定要看）；
+2.jquery控件能否包到ng里来？
+3.看怎么发布控件，搞懂这一套；
+4.把一些难控件的代码看一下
+5.再看样式隔离等问题
+6.最终还是要知道在哪里用什么控件，实现或许是小事
+
+教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
+
+Angular 5 App Structure With Multiple Modules：https://www.technouz.com/4644/angular-5-app-structure-multiple-modules/
+Angular项目目录结构详解：
+https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
+从HelloWorld去理解Angular程序的组成和启动：https://liumiaocn.blog.csdn.net/article/details/78366404
 
 【3月20日开始寻找赚钱机会】
 年过完了，精神需要放松一下，知止。如果实在推进不动，就看看最佳实践，继续看echarts、整合vali和ng-bootstrap。晚上再看看python也行。
@@ -21,6 +61,7 @@
 
 新建angular工程时，如果不选择路由系统，是不是就可以打造多页面工程？
 https://stackoverflow.com/questions/50785182/angular-6-multi-page-application-mpa-is-possible
+https://www.c-sharpcorner.com/forums/angular-for-multi-page-application
 
 canDeactivate如何提示有未保存信息？
 https://www.concretepage.com/angular-2/angular-candeactivate-guard-example
@@ -39,17 +80,15 @@ menu没有根据in_use过滤
 toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
 今天把消息中心做出来，把用户列表的角色加上去
 我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
-面包屑先想想怎么用，然后看是不是先加一个凑数。我能想到都一个用法：搜索等不对应菜单的功能，返回上一级等：
-http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
-面包屑是不是最好做成可关闭的？在有主类别和子类别都展示都地方可以用面包屑
 ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
 ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
 （material）mat-file-upload：https://angularscript.com/file-select-upload-material/
-xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb【遇到一个新的问题：如何显示菜单名称？】
+xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb
+【遇到一个新的问题：如何显示菜单名称？】需要从数据库读取路由然后对比
+我能想到都一个用法：搜索等不对应菜单的功能，返回上一级等：
+http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
+面包屑是不是最好做成可关闭的？在有主类别和子类别都展示都地方可以用面包屑
 
-
-弹出框再看（包括目录划分的最佳实践）
-从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
 搜索框优化或换掉，我都搜索框还可以做的更好
 搜索框设计：
 http://www.woshipm.com/pd/907780.html
@@ -527,7 +566,6 @@ https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
 https://code-maze.com/angular-material-navigation/
 
 
-2.tab、面包屑进展一点（用angular关键词搜，或许把这一点搞熟才是最终技术成熟的标志）【很有用的特性】（多想几种方法，能写通一种就很OK了）(1.angular material的设计思路再思考；2.几种方式的配合使用)
 5.搞清楚用directive和component封装控件的异同
 自己想要的基本功能差不多后，再调样式
 
