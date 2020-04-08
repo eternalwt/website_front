@@ -19,7 +19,13 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     simpleDialog: MatDialogRef<SimpleDialogComponent>;
 
     showMsg() {
-      this.simpleDialog = this.dialogModel.open(SimpleDialogComponent);
+      this.simpleDialog = this.dialogModel.open(SimpleDialogComponent, {
+        hasBackdrop: true,
+        data: {
+          title: "No Permission",
+          msg: "No enough permission to access this page."
+        }
+      });
     }
 
     // 路由守卫

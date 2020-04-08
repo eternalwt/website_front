@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'app-simple-dialog',
@@ -8,18 +8,15 @@ import { MatDialogRef } from '@angular/material';
 })
 export class SimpleDialogComponent implements OnInit {
 
-  title: string = "No Permission";
-  msg: string = "No enough permission to access this page.";
-
   constructor(
-    public dialogRef: MatDialogRef<SimpleDialogComponent>) { }
+    public dialogRef: MatDialogRef<SimpleDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) private data) { }
 
   ngOnInit() {
   }
   
   close(): void {
     this.dialogRef.close();
-    // todo 回到上一路由
   }
 
 }

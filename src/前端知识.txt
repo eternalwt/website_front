@@ -519,10 +519,11 @@ Top 27 Angular Components for Web Developers：https://colorlib.com/wp/angular-c
 
 ==============================================================================================
 
+经常看的一个网站：https://alligator.io/angular/
+
 Angular 2 Tutorial【还是得完整看一遍以免有明显的知识漏洞】：
 https://www.tutorialspoint.com/angular2/index.htm
 https://www.tektutorialshub.com/angular-2-tutorial/
-经常看的一个网站：https://alligator.io/angular/
 
 Angular Material + Bootstrap vs. MDbootstrap for Angular
 Angular Material 7：https://www.tutorialspoint.com/angular_material7/index.htm

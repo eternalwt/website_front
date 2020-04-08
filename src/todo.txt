@@ -47,6 +47,10 @@ angular-notifier：https://www.npmjs.com/package/angular-notifier
 5.再看样式隔离等问题
 6.最终还是要知道在哪里用什么控件，实现或许是小事
 
+ng-material-multilevel-menu【这个才是我要找的左侧树形菜单】：
+https://www.npmjs.com/package/ng-material-multilevel-menu
+https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
+
 教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
 
 Angular 5 App Structure With Multiple Modules：https://www.technouz.com/4644/angular-5-app-structure-multiple-modules/
@@ -166,6 +170,9 @@ https://ng-bootstrap.github.io/#/home
 ng-bootstrap可以补充AdminLTE的控件【要试，不动手试永远不确定样式整合的效果。感觉ng-bootstrap好多控件和AdminLTE里面完全一样，看一下AdminLTE的代码比较一下就知道了】：
 Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（节省工作量）、Pagination这种是不是可以先看AdminLTE里面的样式，看准了就可以用了（毕竟自己封装@Input、@Output还是有点麻烦）
 
+搜索ng mat以发现更多material控件，例如：
+https://www.npmjs.com/package/ng-mat-search-bar
+https://www.npmjs.com/package/ng-mat-icon-bar
 
 【看两条牛仔裤，降价了买】
 【3月20号左右：1.前端要达到AdminLTE的里程碑；2.找一下有没有项目机会（如果有就不上班了）】
