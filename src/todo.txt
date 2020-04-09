@@ -9,7 +9,8 @@
 
 ===================================================================================
 
-form整好（先把template-driven用溜）【add-role.component.ts里面的注释干掉】。把他们的布局统一一下
+列表项的编辑、删除：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】
+form整好（先把template-driven用溜）把他们的布局统一一下
 Introduction to forms in Angular：https://angular.io/guide/forms-overview
 列表再搞一次，后面加按钮、分页【尝试分析代码】
 form抽父类，dialog也可以放进去，把alert替换掉
@@ -29,6 +30,11 @@ ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com
 实现5个控件练手（biying搜索学习）【从primeng寻找灵感？】：modal，不是那么好实现的
 
 再看一遍英文angular教程
+
+【表格问题】
+1：排序
+2.后端分页
+3.操作按钮【看下面material的文章继续】
 
 三件事：
 0.3RD_PARTY页面第一次进入有tab控件的报错“Cannot set property 'active' of undefined”【如果不会读代码、不能改代码就不行】
@@ -61,6 +67,7 @@ https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
 6.最终还是要知道在哪里用什么控件，实现或许是小事
 
 把angular material table弄好后，说不定主题需要再搞一次
+把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
 
 ng-material-multilevel-menu【这个才是我要找的左侧树形菜单】：
 https://www.npmjs.com/package/ng-material-multilevel-menu

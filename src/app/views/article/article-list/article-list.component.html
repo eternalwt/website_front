@@ -14,6 +14,15 @@
         <td mat-cell *matCellDef="let element"> {{element.content}}</td>
     </ng-container>
 
+    <!-- Action Column -->
+    <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <td mat-cell *matCellDef="let element" class="action-link"> 
+          <a style="cursor: pointer;" (click)="openDialog('Update',element)">Edit</a> | 
+          <a style="cursor: pointer;" (click)="openDialog('Delete',element)">Delete</a>  
+        </td>
+      </ng-container>
+    
     <!-- row operation Column -->
     <!-- <ng-container matColumnDef="content">
         <th mat-header-cell *matHeaderCellDef style="width:80px;"> Operation </th>
@@ -25,6 +34,6 @@
    showFirstLastButtons
    (page) = "pageEvent = pageOptionChange()">
 </mat-paginator>
-
+action换成图片
 <!-- [length] = "length"
 [pageSize] = "pageSize" -->
