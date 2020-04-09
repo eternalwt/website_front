@@ -25,7 +25,7 @@ export class AddRoleComponent implements OnInit {
     // 编辑模式
     if (this.id > 0) {
       this.editMode = true;
-      this.title = "编辑角色";// todo 前端没显示，html的form写法还是有问题
+      this.title = "编辑角色";
       this.dataService.getRoleById(this.id).subscribe(res => {
         if (res && res["code"] == 1) {
           // todo 能否用form的变量，这里少定义2个变量

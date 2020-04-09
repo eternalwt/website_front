@@ -37,6 +37,7 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatNativeDateModule,
     MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
     MatProgressSpinnerModule,
     MatCardModule,
     MatCheckboxModule,
@@ -46,7 +47,6 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatRadioModule,
     MatExpansionModule,
     MatTreeModule,
-    MatPaginatorModule,
     MatTabsModule,
     MatGridListModule,
     MatDividerModule
@@ -60,6 +60,7 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatNativeDateModule,
     MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
     MatProgressSpinnerModule,
     MatCardModule,
     MatCheckboxModule,
@@ -69,7 +70,6 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     MatRadioModule,
     MatExpansionModule,
     MatTreeModule,
-    MatPaginatorModule,
     MatTabsModule,
     MatGridListModule,
     MatDividerModule
