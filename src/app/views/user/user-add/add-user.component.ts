@@ -25,9 +25,25 @@ export class AddUserComponent implements OnInit {
     });
   }
 
-  saveUser() {
-    let roleIdList = this.roleList.filter(item => item.checked).map(item => {return item.roleId});
-    let param = {userName: this.username, password: this.password, roleIdList: roleIdList};
+  // saveUser() {
+  //   let roleIdList = this.roleList.filter(item => item.checked).map(item => {return item.roleId});
+  //   let param = {userName: this.username, password: this.password, roleIdList: roleIdList};
+  //   this.dataService.addUser(param).subscribe(res => {
+  //     if (res && res["code"] == 1) {
+  //       alert("用户创建成功！");
+
+  //       this.username = "";
+  //       this.password = "";
+  //       this.roleList.map(item => item.checked = false);
+  //     }
+  //   });
+  // }
+
+  // todo 1.前端报错；2.没有建立成功角色关联
+  onSubmit(value) {
+    let roleIdList = this.roleList.filter(item => item.checked).map(item => {return item.roleId});//todo
+    debugger;
+    let param = {userName: value.username, password: value.password, roleIdList: roleIdList};
     this.dataService.addUser(param).subscribe(res => {
       if (res && res["code"] == 1) {
         alert("用户创建成功！");
@@ -35,7 +51,6 @@ export class AddUserComponent implements OnInit {
         this.username = "";
         this.password = "";
         this.roleList.map(item => item.checked = false);
-        // todo 清除角色的勾选
       }
     });
   }

@@ -1,32 +1,35 @@
-<div class="wrapper">
-    <div>
-        <label>用户名：</label>
-    </div>
-    <div>
-        <input type="text" [(ngModel)]="username">
-    </div>
-    <!-- formControlName="username"
-    <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
-        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
-    </div> -->
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+    <div class="wrapper">
+        <div>
+            <label>用户名：</label>
+        </div>
+        <div>
+            <input type="text" name="username" [(ngModel)]="username">
+        </div>
+        <!-- formControlName="username"
+        <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
+            <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+        </div> -->
 
-    <div>
-        <label>密码：</label>
-    </div>
-    <div>
-        <input type="text" [(ngModel)]="password">
-    </div>
-    <!-- formControlName="password" -->
-    <!-- <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
-        <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
-    </div> -->
+        <div>
+            <label>密码：</label>
+        </div>
+        <div>
+            <input type="password" name="password" [(ngModel)]="password">
+        </div>
+        <!-- formControlName="password" -->
+        <!-- <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
+            <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
+        </div> -->
 
-    <div>
-        <label>角色：</label>
+        <div>
+            <label>角色：</label>
+        </div>
+        <div>
+            <mat-checkbox class="tp-margin" [ngModelOptions]="{standalone: true}" *ngFor="let role of roleList" [(ngModel)]="role.checked">{{role.roleName}}
+            </mat-checkbox>
+        </div>
     </div>
-    <div>
-        <mat-checkbox class="tp-margin" *ngFor="let role of roleList" [(ngModel)]="role.checked">{{role.roleName}}</mat-checkbox>
-    </div>
-</div>
 
-<button mat-raised-button color="accent" (click)="saveUser()">保存</button>
+    <button mat-raised-button color="accent" type="submit">保存</button>
+</form>

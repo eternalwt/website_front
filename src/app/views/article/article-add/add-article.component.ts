@@ -52,7 +52,7 @@ export class AddArticleComponent implements OnInit {
     // this.content = data;
   }
 
-  onSubmit() {
+  onSubmit(value) {
     this.submitted = true;
 
     // if (this.messageForm.invalid) {

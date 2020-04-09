@@ -644,6 +644,10 @@ Angular Material 的设计之美：https://juejin.im/post/5d6fb73e518825168d37d5
 Angular Material 给出了多套主题的设置方法，只需要增加样式控制类就可以了。
 Angular Material: Containers with the Layout API【视频】：https://egghead.io/lessons/angularjs-angular-material-containers-with-the-layout-api
 Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
+https://alligator.io/angular/flex-layout/
+【封装的太很真的好用吗？】下面的文章列出了angular flex layout的详细功能和优势：
+https://www.angularjswiki.com/flexlayout/
+https://www.angularjswiki.com/flexlayout/basics/
 
 先从一个小点入手：ng-bootstrap怎么定制样式？
 ng-bootstrap是一个angular UI bootstrap库：http://www.fly63.com/nav/1157
@@ -679,13 +683,6 @@ ng-bootstrap、ngx-bootstrap、react-bootstrap、bootstrap-vue这种项目结合
 Github 上有什么好看的前端后台项目模板?https://www.zhihu.com/question/309682777/answer/580120248
 
 angular2 中使用第三方组件样式调整：https://blog.csdn.net/cut001/article/details/70924300
-
-Angular Material 并没有布局组件。官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：
-https://github.com/angular/flex-layout
-https://alligator.io/angular/flex-layout/
-【封装的太很真的好用吗？】下面的文章列出了angular flex layout的详细功能和优势：
-https://www.angularjswiki.com/flexlayout/
-https://www.angularjswiki.com/flexlayout/basics/
 
 =========================================================================================
 

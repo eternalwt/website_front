@@ -1,13 +1,11 @@
-
-<!-- <form [formGroup]="messageForm" (ngSubmit)="onSubmit()"> -->
-
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
     标题：
-    <input type="text" [(ngModel)]="title">
+    <input type="text" [(ngModel)]="title" [ngModelOptions]="{standalone: true}">
     <br />
 
     正文：
-    <ckeditor [editor]="Editor" [(ngModel)]="content" [config]="config" (ready)="onReady($event)"  (change)="onChange($event)"></ckeditor>
+    <ckeditor [editor]="Editor" [(ngModel)]="content" [ngModelOptions]="{standalone: true}" [config]="config" 
+        (ready)="onReady($event)"  (change)="onChange($event)"></ckeditor>
 
-    <button mat-raised-button color="accent" (click)="onSubmit()">保存</button>
-
-<!-- </form> -->
+    <button mat-raised-button color="accent" type="submit">保存</button>
+</form>

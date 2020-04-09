@@ -9,6 +9,13 @@
 
 ===================================================================================
 
+form整好（先把template-driven用溜）【add-role.component.ts里面的注释干掉】。把他们的布局统一一下
+列表再搞一次，后面加按钮、分页【尝试分析代码】
+form抽父类，dialog也可以放进去，把alert替换掉
+ckEditor的上传图片
+布局方面提升：搜一下用到block的地方，对比flex和grid
+contact页面里面，label包在外面有什么好处？
+
 不会读控件代码的话，就没办法彻底搞定
 
 primeng、ngx-admin、ng-zorro
@@ -131,6 +138,11 @@ https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-
 mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
 
 关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
+
+【我有一个用到ngModelOptions的地方需要再审视一下】关于ngModelOptions用法总结 让校验不过的验证绑定ngModel：
+https://blog.csdn.net/qq_31511247/article/details/52604888
+https://www.cnblogs.com/mayufo/p/6113612.html
+
 
 Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
 关于Angular样式封装、ng-deep：
