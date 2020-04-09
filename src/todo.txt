@@ -39,6 +39,11 @@ ngx-multi-modal【把forRoot看懂再说】：https://www.npmjs.com/package/ngx-
 angular-notifier：https://www.npmjs.com/package/angular-notifier
 加ngToast：https://www.npmjs.com/package/ng-toast
 
+Creating Beautiful Apps with Angular Material：
+https://auth0.com/blog/creating-beautiful-apps-with-angular-material/
+https://www.sitepoint.com/angular-material-design-components/
+https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
+
 【是不是要再次转换思路】
 1.看primeng等控件（那2个一定要看）；
 2.jquery控件能否包到ng里来？
@@ -61,7 +66,7 @@ https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
 【3月20日开始寻找赚钱机会】
 年过完了，精神需要放松一下，知止。如果实在推进不动，就看看最佳实践，继续看echarts、整合vali和ng-bootstrap。晚上再看看python也行。
 
-每天中午吃完饭在床上歪一个半小时，既能看书，又能休息。
+【等把现有的问题再解决相当一部分后，把代码拆成2部分，分别套入material dashboard和vali-admin】
 
 新建angular工程时，如果不选择路由系统，是不是就可以打造多页面工程？
 https://stackoverflow.com/questions/50785182/angular-6-multi-page-application-mpa-is-possible
@@ -256,7 +261,7 @@ http://wiki.cn.mikecrm.com/form-layout
 1.再搞一轮基础
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
   依赖注入【自己写个依赖注入的？】
-  7.simple-dialog.component.html里面的文本抽变量【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
+  【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
 
   angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 

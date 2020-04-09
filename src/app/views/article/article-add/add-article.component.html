@@ -8,6 +8,6 @@
     正文：
     <ckeditor [editor]="Editor" [(ngModel)]="content" [config]="config" (ready)="onReady($event)"  (change)="onChange($event)"></ckeditor>
 
-    <input type="submit" value="保存" class="cta" (click)="onSubmit()">
+    <button mat-raised-button color="accent" (click)="onSubmit()">保存</button>
 
 <!-- </form> -->

@@ -64,6 +64,13 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 写一个CSS样式之前，一定要搞清楚为什么那样写，是可以写好的：https://www.bitdegree.org/learn/css-display
 
 几款前端开源模板：https://blog.csdn.net/sinat_40770656/article/details/95058150
+Top Angular Open Source Projects：
+https://dev.to/anaflatlogic/top-angular-open-source-projects-gbj
+https://awesomeopensource.com/projects/angular-material
+https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-projects
+https://flatlogic.com/blog/top-angular-open-source-projects/
+
+如果想要深入学习angular，首先应该学习typescript
 
 ================================================================================
 

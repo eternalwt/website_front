@@ -1,14 +1,6 @@
 <span>{{title}}</span>
 
 <form #form="ngForm" class="tp-form" (ngSubmit)="onSubmit(form.value)">
-   <!-- <mat-form-field class = "tp-full-width">
-      角色名称：<input matInput placeholder = "角色名称" value = "{{roleName}}">
-   </mat-form-field>
-   <mat-form-field class = "tp-full-width">
-      角色描述：<input matInput placeholder = "角色描述" value = "{{roleDesc}}">
-   </mat-form-field>
-
- <button mat-raised-button color="accent" (click)="saveRole()">Save</button> -->
    <div class="wrapper">
       <div>
          <label>角色名称</label>
@@ -21,9 +13,9 @@
          <label>角色描述</label>
       </div>
       <div>
-         <input type="text" name="roleDesc" [(ngModel)]="roleDesc">      
+         <textarea type="text" name="roleDesc" [(ngModel)]="roleDesc"></textarea>
       </div>
    </div>
-   <input color="accent" type="submit" value="保存" class="cta">
-
+   
+   <button mat-raised-button color="accent" type="submit">保存</button>
 </form>
