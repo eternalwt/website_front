@@ -1,4 +1,4 @@
-<table style="width:100%" mat-table [dataSource]="dataList" class="mat-elevation-z8">
+<table style="width:100%" mat-table [dataSource]="dataList" matSort class="mat-elevation-z8">
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let dataList; columns: columnsToDisplay"></tr>
 
@@ -19,7 +19,7 @@
 
     <ng-container matColumnDef="createTime">
         <th mat-header-cell *matHeaderCellDef style="width:350px;">创建时间</th>
-        <td mat-cell *matCellDef="let element"> {{element.createTime|date:'yyyy-MM-dd'}}</td>
+        <td mat-cell *matCellDef="let element"> {{element.createTime | date:'yyyy-MM-dd'}}</td>
     </ng-container>
 
     <!-- row operation Column -->

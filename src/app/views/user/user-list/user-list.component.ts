@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
+import { MatSort } from '@angular/material';
 
 @Component({
   selector: 'app-user-list',
@@ -19,7 +20,11 @@ export class UserListComponent implements OnInit {
     private dataService: DataService
   ) { }
 
+  @ViewChild(MatSort) sort: MatSort;
+
   ngOnInit() {
+    this.dataList.sort = this.sort;
+
     let pageParam = {pageNum: 1, pageSize: this.pageSize};
     this.dataService.listUser(pageParam).subscribe(res => {
       if (res["data"]["records"]) {

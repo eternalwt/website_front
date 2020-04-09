@@ -60,6 +60,8 @@ https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
 5.再看样式隔离等问题
 6.最终还是要知道在哪里用什么控件，实现或许是小事
 
+把angular material table弄好后，说不定主题需要再搞一次
+
 ng-material-multilevel-menu【这个才是我要找的左侧树形菜单】：
 https://www.npmjs.com/package/ng-material-multilevel-menu
 https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
