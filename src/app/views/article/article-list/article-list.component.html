@@ -1,3 +1,5 @@
+<button mat-button (click)="openDialog('Add',{})" mat-flat-button color="primary">Add Row</button>
+
 <table style="width:100%" mat-table [dataSource]="dataList" matSort class="mat-elevation-z8">
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let dataList; columns: columnsToDisplay"></tr>
@@ -34,6 +36,6 @@
    showFirstLastButtons
    (page) = "pageEvent = pageOptionChange()">
 </mat-paginator>
-action换成图片
+TODO action换成图片
 <!-- [length] = "length"
 [pageSize] = "pageSize" -->

@@ -253,10 +253,16 @@ https://www.analyticsvidhya.com/blog/2019/06/build-machine-learning-model-in-you
 
 
 能否配置apps区分项目
+RxJS: map, flatMap和flatMapLatest的区别：https://segmentfault.com/a/1190000011070872?utm_source=tag-newest
+函数防抖与节流：https://segmentfault.com/a/1190000002764479
 
 前端yarn：
 https://blog.csdn.net/idomyway/article/details/88411836
 https://yarn.bootcss.com/
+
+AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
+
+Angular CLI 在 8.3.0 发布过一个新命令 ng deploy，可以将 Angular 应用部署到远程服务器或云存储上面：https://zhuanlan.zhihu.com/p/126305579
 
 word书签怎么添加、使用、显示和删除标签：https://jingyan.baidu.com/article/948f5924faab49d80ef5f965.html
 
@@ -523,6 +529,7 @@ https://codinglatte.com/posts/angular/ui-libraries-and-frameworks-for-angular-6/
 Top 27 Angular Components for Web Developers：https://colorlib.com/wp/angular-components/
 
 看看这个async的用法：<li *ngFor="let customer of customers | async; let i=index">
+How to use async functions with Array.forEach in Javascript：https://advancedweb.hu/how-to-use-async-functions-with-array-foreach-in-javascript/
 
 ==============================================================================================
 

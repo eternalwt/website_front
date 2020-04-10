@@ -12,14 +12,14 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     constructor(
       private router: Router,
       private dataService: DataService,
-      private dialogModel: MatDialog
+      private dialog: MatDialog
     ) {}
 
     // todo 原理好像没搞明白？
     simpleDialog: MatDialogRef<SimpleDialogComponent>;
 
     showMsg() {
-      this.simpleDialog = this.dialogModel.open(SimpleDialogComponent, {
+      this.simpleDialog = this.dialog.open(SimpleDialogComponent, {
         hasBackdrop: true,
         data: {
           title: "No Permission",
