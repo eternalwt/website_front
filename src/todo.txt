@@ -23,8 +23,14 @@ Angular Material Table component is full of features and a wide variety of optio
 
 不会读控件代码的话，就没办法彻底搞定
 
-primeng、ngx-admin、ng-zorro
+primeng、ngx-admin、ng-zorro【再看一遍，然后看看别人的那段话是否在理，验证一下】
+ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
+看primeng与主题的配合
 AdminLTE是不是有JQ问题？
+
+搜一下图片对比控件，进一步提升搜索能力
+
+NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
 
 试分析几个控件源码
 PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
@@ -40,6 +46,7 @@ ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com
 3.操作按钮【看下面material的文章继续】
 
 三件事：
+左侧可以再试一次了，又找了个控件。再看一个material教程
 0.3RD_PARTY页面第一次进入有tab控件的报错“Cannot set property 'active' of undefined”【如果不会读代码、不能改代码就不行】
 1.使用reset来清空内容【把父类那个最佳实践加上去】。表单再突破一次
 2.弹出框先在现在的基础上搞，然后也得搞一个ng的【如果不会读代码、不能改代码就不行】
@@ -60,11 +67,32 @@ Creating Beautiful Apps with Angular Material：
 https://auth0.com/blog/creating-beautiful-apps-with-angular-material/【可以借鉴2个样式】
 https://www.sitepoint.com/angular-material-design-components/
 https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
+Angular Material Tutorials：https://www.concretepage.com/angular-material/
 
-【angular material控件在npm里面的对等物】【整理一下这部分】
+
+angular 自定义组件：
+https://blog.csdn.net/henreash/article/details/82831138
+https://segmentfault.com/a/1190000016651999
+https://www.jianshu.com/p/5c60f8cc4d0f
+https://segmentfault.com/a/1190000009070500
+https://zhuanlan.zhihu.com/p/36863723
+https://juejin.im/post/597176886fb9a06ba4746d15?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
+
+【angular material控件在npm里面的对等物】【整理一下这部分】【是不是根据Dependencies来看与bootstrap的关系？】
 angular-ng-autocomplete：https://www.npmjs.com/package/angular-ng-autocomplete
 datePicker
 ng5-slider：https://www.npmjs.com/package/ng5-slider
+ng-toggle：https://www.npmjs.com/package/@nth-cloud/ng-toggle
+ng-wizard：https://www.npmjs.com/package/ng-wizard
+angular5-stepper：https://www.npmjs.com/package/angular5-stepper
+加载效果ng-spinners，还有progress spinner：https://www.npmjs.com/package/ng-spinners
+ng-ripple-module：https://www.npmjs.com/package/ng-ripple-module
+Awesome Angular * Angular资源大集合：https://zhuanlan.zhihu.com/p/25285226
+
+material能否结合bootstrap使用？
+
+JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框架，它实现了Angular1和Angular2两个版本，选择范围比较广。可以利用它快速搭建应用框架。
+Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
 
 【是不是要再次转换思路】
 1.看primeng等控件（那2个一定要看）；
@@ -79,7 +107,8 @@ ng5-slider：https://www.npmjs.com/package/ng5-slider
 
 ng-material-multilevel-menu【这个才是我要找的左侧树形菜单】：
 https://www.npmjs.com/package/ng-material-multilevel-menu
-https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
+
+Angular2组件与指令的小实践——实现一个图片轮播组件：https://www.cnblogs.com/yitim/p/angular2-component-slide-img.html
 
 教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
 
@@ -133,13 +162,11 @@ auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有aut
 样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
 infinite scroll
 
-ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
-
 看一个material的代码，看一个ngx-代码。只有看过代码，才能放心用
 
+如果一个控件不得不自己实现，分两步走：1.实现功能（可以在网上搜索并参考）；2.把样式和已有的主题样式整合。
+
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
-先找一个弹出框组件
-尝试控件的过程，也是一个不断筛选哪些值得下载的过程【还是要和ngx等那一套对比一下】
 
 再看看我自定义module里面的forRoot
 forRoot：
@@ -161,8 +188,22 @@ mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码�
 https://blog.csdn.net/qq_31511247/article/details/52604888
 https://www.cnblogs.com/mayufo/p/6113612.html
 
+【了解了思想，再去几类控件尝试具体的样式定制】
+:host 表示选择器，选择当前的组件。::ng-deep 可以忽略中间className的嵌套层级关系。直接找到你要修改的className。
+Angular :host, :host-context, ::ng-deep(/deep/)【是定制第三方控件样式的利器】：
+https://blog.angular-university.io/angular-host-context/
+https://www.concretepage.com/angular-2/angular-2-4-component-styles-host-host-context-deep-selector-example
+https://stackoverflow.com/questions/46786986/how-and-where-to-use-ng-deep
+https://blog.codecentric.de/en/2019/06/angular-components-depth/
+在 Angular 中两个特殊的选择器(:host :host-context)：https://blog.csdn.net/wjyyhhxit/article/details/100631744
+https://www.jianshu.com/p/f8fddc1ca968
 
-Angular :host, :host-context, ::ng-deep - Angular View Encapsulation：https://blog.angular-university.io/angular-host-context/
+ElementUI（别人也提到），Element-Angular：
+https://blog.csdn.net/come0across/article/details/89017958
+element-angular（Element Angular Ex）【已经一年多没更新了】：
+https://element-angular.faas.ele.me/guide/install
+https://github.com/elemeFE/element-angular
+
 关于Angular样式封装、ng-deep：
 https://segmentfault.com/a/1190000012086737
 https://angular.io/guide/component-styles
@@ -230,17 +271,11 @@ https://www.jianshu.com/p/48e5d02a2f88
 
 把各种设计风格对比一下（界面、行为），这样才知道他们的主题、控件能否共存
 
-2.看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说
-3.ngx-bootstrap就是ng-bootstrap的重命名：https://www.npmjs.com/package/ng-bootstrap
+2.看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说：https://akveo.github.io/nebular/
 ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular.【用之前应该先评估一下bootstrap有哪些组件】：
 https://www.npmjs.com/package/ngx-bootstrap
-https://www.cnblogs.com/NeverCtrl-C/p/8215528.html
 3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial：https://www.techiediaries.com/angular-bootstrap/
-Angular 7/8 & Bootstrap 4 UIs: ng-bootstrap and ngx-bootstrap [Part 1]：https://www.techiediaries.com/angular-bootstrap-ui/
 ngx-admin-lte：https://github.com/TwanoO67/ngx-admin-lte
-
-Theming your Angular Material app：https://material.angular.io/guide/theming#defining-a-custom-theme
-angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
 
 这个里面有免费版的theme，可以用一下：
 https://startangular.com/themes/（尝试跟别人协作）
@@ -380,9 +415,7 @@ https://www.cnblogs.com/cench/p/5448624.html
 
 【看完这个能对material理解很多】基于 Angular7 和 material2 的中后台解决方案（ng-notadd）：https://www.v2ex.com/t/504621
 
-Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
 Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
-ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
 
 2.把paper-dashboard-angular的代码看一下：https://github.com/creativetimofficial/paper-dashboard-angular
 【试一下别人推荐的搜索方式】：https://www.zhihu.com/question/309682777/answer/580120248

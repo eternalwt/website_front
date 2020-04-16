@@ -20,10 +20,10 @@ export class UserListComponent implements OnInit {
     private dataService: DataService
   ) { }
 
-  @ViewChild(MatSort) sort: MatSort;
+  // @ViewChild(MatSort) sort: MatSort;
 
   ngOnInit() {
-    this.dataList.sort = this.sort;
+    // this.dataList.sort = this.sort;
 
     let pageParam = {pageNum: 1, pageSize: this.pageSize};
     this.dataService.listUser(pageParam).subscribe(res => {

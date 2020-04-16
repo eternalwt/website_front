@@ -21,6 +21,8 @@ material design
 ant design
 Eva Design System 规范
 Salesforce Lightning Desing System(ng lightning)
+Clarity Design System：https://clarity.design/
+
 
 经过一段时间的尝试，我对前端框架选型和搭配的理解：
 1.主题的设计规范和控件的设计规范要适配（material design等）；
@@ -71,6 +73,28 @@ https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-project
 https://flatlogic.com/blog/top-angular-open-source-projects/
 
 如果想要深入学习angular，首先应该学习typescript
+
+过去几年，用过Bootstrap的多个Theme，基本上都是在http://wrapbootstrap.com上找的。
+也用过Material Design的，但是国内用户不习惯。因为Material的界面信息密度小，特别是不适用于中后台界面。
+如果要在Github上找前端后台模板，只要搜索“admin”关键词并按“Most stars”排序就好了。
+最后，到目前为止，认为最适合国情的，美观大方的，成熟的中后台界面，还是Ant Design。
+
+中后台的前端开发，angular+ng-zorro+echarts，脚手架可以用ngx-admin。整套系统的脚手架可以用jhipster
+程序员接私活必备的十个辅助项目【注意分析里面的ant-design-pro能否使用】：https://zhuanlan.zhihu.com/p/84132599
+
+前端开发，比较出色的 UI 库有哪些？（mobile）：https://www.zhihu.com/question/353100080/answer/875018512
+Onsen UI：https://onsen.io/theme-roller/
+MDBootstrap：https://github.com/mdbootstrap/Bootstrap-4-templates
+Ignite UI：https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting_started.html
+ngSemantic：
+  https://github.com/vladotesanovic/ngSemantic
+  https://github.com/edcarroll/ng2-semantic-ui
+Kendo UI（这个是jquery和angularJS的把？）：
+https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
+
+近几年来，前端面试的难度上了一个档次，我们前端工程师要刷 LeetCode， 要手写一大堆工具函数：函数节流、防抖、数组去重、扁平化，对象深拷贝等：https://www.jianshu.com/p/763ab70f791e
+
+jQuery工作流插件之gooflow流程解决方案：https://blog.csdn.net/WYpersist/article/details/80568095
 
 ================================================================================
 
@@ -127,6 +151,7 @@ NGXS, Akita是啥？（NgRx我知道）
 material的下拉框是把区域撑开，这样的设计思路特点是啥？
 
 浅谈JS中 reduce() 的用法：https://www.jianshu.com/p/541b84c9df90
+6 most common mistakes of Angular devs：https://alex-klaus.com/angular-code-review/
 
 ==============================================================================================
 
@@ -178,6 +203,9 @@ https://www.tutorialspoint.com/es6/index.htm
 https://www.javascripttutorial.net/es6/
 
 浏览器在 2020 年可以干什么？https://github.com/luruke/browser-2020/blob/master/README.md
+A Look Into HTML6 – What Is It and What It Has to Offer?：
+https://www.script-tutorials.com/a-look-into-html6-what-is-it-and-what-it-has-to-offer/
+https://shabang.dev/question/what-are-the-new-features-of-html6/
 
 How to Modularize an Angular Application：
 https://dzone.com/articles/howto-modularize-an-angular-application-by-example?fromrel=true
@@ -237,6 +265,8 @@ oauth2集成shiro.XDF：http://www.doc88.com/p-1942503494803.html
 
 【重要】大型Angular项目最佳实践：http://www.itboth.com/d/3aMZvu/angularjs
 是不是应该把一类操作的component做成一个module？例如article的增删查改（深入思考一下这个问题）
+
+必须要用npm才能进行web开发我说实话有点耍流氓，web什么时候变成这样了吗，人为操作dom是原罪，使用回调是原罪，连ajax都以使用XMLHttpRequest不使用fetch为耻，这正常吗，这自由吗，再我看来，自由的web早就是一句空话了，什么兼容并包，都是空话，从早起的yui歧视jquery体系,到现在的react,ng4歧视vue都不过如此，真是让人觉得可笑。vue2，react能火起来要感谢饿了么，蚂蚁金服开源出来的一套很完整的web组件库，只有这些平易近人的组件库才是真正解决了开发效率的问题，ng4在我看来还是很缺乏像element-ui,antd这么齐备和大规模使用的组件库.ng4在我看来最大的问题就是没有一个能真正值得使用的组件库，别跟我提什么 Material 2, primeng, ng2-bootstrap这些我都看了，但都不成体系，而且也有不少问题，离vue2的代表组件库element-ui,和react组件库antd还是有不少差距的，看一个组件库我只看几个关键组件，table如果不支持表头固定，表头拖拽，表头分组，以及排序筛选，那都称不上是一个合格的table组件，如果这些都没有我还不如用bootstrap-table自己简单封装下,更别提表头列双固定了，然后就是有没有类似select2的封装组件，时间控件啊，日期控件啊，输入控件啊，反正越傻瓜越好。
 
 es6新出的promise对象以及es7的async await
 promise使用场景：
@@ -481,6 +511,13 @@ union type指的应该是 createdDate: string | Date，好处是啥
 https://www.zhihu.com/tardis/sogou/art/93271927
 动态组件场景？
 
+Async Pipe: How to use it properly in Angular：https://malcoded.com/posts/angular-async-pipe/
+How to implement a table filter in Angular：https://www.offering.solutions/blog/articles/2016/11/21/how-to-implement-a-table-filter-in-angular/
+How to implement Angular 2 Bootstrap Pagination：https://www.cmarix.com/how-to-implement-angular-2-bootstrap-pagination/
+Create Custom Search Filter Pipe In HTML Table：https://seegatesite.com/angular-4-tutorial-create-custom-search-filter-pipe-in-html-table/
+Bind Select DropDown List in Angular 8：https://www.talkingdotnet.com/bind-select-dropdown-list-in-angular-8/
+Angular 6 Service – with Observable Data for Asynchronous Operation：https://grokonez.com/frontend/angular/angular-6/angular-6-service-with-observable-data-for-asynchronous-operation
+
 =========================================================================================
 
 【出产品推荐的方式】
@@ -498,17 +535,17 @@ material design的主题 + angular material
 2.2.admin-lte(定制) + primeng(UI components)；
 2.3.ngx-admin + ng-zorro；
 2.4.admin-lte(定制) + ng-zorro；
-2.5.lte-admin(定制) + 库里找零散控件或者自己封控件
+2.5.admin-lte(定制) + 库里找零散控件或者自己封控件
 2.6.ngx-admin + 库里找零散控件或者自己封控件；
 2.7.ng-alain + ng-zorro
+2.8.ngx-admin + 自带的控件
 分析各个类别的优缺点
+既然angular material可以自定义theme，那么它能不能和bootstrap主题一起使用？
 
 3.2.jhipster单独研究：
 	https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
 	https://www.zhihu.com/question/51082079/answer/157820426
 3.3.Angular最佳UI框架：https://www.jianshu.com/p/0051e626b88b
-
-4.看ng-bootstrap、ngx-bootstrap等概念，野鸡ng-matero等
 
 【自己实现ngFor】
 通过trackBy提高Angular *ngFor性能：https://pdf-lib.org/Home/Details/9931
@@ -571,6 +608,9 @@ https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material
 https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
 Creating UIs with Angular Material Design Components：https://www.sitepoint.com/angular-material-design-components/
 Add AutoComplete in Angular Application using Angular Material：https://www.freakyjolly.com/angular-7-6-add-autocomplete-in-angular-application-using-angular-material/
+
+Theming your Angular Material app【注意体会设计思路，5个调色板】：https://material.angular.io/guide/theming#defining-a-custom-theme
+angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
 How to make a custom theme in Angular Material：
 https://www.positronx.io/create-angular-material-8-custom-theme/
 https://www.freecodecamp.org/news/how-to-make-a-custom-theme-in-angular-material-d47122a1e361/
@@ -587,20 +627,21 @@ http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-prima
 看懂INDIGO与material细节与关联
 color-palette的作用？https://materializecss.com/color.html
 
-搜“ng-bootstrap ngx-bootstrap”
-用ngx-bootstrap，效能会比用bootstrap好很多吗：https://segmentfault.com/q/1010000018916806/Building An Angular 5 CLI Project With ngx-bootstrap：https://www.c-sharpcorner.com/article/building-an-angular-5-cli-project-with-ngx-bootstrap/
-“ng-bootstrap” and “ngx-bootstrap”：
-https://ngx-universal.herokuapp.com/#/
-https://www.sitepoint.com/bootstrap-ui-libraries-angular-react-vue/
+
+ng-bootstrap 以需要引入ngbModule，任何组件，如分页，tab,datapicker......都可以使用了,
+但是ngx-bootstrap必须使用哪个组件就引入哪个组件，个人推荐使用ngx-bootstrap：https://blog.csdn.net/weixin_30520015/article/details/97287278
+用ngx-bootstrap，效能会比用bootstrap好很多吗【里面的回复貌似不能赞同啊】：https://segmentfault.com/q/1010000018916806/
+Building An Angular 5 CLI Project With ngx-bootstrap：https://www.c-sharpcorner.com/article/building-an-angular-5-cli-project-with-ngx-bootstrap/
+ng-bootstrap：https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
+ngx-bootstrap：https://www.npmjs.com/package/ngx-bootstrap
+Angular 7/8 & Bootstrap 4 UIs: ng-bootstrap and ngx-bootstrap [Part 1]：https://www.techiediaries.com/angular-bootstrap-ui/
+我自己对比发现，ng-bootstrap和ngx-bootstrap并不完全一样（可能因为版本不一样？）首先他们同样的控件有细微的区别，包括名字，例如Tabs/TabSet、Dropdowns、Modals；其次ng-bootstrap的一些控件ngx-bootstrap里面没有，例如nav、toast。
+这个文章里面提到了使用ng-bootstrap的注意事项：https://www.sitepoint.com/bootstrap-ui-libraries-angular-react-vue/
 How to Add Bootstrap to an Angular CLI project：https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
 How to Use Bootstrap 4 with Angular：https://www.bootstrapdash.com/use-bootstrap-4-with-angular/
 Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
 Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
-ngx-bootstrap and ng2-bootstrap：https://stackoverflow.com/questions/43394193/difference-between-ngx-bootstrap-and-ng2-bootstrap
-
 How to Integrate Bootstrap with Angular (Angular 6)：https://grokonez.com/frontend/angular/angular-6/how-to-integrate-bootstrap-with-angular-angular-6
-
-指导思想：先搞通一套，然后再孵化
 
 Differences Between Angular vs Bootstrap：https://www.educba.com/angular-vs-bootstrap/
 @ng-bootstrap和@angular/material的配合
@@ -1585,7 +1626,8 @@ https://www.infragistics.com/community/blogs/b/infragistics/posts/ignite-ui-for-
 Angular最佳UI框架：https://www.jianshu.com/p/0051e626b88b
 FreeNG | 基于Angular4的前端UI框架【有一年多没更新了，可以用于学习】：https://imweb.io/topic/59298852473c0f2f7003469e
 angular-material-app（基于最新Angular 7框架与Material 2技术的企业级中后台前端应用框架）：https://gitee.com/425048/angular-material-app
-primeng是“一个极为完善的开源 Angular UI 组件库”：https://www.oschina.net/news/102282/primeng-7-0-0-released
+primeng是“一个极为完善的开源 Angular UI 组件库”【用到了CDK，有free themes和PrimeNG Theme Designer】：
+https://www.oschina.net/news/102282/primeng-7-0-0-released
 【搞懂这些选型至少需要2个月，结合选型要素来学习】
 
 ngx-bootstrap：https://blog.csdn.net/kuangshp128/article/details/72395937/
@@ -1603,16 +1645,6 @@ https://www.zhihu.com/question/24276657/answer/68081021
 图片上的文字，需要淡淡的遮罩确保其可读性。深色的遮罩透明度在20%-40%之间，浅色的遮罩透明度在40%-60%之间。【遮罩和透明度不是一个概念把？】
 Component infrastructure and Material Design components for Angular：https://github.com/angular/components
 bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap 和 ng-zorro 是基于 angular 的组件库，与 bootstrap 不是一类东西：https://www.zhihu.com/question/65750588/answer/234349815
-
-前端开发，比较出色的 UI 库有哪些？（mobile）：https://www.zhihu.com/question/353100080/answer/875018512
-Onsen UI：https://onsen.io/theme-roller/
-MDBootstrap：https://github.com/mdbootstrap/Bootstrap-4-templates
-Ignite UI：https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/getting_started.html
-ngSemantic：
-  https://github.com/vladotesanovic/ngSemantic
-  https://github.com/edcarroll/ng2-semantic-ui
-Kendo UI（这个是jquery和angularJS的把？）：
-https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
 
 
 移动开发：Angular：Ionic 和 NativeScript
