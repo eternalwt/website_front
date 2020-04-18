@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
-import { AboutComponent } from './views/about/about.component';
-import { ContactComponent } from './views/contact/contact.component';
+import { AboutComponent } from './views/business/about/about.component';
+import { ContactComponent } from './views/business/contact/contact.component';
 import { LoginComponent } from './views/login/login.component';
-import { RegisterComponent } from './views/user/register/register.component';
-import { AddArticleComponent } from './views/article/article-add/add-article.component';
-import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { ArticleListComponent } from './views/article/article-list/article-list.component';
-import { PermAssignComponent } from './views/perm/perm-assign/perm-assign.component';
-import { AddMenuComponent } from './views/menu/menu-add/add-menu.component';
-import { UserListComponent } from './views/user/user-list/user-list.component';
-import { AddRoleComponent } from './views/role/role-add/add-role.component';
-import { RoleListComponent } from './views/role/role-list/role-list.component';
+import { RegisterComponent } from './views/register/register.component';
+import { AddArticleComponent } from './views/business/article/article-add/add-article.component';
+import { DashboardComponent } from './views/business/dashboard/dashboard.component';
+import { ArticleListComponent } from './views/business/article/article-list/article-list.component';
+import { PermAssignComponent } from './views/business/perm/perm-assign/perm-assign.component';
+import { AddMenuComponent } from './views/business/menu/menu-add/add-menu.component';
+import { UserListComponent } from './views/business/user/user-list/user-list.component';
+import { AddRoleComponent } from './views/business/role/role-add/add-role.component';
+import { RoleListComponent } from './views/business/role/role-list/role-list.component';
 import { AuthGuard } from './auth.guard';
-import { AddUserComponent } from './views/user/user-add/add-user.component';
-import { ThirdPartyComponent } from './views/third-party/third-party.component';
-import { MainComponent } from './views/main/main.component';
-import { MsgComponent } from './views/msg/msg.component';
+import { AddUserComponent } from './views/business/user/user-add/add-user.component';
+import { ThirdPartyComponent } from './views/business/third-party/third-party.component';
+import { MainComponent } from './views/business/main/main.component';
+import { MsgComponent } from './views/business/msg/msg.component';
 
 
 const routes: Routes = [
