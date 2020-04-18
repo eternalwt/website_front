@@ -8,7 +8,7 @@ import {CKEditorModule} from '@ckeditor/ckeditor5-angular'
 import { NgxEchartsModule } from 'ngx-echarts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './views/nav/nav.component';
+import { NavComponent } from './views/home/nav/nav.component';
 import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { HomeComponent } from './views/home/home.component';
@@ -21,7 +21,7 @@ import { AddArticleComponent } from './views/article/article-add/add-article.com
 import { AuthInterceptor } from './interceptors/http-interceptors';
 import { ArticleListComponent } from './views/article/article-list/article-list.component';
 import { MaterialCompModule } from './material-comp.module';
-import { ToolbarComponent } from './views/toolbar/toolbar.component';
+import { ToolbarComponent } from './views/home/toolbar/toolbar.component';
 import { PermAssignComponent } from './views/perm/perm-assign/perm-assign.component';
 import { AddMenuComponent } from './views/menu/menu-add/add-menu.component';
 import { UserListComponent } from './views/user/user-list/user-list.component';

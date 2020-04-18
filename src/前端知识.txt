@@ -10,7 +10,7 @@
 2.toFixed的问题研究清楚
 预防性保护的问题：表现层太重了
 
-把promise+RxJS写通，just try
+把 promise + RxJS 写通，just try
 
 ng generate class Hero
 
@@ -153,6 +153,12 @@ material的下拉框是把区域撑开，这样的设计思路特点是啥？
 浅谈JS中 reduce() 的用法：https://www.jianshu.com/p/541b84c9df90
 6 most common mistakes of Angular devs：https://alex-klaus.com/angular-code-review/
 
+TypeScript的2个文章：
+https://zhuanlan.zhihu.com/p/121825628
+https://www.zhihu.com/question/273619114/answer/1101445304
+
+[译] 通过阅读源码提高你的 JavaScript 水平：https://juejin.im/post/5d3c56c26fb9a07efd475414
+
 ==============================================================================================
 
 【控件学习】【需要把样式问题过一遍】
@@ -178,7 +184,7 @@ https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwi
 Mat-Icon List : 900+ Angular Material Icons：
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
 https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
-
+有一个按钮集合叫Font Awesome Icons：https://fontawesome.com/v4.7.0/icons/#
 
 一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
 提升概念把握能力及对应的抽象思维能力：bar图、饼图、折线图的dimension、source、series等的概念

@@ -25,6 +25,7 @@
     "@ckeditor/ckeditor5-build-classic": "^17.0.0",
     "angular-tabs-component": "^1.0.6",
     "echarts": "^4.4.0",
+    "ng-material-multilevel-menu": "^4.11.3",
     "ng2-file-upload": "^1.4.0",
     "ng2-pdf-viewer": "^6.1.2",
     "ngx-doc-viewer": "^1.0.3",

@@ -8,6 +8,7 @@ import { TabModule } from 'angular-tabs-component';
 import { FileUploadModule } from 'ng2-file-upload';
 import {BreadcrumbModule} from 'xng-breadcrumb';
 import { NgxMultiModalModule } from 'ngx-multi-modal';
+import { NgMaterialMultilevelMenuModule } from 'ng-material-multilevel-menu';
 
 @NgModule({
   declarations: [],
@@ -20,7 +21,8 @@ import { NgxMultiModalModule } from 'ngx-multi-modal';
     TabModule,
     FileUploadModule,
     BreadcrumbModule,
-    NgxMultiModalModule
+    NgxMultiModalModule,
+    NgMaterialMultilevelMenuModule
   ],
   exports: [
     NgxEchartsModule,
@@ -30,7 +32,8 @@ import { NgxMultiModalModule } from 'ngx-multi-modal';
     TabModule,
     FileUploadModule,
     BreadcrumbModule,
-    NgxMultiModalModule
+    NgxMultiModalModule,
+    NgMaterialMultilevelMenuModule
   ]
 })
 export class ThirdpartyCompModule { }
