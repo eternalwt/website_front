@@ -1,8 +1,8 @@
-<ng-container *ngFor="let item of menuList">
+<!-- <ng-container *ngFor="let item of menuList">
   <section class="tp-section">
     <mat-icon>{{item.icon}}</mat-icon><a [routerLink]="item.url">{{item.menuName}}</a>
   </section>
-</ng-container>
+</ng-container> -->
 
 <!-- <sm-simple-sidenav
   [menu]="menu"
@@ -11,3 +11,10 @@
   [withArrow]="true"
   (onSidenav)="onClick($event)">
 </sm-simple-sidenav> -->
+
+<ng-material-multilevel-menu  
+    [configuration]='config' 
+    [items]='menuList'
+    (selectedItem)="selectedItem($event)" 
+    (selectedLabel)="selectedLabel($event)">
+</ng-material-multilevel-menu>

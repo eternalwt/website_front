@@ -9,6 +9,8 @@
 
 ===================================================================================
 
+【下一步最打紧的是搞清楚控件代码的阅读、修改、调试】
+
 再看一次门户网站用的技术
 
 列表项的编辑、删除、添加行：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】
@@ -22,6 +24,10 @@ contact页面里面，label包在外面有什么好处？
 Angular Material Table component is full of features and a wide variety of options are available to create data-rich grids in a very optimized way. It provides a lot basic to advance functionalities like filter, sorting, pagination, expand-collapse, custom templating, etc.
 
 不会读控件代码的话，就没办法彻底搞定
+
+Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-components
+Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
+angular-awesome-slider：https://github.com/darul75/angular-awesome-slider
 
 primeng、ngx-admin、ng-zorro【再看一遍，然后看看别人的那段话是否在理，验证一下】
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
@@ -105,9 +111,6 @@ Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
 把angular material table弄好后，说不定主题需要再搞一次
 把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
 
-ng-material-multilevel-menu【这个才是我要找的左侧树形菜单】：
-https://www.npmjs.com/package/ng-material-multilevel-menu
-
 Angular2组件与指令的小实践——实现一个图片轮播组件：https://www.cnblogs.com/yitim/p/angular2-component-slide-img.html
 
 教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
@@ -145,6 +148,9 @@ toolbar的样式值得好好搞一下【我知道最基本都规则，按这些�
 我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
 ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
 ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
+ng-material-multilevel-menu【这个才是我要找的左侧树形菜单。并且是material的，用了mat-sidenav，思路很好，代码也很值得阅读】：
+https://www.npmjs.com/package/ng-material-multilevel-menu
+https://plugins.codershood.info/#/plugins/ngmm-plugin
 （material）mat-file-upload：https://angularscript.com/file-select-upload-material/
 xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb
 【遇到一个新的问题：如何显示菜单名称？】需要从数据库读取路由然后对比

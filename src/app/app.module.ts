@@ -15,7 +15,6 @@ import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { DashboardComponent } from './views/business/dashboard/dashboard.component';
-import { IndexComponent } from './views/index/index.component';
 import { AddArticleComponent } from './views/business/article/article-add/add-article.component';
 // import { StorageService } from './service/storage.service';
 import { AuthInterceptor } from './interceptors/http-interceptors';
@@ -32,6 +31,7 @@ import { ThirdPartyComponent } from './views/business/third-party/third-party.co
 import { ThirdpartyCompModule } from './thirdparty-comp.module';
 import { MainComponent } from './views/business/main/main.component';
 import { MsgComponent } from './views/business/msg/msg.component';
+import { MenuListComponent } from './views/business/menu/menu-list/menu-list.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,6 @@ import { MsgComponent } from './views/business/msg/msg.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    IndexComponent,
     AddArticleComponent,
     ArticleListComponent,
     ToolbarComponent,
@@ -56,6 +55,7 @@ import { MsgComponent } from './views/business/msg/msg.component';
     ThirdPartyComponent,
     MainComponent,
     MsgComponent,
+    MenuListComponent,
   ],
   imports: [
     BrowserModule,
