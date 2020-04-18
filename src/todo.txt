@@ -35,6 +35,7 @@ ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 AdminLTE是不是有JQ问题？
 
 搜一下图片对比控件，进一步提升搜索能力
+公司里面配按钮的思路，再思考一下
 
 NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
 
