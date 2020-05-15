@@ -1,6 +1,4 @@
 ﻿
-横轴最小切换到15分钟（比较难）
-【晚上在家把横轴密度的问题解决】
 下一工作日：
 3.大屏自定义横轴及抽象
 思考：达标率周期、库房切换、导出
@@ -36,9 +34,36 @@ Clarity Design System：https://clarity.design/
 2019了还可以用angular吗？（学严兴杰分析angular和angular material的issue）：https://www.zhihu.com/question/329973345/answer/728704821
 我选择Angular最直接的理由是Ionic4，最好的混合应用框架，没有之一。
 
+手把手教你搭建自己的Angular组件库：https://zhuanlan.zhihu.com/p/140700137
+前端监控和统计概念：https://zhuanlan.zhihu.com/p/134132381
+104道 CSS 面试题，助你查漏补缺：https://zhuanlan.zhihu.com/p/114257330
+
+1.为啥span、label不能设置width？【能否从这个问题学到CSS知识？】
+https://blog.csdn.net/dyr_1203/article/details/74942828
+https://www.cnblogs.com/renxiaoren/p/4953187.html
+angular使用innerHtml时style行内样式消失的问题：
+https://www.cnblogs.com/robinw666/p/11039007.html
+https://blog.csdn.net/jokren/article/details/85067391
+看懂这行代码：<div [innerHTML]="workFlow.commentMessage"></div>
+
 原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
 Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
 fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
+
+ng-qrcode、ng-qrgen
+如何优雅的使用 Angular 表单验证：https://www.cnblogs.com/worktile/p/10280997.html
+Angular6实现搜索关键字词高亮：
+https://blog.csdn.net/qq_38712932/article/details/85448824
+https://blog.csdn.net/qq_28250493/article/details/81207072
+思考一下，协议编号能否使用表单异步校验器：
+https://www.cnblogs.com/singeryoung/p/9759462.html
+https://blog.csdn.net/weixin_30532973/article/details/95122546
+55 个提高你 CSS 开发效率的必备片段：https://zhuanlan.zhihu.com/p/118436424
+理解clear：both属性：
+https://css-tricks.com/almanac/properties/c/clear/
+http://www.divcss5.com/rumen/r424.shtml
+https://www.geeksforgeeks.org/what-does-the-css-rule-clear-both-do/
+https://segmentfault.com/a/1190000010252809
 
 前端必懂EventEmitter，不懂会丢人【再次证明事件机制就是可以对应到发布+订阅模式】：https://www.jianshu.com/p/e37ca8369162（再看各个语言里面事件的实现，自己模拟设计事件，想清楚）。JS里面是把怎么订阅的细节隐藏了，自己想一下：
 <data-audit #md (LocaBool)="locahost()"></data-audit>
@@ -60,6 +85,8 @@ https://devopedia.org/transpiler
 http://jarble.github.io/transpiler/
 https://howtodoinjava.com/typescript/transpiler-vs-compiler/
 https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
+
+从 Flash 到 WEBGPU，Web 图形技经历过的变革你了解吗？https://mp.weixin.qq.com/s/SP4-R9GOVbE3WHRC1DXDzw
 
 通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
 
@@ -95,6 +122,17 @@ https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
 近几年来，前端面试的难度上了一个档次，我们前端工程师要刷 LeetCode， 要手写一大堆工具函数：函数节流、防抖、数组去重、扁平化，对象深拷贝等：https://www.jianshu.com/p/763ab70f791e
 
 jQuery工作流插件之gooflow流程解决方案：https://blog.csdn.net/WYpersist/article/details/80568095
+
+http.Get(url).pipe(map(res => 在subscribe之前。如果没看清楚，就容易出bug，或者定位不出bug
+
+Modal Dialog：
+https://jasonwatmore.com/post/2018/05/25/angular-6-custom-modal-window-dialog-box
+https://www.codeproject.com/Articles/1179258/An-Angular-Modal-Dialog-with-Advanced-Functionalit
+https://morioh.com/p/f7c1eca2519e
+https://mentormate.com/blog/create-modal-window-with-angular-cdk/
+https://www.dev6.com/angular/modal-templates-in-angular-2-part-1-inline-templates/
+
+【译】Angular最佳实践：https://zhuanlan.zhihu.com/p/139532390
 
 ================================================================================
 
@@ -150,6 +188,9 @@ NGXS, Akita是啥？（NgRx我知道）
 
 material的下拉框是把区域撑开，这样的设计思路特点是啥？
 
+Top 5 Guidelines Every Angular Developer Must Follow：
+https://tutorialslink.com/Articles/Top-5-Guidelines-Every-Angular-Developer-Must-Follow/1298
+
 浅谈JS中 reduce() 的用法：https://www.jianshu.com/p/541b84c9df90
 6 most common mistakes of Angular devs：https://alex-klaus.com/angular-code-review/
 
@@ -158,6 +199,18 @@ https://zhuanlan.zhihu.com/p/121825628
 https://www.zhihu.com/question/273619114/answer/1101445304
 
 [译] 通过阅读源码提高你的 JavaScript 水平：https://juejin.im/post/5d3c56c26fb9a07efd475414
+
+举例来说，很多面试官都喜欢问文件上传的实现，你会怎么答？
+
+Angular 秒杀其它框架的设计之美（一）：https://zhuanlan.zhihu.com/p/137374797
+Angular 的单向数据流：https://zhuanlan.zhihu.com/p/93269198
+【译】在Angular中自定义表单控件：https://zhuanlan.zhihu.com/p/96901982
+源码分析 @angular/cdk drag-drop (I)：https://zhuanlan.zhihu.com/p/59623535
+
+angular *Ngif else用法：
+https://blog.csdn.net/weixin_43187345/article/details/90550371
+https://www.jianshu.com/p/84ed073abc55
+https://blog.csdn.net/wen_binobject/article/details/78593660
 
 ==============================================================================================
 
@@ -189,7 +242,9 @@ https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
 一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
 提升概念把握能力及对应的抽象思维能力：bar图、饼图、折线图的dimension、source、series等的概念
 
-Managing Subscriptions in Angular With the Async Pipe：https://alligator.io/angular/async-pipe/
+Managing Subscriptions in Angular With the Async Pipe：
+https://alligator.io/angular/async-pipe/
+https://segmentfault.com/a/1190000008759314
 管道再看一版：
 https://www.concretepage.com/angular-2/angular-2-json-pipe-example
 https://www.concretepage.com/angular-2/angular-2-slice-pipe-example
@@ -302,6 +357,7 @@ Angular CLI 在 8.3.0 发布过一个新命令 ng deploy，可以将 Angular 应
 
 word书签怎么添加、使用、显示和删除标签：https://jingyan.baidu.com/article/948f5924faab49d80ef5f965.html
 
+angular中的ng-content：https://www.jianshu.com/p/e2c37c24e871
 比较ng-content(投影)与router-outlet
 看看ng-template、ng-container、ng-content与我们系统自定义控件的关系：https://www.jianshu.com/p/388461631b1d
 <ng-container 指令：
@@ -517,12 +573,16 @@ union type指的应该是 createdDate: string | Date，好处是啥
 https://www.zhihu.com/tardis/sogou/art/93271927
 动态组件场景？
 
+forEach、map、filter、reduce、every、some
+
 Async Pipe: How to use it properly in Angular：https://malcoded.com/posts/angular-async-pipe/
 How to implement a table filter in Angular：https://www.offering.solutions/blog/articles/2016/11/21/how-to-implement-a-table-filter-in-angular/
 How to implement Angular 2 Bootstrap Pagination：https://www.cmarix.com/how-to-implement-angular-2-bootstrap-pagination/
 Create Custom Search Filter Pipe In HTML Table：https://seegatesite.com/angular-4-tutorial-create-custom-search-filter-pipe-in-html-table/
 Bind Select DropDown List in Angular 8：https://www.talkingdotnet.com/bind-select-dropdown-list-in-angular-8/
 Angular 6 Service – with Observable Data for Asynchronous Operation：https://grokonez.com/frontend/angular/angular-6/angular-6-service-with-observable-data-for-asynchronous-operation
+
+一道面试题引起的思考：https://www.cnblogs.com/chenjg/p/10006502.html
 
 =========================================================================================
 
@@ -930,6 +990,10 @@ https://tutorialzine.com/2015/07/learn-less-in-10-minutes-or-less
 https://www.tutorialspoint.com/less/index.htm
 
 使用subscribe在一个文件里面也可以实现发布和订阅，改善代码结构
+
+写给初中级前端的高级进阶指南（万字长文，路线明确）：https://zhuanlan.zhihu.com/p/117490792
+
+《写给大家看的设计书》
 
 尝试使用子module（存放的位置）。怎么用好子模块对大型系统至关重要，只是我们还没遇到场景，也缺乏经验。
 
@@ -1888,10 +1952,14 @@ https://www.jianshu.com/p/b30ed075c132
 
 比较枚举和export const environment定义方式的不同
 
+Augury v1.25.0以上版本的下载：
+https://www.ijidi.cn/extensions/elgalmkoelokbchhkhacckoklkejnhcd.html
 Using Angular Augury to Debug Your Code：
 https://www.sitepoint.com/angular-augury-debug-code/
 https://www.c-sharpcorner.com/article/angular-7-routing-and-display-graphical-interface-using-augury-extension/
-augury与编译有关吗？
+augury原理可以看一下了（观察lazy loading的模块）：
+https://tutorialslink.com/Articles/How-to-Use-Augury-to-Check-Lazy-Loading-in-Angular-8/1287
+https://scotch.io/tutorials/debugging-angular-2-apps-with-augury
 AOT与JIT：
 https://segmentfault.com/a/1190000010906373
 https://segmentfault.com/a/1190000011562077
@@ -2238,7 +2306,6 @@ Angular throwError：https://www.concretepage.com/angular/angular-throwerror
 前端封装组件没关系，但是很有可能复用度不高。本来前端就是后端数据的展示，具有相当大的灵活性。再遇到我们公司这种项目很多，界面随时要重新设计的情况，
 
 angular也应该看源码解析了，否则看依赖注入那些概念试图去记住没有任何意义
-augury原理可以看一下了。就用我搭的demo
 
 前端MVC、MVW、MVVM框架
 
@@ -2252,8 +2319,6 @@ augury原理可以看一下了。就用我搭的demo
 Angular 提出一套打包格式建议名曰：Angular Package Format，包括 FESM2015、FESM5、UMD、ESM2015、ESM5、ES2015 格式：
 https://juejin.im/post/5bab64826fb9a05d2c43b3b4
 https://www.cnblogs.com/linjisong/p/6755987.html
-
-tree-shaking
 
 127.0.0.1 和 localhost的区别：https://blog.csdn.net/root_miss/article/details/82587463
 
@@ -2436,9 +2501,6 @@ angular源码分析
 
 typescript 中通过构造函数的参数直接定义属性：https://blog.csdn.net/xs20691718/article/details/77507847
 
-水下项目pdf查看器的原理【pdf.js源码】：
-http://47.92.81.142:8063/assets/generic/web/viewer.html?file=http%3A%2F%2F47.92.81.142%3A8039%2Fdct-szkg-hx%2Faas%2FdataDownLoad%2FpreviewStream%3FfileName%3D201906261126262662019.05%E9%A2%86%E9%98%9F%E6%97%A5%E8%AE%B0.pdf
-
 img的设置
 试试<img [src]={{imgUrl}} />？https://stackoverflow.com/questions/44892717/angular-2-4-img-src
 
@@ -2593,7 +2655,6 @@ CLI：https://appdividend.com/2018/05/05/angular-6-tutorial-with-example-using-a
 
 VS Code直接调试Angular代码：https://www.cnblogs.com/keitsi/p/10707384.html
 用VSCode可以直接调试Angular代码：https://www.imooc.com/article/20215
-augury不能用于Production Mode
 angular调试的几种方法【借助插件augury等和不借助插件，比较并且看是否可以推荐给大家】：
 https://blog.csdn.net/u010147288/article/details/51463486
 https://www.cnblogs.com/lsc183/p/9915285.html
@@ -2728,6 +2789,14 @@ Node.js + Express + Springboot实现前后端分离架构：https://my.oschina.n
 要能搞清楚前端框架对生产力的提升：1.可以避免写很多类似（重复）的代码，例如双向绑定就可以避免很多取值的代码。搞懂框架就可以少写好多代码
 Angular Cli 升级到最新版本：https://www.cnblogs.com/zero-zm/p/10421680.html
 搞清楚我用的版本以后好升级：ng version、node -v
+npm config ls：https://my.oschina.net/u/3303095/blog/897768
+用 npm install -g xxx 全局安装模块的时候会安装到C:\Users\用户名\AppData\Roaming\npm 下面
+npm查看全局包/路径：npm root -g
+全局安装的2个路径再次确认
+-g save：https://blog.csdn.net/pange1991/article/details/88591837
+npm、npm-cache
+用新建的angular工程来对比package.json里面的dependencies和devDependencies
+
 
 ng lint
 既然知道了tslint是静态检查的核心，那么在angular幻想下怎么配置应该围绕tslint来，首先吃透它：
@@ -2753,8 +2822,13 @@ https://juejin.im/entry/590c2798ac502e0065312bc7?utm_medium=hao.caibaojian.com&u
 
 Object.keys()和for-in都不能保证顺序：https://segmentfault.com/a/1190000018306931?utm_source=tag-newest
 
+chrome中Blackbox Script 黑盒脚本作用及用法：
+https://www.jianshu.com/p/e614fadea901
+https://blog.csdn.net/yilanyoumeng3/article/details/96473797
+
 ============================================================================
 
 【样式专区】
 1.CSS实现div高度填满剩余空间
 
+px和em的区别：https://blog.csdn.net/chenjuan1993/article/details/81356497

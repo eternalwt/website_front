@@ -38,8 +38,8 @@ export class ArticleListComponent implements OnInit {
       if (res["data"]["records"]) {
         this.dataList = new MatTableDataSource(res["data"]["records"]);
         
-        this.dataList.sort = this.sort;
-        this.dataList.paginator = this.paginator;
+        // this.dataList.sort = this.sort;
+        // this.dataList.paginator = this.paginator;
       }
     });
   }

@@ -39,6 +39,8 @@ AdminLTE是不是有JQ问题？
 
 NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
 
+Angular 4 后台管理系统搭建系列文章：https://www.cnblogs.com/Vetkdf/tag/angular4/
+
 试分析几个控件源码
 PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
 ng-zorro源码
