@@ -9,6 +9,7 @@
 预防性保护的问题：表现层太重了
 
 把 promise + RxJS 写通，just try
+RxJS的另外四种实现方式（后记）—— 同时实现管道和链式编程：https://blog.csdn.net/oYiGeHui/article/details/82821125
 
 ng generate class Hero
 
@@ -46,6 +47,34 @@ https://www.cnblogs.com/robinw666/p/11039007.html
 https://blog.csdn.net/jokren/article/details/85067391
 看懂这行代码：<div [innerHTML]="workFlow.commentMessage"></div>
 
+position: fixed; position与float的关系？
+
+搞懂如下几个样式：
+display: table-cell;
+white-space: nowrap;
+box-sizing: border-box;
+outline: 0;
+border-collapse: separate;
+transition: right 0.25s ease-in-out;
+box-shadow: 0px 0px 6px 2px #c0c1c3;
+flex-shrink: 0;
+
+input自适应宽度为什么也很困难？
+https://www.softwhy.com/article-9588-1.html
+https://blog.csdn.net/qq_35363709/article/details/84852259
+span是内联元素，能够根据内容的宽度自动伸展和收缩，并且很容易计算它的宽度。
+使用span+contenteditable来做输入框宽度限制
+
+CSS3 :last-child 选择器：
+http://caibaojian.com/w3c/cssref/selector_last-child.html
+https://blog.csdn.net/weixin_39015132/article/details/81172222
+CSS flex 布局，头部和底部固定，中间出现滚动条：https://zhuanlan.zhihu.com/p/141325714
+
+<p contenteditable="true">
+HTML5之contenteditable可编辑属性：https://www.cnblogs.com/linx/p/8031411.html
+contenteditable实现编辑器,光标、输入法处理，emoji的显示和转换存储：https://blog.csdn.net/lqyygyss/article/details/81773516
+为什么 ContentEditable 很恐怖：https://www.oschina.net/translate/why-contenteditable-is-terrible
+
 原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
 Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
 fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
@@ -68,7 +97,13 @@ https://segmentfault.com/a/1190000010252809
 前端必懂EventEmitter，不懂会丢人【再次证明事件机制就是可以对应到发布+订阅模式】：https://www.jianshu.com/p/e37ca8369162（再看各个语言里面事件的实现，自己模拟设计事件，想清楚）。JS里面是把怎么订阅的细节隐藏了，自己想一下：
 <data-audit #md (LocaBool)="locahost()"></data-audit>
 
+看一下ng-bootstrap如果都竖起来样式是什么样的
+
+在 WebGL 领域里，Evan Wallace 几年前做出过 glfx.js 和 LightGL。我有自信自己的作品 Beam 能跟它们五五开（譬如支持滤镜链和实时 PBR）
+
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
+
+How to Setup Selenium on Node Environment：https://dev.to/oyetoket/how-to-setup-selenium-on-node-environment-30bc
 
 重要基础设施，搜package的站点（ngx-echarts）：
 https://www.npmjs.com/search?q=ngx-&csrftoken=YJ4PdjxaghrOsWbkewM6pcns3YWN0vsTzewMkZ-SECc
@@ -87,6 +122,8 @@ https://howtodoinjava.com/typescript/transpiler-vs-compiler/
 https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
 
 从 Flash 到 WEBGPU，Web 图形技经历过的变革你了解吗？https://mp.weixin.qq.com/s/SP4-R9GOVbE3WHRC1DXDzw
+
+Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
 通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
 
@@ -118,6 +155,21 @@ ngSemantic：
   https://github.com/edcarroll/ng2-semantic-ui
 Kendo UI（这个是jquery和angularJS的把？）：
 https://www.telerik.com/kendo-angular-ui/components/styling/theme-material/
+
+【搜索文本框的写法】
+<div class="input-group">
+  <input type="text" class="form-control" [(ngModel)]="tombValue.openLayer" name="openLayer">
+  <span id="matter" class="input-group-addon" (click)="selectLayer()">
+    <a href="javascipt:void(0)">
+      <i class="glyphicon glyphicon-search"></i>
+    </a>
+  </span>
+</div>
+教你怎么写搜索功能：
+https://wenda.so.com/q/1385320915064229
+https://www.bubuxiu.com/site/ecms/20190721/2994.html
+https://blog.csdn.net/weixin_30878361/article/details/99350641
+https://blog.csdn.net/heart_is_sunny/article/details/97524490?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
 
 近几年来，前端面试的难度上了一个档次，我们前端工程师要刷 LeetCode， 要手写一大堆工具函数：函数节流、防抖、数组去重、扁平化，对象深拷贝等：https://www.jianshu.com/p/763ab70f791e
 
@@ -302,7 +354,9 @@ https://blog.csdn.net/oYiGeHui/article/details/82821125
 关于Angular6版本升级和RXJS6新特性的讲解：https://blog.csdn.net/bangunzheng7426/article/details/101411570
  pipeable observable（pipe感觉是把operator包起来了）：
 SomeObservable.map(...).throttle(...).subscribe变成pipe(map().throttle()).subscribe
-pipe方法的方法体是啥？
+Reading the RxJS 6 Sources: Map and Pipe：https://indepth.dev/reading-the-rxjs-6-sources-map-and-pipe/
+1.搞懂pipe的含义：https://blog.csdn.net/oYiGeHui/article/details/82821125
+2.pipe放到函数内层是不是一个好的实践：
 What are schedulers in RxJS：
 https://blog.strongbrew.io/what-are-schedulers-in-rxjs/
 https://jstobigdata.com/rxjs/rxjs-scheduler/
