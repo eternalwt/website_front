@@ -58,6 +58,7 @@ border-collapse: separate;
 transition: right 0.25s ease-in-out;
 box-shadow: 0px 0px 6px 2px #c0c1c3;
 flex-shrink: 0;
+align-items: center;
 
 input自适应宽度为什么也很困难？
 https://www.softwhy.com/article-9588-1.html
@@ -78,6 +79,13 @@ contenteditable实现编辑器,光标、输入法处理，emoji的显示和转�
 原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
 Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
 fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
+JS里面bind方法的实现【是不是可以替代闭包的一些使用场景？】【再看一遍函数对象就能理解了。函数对象是不是本来就有个this指针？】：
+https://www.jianshu.com/p/563b415eba66
+https://www.jianshu.com/p/7030376af23c
+匿名函数自调用(IIFE)：https://blog.csdn.net/u013575441/article/details/50063403
+call()、apply()、bind() 都是用来重定义 this 这个对象的：https://www.runoob.com/w3cnote/js-call-apply-bind.html
+解决async/await滥用产生的困境：https://zhuanlan.zhihu.com/p/138331544
+Javascript中数组方法reduce的妙用之处：https://www.jianshu.com/p/b415e46b4c8a
 
 ng-qrcode、ng-qrgen
 如何优雅的使用 Angular 表单验证：https://www.cnblogs.com/worktile/p/10280997.html
@@ -103,6 +111,13 @@ https://segmentfault.com/a/1190000010252809
 
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
 
+angular 共享模块：
+https://blog.csdn.net/xwnxwn/article/details/82012502
+https://www.cnblogs.com/starof/p/9069336.html
+https://www.cnblogs.com/momjs/p/10924445.html
+ng-contextmenu：https://www.npmjs.com/package/ng-contextmenu
+Angular2实现右键菜单：https://www.jianshu.com/p/5991dcedcd35
+
 How to Setup Selenium on Node Environment：https://dev.to/oyetoket/how-to-setup-selenium-on-node-environment-30bc
 
 重要基础设施，搜package的站点（ngx-echarts）：
@@ -114,6 +129,13 @@ Explaining JavaScript Closure & Scope Chain with Examples：https://community.ri
 https://www.zhihu.com/question/19554716
 https://blog.csdn.net/Amy_cloud/article/details/89227362
 
+wangeditor：https://www.cnblogs.com/guofan/p/10065466.html
+比较webStorm和VSCode开发前端angular
+Angular实现多标签页效果(路由重用)：
+https://www.cnblogs.com/lovesangel/p/7853364.html
+https://blog.csdn.net/jstljspservlet/article/details/89081545
+angular – 页面上的多个路由器插座,用于相同的路由【我在写代码中一个component可以在一个routing文件里面用于不同的路由，然后顺手搜到到了这个网页】：http://www.voidcn.com/article/p-ngjfconj-bxv.html
+
 transpiler：
 https://www.infoq.com/presentations/transpiler-compiler-design/
 https://devopedia.org/transpiler
@@ -122,6 +144,8 @@ https://howtodoinjava.com/typescript/transpiler-vs-compiler/
 https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
 
 从 Flash 到 WEBGPU，Web 图形技经历过的变革你了解吗？https://mp.weixin.qq.com/s/SP4-R9GOVbE3WHRC1DXDzw
+
+前端工程师都有用哪些比较靠谱的小工具？https://www.zhihu.com/question/20241338/answer/1166419798
 
 Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
@@ -172,6 +196,14 @@ https://blog.csdn.net/weixin_30878361/article/details/99350641
 https://blog.csdn.net/heart_is_sunny/article/details/97524490?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
 
 近几年来，前端面试的难度上了一个档次，我们前端工程师要刷 LeetCode， 要手写一大堆工具函数：函数节流、防抖、数组去重、扁平化，对象深拷贝等：https://www.jianshu.com/p/763ab70f791e
+
+Creating a File Explorer Component in Angular：
+https://malcoded.com/posts/angular-file-explorer-component/
+https://www.syncfusion.com/angular-ui-components/angular-file-manager
+angular里面下载的方式：
+1.（预防性保护）后端返回流+前端用bits创建File对象，并创建指向这个对象的a，模拟点击（这种方式不需要再次鉴权了）
+2.在服务器上生成文件，然后下载（再使用一次流）
+
 
 jQuery工作流插件之gooflow流程解决方案：https://blog.csdn.net/WYpersist/article/details/80568095
 
