@@ -31,6 +31,8 @@ Clarity Design System：https://clarity.design/
 
 ===========================================================================
 
+npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
+
 【专门花时间来提升这个能力】【在github上，首先去寻找问题有没有答案，其次尝试提问：1.二级菜单；2.table的后端分页】而不是遇到问题直接就放弃了，那样很难提升
 2019了还可以用angular吗？（学严兴杰分析angular和angular material的issue）：https://www.zhihu.com/question/329973345/answer/728704821
 我选择Angular最直接的理由是Ionic4，最好的混合应用框架，没有之一。
@@ -60,11 +62,28 @@ box-shadow: 0px 0px 6px 2px #c0c1c3;
 flex-shrink: 0;
 align-items: center;
 
+CSS面试题：
+https://blog.csdn.net/u014697639/article/details/80311559
+https://blog.csdn.net/weixin_33691817/article/details/91392503
+https://www.cnblogs.com/lrgupup/p/11445957.html
+https://cloud.tencent.com/developer/article/1476141
+https://baijiahao.baidu.com/s?id=1630858302456359651&wfr=spider&for=pc
+CSS难点：
+https://zhuanlan.zhihu.com/p/38565057
+https://zhuanlan.zhihu.com/p/32298629
+
 input自适应宽度为什么也很困难？
 https://www.softwhy.com/article-9588-1.html
 https://blog.csdn.net/qq_35363709/article/details/84852259
 span是内联元素，能够根据内容的宽度自动伸展和收缩，并且很容易计算它的宽度。
 使用span+contenteditable来做输入框宽度限制
+多个input自适应宽度问题的几个方面：
+0.原始宽度是怎么得来的？思考用js遍历调整宽度的方式
+1.思考用span+contenteditable的方案；
+2.如果用span，换行怎么搞？
+3.如果不用span，换行怎么搞？
+4.统一这个页面的样式
+
 
 CSS3 :last-child 选择器：
 http://caibaojian.com/w3c/cssref/selector_last-child.html
@@ -107,6 +126,9 @@ https://segmentfault.com/a/1190000010252809
 
 看一下ng-bootstrap如果都竖起来样式是什么样的
 
+公司angular代码模态框的思路【网上找modal控件对比一下】：
+1.定义一个空的模态框组件；2.业务组件使用这个组件（获得框的基本操作），并负责具体的内容和行为的填充（ng-content）
+
 在 WebGL 领域里，Evan Wallace 几年前做出过 glfx.js 和 LightGL。我有自信自己的作品 Beam 能跟它们五五开（譬如支持滤镜链和实时 PBR）
 
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
@@ -146,6 +168,7 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 从 Flash 到 WEBGPU，Web 图形技经历过的变革你了解吗？https://mp.weixin.qq.com/s/SP4-R9GOVbE3WHRC1DXDzw
 
 前端工程师都有用哪些比较靠谱的小工具？https://www.zhihu.com/question/20241338/answer/1166419798
+9 个用于前端 Web 开发的开源 CSS 框架：https://zhuanlan.zhihu.com/p/141693016
 
 Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
@@ -346,6 +369,8 @@ Angular9新特性以及升级指南：https://zhuanlan.zhihu.com/p/108563871
 ES6 Tutorial：
 https://www.tutorialspoint.com/es6/index.htm
 https://www.javascripttutorial.net/es6/
+
+字段验证做成directive，是一个很好的思路
 
 浏览器在 2020 年可以干什么？https://github.com/luruke/browser-2020/blob/master/README.md
 A Look Into HTML6 – What Is It and What It Has to Offer?：
