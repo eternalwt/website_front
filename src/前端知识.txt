@@ -13,6 +13,13 @@ RxJS的另外四种实现方式（后记）—— 同时实现管道和链式编
 
 ng generate class Hero
 
+
+ckeditor:
+  upload:
+    path:
+      prefix: D:\02APP\nginx-1.14.2\html\files
+
+
 ===========================================================================
 
 【找一些设计规范看看】
@@ -30,6 +37,12 @@ Clarity Design System：https://clarity.design/
 4.html5和CSS3等主流版本的web技术和前端框架要适配（例如angular的ReactiveForm）
 
 ===========================================================================
+
+JavaScript中常见的设计模式：https://zhuanlan.zhihu.com/p/144945422
+
+Infinite Scrolling Best Practices（无限下拉）【先自己分解、思考一下实现步骤】：https://segmentfault.com/a/1190000008518315
+瀑布流无限下拉加载效果：https://www.sucainiu.com/code/287.html
+@ui-grid/infinite-scroll：https://www.npmjs.com/package/@ui-grid/infinite-scroll
 
 npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 
@@ -95,6 +108,8 @@ HTML5之contenteditable可编辑属性：https://www.cnblogs.com/linx/p/8031411.
 contenteditable实现编辑器,光标、输入法处理，emoji的显示和转换存储：https://blog.csdn.net/lqyygyss/article/details/81773516
 为什么 ContentEditable 很恐怖：https://www.oschina.net/translate/why-contenteditable-is-terrible
 
+跟踪代码来看http rxjs的实现
+
 原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
 Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
 fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
@@ -124,6 +139,39 @@ https://segmentfault.com/a/1190000010252809
 前端必懂EventEmitter，不懂会丢人【再次证明事件机制就是可以对应到发布+订阅模式】：https://www.jianshu.com/p/e37ca8369162（再看各个语言里面事件的实现，自己模拟设计事件，想清楚）。JS里面是把怎么订阅的细节隐藏了，自己想一下：
 <data-audit #md (LocaBool)="locahost()"></data-audit>
 
+【本周学习任务】rxjs的响应式搞清楚（里面讲到了rxjs的优势，例如 isolate the application state）：
+https://codingcompiler.com/rxjs-tutorial/
+Observable的优势2是可以提供一种统一的编程方式（我自己总结的）：https://scotch.io/tutorials/angular-2-http-requests-with-observables
+https://www.devglan.com/javascript/rxjs-tutorial
+https://www.tutorialspoint.com/rxjs/index.htm
+subscribe有2种，公司代码里面用的第二种：
+    subscribe(observer?: PartialObserver<T>): Subscription;
+    subscribe(next?: (value: T) => void, error?: (error: any) => void, complete?: () => void): Subscription;
+关键：Observable啥时候发射值？
+RxJS 和响应式编程简介：https://zhuanlan.zhihu.com/p/144950471
+Observable 的简单实现：
+https://zhuanlan.zhihu.com/p/34927042
+https://zhuanlan.zhihu.com/p/110007033
+pipe()作为一种链接运算符的方法
+RxJS的API列表：https://zhuanlan.zhihu.com/p/25383159
+
+继续看angular最佳实践、组件编写
+看弹框的样式，看右侧的样式
+工具类前端项目的复杂度真的可以跟后端相提并论吗？https://www.zhihu.com/question/397643817/answer/1252009996
+钉钉前端-如何设计前端实时分析及报警系统：https://zhuanlan.zhihu.com/p/144144230
+JS里面的方法：Object.assign(data, event.data);
+练手-一定要经过这么一个训练：把bootstrap中的元素封装成控件（保证行为、数据封装正确）
+angular中访问dom元素的方式【我在给img设置src的时候用到过，能否用指令directive来做？】：https://blog.csdn.net/qq_28004379/article/details/80801378
+直接使用下面的方法获取子组件的值没问题，但是从子组件中不能看出attachmentAddList是要传递出去的变量，这种写法不好。思考一下改进方法：
+this.saveFile(this.baseInfoInnerForm.attachmentAddList, res.data, this.fileCode);
+系统菜单的一点改进想法：从左边打开菜单时，如果该菜单已打开，需要刷新
+代码里面为什么会出现：stopPropagation，读一下代码看看这些是不是垃圾代码。
+https://www.jianshu.com/p/21bed2abcb5e
+https://www.jianshu.com/p/c933de9249c7
+Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个函数出来，形成自己的基础设施】：https://blog.csdn.net/gwj41/article/details/78667208
+如何判断一个Component是否有用：
+1.是否被其他component引用；2.是否在路由里面出现
+
 看一下ng-bootstrap如果都竖起来样式是什么样的
 
 公司angular代码模态框的思路【网上找modal控件对比一下】：
@@ -139,6 +187,8 @@ https://www.cnblogs.com/starof/p/9069336.html
 https://www.cnblogs.com/momjs/p/10924445.html
 ng-contextmenu：https://www.npmjs.com/package/ng-contextmenu
 Angular2实现右键菜单：https://www.jianshu.com/p/5991dcedcd35
+
+Angular6封装http请求：https://www.cnblogs.com/zhouyangla/p/9465008.html
 
 How to Setup Selenium on Node Environment：https://dev.to/oyetoket/how-to-setup-selenium-on-node-environment-30bc
 
@@ -190,6 +240,9 @@ https://flatlogic.com/blog/top-angular-open-source-projects/
 如果要在Github上找前端后台模板，只要搜索“admin”关键词并按“Most stars”排序就好了。
 最后，到目前为止，认为最适合国情的，美观大方的，成熟的中后台界面，还是Ant Design。
 
+angular自带的代理方式处理跨域：https://blog.csdn.net/kuangshp128/article/details/72235741
+最关键的，http的Observable底层用的是XMLHttpRequest，需要分析HttpModule模块代码，看起来难度很大：https://segmentfault.com/a/1190000009028150
+
 中后台的前端开发，angular+ng-zorro+echarts，脚手架可以用ngx-admin。整套系统的脚手架可以用jhipster
 程序员接私活必备的十个辅助项目【注意分析里面的ant-design-pro能否使用】：https://zhuanlan.zhihu.com/p/84132599
 
@@ -227,6 +280,28 @@ angular里面下载的方式：
 1.（预防性保护）后端返回流+前端用bits创建File对象，并创建指向这个对象的a，模拟点击（这种方式不需要再次鉴权了）
 2.在服务器上生成文件，然后下载（再使用一次流）
 
+继续看angular最佳实践、组件编写
+看弹框的样式，看右侧的样式
+工具类前端项目的复杂度真的可以跟后端相提并论吗？https://www.zhihu.com/question/397643817/answer/1252009996
+钉钉前端-如何设计前端实时分析及报警系统：https://zhuanlan.zhihu.com/p/144144230
+JS里面的方法：Object.assign(data, event.data);
+练手-一定要经过这么一个训练：把bootstrap中的元素封装成控件（保证行为、数据封装正确）
+angular中访问dom元素的方式【我在给img设置src的时候用到过，能否用指令directive来做？】：https://blog.csdn.net/qq_28004379/article/details/80801378
+直接使用下面的方法获取子组件的值没问题，但是从子组件中不能看出attachmentAddList是要传递出去的变量，这种写法不好。思考一下改进方法：
+this.saveFile(this.baseInfoInnerForm.attachmentAddList, res.data, this.fileCode);
+系统菜单的一点改进想法：从左边打开菜单时，如果该菜单已打开，需要刷新
+代码里面为什么会出现：stopPropagation，读一下代码看看这些是不是垃圾代码。
+https://www.jianshu.com/p/21bed2abcb5e
+https://www.jianshu.com/p/c933de9249c7
+Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个函数出来，形成自己的基础设施】：https://blog.csdn.net/gwj41/article/details/78667208
+如何判断一个Component是否有用：
+1.是否被其他component引用；2.是否在路由里面出现
+
+ajax使用promise的简单封装：
+https://zhuanlan.zhihu.com/p/93657742
+https://www.zhihu.com/question/64792702/answer/224452982
+https://zhuanlan.zhihu.com/p/36845252
+fetch API脱离了XHR，是基于Promise设计。
 
 jQuery工作流插件之gooflow流程解决方案：https://blog.csdn.net/WYpersist/article/details/80568095
 
@@ -319,7 +394,11 @@ https://blog.csdn.net/weixin_43187345/article/details/90550371
 https://www.jianshu.com/p/84ed073abc55
 https://blog.csdn.net/wen_binobject/article/details/78593660
 
-==============================================================================================
+  public getEventObservable():Observable<any>{
+    return this.infoEmit.pipe(share());
+  }
+
+===============================================================================
 
 【控件学习】【需要把样式问题过一遍】
 控件也有版本更新的问题，后续注意一下
@@ -369,6 +448,24 @@ Angular9新特性以及升级指南：https://zhuanlan.zhihu.com/p/108563871
 ES6 Tutorial：
 https://www.tutorialspoint.com/es6/index.htm
 https://www.javascripttutorial.net/es6/
+把headers用好：
+  //导入四有档案的Excel
+  importCpuBaseInfoExcel(evt) {
+    let formData = new FormData();
+    let passFile = evt.srcElement.files[0];
+    formData.append('file', passFile);
+    let headers = {
+      'Content-Type': false,
+      'processData': false,
+      'Accept': 'application/json',
+    }
+    const url = this.prefix + 'cpuBaseInfo/importExcel';
+    return this.http.Post(url, formData, headers);
+  }
+https://blog.csdn.net/wanglui1990/article/details/79180887
+https://www.jianshu.com/p/912b38b2c8d6
+https://www.jb51.net/article/117760.htm
+https://blogs.msmvps.com/theproblemsolver/2016/12/16/angular-2-and-http-request-headers/
 
 字段验证做成directive，是一个很好的思路
 

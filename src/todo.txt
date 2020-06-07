@@ -26,6 +26,7 @@ Angular Material Table component is full of features and a wide variety of optio
 不会读控件代码的话，就没办法彻底搞定
 
 todo 把service测一下（用自动生成的spec.ts测试文件）
+http下载的文件类型做成一个枚举
 
 Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-components
 Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
