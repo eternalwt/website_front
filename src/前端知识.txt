@@ -38,11 +38,74 @@ Clarity Design System：https://clarity.design/
 
 ===========================================================================
 
+[我自己的系统]退出登录后，应该给一个提示，否则总感觉交互有点不够自然
+
+200行代码理解 RxJS 的核心概念【动手】：https://zhuanlan.zhihu.com/p/146795979
+RxJS 和响应式编程简介【把我给胡高伟说的那个思路自己实现一下】：https://zhuanlan.zhihu.com/p/144950471
+RxJS源码解读之生成observable的函数：https://www.jianshu.com/p/10f1967b4c87
+
 JavaScript中常见的设计模式：https://zhuanlan.zhihu.com/p/144945422
+
+看看网上有没有和我司文件上传组件类似的功能强大的文件组件
 
 Infinite Scrolling Best Practices（无限下拉）【先自己分解、思考一下实现步骤】：https://segmentfault.com/a/1190000008518315
 瀑布流无限下拉加载效果：https://www.sucainiu.com/code/287.html
 @ui-grid/infinite-scroll：https://www.npmjs.com/package/@ui-grid/infinite-scroll
+
+试写一个图片预览控件
+
+inline-block：
+https://zhuanlan.zhihu.com/p/51987694
+https://zhuanlan.zhihu.com/p/31856017
+https://zhuanlan.zhihu.com/p/94441197
+https://www.zhihu.com/question/20821569/answer/16303485
+【CSS总结篇】元素的定位方式：https://zhuanlan.zhihu.com/p/147331955
+block元素可以包含block元素和inline元素；但inline元素只能包含inline元素。要注意的是这个是个大概的说法，每个特定的元素能包含的元素也是特定的，所以具体到个别元素上，这条规律是不适用的。比如 P 元素，只能包含inline元素，而不能包含block元素。
+居中的问题再专题研究一下：https://www.cnblogs.com/kenshinobiy/p/10720206.html
+前端面试CSS上跪了（T.T)：https://zhuanlan.zhihu.com/p/149517696
+
+span标签对于margin-top,margin-bottom无效：https://www.cnblogs.com/xiaqilin/p/6929795.html
+CSS:span元素margin-top无效的根源：https://www.iteye.com/blog/hbiao68-2220017
+block，inline及inline-block的简单介绍：https://zhuanlan.zhihu.com/p/51987694
+html——float与clear详解（深度好文）：https://blog.csdn.net/zz_rose/article/details/81292583
+
+练习一下写div+css布局：https://zhuanlan.zhihu.com/p/102150359
+看一些div布局加深理解：
+https://c.runoob.com/codedemo/2917
+http://www.divcss5.com/wenji/w588.shtml
+https://blog.csdn.net/zhousenshan/article/details/82708554
+https://blog.csdn.net/m0_38134431/article/details/84372226
+https://blog.csdn.net/qq_34283987/article/details/77896035
+https://www.cnblogs.com/yszr/p/9339809.html
+感觉搞懂布局后，我可以看CSS3了
+104道 CSS 面试题，助你查漏补缺：https://zhuanlan.zhihu.com/p/114257330
+剖析一些经典的CSS布局问题，为前端开发+面试保驾护航：https://zhuanlan.zhihu.com/p/86525538
+
+html5九宫格【先自己想想怎么实现】：
+https://www.jb51.net/web/446346.html
+https://www.cnblogs.com/padding1015/p/9566443.html
+https://blog.csdn.net/u012260672/article/details/50922459
+https://www.yudouyudou.com/jiaochengheji/Html_css/1525.html
+
+前端重新学习（5）DOM与DOM2、DOM3区别以及DOM2新特性：
+https://blog.csdn.net/qq_16546829/article/details/81289055
+https://www.cnblogs.com/YangqinCao/p/5491183.html
+
+图片自动放大缩小，模拟”心脏跳动”：https://www.iteye.com/blog/hbiao68-2323044
+图片滚动剖析：https://www.iteye.com/blog/hbiao68-2289438
+
+ngx两个treeview：
+https://www.npmjs.com/package/@mthomas564/ngx-treeview
+https://www.npmjs.com/package/prospeum-ngx-treeview
+自定义下拉框：1.定位方式；2.多功能
+ng-select：https://www.npmjs.com/package/@ng-select/ng-select
+Angular Multi-Select Dropdown：https://www.npmjs.com/package/ng-multiselect-dropdown
+ngx-select-dropdown：https://www.npmjs.com/package/ngx-select-dropdown
+angular-dropdown-search：https://www.npmjs.com/package/angular-dropdown-search
+@roambee/ng-dropdown-search：https://www.npmjs.com/package/@roambee/ng-dropdown-search
+ng-multiselect-dropdown9：https://www.npmjs.com/package/ng-multiselect-dropdown9
+
+2020年十一就可以使用bootstrap 5了
 
 npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 
@@ -52,7 +115,13 @@ npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 
 手把手教你搭建自己的Angular组件库：https://zhuanlan.zhihu.com/p/140700137
 前端监控和统计概念：https://zhuanlan.zhihu.com/p/134132381
-104道 CSS 面试题，助你查漏补缺：https://zhuanlan.zhihu.com/p/114257330
+
+【译】在Angular中自定义表单控件：
+https://zhuanlan.zhihu.com/p/96901982
+https://www.zhihu.com/question/48213163/answer/109694920
+Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/109608048
+
+前端组件库大合集：https://blog.csdn.net/qq_23876873/java/article/details/90726412
 
 1.为啥span、label不能设置width？【能否从这个问题学到CSS知识？】
 https://blog.csdn.net/dyr_1203/article/details/74942828
@@ -84,6 +153,9 @@ https://baijiahao.baidu.com/s?id=1630858302456359651&wfr=spider&for=pc
 CSS难点：
 https://zhuanlan.zhihu.com/p/38565057
 https://zhuanlan.zhihu.com/p/32298629
+
+CSS3实现3D旋转Demo：https://zhuanlan.zhihu.com/p/149273235
+
 
 input自适应宽度为什么也很困难？
 https://www.softwhy.com/article-9588-1.html
@@ -120,6 +192,10 @@ https://www.jianshu.com/p/7030376af23c
 call()、apply()、bind() 都是用来重定义 this 这个对象的：https://www.runoob.com/w3cnote/js-call-apply-bind.html
 解决async/await滥用产生的困境：https://zhuanlan.zhihu.com/p/138331544
 Javascript中数组方法reduce的妙用之处：https://www.jianshu.com/p/b415e46b4c8a
+
+JavaScript中的Event Loop（事件循环）机制：https://zhuanlan.zhihu.com/p/145383822
+前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
+头条前端面试：https://zhuanlan.zhihu.com/p/148939073
 
 ng-qrcode、ng-qrgen
 如何优雅的使用 Angular 表单验证：https://www.cnblogs.com/worktile/p/10280997.html
@@ -181,12 +257,16 @@ Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个�
 
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
 
+angular 扫描没有用的component【自己写工具】
+
 angular 共享模块：
 https://blog.csdn.net/xwnxwn/article/details/82012502
 https://www.cnblogs.com/starof/p/9069336.html
 https://www.cnblogs.com/momjs/p/10924445.html
 ng-contextmenu：https://www.npmjs.com/package/ng-contextmenu
 Angular2实现右键菜单：https://www.jianshu.com/p/5991dcedcd35
+
+ng-template、ng-content、ng-container【ng-content在自定义控件里面常用，和直接塞一个标签进去有什么区别？】：https://www.jianshu.com/p/0f5332f2bbf8
 
 Angular6封装http请求：https://www.cnblogs.com/zhouyangla/p/9465008.html
 
@@ -219,6 +299,8 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 
 前端工程师都有用哪些比较靠谱的小工具？https://www.zhihu.com/question/20241338/answer/1166419798
 9 个用于前端 Web 开发的开源 CSS 框架：https://zhuanlan.zhihu.com/p/141693016
+
+JS 闭包有哪些经典的使用场景和源代码？https://www.zhihu.com/question/19711908/answer/103083346
 
 Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
@@ -272,6 +354,8 @@ https://blog.csdn.net/weixin_30878361/article/details/99350641
 https://blog.csdn.net/heart_is_sunny/article/details/97524490?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
 
 近几年来，前端面试的难度上了一个档次，我们前端工程师要刷 LeetCode， 要手写一大堆工具函数：函数节流、防抖、数组去重、扁平化，对象深拷贝等：https://www.jianshu.com/p/763ab70f791e
+generator搞懂后，再回过头看js的generator生成器函数
+前端写代码真的有必要封装太好么? https://www.zhihu.com/question/397593209/answer/1253599319
 
 Creating a File Explorer Component in Angular：
 https://malcoded.com/posts/angular-file-explorer-component/
@@ -301,7 +385,15 @@ ajax使用promise的简单封装：
 https://zhuanlan.zhihu.com/p/93657742
 https://www.zhihu.com/question/64792702/answer/224452982
 https://zhuanlan.zhihu.com/p/36845252
-fetch API脱离了XHR，是基于Promise设计。
+fetch API脱离了XHR，是基于Promise设计
+
+js reduce函数使用的多种场景以及相关函数：
+https://www.jianshu.com/p/541b84c9df90
+https://blog.csdn.net/weixin_38361925/article/details/87933871
+https://blog.csdn.net/mrzhangdulin/article/details/95327054
+https://www.cnblogs.com/zhishaofei/p/9036943.html
+
+CSS Grid 布局那么好，为什么至今没有人开发出基于 Grid 布局的前端框架呢？https://www.zhihu.com/question/397861009/answer/1261960332
 
 jQuery工作流插件之gooflow流程解决方案：https://blog.csdn.net/WYpersist/article/details/80568095
 
@@ -315,6 +407,18 @@ https://mentormate.com/blog/create-modal-window-with-angular-cdk/
 https://www.dev6.com/angular/modal-templates-in-angular-2-part-1-inline-templates/
 
 【译】Angular最佳实践：https://zhuanlan.zhihu.com/p/139532390
+
+jQuery插件列表（尝试用angular实现）：
+https://www.evget.com/article/2017/2/14/25654.html
+https://blog.csdn.net/hanzhou4519/article/details/7644795
+http://www.jq22.com/
+
+novalidate (ngModelChange)
+
+使用Angular7开发一个Radio组件：https://segmentfault.com/a/1190000019644926
+快速地上手Angular组件开发：https://zhuanlan.zhihu.com/p/56417860
+理解 TypeScript 装饰器（为什么 Angular 不需要 Hooks）：https://zhuanlan.zhihu.com/p/65764702
+Angular-3种创建动态内容的方式：https://zhuanlan.zhihu.com/p/54085160
 
 ================================================================================
 
@@ -417,6 +521,9 @@ https://angularscript.com/3d-product-viewer/
 https://angularscript.com/image-carousel-gallery/
 https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwig/
 
+protractor是一个端到端的测试框架，主要用来测试angular和angularJs的应用。Protractor是一个Node.js程序，需要安装Node.js才可运行。Protractor默认使用Jasmine测试框架：
+https://blog.csdn.net/qyl_0316/article/details/86229288
+http://www.fly63.com/nav/324
 
 ==============================================================================================
 
@@ -427,6 +534,8 @@ https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
 
 一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
 提升概念把握能力及对应的抽象思维能力：bar图、饼图、折线图的dimension、source、series等的概念
+
+右下方的提示框应该有一个弹出的过程，我看公司里面的现在直接显示体验并不好
 
 Managing Subscriptions in Angular With the Async Pipe：
 https://alligator.io/angular/async-pipe/
@@ -474,6 +583,9 @@ A Look Into HTML6 – What Is It and What It Has to Offer?：
 https://www.script-tutorials.com/a-look-into-html6-what-is-it-and-what-it-has-to-offer/
 https://shabang.dev/question/what-are-the-new-features-of-html6/
 
+web大前端面试——JavaScript：https://www.jianshu.com/p/4840a90751e1
+弹性布局 - 手册(自整理)：https://www.jianshu.com/p/22e262fddcea
+
 How to Modularize an Angular Application：
 https://dzone.com/articles/howto-modularize-an-angular-application-by-example?fromrel=true
 Refresh an Angular Component without reloading the same Component：
@@ -485,6 +597,8 @@ https://blog.csdn.net/Dxx_23/article/details/87956408
 https://blog.csdn.net/weixin_44130081/article/details/90207143
 https://segmentfault.com/q/1010000014225843
 https://www.cnblogs.com/cnblogs-jcy/p/8714442.html
+
+JavaScript Array some() 方法【和某些语言中的any是语义类似的】：https://www.runoob.com/jsref/jsref-some.html
 
 响应式编程入门指南 - 通俗易懂 RxJS：https://zhuanlan.zhihu.com/p/102446217
 通俗的方式理解RxJS：https://segmentfault.com/a/1190000008464065
@@ -525,7 +639,12 @@ https://blog.csdn.net/yuemei_1991/article/details/76408868
 https://blog.csdn.net/qq_30970807/article/details/53771521
 https://blog.csdn.net/xnyssxy/article/details/79868928
 
-<div echarts 这种写法是什么意思？问下张润
+transform(value: any, args?: any): any {
+
+【对于是否需要切换到vue的判断：1.比对各框架新版本引入的更新；2.社区风评（使用率、人才等）。
+现在显然还没到切换的时候，可能到2021、2022会更加明朗。前期不要担忧，就算有项目已经给客户上线，切换成本也不大，更重要还是融会贯通】
+为什么 Vue 更符合这个时代的大势所趋：https://zhuanlan.zhihu.com/p/148747719
+
 echarts.init的方法引echarts
 公司的library是不是就是service公用？
 看一下公司代码返回值的封装（我现在的封装有没有问题）
@@ -590,6 +709,22 @@ How To Use Ng-Template In Angular? https://www.angularjswiki.com/angular/what-is
 AngularX 路由最佳实践：https://blog.csdn.net/xichenguan/article/details/72843137
 
 一个专门用于 OAuth2 登录的 JavaScript 库：https://adodson.com/hello.js/
+
+20 Best Front End Web Development Tools in 2020：https://www.guru99.com/front-end-web-development-tools.html
+
+Build a Text/Code Editor：
+https://enlight.nyc/projects/text-editor
+https://www.thatsoftwaredude.com/content/8912/create-a-basic-text-editor-in-javascript
+https://pusher.com/tutorials/collaborative-text-editor-javascript
+https://usefulangle.com/post/88/javascript-creating-simple-html-text-editor
+https://tomassetti.me/writing-simple-js-editor/
+https://webdevtrick.com/javascript-rich-text-editor/
+https://tryenlight.github.io/text-editor.html#!
+https://enlight.nyc/projects/code-editor
+Create an Frontend Editor：
+http://qnimate.com/create-an-frontend-editor-with-code-highlighting-and-execution/
+https://www.freecodecamp.org/news/web-maker-how-i-built-a-fast-offline-front-end-playground-9fe3629bc86f/
+Canvas Text Editor Tutorial：https://www.everythingfrontend.com/pages/canvas-text-editor-tutorial.html
 
 ECharts 前段时间发布了超亮眼的 GL，相对于之前已经圈粉无数的 ECharst-X 而言，ECharst GL更是帅到爆，无论是性能、颜值、类型都有了巨大的飞跃：
 https://efe.baidu.com/blog/building-realistic-map-with-echarts-gl/
