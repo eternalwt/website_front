@@ -36,9 +36,36 @@ Clarity Design System：https://clarity.design/
 3.主题、控件要和使用的前端框架适配（三大框架）
 4.html5和CSS3等主流版本的web技术和前端框架要适配（例如angular的ReactiveForm）
 
+HTML哪些是块级元素，哪些是行内元素：https://www.cnblogs.com/yxm440/p/7667539.html
+
+自适应宽度的2个文章：
+https://bbs.csdn.net/topics/390698953?list=31152598
+https://zhidao.baidu.com/question/1818954979543524068.html
+
+DevUI是一支兼具设计视角和工程视角的团队，服务于华为云DevCloud平台：
+https://devui.design/home
+https://github.com/DevCloudFE/ng-devui
+
+学习Lodash：
+https://www.jianshu.com/p/832ac54b95b5
+https://www.jianshu.com/p/c59f1b2bafae
+https://lodash.com/
+https://github.com/lodash/lodash
+学习underscore：
+https://blog.csdn.net/QDY5945/article/details/102587361
+https://github.com/changxiupeng/underscore-analysis
+https://underscorejs.org/
+https://github.com/jashkenas/underscore
+
 ===========================================================================
 
 [我自己的系统]退出登录后，应该给一个提示，否则总感觉交互有点不够自然
+
+
+[译] 关于 `ExpressionChangedAfterItHasBeenCheckedError` 错误你所需要知道的事情：https://segmentfault.com/a/1190000013972657
+对应的错误代码：<label *ngIf="!(fileConfig.clearProve||fileConfig.agreement||fileConfig.qualityAcceptance||fileConfig.costAccount||fileConfig.prospectRecord||fileConfig.prospectReport||fileConfig.isUnit)||(fileConfig.isUnit && !fileRequired)"
+          class="control-label file-control-label">审核附件</label>
+
 
 200行代码理解 RxJS 的核心概念【动手】：https://zhuanlan.zhihu.com/p/146795979
 RxJS 和响应式编程简介【把我给胡高伟说的那个思路自己实现一下】：https://zhuanlan.zhihu.com/p/144950471
@@ -68,6 +95,7 @@ span标签对于margin-top,margin-bottom无效：https://www.cnblogs.com/xiaqili
 CSS:span元素margin-top无效的根源：https://www.iteye.com/blog/hbiao68-2220017
 block，inline及inline-block的简单介绍：https://zhuanlan.zhihu.com/p/51987694
 html——float与clear详解（深度好文）：https://blog.csdn.net/zz_rose/article/details/81292583
+position: absolute;与float、块级元素等概念的关系？
 
 练习一下写div+css布局：https://zhuanlan.zhihu.com/p/102150359
 看一些div布局加深理解：
@@ -80,6 +108,7 @@ https://www.cnblogs.com/yszr/p/9339809.html
 感觉搞懂布局后，我可以看CSS3了
 104道 CSS 面试题，助你查漏补缺：https://zhuanlan.zhihu.com/p/114257330
 剖析一些经典的CSS布局问题，为前端开发+面试保驾护航：https://zhuanlan.zhihu.com/p/86525538
+tr\td顶部对齐，怎么分析这个问题？
 
 html5九宫格【先自己想想怎么实现】：
 https://www.jb51.net/web/446346.html
@@ -93,6 +122,7 @@ https://www.cnblogs.com/YangqinCao/p/5491183.html
 
 图片自动放大缩小，模拟”心脏跳动”：https://www.iteye.com/blog/hbiao68-2323044
 图片滚动剖析：https://www.iteye.com/blog/hbiao68-2289438
+<button> 控件 与 <input type="button"> 相比，提供了更为强大的功能和更丰富的内容：https://www.w3school.com.cn/tags/tag_button.asp
 
 ngx两个treeview：
 https://www.npmjs.com/package/@mthomas564/ngx-treeview
@@ -143,6 +173,12 @@ transition: right 0.25s ease-in-out;
 box-shadow: 0px 0px 6px 2px #c0c1c3;
 flex-shrink: 0;
 align-items: center;
+
+box-shadow: none !important;
+outline: 0 !important;：
+https://www.w3school.com.cn/cssref/pr_outline.asp
+https://www.zhihu.com/question/55604802
+https://zhuanlan.zhihu.com/p/107792245
 
 CSS面试题：
 https://blog.csdn.net/u014697639/article/details/80311559
@@ -197,6 +233,10 @@ JavaScript中的Event Loop（事件循环）机制：https://zhuanlan.zhihu.com/
 前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
 头条前端面试：https://zhuanlan.zhihu.com/p/148939073
 
+前端如何保证事务性？
+
+【译文】【前端架构鉴赏 01】：Angular 架构模式与最佳实践：https://zhuanlan.zhihu.com/p/152220505
+
 ng-qrcode、ng-qrgen
 如何优雅的使用 Angular 表单验证：https://www.cnblogs.com/worktile/p/10280997.html
 Angular6实现搜索关键字词高亮：
@@ -233,7 +273,6 @@ RxJS的API列表：https://zhuanlan.zhihu.com/p/25383159
 
 继续看angular最佳实践、组件编写
 看弹框的样式，看右侧的样式
-工具类前端项目的复杂度真的可以跟后端相提并论吗？https://www.zhihu.com/question/397643817/answer/1252009996
 钉钉前端-如何设计前端实时分析及报警系统：https://zhuanlan.zhihu.com/p/144144230
 JS里面的方法：Object.assign(data, event.data);
 练手-一定要经过这么一个训练：把bootstrap中的元素封装成控件（保证行为、数据封装正确）
@@ -249,6 +288,11 @@ Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个�
 1.是否被其他component引用；2.是否在路由里面出现
 
 看一下ng-bootstrap如果都竖起来样式是什么样的
+
+【能把promise、async/await、rxjs互相转换，才算搞懂了这一块。需要几个例子练手】
+
+2020年，前端还有哪些实现不了的需求？https://www.zhihu.com/question/403244729/answer/1305884086
+工具类前端项目的复杂度真的可以跟后端相提并论吗？https://www.zhihu.com/question/397643817/answer/1252009996
 
 公司angular代码模态框的思路【网上找modal控件对比一下】：
 1.定义一个空的模态框组件；2.业务组件使用这个组件（获得框的基本操作），并负责具体的内容和行为的填充（ng-content）
@@ -406,8 +450,6 @@ https://morioh.com/p/f7c1eca2519e
 https://mentormate.com/blog/create-modal-window-with-angular-cdk/
 https://www.dev6.com/angular/modal-templates-in-angular-2-part-1-inline-templates/
 
-【译】Angular最佳实践：https://zhuanlan.zhihu.com/p/139532390
-
 jQuery插件列表（尝试用angular实现）：
 https://www.evget.com/article/2017/2/14/25654.html
 https://blog.csdn.net/hanzhou4519/article/details/7644795
@@ -419,6 +461,16 @@ novalidate (ngModelChange)
 快速地上手Angular组件开发：https://zhuanlan.zhihu.com/p/56417860
 理解 TypeScript 装饰器（为什么 Angular 不需要 Hooks）：https://zhuanlan.zhihu.com/p/65764702
 Angular-3种创建动态内容的方式：https://zhuanlan.zhihu.com/p/54085160
+
+
+JS的bind方法在不同模块的方法回调里面很有用：
+this.create.createModal(SwEditdeleteWorkflowComponent, { type: null, headerLogo: "补探申请提示", title: "确认发起补探流程吗？", keyWord: ApsEnum.APS_VIP_DRILL_ACTIVITY }, this.doVipDrillProcess.bind(this));
+
+rsjs取消订阅的几个文章：
+https://limeii.github.io/2019/08/rxjs-unsubscribe/
+https://blog.csdn.net/weixin_33777877/article/details/88063179
+https://www.jianshu.com/p/5e885293bf03
+https://www.jianshu.com/p/da9934d6143c
 
 ================================================================================
 
@@ -656,7 +708,9 @@ oauth2集成shiro.XDF：http://www.doc88.com/p-1942503494803.html
 
 必须要用npm才能进行web开发我说实话有点耍流氓，web什么时候变成这样了吗，人为操作dom是原罪，使用回调是原罪，连ajax都以使用XMLHttpRequest不使用fetch为耻，这正常吗，这自由吗，再我看来，自由的web早就是一句空话了，什么兼容并包，都是空话，从早起的yui歧视jquery体系,到现在的react,ng4歧视vue都不过如此，真是让人觉得可笑。vue2，react能火起来要感谢饿了么，蚂蚁金服开源出来的一套很完整的web组件库，只有这些平易近人的组件库才是真正解决了开发效率的问题，ng4在我看来还是很缺乏像element-ui,antd这么齐备和大规模使用的组件库.ng4在我看来最大的问题就是没有一个能真正值得使用的组件库，别跟我提什么 Material 2, primeng, ng2-bootstrap这些我都看了，但都不成体系，而且也有不少问题，离vue2的代表组件库element-ui,和react组件库antd还是有不少差距的，看一个组件库我只看几个关键组件，table如果不支持表头固定，表头拖拽，表头分组，以及排序筛选，那都称不上是一个合格的table组件，如果这些都没有我还不如用bootstrap-table自己简单封装下,更别提表头列双固定了，然后就是有没有类似select2的封装组件，时间控件啊，日期控件啊，输入控件啊，反正越傻瓜越好。
 
-es6新出的promise对象以及es7的async await
+es6新出的promise对象以及es7的async await：
+https://javascript.info/async-await
+https://www.js-tutorials.com/javascript-tutorial/how-to-use-async-and-await-in-javascript/
 promise使用场景：
 https://www.sitepoint.com/overview-javascript-promises/
 https://segmentfault.com/q/1010000019462799
@@ -897,6 +951,7 @@ Angular6 键值对的两种方式：https://blog.csdn.net/weixin_30464371/articl
 帮你彻底搞懂JS中的prototype、__proto__与constructor（图解）：https://blog.csdn.net/cc18868876837/article/details/81211729
 
 
+【译】Angular最佳实践：https://zhuanlan.zhihu.com/p/139532390
 angular best practice【这里面涉及我需要的module的用法、observable防内存泄漏等知识（module和service细看，思考echarts代码。再思考service的单例）】：
 https://www.agiratech.com/top-10-angular-best-practices/
 https://angular-academy.com/angular-architecture-best-practices/【代码能否根据这个尝试分层】一类函数就是一个facade的概念？
