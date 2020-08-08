@@ -57,10 +57,15 @@ https://github.com/changxiupeng/underscore-analysis
 https://underscorejs.org/
 https://github.com/jashkenas/underscore
 
+demo工程如果不加路由会怎样？（后面可以再加）
+全局node_modules路径：C:\Users\gao\AppData\Roaming\npm\node_modules
+
+Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/117616/open-source-svg-icon-library-for-bootstrap
+
 ===========================================================================
 
 [我自己的系统]退出登录后，应该给一个提示，否则总感觉交互有点不够自然
-
+angular中ngRoute和uiRoute的区别：https://www.cnblogs.com/liym-001/p/6039509.html
 
 [译] 关于 `ExpressionChangedAfterItHasBeenCheckedError` 错误你所需要知道的事情：https://segmentfault.com/a/1190000013972657
 对应的错误代码：<label *ngIf="!(fileConfig.clearProve||fileConfig.agreement||fileConfig.qualityAcceptance||fileConfig.costAccount||fileConfig.prospectRecord||fileConfig.prospectReport||fileConfig.isUnit)||(fileConfig.isUnit && !fileRequired)"
@@ -136,6 +141,11 @@ angular-dropdown-search：https://www.npmjs.com/package/angular-dropdown-search
 ng-multiselect-dropdown9：https://www.npmjs.com/package/ng-multiselect-dropdown9
 
 2020年十一就可以使用bootstrap 5了
+
+他们说全局安装angular-cli没意义，在配置文件指定就行了。typescript呢？应该也是一样，毕竟都是npm安装的：
+https://www.cnblogs.com/wyt007/p/10260524.html
+https://blog.csdn.net/weixin_43718291/article/details/106313701
+
 
 npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 
@@ -3068,7 +3078,7 @@ Angular 2 DomSanitizer：https://segmentfault.com/a/1190000008809095
 Angular4 中常用的指令入门总结：https://www.jb51.net/article/115968.htm
 Angular2 指令：
 https://www.cnblogs.com/SLchuck/p/5765611.html
-如何快速查看函数是怎么被调用的？【每新接触一门语言，关键还是摸清楚这些工程方面的东西】
+如何快速查看函数是怎么被调用的？【每新接触一门语言，关键还是摸清楚这些工程方面的���西】
 
 angular4.0 创建结构指令：https://blog.csdn.net/u013816448/article/details/79245375
 

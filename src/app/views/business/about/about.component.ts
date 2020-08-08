@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as Stomp from '@stomp/stompjs';
-import * as SockJS from 'sockjs-client';
+// import * as Stomp from '@stomp/stompjs';
+// import * as SockJS from 'sockjs-client';
 import { WebsocketService } from 'src/app/service/websocket.service';
 
 

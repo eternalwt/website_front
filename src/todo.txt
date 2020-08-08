@@ -1,6 +1,5 @@
 
 公司项目需要实验的几个方面：1.大屏把数据的获取和加载分开；2.webSocket推送数据（提高完成度）；3.图表代码怎么放入service精简
-看不到图表的问题看看是不是胡高伟的代码出了问题
 47新表数据库新表：pcr_device_data_avg
 
 ================================================================================
@@ -79,6 +78,8 @@ https://www.npmjs.com/package/ngx-gallery-images
 ngx-multi-modal【把forRoot看懂再说】：https://www.npmjs.com/package/ngx-multi-modal
 angular-notifier：https://www.npmjs.com/package/angular-notifier
 加ngToast：https://www.npmjs.com/package/ng-toast
+
+上面这些搞完后，至少还有3轮：1.material的那个主题套上去；2.vali、admin-lte套一遍；3.门户网站
 
 Creating Beautiful Apps with Angular Material：
 https://auth0.com/blog/creating-beautiful-apps-with-angular-material/【可以借鉴2个样式】
