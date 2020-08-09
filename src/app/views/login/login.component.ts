@@ -63,7 +63,21 @@ export class LoginComponent implements OnInit {
         //   // 2.跳转到后台admin页面
         //   this.router.navigateByUrl("/home");
         // });
-        this.router.navigateByUrl("/home/main");
+
+        let userId = Number(this.storageService.getJson("user")["id"]);// todo 重构
+        this.dataService.getMenuList(userId).subscribe(res => {
+          if (res["code"] == 1 && res["data"].length > 0) {
+            // icon类别：faIcon、icon、imageIcon等
+            // this.menuList = res["data"].map(item => {return {"label": item.menuName, "icon": item.icon, "link": item.url}});
+    
+            // 放入sessionStorage用来做鉴权 todo 网上给了一个更好的方法，还没试通
+            // todo 又遇到和router相关的一个地方了，为了router行为正常，后端保存的是只有一部分路径。改好后鉴权的地方要同步修改
+            this.storageService.setJson("menu", res["data"].map(item => {return item.url}));
+            
+            this.router.navigateByUrl("/home/main");
+          }
+        });
+
         // this.router.navigate
       } else {
         // alert("登录失败：" + res["msg"]);// todo msgBox

@@ -24,6 +24,8 @@ export class NavComponent implements OnInit {
     // todo 判空
     let userId = Number(this.storageService.getJson("user")["id"]);
     // 获取对应权限的菜单
+
+    // todo 这里不再获取了，由login传过来
     this.dataService.getMenuList(userId).subscribe(res => {
       if (res["code"] == 1 && res["data"].length > 0) {
         this.menuList = res["data"];
