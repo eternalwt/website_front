@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class NavComponent implements OnInit {
 
   appTitle = 'Angular CMS';
-  menuList: any = [{url:"/", name: "MYAPP"}, {url:"/home/about", name: "About"}, {url: "/home/contact", name: "Contact us"}];
+  menuList: any = [];
   menuTree: any;
 
   constructor(
@@ -32,7 +32,8 @@ export class NavComponent implements OnInit {
 
         // 放入sessionStorage用来做鉴权 todo 网上给了一个更好的方法，还没试通
         // todo 又遇到和router相关的一个地方了，为了router行为正常，后端保存的是只有一部分路径。改好后鉴权的地方要同步修改
-        sessionStorage.setItem("menu", res["data"].map(item => {return item.url}));
+        this.storageService.setJson("menu", res["data"].map(item => {return item.url}));
+
       }
     });
 

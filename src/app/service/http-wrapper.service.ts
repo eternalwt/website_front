@@ -166,7 +166,7 @@ export class HttpWrapperService {
       HeadersConfig['token'] = this.Jwt.GetlocaToken('token');
       HeadersConfig['X-Auth-Token'] = this.Jwt.GetlocaToken('token');
     } */
-    /* 将token 写入sessionStorage中,而不是写入localStorage中 */
+    /* 将token 写入sessionStorage中 */
     // if(this.Jwt.getToken("token")){
     //   HeadersConfig['Authorization']=`${this.Jwt.getToken('token')}`;
     //   // HeadersConfig['token'] = this.Jwt.getToken('token');

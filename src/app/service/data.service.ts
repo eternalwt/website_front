@@ -18,7 +18,7 @@ export class DataService {
   }
 
   logout() {
-    return this.http.get(environment.baseUrl +  `auth/logout`);//, {withCredentials: true}
+    return this.http.get(environment.baseUrl +  `auth/logout`);
   }
 
   jwtLogin(params) {

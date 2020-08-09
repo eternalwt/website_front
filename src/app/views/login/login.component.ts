@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../../service/data.service';
 import { StorageService } from 'src/app/service/storage.service';
 import { Router } from '@angular/router';
+import { MessageBoxService } from '../../service/message-box.service';
 
 @Component({
   selector: 'app-login',
@@ -20,6 +21,7 @@ export class LoginComponent implements OnInit {
     private dataService: DataService,
     private storageService: StorageService,
     private router: Router,
+    private MessageBoxService: MessageBoxService
   ) { }
 
   ngOnInit() {
@@ -53,7 +55,7 @@ export class LoginComponent implements OnInit {
     // this.dataService.jwtLogin(this.messageForm.value).subscribe(res => {
       console.log(res);
       if (res && res["code"] == 1) {
-        // 1.userId保存到localStorage；
+        // 1.userId保存到sessionStorage；
         this.storageService.setJson("user", res["data"]);
 
         // this.dataService.isPermitted().subscribe(res => {
@@ -62,8 +64,10 @@ export class LoginComponent implements OnInit {
         //   this.router.navigateByUrl("/home");
         // });
         this.router.navigateByUrl("/home/main");
+        // this.router.navigate
       } else {
-        alert("登录失败：" + res["msg"]);// todo msgBox
+        // alert("登录失败：" + res["msg"]);// todo msgBox
+        this.MessageBoxService.showMsg("登录失败", res["msg"]);
       }
     });
   }

@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { DataService } from 'src/app/service/data.service';
-import { MatDialogRef, MatDialog } from '@angular/material';
-import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.component';
+import { MessageBoxService } from './service/message-box.service';
 
 @Injectable({
     providedIn: 'root'
@@ -12,26 +11,13 @@ import { SimpleDialogComponent } from './components/simple-dialog/simple-dialog.
     constructor(
       private router: Router,
       private dataService: DataService,
-      private dialog: MatDialog
+      private MessageBoxService: MessageBoxService
     ) {}
-
-    // todo 原理好像没搞明白？
-    simpleDialog: MatDialogRef<SimpleDialogComponent>;
-
-    showMsg() {
-      this.simpleDialog = this.dialog.open(SimpleDialogComponent, {
-        hasBackdrop: true,
-        data: {
-          title: "No Permission",
-          msg: "No enough permission to access this page."
-        }
-      });
-    }
 
     // 路由守卫
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
       if (!this.hasPermission(state.url)) {
-          this.showMsg();
+          this.MessageBoxService.showMsg("No Permission", "No enough permission to access this page.");
           // todo 路由不变，页面不抖动
           // todo 测试：1.点击链接；2.从网址输入
           return false;

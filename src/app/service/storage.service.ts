@@ -9,39 +9,39 @@ export class StorageService {
 
   // 获取数据
   getItem(key) {
-    let value = localStorage.getItem(key);
+    let value = sessionStorage.getItem(key);
     return value;
   }
 
   // 保存数据
   setItem(key, value) {
-    localStorage.setItem(key, value);
+    sessionStorage.setItem(key, value);
   }
 
   // 删除数据
   removeItem(key) {
-    localStorage.removeItem(key);
+    sessionStorage.removeItem(key);
   }
 
   getJson(key) {
-    let jsonStr = localStorage.getItem(key);
+    let jsonStr = sessionStorage.getItem(key);
     let obj = JSON.parse(jsonStr);
     return obj;
   }
 
   setJson(key, obj) {
     let jsonStr = JSON.stringify(obj);
-    localStorage.setItem(key, jsonStr);
+    sessionStorage.setItem(key, jsonStr);
   }
 
   // 清空
   clear() {
-    localStorage.clear();
+    sessionStorage.clear();
   }
 
   // 获取jwt token
   getAuthorizationToken() {
-    const token = localStorage.getItem("token")
+    const token = sessionStorage.getItem("token")
       ? localStorage.getItem("token")
       : "";
 
