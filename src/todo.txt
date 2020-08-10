@@ -8,7 +8,10 @@
 把授权的那个页面先加进来
 看公司的messageBox代码【值得学习】
 
-【先快速把ng-alain搞起来，给自己一点信心？】
+【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
+1.ng add与schematics
+
+门户网站的突破，可以上B站学习：https://search.bilibili.com/all?keyword=%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&from_source=nav_search_new
 
 我的菜单有没有我在公司做的那种动态添加能力？再确认一次
 看公司的messageBox代码。后续即使用到了控件库和主题，可能也需要花相当的精力封装service。

@@ -247,6 +247,8 @@ JavaScript中的Event Loop（事件循环）机制：https://zhuanlan.zhihu.com/
 
 【译文】【前端架构鉴赏 01】：Angular 架构模式与最佳实践：https://zhuanlan.zhihu.com/p/152220505
 
+关于ng add：https://stackoverflow.com/questions/51109959/what-does-ng-add-do-in-angular-cli-6-0-8
+
 ng-qrcode、ng-qrgen
 如何优雅的使用 Angular 表单验证：https://www.cnblogs.com/worktile/p/10280997.html
 Angular6实现搜索关键字词高亮：
@@ -323,6 +325,8 @@ Angular2实现右键菜单：https://www.jianshu.com/p/5991dcedcd35
 ng-template、ng-content、ng-container【ng-content在自定义控件里面常用，和直接塞一个标签进去有什么区别？】：https://www.jianshu.com/p/0f5332f2bbf8
 
 Angular6封装http请求：https://www.cnblogs.com/zhouyangla/p/9465008.html
+
+10 Angular and TypeScript Projects to Take You From Zero to Hero：https://blog.codewithdan.com/10-angular-and-typescript-projects-to-take-you-from-zero-to-hero/
 
 How to Setup Selenium on Node Environment：https://dev.to/oyetoket/how-to-setup-selenium-on-node-environment-30bc
 
