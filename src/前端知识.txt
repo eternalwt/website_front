@@ -42,9 +42,26 @@ HTML哪些是块级元素，哪些是行内元素：https://www.cnblogs.com/yxm4
 https://bbs.csdn.net/topics/390698953?list=31152598
 https://zhidao.baidu.com/question/1818954979543524068.html
 
+手写系列文章：https://zhuanlan.zhihu.com/p/257046071
+
+2020前端基础包过面试题：https://zhuanlan.zhihu.com/p/92590306
+
 DevUI是一支兼具设计视角和工程视角的团队，服务于华为云DevCloud平台：
 https://devui.design/home
 https://github.com/DevCloudFE/ng-devui
+
+【ES6】for of用法：
+https://blog.csdn.net/w390058785/article/details/80522383
+https://www.cnblogs.com/m2maomao/p/7743143.html
+for await of：
+https://blog.csdn.net/webFrontEndDev/article/details/103142119
+
+ES6中的迭代器(Iterator)和生成器(Generator)：https://www.cnblogs.com/xiaohuochai/p/7253466.html
+
+【我对promise理解到这句话的程度了】有了 Promise 对象，就可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。
+此外，Promise 对象提供统一的接口，使得控制异步操作更加容易：https://www.runoob.com/w3cnote/javascript-promise-object.html
+
+【第一个重要问题：如何下载、修改npm组件的源码？】
 
 学习Lodash：
 https://www.jianshu.com/p/832ac54b95b5
@@ -61,6 +78,17 @@ demo工程如果不加路由会怎样？（后面可以再加）
 全局node_modules路径：C:\Users\gao\AppData\Roaming\npm\node_modules
 
 Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/117616/open-source-svg-icon-library-for-bootstrap
+潮流前端周刊（第 3 期）：https://zhuanlan.zhihu.com/p/256068764
+
+请问一下各位大佬，js的静态方法有啥作用呀，写工具类吗？https://www.zhihu.com/question/423086350/answer/1499324613
+
+常用 npm 包：
+https://blog.csdn.net/qq_31964019/article/details/107765220
+https://blog.csdn.net/sinat_18474835/article/details/80010870
+635000 个 npm 包中我应该用哪个：https://zhuanlan.zhihu.com/p/52884808
+前端 | 一些实用的npm库：https://www.jianshu.com/p/555a558bcee8
+设计一个前端组件库（规模并不是很大），需要具备哪些能力？https://www.zhihu.com/question/266745124/answer/322998960
+2018年你需要知道的13个JavaScript工具库：https://zhuanlan.zhihu.com/p/38795426
 
 ===========================================================================
 
@@ -76,9 +104,10 @@ angular中ngRoute和uiRoute的区别：https://www.cnblogs.com/liym-001/p/603950
 RxJS 和响应式编程简介【把我给胡高伟说的那个思路自己实现一下】：https://zhuanlan.zhihu.com/p/144950471
 RxJS源码解读之生成observable的函数：https://www.jianshu.com/p/10f1967b4c87
 
+如何通过new Function创建 async 函数（英文）：https://davidwalsh.name/async-function-class
 JavaScript中常见的设计模式：https://zhuanlan.zhihu.com/p/144945422
 
-看看网上有没有和我司文件上传组件类似的功能强大的文件组件
+看看npm官网有没有和我司文件上传组件类似的功能强大的文件组件
 
 Infinite Scrolling Best Practices（无限下拉）【先自己分解、思考一下实现步骤】：https://segmentfault.com/a/1190000008518315
 瀑布流无限下拉加载效果：https://www.sucainiu.com/code/287.html
@@ -129,6 +158,8 @@ https://www.cnblogs.com/YangqinCao/p/5491183.html
 图片滚动剖析：https://www.iteye.com/blog/hbiao68-2289438
 <button> 控件 与 <input type="button"> 相比，提供了更为强大的功能和更丰富的内容：https://www.w3school.com.cn/tags/tag_button.asp
 
+精确化测试——基于依赖关系的变动检测原理：https://zhuanlan.zhihu.com/p/260761387
+
 ngx两个treeview：
 https://www.npmjs.com/package/@mthomas564/ngx-treeview
 https://www.npmjs.com/package/prospeum-ngx-treeview
@@ -146,6 +177,7 @@ ng-multiselect-dropdown9：https://www.npmjs.com/package/ng-multiselect-dropdown
 https://www.cnblogs.com/wyt007/p/10260524.html
 https://blog.csdn.net/weixin_43718291/article/details/106313701
 
+如何看待目前前端面试中，很多公司很少或不问CSS，而直接问JavaScript、框架、Node.js？https://www.zhihu.com/question/423451505/answer/1502849334
 
 npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 
@@ -243,11 +275,19 @@ JavaScript中的Event Loop（事件循环）机制：https://zhuanlan.zhihu.com/
 前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
 头条前端面试：https://zhuanlan.zhihu.com/p/148939073
 
+网页布局都有哪种？一般都用什么布局？https://zhuanlan.zhihu.com/p/202748637
+或许这就是下一代组件库：https://zhuanlan.zhihu.com/p/252824872
+
 前端如何保证事务性？
 
 【译文】【前端架构鉴赏 01】：Angular 架构模式与最佳实践：https://zhuanlan.zhihu.com/p/152220505
 
 关于ng add：https://stackoverflow.com/questions/51109959/what-does-ng-add-do-in-angular-cli-6-0-8
+
+Ng-Matero V10 正式发布！https://zhuanlan.zhihu.com/p/183960664
+
+宝塔面板 安装与使用教程：https://blog.csdn.net/weixin_44535476/article/details/98218087
+Ajax的MathML公式显示方案 MathJax：https://www.oschina.net/p/mathjax?hmsr=aladdin1e1
 
 ng-qrcode、ng-qrgen
 如何优雅的使用 Angular 表单验证：https://www.cnblogs.com/worktile/p/10280997.html
@@ -266,6 +306,8 @@ https://segmentfault.com/a/1190000010252809
 
 前端必懂EventEmitter，不懂会丢人【再次证明事件机制就是可以对应到发布+订阅模式】：https://www.jianshu.com/p/e37ca8369162（再看各个语言里面事件的实现，自己模拟设计事件，想清楚）。JS里面是把怎么订阅的细节隐藏了，自己想一下：
 <data-audit #md (LocaBool)="locahost()"></data-audit>
+
+ramda一款实用的 JavaScript 函数式编程库：https://ramda.cn/
 
 【本周学习任务】rxjs的响应式搞清楚（里面讲到了rxjs的优势，例如 isolate the application state）：
 https://codingcompiler.com/rxjs-tutorial/
