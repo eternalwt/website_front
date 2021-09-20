@@ -8,7 +8,7 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class RegisterComponent implements OnInit {
 
-  username: string;
+  username: string = "";
   password: string = "123456";
 
   constructor(
@@ -20,6 +20,10 @@ export class RegisterComponent implements OnInit {
 
   saveUser() {
 
+  }
+
+  onSubmit() {
+    
   }
 
 }

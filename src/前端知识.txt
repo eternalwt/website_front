@@ -81,6 +81,8 @@ https://blog.csdn.net/sinat_18474835/article/details/80010870
 设计一个前端组件库（规模并不是很大），需要具备哪些能力？https://www.zhihu.com/question/266745124/answer/322998960
 2018年你需要知道的13个JavaScript工具库：https://zhuanlan.zhihu.com/p/38795426
 
+前端项目的搭建，以及遇到问题的处理，是否需要再总结一下？这次升级angular12又遇到问题了
+
 ===========================================================================
 
 [我自己的系统]退出登录后，应该给一个提示，否则总感觉交互有点不够自然
@@ -90,6 +92,7 @@ angular中ngRoute和uiRoute的区别：https://www.cnblogs.com/liym-001/p/603950
 对应的错误代码：<label *ngIf="!(fileConfig.clearProve||fileConfig.agreement||fileConfig.qualityAcceptance||fileConfig.costAccount||fileConfig.prospectRecord||fileConfig.prospectReport||fileConfig.isUnit)||(fileConfig.isUnit && !fileRequired)"
           class="control-label file-control-label">审核附件</label>
 
+Bootstrap Studio是一款功能强大的网页设计软件：http://www.downxia.com/downinfo/324944.html
 
 200行代码理解 RxJS 的核心概念【动手】：https://zhuanlan.zhihu.com/p/146795979
 RxJS 和响应式编程简介【把我给胡高伟说的那个思路自己实现一下】：https://zhuanlan.zhihu.com/p/144950471
@@ -1898,6 +1901,7 @@ https://blog.csdn.net/weixin_30376083/article/details/97981623
 Angular 2.0支持原生的Shadow DOM，也可以通过模拟(emulated)的方式来支持它，通过设置每个component的encapsulation属性，可以决定每个组件的css的影响范围。
 搞清楚Web Components现状
 使用 Angular 打造框架无关的 web 组件：https://zhuanlan.zhihu.com/p/98621475
+If 'mat-panel-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 Web Components 入门实例教程：
 https://www.webcomponents.org/introduction
 https://www.robinwieruch.de/web-components-tutorial/
@@ -1909,7 +1913,7 @@ https://yq.aliyun.com/articles/52436/
 angular/components：https://github.com/angular/components
 Angular doesn’t support web components yet, but there is a branch in angular repository and when I saw it decided to play with it and see how it will work.
 Using Web Components in Angular：https://contentlab.io/using-web-components-in-angular/
-只要能自己封装一些组件，组件的知识不就熟练了吗
+只要能自己封装一些组件，组件的知识不就熟练了吗。或者彻底分析几款控件
 CSS-in-JS，向Web组件化再迈一大步（React中用到styled-components）：
 https://www.jianshu.com/p/cefd3ae73255
 http://www.ruanyifeng.com/blog/2017/04/css_in_js.html

@@ -26,7 +26,7 @@ export class PermAssignComponent implements OnInit {
     // 2.读出各个角色有的权限
     observables.push(this.dataService.getRolePermissionListMap());
     
-    forkJoin(observables).subscribe(res => {
+    forkJoin(observables).subscribe((res:any) => {
       if (res && res.length > 1) {
         let allMenus = [];
         if (res[0]["data"] && res[0]["data"].length > 0) {

@@ -10,9 +10,9 @@ import { StorageService } from 'src/app/service/storage.service';
 })
 export class ToolbarComponent implements OnInit {
 
-  username: string;
+  username: string = "";
 
-  searchItem: string;
+  searchItem: string = "";
 
   constructor(
     private dataService: DataService,
