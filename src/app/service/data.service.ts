@@ -57,6 +57,15 @@ export class DataService {
     return this.http.get(environment.baseUrl + "role/alllist");
   }
 
+  getMenuListByRole(roleId) {
+    return this.http.get(environment.baseUrl + `menu/getMenuListByRole?roleId=${roleId}`);
+  }
+
+  getMenuListByUserId(userId) {
+    return this.http.get(environment.baseUrl + `menu/getMenuListByRole?roleId=${userId}`);
+  }
+
+  // todo 把下面这些权限老方法再看一遍
   addMenu(menu) {
     return this.http.post(environment.baseUrl + `menu/add`, menu);
   }

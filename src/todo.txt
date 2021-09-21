@@ -54,6 +54,7 @@ Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-
 Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
 angular-awesome-slider：https://github.com/darul75/angular-awesome-slider
 把现在已经安装的组件还是要逐个分析一遍，过细一点。并且要尝试升级，在这个过程中积累工程经验
+前端代码写的不在多，要把现在涉及到的先方方面面搞清楚
 
 primeng、ngx-admin、ng-zorro【再看一遍，然后看看别人的那段话是否在理，验证一下】
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
