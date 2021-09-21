@@ -14,6 +14,9 @@ export class RegisterComponent implements OnInit {
   username: string = "";
   password: string = "123456";
 
+  submitted: boolean = false;
+  success: boolean = false;
+
   constructor(
     private dataService: DataService
   ) { }

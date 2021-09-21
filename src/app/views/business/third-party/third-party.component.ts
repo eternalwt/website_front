@@ -14,6 +14,7 @@ export class ThirdPartyComponent implements OnInit {
     hasFilter: false,
     hasCollapseExpand: false,
     decoupleChildFromParent: false,
+    hasDivider: false,// todo 后加的
     maxHeight: 500
   };
 

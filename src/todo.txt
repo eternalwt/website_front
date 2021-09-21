@@ -5,12 +5,13 @@
 
 ================================================================================
 
+如果前端资源不够先mock，无论如何要把前端先搞的比较清楚再换机器【2021年五一以后再换机器】
+
 【下一步可以继续了】
-  解决编译报错
-  安装确实的组件（从后往前装，边装边验证）；
   3.结合桌面上那张图看看ckeditor那个问题还存在不，如果不行先把ckeditor的代码注释掉或者看看有没有更高版本安装
   提交代码（把提交流程理顺一点）
-  把前端接口适配后端的最新修改
+  把前端接口适配后端的最新修改：根据资源权限获取菜单，分配资源权限
+  angular material注释了一些东西才启动，找个时间先升级然后再修复注释的代码
   把现有的todo清一波
   看看我在tsconfig里面加的2个选项有没有用；
   把授权的那个页面先加进来
@@ -52,6 +53,7 @@ http下载的文件类型做成一个枚举
 Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-components
 Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
 angular-awesome-slider：https://github.com/darul75/angular-awesome-slider
+把现在已经安装的组件还是要逐个分析一遍，过细一点。并且要尝试升级，在这个过程中积累工程经验
 
 primeng、ngx-admin、ng-zorro【再看一遍，然后看看别人的那段话是否在理，验证一下】
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
@@ -107,6 +109,11 @@ https://www.sitepoint.com/angular-material-design-components/
 https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
 Angular Material Tutorials：https://www.concretepage.com/angular-material/
 
+1.怎么确认一个组件能否兼容用的主题？
+2.怎么修改下载的组件，这样做好不好？
+将项目中的ng2-tree组件替换成ngx-tree：https://blog.csdn.net/qq_43263320/article/details/118735088
+安装组件时打印的compiling xxx(例如ngx-treeview): es2015 as esm2015是啥意思？
+generating browser application bundles
 
 angular 自定义组件：
 https://blog.csdn.net/henreash/article/details/82831138
@@ -484,6 +491,11 @@ github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
 动态代理看完后看mybatis源码分析，补一轮java基础（5天）。spring里面用到的动态代理
 2.对着我的2个模板看2套控件，看看控件封装了哪些精妙的操作，对模板带来了哪些互补
 
+TS2322: Type ‘null‘ is not assignable to type ‘File‘：https://blog.csdn.net/survivorsfyh/article/details/112577052
+typsScript编译选项：https://www.tslang.cn/docs/handbook/compiler-options.html
+Angular 10 - CommonJS or AMD dependencies can cause optimization bailouts warning：
+  https://blog.csdn.net/a1056244734/article/details/107059199/
+  https://blog.csdn.net/Damien_J_Scott/article/details/117952778
 
 【不好搞的话就分前后端分别处理】
   把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343

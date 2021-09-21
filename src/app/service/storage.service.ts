@@ -25,7 +25,11 @@ export class StorageService {
 
   getJson(key) {
     let jsonStr = sessionStorage.getItem(key);
-    let obj = JSON.parse(jsonStr);
+    let obj = null;
+    if (jsonStr != null) {
+      obj = JSON.parse(jsonStr);
+    }
+    
     return obj;
   }
 

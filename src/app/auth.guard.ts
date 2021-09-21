@@ -45,7 +45,7 @@ import { MessageBoxService } from './service/message-box.service';
           url = url.split("?")[0];
         }
         let urlList = url.split("/");
-        if (sessionStorage.getItem("menu").indexOf(urlList[urlList.length - 1]) >= 0)
+        if (sessionStorage.getItem("menu") != null && sessionStorage.getItem("menu").indexOf(urlList[urlList.length - 1]) >= 0)
         return true;
       }
 

@@ -44,10 +44,12 @@ export class ArticleListComponent implements OnInit {
     });
   }
 
-  pageOptionChange(evt) {
+  pageOptionChange(evt?) {
     // debugger;
     // console.log(this.pageEvent);
     // alert("page change!");
   }
+
+  openDialog(action: any,element: any) {}
 
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreeviewModule } from 'ngx-treeview';
-import { NgxEchartsModule } from 'ngx-echarts';
+// import { NgxEchartsModule } from 'ngx-echarts';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { NgxDocViewerModule } from 'ngx-doc-viewer';
 import { TabModule } from 'angular-tabs-component';
@@ -15,7 +15,7 @@ import { NgMaterialMultilevelMenuModule } from 'ng-material-multilevel-menu';
   imports: [
     CommonModule,
     TreeviewModule.forRoot(),
-    NgxEchartsModule,
+    // NgxEchartsModule,
     PdfViewerModule,
     NgxDocViewerModule,
     TabModule,
@@ -25,7 +25,7 @@ import { NgMaterialMultilevelMenuModule } from 'ng-material-multilevel-menu';
     NgMaterialMultilevelMenuModule
   ],
   exports: [
-    NgxEchartsModule,
+    // NgxEchartsModule,
     TreeviewModule,
     PdfViewerModule,
     NgxDocViewerModule,
