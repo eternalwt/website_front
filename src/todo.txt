@@ -5,28 +5,33 @@
 
 ================================================================================
 
+【下一步可以继续了】
+  解决编译报错
+  安装确实的组件（从后往前装，边装边验证）；
+  3.结合桌面上那张图看看ckeditor那个问题还存在不，如果不行先把ckeditor的代码注释掉或者看看有没有更高版本安装
+  提交代码（把提交流程理顺一点）
+  把前端接口适配后端的最新修改
+  把现有的todo清一波
+  看看我在tsconfig里面加的2个选项有没有用；
+  把授权的那个页面先加进来
+  看公司的menu代码【值得学习】我的菜单有没有我在公司做的那种动态添加能力？再确认一次
+
 2.把material的那个主题下载下来实用；
 3.用vali那个主题，搞自己写控件（找几个jquery的）和npm下载控件学习；
 3.ng-zorro及bootstrap等
 
-菜单更新后如何即时通知前端？
-
-
-把授权的那个页面先加进来
-看公司的menu代码【值得学习】
-
 【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
 1.ng add与schematics
-
-门户网站的突破，可以上B站学习：https://search.bilibili.com/all?keyword=%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&from_source=nav_search_new
-
-我的菜单有没有我在公司做的那种动态添加能力？再确认一次
-后续即使用到了控件库和主题，可能也需要花相当的精力封装service。
+What is angular schematic? https://findanyanswer.com/what-is-angular-schematic
+What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
 
 如果不能构建公司那种可以直接参考别人的代码复制使用的组件库，那么就达不到大规模添加功能和代码的程度。我离这个标准还差的远。
 【下一步最打紧的是搞清楚控件代码的阅读、修改、调试】
 
-再看一次门户网站用的技术
+门户网站的突破，可以上B站学习：https://search.bilibili.com/all?keyword=%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&from_source=nav_search_new
+react开发企业中后台产品、政务门户网站的一些总结：https://www.cnblogs.com/seemoon/p/12218721.html
+react那么火，为什么淘宝&京东首页不使用react？https://www.zhihu.com/question/317973545/answer/641955120
+react框架网站有哪些？https://www.zhihu.com/question/449794230/answer/1794269792
 
 列表项的编辑、删除、添加行：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】
 form整好（先把template-driven用溜）把他们的布局统一一下
@@ -40,6 +45,7 @@ Angular Material Table component is full of features and a wide variety of optio
 
 不会读控件代码的话，就没办法彻底搞定
 
+后续即使用到了控件库和主题，可能也需要花相当的精力封装service。
 todo 把service测一下（用自动生成的spec.ts测试文件）
 http下载的文件类型做成一个枚举
 
@@ -53,8 +59,6 @@ ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
 AdminLTE是不是有JQ问题？
 
 搜一下图片对比控件，进一步提升搜索能力
-公司里面配按钮的思路，再思考一下
-
 老老实实封装5到10个控件再继续
 
 NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
@@ -213,8 +217,22 @@ https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-
   https://angular-2-training-book.rangle.io/routing/route_guards
   https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
 
+当前版本：nodejs14、angular12、typeScript4.0.2
+【感觉typeScript、angular 12等的改变，导致的老代码跑不起来了】先看一个教程，把material的问题解决
+【升angular material到最新版本（先手动删除旧的）】
+升级node、angular后老项目启动不起来的解决方法：
+	1.删除项目目录下的node_modules，并清除cache：
+		https://stackoverflow.com/questions/47314089/failed-to-exec-start-script
+		https://stackoverflow.com/questions/49446277/failed-to-exec-start-script-eventemitter-anonymous-usr-local-lib-node-modu
+	2.新建个项目。老项目除了源文件外，其他文件用新项目的替换（老项目的先把package.json备份，并把项目目录下的文件删干净），相当于重新创建一次项目；
+	3.npm install、npm start；
+	4.第3步中缺少的包，用第2步备份的package.json排查并补充。要边安装边启动观察，某些包可能导致启动失败。
+老版本安装的angular material是8.2.3的，需要带版本号。按照下面的方法安装12.2.5版的(有可能直接跑不起来)：https://www.cnblogs.com/crackedlove/p/11576451.html
+和后端一样，要能看出哪些是自己安装的
 
-mybatis更多验证：(1)根据启动流程，阅读加载配置文件的代码；(2)搞清楚connector、datasource、druid等几类东西的关系
+Angular 12 New Features：
+  https://www.angularminds.com/blog/article/top-10-features-of-angular-12.html
+  https://angular.io/guide/updating-to-version-12
 
 关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
 
@@ -953,6 +971,19 @@ angular material 8：
 https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
 https://www.positronx.io/create-angular-material-8-custom-theme/
 https://devconquer.com/angular/angular-material-8-with-angular-8/
+
+Angular Authentication With JSON Web Tokens (JWT): The Complete Guide：https://blog.angular-university.io/angular-jwt-authentication/
+Angular Json Pipe Example：https://www.concretepage.com/angular-2/angular-2-json-pipe-example
+Angular 12/11 Multiple File Upload Tutorial Example：https://www.tutsmake.com/angular-11-multiple-file-upload-tutorial-example/
+Angular 12/11 Date Range Picker Tutorial Example：https://www.tutsmake.com/angular-11-date-range-picker-tutorial-example/
+Angular 12 File Upload with Progress Bar using REST Apis Example：https://www.tutsmake.com/angular-12-file-upload-with-progress-bar-example/
+
+angular.json参数详解(DevKit)：
+  https://www.cnblogs.com/momoli/p/13900813.html
+  https://segmentfault.com/a/1190000016292354
+  https://zhuanlan.zhihu.com/p/369498603
+
+表单分组FormGroup-新建、获取FormGroup的值：https://blog.csdn.net/wjyyhhxit/article/details/91043493
 
 =================================================================================
 

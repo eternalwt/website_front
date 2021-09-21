@@ -165,7 +165,8 @@ angular-dropdown-search：https://www.npmjs.com/package/angular-dropdown-search
 @roambee/ng-dropdown-search：https://www.npmjs.com/package/@roambee/ng-dropdown-search
 ng-multiselect-dropdown9：https://www.npmjs.com/package/ng-multiselect-dropdown9
 
-2020年十一就可以使用bootstrap 5了
+2021年5月bootstrap 5发布：https://baijiahao.baidu.com/s?id=1698975353060510381&wfr=spider&for=pc
+2021年8月Bootstrap 5.1.0 正式发布：https://www.xujun.org/note-137797.html
 
 他们说全局安装angular-cli没意义，在配置文件指定就行了。typescript呢？应该也是一样，毕竟都是npm安装的：
 https://www.cnblogs.com/wyt007/p/10260524.html
@@ -2266,6 +2267,8 @@ Date的util，要始终抓住format这一点
 Timeouts in Angular：https://www.syntaxsuccess.com/viewarticle/timeouts-and-timerwrapper-in-angular-2.0
 Angular 2 & Protractor Timeout: Here’s How to Fix It：https://christianliebel.com/2016/11/angular-2-protractor-timeout-heres-fix/
 
+[16] SameSite cookie 的现状: https://simonwillison.net/2021/Aug/3/samesite/
+[17] HTML 元素的 download 属性: https://shkspr.mobi/blog/2021/08/to-download-this-page-click-here/
 
 VSCode 下调试 Angular Library：https://www.imwhite.com.cn/2019/04/angular-library-debugging-in-vscode/
 

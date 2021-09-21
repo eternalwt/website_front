@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from 'src/app/service/data.service';
 
 @Component({
@@ -7,6 +8,8 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./register.component.less']
 })
 export class RegisterComponent implements OnInit {
+
+  messageForm: FormGroup = new FormGroup({});
 
   username: string = "";
   password: string = "123456";

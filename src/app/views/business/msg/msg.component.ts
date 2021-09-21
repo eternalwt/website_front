@@ -21,4 +21,8 @@ export class MsgComponent implements OnInit {
     });
   }
 
+  saveUser() {
+    
+  }
+
 }

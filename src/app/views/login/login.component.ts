@@ -12,9 +12,9 @@ import { MessageBoxService } from '../../service/message-box.service';
 })
 export class LoginComponent implements OnInit {
 
-  messageForm: FormGroup;
-  submitted = false;
-  success = false;
+  messageForm: FormGroup = new FormGroup({});// todo 确认下这样初始化有没有问题
+  submitted: boolean = false;
+  success: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,

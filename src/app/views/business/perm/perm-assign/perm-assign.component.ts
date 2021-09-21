@@ -13,14 +13,14 @@ export class PermAssignComponent implements OnInit {
     private dataService: DataService
   ) {}
 
-  menuList = [
+  menuList: any[] = [
     // {roleName:"role3", permList: [{key:"perm2", checked: true}, {key:"perm3", checked: true}]}
   ];
 
 
   ngOnInit() {
     // todo 1.要能分类；2.要能够分级授权；3.要能够有某些勾选的不能编辑
-    let observables = [];
+    let observables: any[] = [];
     // 1.读出所有的权限列表
     observables.push(this.dataService.getAllPermissionList());
     // 2.读出各个角色有的权限
@@ -35,7 +35,7 @@ export class PermAssignComponent implements OnInit {
         if (res[1]["data"]) {
           // 3.组合得到前端需要的数据
           for(let key in res[1]["data"]) {
-            let permList = [];
+            let permList: any[] = [];
             for (let i = 0; i < allMenus.length; i++) {
               if (res[1]["data"][key].indexOf(allMenus[i]) >= 0) {
                 permList.push({key: allMenus[i], checked: true});
@@ -58,7 +58,7 @@ export class PermAssignComponent implements OnInit {
    * 保存角色对应的权限
    */
   savePermission() {
-    let menuList = [];
+    let menuList: any[] = [];
     // todo 组装map。这样是为了后端不再定义vo，这种方法好不好有待商榷
     // todo 一次性发送给后端【既要保证效率，又要逻辑清晰】
     for (let i = 0; i < this.menuList.length; i++) {
