@@ -38,13 +38,12 @@ import { MessageBoxService } from './service/message-box.service';
     }
 
     hasPermission(url: string): boolean {
-      // todo url是否需要判空？这个问题要考虑一下
       if (sessionStorage.getItem("menu")) {
         if (url != null && url.indexOf("?") >= 0) {
           url = url.split("?")[0];
         }
         let urlList = url.split("/");
-        if (sessionStorage.getItem("menu") != null && sessionStorage.getItem("menu").indexOf(urlList[urlList.length - 1]) >= 0)
+        if (sessionStorage.getItem("menu").indexOf(urlList[urlList.length - 1]) >= 0)
         return true;
       }
 

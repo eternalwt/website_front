@@ -5,30 +5,76 @@
 
 ================================================================================
 
-1.修复登录后需要刷新才能进去的问题【改出来的问题】
-2.把admin的初始资源权限加上，并加到初始化脚本里面去
+把菜单权限配置做出来【先搞个最简单的下拉框切换角色配置】
+3.角色、用户的增删查改【前端】及权限分配；
+把现有的todo清一波
+用户的查看做通，便于后期复制到其他功能
+【不好搞的话就分前后端分别处理】
+  把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343
+  文件上传前端：1.控件及样式；2.进度
+6.下载及进度：把下载的代码抄过来（包括service里面的）
+7.上传：https://blog.csdn.net/minaki_/article/details/85163343
+下载的进度问题再过一遍
+  // todo 这是实验性代码
+  download() {
+    // 从blob中读数据 https://javascript.info/blob
+  }
+Angular Authentication With JSON Web Tokens (JWT): The Complete Guide：https://blog.angular-university.io/angular-jwt-authentication/
+Angular Json Pipe Example：https://www.concretepage.com/angular-2/angular-2-json-pipe-example
+Angular 12/11 Multiple File Upload Tutorial Example：https://www.tutsmake.com/angular-11-multiple-file-upload-tutorial-example/
+Angular 12/11 Date Range Picker Tutorial Example：https://www.tutsmake.com/angular-11-date-range-picker-tutorial-example/
+Angular 12 File Upload with Progress Bar using REST Apis Example：https://www.tutsmake.com/angular-12-file-upload-with-progress-bar-example/
 貌似有了auth_permission表后就不需要auth_role_permission表了？
+ng build --prod的报错解决掉【有报错吗？】
+【把add-article的表单稍微规范化一下，无用代码干掉】
+7.先把article的reactive form搞通，然后把add-role的模板驱动的form再过一遍，然后改造成reactive的，然后搞其他的
+超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）
+【把role的edit按钮放到表格后面，这个不难，不要怕】
+模仿add-role的编辑功能完成其他的（其他的有更多需要看的方面）
+规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
+login里面使用的时reactive form，代码里面有几处messageForm、formBuilder
+【几个关联的问题】
+2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
+3.权限不够则页面和url保持不变
+https://blog.learningtree.com/create-side-menu-angular-2-material-design/
+https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
+https://code-maze.com/angular-material-navigation/
+前端是不是也可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
+我的userProfile功能后端已经准备好了，切换前端模板后就可以完善了
+我的add-role使用模板驱动表单还有几个问题：
+1.测试使用单向绑定；2.能否直接用双向绑定解决问题？3.把ngForm用起来，得到最终一致的代码
+模板驱动的有新代码暂时先参考add-role和下面2项：
+https://segmentfault.com/a/1190000011901953
+https://blog.csdn.net/ztguang/article/details/53106962
+【直接上reactive forms，下面2个都要看】：
+https://malcoded.com/posts/angular-fundamentals-reactive-forms/
+https://fireship.io/lessons/basics-reactive-forms-in-angular/
+2.把前后端权限控制写通【shiro的permission再看一下】
+3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
+4.每跳转路由，还是要从后端验证一下，用emit；
+2.用列表管理角色（增删改）；
+7.menu的东西放到一个module里面
+1.菜单权限再看看后端是否需要拦截
+2.side-menu是不是可以用于菜单树（能否做多级）；
+继续推进前端鉴权【使用EventEmitter】
+
+rxjs及后端响应式编程要突破
+教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
 
 绑定dropDown、radio写一版出来
 1.前端：把样式修复好；
-3.角色、用户的增删查改【前端】及权限分配；
 4.再看一下那个人主题风格的一致性
-6.上方做好搜索框控件：
-用户的查看做通，便于后期复制到其他功能
 
 【下一步可以继续了】
   3.结合桌面上那张图看看ckeditor那个问题还存在不，如果不行先把ckeditor的代码注释掉或者看看有没有更高版本安装
   提交代码（把提交流程理顺一点）
-  把前端接口适配后端的最新修改：根据资源权限获取菜单，分配资源权限
-  angular material注释了一些东西才启动，找个时间先升级然后再修复注释的代码
-  把现有的todo清一波
   看看我在tsconfig里面加的2个选项有没有用；
-  把授权的那个页面先加进来
   看公司的menu代码【值得学习】我的菜单有没有我在公司做的那种动态添加能力？再确认一次
 
-2.把material的那个主题下载下来实用；
 3.用vali那个主题，搞自己写控件（找几个jquery的）和npm下载控件学习；
-3.ng-zorro及bootstrap等
+3.ng-zorro及bootstrap等是不是可以试一下vali-admin？看起来比较轻量【搭配ng-bootstrap搞一次】：https://github.com/pratikborsadiya/vali-admin
+【等把现有的问题再解决相当一部分后，把代码拆成2部分，分别套入material dashboard和vali-admin】
+上面这些搞完后，至少还有3轮：1.material的那个主题套上去；2.vali、admin-lte套一遍；3.门户网站
 
 【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
 1.ng add与schematics
@@ -42,6 +88,8 @@ What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
 react开发企业中后台产品、政务门户网站的一些总结：https://www.cnblogs.com/seemoon/p/12218721.html
 react那么火，为什么淘宝&京东首页不使用react？https://www.zhihu.com/question/317973545/answer/641955120
 react框架网站有哪些？https://www.zhihu.com/question/449794230/answer/1794269792
+思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
+对比最新的门户网站技术
 
 列表项的编辑、删除、添加行：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】
 form整好（先把template-driven用溜）把他们的布局统一一下
@@ -51,17 +99,12 @@ form抽父类，dialog也可以放进去，把alert替换掉
 ckEditor的上传图片
 布局方面提升：搜一下用到block的地方，对比flex和grid
 contact页面里面，label包在外面有什么好处？
-Angular Material Table component is full of features and a wide variety of options are available to create data-rich grids in a very optimized way. It provides a lot basic to advance functionalities like filter, sorting, pagination, expand-collapse, custom templating, etc.
 
 不会读控件代码的话，就没办法彻底搞定
 
-如果前端资源不够先mock，无论如何要把前端先搞的比较清楚再换机器【2021年五一以后再换机器】
+如果机器内存不够前端使用先mock，无论如何要把前端先搞的比较清楚再换机器【2021年五一以后再换机器】
 
-后续即使用到了控件库和主题，可能也需要花相当的精力封装service。
-todo 把service测一下（用自动生成的spec.ts测试文件）
 http下载的文件类型做成一个枚举
-
-控件的样式修改、看源码并能改造（甚至把源码扣下来实现自己的控件）：这些也是前期比较关键的
 
 Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-components
 Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
@@ -76,6 +119,13 @@ AdminLTE是不是有JQ问题？
 
 搜一下图片对比控件，进一步提升搜索能力
 老老实实封装5到10个控件再继续
+控件的样式修改、看源码并能改造（甚至把源码扣下来实现自己的控件）：这些也是前期比较关键的
+试分析几个控件源码
+PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
+ng-zorro源码
+ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com/haogj/p/11210861.html
+实现5个控件练手（biying搜索学习）【从primeng寻找灵感？】：modal，不是那么好实现的
+
 通过做前端，顺手打通微信小程序能力
 
 NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
@@ -85,29 +135,47 @@ Angular 4 后台管理系统搭建系列文章：https://www.cnblogs.com/Vetkdf/
 Angular 组件库 NG-NEST 源码解析：项目结构：https://zhuanlan.zhihu.com/p/146496975
 Angular 组件库 NG-NEST 1.0.0 发布：https://zhuanlan.zhihu.com/p/143815952
 
-试分析几个控件源码
-PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
-ng-zorro源码
-ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com/haogj/p/11210861.html
-实现5个控件练手（biying搜索学习）【从primeng寻找灵感？】：modal，不是那么好实现的
-
 再看一遍英文angular教程
 
 【表格问题】
-1：排序
-2.后端分页
-3.操作按钮【看下面material的文章继续】
+  1：排序
+  2.后端分页
+  3.操作按钮【看下面material的文章继续】
 
 三件事：
-左侧可以再试一次了，又找了个控件。再看一个material教程
+左侧可以再试一次了，又找了个控件。
 0.3RD_PARTY页面第一次进入有tab控件的报错“Cannot set property 'active' of undefined”【如果不会读代码、不能改代码就不行】
 1.使用reset来清空内容【把父类那个最佳实践加上去】。表单再突破一次
 2.弹出框先在现在的基础上搞，然后也得搞一个ng的【如果不会读代码、不能改代码就不行】
-从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
 ng-bootstrap：https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
 PrimeNG的封装：
 https://www.npmjs.com/package/@al/ng-generic-components
 https://www.npmjs.com/package/@al/ng-navigation-components
+
+【周六】
+【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
+二级菜单控件side nav
+【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
+把铃铛区做出来，把圆形用户头像及下拉列表登出做出来
+把mainPage做好，仿造AdminLTE，至少做一个文章列表和更多、地图、工作流等，最好做6个区域
+menu没有根据in_use过滤
+加消息中心代码【既能按角色全部选择，又能勾选；角色限制；toast；websocket】后端要能直接调用
+toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
+今天把消息中心做出来，把用户列表的角色加上去
+xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb
+【遇到一个新的问题：如何显示菜单名称？】需要从数据库读取路由然后对比
+我能想到都一个用法：搜索等不对应菜单的功能，返回上一级等：
+http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
+面包屑是不是最好做成可关闭的？在有主类别和子类别都展示都地方可以用面包屑
+【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
+
+搜索框优化或换掉，我都搜索框还可以做的更好
+搜索框设计：
+http://www.woshipm.com/pd/907780.html
+http://www.woshipm.com/pd/1799366.html（待看）
+https://www.jianshu.com/p/8cbcd13d07b2
+样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
+infinite scroll
 
 加ng-gallery：
 https://www.npmjs.com/package/ng-gallery
@@ -116,13 +184,89 @@ ngx-multi-modal【把forRoot看懂再说】：https://www.npmjs.com/package/ngx-
 angular-notifier：https://www.npmjs.com/package/angular-notifier
 加ngToast：https://www.npmjs.com/package/ng-toast
 
-上面这些搞完后，至少还有3轮：1.material的那个主题套上去；2.vali、admin-lte套一遍；3.门户网站
-
+Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
+  https://www.cnblogs.com/nzbin/p/11150811.html
+  https://www.cnblogs.com/nzbin/p/11392311.html
+angular material 8：
+https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
+https://www.positronx.io/create-angular-material-8-custom-theme/
+https://devconquer.com/angular/angular-material-8-with-angular-8/
+新手合并 Angular 7 + Material 2：https://blog.csdn.net/weixin_42027605/article/details/87180454
+Angular Material：
+  https://www.tutorialspoint.com/angular6/angular6_materials.htm
+  https://www.jianshu.com/p/b5ecc13fde54
+看angular material样式表、看控件（看material，对后端的表）
+看material教程，把红点和圆圈做出来
 Creating Beautiful Apps with Angular Material：
 https://auth0.com/blog/creating-beautiful-apps-with-angular-material/【可以借鉴2个样式】
 https://www.sitepoint.com/angular-material-design-components/
 https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
 Angular Material Tutorials：https://www.concretepage.com/angular-material/
+我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
+ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
+ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
+ng-material-multilevel-menu【这个才是我要找的左侧树形菜单。并且是material的，用了mat-sidenav，思路很好，代码也很值得阅读】：
+https://www.npmjs.com/package/ng-material-multilevel-menu
+https://plugins.codershood.info/#/plugins/ngmm-plugin
+（material）mat-file-upload：https://angularscript.com/file-select-upload-material/
+从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
+Angular Material Table component is full of features and a wide variety of options are available to create data-rich grids in a very optimized way. It provides a lot basic to advance functionalities like filter, sorting, pagination, expand-collapse, custom templating, etc.
+angular material找个时间先升级然后并修复注释的代码
+2.把material的那个主题下载下来实用；
+再看一个material教程
+auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
+【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
+material能否结合bootstrap使用？
+【angular material控件在npm里面的对等物】【整理一下这部分】【是不是根据Dependencies来看与bootstrap的关系？】
+把angular material table弄好后，说不定主题需要再搞一次
+把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
+搜索ng mat以发现更多material控件，例如：
+  https://www.npmjs.com/package/ng-mat-search-bar
+  https://www.npmjs.com/package/ng-mat-icon-bar
+主题的设计和组件的设计风格最好要一致，例如，最好不要用material design的主题，来配合ant design的控件
+再用angular material的menu试一把二级菜单
+二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
+从sidenav再次分析angular material的抽象程度，如果angular material只是封装了结构(标签封装与转换)及行为，那它和样式是解耦的，并且能和其他组件无缝结合【如果只是封装了结构可能还不足以使用，因为组合标签并不难】。再分析其他组件库
+angular的封装是封装出了新的标签和行为（一个控件内部又封装了子控件，才提供了一点功能），要有这个意识
+感觉angular material封装的很怪，提供给我的到底是侧重material design方面的东西多一点，还是易用性方面多一点？感觉没有太多易用性？
+angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
+material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
+Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
+angular material源码：https://github.com/angular/components
+angular的表单已经很强大了，material真的有必要？
+Angular Material 8 | Stepper Tutorial With Examples：
+https://www.freakyjolly.com/angular-material-8-stepper-tutorial-with-examples/
+https://www.freakyjolly.com/angular-material-8-datepicker-tutorial-with-examples/
+https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+Angular Material 的设计之美【知道自己在干什么很重要】：https://zhuanlan.zhihu.com/p/81174831
+angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
+https://www.cnblogs.com/mttcug/p/7976852.html
+https://segmentfault.com/a/1190000016106262
+material的设计思想还是没有搞明白
+3.学习Sort Header：从这个功能学习官网文档的使用
+https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+从官网学习angular material！！！：https://material.angular.io/components/categories
+只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+从官网看事件：https://material.angular.io/components/categories
+关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
+[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
+Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
+material官方全列表：https://material.angular.io/components/dialog/api
+Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
+使用material还有个好处，可以尝试一下换界面的工作量
+angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
+side-nav
+  https://www.devglan.com/angular/material-sidenav-example
+  https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
+  https://code-maze.com/angular-material-navigation/
+mat-form-field（form field） is used to create a wrapper over angular components and is used to apply text styles like underline, bold, hints etc：
+https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
+mat-icon显示不出来是不是因为没有加CSS：https://github.com/angular/components/issues/7948
+angular material toolbar：
+  https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
+  https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
+  https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+  Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
 
 1.怎么确认一个组件能否兼容用的主题？
 2.怎么修改下载的组件，这样做好不好？
@@ -131,14 +275,15 @@ Angular Material Tutorials：https://www.concretepage.com/angular-material/
 generating browser application bundles
 
 angular 自定义组件：
-https://blog.csdn.net/henreash/article/details/82831138
-https://segmentfault.com/a/1190000016651999
-https://www.jianshu.com/p/5c60f8cc4d0f
-https://segmentfault.com/a/1190000009070500
-https://zhuanlan.zhihu.com/p/36863723
-https://juejin.im/post/597176886fb9a06ba4746d15?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
+  https://blog.csdn.net/henreash/article/details/82831138
+  https://segmentfault.com/a/1190000016651999
+  https://www.jianshu.com/p/5c60f8cc4d0f
+  https://segmentfault.com/a/1190000009070500
+  https://zhuanlan.zhihu.com/p/36863723
+  https://juejin.im/post/597176886fb9a06ba4746d15?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
+【提高优先级】2.找5个ngx开头的控件看一下【表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
+v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
 
-【angular material控件在npm里面的对等物】【整理一下这部分】【是不是根据Dependencies来看与bootstrap的关系？】
 angular-ng-autocomplete：https://www.npmjs.com/package/angular-ng-autocomplete
 datePicker
 ng5-slider：https://www.npmjs.com/package/ng5-slider
@@ -148,19 +293,43 @@ angular5-stepper：https://www.npmjs.com/package/angular5-stepper
 加载效果ng-spinners，还有progress spinner：https://www.npmjs.com/package/ng-spinners
 ng-ripple-module：https://www.npmjs.com/package/ng-ripple-module
 Awesome Angular * Angular资源大集合：https://zhuanlan.zhihu.com/p/25285226
-
-material能否结合bootstrap使用？
+Angular2组件与指令的小实践——实现一个图片轮播组件：https://www.cnblogs.com/yitim/p/angular2-component-slide-img.html
+Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
+【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
+ngx-dynamic-dashboard-framework：https://github.com/catalogicsoftware/ngx-dynamic-dashboard-framework
+搜“angular image preview”
+1.看ng-bootstrap能不能覆盖我要的基础组件（对比AdminLTE看功能）：
+  https://adminlte.io/themes/v3/index3.html
+  https://ng-bootstrap.github.io/#/home
+ng-bootstrap可以补充AdminLTE的控件【要试，不动手试永远不确定样式整合的效果。感觉ng-bootstrap好多控件和AdminLTE里面完全一样，看一下AdminLTE的代码比较一下就知道了】：
+Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（节省工作量）、Pagination这种是不是可以先看AdminLTE里面的样式，看准了就可以用了（毕竟自己封装@Input、@Output还是有点麻烦）
+1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
+  ng2-dragula：
+  ngx-bootstrap、ngx-color-picker：https://www.npmjs.com/package/
+  ng2-charts、ng2-select、ng2-table
+  ngx-progress、ng-circle-progress、ng2-multi-step-form
+  ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
+  ngx-mask：https://github.com/JsDaddy/ngx-mask
+angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
+  https://blog.csdn.net/daqiang012/article/details/86617513
+  https://www.jianshu.com/p/48e5d02a2f88
+自己做控件，适合做简单布局的把html现有元素及现有组件组合起来的，也更好做。一旦遇到树控件、甚至更极端的富文本编辑器，就直接用三方的。思考一下树控件的难度，试着自己做一下。
+angular封装弹出框：
+  https://www.jianshu.com/p/fbe27a9e0822
+  https://www.itsvse.com/forum.php?mod=viewthread&tid=5704&page=1
+  https://www.cnblogs.com/xiaojing140421/p/9389259.html
+  https://jingyan.baidu.com/article/93f9803f596da7e0e46f55be.html
+  https://www.cnblogs.com/cench/p/5448624.html
 
 JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框架，它实现了Angular1和Angular2两个版本，选择范围比较广。可以利用它快速搭建应用框架。
-Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
 
 【是不是要再次转换思路】
-1.看primeng等控件（那2个一定要看）；
-2.jquery控件能否包到ng里来？
-3.看怎么发布控件，搞懂这一套；
-4.把一些难控件的代码看一下
-5.再看样式隔离等问题
-6.最终还是要知道在哪里用什么控件，实现或许是小事
+  1.看primeng等控件（那2个一定要看）；
+  2.jquery控件能否包到ng里来？
+  3.看怎么发布控件，搞懂这一套；
+  4.把一些难控件的代码看一下
+  5.再看样式隔离等问题
+  6.最终还是要知道在哪里用什么控件，实现或许是小事
 
 20210921搜集的一些文章：
   https://zhuanlan.zhihu.com/p/34216899
@@ -182,83 +351,34 @@ Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
   https://www.jianshu.com/p/9d81904d55e8
   https://blog.csdn.net/weixin_39655981/article/details/112439215
 
-把angular material table弄好后，说不定主题需要再搞一次
-把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
-
-Angular2组件与指令的小实践——实现一个图片轮播组件：https://www.cnblogs.com/yitim/p/angular2-component-slide-img.html
 看看主题升级的步骤
-
-教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
 
 Angular 5 App Structure With Multiple Modules：https://www.technouz.com/4644/angular-5-app-structure-multiple-modules/
 Angular项目目录结构详解：
 https://blog.csdn.net/yuzhiqiang_1993/article/details/71191873
 从HelloWorld去理解Angular程序的组成和启动：https://liumiaocn.blog.csdn.net/article/details/78366404
 
-【3月20日开始寻找赚钱机会】
-年过完了，精神需要放松一下，知止。如果实在推进不动，就看看最佳实践，继续看echarts、整合vali和ng-bootstrap。晚上再看看python也行。
-
-【等把现有的问题再解决相当一部分后，把代码拆成2部分，分别套入material dashboard和vali-admin】
-
 新建angular工程时，如果不选择路由系统，是不是就可以打造多页面工程？
 https://stackoverflow.com/questions/50785182/angular-6-multi-page-application-mpa-is-possible
 https://www.c-sharpcorner.com/forums/angular-for-multi-page-application
 
-canDeactivate如何提示有未保存信息？
-https://www.concretepage.com/angular-2/angular-candeactivate-guard-example
-https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
-
-【虽说打通了，最近总想总结和系统化，还是要练习一段时间前端关键功能的穿透，又到了第二轮穿透的时间了，写代码，然后再总结】
-
-【周六】
-【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
-二级菜单控件side nav
-【这个也需要和bootstrap一起验证】Simple Side Nav For Angular 7+：https://angularscript.com/simple-side-nav-for-angular-7/
-把铃铛区做出来，把圆形用户头像及下拉列表登出做出来
-把mainPage做好，仿造AdminLTE，至少做一个文章列表和更多、地图、工作流等，最好做6个区域
-menu没有根据in_use过滤
-加消息中心代码【既能按角色全部选择，又能勾选；角色限制；toast；websocket】
-toolbar的样式值得好好搞一下【我知道最基本都规则，按这些规则去耐心推理是可以做好的】
-今天把消息中心做出来，把用户列表的角色加上去
-我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
-ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
-ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
-ng-material-multilevel-menu【这个才是我要找的左侧树形菜单。并且是material的，用了mat-sidenav，思路很好，代码也很值得阅读】：
-https://www.npmjs.com/package/ng-material-multilevel-menu
-https://plugins.codershood.info/#/plugins/ngmm-plugin
-（material）mat-file-upload：https://angularscript.com/file-select-upload-material/
-xng-breadcrumb：https://github.com/udayvunnam/xng-breadcrumb
-【遇到一个新的问题：如何显示菜单名称？】需要从数据库读取路由然后对比
-我能想到都一个用法：搜索等不对应菜单的功能，返回上一级等：
-http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
-面包屑是不是最好做成可关闭的？在有主类别和子类别都展示都地方可以用面包屑
-
-搜索框优化或换掉，我都搜索框还可以做的更好
-搜索框设计：
-http://www.woshipm.com/pd/907780.html
-http://www.woshipm.com/pd/1799366.html（待看）
-https://www.jianshu.com/p/8cbcd13d07b2
-auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
-【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
-样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
-infinite scroll
-
 看一个material的代码，看一个ngx-代码。只有看过代码，才能放心用
 
 如果一个控件不得不自己实现，分两步走：1.实现功能（可以在网上搜索并参考）；2.把样式和已有的主题样式整合。
-
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
+dashboard：完成热力图、中国地图（没啥难度，需要的只是行动）
 
 再看看我自定义module里面的forRoot
 forRoot：
-https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
-https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
-https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-and-ahead-of-time-compiling-in-angular-7-2-0.htm
-
-1.CanActivate和CanActivateChild再细化一轮【canActivateChild理解并用好】
-2.canActivate返回Observable<boolean>
-  https://angular-2-training-book.rangle.io/routing/route_guards
-  https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
+  https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
+  https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
+  https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-and-ahead-of-time-compiling-in-angular-7-2-0.htm
+routing为啥要弄成module【RouterModule.forRoot(routes)】？forRoot是干嘛的？每加一个component，要有明确的意识放入哪个module
+module需要再好好看一下
+https://www.cnblogs.com/zhaoran/archive/2013/05/24/3097482.html
+https://www.zhihu.com/tardis/sogou/art/28874230
+https://segmentfault.com/a/1190000009175508
+@ViewChild('tpl', { read: ViewContainerRef })写法：
 
 当前版本：nodejs14、angular12、typeScript4.0.2
 【感觉typeScript、angular 12等的改变，导致的老代码跑不起来了】先看一个教程，把material的问题解决
@@ -268,7 +388,7 @@ https://www.bennadel.com/blog/3565-providing-module-configuration-using-forroot-
 		https://stackoverflow.com/questions/47314089/failed-to-exec-start-script
 		https://stackoverflow.com/questions/49446277/failed-to-exec-start-script-eventemitter-anonymous-usr-local-lib-node-modu
 	2.新建个项目。老项目除了源文件外，其他文件用新项目的替换（老项目的先把package.json备份，并把项目目录下的文件删干净），相当于重新创建一次项目；
-	3.npm install、npm start；
+	3.npm install、npm start、npm update；
 	4.第3步中缺少的包，用第2步备份的package.json排查并补充。要边安装边启动观察，某些包可能导致启动失败。
 老版本安装的angular material是8.2.3的，需要带版本号。按照下面的方法安装12.2.5版的(有可能直接跑不起来)：https://www.cnblogs.com/crackedlove/p/11576451.html
 和后端一样，要能看出哪些是自己安装的
@@ -277,12 +397,11 @@ Angular 12 New Features：
   https://www.angularminds.com/blog/article/top-10-features-of-angular-12.html
   https://angular.io/guide/updating-to-version-12
 
-关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
-
 【我有一个用到ngModelOptions的地方需要再审视一下】关于ngModelOptions用法总结 让校验不过的验证绑定ngModel：
 https://blog.csdn.net/qq_31511247/article/details/52604888
 https://www.cnblogs.com/mayufo/p/6113612.html
 
+关于Angular样式封装【注意与 ViewEncapsulation 的关系】：https://zhuanlan.zhihu.com/p/31235358
 【了解了思想，再去几类控件尝试具体的样式定制】
 :host 表示选择器，选择当前的组件。::ng-deep 可以忽略中间className的嵌套层级关系。直接找到你要修改的className。
 Angular :host, :host-context, ::ng-deep(/deep/)【是定制第三方控件样式的利器】：
@@ -292,34 +411,28 @@ https://stackoverflow.com/questions/46786986/how-and-where-to-use-ng-deep
 https://blog.codecentric.de/en/2019/06/angular-components-depth/
 在 Angular 中两个特殊的选择器(:host :host-context)：https://blog.csdn.net/wjyyhhxit/article/details/100631744
 https://www.jianshu.com/p/f8fddc1ca968
-
-ElementUI（别人也提到），Element-Angular：
-https://blog.csdn.net/come0across/article/details/89017958
-element-angular（Element Angular Ex）【已经一年多没更新了】：
-https://element-angular.faas.ele.me/guide/install
-https://github.com/elemeFE/element-angular
-
 关于Angular样式封装、ng-deep：
-https://segmentfault.com/a/1190000012086737
-https://angular.io/guide/component-styles
+  https://segmentfault.com/a/1190000012086737
+  https://angular.io/guide/component-styles
 Angular Component Styles：
-https://www.tektutorialshub.com/angular/angular-component-styles/
-https://blog.thoughtram.io/angular/2015/06/25/styling-angular-2-components.html
-https://scotch.io/tutorials/angular-shortcut-to-importing-styles-files-in-components
-https://scotch.io/tutorials/all-the-ways-to-add-css-to-angular-2-components
-https://blog.angular-university.io/angular-ngclass-ngstyle/
-https://stackoverflow.com/questions/32853924/angular-2-how-to-style-host-element-of-the-component
-https://v2.angular.io/docs/ts/latest/guide/component-styles.html
-https://alligator.io/angular/styles-between-components-angular/
-https://codecraft.tv/courses/angular/components/templates-styles-view-encapsulation/
-https://coryrylan.com/blog/css-encapsulation-with-angular-components
+  https://www.tektutorialshub.com/angular/angular-component-styles/
+  https://blog.thoughtram.io/angular/2015/06/25/styling-angular-2-components.html
+  https://scotch.io/tutorials/angular-shortcut-to-importing-styles-files-in-components
+  https://scotch.io/tutorials/all-the-ways-to-add-css-to-angular-2-components
+  https://blog.angular-university.io/angular-ngclass-ngstyle/
+  https://stackoverflow.com/questions/32853924/angular-2-how-to-style-host-element-of-the-component
+  https://v2.angular.io/docs/ts/latest/guide/component-styles.html
+  https://alligator.io/angular/styles-between-components-angular/
+  https://codecraft.tv/courses/angular/components/templates-styles-view-encapsulation/
+  https://coryrylan.com/blog/css-encapsulation-with-angular-components
 
+ElementUI（别人也提到），Element-Angular：https://blog.csdn.net/come0across/article/details/89017958
+element-angular（Element Angular Ex）【已经一年多没更新了】：
+  https://element-angular.faas.ele.me/guide/install
+  https://github.com/elemeFE/element-angular
 
-是不是可以试一下vali-admin？看起来比较轻量【搭配ng-bootstrap搞一次】：https://github.com/pratikborsadiya/vali-admin
-读一下我的form代码，按钮和input样式先改过来。ng build --prod的报错解决掉（熟练）
+读一下我的form代码，按钮和input样式先改过来
 ng-bootstrap的文档再清理一次
-
-Spring Batch Tutorial: Reading Information From an Excel File：https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-reading-information-from-an-excel-file/
 
 【思考一下】使用ngx-admin这种现成的angular项目，为了代码语义清晰需要把不用的控件排除掉、自己命名新建控件；使用adminLTE这种管理模板除了最开始的侧边栏等，也需要根据需要添加component。那么是不是使用AdminLTE这种还更方便一点？这样看来搜索angular组合好的管理框架意义不大了。
 
@@ -330,54 +443,19 @@ AdminLTE的表格没有设置一页多少条的功能
 AdminLTE的Advanced Form值得学习一下
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
 【最快的搭AdminLTE的办法是用别人改造成的angular版开源的，直接测试、直接开搞，很轻量没有损失】
-
-【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
-ngx-dynamic-dashboard-framework：https://github.com/catalogicsoftware/ngx-dynamic-dashboard-framework
-搜“angular image preview”
-
-1.看ng-bootstrap能不能覆盖我要的基础组件（对比AdminLTE看功能）：
-https://adminlte.io/themes/v3/index3.html
-https://ng-bootstrap.github.io/#/home
-ng-bootstrap可以补充AdminLTE的控件【要试，不动手试永远不确定样式整合的效果。感觉ng-bootstrap好多控件和AdminLTE里面完全一样，看一下AdminLTE的代码比较一下就知道了】：
-Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（节省工作量）、Pagination这种是不是可以先看AdminLTE里面的样式，看准了就可以用了（毕竟自己封装@Input、@Output还是有点麻烦）
-
-搜索ng mat以发现更多material控件，例如：
-https://www.npmjs.com/package/ng-mat-search-bar
-https://www.npmjs.com/package/ng-mat-icon-bar
-
-【看两条牛仔裤，降价了买】
-【3月20号左右：1.前端要达到AdminLTE的里程碑；2.找一下有没有项目机会（如果有就不上班了）】
-
-【做一些编码】
-(1)找word、excel的util，并测试；(3)看springBatch
-
-1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
-  ng2-dragula：
-  ngx-bootstrap、ngx-color-picker：https://www.npmjs.com/package/
-  ng2-charts、ng2-select、ng2-table
-  ngx-progress、ng-circle-progress、ng2-multi-step-form
-  ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
-  ngx-mask：https://github.com/JsDaddy/ngx-mask
-angular好用的插件集合（持续更新中）【1.熟悉一些，看看对生产力的影响；2.和component做比较；3.样式的整合】：
-https://blog.csdn.net/daqiang012/article/details/86617513
-https://www.jianshu.com/p/48e5d02a2f88
-
-自己做控件，适合做简单布局的把html现有元素及现有组件组合起来的，也更好做。一旦遇到树控件、甚至更极端的富文本编辑器，就直接用三方的。思考一下树控件的难度，试着自己做一下。
-
-把各种设计风格对比一下（界面、行为），这样才知道他们的主题、控件能否共存
-
 2.看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说：https://akveo.github.io/nebular/
 ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular.【用之前应该先评估一下bootstrap有哪些组件】：
 https://www.npmjs.com/package/ngx-bootstrap
 3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial：https://www.techiediaries.com/angular-bootstrap/
 ngx-admin-lte：https://github.com/TwanoO67/ngx-admin-lte
 
+把各种设计风格对比一下（界面、行为），这样才知道他们的主题、控件能否共存
+
 这个里面有免费版的theme，可以用一下：
-https://startangular.com/themes/（尝试跟别人协作）
-https://dashboardpack.com/theme-details/architectui-angular-7-dashboard-free/
-https://www.tekmx.com/downloads/angular-material-theme-free-download
-等吃透一些时间后，花100块钱买一些主题，快速形成产品：
-http://www.bluestep.cc/tag/angular-7%E6%A8%A1%E6%9D%BF/
+  https://startangular.com/themes/（尝试跟别人协作）
+  https://dashboardpack.com/theme-details/architectui-angular-7-dashboard-free/
+  https://www.tekmx.com/downloads/angular-material-theme-free-download
+等吃透一些时间后，花100块钱买一些主题，快速形成产品：http://www.bluestep.cc/tag/angular-7%E6%A8%A1%E6%9D%BF/
 Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/157068422
 前端开发，比较出色的 UI 库有哪些？https://www.zhihu.com/question/353100080/answer/875018512
 
@@ -392,16 +470,7 @@ Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/4641
 通过打造关系来出售的简单系统（五一要能搞定）
 先进的大数据物联网系统：下半年搞定
 
-【最近几天效率不行，是不是因为有点贪多、急功近利？】【节制】
-【周五重点】bug分类。看房县新闻，分析局势，剪胡子
-
 ==============================================================================================
-
-module需要再好好看一下
-https://www.cnblogs.com/zhaoran/archive/2013/05/24/3097482.html
-https://www.zhihu.com/tardis/sogou/art/28874230
-https://segmentfault.com/a/1190000009175508
-@ViewChild('tpl', { read: ViewContainerRef })写法：
 
 后台管理系统的一些文章：
   https://zhuanlan.zhihu.com/p/25415328
@@ -428,15 +497,15 @@ typeScript你也没学过，也在使用
 
 2.再过一轮主题、控件、配色方案，试用ngx-控件：
 angular6 中使用bootstrap：
-https://www.cnblogs.com/king94Boy/p/9669284.html
-https://blog.csdn.net/m0_38106923/article/details/101050788
-https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
-https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
+  https://www.cnblogs.com/king94Boy/p/9669284.html
+  https://blog.csdn.net/m0_38106923/article/details/101050788
+  https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
+  https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
 angular 8封装组件：
-https://blog.csdn.net/qq_36321909/article/details/90520713
-https://blog.csdn.net/Null_Bugs/article/details/100009476
-https://blog.csdn.net/u010313979/article/details/83243664
-https://blog.csdn.net/lyj4495673/article/details/81842220
+  https://blog.csdn.net/qq_36321909/article/details/90520713
+  https://blog.csdn.net/Null_Bugs/article/details/100009476
+  https://blog.csdn.net/u010313979/article/details/83243664
+  https://blog.csdn.net/lyj4495673/article/details/81842220
 BUILDING ANGULAR 2 COMPONENTS ON THE FLY: A DIALOG BOX EXAMPLE：
   https://www.lucidchart.com/techblog/2016/07/19/building-angular-2-components-on-the-fly-a-dialog-box-example/
 Customizing Bootstrap 3 in Angular 2：https://olepetterdahlmann.com/2016/10/15/customizing-bootstrap-3-in-angular-2/
@@ -446,17 +515,14 @@ Create Custom Textbox In Angular 8 Using Input And Output Decorators：https://w
 
 ==============================================================================================
 
-service应该按照业务划分还是按照功能划分？
-
-routing为啥要弄成module【RouterModule.forRoot(routes)】？forRoot是干嘛的？每加一个component，要有明确的意识放入哪个module
 自己封装控件后，需要单独用一个module管理吗？
 
-还是要看material没解决的一些疑问
-
-在产品经理网站再看搜索的设计，结合myql全文检索做站内搜索
 凤凰和feeds再看
 
-angular部署：用nginx和tomcat部署各用于什么场景？
+后续即使用到了控件库和主题，可能也需要花相当的精力封装service。
+todo 把service测一下（用自动生成的spec.ts测试文件）
+用好service
+service应该按照业务划分还是按照功能划分？
 思考echarts的service怎么写
 列一下我的功能列表
 angular高德地图插件
@@ -465,15 +531,11 @@ angular高德地图插件
 看看其他主题的介绍，看ng-zorro的颜色搭配，分析2个控件
 把ng-bootstrap（配合啥主题？）、bootstrap搞清楚，把以admin-lte为基础的前端方案思考清楚
 
-npm update
-
-用好service
-
 【有机会超过公司的几个方面】
-1.前端品质；
-2.大数据技术（linux及技术栈）；
-3.效率：部署(linux)、组件开发、运维
-4.最初有人引入AdminLTE，但如果没人看护，1.会落伍；2.adminLTE里面很多功能并没有被用上，导致风格混乱、付出额外多的人力。
+  1.前端品质；
+  2.大数据技术（linux及技术栈）；
+  3.效率：部署(linux)、组件开发、运维
+  4.最初有人引入AdminLTE，但如果没人看护，1.会落伍；2.adminLTE里面很多功能并没有被用上，导致风格混乱、付出额外多的人力。
 
 【如何搭配主题和控件】
 1.控件和主题能不能搭配，首先最关键的问题就是配色。网上有angular material通过thme修改配色的文章【配色也是material使用简便性的一个方面】：
@@ -496,17 +558,10 @@ https://blog.csdn.net/henrypt/article/details/89214492
 再看@mixin
 
 列2个ng-bootstrap的主题方案
-
-angular封装弹出框：
-https://www.jianshu.com/p/fbe27a9e0822
-https://www.itsvse.com/forum.php?mod=viewthread&tid=5704&page=1
-https://www.cnblogs.com/xiaojing140421/p/9389259.html
-https://jingyan.baidu.com/article/93f9803f596da7e0e46f55be.html
-https://www.cnblogs.com/cench/p/5448624.html
-
 【看完这个能对material理解很多】基于 Angular7 和 material2 的中后台解决方案（ng-notadd）：https://www.v2ex.com/t/504621
-
 Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
+
+icon类别：faIcon、icon、imageIcon等，与我的menu表联系起来
 
 2.把paper-dashboard-angular的代码看一下：https://github.com/creativetimofficial/paper-dashboard-angular
 【试一下别人推荐的搜索方式】：https://www.zhihu.com/question/309682777/answer/580120248
@@ -521,15 +576,13 @@ github搜“paper dashboard”：https://github.com/search?q=paper+dashboard
 动态代理看完后看mybatis源码分析，补一轮java基础（5天）。spring里面用到的动态代理
 2.对着我的2个模板看2套控件，看看控件封装了哪些精妙的操作，对模板带来了哪些互补
 
-TS2322: Type ‘null‘ is not assignable to type ‘File‘：https://blog.csdn.net/survivorsfyh/article/details/112577052
+TS2322: Type 'null' is not assignable to type 'File'：https://blog.csdn.net/survivorsfyh/article/details/112577052
 typsScript编译选项：https://www.tslang.cn/docs/handbook/compiler-options.html
 Angular 10 - CommonJS or AMD dependencies can cause optimization bailouts warning：
   https://blog.csdn.net/a1056244734/article/details/107059199/
   https://blog.csdn.net/Damien_J_Scott/article/details/117952778
 
-【不好搞的话就分前后端分别处理】
-  把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343
-  文件上传前端：1.控件及样式；2.进度
+<mat-sidenav mode="side" opened>这样写不通，提示类型错误（以前是好的），改成<mat-sidenav mode="side" [opened]=true>就可以了。我的理解是简写，再看看代码确认一下
 
 echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.html
 
@@ -537,21 +590,15 @@ echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.
 
 ====================================================================================
 
-自己搞虽然保持专注很重要，但是更要注意合理休息，否则一个月就废了
-
-进入瓶颈期了，无差别学习一周。另外最近有点发散
 如何用npm建一个裸的工程？能建立多少种自己需要的工程？
 为什么cookieService没有在package.json里面，而echarts那些就在？
 
-看看最新的主机和显示器，有没有适合放客厅的
-
 【27号简单任务】
   再看angular material控件：https://www.tutorialspoint.com/angular_material7/index.htm
+  Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
   Expansion Panel：https://www.tutorialspoint.com/angular_material7/angular_material7_expansion_panel.htm
-  整合rabbitmq（已安装）
   echarts：把图形再熟悉一下，动手一下
   上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.word、pdf预览搞定【处于框架思维时，细节思维又消失了，觉得细节麻烦。要能同时保持两种思维】
-  Angular Material 2表服务器端分页（看一下indigo里面表格样式）：http://www.voidcn.com/article/p-uxhapwsf-bud.html
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
 
 学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
@@ -590,23 +637,9 @@ https://www.bootstrapdash.com/bootstrap-4-tutorial/introduction/
 https://qhmit.com/
 https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
 测试：要用2年以前的浏览器版本来测
-主题的设计和组件的设计风格最好要一致，例如，最好不要用material design的主题，来配合ant design的控件
-
-再用angular material的menu试一把二级菜单
-二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
-从sidenav再次分析angular material的抽象程度，如果angular material只是封装了结构(标签封装与转换)及行为，那它和样式是解耦的，并且能和其他组件无缝结合【如果只是封装了结构可能还不足以使用，因为组合标签并不难】。再分析其他组件库
-angular的封装是封装出了新的标签和行为（一个控件内部又封装了子控件，才提供了一点功能），要有这个意识
-
-感觉angular material封装的很怪，提供给我的到底是侧重material design方面的东西多一点，还是易用性方面多一点？感觉没有太多易用性？
 
 【25号】
-看angular material样式表、看控件（看material，对后端的表）
 调样式(indigo-pink.css)：1.表格布局；2.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？5.表格的样式
-或许应该搜material 8？
-看material教程，把红点和圆圈做出来
-【把add-article的表单稍微规范化一下，无用代码干掉】
-7.先把article的reactive form搞通，然后把add-role的模板驱动的form再过一遍，然后改造成reactive的，然后搞其他的
-再次测试mybatis【把这个配置彻底打通】
 推动不了，是不是应该先看mybatis源码了？
 多tab页路由复用
 
@@ -615,42 +648,17 @@ angular的封装是封装出了新的标签和行为（一个控件内部又封�
 1.【在financial项目中】把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
 2.x测通、代码写好后，再把2.x的pom配置干掉；
 3.用单元测试的方式再次测试mybatis的配置
-6.配置redis
 
-超时后，web界面【自动】跳转到登录页写通（需要把session时间改短测试，改成1分钟）
-【提高优先级】2.找5个ngx开头的控件看一下【表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
-2.mybatis继续看整合
-3.redis整合（继续）、rabbitMQ整合（整合rabbitmq，思考当时在华为时感觉哪里有困惑）：https://www.rabbitmq.com/
-java整合rabbitmq和整合缓存一样，都涉及到JSR标准的问题
 把我现有的样式文件过一遍，看看能不能看出啥门道【把我现在没有显示全的问题解决一下】
 
 能否使用@Configuration来配置cache和mybatis？
 
-思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
-对比最新的门户网站技术
 rxjs怎么裸用？怎么测试？现在不用npm都不会写前端了
-
-【把role的edit按钮放到表格后面，这个不难，不要怕】
 
 换主题时要确认一下：我现有的功能能不能覆盖到
 
-angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
-material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
-Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
-angular material源码：https://github.com/angular/components
-angular的表单已经很强大了，material真的有必要？
-Angular Material 8 | Stepper Tutorial With Examples：
-https://www.freakyjolly.com/angular-material-8-stepper-tutorial-with-examples/
-https://www.freakyjolly.com/angular-material-8-datepicker-tutorial-with-examples/
-https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
-Angular Material 的设计之美【知道自己在干什么很重要】：https://zhuanlan.zhihu.com/p/81174831
-
 【寻找合适的表格控件】
-模仿add-role的编辑功能完成其他的（其他的有更多需要看的方面）
-规范化表单代码：首先应该都用form把？article.component.html（仿造contact.component.html）、add-role.component.html、add-user、
-login里面使用的时reactive form，代码里面有几处messageForm、formBuilder
 
-2.mybatis配置推进出问题了，先配置及测试redis【先用junit测试mybatis配置，后期学习mybatis也用这个】。
 沉住气：控件打通后再上主题
 
 注册阿里云、腾讯云、百度云账号
@@ -662,81 +670,58 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 【路由守卫】Auth guard【哪些页面不能访问是不是从后端做更好？】：
   https://www.geeksforgeeks.org/auth-guards-in-angular-9-10-11/
   https://www.phpcodingstuff.com/blog/authguard-angular-authentication-using-route-guards-in-angular-11.html
+1.CanActivate和CanActivateChild再细化一轮【canActivateChild理解并用好】
+2.canActivate返回Observable<boolean>
+  https://angular-2-training-book.rangle.io/routing/route_guards
+  https://stackoverflow.com/questions/38425461/angular2-canactivate-calling-async-function
+  canDeactivate如何提示有未保存信息？
+https://www.concretepage.com/angular-2/angular-candeactivate-guard-example
+https://www.tektutorialshub.com/angular/angular-candeactivate-guard/
+【继续学习别人的做法】Angular7路由守卫CanActivate中从服务器端判断登录状态：
+https://blog.csdn.net/A156348933/article/details/90241323
+（用setTimeout？）https://www.cnblogs.com/Answer1215/p/5924763.html
+放到interceptor里面呢？
+guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
+2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
+3.路由守卫的场景？
 
 把我下载的几个主题看一下，看看定制过程中会不会出现一些小问题，例如删除一些元素后其他元素排列的效果和是否错位
 
 我们系统的选择日期为什么有违和感？不能找到一个bootstrap4风格的控件吗？这也是可以超越公司的一个方面
 
-1.淘宝、京东、有道看下快递情况
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
 前端基础设施选型练习一下
 列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
-permission还是要看，把shiro彻底搞懂
 把用户信息放左侧，右上角留消息中心
 ckeditor图片、附件上传
 消息中心要用到：1.webSocket；2.右上角铃铛和红点提示；3.toast；
 
-mybatis配置、mybatis-plus配置【这是极为重要的基础设施和能力】
-SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件注解版”两种方法：https://www.cnblogs.com/xuehuashanghe/p/9593639.html
-
 不要没事瞎升级，一定要有路线图：
-1.theme；
-2.node；
-3.angular
+  1.theme；
+  2.node；
+  3.angular
 
 【使用let-admin这类主题的思路】
-1.拿到主题后先把主题的各部分封装控件；
-2.看看是否有需要补充的自定义控件；
-3.做项目；
-4.只用主要版本，每半年到1年根据主要的版本变化升级一次，并引入积累的自定义代码；
-5.升级涉及到很多手工合并，在心理和技能上不要抗拒。升级后的代码只用于新项目；
+  1.拿到主题后先把主题的各部分封装控件；
+  2.看看是否有需要补充的自定义控件；
+  3.做项目；
+  4.只用主要版本，每半年到1年根据主要的版本变化升级一次，并引入积累的自定义代码；
+  5.升级涉及到很多手工合并，在心理和技能上不要抗拒。升级后的代码只用于新项目；
 
 照着我的计划下去，有望体验一把先写逻辑再换皮肤
 
 招标信息网【爬虫是不是可以配合消息队列？找开源的爬虫】
 开源爬虫：
-https://zhuanlan.zhihu.com/p/35048195
-https://zhuanlan.zhihu.com/p/61289585
-https://zhuanlan.zhihu.com/p/64305013
-https://zhuanlan.zhihu.com/p/67808888
-
-【把上面的都搞完后，清todo，把前后端复习一遍】
-
-v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
-
-angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
-https://www.cnblogs.com/mttcug/p/7976852.html
-https://segmentfault.com/a/1190000016106262
-material的设计思想还是没有搞明白
-3.学习Sort Header：从这个功能学习官网文档的使用
-https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
-从官网学习angular material！！！：https://material.angular.io/components/categories
-只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
-从官网看事件：https://material.angular.io/components/categories
-关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
-[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
-Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
-material官方全列表：https://material.angular.io/components/dialog/api
-Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
-使用material还有个好处，可以尝试一下换界面的工作量
-angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
-【几个关联的问题】
-2.没有权限的前后端连好【这又是个关键的问题】（material 2的提示框做出来）
-3.权限不够则页面和url保持不变
-https://blog.learningtree.com/create-side-menu-angular-2-material-design/
-https://www.tutorialspoint.com/angular_material/angular_material_menubar.htm
-https://code-maze.com/angular-material-navigation/
-
+  https://zhuanlan.zhihu.com/p/35048195
+  https://zhuanlan.zhihu.com/p/61289585
+  https://zhuanlan.zhihu.com/p/64305013
+  https://zhuanlan.zhihu.com/p/67808888
 
 5.搞清楚用directive和component封装控件的异同
 自己想要的基本功能差不多后，再调样式
 
-前端是不是也可以用拦截器统一处理异常情况？例如权限不足的提示？setUnauthorizedUrl的方法（给这个方法设置一个对应的action，并测试进入这个方法后的返回值）
-
 【再看一眼EasyUI？】EasyUI 下载地址：http://www.jeasyui.cn/download.html
-
-我的userProfile功能后端已经准备好了，切换前端模板后就可以完善了
 
 如果从github上fork一个控件自己修改后，是用npm包都格式使用，还是用component的格式使用？
 
@@ -755,19 +740,12 @@ Angular7+Ckeditor5基础功能整合：https://blog.csdn.net/nzyalj/article/deta
 https://www.cnblogs.com/minigrasshopper/p/7692664.html
 https://www.cnblogs.com/minigrasshopper/p/7692813.html
 
-
-3.一个角色列表，点击后右侧是权限的勾选情况【2个组件】；
-4.每跳转路由，还是要从后端验证一下，用emit；
-
-2.用列表管理角色（增删改）；
-7.menu的东西放到一个module里面
-1.菜单权限再看看后端是否需要拦截
-2.side-menu是不是可以用于菜单树（能否做多级）；
-继续推进前端鉴权【使用EventEmitter】
-
 根据现有的知识和技能，let-admin是可以直接套在我现有的代码上的
 
-把上传的那个类建立起来，把上传测通：https://blog.csdn.net/minaki_/article/details/85163343
+All You Need to Know About Mocking in Angular Tests：
+  https://christianlydemann.com/all-you-need-to-know-about-mocking-in-angular-tests/
+  https://mockoon.com/tutorials/angular-mocking/
+一个线上提供mock data的网站：https://reqres.in/
 
 =================================================================
 
@@ -777,30 +755,13 @@ https://www.cnblogs.com/nzbin/p/11150811.html
 https://www.cnblogs.com/nzbin/p/11392311.html
 20个让你效率更高的CSS代码技巧：http://www.fly63.com/article/detial/3813
 
-看一下公司里面的权限分配
-2.把前后端权限控制写通【shiro的permission再看一下】
-
 完成id-to-name管道
-
-【继续学习别人的做法】Angular7路由守卫CanActivate中从服务器端判断登录状态：
-https://blog.csdn.net/A156348933/article/details/90241323
-（用setTimeout？）https://www.cnblogs.com/Answer1215/p/5924763.html
-放到interceptor里面呢？
 
 分两种情况思考，userId是不是应该保存在localStorage里面（和session原理也对比）
 
 周末工作：
 给组件设置样式再深挖一下【ck、能看到代码的component、看不到代码的component】
 1.集成admin-lte；2.集成components
-
-我的add-role使用模板驱动表单还有几个问题：
-1.测试使用单向绑定；2.能否直接用双向绑定解决问题？3.把ngForm用起来，得到最终一致的代码
-模板驱动的有新代码暂时先参考add-role和下面2项：
-https://segmentfault.com/a/1190000011901953
-https://blog.csdn.net/ztguang/article/details/53106962
-【直接上reactive forms，下面2个都要看】：
-https://malcoded.com/posts/angular-fundamentals-reactive-forms/
-https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 前端的新发现：前端开发出层次性和组合性思维，图标、组件、布局、样式这些元素是可以拆开和组合的
 
@@ -810,8 +771,6 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 表格：编辑、删除（把angular material 2的提示框写通）、列出创建者、查看、翻页
 【周六】
 2.试一下把文章类的做成一个module
-
-测试、完善路由守卫
 
 把基础设施再搞一般，把material 2搞一轮，把rxjs搞一版，就可以用lte-admin做商用产品了
 
@@ -829,44 +788,7 @@ RxJs 5 share（）运算符是如何工作的？https://cloud.tencent.com/develo
 2. pipe()作为一种链接运算符的方法，旧的链接方式将不起作用（angular 6）：https://www.jianshu.com/p/ce1a15957a7f
 switchAll()的作用？
 
-下载的进度问题再过一遍
-  // todo 这是实验性代码
-  download() {
-    // 从blob中读数据 https://javascript.info/blob
-  }
-
-属性值的绑定用错了，应该是这样：[length] = "length"
-
-github提醒我，serialize-javascript要升级到2.1.1版本以上：https://github.com/eternalwt/website_front/network/alert/package-lock.json/serialize-javascript/open
-看看是怎么引入的这个库
-
-【学习】搞清楚我们的webSocketService里面Observable的用法
-把 SwWebSocketService 和 interceptor 的代码搞过来
-把SwHttpClientService的代码弄过来，封装了重试、错误处理、下载等机制（还有鉴权等内容把）
-把河北项目的pdf代码移植过来
-看一下jwt相关的代码
-sw-http-client.servic.ts、sw-jwt.service.ts、sw-menu.service.ts、sw-simplereusestrategy.ts、sw-web-socket.service.ts
-把公司里面的代码目录过一遍
-前端代码静态扫描一定要用起来，后端直接用阿里巴巴IDEA插件（后端更熟悉一些），然后配合单元测试
-
-2.【没有权限的时候，是否需要路由guard处理？还是就放在interceptor里面】没有权限的统一处理
-3.路由守卫的场景？
-4.前后端token、session那一套彻底弄懂：
 5.http的出错处理
-6.下载及进度：把下载的代码抄过来（包括service里面的）
-7.上传：https://blog.csdn.net/minaki_/article/details/85163343
-SpringBoot 整合Shiro实现动态权限加载更新+Session共享+单点登录：https://www.cnblogs.com/javazhiyin/p/11398374.html
-
-可以先继续完善3个月的功能和基础设施，不要急。如果不给自己足够的时间，学习顺序会扭曲混乱
-
-看完material那个教程，这是基础
-Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
-https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
-Angular 8 Material Design Tutorial & Example：
-https://www.techiediaries.com/angular-material-tutorial-example/
-https://www.codershood.info/2017/07/15/login-template-using-angular-material/
-
-
 1.把另外几个路由配好（全都配出来）；
 2.把后端路由重新配一下；
 3.怎么调回到登录页？（上一级路由）
@@ -874,19 +796,36 @@ https://www.codershood.info/2017/07/15/login-template-using-angular-material/
 前端Routes能否/有必要做成从后端读取的？
 搞清楚下载的那个模板样式是怎么设置的
 再思考动态组件与路由的关系【自己实现一次？把dynamic-container.module.ts的代码弄过来】：
-https://www.cnblogs.com/keatkeat/p/6349485.html
-https://blog.csdn.net/qq_24352901/article/details/79169491
+  https://www.cnblogs.com/keatkeat/p/6349485.html
+  https://blog.csdn.net/qq_24352901/article/details/79169491
+
+属性值的绑定用错了，应该是这样：[length] = "length"
+
+github提醒我，serialize-javascript要升级到2.1.1版本以上：https://github.com/eternalwt/website_front/network/alert/package-lock.json/serialize-javascript/open
+看看是怎么引入的这个库
+
+前端代码静态扫描一定要用起来，后端直接用阿里巴巴IDEA插件（后端更熟悉一些），然后配合单元测试
+
+可以先继续完善3个月的功能和基础设施，不要急。如果不给自己足够的时间，学习顺序会扭曲混乱
+
+看完material那个教程，这是基础
+Material Design Bootstrap 4 and Angular 5 Tutorial - MdBootstrap：
+  https://coursetro.com/posts/code/132/Material-Design-Bootstrap-4-and-Angular-5-Tutorial---MdBootstrap
+Angular 8 Material Design Tutorial & Example：
+  https://www.techiediaries.com/angular-material-tutorial-example/
+  https://www.codershood.info/2017/07/15/login-template-using-angular-material/
 
 RouteModule及加载过程再看一遍
 
 jwt已调通，但是怎么从header里面把token传给前端还没解决，现在是从body里面传的（token刷新的问题）
+在 angular 6 中利用 JWT 进行身份认证：https://www.jianshu.com/p/a9a535edf79f
+4.前后端token、session那一套彻底弄懂：
 
 尝试用合理的分支策略来学习前端
 在现有的登录页是首页的基础上，开不同的分支，解决不同的问题：
 1.主分支：继续解决每一个细小的知识点，侧重于把每一个功能写通和搞懂；
 3.分支2：angular material2的分支？
 4.分支3：后端管理系统的分支？
-
 
 再看指令和ngModel
 
@@ -896,9 +835,7 @@ jwt已调通，但是怎么从header里面把token传给前端还没解决，现
 分析一下功利心对成败的影响
 
 【极度重要】单独搞ngx-bootstrap和material2【搞完这两项后，沉住气，再搞主题和shiro再搞一轮，就通了】
-Angular Material 2：
-Angular Material 2的资料官方github上有：
-https://github.com/angular/components
+Angular Material 2的资料官方github上有：https://github.com/angular/components
 
 比较一下admin和lte的功能及可扩展性
 
@@ -906,8 +843,6 @@ https://github.com/angular/components
 12月31日对前端样式的最新理解：material组件（封装功能） + prebuilt-theme负责颜色 + 布局和宽高 + 图片 + 阴影等更高级定制
 
 权限的对应关系是否需要一个单独的表或者放入permission表，做了才知道
-guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
-在 angular 6 中利用 JWT 进行身份认证：https://www.jianshu.com/p/a9a535edf79f
 
 把测试环境、生产环境的打包搞好，把严格打包再理解一下
 
@@ -916,24 +851,16 @@ guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
 https://blog.csdn.net/liumiaocn/article/details/81329223
 
 框架搭建任务：
-1.路由(路由系统的设计要素？对比引入路由系统的优势)
-3.interceptor及;
-4.单元测试
-5.两套模板
-7.常用的pipe
-8.尝试自己封装5个控件
-
-Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
-https://www.cnblogs.com/nzbin/p/11150811.html
-https://www.cnblogs.com/nzbin/p/11392311.html
+  1.路由(路由系统的设计要素？对比引入路由系统的优势)
+  3.interceptor及;
+  4.单元测试
+  5.两套模板
+  7.常用的pipe
+  8.尝试自己封装5个控件
 
 material design的教程：
-https://material.angular.io/components/categories
-https://www.techiediaries.com/angular-material-tutorial-example/
-新手合并 Angular 7 + Material 2：https://blog.csdn.net/weixin_42027605/article/details/87180454
-Angular Material：
-https://www.tutorialspoint.com/angular6/angular6_materials.htm
-https://www.jianshu.com/p/b5ecc13fde54
+  https://material.angular.io/components/categories
+  https://www.techiediaries.com/angular-material-tutorial-example/
 比较Ant Design与Material Design
 @angular/animations
 试一下material design的弹出框
@@ -956,8 +883,6 @@ angular-cli 引入ui组件库【admin-lte】：https://www.cnblogs.com/rancho-bl
 GitHub开源的10个超棒后台管理面板【含angular的】：https://blog.csdn.net/m0_38106923/article/details/101050788
 3.EasyUI使用angular版本；
 
-在我的项目中先把tab加进去
-
 layui是啥？
 
 是否需要：HomeModule、AuthModule，搞清楚子module的设计思想
@@ -965,10 +890,8 @@ layui是啥？
 Can't bind to 'ngModel' since it isn't a known property of 'input'：https://blog.csdn.net/Xumuyang_/article/details/89365069
 
 enum的两种写法：
-1.export class，配合static域；
-2.export enum；
-
-dashboard：完成热力图、中国地图（没啥难度，需要的只是行动）
+  1.export class，配合static域；
+  2.export enum；
 
 最近学到的前后端分离知识：https://www.cnblogs.com/Java3y/p/11320606.html
 
@@ -1001,17 +924,6 @@ providers: [
   { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
 ],
 
-angular material 8：
-https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
-https://www.positronx.io/create-angular-material-8-custom-theme/
-https://devconquer.com/angular/angular-material-8-with-angular-8/
-
-Angular Authentication With JSON Web Tokens (JWT): The Complete Guide：https://blog.angular-university.io/angular-jwt-authentication/
-Angular Json Pipe Example：https://www.concretepage.com/angular-2/angular-2-json-pipe-example
-Angular 12/11 Multiple File Upload Tutorial Example：https://www.tutsmake.com/angular-11-multiple-file-upload-tutorial-example/
-Angular 12/11 Date Range Picker Tutorial Example：https://www.tutsmake.com/angular-11-date-range-picker-tutorial-example/
-Angular 12 File Upload with Progress Bar using REST Apis Example：https://www.tutsmake.com/angular-12-file-upload-with-progress-bar-example/
-
 angular.json参数详解(DevKit)：
   https://www.cnblogs.com/momoli/p/13900813.html
   https://segmentfault.com/a/1190000016292354
@@ -1025,18 +937,4 @@ angular.json参数详解(DevKit)：
 1.index.html里面的<app-root></app-root>换成<app-login></app-login>；
 2.app.module.ts里面的bootstrap做替换：bootstrap: [LoginComponent]//AppComponent
 
-side-nav
-https://www.devglan.com/angular/material-sidenav-example
-https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
-https://code-maze.com/angular-material-navigation/
 
-mat-form-field（form field） is used to create a wrapper over angular components and is used to apply text styles like underline, bold, hints etc：
-https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
-
-mat-icon显示不出来是不是因为没有加CSS：https://github.com/angular/components/issues/7948
-
-angular material toolbar：
-https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
-https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
-https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
-Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/

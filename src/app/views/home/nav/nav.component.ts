@@ -23,18 +23,17 @@ export class NavComponent implements OnInit {
   ngOnInit() {
     // todo 判空
     let userId = Number(this.storageService.getJson("user")["id"]);
-    // 获取对应权限的菜单
-
-    // todo 这里不再获取了，由login传过来
-    this.dataService.getMenuList(userId).subscribe(res => {
+    // 获取对应权限的菜单 todo 这里不再获取了，由login传过来
+    // this.dataService.getMenuList(userId).subscribe(res => {
+    this.dataService.getMenuListByUserId(userId).subscribe(res => {
       if (res["code"] == 1 && res["data"].length > 0) {
         this.menuList = res["data"];
-        // icon类别：faIcon、icon、imageIcon等
+        // 
         // this.menuList = res["data"].map(item => {return {"label": item.menuName, "icon": item.icon, "link": item.url}});
 
         // 放入sessionStorage用来做鉴权 todo 网上给了一个更好的方法，还没试通
         // todo 又遇到和router相关的一个地方了，为了router行为正常，后端保存的是只有一部分路径。改好后鉴权的地方要同步修改
-        this.storageService.setJson("menu", res["data"].map(item => {return item.url}));
+        this.storageService.setJson("menu", res["data"].map(item => {return item.url}));// todo 和login里面重复了
 
       }
     });
