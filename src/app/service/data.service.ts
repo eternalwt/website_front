@@ -62,7 +62,7 @@ export class DataService {
   }
 
   getMenuListByUserId(userId) {
-    return this.http.get(environment.baseUrl + `menu/getMenuListByRole?roleId=${userId}`);
+    return this.http.get(environment.baseUrl + `menu/getMenuListByUserId?userId=${userId}`);
   }
 
   // todo 把下面这些权限老方法再看一遍

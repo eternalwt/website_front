@@ -65,8 +65,7 @@ export class LoginComponent implements OnInit {
         // });
 
         let userId = Number(this.storageService.getJson("user")["id"]);// todo 重构
-        this.dataService.getMenuListByUserId(userId).subscribe(res => {// todo 传入的是roleId
-          // this.dataService.getMenuList(userId).subscribe(res => {
+        this.dataService.getMenuListByUserId(userId).subscribe(res => {
           if (res["code"] == 1 && res["data"].length > 0) {
             // icon类别：faIcon、icon、imageIcon等
             // this.menuList = res["data"].map(item => {return {"label": item.menuName, "icon": item.icon, "link": item.url}});

@@ -26,7 +26,6 @@ import { MessageBoxService } from './service/message-box.service';
       return true;
     }
 
-    // https://blog.csdn.net/yw00yw/article/details/89381043
     checkLogin(): boolean {
       // 判断本地有没有token
       const token = sessionStorage.getItem('access_token');

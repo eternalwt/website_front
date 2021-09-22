@@ -5,7 +5,16 @@
 
 ================================================================================
 
-如果前端资源不够先mock，无论如何要把前端先搞的比较清楚再换机器【2021年五一以后再换机器】
+1.修复登录后需要刷新才能进去的问题【改出来的问题】
+2.把admin的初始资源权限加上，并加到初始化脚本里面去
+貌似有了auth_permission表后就不需要auth_role_permission表了？
+
+绑定dropDown、radio写一版出来
+1.前端：把样式修复好；
+3.角色、用户的增删查改【前端】及权限分配；
+4.再看一下那个人主题风格的一致性
+6.上方做好搜索框控件：
+用户的查看做通，便于后期复制到其他功能
 
 【下一步可以继续了】
   3.结合桌面上那张图看看ckeditor那个问题还存在不，如果不行先把ckeditor的代码注释掉或者看看有没有更高版本安装
@@ -46,9 +55,13 @@ Angular Material Table component is full of features and a wide variety of optio
 
 不会读控件代码的话，就没办法彻底搞定
 
+如果前端资源不够先mock，无论如何要把前端先搞的比较清楚再换机器【2021年五一以后再换机器】
+
 后续即使用到了控件库和主题，可能也需要花相当的精力封装service。
 todo 把service测一下（用自动生成的spec.ts测试文件）
 http下载的文件类型做成一个枚举
+
+控件的样式修改、看源码并能改造（甚至把源码扣下来实现自己的控件）：这些也是前期比较关键的
 
 Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-components
 Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
@@ -63,6 +76,7 @@ AdminLTE是不是有JQ问题？
 
 搜一下图片对比控件，进一步提升搜索能力
 老老实实封装5到10个控件再继续
+通过做前端，顺手打通微信小程序能力
 
 NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
 
@@ -148,10 +162,31 @@ Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
 5.再看样式隔离等问题
 6.最终还是要知道在哪里用什么控件，实现或许是小事
 
+20210921搜集的一些文章：
+  https://zhuanlan.zhihu.com/p/34216899
+  https://zhuanlan.zhihu.com/p/36205884
+  https://juejin.cn/post/6890909726775885832
+  https://m.sohu.com/a/385489456_115128
+  https://zhuanlan.zhihu.com/p/391184255?utm_medium=social&utm_oi=685143097629872128
+  https://www.jianshu.com/p/2c2dab92ff5b
+  https://zhuanlan.zhihu.com/p/74541459
+  https://www.zhihu.com/question/362425143/answer/2031504494
+  https://zhuanlan.zhihu.com/p/129825225
+  https://zhuanlan.zhihu.com/p/96885700
+  https://zhuanlan.zhihu.com/p/51467181
+  https://blog.csdn.net/weixin_28709649/article/details/113490787
+  https://blog.csdn.net/qq_43579525/article/details/84113090
+  https://blog.csdn.net/if_smile/article/details/105735278
+  https://zhuanlan.zhihu.com/p/100604027?ivk_sa=1024320u
+  https://www.zhihu.com/question/277068649/answer/391877791
+  https://www.jianshu.com/p/9d81904d55e8
+  https://blog.csdn.net/weixin_39655981/article/details/112439215
+
 把angular material table弄好后，说不定主题需要再搞一次
 把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
 
 Angular2组件与指令的小实践——实现一个图片轮播组件：https://www.cnblogs.com/yitim/p/angular2-component-slide-img.html
+看看主题升级的步骤
 
 教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
 
@@ -369,22 +404,23 @@ https://segmentfault.com/a/1190000009175508
 @ViewChild('tpl', { read: ViewContainerRef })写法：
 
 后台管理系统的一些文章：
-https://zhuanlan.zhihu.com/p/25415328
-https://zhuanlan.zhihu.com/p/108922013
-https://www.zhihu.com/question/31859504/answer/71178836
-https://www.zhihu.com/question/30367057/answer/73817104
-https://zhuanlan.zhihu.com/p/25088922
+  https://zhuanlan.zhihu.com/p/25415328
+  https://zhuanlan.zhihu.com/p/108922013
+  https://www.zhihu.com/question/31859504/answer/71178836
+  https://www.zhihu.com/question/30367057/answer/73817104
+  https://zhuanlan.zhihu.com/p/25088922
 Free Bootstrap Themes：
-https://startbootstrap.com/
-https://www.sucaihuo.com/
+  https://startbootstrap.com/
+  https://www.sucaihuo.com/
 如何设计出色的网站后台原型？
-https://www.zhihu.com/question/31859504/answer/1031232042
-http://wiki.cn.mikecrm.com/form-layout
+  https://www.zhihu.com/question/31859504/answer/1031232042
+  http://wiki.cn.mikecrm.com/form-layout
 
-【下一步3步走】
+typeScript你也没学过，也在使用
 
 1.再搞一轮基础
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
+  Angular 练级之旅(6)-CDK的使用：https://zhuanlan.zhihu.com/p/51042392
   依赖注入【自己写个依赖注入的？】
   【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
 
@@ -406,14 +442,7 @@ BUILDING ANGULAR 2 COMPONENTS ON THE FLY: A DIALOG BOX EXAMPLE：
 Customizing Bootstrap 3 in Angular 2：https://olepetterdahlmann.com/2016/10/15/customizing-bootstrap-3-in-angular-2/
 Create Custom Textbox In Angular 8 Using Input And Output Decorators：https://www.c-sharpcorner.com/article/create-custom-textbox-in-angular-8-using-input-and-output-decorators/
 
-
 3.再搞一轮基础设施，例如预览、富文本的图片上传、excel导出。完了整理本文档
-
-4.补CS基础
-
-5.公司工作：excel的问题再过一遍；做实验；通过外网部署的看前端代码
-
-为什么说「动态类型一时爽，代码重构火葬场」？https://www.zhihu.com/question/30072490/answer/1057400004
 
 ==============================================================================================
 
@@ -427,7 +456,7 @@ routing为啥要弄成module【RouterModule.forRoot(routes)】？forRoot是干�
 在产品经理网站再看搜索的设计，结合myql全文检索做站内搜索
 凤凰和feeds再看
 
-angular部署试一遍
+angular部署：用nginx和tomcat部署各用于什么场景？
 思考echarts的service怎么写
 列一下我的功能列表
 angular高德地图插件
@@ -628,11 +657,11 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
 把chart页面搞定（这个是不是应该结合主题来学习？）
 
-【思考一下我后端限制那个权限到底有没有毛用，什么时候是典型应用场景】
 【定方案】二次开发或许是个可行的方案，前提是要有源码
 
-【19号】
-模块权限搞清后，再搞一遍数据权限和systemId
+【路由守卫】Auth guard【哪些页面不能访问是不是从后端做更好？】：
+  https://www.geeksforgeeks.org/auth-guards-in-angular-9-10-11/
+  https://www.phpcodingstuff.com/blog/authguard-angular-authentication-using-route-guards-in-angular-11.html
 
 把我下载的几个主题看一下，看看定制过程中会不会出现一些小问题，例如删除一些元素后其他元素排列的效果和是否错位
 
@@ -640,7 +669,6 @@ login里面使用的时reactive form，代码里面有几处messageForm、formBu
 
 1.淘宝、京东、有道看下快递情况
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
-mybatis-spring：http://mybatis.org/spring/
 前端基础设施选型练习一下
 列表的编辑、删除操作（分为按钮、页面2部分攻克）
 富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
@@ -651,13 +679,6 @@ ckeditor图片、附件上传
 
 mybatis配置、mybatis-plus配置【这是极为重要的基础设施和能力】
 SpringBoot整合Mybatis分为“使用配置文件方式”和“无配置文件注解版”两种方法：https://www.cnblogs.com/xuehuashanghe/p/9593639.html
-
-绑定dropDown、radio写一版出来
-1.前端：把样式修复好；
-3.角色、用户的增删查改【前端】及权限分配；
-4.再看一下那个人主题风格的一致性
-6.上方做好搜索框控件：
-用户的查看做通，便于后期复制到其他功能
 
 不要没事瞎升级，一定要有路线图：
 1.theme；
