@@ -4,12 +4,10 @@ RxJS的另外四种实现方式（后记）—— 同时实现管道和链式编
 
 ng generate class Hero
 
-
 ckeditor:
   upload:
     path:
       prefix: D:\02APP\nginx-1.14.2\html\files
-
 
 ===========================================================================
 
@@ -55,15 +53,15 @@ ES6中的迭代器(Iterator)和生成器(Generator)：https://www.cnblogs.com/xi
 【第一个重要问题：如何下载、修改npm组件的源码？】
 
 学习Lodash：
-https://www.jianshu.com/p/832ac54b95b5
-https://www.jianshu.com/p/c59f1b2bafae
-https://lodash.com/
-https://github.com/lodash/lodash
+  https://www.jianshu.com/p/832ac54b95b5
+  https://www.jianshu.com/p/c59f1b2bafae
+  https://lodash.com/
+  https://github.com/lodash/lodash
 学习underscore：
-https://blog.csdn.net/QDY5945/article/details/102587361
-https://github.com/changxiupeng/underscore-analysis
-https://underscorejs.org/
-https://github.com/jashkenas/underscore
+  https://blog.csdn.net/QDY5945/article/details/102587361
+  https://github.com/changxiupeng/underscore-analysis
+  https://underscorejs.org/
+  https://github.com/jashkenas/underscore
 
 demo工程如果不加路由会怎样？（后面可以再加）
 全局node_modules路径：C:\Users\gao\AppData\Roaming\npm\node_modules
@@ -74,14 +72,19 @@ Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/11
 请问一下各位大佬，js的静态方法有啥作用呀，写工具类吗？https://www.zhihu.com/question/423086350/answer/1499324613
 
 常用 npm 包：
-https://blog.csdn.net/qq_31964019/article/details/107765220
-https://blog.csdn.net/sinat_18474835/article/details/80010870
-635000 个 npm 包中我应该用哪个：https://zhuanlan.zhihu.com/p/52884808
+  https://blog.csdn.net/qq_31964019/article/details/107765220
+  https://blog.csdn.net/sinat_18474835/article/details/80010870
+  635000 个 npm 包中我应该用哪个：https://zhuanlan.zhihu.com/p/52884808
 前端 | 一些实用的npm库：https://www.jianshu.com/p/555a558bcee8
 设计一个前端组件库（规模并不是很大），需要具备哪些能力？https://www.zhihu.com/question/266745124/answer/322998960
 2018年你需要知道的13个JavaScript工具库：https://zhuanlan.zhihu.com/p/38795426
 
 前端项目的搭建，以及遇到问题的处理，是否需要再总结一下？这次升级angular12又遇到问题了
+
+ES2021：
+  https://zhuanlan.zhihu.com/p/347883565
+  https://zhuanlan.zhihu.com/p/386594787
+  https://zhuanlan.zhihu.com/p/337369366
 
 ===========================================================================
 
