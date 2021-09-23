@@ -24,62 +24,44 @@ export class PermAssignComponent implements OnInit {
 
   permList: any[] = [];
 
+  ckd: boolean = false;
+
   ngOnInit() {
+
+    // todo 1.要能分类【资源类别】；2.要能够分级授权【数据权限】；3.要能够有某些勾选的不能编辑【用户、角色权限，后面再考虑用户权限】
 
     // 读取角色列表
     this.dataService.listAllRole().subscribe(res => {
       if (res && res["code"] == 1) {
-        debugger;
         this.roleList = res["data"];
       }
     });
 
     // 获取菜单资源列表
-    // todo 完善getAllMenuList方法体
-    // this.dataService.getAllMenuList().subscribe(res => {
-    // // todo
-    // });
-
-    // todo 1.要能分类【资源类别】；2.要能够分级授权【数据权限】；3.要能够有某些勾选的不能编辑【用户、角色权限，后面再考虑用户权限】
-    // let observables: any[] = [];
-    // // 1.读出所有的权限列表
-    // observables.push(this.dataService.getAllPermissionList());
-    // // 2.读出各个角色有的权限
-    // observables.push(this.dataService.getRolePermissionListMap());
-    
-    // forkJoin(observables).subscribe((res:any) => {
-    //   if (res && res.length > 1) {
-    //     let allMenus = [];
-    //     if (res[0]["data"] && res[0]["data"].length > 0) {
-    //       allMenus = res[0]["data"].map(item => {return item.menuName});
-    //     }
-    //     if (res[1]["data"]) {
-    //       // 3.组合得到前端需要的数据
-    //       for(let key in res[1]["data"]) {
-    //         let permList: any[] = [];
-    //         for (let i = 0; i < allMenus.length; i++) {
-    //           if (res[1]["data"][key].indexOf(allMenus[i]) >= 0) {
-    //             permList.push({key: allMenus[i], checked: true});
-    //           }
-    //           else {
-    //             permList.push({key: allMenus[i], checked: false});
-    //           }
-    //         }
-    //         let singleMenu = {roleName: key, permList: permList};
-    //         this.menuList.push(singleMenu);
-    //       }
-    //     }
-    //   }
-    // });
-    
+    this.dataService.getAllMenuList().subscribe(res => {
+      if (res && res["code"] == 1) {
+        this.menuList = res["data"];
+      }
+    });
   }
 
   getRoleOptions() {
     console.log(this.roleId);
     // 获取该角色已经有了的菜单资源权限
     this.dataService.getMenuListByRole(this.roleId).subscribe(res => {
-      // todo
-      // this.permList = 
+      // 通过获取的数据，给menuList的每个item附上hasPerm字段
+      if (res && res["code"] == 1) {
+        this.permList = res["data"];
+        for (let i = 0; i < this.menuList.length; i++) {// todo 改造成函数式写法
+          this.menuList[i]["hasPerm"] = false;
+          for (let j = 0; j < this.permList.length; j++) {
+            if (this.permList[j].id == this.menuList[i].id) {
+              this.menuList[i]["hasPerm"] = true;
+              break;
+            }
+          }
+        }
+      }
     });
   }
 
@@ -88,20 +70,25 @@ export class PermAssignComponent implements OnInit {
    * 保存角色对应的权限
    */
   savePermission() {
-    let menuList: any[] = [];
-    // todo 组装map。这样是为了后端不再定义vo，这种方法好不好有待商榷
-    // todo 一次性发送给后端【既要保证效率，又要逻辑清晰】
-    for (let i = 0; i < this.menuList.length; i++) {
-      for (let j = 0; j < this.menuList[i].permList.length; j++) {
-        // 使用map还是json？或者两者都试一下？
-        menuList.push({perm: this.menuList[i].permList[j].key, checked: this.menuList[i].permList[j].checked, roleName: this.menuList[i].roleName});
-      }
-    }
 
-    // todo 还有个大漏洞，没有判断checked
-    this.dataService.updatePermission(menuList).subscribe(res => {
-      alert("保存成功!");// todo 1.修改成Dialog对话框；2.如何让用户尽快登出修改权限
-    });
+    // todo 重新实现 updatePermission 方法，dataService里面【包括前端和后端】
+
+
+
+    // let menuList: any[] = [];
+    // // todo 组装map。这样是为了后端不再定义vo，这种方法好不好有待商榷
+    // // todo 一次性发送给后端【既要保证效率，又要逻辑清晰】
+    // for (let i = 0; i < this.menuList.length; i++) {
+    //   for (let j = 0; j < this.menuList[i].permList.length; j++) {
+    //     // 使用map还是json？或者两者都试一下？
+    //     menuList.push({perm: this.menuList[i].permList[j].key, checked: this.menuList[i].permList[j].checked, roleName: this.menuList[i].roleName});
+    //   }
+    // }
+
+    // // todo 还有个大漏洞，没有判断checked
+    // this.dataService.updatePermission(menuList).subscribe(res => {
+    //   alert("保存成功!");// todo 1.修改成Dialog对话框；2.如何让用户尽快登出修改权限
+    // });
     
   }
 

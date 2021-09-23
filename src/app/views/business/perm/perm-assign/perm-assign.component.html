@@ -15,6 +15,9 @@
    </select>
 </div>
 <p>权限</p>
+<div class="tp-section">
+   <mat-checkbox *ngFor="let menu of menuList" class="tp-margin" [(ngModel)]="menu.hasPerm">{{menu.menuName}}</mat-checkbox>
+</div>
 多个多选框，参考添加用户的页面
 
 

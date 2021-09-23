@@ -15,7 +15,7 @@
   1.注重每个细节问题：单点突破；
   2.整体切换：解耦
 
-当前修改到：perm-assign.component.ts
+当前修改到：perm-assign.component.ts：写通给一个新角色授权
 
 把菜单权限配置做出来【先搞个最简单的下拉框切换角色配置】
 3.角色、用户的增删查改【前端】及权限分配；
@@ -74,6 +74,7 @@ rxjs及后端响应式编程要突破
 教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
 
 绑定dropDown、radio写一版出来
+Input, Change, ngModelChange事件的区别：https://www.cnblogs.com/juliazhang/p/11158518.html
 1.前端：把样式修复好；
 4.再看一下那个人主题风格的一致性
 
