@@ -11,6 +11,11 @@
   3.继续巩固基础知识：rxjs及另一个文档中提到的一些；
   4.看一些别人封装的控件；
   5.控件与主题的搭配：实用
+【方法】
+  1.注重每个细节问题：单点突破；
+  2.整体切换：解耦
+
+当前修改到：perm-assign.component.ts
 
 把菜单权限配置做出来【先搞个最简单的下拉框切换角色配置】
 3.角色、用户的增删查改【前端】及权限分配；
@@ -132,6 +137,7 @@ PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
 ng-zorro源码
 ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com/haogj/p/11210861.html
 实现5个控件练手（biying搜索学习）【从primeng寻找灵感？】：modal，不是那么好实现的
+angular4——带搜索的下拉框：https://blog.csdn.net/wgp15732622312/article/details/77150051
 
 通过做前端，顺手打通微信小程序能力
 

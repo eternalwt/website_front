@@ -70,12 +70,16 @@ export class DataService {
     return this.http.get(environment.baseUrl + `menu/selectByUserId?userId=${userId}`);
   }
 
+  getAllMenuList() {
+    
+  }
+
   getPermissionListByUserId(userId) {
     return this.http.get(environment.baseUrl + `menu/getPermissionListByUserId?userId=${userId}`);
   }
 
   getAllPermissionList() {
-    return this.http.get(environment.baseUrl + `menu/getAllPermissionList`);
+    return this.http.get(environment.baseUrl + `menu/getAllPermissionList`);// todo 后端已经没有这个方法了
   }
 
   getMenuTree() {

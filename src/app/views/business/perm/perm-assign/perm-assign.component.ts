@@ -13,44 +13,74 @@ export class PermAssignComponent implements OnInit {
     private dataService: DataService
   ) {}
 
-  menuList: any[] = [
-    // {roleName:"role3", permList: [{key:"perm2", checked: true}, {key:"perm3", checked: true}]}
-  ];
+  roleId: any | null = null;
 
+  roleList: any[] = [];
+
+  /**
+   * 菜单资源
+   */
+  menuList: any[] = [];
+
+  permList: any[] = [];
 
   ngOnInit() {
-    // todo 1.要能分类；2.要能够分级授权；3.要能够有某些勾选的不能编辑
-    let observables: any[] = [];
-    // 1.读出所有的权限列表
-    observables.push(this.dataService.getAllPermissionList());
-    // 2.读出各个角色有的权限
-    observables.push(this.dataService.getRolePermissionListMap());
-    
-    forkJoin(observables).subscribe((res:any) => {
-      if (res && res.length > 1) {
-        let allMenus = [];
-        if (res[0]["data"] && res[0]["data"].length > 0) {
-          allMenus = res[0]["data"].map(item => {return item.menuName});
-        }
-        if (res[1]["data"]) {
-          // 3.组合得到前端需要的数据
-          for(let key in res[1]["data"]) {
-            let permList: any[] = [];
-            for (let i = 0; i < allMenus.length; i++) {
-              if (res[1]["data"][key].indexOf(allMenus[i]) >= 0) {
-                permList.push({key: allMenus[i], checked: true});
-              }
-              else {
-                permList.push({key: allMenus[i], checked: false});
-              }
-            }
-            let singleMenu = {roleName: key, permList: permList};
-            this.menuList.push(singleMenu);
-          }
-        }
+
+    // 读取角色列表
+    this.dataService.listAllRole().subscribe(res => {
+      if (res && res["code"] == 1) {
+        debugger;
+        this.roleList = res["data"];
       }
     });
+
+    // 获取菜单资源列表
+    // todo 完善getAllMenuList方法体
+    // this.dataService.getAllMenuList().subscribe(res => {
+    // // todo
+    // });
+
+    // todo 1.要能分类【资源类别】；2.要能够分级授权【数据权限】；3.要能够有某些勾选的不能编辑【用户、角色权限，后面再考虑用户权限】
+    // let observables: any[] = [];
+    // // 1.读出所有的权限列表
+    // observables.push(this.dataService.getAllPermissionList());
+    // // 2.读出各个角色有的权限
+    // observables.push(this.dataService.getRolePermissionListMap());
     
+    // forkJoin(observables).subscribe((res:any) => {
+    //   if (res && res.length > 1) {
+    //     let allMenus = [];
+    //     if (res[0]["data"] && res[0]["data"].length > 0) {
+    //       allMenus = res[0]["data"].map(item => {return item.menuName});
+    //     }
+    //     if (res[1]["data"]) {
+    //       // 3.组合得到前端需要的数据
+    //       for(let key in res[1]["data"]) {
+    //         let permList: any[] = [];
+    //         for (let i = 0; i < allMenus.length; i++) {
+    //           if (res[1]["data"][key].indexOf(allMenus[i]) >= 0) {
+    //             permList.push({key: allMenus[i], checked: true});
+    //           }
+    //           else {
+    //             permList.push({key: allMenus[i], checked: false});
+    //           }
+    //         }
+    //         let singleMenu = {roleName: key, permList: permList};
+    //         this.menuList.push(singleMenu);
+    //       }
+    //     }
+    //   }
+    // });
+    
+  }
+
+  getRoleOptions() {
+    console.log(this.roleId);
+    // 获取该角色已经有了的菜单资源权限
+    this.dataService.getMenuListByRole(this.roleId).subscribe(res => {
+      // todo
+      // this.permList = 
+    });
   }
 
 

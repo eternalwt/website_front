@@ -1,10 +1,21 @@
-<span>角色权限</span>
+<h3>角色权限</h3>
 
-<ng-container *ngFor="let item of menuList">
+<!-- <ng-container *ngFor="let item of menuList">
    <h4 class="tp-h2">{{item.roleName}}</h4>
    <div class="tp-section">
       <mat-checkbox *ngFor="let perm of item.permList" class="tp-margin" [(ngModel)]="perm.checked">{{perm.key}}</mat-checkbox>
    </div>
-</ng-container>
+</ng-container> -->
+<span>菜单权限【后续再扩展泛化】</span>
+<p>角色</p>
+<div>
+   <select style="width:100px;" [(ngModel)]="roleId" name="roleId" (ngModelChange)="getRoleOptions()">
+      <option [ngValue]=""></option>
+      <option *ngFor="let role of roleList" [value]="role.id">{{role.roleName}}</option>
+   </select>
+</div>
+<p>权限</p>
+多个多选框，参考添加用户的页面
+
 
 <button mat-raised-button color="accent" (click)="savePermission()">Save</button>
