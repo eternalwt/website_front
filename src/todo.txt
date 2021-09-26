@@ -9,15 +9,39 @@
   1.解决下面列出的问题：功能往前推进；
   2.自己造一些轮子；
   3.继续巩固基础知识：rxjs及另一个文档中提到的一些；
-  4.看一些别人封装的控件；
+  4.看一些别人封装的控件【分析几个组件的源码，自然知道怎么跟主题搭配了】；
   5.控件与主题的搭配：实用
 【方法】
   1.注重每个细节问题：单点突破；
   2.整体切换：解耦
 
-当前修改到：perm-assign.component.ts：写通给一个新角色授权
+material再搞一轮【总要先固定一个内容打通】：https://juejin.cn/post/6844903894561062926
 
-把菜单权限配置做出来【先搞个最简单的下拉框切换角色配置】
+当前修改到：perm-assign.component.ts：写通save方法。是不是可以尝试把按钮权限也直接写通？【可以】
+
+angular4如何使用Bootstrap的datetimepicker组件：https://blog.csdn.net/qq_34908167/article/details/79913199
+
+【下一步，重点】直接对着控件搜样式，逐个学习，例如：ngx-treeview、样式
+Angular5 自定义scrollbar样式之 ngx-malihu-scrollbar：https://www.shuzhiduo.com/A/obzbAGLjdE/
+将项目中的ng2-tree组件替换成ngx-tree：https://blog.csdn.net/qq_43263320/article/details/118735088
+使用别人的控件，一旦涉及到定制，代码就会分析。注意这其中的风险。
+angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
+
+angular6 中使用bootstrap：
+  https://www.cnblogs.com/king94Boy/p/9669284.html
+  https://blog.csdn.net/m0_38106923/article/details/101050788
+  https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
+  https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
+
+漫谈 Angular 定制主题的四种方式：https://zhuanlan.zhihu.com/p/72178646
+angular实现皮肤主题切换的方案：https://segmentfault.com/a/1190000017751854
+六种主题风格的Angular10+和Nebular后台管理模板：https://www.moyouyouw.cn/code/1385.html
+使用Angular material主题定义自己的组件库的配色体系：https://www.jb51.net/article/169239.htm
+Angular Material主题配置：https://www.cnblogs.com/ylp0617/p/6902856.html
+基于Angular 8和Bootstrap 4实现动态主题切换：https://www.cnblogs.com/daxnet/p/dynamic-theme-with-angular-8-and-bootstrap.html
+如何实现Angular Material自定义主题：https://juejin.cn/post/6844903894561062926
+
+把菜单权限配置做出来【还差一个保存，先做个最low的保存】
 3.角色、用户的增删查改【前端】及权限分配；
 把现有的todo清一波
 用户的查看做通，便于后期复制到其他功能
@@ -108,9 +132,6 @@ react框架网站有哪些？https://www.zhihu.com/question/449794230/answer/179
 form整好（先把template-driven用溜）把他们的布局统一一下
 Introduction to forms in Angular：https://angular.io/guide/forms-overview
 列表再搞一次，后面加按钮、分页【尝试分析代码】
-form抽父类，dialog也可以放进去，把alert替换掉
-ckEditor的上传图片
-布局方面提升：搜一下用到block的地方，对比flex和grid
 contact页面里面，label包在外面有什么好处？
 
 不会读控件代码的话，就没办法彻底搞定
@@ -151,11 +172,6 @@ Angular 组件库 NG-NEST 1.0.0 发布：https://zhuanlan.zhihu.com/p/143815952
 
 再看一遍英文angular教程
 
-【表格问题】
-  1：排序
-  2.后端分页
-  3.操作按钮【看下面material的文章继续】
-
 三件事：
 左侧可以再试一次了，又找了个控件。
 0.3RD_PARTY页面第一次进入有tab控件的报错“Cannot set property 'active' of undefined”【如果不会读代码、不能改代码就不行】
@@ -188,7 +204,7 @@ http://www.woshipm.com/tag/%E9%9D%A2%E5%8C%85%E5%B1%91
 http://www.woshipm.com/pd/907780.html
 http://www.woshipm.com/pd/1799366.html（待看）
 https://www.jianshu.com/p/8cbcd13d07b2
-样式必须达到的两点：1.按钮和input要统一（看那个最精美都样式怎么设置都）；2.上方、左侧区域的颜色要统一
+样式必须达到的两点：1.按钮和input要统一（看那个最精美的样式怎么设置都）；2.上方、左侧区域的颜色要统一
 infinite scroll
 
 加ng-gallery：
@@ -197,12 +213,17 @@ https://www.npmjs.com/package/ngx-gallery-images
 ngx-multi-modal【把forRoot看懂再说】：https://www.npmjs.com/package/ngx-multi-modal
 angular-notifier：https://www.npmjs.com/package/angular-notifier
 加ngToast：https://www.npmjs.com/package/ng-toast
+NgxTreeDnd 可拖拽的 Angular 树组件：https://www.oschina.net/p/ngx-tree-dnd
+
+npm 模块安装机制简介：https://www.ruanyifeng.com/blog/2016/01/npm-install.html
+npm install 安装过程分析：https://www.cnblogs.com/everlose/p/12505245.html
+npm包发布流程和如何看插件源码：https://blog.csdn.net/u010377383/article/details/86858517
 
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
   https://www.cnblogs.com/nzbin/p/11150811.html
   https://www.cnblogs.com/nzbin/p/11392311.html
 使用material的下拉框这种组件的意义在哪里呢？
-angular material 8：
+angular material 8【现在有12了】：
 https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
 https://www.positronx.io/create-angular-material-8-custom-theme/
 https://devconquer.com/angular/angular-material-8-with-angular-8/
@@ -283,10 +304,6 @@ angular material toolbar：
   https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
   Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
 
-1.怎么确认一个组件能否兼容用的主题？
-2.怎么修改下载的组件，这样做好不好？
-将项目中的ng2-tree组件替换成ngx-tree：https://blog.csdn.net/qq_43263320/article/details/118735088
-安装组件时打印的compiling xxx(例如ngx-treeview): es2015 as esm2015是啥意思？
 generating browser application bundles
 
 angular 自定义组件：
@@ -296,9 +313,14 @@ angular 自定义组件：
   https://segmentfault.com/a/1190000009070500
   https://zhuanlan.zhihu.com/p/36863723
   https://juejin.im/post/597176886fb9a06ba4746d15?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
+
 【提高优先级】2.找5个ngx开头的控件看一下【表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
-
+1.怎么确认一个组件能否兼容用的主题？
+2.怎么修改下载的组件，这样做好不好？
+安装组件时打印的compiling xxx(例如ngx-treeview): es2015 as esm2015是啥意思？
+ngx-treeview源码：https://gitee.com/iesc/ngx-treeview/
+ngx-tree-select源码：https://www.angular365.cn/angular-ngx-tree-select/
 angular-ng-autocomplete：https://www.npmjs.com/package/angular-ng-autocomplete
 datePicker
 ng5-slider：https://www.npmjs.com/package/ng5-slider
@@ -307,7 +329,7 @@ ng-wizard：https://www.npmjs.com/package/ng-wizard
 angular5-stepper：https://www.npmjs.com/package/angular5-stepper
 加载效果ng-spinners，还有progress spinner：https://www.npmjs.com/package/ng-spinners
 ng-ripple-module：https://www.npmjs.com/package/ng-ripple-module
-Awesome Angular * Angular资源大集合：https://zhuanlan.zhihu.com/p/25285226
+Awesome Angular * Angular资源大集合 ：https://zhuanlan.zhihu.com/p/25285226
 Angular2组件与指令的小实践——实现一个图片轮播组件：https://www.cnblogs.com/yitim/p/angular2-component-slide-img.html
 Angular Dialog 组件的设计与实现：https://zhuanlan.zhihu.com/p/66117736
 【从这个网站学习组件可好？】Angular Tree-style Select Component：https://angularscript.com/angular-4-tree-select-component/
@@ -337,6 +359,10 @@ angular封装弹出框：
   https://www.cnblogs.com/cench/p/5448624.html
 
 JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框架，它实现了Angular1和Angular2两个版本，选择范围比较广。可以利用它快速搭建应用框架。
+值得推荐的七种好用的Angular组件库：
+  https://baijiahao.baidu.com/s?id=1684751766552282192&wfr=spider&for=pc
+  https://www.zhihu.com/question/50377778?from=profile_question_card
+十二大流行的Angular UI库：https://xw.qq.com/cmsid/20210416A06J1300
 
 【是不是要再次转换思路】
   1.看primeng等控件（那2个一定要看）；
@@ -345,6 +371,10 @@ JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框�
   4.把一些难控件的代码看一下
   5.再看样式隔离等问题
   6.最终还是要知道在哪里用什么控件，实现或许是小事
+
+form抽父类，dialog也可以放进去，把alert替换掉
+ckEditor的上传图片
+布局方面提升：搜一下用到block的地方，对比flex和grid
 
 20210921搜集的一些文章：
   https://zhuanlan.zhihu.com/p/34216899
@@ -500,7 +530,7 @@ Free Bootstrap Themes：
   https://www.zhihu.com/question/31859504/answer/1031232042
   http://wiki.cn.mikecrm.com/form-layout
 
-typeScript你也没学过，也在使用
+typeScript你也没学过，也在使用。所以不要担心使用新技术
 
 1.再搞一轮基础
   【组件库的设计不要想简单了，可能需要大量依赖下面的机制和借鉴CDK等设计思路】
@@ -508,14 +538,7 @@ typeScript你也没学过，也在使用
   依赖注入【自己写个依赖注入的？】
   【准备知识：ComponentRef、ElementRef、动态组件、ViewContainerRef】
 
-  angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
-
 2.再过一轮主题、控件、配色方案，试用ngx-控件：
-angular6 中使用bootstrap：
-  https://www.cnblogs.com/king94Boy/p/9669284.html
-  https://blog.csdn.net/m0_38106923/article/details/101050788
-  https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
-  https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
 angular 8封装组件：
   https://blog.csdn.net/qq_36321909/article/details/90520713
   https://blog.csdn.net/Null_Bugs/article/details/100009476
@@ -658,7 +681,13 @@ https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
 推动不了，是不是应该先看mybatis源码了？
 多tab页路由复用
 
+用chrome浏览器测试手机样式
+
 在把一套控件搞懂之前，另可先不用，自己写
+
+angular的一些基本使用实例：https://blog.csdn.net/z_robot/article/details/103685702
+关于Angular微前端ngx-planet实现过程解析：https://zhuanlan.zhihu.com/p/346915189
+angular7 集成ngx-bootstrap：https://blog.csdn.net/weixin_43123610/article/details/88994113
 
 1.【在financial项目中】把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
 2.x测通、代码写好后，再把2.x的pom配置干掉；
@@ -673,12 +702,19 @@ rxjs怎么裸用？怎么测试？现在不用npm都不会写前端了
 换主题时要确认一下：我现有的功能能不能覆盖到
 
 【寻找合适的表格控件】
+【表格问题】
+  1：排序
+  2.后端分页
+  3.操作按钮【看下面material的文章继续】
+表格：编辑、删除（把angular material 2的提示框写通）、列出创建者、查看、翻页
 
 沉住气：控件打通后再上主题
 
 注册阿里云、腾讯云、百度云账号
 图表界面的定时更新推送数据写通（websocket另一种方式也熟悉一下，后端继续推进。热力图、箱型图搞明白）
 把chart页面搞定（这个是不是应该结合主题来学习？）
+
+找曹三娟，找在家带孩子的女程序员帮忙写代码：如果任务分解的足够细，是可以找到人帮忙做的
 
 【定方案】二次开发或许是个可行的方案，前提是要有源码
 
@@ -783,8 +819,6 @@ https://www.cnblogs.com/nzbin/p/11392311.html
 把组件里面套组件写通,ng-content
 [class.active]
 
-表格：编辑、删除（把angular material 2的提示框写通）、列出创建者、查看、翻页
-【周六】
 2.试一下把文章类的做成一个module
 
 把基础设施再搞一般，把material 2搞一轮，把rxjs搞一版，就可以用lte-admin做商用产品了

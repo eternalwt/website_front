@@ -11,13 +11,15 @@ ckeditor:
 
 ===========================================================================
 
-【找一些设计规范看看】
+【找一些设计规范看看，这些设计规范，到底关注的是样式还是交互还是动画？】bootstrap用的是什么设计规范？
 material design
 ant design
 Eva Design System 规范
 Salesforce Lightning Desing System(ng lightning)
 Clarity Design System：https://clarity.design/
-
+bootstrap-material-design：https://www.bootcdn.cn/bootstrap-material-design/
+拥抱Material Design！你的世界里不应该只有Bootstrap：https://www.cnblogs.com/gbtags/p/4726497.html
+https://www.jb51.net/article/82596.htm
 
 经过一段时间的尝试，我对前端框架选型和搭配的理解：
 1.主题的设计规范和控件的设计规范要适配（material design等）；
@@ -51,6 +53,8 @@ ES6中的迭代器(Iterator)和生成器(Generator)：https://www.cnblogs.com/xi
 此外，Promise 对象提供统一的接口，使得控制异步操作更加容易：https://www.runoob.com/w3cnote/javascript-promise-object.html
 
 【第一个重要问题：如何下载、修改npm组件的源码？】
+
+Angular：都 2021 年了，你为啥还没用 Angular：https://juejin.cn/post/6959373663040700446
 
 学习Lodash：
   https://www.jianshu.com/p/832ac54b95b5
@@ -86,9 +90,14 @@ ES2021：
   https://zhuanlan.zhihu.com/p/386594787
   https://zhuanlan.zhihu.com/p/337369366
 
+【看一小时bootstrap 5】
+angular 多页面应用
+DevUI Admin 2.0 重磅发布【华为的开源前端解决方案】：https://zhuanlan.zhihu.com/p/400436608
+Angular DOM 更新机制：https://zhuanlan.zhihu.com/p/36338142
+Bootstrap 5.1：https://v5.bootcss.com/
+
 ===========================================================================
 
-[我自己的系统]退出登录后，应该给一个提示，否则总感觉交互有点不够自然
 angular中ngRoute和uiRoute的区别：https://www.cnblogs.com/liym-001/p/6039509.html
 
 [译] 关于 `ExpressionChangedAfterItHasBeenCheckedError` 错误你所需要知道的事情：https://segmentfault.com/a/1190000013972657
@@ -232,6 +241,7 @@ https://zhuanlan.zhihu.com/p/32298629
 
 CSS3实现3D旋转Demo：https://zhuanlan.zhihu.com/p/149273235
 
+[12] 前端资源的完整性校验: https://github.com/dreamapplehappy/blog/tree/master/2021/09/20
 
 input自适应宽度为什么也很困难？
 https://www.softwhy.com/article-9588-1.html
@@ -369,6 +379,8 @@ Angular6封装http请求：https://www.cnblogs.com/zhouyangla/p/9465008.html
 10 Angular and TypeScript Projects to Take You From Zero to Hero：https://blog.codewithdan.com/10-angular-and-typescript-projects-to-take-you-from-zero-to-hero/
 
 How to Setup Selenium on Node Environment：https://dev.to/oyetoket/how-to-setup-selenium-on-node-environment-30bc
+
+九种跨域方式实现原理（完整版）：https://juejin.cn/post/6844903767226351623
 
 重要基础设施，搜package的站点（ngx-echarts）：
 https://www.npmjs.com/search?q=ngx-&csrftoken=YJ4PdjxaghrOsWbkewM6pcns3YWN0vsTzewMkZ-SECc

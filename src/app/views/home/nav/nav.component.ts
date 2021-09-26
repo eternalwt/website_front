@@ -38,16 +38,15 @@ export class NavComponent implements OnInit {
       }
     });
 
+    // todo 下面的代码是给树形菜单用的，现在还没涉及到
     this.dataService.getMenuTree().subscribe(res => {
       // todo 绑定菜单树
       console.log(res["data"]);
-      debugger;
     });
   }
 
   selectedItem(evt) {
     console.log(evt);
-    debugger;
     this.router.navigateByUrl("/home/" + evt.link);// todo 把两个菜单需要保存的路径不一致的问题解决掉
   }
 
