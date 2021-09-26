@@ -20,6 +20,7 @@ Clarity Design System：https://clarity.design/
 bootstrap-material-design：https://www.bootcdn.cn/bootstrap-material-design/
 拥抱Material Design！你的世界里不应该只有Bootstrap：https://www.cnblogs.com/gbtags/p/4726497.html
 https://www.jb51.net/article/82596.htm
+The Material Design color system can help you create a color theme that reflects your brand or style：https://material.io/design/color/#
 
 经过一段时间的尝试，我对前端框架选型和搭配的理解：
 1.主题的设计规范和控件的设计规范要适配（material design等）；
@@ -42,10 +43,10 @@ https://devui.design/home
 https://github.com/DevCloudFE/ng-devui
 
 【ES6】for of用法：
-https://blog.csdn.net/w390058785/article/details/80522383
-https://www.cnblogs.com/m2maomao/p/7743143.html
+  https://blog.csdn.net/w390058785/article/details/80522383
+  https://www.cnblogs.com/m2maomao/p/7743143.html
 for await of：
-https://blog.csdn.net/webFrontEndDev/article/details/103142119
+  https://blog.csdn.net/webFrontEndDev/article/details/103142119
 
 ES6中的迭代器(Iterator)和生成器(Generator)：https://www.cnblogs.com/xiaohuochai/p/7253466.html
 
@@ -191,9 +192,11 @@ npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 【专门花时间来提升这个能力】【在github上，首先去寻找问题有没有答案，其次尝试提问：1.二级菜单；2.table的后端分页】而不是遇到问题直接就放弃了，那样很难提升
 2019了还可以用angular吗？（学严兴杰分析angular和angular material的issue）：https://www.zhihu.com/question/329973345/answer/728704821
 我选择Angular最直接的理由是Ionic4，最好的混合应用框架，没有之一。
+Angular第三方UI组件库------ionic：https://www.cnblogs.com/sna-ling/p/12297355.html
 
 手把手教你搭建自己的Angular组件库：https://zhuanlan.zhihu.com/p/140700137
 前端监控和统计概念：https://zhuanlan.zhihu.com/p/134132381
+Angular2的依赖注入是怎么实现的？https://www2.zhihu.com/question/265773703/answer/298969485
 
 【译】在Angular中自定义表单控件：
 https://zhuanlan.zhihu.com/p/96901982
@@ -213,15 +216,15 @@ https://blog.csdn.net/jokren/article/details/85067391
 position: fixed; position与float的关系？
 
 搞懂如下几个样式：
-display: table-cell;
-white-space: nowrap;
-box-sizing: border-box;
-outline: 0;
-border-collapse: separate;
-transition: right 0.25s ease-in-out;
-box-shadow: 0px 0px 6px 2px #c0c1c3;
-flex-shrink: 0;
-align-items: center;
+  display: table-cell;
+  white-space: nowrap;
+  box-sizing: border-box;
+  outline: 0;
+  border-collapse: separate;
+  transition: right 0.25s ease-in-out;
+  box-shadow: 0px 0px 6px 2px #c0c1c3;
+  flex-shrink: 0;
+  align-items: center;
 
 box-shadow: none !important;
 outline: 0 !important;：
@@ -631,7 +634,6 @@ ng2-file-upload：https://www.cnblogs.com/NeverCtrl-C/p/7778304.html
 Angular File Upload【好像很强大】：https://www.npmjs.com/package/angular-file-upload
 ngx-echarts
 
-
 这个里面控件看到第6页了：
 https://angularscript.com/category/page/6/
 https://angularscript.com/pretty-checkbox-components-for-angular/
@@ -642,6 +644,12 @@ https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwi
 protractor是一个端到端的测试框架，主要用来测试angular和angularJs的应用。Protractor是一个Node.js程序，需要安装Node.js才可运行。Protractor默认使用Jasmine测试框架：
 https://blog.csdn.net/qyl_0316/article/details/86229288
 http://www.fly63.com/nav/324
+
+Ckeditor5用ng-deep设置高度（height）的原理是啥？https://q.cnblogs.com/q/109852/
+monaco 编辑器【可以作为代码编辑器使用】：
+  https://microsoft.github.io/monaco-editor/
+  https://blog.csdn.net/gao_grace/article/details/88890895
+  https://zhuanlan.zhihu.com/p/47746336
 
 ==============================================================================================
 
@@ -656,11 +664,11 @@ https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
 右下方的提示框应该有一个弹出的过程，我看公司里面的现在直接显示体验并不好
 
 Managing Subscriptions in Angular With the Async Pipe：
-https://alligator.io/angular/async-pipe/
-https://segmentfault.com/a/1190000008759314
+  https://alligator.io/angular/async-pipe/
+  https://segmentfault.com/a/1190000008759314
 管道再看一版：
-https://www.concretepage.com/angular-2/angular-2-json-pipe-example
-https://www.concretepage.com/angular-2/angular-2-slice-pipe-example
+  https://www.concretepage.com/angular-2/angular-2-json-pipe-example
+  https://www.concretepage.com/angular-2/angular-2-slice-pipe-example
 
 Angular 9和Yarn 2发布：https://zhuanlan.zhihu.com/p/107678725
 angular9：1.升级后可能和哪些东西有兼容性冲突【搞清楚这一点再思考：是不是2020年底换比较合适】？2.升级一定要开新分支，规范流程：
@@ -673,8 +681,8 @@ angular9的升级：http://www.linuxeden.com/a/61695
 Angular9新特性以及升级指南：https://zhuanlan.zhihu.com/p/108563871
 
 ES6 Tutorial：
-https://www.tutorialspoint.com/es6/index.htm
-https://www.javascripttutorial.net/es6/
+  https://www.tutorialspoint.com/es6/index.htm
+  https://www.javascripttutorial.net/es6/
 把headers用好：
   //导入四有档案的Excel
   importCpuBaseInfoExcel(evt) {
@@ -704,10 +712,8 @@ https://shabang.dev/question/what-are-the-new-features-of-html6/
 web大前端面试——JavaScript：https://www.jianshu.com/p/4840a90751e1
 弹性布局 - 手册(自整理)：https://www.jianshu.com/p/22e262fddcea
 
-How to Modularize an Angular Application：
-https://dzone.com/articles/howto-modularize-an-angular-application-by-example?fromrel=true
-Refresh an Angular Component without reloading the same Component：
-https://dzone.com/articles/refresh-angular-component-without-reload-or-naviga?fromrel=true
+How to Modularize an Angular Application：https://dzone.com/articles/howto-modularize-an-angular-application-by-example?fromrel=true
+Refresh an Angular Component without reloading the same Component：https://dzone.com/articles/refresh-angular-component-without-reload-or-naviga?fromrel=true
 
 Java里面也有NaN（double的除法），把java和JS里面的NaN再学习一下：
 https://www.cnblogs.com/xubiao/p/5461714.html
@@ -773,6 +779,11 @@ oauth2集成shiro.XDF：http://www.doc88.com/p-1942503494803.html
 是不是应该把一类操作的component做成一个module？例如article的增删查改（深入思考一下这个问题）
 
 必须要用npm才能进行web开发我说实话有点耍流氓，web什么时候变成这样了吗，人为操作dom是原罪，使用回调是原罪，连ajax都以使用XMLHttpRequest不使用fetch为耻，这正常吗，这自由吗，再我看来，自由的web早就是一句空话了，什么兼容并包，都是空话，从早起的yui歧视jquery体系,到现在的react,ng4歧视vue都不过如此，真是让人觉得可笑。vue2，react能火起来要感谢饿了么，蚂蚁金服开源出来的一套很完整的web组件库，只有这些平易近人的组件库才是真正解决了开发效率的问题，ng4在我看来还是很缺乏像element-ui,antd这么齐备和大规模使用的组件库.ng4在我看来最大的问题就是没有一个能真正值得使用的组件库，别跟我提什么 Material 2, primeng, ng2-bootstrap这些我都看了，但都不成体系，而且也有不少问题，离vue2的代表组件库element-ui,和react组件库antd还是有不少差距的，看一个组件库我只看几个关键组件，table如果不支持表头固定，表头拖拽，表头分组，以及排序筛选，那都称不上是一个合格的table组件，如果这些都没有我还不如用bootstrap-table自己简单封装下,更别提表头列双固定了，然后就是有没有类似select2的封装组件，时间控件啊，日期控件啊，输入控件啊，反正越傻瓜越好。
+angular8 实现table表格表头固定：
+  https://blog.csdn.net/qq_16566415/article/details/103803497
+  https://www.cnblogs.com/amanda-man/p/13559929.html
+Angular动态表头：https://blog.csdn.net/zhoulizhu/article/details/104906144
+复杂表头：http://www.geezn.com/documents/gez/help/370985-1428495312378685.html
 
 es6新出的promise对象以及es7的async await：
 https://javascript.info/async-await
@@ -1061,8 +1072,8 @@ ng2-admin【后来的ngx-admin】：https://akveo.github.io/ng2-admin/
 【在这些的基础上，还会遇到再次下载第三方控件和自己写、配置样式的问题】
 material design的主题 + angular material
 2.0.bootstrap主题+ng-bootstrap控件；
-2.1.ngx-admin + primeng(UI components)；
-2.2.admin-lte(定制) + primeng(UI components)；
+2.1.ngx-admin + primeng(UI components)【这个不行吧？primeng好像不是bootstrap系的】；
+2.2.admin-lte(定制) + primeng(UI components)【这个不行吧？primeng好像不是bootstrap系的】；
 2.3.ngx-admin + ng-zorro；
 2.4.admin-lte(定制) + ng-zorro；
 2.5.admin-lte(定制) + 库里找零散控件或者自己封控件
@@ -1071,6 +1082,16 @@ material design的主题 + angular material
 2.8.ngx-admin + 自带的控件
 分析各个类别的优缺点
 既然angular material可以自定义theme，那么它能不能和bootstrap主题一起使用？
+
+Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
+primeng是“一个极为完善的开源 Angular UI 组件库”【用到了CDK，有free themes和PrimeNG Theme Designer】：
+https://www.oschina.net/news/102282/primeng-7-0-0-released
+看primeng与主题的配合，应该是配合非bootstrap的主题
+PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
+PrimeNG的封装：
+https://www.npmjs.com/package/@al/ng-generic-components
+https://www.npmjs.com/package/@al/ng-navigation-components
+
 
 3.2.jhipster单独研究：
 	https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
@@ -1084,7 +1105,8 @@ material design的主题 + angular material
 
 angular无用代码扫描
 
-Top Angular Component Libraries to Try in 2020：https://aglowiditsolutions.com/blog/top-angular-component-libraries/
+https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
+https://2muchcoffee.com/blog/12-angular-6-libraries-2018/Top Angular Component Libraries to Try in 2020：https://aglowiditsolutions.com/blog/top-angular-component-libraries/
 Best Angular UI Component Libraries：https://www.ngdevelop.tech/best-angular-ui-component-libraries/
 7 Best Angular UI Component Libraries For Faster App Development：https://angularscript.com/best-ui-component-libraries/
 15 Best Angular Material Component Libraries：https://www.dunebook.com/15-best-angular-material-component-libraries/
@@ -1157,7 +1179,6 @@ http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-prima
 看懂INDIGO与material细节与关联
 color-palette的作用？https://materializecss.com/color.html
 
-
 ng-bootstrap 以需要引入ngbModule，任何组件，如分页，tab,datapicker......都可以使用了,
 但是ngx-bootstrap必须使用哪个组件就引入哪个组件，个人推荐使用ngx-bootstrap：https://blog.csdn.net/weixin_30520015/article/details/97287278
 用ngx-bootstrap，效能会比用bootstrap好很多吗【里面的回复貌似不能赞同啊】：https://segmentfault.com/q/1010000018916806/
@@ -1169,7 +1190,6 @@ Angular 7/8 & Bootstrap 4 UIs: ng-bootstrap and ngx-bootstrap [Part 1]：https:/
 这个文章里面提到了使用ng-bootstrap的注意事项：https://www.sitepoint.com/bootstrap-ui-libraries-angular-react-vue/
 How to Add Bootstrap to an Angular CLI project：https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/
 How to Use Bootstrap 4 with Angular：https://www.bootstrapdash.com/use-bootstrap-4-with-angular/
-Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
 Add Bootstrap to an Angular application：https://blog.fullstacktraining.com/add-bootstrap-to-an-angular-application/
 How to Integrate Bootstrap with Angular (Angular 6)：https://grokonez.com/frontend/angular/angular-6/how-to-integrate-bootstrap-with-angular-angular-6
 
@@ -1248,6 +1268,7 @@ http://ghmagical.com/article/page/id/RgIvn9Pai3ks
 Angular4-创建自定义指令Directive学习文档 - 节流指令：https://www.jianshu.com/p/cbb7bb2158e3
 
 npm audit fix：https://www.cnblogs.com/lhuser/p/11107520.html
+在开发过程中为了保持界面样式的一致性，需要自定义scrollbar的样式：https://blog.csdn.net/m0_37895683/article/details/103310122
 
 Angular 8 UI Components（jQWidgets）：https://www.jqwidgets.com/angular/
 jQWidgets，有2个方面的东西：1.看看控件的能力；2.看看angular怎么封装（教程里面是直接封装这个把）【既然可以根据thme封装，jquery版的也是可以封装的】：https://www.jqwidgets.com/angular-components-documentation/
@@ -2161,8 +2182,6 @@ https://www.infragistics.com/community/blogs/b/infragistics/posts/ignite-ui-for-
 Angular最佳UI框架：https://www.jianshu.com/p/0051e626b88b
 FreeNG | 基于Angular4的前端UI框架【有一年多没更新了，可以用于学习】：https://imweb.io/topic/59298852473c0f2f7003469e
 angular-material-app（基于最新Angular 7框架与Material 2技术的企业级中后台前端应用框架）：https://gitee.com/425048/angular-material-app
-primeng是“一个极为完善的开源 Angular UI 组件库”【用到了CDK，有free themes和PrimeNG Theme Designer】：
-https://www.oschina.net/news/102282/primeng-7-0-0-released
 【搞懂这些选型至少需要2个月，结合选型要素来学习】
 
 ngx-bootstrap：https://blog.csdn.net/kuangshp128/article/details/72395937/
@@ -2604,7 +2623,6 @@ https://www.cnblogs.com/scott-j/p/9016027.html
 http://www.pianshen.com/article/8407402515/
 https://www.jianshu.com/p/1426a371a7dd
 Angular7+Ckeditor5基础功能整合：https://blog.csdn.net/nzyalj/article/details/87870762
-Ckeditor5用ng-deep设置高度（height）的原理是啥？https://q.cnblogs.com/q/109852/
 富文本插件angular2-froala-wysiwyg：https://blog.csdn.net/i_quite/article/details/82624986
 在 angular6/7 中使用 umeditor 富文本编辑器：https://blog.csdn.net/lurenxie/article/details/93170297
 tinymce富文本编辑器：https://blog.csdn.net/qq_34181830/article/details/55510882

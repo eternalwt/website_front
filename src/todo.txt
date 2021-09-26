@@ -15,31 +15,31 @@
   1.注重每个细节问题：单点突破；
   2.整体切换：解耦
 
-material再搞一轮【总要先固定一个内容打通】：https://juejin.cn/post/6844903894561062926
+我的路走偏了，现在确定的路线：以ngx-bootstrap控件为主体，引入bootstrap和其他ngx控件。先把这一条路打通，做一个可用的产品，不要在乎cdk、ng-alain之类的概念。并且确认如下问题：
+  1.ngx-admin-lte里面有些什么东西，能否适配最新的bootstrap5；
+  2.ngx-bootstrap能否适配最新的bootstrap5，并固定版本，后续升级版本；
+  3.把material的内容移到另一个工程中，并上传github；
+  4.对于每一个ng-控件，看看有没有对应的ngx控件，找到最佳实践，搞清楚源码；
+  5.完善下面200行列出的一些基本功能，完善现有的前端功能；
+  6.穿插基础知识（js和angular基础知识）；
+  7.继续比较和实验其他主题，例如vali，和控件库。
+
+material再搞一轮【单独开一个项目搞】：https://juejin.cn/post/6844903894561062926
 
 当前修改到：perm-assign.component.ts：写通save方法。是不是可以尝试把按钮权限也直接写通？【可以】
+
+首先搞懂一个问题：bootstrap的表格与下载的表格控件最主要的区别是什么？是不是有了bootstrap的进行封装就可以了？
 
 angular4如何使用Bootstrap的datetimepicker组件：https://blog.csdn.net/qq_34908167/article/details/79913199
 
 【下一步，重点】直接对着控件搜样式，逐个学习，例如：ngx-treeview、样式
 Angular5 自定义scrollbar样式之 ngx-malihu-scrollbar：https://www.shuzhiduo.com/A/obzbAGLjdE/
-将项目中的ng2-tree组件替换成ngx-tree：https://blog.csdn.net/qq_43263320/article/details/118735088
+将项目中的ng2-tree组件替换成ngx-tree
 使用别人的控件，一旦涉及到定制，代码就会分析。注意这其中的风险。
 angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
 
-angular6 中使用bootstrap：
-  https://www.cnblogs.com/king94Boy/p/9669284.html
-  https://blog.csdn.net/m0_38106923/article/details/101050788
-  https://www.hkinfosoft.com/blog/11-angular-component-libraries-you-should-know-in-2018
-  https://2muchcoffee.com/blog/12-angular-6-libraries-2018/
-
-漫谈 Angular 定制主题的四种方式：https://zhuanlan.zhihu.com/p/72178646
-angular实现皮肤主题切换的方案：https://segmentfault.com/a/1190000017751854
-六种主题风格的Angular10+和Nebular后台管理模板：https://www.moyouyouw.cn/code/1385.html
-使用Angular material主题定义自己的组件库的配色体系：https://www.jb51.net/article/169239.htm
-Angular Material主题配置：https://www.cnblogs.com/ylp0617/p/6902856.html
-基于Angular 8和Bootstrap 4实现动态主题切换：https://www.cnblogs.com/daxnet/p/dynamic-theme-with-angular-8-and-bootstrap.html
-如何实现Angular Material自定义主题：https://juejin.cn/post/6844903894561062926
+1.再看ngx-bootstrap有些什么；2.确认ng-zorro与bootstrap的适配。
+bootstrap与ant design是否搭？
 
 把菜单权限配置做出来【还差一个保存，先做个最low的保存】
 3.角色、用户的增删查改【前端】及权限分配；
@@ -146,16 +146,14 @@ angular-awesome-slider：https://github.com/darul75/angular-awesome-slider
 把现在已经安装的组件还是要逐个分析一遍，过细一点。并且要尝试升级，在这个过程中积累工程经验
 前端代码写的不在多，要把现在涉及到的先方方面面搞清楚
 
-primeng、ngx-admin、ng-zorro【再看一遍，然后看看别人的那段话是否在理，验证一下】
+ngx-admin、ng-zorro【再看一遍，然后看看别人的那段话是否在理，验证一下】
 ngx-admin看一下、ng-alain再看一下、ngx-控件继续看最终选型
-看primeng与主题的配合
 AdminLTE是不是有JQ问题？
 
 搜一下图片对比控件，进一步提升搜索能力
 老老实实封装5到10个控件再继续
 控件的样式修改、看源码并能改造（甚至把源码扣下来实现自己的控件）：这些也是前期比较关键的
 试分析几个控件源码
-PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
 ng-zorro源码
 ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com/haogj/p/11210861.html
 实现5个控件练手（biying搜索学习）【从primeng寻找灵感？】：modal，不是那么好实现的
@@ -178,9 +176,6 @@ Angular 组件库 NG-NEST 1.0.0 发布：https://zhuanlan.zhihu.com/p/143815952
 1.使用reset来清空内容【把父类那个最佳实践加上去】。表单再突破一次
 2.弹出框先在现在的基础上搞，然后也得搞一个ng的【如果不会读代码、不能改代码就不行】
 ng-bootstrap：https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
-PrimeNG的封装：
-https://www.npmjs.com/package/@al/ng-generic-components
-https://www.npmjs.com/package/@al/ng-navigation-components
 
 【周六】
 【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
@@ -219,6 +214,9 @@ npm 模块安装机制简介：https://www.ruanyifeng.com/blog/2016/01/npm-insta
 npm install 安装过程分析：https://www.cnblogs.com/everlose/p/12505245.html
 npm包发布流程和如何看插件源码：https://blog.csdn.net/u010377383/article/details/86858517
 
+使用Angular material主题定义自己的组件库的配色体系：https://www.jb51.net/article/169239.htm
+如何实现Angular Material自定义主题：https://juejin.cn/post/6844903894561062926
+Angular Material主题配置：https://www.cnblogs.com/ylp0617/p/6902856.html
 Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
   https://www.cnblogs.com/nzbin/p/11150811.html
   https://www.cnblogs.com/nzbin/p/11392311.html
@@ -342,7 +340,7 @@ ng-bootstrap可以补充AdminLTE的控件【要试，不动手试永远不确定
 Popover、Tooltip、Rating、Progressbar这种没有框的可以先用起来（节省工作量）、Pagination这种是不是可以先看AdminLTE里面的样式，看准了就可以用了（毕竟自己封装@Input、@Output还是有点麻烦）
 1.ngx-控件先试用【应该和echarts用法一样，先知道有个很NB的JS库，然后去找对应的ngx版，找找z-tree】；
   ng2-dragula：
-  ngx-bootstrap、ngx-color-picker：https://www.npmjs.com/package/
+  ngx-color-picker：https://www.npmjs.com/package/
   ng2-charts、ng2-select、ng2-table
   ngx-progress、ng-circle-progress、ng2-multi-step-form
   ngx-alert：https://www.jianshu.com/p/3c47c5fe11e6
@@ -357,6 +355,14 @@ angular封装弹出框：
   https://www.cnblogs.com/xiaojing140421/p/9389259.html
   https://jingyan.baidu.com/article/93f9803f596da7e0e46f55be.html
   https://www.cnblogs.com/cench/p/5448624.html
+
+GitHub开源的10个超棒后台管理面板：https://blog.csdn.net/m0_38106923/article/details/101050788
+
+angular6 中使用bootstrap【引入非常简单】：https://www.cnblogs.com/king94Boy/p/9669284.html
+漫谈 Angular 定制主题的四种方式：https://zhuanlan.zhihu.com/p/72178646
+angular实现皮肤主题切换的方案：https://segmentfault.com/a/1190000017751854
+六种主题风格的Angular10+和Nebular后台管理模板：https://www.moyouyouw.cn/code/1385.html
+基于Angular 8和Bootstrap 4实现动态主题切换：https://www.cnblogs.com/daxnet/p/dynamic-theme-with-angular-8-and-bootstrap.html
 
 JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框架，它实现了Angular1和Angular2两个版本，选择范围比较广。可以利用它快速搭建应用框架。
 值得推荐的七种好用的Angular组件库：
@@ -375,6 +381,13 @@ JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框�
 form抽父类，dialog也可以放进去，把alert替换掉
 ckEditor的上传图片
 布局方面提升：搜一下用到block的地方，对比flex和grid
+
+【如果想要对第三方控件有更完全的控制，有源码的可以下载源码】
+兼容第三方控件：
+  1.评估一个第三方控件的功能、可用性、稳定性；
+  2.使用ng-deep做基本的布局调整，确认与主题能否兼容；
+  3.观察使用的主题的特点，做一致性调整。
+Angular中修改第三方组件的样式 - zorro日期选择器右端不对齐的BUG：https://segmentfault.com/a/1190000018217966
 
 20210921搜集的一些文章：
   https://zhuanlan.zhihu.com/p/34216899
@@ -471,11 +484,6 @@ Angular Component Styles：
   https://codecraft.tv/courses/angular/components/templates-styles-view-encapsulation/
   https://coryrylan.com/blog/css-encapsulation-with-angular-components
 
-ElementUI（别人也提到），Element-Angular：https://blog.csdn.net/come0across/article/details/89017958
-element-angular（Element Angular Ex）【已经一年多没更新了】：
-  https://element-angular.faas.ele.me/guide/install
-  https://github.com/elemeFE/element-angular
-
 读一下我的form代码，按钮和input样式先改过来
 ng-bootstrap的文档再清理一次
 
@@ -489,10 +497,18 @@ AdminLTE的Advanced Form值得学习一下
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
 【最快的搭AdminLTE的办法是用别人改造成的angular版开源的，直接测试、直接开搞，很轻量没有损失】
 2.看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说：https://akveo.github.io/nebular/
-ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular.【用之前应该先评估一下bootstrap有哪些组件】：
-https://www.npmjs.com/package/ngx-bootstrap
+
 3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial：https://www.techiediaries.com/angular-bootstrap/
 ngx-admin-lte：https://github.com/TwanoO67/ngx-admin-lte
+
+ngx-treeview、ngx-doc-viewer、ngx-multi-modal与ngx-bootstrap是什么关系？与ngx-admin-lte是什么关系？
+【确认】我对ngx-bootstrap的理解：1.安装了bootstrap；2.把bootstrap元素做了封装，本质是一个组件集。【怎么跟ngx-admin-lte兼容？】
+确认ngx-admin-lte里面有些什么封装
+【ngx-admin-lte可以理解为提供了框架布局和一些示例代码，ngx-bootstrap可以理解为封装的bootstrap控件库。它们都包含了bootstrap】它们之间的配合应该是保证bootstrap版本一致，从实用性上来说，ngx-bootstrap对提升生产力更有用，ngx-admin-lte中的一些内容可以根据需要单独添加（最好再确认一下ngx-admin-lte里面有些啥）。ngx-bootstrap里面的组件不完整或者功能太简单的话，还可以考虑ng-zorro作为补充，这时候就应该让ng-zorro的样式适配主题了【兼容性确认清楚，就可以在生产环境中使用了】：1.安装ngx-admin-lte；2.安装ngx-bootstrap，但是不需要再次引入bootstrap.min.css的文件；
+ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular.【用之前应该先评估一下bootstrap有哪些组件】：
+https://www.npmjs.com/package/ngx-bootstrap
+ngx-bootstrap有些什么功能？对比ng-zorro？
+angular7 集成ngx-bootstrap：https://blog.csdn.net/weixin_43123610/article/details/88994113
 
 把各种设计风格对比一下（界面、行为），这样才知道他们的主题、控件能否共存
 
@@ -586,7 +602,8 @@ https://material.angular.io/guide/theming（angular material的具体操作还�
 【复工之前一定要把主题改一版，哪怕用material design的】
 再看一下angular material 4种主题的效果
 如何将less改为scss？
-The Material Design color system can help you create a color theme that reflects your brand or style：https://material.io/design/color/#
+
+Angular两种模态框弹出方式：https://blog.csdn.net/qq_34551390/article/details/78270869
 
 应该首先关注主题，主题有了没有控件也是可以实现功能的，或者自己封装，只是可能看起来没有那么紧凑。
 
@@ -678,6 +695,8 @@ https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
 
 【25号】
 调样式(indigo-pink.css)：1.表格布局；2.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？5.表格的样式
+现在用的样式，就是angular material的样式：@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 推动不了，是不是应该先看mybatis源码了？
 多tab页路由复用
 
@@ -687,7 +706,6 @@ https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
 
 angular的一些基本使用实例：https://blog.csdn.net/z_robot/article/details/103685702
 关于Angular微前端ngx-planet实现过程解析：https://zhuanlan.zhihu.com/p/346915189
-angular7 集成ngx-bootstrap：https://blog.csdn.net/weixin_43123610/article/details/88994113
 
 1.【在financial项目中】把ehcache3.x彻底配好（单元测试）【还是没搞清楚：springboot是怎么用ehcache的（怎么关联起来的，再看一遍）。搞懂这个，单元测试ehcache才放心】；
 2.x测通、代码写好后，再把2.x的pom配置干掉；
@@ -920,7 +938,6 @@ bootstrap4与其他组件样式之间的兼容性：
 1.看看现在的模板是不是都是bootstrap的；
 2.从小问题入手：bootstrap和ckeditor、quill样式之间的兼容性
 angular 4 引用 bootstrap 4 记录总结：https://www.cnblogs.com/xxx91hx/p/7898642.html
-现在用的样式，就是angular material的样式：@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 NG Bootstrap 4.2.0 发布，Bootstrap 的 Angular 集成【把前端的解决方案看清楚，多看一些文章（10到20篇）】：https://www.liangzl.com/get-article-detail-130753.html
 Angular 8 UI Components：
 https://www.jqwidgets.com/angular/
@@ -986,4 +1003,8 @@ angular.json参数详解(DevKit)：
 1.index.html里面的<app-root></app-root>换成<app-login></app-login>；
 2.app.module.ts里面的bootstrap做替换：bootstrap: [LoginComponent]//AppComponent
 
-
+Bootstrap和Ant Design、Element UI的核心区别就在于组件库上。所以看你的需求，Bootstrap官方以及第三方能找到的组件库是否满足你的需要：https://www.zhihu.com/question/377211519
+ElementUI（别人也提到），Element-Angular：https://blog.csdn.net/come0across/article/details/89017958
+element-angular（Element Angular Ex）【已经一年多没更新了】：
+  https://element-angular.faas.ele.me/guide/install
+  https://github.com/elemeFE/element-angular
