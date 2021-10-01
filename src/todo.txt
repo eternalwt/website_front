@@ -36,8 +36,6 @@
 1.再看ngx-bootstrap有些什么组件【搜文章或者从目录看】；2.确认ng-zorro与bootstrap的适配。
 bootstrap与ant design是否搭？
 
-如何写一个自己的npm包：https://www.jianshu.com/p/fafc88e74764
-
 还有几个关键问题：
   1.看看我的几个ngx-xxx源码，以及它们是怎么定义成module怎么引入的，怎么自己制作npm包；
   2.找一些好用的ngx-table之类的关键组件（当然要先熟悉ngx-bootstrap里面的），必要的时候把公司的组件拷贝回来；
@@ -129,6 +127,8 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 【晚上】git clone一下我的新库
 
+关注前端基础设施
+
 【看代码】我以前引入的ngx-treeview等组件，他们里面有没有用到jQuery？升级bootstrap 5.1后会不会有问题？
 先看一遍bootstrap5.1是什么样的，看ngx-bootstrp有哪些组件，然后看bootstrap5.1中哪些在ngx-bootstrap中做了封装，哪些没有做封装，没有封装的部分为什么没做封装？（是不好封装还是不是通用的没必要封装？）
 看ngx-bootstrap里面的样式。再次确认primeng能不能用于bootstrap，以及其他组件库
@@ -183,7 +183,7 @@ What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
 【下一步最打紧的是搞清楚控件代码的阅读、修改、调试】
 
 门户网站群建设的技术要点：https://zhuanlan.zhihu.com/p/398718963
-智慧门户单点系统的研究：https://zhuanlan.zhihu.com/p/408071690
+智慧门户单点系统的研究【可以看到门户网站有哪些模块】：https://zhuanlan.zhihu.com/p/408071690
 门户网站的突破，可以上B站学习：https://search.bilibili.com/all?keyword=%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&from_source=nav_search_new
 react开发企业中后台产品、政务门户网站的一些总结：https://www.cnblogs.com/seemoon/p/12218721.html
 react那么火，为什么淘宝&京东首页不使用react？https://www.zhihu.com/question/317973545/answer/641955120

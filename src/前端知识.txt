@@ -49,14 +49,26 @@ for await of：
   https://blog.csdn.net/webFrontEndDev/article/details/103142119
 
 ES6中的迭代器(Iterator)和生成器(Generator)：https://www.cnblogs.com/xiaohuochai/p/7253466.html
+通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
 
 【我对promise理解到这句话的程度了】有了 Promise 对象，就可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。
 此外，Promise 对象提供统一的接口，使得控制异步操作更加容易：https://www.runoob.com/w3cnote/javascript-promise-object.html
 
 【第一个重要问题：如何下载、修改npm组件的源码？】
+如何写一个自己的npm包：https://www.jianshu.com/p/fafc88e74764
 
+再看英文版router-outlet的解释
 Angular：都 2021 年了，你为啥还没用 Angular：https://juejin.cn/post/6959373663040700446
+How ANGULAR Trigger index.html And Start Working：https://dev.to/casperns/how-angular-trigger-indexhtml-and-start-working-1l46
+Lern how to split your Angular App into Modules：https://malcoded.com/posts/angular-fundamentals-modules/
+我对angular index.html等的理解：
+  1.index.html是页面的容器；
+  2.app.module.ts指定了第一个要加载的component：AppComponent（这个component的selector名字在index.htlm里面也出现了）；
+  3.AppComponent只是放一个路由插座，配合app-routing.module.ts里面的路由，显示SPA的第一个有效页面。
+  4.如何用好app.module.ts这个模块？以及，app-routing.module.ts这个模块添加多个component的场景是啥？
 
+
+请问一下各位大佬，js的静态方法有啥作用呀，写工具类吗？https://www.zhihu.com/question/423086350/answer/1499324613
 学习Lodash：
   https://www.jianshu.com/p/832ac54b95b5
   https://www.jianshu.com/p/c59f1b2bafae
@@ -68,13 +80,10 @@ Angular：都 2021 年了，你为啥还没用 Angular：https://juejin.cn/post/
   https://underscorejs.org/
   https://github.com/jashkenas/underscore
 
-demo工程如果不加路由会怎样？（后面可以再加）
 全局node_modules路径：C:\Users\gao\AppData\Roaming\npm\node_modules
 
 Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/117616/open-source-svg-icon-library-for-bootstrap
 潮流前端周刊（第 3 期）：https://zhuanlan.zhihu.com/p/256068764
-
-请问一下各位大佬，js的静态方法有啥作用呀，写工具类吗？https://www.zhihu.com/question/423086350/answer/1499324613
 
 常用 npm 包：
   https://blog.csdn.net/qq_31964019/article/details/107765220
@@ -502,8 +511,6 @@ JS 闭包有哪些经典的使用场景和源代码？https://www.zhihu.com/ques
 
 Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
-通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
-
 写一个CSS样式之前，一定要搞清楚为什么那样写，是可以写好的：https://www.bitdegree.org/learn/css-display
 
 几款前端开源模板：https://blog.csdn.net/sinat_40770656/article/details/95058150
@@ -552,7 +559,6 @@ https://blog.csdn.net/weixin_30878361/article/details/99350641
 https://blog.csdn.net/heart_is_sunny/article/details/97524490?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.nonecase
 
 近几年来，前端面试的难度上了一个档次，我们前端工程师要刷 LeetCode， 要手写一大堆工具函数：函数节流、防抖、数组去重、扁平化，对象深拷贝等：https://www.jianshu.com/p/763ab70f791e
-generator搞懂后，再回过头看js的generator生成器函数
 前端写代码真的有必要封装太好么? https://www.zhihu.com/question/397593209/answer/1253599319
 
 Creating a File Explorer Component in Angular：
@@ -1123,6 +1129,17 @@ Top 27 Angular Components for Web Developers：https://colorlib.com/wp/angular-c
 
 看看这个async的用法：<li *ngFor="let customer of customers | async; let i=index">
 How to use async functions with Array.forEach in Javascript：https://advancedweb.hu/how-to-use-async-functions-with-array-foreach-in-javascript/
+
+如何快速搭建前端技术团队基础设施/前端工程化【其实我想要的是功能代码方面的基础设施】：
+  https://www.infoq.cn/article/ozRH7JU2BGGQd0VLcvVg/
+  https://time.geekbang.org/dailylesson/detail/100016739?utm_source=related_read&utm_medium=article&utm_term=related_read
+  https://www.jianshu.com/p/3a2a7e8cb712
+  https://zhuanlan.zhihu.com/p/110119309
+  https://segmentfault.com/a/1190000022087724
+  http://www.360doc.com/content/20/0502/22/31263000_909862908.shtml
+  https://wenku.baidu.com/view/02974c9af21dc281e53a580216fc700aba685248.html
+  https://www.kancloud.cn/csnikey/fepro-guide/679639
+百度前端性能优化基础设施介绍：http://www.doc88.com/p-7069944606789.html
 
 ==============================================================================================
 
@@ -1752,6 +1769,9 @@ Angular组件篇：https://www.jianshu.com/p/f03c6df14956
 几款流行的angular组件库：https://blog.csdn.net/dengfangfang11/article/details/80326516
 javascript中的同步迭代和异步迭代：https://blog.csdn.net/zgrbsbf/article/details/95180183
 ES9中的异步迭代器（Async iterator）和异步生成器（Async generator）：https://blog.csdn.net/weixin_34162401/article/details/87993867
+generator搞懂后，再回过头看js的generator生成器函数
+ES6中的promise generator函数 ES7 asyc/await函数：https://blog.csdn.net/qq_38643776/article/details/90639846
+js 异步编程，async 函数与 Promise、Generator 函数的比较：https://www.cnblogs.com/tianzun-blog/p/8808068.html
 ES2018 新特征之：异步迭代器 for-await-of：https://blog.csdn.net/vCa54Lu0KV27w8ZZBd/article/details/80155429
 JavaScript利用闭包实现模块化：
 https://www.cnblogs.com/wswq/p/6282920.html
@@ -1760,8 +1780,6 @@ https://blog.csdn.net/weixin_34387284/article/details/87955456
 http://caibaojian.com/module-javascript.html
 https://cloud.tencent.com/developer/information/js%E6%A8%A1%E5%9D%97%E5%8C%96%E5%A5%BD%E5%A4%84
 https://juejin.im/post/5d92d0316fb9a04dec52f948
-ES6中的promise generator函数 ES7 asyc/await函数：https://blog.csdn.net/qq_38643776/article/details/90639846
-js 异步编程，async 函数与 Promise、Generator 函数的比较：https://www.cnblogs.com/tianzun-blog/p/8808068.html
 Promise对象：https://www.jmjc.tech/less/73
 我的理解：Promise将多个异步操作之间的时序关系分离出来并管理了起来，将他们以一种平级的关系顺序写出来。将代码的控制结构分离了出来：https://segmentfault.com/a/1190000013141641
 async await：
@@ -2687,6 +2705,7 @@ angular中内置的九种过滤器：https://www.cnblogs.com/rainbow8590/p/72393
 retry再看一下
 
 【使用angular能带来多大的效率提升？】
+应该如何看Angular 源码？https://www.zhihu.com/question/336802797/answer/789236310
 推荐angular的人挺多：https://www.zhihu.com/question/277894570
 为什么我的新项目使用 Angular 而不是 Vue：https://zhuanlan.zhihu.com/p/28348896
 angular框架的开发难度应该比spring更大吧？
@@ -2699,8 +2718,6 @@ Introduction To Dependency Injection And Services In Angular 2：https://www.c-s
 Angular 8 Tutorial：https://www.tutorialandexample.com/angular-8-tutorial/
 Learn Angular with free step by step angular tutorials：https://angular-templates.io/tutorials/about/learn-angular-from-scratch-step-by-step
 React vs Angular: Which Is A Better JavaScript Framework? https://technostacks.com/blog/react-vs-angular/
-
-应该如何看Angular 源码？https://www.zhihu.com/question/336802797/answer/789236310
 
 Decorators：
 https://www.codecompiled.com/typescript-tutorials/decorators-in-typescript/
@@ -2747,10 +2764,6 @@ http://pinkyjie.com/2016/02/21/e2e-testing-in-angular/
 
 从我接触asp.net开始，表格就一直是个重要的问题
 
-一句话概括：
-如果你的是小项目，别管那么多，一个根module解决所有；
-如果你是做中大型的项目，建议按业务模块划分module。
-
 2019前端趋势：
 https://segmentfault.com/a/1190000017764337?utm_source=tag-newest
 https://baijiahao.baidu.com/s?id=1622357257030014082&wfr=spider&for=pc
@@ -2766,33 +2779,33 @@ CSS in JS
 Angular 过时了吗?https://www.zhihu.com/question/383137600
 
 一步一步搭建前端监控系统：https://www.jianshu.com/p/c4549c28c64f
+使用 VSCode + ESLint 实践前端编码规范：https://gcdn.grapecity.com.cn/showtopic-36912-1-1.html
+了解如下插件的用法：Angular v7 Snippets、IntelliSense for CSS class names in HTML、ng-zorro snippets
+如何自动删掉多余的import
+Angular 提出一套打包格式建议名曰：Angular Package Format，包括 FESM2015、FESM5、UMD、ESM2015、ESM5、ES2015 格式：
+https://juejin.im/post/5bab64826fb9a05d2c43b3b4
+https://www.cnblogs.com/linjisong/p/6755987.html
 
 Bootstrapping multiple Angular 2 applications on the same page：https://blog.sstorie.com/bootstrapping-multiple-angular-2-applications-on-the-same-page/
 
 angular6 监听路由变化、获取路由名称：https://blog.csdn.net/weixin_42080477/article/details/97663956
 router源码分析。router的navigate很好理解，跳转到另一个页面呢？前后端交互呢？【跳转为什么是前端局部跳转，把这个问题搞清楚】
 怎么跟网址关联起来的？
-ActivatedRoute可以获取全局信息，全局信息是怎么保存的？
+ActivatedRoute可以获取全局信息，全局信息是怎么保存的？【先自己思考一下】
 router和activatedRouter的配合还是没搞清楚
 Angulars Router: the Introduction：https://ultimatecourses.com/blog/angular-component-router
 RouterLink：
 https://www.techiediaries.com/angular-router-routerlink-navigate-navigatebyurl/
 https://alligator.io/angular/navigation-routerlink-navigate-navigatebyurl/
 RouterLink应该是属于属性型指令【下一个问题是，为什么要用方括号？】：https://www.cnblogs.com/banluduxing/p/10402322.html
+Angular 深入理解Router：https://blog.csdn.net/xnh_565175944/article/details/82223852
 
 JavaScript和TypeScript交叉口 - 类型定义文件(*.d.ts)：
 https://www.cnblogs.com/silin6/p/7793753.html
 
-Angular 深入理解Router：https://blog.csdn.net/xnh_565175944/article/details/82223852
-
 Angular throwError：https://www.concretepage.com/angular/angular-throwerror
 
-使用 VSCode + ESLint 实践前端编码规范：https://gcdn.grapecity.com.cn/showtopic-36912-1-1.html
-
-了解如下插件的用法：Angular v7 Snippets、IntelliSense for CSS class names in HTML、ng-zorro snippets
-如何自动删掉多余的import
-
-前端封装组件没关系，但是很有可能复用度不高。本来前端就是后端数据的展示，具有相当大的灵活性。再遇到我们公司这种项目很多，界面随时要重新设计的情况，
+【不要为了封装而封装，根据业务的需要来做】前端封装组件没关系，但是很有可能复用度不高。本来前端就是后端数据的展示，具有相当大的灵活性。再遇到我们公司这种项目很多，界面随时要重新设计的情况，
 
 angular也应该看源码解析了，否则看依赖注入那些概念试图去记住没有任何意义
 
@@ -2804,10 +2817,6 @@ angular也应该看源码解析了，否则看依赖注入那些概念试图去�
 3.module用来组合前端组件、指令、管道
 
 在模块中打包服务与组件
-
-Angular 提出一套打包格式建议名曰：Angular Package Format，包括 FESM2015、FESM5、UMD、ESM2015、ESM5、ES2015 格式：
-https://juejin.im/post/5bab64826fb9a05d2c43b3b4
-https://www.cnblogs.com/linjisong/p/6755987.html
 
 127.0.0.1 和 localhost的区别：https://blog.csdn.net/root_miss/article/details/82587463
 
