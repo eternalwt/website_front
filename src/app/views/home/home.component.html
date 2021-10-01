@@ -1,11 +1,10 @@
 
 <app-toolbar></app-toolbar>
 
-<mat-sidenav-container class="tp-container">
-  <mat-sidenav mode="side" [opened]=true>
-    <app-nav></app-nav>
-  </mat-sidenav>
-  <mat-sidenav-content class="tp-content">
+<div class="d-flex">
+  <app-nav></app-nav>
+  <div>
     <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </div>
+</div>
+

@@ -5,10 +5,16 @@
 
 ================================================================================
 
-把左右栏重叠的问题解决
-【看mat-icon的源码】
+修改添加用户样式及使用的组件
+修改表格，研究bootstrap下的表格，把功能做完善
+把登录页面改成bootstrap的
+二级菜单
+添加点击链接更改样式的代码【用bootstrap的事件】
+【看mat-icon的源码】封装了什么东西？
+mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱
 
 1.学习bootstrap；2.用ngx-bootstrap改造现有项目
+写一个功能需要样式时，例如侧边栏，先查官网examples：https://getbootstrap.com/docs/5.1/examples/
 
 1.安装ngx-bootstrap，逐个替换现有页面
 2.把material移到另一个工程中，或者直接删掉【删除之前要看源码】
