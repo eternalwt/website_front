@@ -91,11 +91,20 @@ ES2021：
   https://zhuanlan.zhihu.com/p/386594787
   https://zhuanlan.zhihu.com/p/337369366
 
-【看一小时bootstrap 5】
+【搜bootstrap 5 plugin】
 angular 多页面应用
 DevUI Admin 2.0 重磅发布【华为的开源前端解决方案】：https://zhuanlan.zhihu.com/p/400436608
 Angular DOM 更新机制：https://zhuanlan.zhihu.com/p/36338142
 Bootstrap 5.1：https://v5.bootcss.com/
+css3打包后自动追加前缀插件：autoprefixer：https://www.likecs.com/default/index/show?id=44574
+HTML5新增的3种selector方法：https://www.cnblogs.com/xiaohuochai/p/5798014.html
+Bootstrap provides custom events for most plugins' unique actions：https://getbootstrap.com/docs/5.1/getting-started/javascript/
+Bootstrap 模态框自定义点击和关闭事件：https://blog.csdn.net/lm1022/article/details/79246673
+bootstrap提供了一些js API，例如：var modal = new bootstrap.Modal(myModalEl)
+A Beginner’s Guide to the Latest Bootstrap 5 Utilities【使用class设置各类样式，不只有栅格系统】：https://designmodo.com/bootstrap-5-utilities/
+对bootstrap的container基本认识：https://www.cnblogs.com/jaycethanks/p/13326332.html
+Bootstrap 超大屏幕（Jumbotron）：https://www.runoob.com/bootstrap/bootstrap-jumbotron.html
+Add Bootstrap 5 In Angular 11：https://www.c-sharpcorner.com/article/add-bootstrap-5-in-angular-11/
 
 ===========================================================================
 
@@ -177,9 +186,6 @@ ngx-select-dropdown：https://www.npmjs.com/package/ngx-select-dropdown
 angular-dropdown-search：https://www.npmjs.com/package/angular-dropdown-search
 @roambee/ng-dropdown-search：https://www.npmjs.com/package/@roambee/ng-dropdown-search
 ng-multiselect-dropdown9：https://www.npmjs.com/package/ng-multiselect-dropdown9
-
-2021年5月bootstrap 5发布：https://baijiahao.baidu.com/s?id=1698975353060510381&wfr=spider&for=pc
-2021年8月Bootstrap 5.1.0 正式发布：https://www.xujun.org/note-137797.html
 
 他们说全局安装angular-cli没意义，在配置文件指定就行了。typescript呢？应该也是一样，毕竟都是npm安装的：
 https://www.cnblogs.com/wyt007/p/10260524.html
@@ -269,8 +275,6 @@ HTML5之contenteditable可编辑属性：https://www.cnblogs.com/linx/p/8031411.
 contenteditable实现编辑器,光标、输入法处理，emoji的显示和转换存储：https://blog.csdn.net/lqyygyss/article/details/81773516
 为什么 ContentEditable 很恐怖：https://www.oschina.net/translate/why-contenteditable-is-terrible
 
-跟踪代码来看http rxjs的实现
-
 原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
 Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
 fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
@@ -283,7 +287,6 @@ call()、apply()、bind() 都是用来重定义 this 这个对象的：https://w
 Javascript中数组方法reduce的妙用之处：https://www.jianshu.com/p/b415e46b4c8a
 
 JavaScript中的Event Loop（事件循环）机制：https://zhuanlan.zhihu.com/p/145383822
-前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
 头条前端面试：https://zhuanlan.zhihu.com/p/148939073
 
 网页布局都有哪种？一般都用什么布局？https://zhuanlan.zhihu.com/p/202748637
@@ -320,6 +323,10 @@ https://segmentfault.com/a/1190000010252809
 
 ramda一款实用的 JavaScript 函数式编程库：https://ramda.cn/
 
+rxjs及后端响应式编程要突破
+教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
+跟踪代码来看http rxjs的实现
+前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
 【本周学习任务】rxjs的响应式搞清楚（里面讲到了rxjs的优势，例如 isolate the application state）：
 https://codingcompiler.com/rxjs-tutorial/
 Observable的优势2是可以提供一种统一的编程方式（我自己总结的）：https://scotch.io/tutorials/angular-2-http-requests-with-observables
@@ -335,6 +342,85 @@ https://zhuanlan.zhihu.com/p/34927042
 https://zhuanlan.zhihu.com/p/110007033
 pipe()作为一种链接运算符的方法
 RxJS的API列表：https://zhuanlan.zhihu.com/p/25383159
+rxjs取消订阅的几个文章：
+https://limeii.github.io/2019/08/rxjs-unsubscribe/
+https://blog.csdn.net/weixin_33777877/article/details/88063179
+https://www.jianshu.com/p/5e885293bf03
+https://www.jianshu.com/p/da9934d6143c
+【能把promise、async/await、rxjs互相转换，才算搞懂了这一块。需要几个例子练手】
+【比较一下】
+从事件创建：fromEvent
+从Promise创建：fromPromise
+【需要进一步了解的转换操作】
+改变数据形态：map, mapTo, pluck：https://www.learnrxjs.io/learn-rxjs/operators/transformation/pluck
+时间轴上的操作：delay, timeout, throttle, debounce, audit, bufferTime
+【比较这两种写法的等价性】
+一般在Angular我们 subscribe 会这么写：
+input$.subscribe((event: any) => {
+});
+从语法角度来讲和 subscribe({ next, error, complete }) 是一样的
+【看一下这些名字很诱人的章节】：
+Breakout Game：https://www.learnrxjs.io/learn-rxjs/recipes/breakout-game
+Car Racing Game：https://www.learnrxjs.io/learn-rxjs/recipes/car-racing-game
+Lockscreen：https://www.learnrxjs.io/learn-rxjs/recipes/lockscreen
+Memory Game：https://www.learnrxjs.io/learn-rxjs/recipes/memory-game
+Mine Sweeper Game：https://www.learnrxjs.io/learn-rxjs/recipes/mine-sweeper-game
+Platform Jumper Game：https://www.learnrxjs.io/learn-rxjs/recipes/platform-jumper-game
+Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
+Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
+
+return this.http.post(`/blog/manager/login`, body)
+	.toPromise()
+	.then(res => res);
+}
+
+autoLogin(): Promise<any> {
+  const headers = new HttpHeaders();
+  headers.append('Content-Type', 'application/x-www-form-urlencoded');
+  const param = new HttpParams().set("token",localStorage.getItem("token"));
+  return this.http.post(`/blog/manager/autoLogin`, param,{
+    headers:headers
+  })
+  .toPromise()
+  .then(res => res);
+响应式编程入门指南 - 通俗易懂 RxJS：https://zhuanlan.zhihu.com/p/102446217
+通俗的方式理解RxJS：https://segmentfault.com/a/1190000008464065
+Hot vs Cold Observables：
+https://segmentfault.com/a/1190000011052037
+https://angular-2-training-book.rangle.io/observables/cold_vs_hot_observables
+Rxjs的zip和switchMap方法：https://blog.csdn.net/weixin_39460408/article/details/80995242
+【Rxjs】实例讲解zip和combineLatest操作符的区别：https://blog.csdn.net/u010176097/article/details/102579886
+[译] RxJS: 理解 publish 和 share 操作符：https://zhuanlan.zhihu.com/p/33225623
+[译] RxJS: 如何使用 refCount：https://zhuanlan.zhihu.com/p/33621290
+RxJS的核心代码实现？Observable.from(names)生成的observable，是怎么吐值给Observer的？
+rxjs源码分析【Observable、Oserver、Subscription、Operators、Subject、Schedulers】：
+https://blog.csdn.net/zhy13087344578/article/details/79377395
+https://www.cnblogs.com/tangzhirong/p/7424777.html
+https://www.jianshu.com/p/13397a37649e
+RxJS 过滤操作符 debounce，debounceTime，throttle，throttleTime：https://www.jianshu.com/p/66f37e024278
+一定要从big picture来再次overview RxJS。RxJS至少要2周到1个月才能学的比较好
+RxJS的另外四种实现方式（后记）- 同时实现管道和链式编程：
+https://my.oschina.net/langhuihui/blog/2208142
+https://blog.csdn.net/oYiGeHui/article/details/82821125
+关于Angular6版本升级和RXJS6新特性的讲解：https://blog.csdn.net/bangunzheng7426/article/details/101411570
+ pipeable observable（pipe感觉是把operator包起来了）：
+SomeObservable.map(...).throttle(...).subscribe变成pipe(map().throttle()).subscribe
+Reading the RxJS 6 Sources: Map and Pipe：https://indepth.dev/reading-the-rxjs-6-sources-map-and-pipe/
+1.搞懂pipe的含义：https://blog.csdn.net/oYiGeHui/article/details/82821125
+2.pipe放到函数内层是不是一个好的实践：
+What are schedulers in RxJS：
+https://blog.strongbrew.io/what-are-schedulers-in-rxjs/
+https://jstobigdata.com/rxjs/rxjs-scheduler/
+http从observable到subscription都看清楚
+【看看公司代码是否有用到】如果说 Observable 与 observer 是攻受结合体的话，那么 Subject 就是一个人即攻亦受
+详细介绍RxJS在Angular中的应用【Observable.fromEvent解释了定义了什么事件。还是要分析http是怎么绑定的】：https://www.jb51.net/article/124393.htm
+除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
+rxjs源码分析
+Observable详解：https://segmentfault.com/a/1190000008809168
+在Angular2中使用Observable对象（RxJS）：
+https://blog.csdn.net/yuemei_1991/article/details/76408868
+https://blog.csdn.net/qq_30970807/article/details/53771521
+https://blog.csdn.net/xnyssxy/article/details/79868928
 
 继续看angular最佳实践、组件编写
 看弹框的样式，看右侧的样式
@@ -353,8 +439,6 @@ Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个�
 1.是否被其他component引用；2.是否在路由里面出现
 
 看一下ng-bootstrap如果都竖起来样式是什么样的
-
-【能把promise、async/await、rxjs互相转换，才算搞懂了这一块。需要几个例子练手】
 
 2020年，前端还有哪些实现不了的需求？https://www.zhihu.com/question/403244729/answer/1305884086
 工具类前端项目的复杂度真的可以跟后端相提并论吗？https://www.zhihu.com/question/397643817/answer/1252009996
@@ -414,6 +498,7 @@ https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-the
 9 个用于前端 Web 开发的开源 CSS 框架：https://zhuanlan.zhihu.com/p/141693016
 
 JS 闭包有哪些经典的使用场景和源代码？https://www.zhihu.com/question/19711908/answer/103083346
+使用three.js实现炫酷的酸性风格3D页面：https://www.cnblogs.com/dragonir/p/15350537.html
 
 Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
@@ -531,15 +616,12 @@ novalidate (ngModelChange)
 理解 TypeScript 装饰器（为什么 Angular 不需要 Hooks）：https://zhuanlan.zhihu.com/p/65764702
 Angular-3种创建动态内容的方式：https://zhuanlan.zhihu.com/p/54085160
 
-
 JS的bind方法在不同模块的方法回调里面很有用：
 this.create.createModal(SwEditdeleteWorkflowComponent, { type: null, headerLogo: "补探申请提示", title: "确认发起补探流程吗？", keyWord: ApsEnum.APS_VIP_DRILL_ACTIVITY }, this.doVipDrillProcess.bind(this));
 
-rsjs取消订阅的几个文章：
-https://limeii.github.io/2019/08/rxjs-unsubscribe/
-https://blog.csdn.net/weixin_33777877/article/details/88063179
-https://www.jianshu.com/p/5e885293bf03
-https://www.jianshu.com/p/da9934d6143c
+Window下完全卸载删除Nodejs：https://www.cnblogs.com/fighxp/p/7410235.html
+将node_modules文件夹移动到公共位置以在所有Angular2应用中访问：https://www.it1352.com/1896311.html
+从JavaScript迁移到TypeScript，类型声明文件自动生成与中心化管理的实践：https://mp.weixin.qq.com/s/zRhhrtEf0UrVfpJV7S-b-Q
 
 ================================================================================
 
@@ -550,45 +632,6 @@ The 7 Pro Tips To Get Productive With Angular CLI & Schematics：
 https://hackernoon.com/%EF%B8%8F-the-7-pro-tips-to-get-productive-with-angular-cli-schematics-b59783704c54
 Angular Schematics 三部曲之 Add：https://zhuanlan.zhihu.com/p/101546474
 https://zhuanlan.zhihu.com/p/57236454
-
-【比较一下】
-从事件创建：fromEvent
-从Promise创建：fromPromise
-
-【需要进一步了解的转换操作】
-改变数据形态：map, mapTo, pluck：https://www.learnrxjs.io/learn-rxjs/operators/transformation/pluck
-时间轴上的操作：delay, timeout, throttle, debounce, audit, bufferTime
-
-【比较这两种写法的等价性】
-一般在Angular我们 subscribe 会这么写：
-input$.subscribe((event: any) => {
-});
-从语法角度来讲和 subscribe({ next, error, complete }) 是一样的
-
-【看一下这些名字很诱人的章节】：
-Breakout Game：https://www.learnrxjs.io/learn-rxjs/recipes/breakout-game
-Car Racing Game：https://www.learnrxjs.io/learn-rxjs/recipes/car-racing-game
-Lockscreen：https://www.learnrxjs.io/learn-rxjs/recipes/lockscreen
-Memory Game：https://www.learnrxjs.io/learn-rxjs/recipes/memory-game
-Mine Sweeper Game：https://www.learnrxjs.io/learn-rxjs/recipes/mine-sweeper-game
-Platform Jumper Game：https://www.learnrxjs.io/learn-rxjs/recipes/platform-jumper-game
-Tetris Game：https://www.learnrxjs.io/learn-rxjs/recipes/tetris-game
-Uncover Image Game：https://www.learnrxjs.io/learn-rxjs/recipes/uncover-image-game
-
-return this.http.post(`/blog/manager/login`, body)
-	.toPromise()
-	.then(res => res);
-}
-
-autoLogin(): Promise<any> {
-  const headers = new HttpHeaders();
-  headers.append('Content-Type', 'application/x-www-form-urlencoded');
-  const param = new HttpParams().set("token",localStorage.getItem("token"));
-  return this.http.post(`/blog/manager/autoLogin`, param,{
-    headers:headers
-  })
-  .toPromise()
-  .then(res => res);
 
 NGXS, Akita是啥？（NgRx我知道）
 试看NgRx源码
@@ -723,45 +766,6 @@ https://segmentfault.com/q/1010000014225843
 https://www.cnblogs.com/cnblogs-jcy/p/8714442.html
 
 JavaScript Array some() 方法【和某些语言中的any是语义类似的】：https://www.runoob.com/jsref/jsref-some.html
-
-响应式编程入门指南 - 通俗易懂 RxJS：https://zhuanlan.zhihu.com/p/102446217
-通俗的方式理解RxJS：https://segmentfault.com/a/1190000008464065
-Hot vs Cold Observables：
-https://segmentfault.com/a/1190000011052037
-https://angular-2-training-book.rangle.io/observables/cold_vs_hot_observables
-Rxjs的zip和switchMap方法：https://blog.csdn.net/weixin_39460408/article/details/80995242
-【Rxjs】实例讲解zip和combineLatest操作符的区别：https://blog.csdn.net/u010176097/article/details/102579886
-[译] RxJS: 理解 publish 和 share 操作符：https://zhuanlan.zhihu.com/p/33225623
-[译] RxJS: 如何使用 refCount：https://zhuanlan.zhihu.com/p/33621290
-RxJS的核心代码实现？Observable.from(names)生成的observable，是怎么吐值给Observer的？
-rxjs源码分析【Observable、Oserver、Subscription、Operators、Subject、Schedulers】：
-https://blog.csdn.net/zhy13087344578/article/details/79377395
-https://www.cnblogs.com/tangzhirong/p/7424777.html
-https://www.jianshu.com/p/13397a37649e
-RxJS 过滤操作符 debounce，debounceTime，throttle，throttleTime：https://www.jianshu.com/p/66f37e024278
-一定要从big picture来再次overview RxJS。RxJS至少要2周到1个月才能学的比较好
-RxJS的另外四种实现方式（后记）- 同时实现管道和链式编程：
-https://my.oschina.net/langhuihui/blog/2208142
-https://blog.csdn.net/oYiGeHui/article/details/82821125
-关于Angular6版本升级和RXJS6新特性的讲解：https://blog.csdn.net/bangunzheng7426/article/details/101411570
- pipeable observable（pipe感觉是把operator包起来了）：
-SomeObservable.map(...).throttle(...).subscribe变成pipe(map().throttle()).subscribe
-Reading the RxJS 6 Sources: Map and Pipe：https://indepth.dev/reading-the-rxjs-6-sources-map-and-pipe/
-1.搞懂pipe的含义：https://blog.csdn.net/oYiGeHui/article/details/82821125
-2.pipe放到函数内层是不是一个好的实践：
-What are schedulers in RxJS：
-https://blog.strongbrew.io/what-are-schedulers-in-rxjs/
-https://jstobigdata.com/rxjs/rxjs-scheduler/
-http从observable到subscription都看清楚
-【看看公司代码是否有用到】如果说 Observable 与 observer 是攻受结合体的话，那么 Subject 就是一个人即攻亦受
-详细介绍RxJS在Angular中的应用【Observable.fromEvent解释了定义了什么事件。还是要分析http是怎么绑定的】：https://www.jb51.net/article/124393.htm
-除非调用observer的 complete() 或 unsubscribe() 取消订阅两情况以外；会一直将值传递给 observer。
-rxjs源码分析
-Observable详解：https://segmentfault.com/a/1190000008809168
-在Angular2中使用Observable对象（RxJS）：
-https://blog.csdn.net/yuemei_1991/article/details/76408868
-https://blog.csdn.net/qq_30970807/article/details/53771521
-https://blog.csdn.net/xnyssxy/article/details/79868928
 
 transform(value: any, args?: any): any {
 

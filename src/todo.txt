@@ -5,6 +5,15 @@
 
 ================================================================================
 
+把左右栏重叠的问题解决
+【看mat-icon的源码】
+
+1.学习bootstrap；2.用ngx-bootstrap改造现有项目
+
+1.安装ngx-bootstrap，逐个替换现有页面
+2.把material移到另一个工程中，或者直接删掉【删除之前要看源码】
+3.再用主题美化功能
+
 【20210922】今天晚上又仔细想了一下，或许现阶段最可行的方式是这样的：
   1.解决下面列出的问题：功能往前推进；
   2.自己造一些轮子；
@@ -18,15 +27,35 @@
 我的路走偏了，现在确定的路线：以ngx-bootstrap控件为主体，引入bootstrap和其他ngx控件。先把这一条路打通，做一个可用的产品，不要在乎cdk、ng-alain之类的概念。并且确认如下问题：
   1.ngx-admin-lte里面有些什么东西，能否适配最新的bootstrap5；
   2.ngx-bootstrap能否适配最新的bootstrap5，并固定版本，后续升级版本；
-  3.把material的内容移到另一个工程中，并上传github；
+  3.把material的内容移到另一个工程中（升级版本，删除website项目的包引用），并上传github：https://github.com/eternalwt/angular_material.git；
   4.对于每一个ng-控件，看看有没有对应的ngx控件，找到最佳实践，搞清楚源码；
   5.完善下面200行列出的一些基本功能，完善现有的前端功能；
   6.穿插基础知识（js和angular基础知识）；
   7.继续比较和实验其他主题，例如vali，和控件库。
 
+1.再看ngx-bootstrap有些什么组件【搜文章或者从目录看】；2.确认ng-zorro与bootstrap的适配。
+bootstrap与ant design是否搭？
+
+如何写一个自己的npm包：https://www.jianshu.com/p/fafc88e74764
+
+还有几个关键问题：
+  1.看看我的几个ngx-xxx源码，以及它们是怎么定义成module怎么引入的，怎么自己制作npm包；
+  2.找一些好用的ngx-table之类的关键组件（当然要先熟悉ngx-bootstrap里面的），必要的时候把公司的组件拷贝回来；
+  3.思考如果我的bootstrap和组件有大的升级的时候怎么升级，bootstrap5.1是否对ngx-xxx组件有向下/向上兼容性（看ngx-xxx说明）
+
+关于下载的ngm包：
+  1.可以直接用ts写，例如angular material；
+
+
 material再搞一轮【单独开一个项目搞】：https://juejin.cn/post/6844903894561062926
 
 当前修改到：perm-assign.component.ts：写通save方法。是不是可以尝试把按钮权限也直接写通？【可以】
+
+NGX Bootstrap – Everything you Need to Know：https://www.mygreatlearning.com/blog/ngx-bootstrap/
+Ngx-Bootstrap Tutorial：https://www.tutorialspoint.com/ngx_bootstrap/index.htm
+Angular ngx bootstrap Pagination Component：https://www.geeksforgeeks.org/angular-ngx-bootstrap-pagination-component/
+Add Bootstrap 4 to Angular 11 UIs With Ng-Bootstrap and Ngx-Bootstrap：https://www.techiediaries.com/angular-bootstrap-ui/
+Slick Carousel（走马灯） In Angular：https://devconquer.com/angular/slick-carousel-in-angular/
 
 首先搞懂一个问题：bootstrap的表格与下载的表格控件最主要的区别是什么？是不是有了bootstrap的进行封装就可以了？
 
@@ -35,11 +64,15 @@ angular4如何使用Bootstrap的datetimepicker组件：https://blog.csdn.net/qq_
 【下一步，重点】直接对着控件搜样式，逐个学习，例如：ngx-treeview、样式
 Angular5 自定义scrollbar样式之 ngx-malihu-scrollbar：https://www.shuzhiduo.com/A/obzbAGLjdE/
 将项目中的ng2-tree组件替换成ngx-tree
-使用别人的控件，一旦涉及到定制，代码就会分析。注意这其中的风险。
+使用别人的控件，一旦涉及到定制，代码就会分离。注意这其中的风险。
 angular 2|4|5|6|7 cascade dropdown example：https://yogeshdotnet.com/cascade-dropdowns-in-angular-6-with-example-angular-7-tutorial/
+admin-lte可以理解为一个单独的东西，所以它可以用npm安装：https://adminlte.io/docs/2.4/installation
 
-1.再看ngx-bootstrap有些什么；2.确认ng-zorro与bootstrap的适配。
-bootstrap与ant design是否搭？
+前端多环境打包做起来
+
+寻找的主题必须要有如下特点：
+  1.功能很强大；
+  2.是一个持续进化的有源码的(admin-lte好像就不符合这一点)；【再看vali】
 
 把菜单权限配置做出来【还差一个保存，先做个最low的保存】
 3.角色、用户的增删查改【前端】及权限分配；
@@ -94,8 +127,36 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 2.side-menu是不是可以用于菜单树（能否做多级）；
 继续推进前端鉴权【使用EventEmitter】
 
-rxjs及后端响应式编程要突破
-教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
+【晚上】git clone一下我的新库
+
+【看代码】我以前引入的ngx-treeview等组件，他们里面有没有用到jQuery？升级bootstrap 5.1后会不会有问题？
+先看一遍bootstrap5.1是什么样的，看ngx-bootstrp有哪些组件，然后看bootstrap5.1中哪些在ngx-bootstrap中做了封装，哪些没有做封装，没有封装的部分为什么没做封装？（是不好封装还是不是通用的没必要封装？）
+看ngx-bootstrap里面的样式。再次确认primeng能不能用于bootstrap，以及其他组件库
+
+ngx-bootstrap【最新的7.1版可以适配bootstrap 5.x.x】：
+	https://www.npmjs.com/package/ngx-bootstrap
+	https://valor-software.com/ngx-bootstrap/#/documentation
+The ngx-bootstrap library contains Angular Cli Schematics to allow easier installation. You can add ngx-bootstrap with one simple command：https://valor-software.com/ngx-bootstrap/#/schematics
+Schematics 是前端开发工作流工具：https://www.jianshu.com/p/1a3011f2d55f
+浅谈Angular Cli Schematics：https://www.jianshu.com/p/1a3011f2d55f
+Angular Schematics 三部曲之 Add：https://www.jianshu.com/p/63e8464eff93
+小谈 ng deploy 的实现：https://www.jianshu.com/p/c5cfa2c0802c
+Angular Schematics教程：https://www.jianshu.com/p/3f630cbb543d
+Angular CLI是如何生成代码的？https://www.zhihu.com/question/278109954
+创建自定义的 Angular Schematics：https://www.cnblogs.com/haogj/p/9053469.html
+使用 Schematics 自定义 ng generate：https://zhuanlan.zhihu.com/p/37010676
+
+2021年你应该知道的9个网页组件库：https://www.chinaz.com/2020/1215/1214068.shtml
+【看几种不同的组件库，并思考：样式方面组件库更加关注的是什么，应该只是组件布局把？配色风格什么的，怎么跟不同的主题兼容的？看看vue里面比较成熟的elementUI是怎么处理的】
+即使Web Component成为标准，也不影响我现在对ngx-bootstrap和ngx-admin-lte的理解及投入的工作量。关注的是不同工程维度的内容。
+突发！LayUI宣布下线：https://mp.weixin.qq.com/s/412c0qs1GAe-xrXCZ_rfyQ
+
+直接添加ngx-admin-lte比较方便，但是会不会有兼容性问题，以及不好删干净无用代码的问题？
+先只添加bootstrap 5.1，然后按需添加admin-lte的东西会比较干净，但是会不会比较复杂，或者显示效果不太好？
+
+把ngx-bootstrap、ngx-admin-lte分别搞透，就OK了。在这样的架构设计下，出来的界面既美观简洁，又具有一致性。
+ngx-bootstrap和bootstrap的升级方式：1.查询两者兼容的版本；2.直接升级，然后解决bug
+我的代码也要打tag
 
 绑定dropDown、radio写一版出来
 Input, Change, ngModelChange事件的区别：https://www.cnblogs.com/juliazhang/p/11158518.html
@@ -121,6 +182,8 @@ What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
 如果不能构建公司那种可以直接参考别人的代码复制使用的组件库，那么就达不到大规模添加功能和代码的程度。我离这个标准还差的远。
 【下一步最打紧的是搞清楚控件代码的阅读、修改、调试】
 
+门户网站群建设的技术要点：https://zhuanlan.zhihu.com/p/398718963
+智慧门户单点系统的研究：https://zhuanlan.zhihu.com/p/408071690
 门户网站的突破，可以上B站学习：https://search.bilibili.com/all?keyword=%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&from_source=nav_search_new
 react开发企业中后台产品、政务门户网站的一些总结：https://www.cnblogs.com/seemoon/p/12218721.html
 react那么火，为什么淘宝&京东首页不使用react？https://www.zhihu.com/question/317973545/answer/641955120
@@ -176,6 +239,9 @@ Angular 组件库 NG-NEST 1.0.0 发布：https://zhuanlan.zhihu.com/p/143815952
 1.使用reset来清空内容【把父类那个最佳实践加上去】。表单再突破一次
 2.弹出框先在现在的基础上搞，然后也得搞一个ng的【如果不会读代码、不能改代码就不行】
 ng-bootstrap：https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
+HOW TO ADD BOOTSTRAP 5.1.0 IN ANGULAR 12? https://therichpost.com/how-to-add-bootstrap-5-1-0-in-angular-12/
+ANGULAR 12 IMPLEMENTS BOOTSTRAP 5.1.0 NEW FEATURES：https://therichpost.com/angular-12-implements-bootstrap-5-1-0-new-features/
+
 
 【周六】
 【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
