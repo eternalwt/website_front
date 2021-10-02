@@ -5,11 +5,11 @@
 
 ================================================================================
 
+textarea、form-control、form-group改完后改表格，或许到表格就进入控件了【先用原生表格熟悉一下】
 看看我对label的使用有没有问题【已登录页、添加用户、添加角色、contact页面都过一遍】。修改权限配置页面样式、修改contact页面样式【和添加角色一致起来】。角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
-修改添加用户登录样式及使用的组件，添加记住我。测一下添加用户的角色能不能写进入，换了checkbox
-把坐下角那个头像的图片下载下来，并调通【后续右上角会用到】
+修改添加用户登录样式及使用的组件，添加记住我【后续继续搞第三方登录】。测一下添加用户的角色能不能写进入，换了checkbox
+坐下角那个头像的图片已下载，使用本地路径
 把bootstrap官方的header搬过来，就可以让我的样式好不少。搜索框样式及功能，先改造bootstrap
-checkbox
 1.把文本框改成bootstrap风格；2.把按钮改过来【contact页面】
 修改表格，研究bootstrap下的表格，把功能做完善
 把涉及到弹框的地方先改过来，并且确认控件
@@ -20,6 +20,7 @@ checkbox
 把我侧边栏的样式完整看一遍
 把mdo左边的icon修好
 图标icon、svg单独学习一下
+把我的“material组件”这个模块改造成“第三方主题元素”模块
 
 【看mat-icon的源码】封装了什么东西？
 mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
@@ -477,27 +478,9 @@ ckEditor的上传图片
   3.观察使用的主题的特点，做一致性调整。
 Angular中修改第三方组件的样式 - zorro日期选择器右端不对齐的BUG：https://segmentfault.com/a/1190000018217966
 
-20210921搜集的一些文章：
-  https://zhuanlan.zhihu.com/p/34216899
-  https://zhuanlan.zhihu.com/p/36205884
-  https://juejin.cn/post/6890909726775885832
-  https://m.sohu.com/a/385489456_115128
-  https://zhuanlan.zhihu.com/p/391184255?utm_medium=social&utm_oi=685143097629872128
-  https://www.jianshu.com/p/2c2dab92ff5b
-  https://zhuanlan.zhihu.com/p/74541459
-  https://www.zhihu.com/question/362425143/answer/2031504494
-  https://zhuanlan.zhihu.com/p/129825225
-  https://zhuanlan.zhihu.com/p/96885700
-  https://zhuanlan.zhihu.com/p/51467181
-  https://blog.csdn.net/weixin_28709649/article/details/113490787
-  https://blog.csdn.net/qq_43579525/article/details/84113090
-  https://blog.csdn.net/if_smile/article/details/105735278
-  https://zhuanlan.zhihu.com/p/100604027?ivk_sa=1024320u
-  https://www.zhihu.com/question/277068649/answer/391877791
-  https://www.jianshu.com/p/9d81904d55e8
-  https://blog.csdn.net/weixin_39655981/article/details/112439215
-
 看看主题升级的步骤
+
+【再次确认】或许最后的成品，我用的不是任何一个主题，而是用到bootstrap本身的知识和主题里面的一些元素。更多的主题里面好的东西，也可以掰开揉碎了使用。前端和后端一样，从你觉得很简单，到最终作品出来，中间也有巨大的gap。
 
 Angular 5 App Structure With Multiple Modules：https://www.technouz.com/4644/angular-5-app-structure-multiple-modules/
 Angular项目目录结构详解：

@@ -119,6 +119,7 @@ Add Bootstrap 5 In Angular 11：https://www.c-sharpcorner.com/article/add-bootst
 Bootstrap4 Flex（弹性）布局：
   https://www.runoob.com/bootstrap4/bootstrap4-flex.html
   https://blog.csdn.net/qq_27870421/article/details/97433718
+【找到完整的文档】class：form-group、form-control：https://blog.csdn.net/CarryBest/article/details/70338806?utm_source=blogxgwz9
 
 ===========================================================================
 
@@ -472,6 +473,26 @@ https://www.cnblogs.com/starof/p/9069336.html
 https://www.cnblogs.com/momjs/p/10924445.html
 ng-contextmenu：https://www.npmjs.com/package/ng-contextmenu
 Angular2实现右键菜单：https://www.jianshu.com/p/5991dcedcd35
+
+20210921搜集的一些文章：
+  https://zhuanlan.zhihu.com/p/34216899
+  https://zhuanlan.zhihu.com/p/36205884
+  https://juejin.cn/post/6890909726775885832
+  https://m.sohu.com/a/385489456_115128
+  https://zhuanlan.zhihu.com/p/391184255?utm_medium=social&utm_oi=685143097629872128
+  https://www.jianshu.com/p/2c2dab92ff5b
+  https://zhuanlan.zhihu.com/p/74541459
+  https://www.zhihu.com/question/362425143/answer/2031504494
+  https://zhuanlan.zhihu.com/p/129825225
+  https://zhuanlan.zhihu.com/p/96885700
+  https://zhuanlan.zhihu.com/p/51467181
+  https://blog.csdn.net/weixin_28709649/article/details/113490787
+  https://blog.csdn.net/qq_43579525/article/details/84113090
+  https://blog.csdn.net/if_smile/article/details/105735278
+  https://zhuanlan.zhihu.com/p/100604027?ivk_sa=1024320u
+  https://www.zhihu.com/question/277068649/answer/391877791
+  https://www.jianshu.com/p/9d81904d55e8
+  https://blog.csdn.net/weixin_39655981/article/details/112439215
 
 ng-template、ng-content、ng-container【ng-content在自定义控件里面常用，和直接塞一个标签进去有什么区别？】：https://www.jianshu.com/p/0f5332f2bbf8
 

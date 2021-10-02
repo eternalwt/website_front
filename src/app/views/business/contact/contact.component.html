@@ -3,19 +3,19 @@
 
     <div class="wrapper">
       <label>Name:</label>
-      <input type="text" formControlName="name">
+      <input type="text" formControlName="name" class="form-control">
         <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
           <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
         </div>
     
       <label>Message:</label>
-      <textarea formControlName="message"></textarea>
+      <textarea formControlName="message" class="form-control" rows="3"></textarea>
         <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
           <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
         </div>
     </div>
-    
-    <input type="submit" value="保存" class="btn btn-primary">
+
+    <button type="submit" class="btn btn-primary">保存</button>
   </form>
 
   <div *ngIf="submitted" class="results">
