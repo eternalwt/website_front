@@ -9,7 +9,7 @@
         </div>
     
       <label>Message:</label>
-      <textarea formControlName="message" class="form-control" rows="3"></textarea>
+      <textarea type="text" formControlName="message" class="form-control" rows="3"></textarea>
         <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
           <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
         </div>

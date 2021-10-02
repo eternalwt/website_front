@@ -5,7 +5,21 @@
 
 ================================================================================
 
-textarea、form-control、form-group改完后改表格，或许到表格就进入控件了【先用原生表格熟悉一下】
+权限配置、添加菜单页面
+联系信息里面textarea的高度为啥不对？grid-template-columns、grid-template-rows的作用以及是否可以直接用bootstrap的flex功能来代替？【梳理我的代码里面用到的这些东西】
+CSS grid-template-columns用法及代码示例：https://vimsky.com/examples/usage/css-grid-template-columns-property.html
+先看原生bootstrap table
+分配权限页面的checkbox写好
+上ngx-bootstrap的table，学习ngx-bootstrap
+菜单：
+  1.“菜单管理”的设计思路可能要变（最近对权限有了更多理解后）；2.添加菜单的功能修改完善一下【就着这个页面，把布局调整再搞一轮】；3.“添加菜单”作为菜单管理的子菜单。菜单也能授予默认可以使用的角色
+form-control、form-group的样式再看一下
+改完后改表格，或许到表格就进入控件了【先用原生表格熟悉一下】
+How to implement an Angular bootstrap table with pagination and filter：
+  https://edupala.com/angular-bootstrap-table-with-pagination-and-filter/
+  https://stackoverflow.com/questions/54700298/how-to-implement-ng-bootstrap-4-table-sorting-pagination-and-filtering
+  https://mdbootstrap.com/docs/b5/angular/data/tables/
+  https://mdbootstrap.com/docs/angular/tables/basic/
 看看我对label的使用有没有问题【已登录页、添加用户、添加角色、contact页面都过一遍】。修改权限配置页面样式、修改contact页面样式【和添加角色一致起来】。角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
 修改添加用户登录样式及使用的组件，添加记住我【后续继续搞第三方登录】。测一下添加用户的角色能不能写进入，换了checkbox
 坐下角那个头像的图片已下载，使用本地路径
@@ -21,26 +35,25 @@ textarea、form-control、form-group改完后改表格，或许到表格就进�
 把mdo左边的icon修好
 图标icon、svg单独学习一下
 把我的“material组件”这个模块改造成“第三方主题元素”模块
+把material删干净，包括模块引用、下载的包
 
 【看mat-icon的源码】封装了什么东西？
 mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
-mat-checkbox呢？用这个的必要性是什么？
-
-业务开发需要的封装是对一个功能点的封装。如果mat-checkbox这种封装功能不是特别强大的话，那就没必要【确认】
+mat-checkbox呢？用这个的必要性是什么？业务开发需要的封装是对一个功能点的封装。如果mat-checkbox这种封装功能不是特别强大的话，那就没必要【确认】
 
 1.学习bootstrap；2.用ngx-bootstrap改造现有项目
 写一个功能需要样式时，例如侧边栏，先查官网examples：https://getbootstrap.com/docs/5.1/examples/
 
 1.安装ngx-bootstrap，逐个替换现有页面
 2.把material移到另一个工程中，或者直接删掉【删除之前要看源码】
-3.再用主题美化功能
+3.再用主题美化功能。主题提升的是设计感和品位，开发的时候样式布局还是先根据业务来，参考多个主题中的元素，每个主题中的东西只会用到一小部分。
 
 【20210922】今天晚上又仔细想了一下，或许现阶段最可行的方式是这样的：
   1.解决下面列出的问题：功能往前推进；
   2.自己造一些轮子；
   3.继续巩固基础知识：rxjs及另一个文档中提到的一些；
   4.看一些别人封装的控件【分析几个组件的源码，自然知道怎么跟主题搭配了】；
-  5.控件与主题的搭配：实用
+  5.控件与主题的搭配：实用。控件首先要与bootstrap搭配，然后才是主题
 【方法】
   1.注重每个细节问题：单点突破；
   2.整体切换：解耦
