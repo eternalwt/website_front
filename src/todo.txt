@@ -5,13 +5,12 @@
 
 ================================================================================
 
-右侧区域统一添加对左侧的margin、padding
+看看我对label的使用有没有问题【已登录页、添加用户、添加角色、contact页面都过一遍】。修改权限配置页面样式、修改contact页面样式【和添加角色一致起来】。角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
+修改添加用户登录样式及使用的组件，添加记住我。测一下添加用户的角色能不能写进入，换了checkbox
 把坐下角那个头像的图片下载下来，并调通【后续右上角会用到】
-把bootstrap官方的header搬过来
-角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
+把bootstrap官方的header搬过来，就可以让我的样式好不少。搜索框样式及功能，先改造bootstrap
 checkbox
 1.把文本框改成bootstrap风格；2.把按钮改过来【contact页面】
-修改添加用户登录样式及使用的组件，添加记住我
 修改表格，研究bootstrap下的表格，把功能做完善
 把涉及到弹框的地方先改过来，并且确认控件
 把登录页面改成bootstrap的：https://getbootstrap.com/docs/5.1/examples/sign-in/
@@ -19,9 +18,8 @@ checkbox
 添加点击链接更改样式的代码【用bootstrap的事件】
 首先确认下ngx-bootstrap有没有侧边栏，应该没有，因为不通用
 把我侧边栏的样式完整看一遍
-搜索框样式及功能，先改造bootstrap
-"Angular CMS"的样式
 把mdo左边的icon修好
+图标icon、svg单独学习一下
 
 【看mat-icon的源码】封装了什么东西？
 mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
