@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  appTitle = 'Angular CMS';
   menuList: any = [];
   menuTree: any;
 

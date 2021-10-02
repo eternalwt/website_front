@@ -13,6 +13,7 @@ import { MessageBoxService } from '../../service/message-box.service';
 export class LoginComponent implements OnInit {
 
   messageForm: FormGroup = new FormGroup({});// todo 确认下这样初始化有没有问题
+  rememberMe: boolean = false;// todo 还没写完
   submitted: boolean = false;
   success: boolean = false;
 

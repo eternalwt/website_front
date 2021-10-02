@@ -7,5 +7,5 @@
     <ckeditor [editor]="Editor" [(ngModel)]="content" [ngModelOptions]="{standalone: true}" [config]="config" 
         (ready)="onReady($event)"  (change)="onChange($event)"></ckeditor>
 
-    <button mat-raised-button color="accent" type="submit">保存</button>
+    <button type="submit" class="btn btn-primary">保存</button>
 </form>

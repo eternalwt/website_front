@@ -1,25 +1,29 @@
-<div style="width:40%; margin-left:30%;">
+<div class="col-lg-3 m-auto">
 
-<h1>System Login</h1>
+  <h1>系统登录</h1>
 
-<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-  <label>
-    Name:
-    <input type="text" formControlName="username">
-    <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
-      <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+    <label>
+      账号：
+      <input type="text" formControlName="username">
+      <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
+        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+      </div>
+    </label>
+
+    <label>
+      密码：
+      <input type="password" formControlName="password">
+      <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
+        <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
+      </div>
+    </label>
+
+    <div class="checkbox mb-3">
+      <input type="checkbox" value="rememberMe"> 自动登录
     </div>
-  </label>
 
-  <label>
-    password:
-    <!-- <textarea formControlName="password"></textarea> -->
-    <input type="password" formControlName="password">
-    <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
-      <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
-    </div>
-  </label>
+    <input type="submit" value="登录" class="w-100 btn btn-lg btn-primary">
+  </form>
 
-  <input type="submit" value="登录" class="cta">
-</form>
 </div>

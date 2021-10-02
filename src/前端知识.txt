@@ -100,6 +100,8 @@ ES2021：
   https://zhuanlan.zhihu.com/p/386594787
   https://zhuanlan.zhihu.com/p/337369366
 
+【B站】Bootstrap5框架技术详解/权威讲解：https://www.bilibili.com/video/av205002011/
+bootstrap开发模式：对于html、js、css三类元素，先搜有没有bootstrap对应的，如果没有再用原生的写
 【搜bootstrap 5 plugin】
 angular 多页面应用
 DevUI Admin 2.0 重磅发布【华为的开源前端解决方案】：https://zhuanlan.zhihu.com/p/400436608
@@ -114,6 +116,9 @@ A Beginner’s Guide to the Latest Bootstrap 5 Utilities【使用class设置各�
 对bootstrap的container基本认识：https://www.cnblogs.com/jaycethanks/p/13326332.html
 Bootstrap 超大屏幕（Jumbotron）：https://www.runoob.com/bootstrap/bootstrap-jumbotron.html
 Add Bootstrap 5 In Angular 11：https://www.c-sharpcorner.com/article/add-bootstrap-5-in-angular-11/
+Bootstrap4 Flex（弹性）布局：
+  https://www.runoob.com/bootstrap4/bootstrap4-flex.html
+  https://blog.csdn.net/qq_27870421/article/details/97433718
 
 ===========================================================================
 

@@ -5,13 +5,29 @@
 
 ================================================================================
 
-修改添加用户样式及使用的组件
+右侧区域统一添加对左侧的margin、padding
+把坐下角那个头像的图片下载下来，并调通【后续右上角会用到】
+把bootstrap官方的header搬过来
+角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
+checkbox
+1.把文本框改成bootstrap风格；2.把按钮改过来【contact页面】
+修改添加用户登录样式及使用的组件，添加记住我
 修改表格，研究bootstrap下的表格，把功能做完善
-把登录页面改成bootstrap的
+把涉及到弹框的地方先改过来，并且确认控件
+把登录页面改成bootstrap的：https://getbootstrap.com/docs/5.1/examples/sign-in/
 二级菜单
 添加点击链接更改样式的代码【用bootstrap的事件】
+首先确认下ngx-bootstrap有没有侧边栏，应该没有，因为不通用
+把我侧边栏的样式完整看一遍
+搜索框样式及功能，先改造bootstrap
+"Angular CMS"的样式
+把mdo左边的icon修好
+
 【看mat-icon的源码】封装了什么东西？
-mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱
+mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
+mat-checkbox呢？用这个的必要性是什么？
+
+业务开发需要的封装是对一个功能点的封装。如果mat-checkbox这种封装功能不是特别强大的话，那就没必要【确认】
 
 1.学习bootstrap；2.用ngx-bootstrap改造现有项目
 写一个功能需要样式时，例如侧边栏，先查官网examples：https://getbootstrap.com/docs/5.1/examples/
@@ -383,6 +399,7 @@ angular 自定义组件：
   https://segmentfault.com/a/1190000009070500
   https://zhuanlan.zhihu.com/p/36863723
   https://juejin.im/post/597176886fb9a06ba4746d15?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
+第三方组件可以再次封装，或者把内容扣出来进行改造
 
 【提高优先级】2.找5个ngx开头的控件看一下【表格控件、msgBox、弹出框】（npm官网，类似mvnrepository）：https://www.npmjs.com/package/package
 v-viewer 实现图片的预览，放大，旋转等功能：https://blog.csdn.net/qq_43225030/article/details/102498624
@@ -453,6 +470,7 @@ JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框�
 form抽父类，dialog也可以放进去，把alert替换掉
 ckEditor的上传图片
 布局方面提升：搜一下用到block的地方，对比flex和grid
+感觉公司里面的代码已经去bootstrap化了。没有人从整体的开发和界面风格上来做管控。
 
 【如果想要对第三方控件有更完全的控制，有源码的可以下载源码】
 兼容第三方控件：
