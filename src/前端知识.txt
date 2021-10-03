@@ -1,6 +1,7 @@
 ﻿
 把 promise + RxJS 写通，just try
 RxJS的另外四种实现方式（后记）—— 同时实现管道和链式编程：https://blog.csdn.net/oYiGeHui/article/details/82821125
+一道面试题引起的思考：https://www.cnblogs.com/chenjg/p/10006502.html
 
 ng generate class Hero
 
@@ -38,18 +39,35 @@ https://zhidao.baidu.com/question/1818954979543524068.html
 
 2020前端基础包过面试题：https://zhuanlan.zhihu.com/p/92590306
 
-DevUI是一支兼具设计视角和工程视角的团队，服务于华为云DevCloud平台：
-https://devui.design/home
-https://github.com/DevCloudFE/ng-devui
 
 【ES6】for of用法：
   https://blog.csdn.net/w390058785/article/details/80522383
   https://www.cnblogs.com/m2maomao/p/7743143.html
 for await of：
   https://blog.csdn.net/webFrontEndDev/article/details/103142119
-
 ES6中的迭代器(Iterator)和生成器(Generator)：https://www.cnblogs.com/xiaohuochai/p/7253466.html
 通过function*来定义的函数称之为“生成器函数”（generator function）【generator作为一个用来操作异步的状态机， 遇到yield停止， 通过调用next（）来继续操作】：https://www.jianshu.com/p/92639e681e2a
+ES6 Tutorial：
+  https://www.tutorialspoint.com/es6/index.htm
+  https://www.javascripttutorial.net/es6/
+es6新出的promise对象以及es7的async await：
+https://javascript.info/async-await
+https://www.js-tutorials.com/javascript-tutorial/how-to-use-async-and-await-in-javascript/
+promise使用场景：
+https://www.sitepoint.com/overview-javascript-promises/
+https://segmentfault.com/q/1010000019462799
+https://blog.csdn.net/weixin_41559723/article/details/79244460
+嵌套的promise执行顺序：https://www.jianshu.com/p/2c7c5285c7c5
+Promise的模拟实现：https://www.jianshu.com/p/887b523559f2
+ES6-生成器及其实现：https://www.jianshu.com/p/154804e7b3cf
+ES6、7、8、9新特性：
+https://www.jianshu.com/p/9da4aa1c9970
+https://juejin.im/post/5c19c8105188251920597c0d
+ES2021：
+  https://zhuanlan.zhihu.com/p/347883565
+  https://zhuanlan.zhihu.com/p/386594787
+  https://zhuanlan.zhihu.com/p/337369366
+
 
 【我对promise理解到这句话的程度了】有了 Promise 对象，就可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。
 此外，Promise 对象提供统一的接口，使得控制异步操作更加容易：https://www.runoob.com/w3cnote/javascript-promise-object.html
@@ -95,11 +113,8 @@ Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/11
 
 前端项目的搭建，以及遇到问题的处理，是否需要再总结一下？这次升级angular12又遇到问题了
 
-ES2021：
-  https://zhuanlan.zhihu.com/p/347883565
-  https://zhuanlan.zhihu.com/p/386594787
-  https://zhuanlan.zhihu.com/p/337369366
-
+Bootstrap 4: 对比普通网格和 Flexbox 网格：https://www.oschina.net/translate/boostrap-4-regular-vs-flex-grid
+Flex布局和Bootstrap布局两者的比较：https://www.cnblogs.com/sexintercourse/p/6732109.html
 【B站】Bootstrap5框架技术详解/权威讲解：https://www.bilibili.com/video/av205002011/
 bootstrap开发模式：对于html、js、css三类元素，先搜有没有bootstrap对应的，如果没有再用原生的写
 【搜bootstrap 5 plugin】
@@ -122,6 +137,10 @@ Bootstrap4 Flex（弹性）布局：
 【找到完整的文档】class：form-group、form-control：https://blog.csdn.net/CarryBest/article/details/70338806?utm_source=blogxgwz9
 
 ===========================================================================
+
+DevUI是一支兼具设计视角和工程视角的团队，服务于华为云DevCloud平台：
+https://devui.design/home
+https://github.com/DevCloudFE/ng-devui
 
 angular中ngRoute和uiRoute的区别：https://www.cnblogs.com/liym-001/p/6039509.html
 
@@ -664,6 +683,20 @@ The 7 Pro Tips To Get Productive With Angular CLI & Schematics：
 https://hackernoon.com/%EF%B8%8F-the-7-pro-tips-to-get-productive-with-angular-cli-schematics-b59783704c54
 Angular Schematics 三部曲之 Add：https://zhuanlan.zhihu.com/p/101546474
 https://zhuanlan.zhihu.com/p/57236454
+Schematics 是前端开发工作流工具：https://www.jianshu.com/p/1a3011f2d55f
+浅谈Angular Cli Schematics：https://www.jianshu.com/p/1a3011f2d55f
+Angular Schematics 三部曲之 Add：https://www.jianshu.com/p/63e8464eff93
+小谈 ng deploy 的实现：https://www.jianshu.com/p/c5cfa2c0802c
+Angular Schematics教程：https://www.jianshu.com/p/3f630cbb543d
+Angular CLI是如何生成代码的？https://www.zhihu.com/question/278109954
+创建自定义的 Angular Schematics：https://www.cnblogs.com/haogj/p/9053469.html
+使用 Schematics 自定义 ng generate：https://zhuanlan.zhihu.com/p/37010676
+【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
+1.ng add与schematics
+What is angular schematic? https://findanyanswer.com/what-is-angular-schematic
+What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
+
+How to Customize Your Angular Build With Webpack：https://developer.okta.com/blog/2019/12/09/angular-webpack
 
 NGXS, Akita是啥？（NgRx我知道）
 试看NgRx源码
@@ -719,8 +752,12 @@ https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwi
 protractor是一个端到端的测试框架，主要用来测试angular和angularJs的应用。Protractor是一个Node.js程序，需要安装Node.js才可运行。Protractor默认使用Jasmine测试框架：
 https://blog.csdn.net/qyl_0316/article/details/86229288
 http://www.fly63.com/nav/324
-
-Ckeditor5用ng-deep设置高度（height）的原理是啥？https://q.cnblogs.com/q/109852/
+Angular Component Testing: A Detailed How-To With Examples：https://www.testim.io/blog/angular-component-testing-detailed-guide/
+Testing Components in Angular Using Jasmine: Part 1：https://code.tutsplus.com/tutorials/testing-components-in-angular-using-jasmine--cms-29165
+All You Need to Know About Mocking in Angular Tests：
+  https://christianlydemann.com/all-you-need-to-know-about-mocking-in-angular-tests/
+  https://mockoon.com/tutorials/angular-mocking/
+一个线上提供mock data的网站：https://reqres.in/
 monaco 编辑器【可以作为代码编辑器使用】：
   https://microsoft.github.io/monaco-editor/
   https://blog.csdn.net/gao_grace/article/details/88890895
@@ -755,9 +792,6 @@ angular9里面material也更新了
 angular9的升级：http://www.linuxeden.com/a/61695
 Angular9新特性以及升级指南：https://zhuanlan.zhihu.com/p/108563871
 
-ES6 Tutorial：
-  https://www.tutorialspoint.com/es6/index.htm
-  https://www.javascripttutorial.net/es6/
 把headers用好：
   //导入四有档案的Excel
   importCpuBaseInfoExcel(evt) {
@@ -820,16 +854,6 @@ angular8 实现table表格表头固定：
   https://www.cnblogs.com/amanda-man/p/13559929.html
 Angular动态表头：https://blog.csdn.net/zhoulizhu/article/details/104906144
 复杂表头：http://www.geezn.com/documents/gez/help/370985-1428495312378685.html
-
-es6新出的promise对象以及es7的async await：
-https://javascript.info/async-await
-https://www.js-tutorials.com/javascript-tutorial/how-to-use-async-and-await-in-javascript/
-promise使用场景：
-https://www.sitepoint.com/overview-javascript-promises/
-https://segmentfault.com/q/1010000019462799
-https://blog.csdn.net/weixin_41559723/article/details/79244460
-嵌套的promise执行顺序：https://www.jianshu.com/p/2c7c5285c7c5
-Promise的模拟实现：https://www.jianshu.com/p/887b523559f2
 
 angular使用tensorflow：https://angularfirebase.com/lessons/tensorflow-js-quick-start/
 tensorflow.js：
@@ -1092,8 +1116,6 @@ How to implement Angular 2 Bootstrap Pagination：https://www.cmarix.com/how-to-
 Create Custom Search Filter Pipe In HTML Table：https://seegatesite.com/angular-4-tutorial-create-custom-search-filter-pipe-in-html-table/
 Bind Select DropDown List in Angular 8：https://www.talkingdotnet.com/bind-select-dropdown-list-in-angular-8/
 Angular 6 Service – with Observable Data for Asynchronous Operation：https://grokonez.com/frontend/angular/angular-6/angular-6-service-with-observable-data-for-asynchronous-operation
-
-一道面试题引起的思考：https://www.cnblogs.com/chenjg/p/10006502.html
 
 =========================================================================================
 
@@ -1645,8 +1667,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 学懂grid布局：这篇就够了(译)：https://zhuanlan.zhihu.com/p/60883744
 精读《用 css grid 重新思考布局》：https://zhuanlan.zhihu.com/p/86519309
 flex：思考一下别人设计的合理性（完备、正交）
-Bootstrap 4: 对比普通网格和 Flexbox 网格：https://www.oschina.net/translate/boostrap-4-regular-vs-flex-grid
-Flex布局和Bootstrap布局两者的比较：https://www.cnblogs.com/sexintercourse/p/6732109.html
 bootstrap栅格布局以及bootstrap3和bootstrap4的区别：https://blog.csdn.net/weixin_42041193/article/details/81068002
 三年Angular架构经验总结：https://blog.csdn.net/liujiawei00/article/details/86510428
 javaScript中的暂性死区：https://www.jianshu.com/p/6cf381c2a020
@@ -1719,9 +1739,6 @@ angular.json：
 https://segmentfault.com/a/1190000016292354
 https://blog.csdn.net/m0_37723113/article/details/84026796
 
-19 packages are looking for funding
-  run `npm fund` for details
-
 为什么 npm 要为每个项目单独安装一遍 node_modules？https://www.cnblogs.com/weiyinfu/p/8471407.html
 如果想要代码目录不出现node_modules，有2个办法：
   1.公司的办法：要用的组件不写在package.json里面，就不会出现node_modules目录，把全局node_modules跟版本控制关联，统一下发；
@@ -1760,7 +1777,6 @@ Angular 中的容器组件：https://zhuanlan.zhihu.com/p/87333832
 
 canva实践小实例 - 马赛克效果：https://www.cnblogs.com/liugang-vip/p/5442878.html
 Angular2使用Guard和Resolve进行验证和权限控制：https://www.jb51.net/article/112016.htm
-ES6-生成器及其实现：https://www.jianshu.com/p/154804e7b3cf
 get请求里面observe:'response'和默认的'body'有什么区别？梳理一下
 angular的12个经典问题，看看你能答对几个？（里面有提到codelyzer。codelyzer与tslint）：https://gcdn.grapecity.com.cn/showtopic-36569-1-3.html
 模块对动态语言的重要性？
@@ -1768,9 +1784,6 @@ JS函数名一样，一个2个参数，一个1个参数，为啥不行？
 还有函数名和变量名一样为啥不行？
 有时候人们会简单的把发布订阅模式和观察者模式混为一谈，比如上面的一峰老师，其实两者还是有些区别的。至少它们的英文名称不同：Observer vs Pub-Sub：https://www.jianshu.com/p/e37ca8369162/
 [译]现代框架存在的根本原因：https://juejin.im/post/5d1df53fe51d4510a5033627
-ES6、7、8、9新特性：
-https://www.jianshu.com/p/9da4aa1c9970
-https://juejin.im/post/5c19c8105188251920597c0d
 JS函数生成器，function* () {}：
 https://www.cnblogs.com/yuzhengbo/p/6807914.html
 https://www.cnblogs.com/jffun-blog/p/9402184.html

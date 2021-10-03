@@ -4,6 +4,10 @@
 
 ================================================================================
 
+7 New Features to Look Out For in Bootstrap 5：
+  https://www.makeuseof.com/new-features-to-look-out-for-in-bootstrap-5/
+  https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
+
 添加菜单页面的下拉框搞好【ngx-bootstrap文档】
 checkbox、radio统一测一遍
 权限配置、添加菜单页面
@@ -178,24 +182,11 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 【看代码】我以前引入的ngx-treeview等组件，他们里面有没有用到jQuery？升级bootstrap 5.1后会不会有问题？
 先看一遍bootstrap5.1是什么样的，看ngx-bootstrp有哪些组件，然后看bootstrap5.1中哪些在ngx-bootstrap中做了封装，哪些没有做封装，没有封装的部分为什么没做封装？（是不好封装还是不是通用的没必要封装？）
 看ngx-bootstrap里面的样式。再次确认primeng能不能用于bootstrap，以及其他组件库
-
 ngx-bootstrap【最新的7.1版可以适配bootstrap 5.x.x】：
 	https://www.npmjs.com/package/ngx-bootstrap
 	https://valor-software.com/ngx-bootstrap/#/documentation
 The ngx-bootstrap library contains Angular Cli Schematics to allow easier installation. You can add ngx-bootstrap with one simple command：https://valor-software.com/ngx-bootstrap/#/schematics
 ngx-bootstrap是开源的
-Schematics 是前端开发工作流工具：https://www.jianshu.com/p/1a3011f2d55f
-浅谈Angular Cli Schematics：https://www.jianshu.com/p/1a3011f2d55f
-Angular Schematics 三部曲之 Add：https://www.jianshu.com/p/63e8464eff93
-小谈 ng deploy 的实现：https://www.jianshu.com/p/c5cfa2c0802c
-Angular Schematics教程：https://www.jianshu.com/p/3f630cbb543d
-Angular CLI是如何生成代码的？https://www.zhihu.com/question/278109954
-创建自定义的 Angular Schematics：https://www.cnblogs.com/haogj/p/9053469.html
-使用 Schematics 自定义 ng generate：https://zhuanlan.zhihu.com/p/37010676
-【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
-1.ng add与schematics
-What is angular schematic? https://findanyanswer.com/what-is-angular-schematic
-What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
 
 2021年你应该知道的9个网页组件库：https://www.chinaz.com/2020/1215/1214068.shtml
 【看几种不同的组件库，并思考：样式方面组件库更加关注的是什么，应该只是组件布局把？配色风格什么的，怎么跟不同的主题兼容的？看看vue里面比较成熟的elementUI是怎么处理的】
@@ -293,6 +284,11 @@ Bootstrap 5: New changes for the world’s most Used CSS Framework：https://eas
 50+ Free Bootstrap 5 Templates：https://cssauthor.com/free-bootstrap-5-templates/
 Essential Bootstrap 5 Cheat Sheets：https://cssauthor.com/bootstrap-5-cheat-sheets/
 
+列表的编辑、删除操作（分为按钮、页面2部分攻克）
+富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
+把用户信息放左侧，右上角留消息中心
+ckeditor图片、附件上传
+消息中心要用到：1.webSocket；2.右上角铃铛和红点提示；3.toast；
 
 【周六】
 【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
@@ -533,7 +529,7 @@ angular7 集成ngx-bootstrap：https://blog.csdn.net/weixin_43123610/article/det
 Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/157068422
 前端开发，比较出色的 UI 库有哪些？https://www.zhihu.com/question/353100080/answer/875018512
 
-===================================================================================
+===============================================================================================
 
 从用户权限给媳妇讲起，这一块很重要很难以做好，但是界面上可能很少反映出来。
 其他基础设施
@@ -543,6 +539,22 @@ Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/4641
 
 通过打造关系来出售的简单系统（五一要能搞定）
 先进的大数据物联网系统：下半年搞定
+
+==============================================================================================
+
+Transforming HTML Elements into Custom Angular 11 Components：https://www.htmlgoodies.com/html/transform-html-elements-angular-components/
+Using Custom Elements in Angular：https://alligator.io/angular/using-custom-elements/
+Creating a custom form component in Angular：https://ritchiejacobs.be/angular-custom-form-component
+Angular Custom Form Controls: Complete Guide：https://blog.angular-university.io/angular-custom-form-controls/
+Angular Custom Form Controls with Reactive Forms and NgModel：https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel
+Creating Custom Form Input Components with ControlValueAccessor：https://eliteionic.com/tutorials/creating-custom-form-input-components-with-ionic-angular/
+An elegant way to enable CSS-customizable Angular components：https://blog.merckx.fr/css-customizable-angular-components/
+Angular Tutorial: Custom Searchable Dropdown Component：https://howtocreateapps.com/angular-tutorial-custom-searchable-dropdown-component/
+Building Custom Validators in Angular：https://www.pluralsight.com/guides/building-custom-validators-in-angular
+Custom Pagination Component In Angular 6：https://www.c-sharpcorner.com/article/custom-pagination-component-in-angular-6/
+A simple but customizable accordion component in Angular：https://blog.sreyaj.dev/customizable-accordion-component-angular
+Child/Nested Components in Angular：https://www.tektutorialshub.com/angular/angular-adding-child-component/
+Building Web Components with Angular：https://buddy.works/tutorials/building-web-components-with-angular
 
 ==============================================================================================
 
@@ -772,13 +784,8 @@ guard（前后端鉴权如何配合）：https://www.jb51.net/article/112016.htm
 我们系统的选择日期为什么有违和感？不能找到一个bootstrap4风格的控件吗？这也是可以超越公司的一个方面
 
 如果前端实在搞不下去了就搞后端基础设施及scheme【这背后隐藏的期望是量变到质变】：
-前端基础设施选型练习一下
-列表的编辑、删除操作（分为按钮、页面2部分攻克）
-富文本上传图片搞定后再搞：【文件表建起来，Vo建起来】
-把用户信息放左侧，右上角留消息中心
-ckeditor图片、附件上传
-消息中心要用到：1.webSocket；2.右上角铃铛和红点提示；3.toast；
 
+前端基础设施选型练习一下
 不要没事瞎升级，一定要有路线图：
   1.theme；
   2.node；
@@ -817,17 +824,12 @@ found 2 high severity vulnerabilities
 https://loocode.com/post/10149
 https://blog.csdn.net/nzyalj/article/details/87870762
 Angular7+Ckeditor5基础功能整合：https://blog.csdn.net/nzyalj/article/details/87870762
+CKEditor 5 - Rich text editor component for Angular：https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/angular.html
+Ckeditor5用ng-deep设置高度（height）的原理是啥？https://q.cnblogs.com/q/109852/
 2.把quill干掉【代码、package.json等配置文件】
 3.学习import as（引入插件）：
 https://www.cnblogs.com/minigrasshopper/p/7692664.html
 https://www.cnblogs.com/minigrasshopper/p/7692813.html
-
-根据现有的知识和技能，let-admin是可以直接套在我现有的代码上的
-
-All You Need to Know About Mocking in Angular Tests：
-  https://christianlydemann.com/all-you-need-to-know-about-mocking-in-angular-tests/
-  https://mockoon.com/tutorials/angular-mocking/
-一个线上提供mock data的网站：https://reqres.in/
 
 =================================================================
 
