@@ -1,10 +1,10 @@
-
 ================================================================================
 
 【互联网项目和接项目体现了两个思路：一个是探索性的，一个是确定性的，指导思想要定下来】
 
 ================================================================================
 
+添加菜单页面的下拉框搞好【ngx-bootstrap文档】
 checkbox、radio统一测一遍
 权限配置、添加菜单页面
 联系信息里面textarea的高度为啥不对？grid-template-columns、grid-template-rows的作用以及是否可以直接用bootstrap的flex功能来代替？【梳理我的代码里面用到的这些东西】
@@ -39,9 +39,11 @@ How to implement an Angular bootstrap table with pagination and filter：
 首先确认下ngx-bootstrap有没有侧边栏，应该没有，因为不通用
 把我侧边栏的样式完整看一遍
 把mdo左边的icon修好
-图标icon、svg单独学习一下
-把我的“material组件”这个模块改造成“第三方主题元素”模块
+图标icon、svg单独学习一下：https://icons.getbootstrap.com/
+把我的“material组件”这个模块改造成“第三方主题元素”模块【积累第三方主题元素的资源】
 把material删干净，包括模块引用、下载的包
+Bootstrap 5 Modal：https://www.geeksforgeeks.org/bootstrap-5-modal/
+
 
 利用Angular7开发一个Radio组件的全过程：https://www.jb51.net/article/165157.htm
 使用Angular7开发一个Radio组件：https://segmentfault.com/a/1190000019644926
@@ -181,6 +183,7 @@ ngx-bootstrap【最新的7.1版可以适配bootstrap 5.x.x】：
 	https://www.npmjs.com/package/ngx-bootstrap
 	https://valor-software.com/ngx-bootstrap/#/documentation
 The ngx-bootstrap library contains Angular Cli Schematics to allow easier installation. You can add ngx-bootstrap with one simple command：https://valor-software.com/ngx-bootstrap/#/schematics
+ngx-bootstrap是开源的
 Schematics 是前端开发工作流工具：https://www.jianshu.com/p/1a3011f2d55f
 浅谈Angular Cli Schematics：https://www.jianshu.com/p/1a3011f2d55f
 Angular Schematics 三部曲之 Add：https://www.jianshu.com/p/63e8464eff93
@@ -189,6 +192,10 @@ Angular Schematics教程：https://www.jianshu.com/p/3f630cbb543d
 Angular CLI是如何生成代码的？https://www.zhihu.com/question/278109954
 创建自定义的 Angular Schematics：https://www.cnblogs.com/haogj/p/9053469.html
 使用 Schematics 自定义 ng generate：https://zhuanlan.zhihu.com/p/37010676
+【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
+1.ng add与schematics
+What is angular schematic? https://findanyanswer.com/what-is-angular-schematic
+What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
 
 2021年你应该知道的9个网页组件库：https://www.chinaz.com/2020/1215/1214068.shtml
 【看几种不同的组件库，并思考：样式方面组件库更加关注的是什么，应该只是组件布局把？配色风格什么的，怎么跟不同的主题兼容的？看看vue里面比较成熟的elementUI是怎么处理的】
@@ -218,11 +225,6 @@ Input, Change, ngModelChange事件的区别：https://www.cnblogs.com/juliazhang
 【等把现有的问题再解决相当一部分后，把代码拆成2部分，分别套入material dashboard和vali-admin】
 上面这些搞完后，至少还有3轮：1.material的那个主题套上去；2.vali、admin-lte套一遍；3.门户网站
 
-【先快速把ng-alain搞起来，给自己一点信心？我的两个前端项目同时推进】https://ng-alain.com/docs/getting-started/zh
-1.ng add与schematics
-What is angular schematic? https://findanyanswer.com/what-is-angular-schematic
-What is angular DevKit? https://findanyanswer.com/what-is-angular-devkit
-
 如果不能构建公司那种可以直接参考别人的代码复制使用的组件库，那么就达不到大规模添加功能和代码的程度。我离这个标准还差的远。
 【下一步最打紧的是搞清楚控件代码的阅读、修改、调试】
 
@@ -235,7 +237,6 @@ react框架网站有哪些？https://www.zhihu.com/question/449794230/answer/179
 思考如果用angular做门户网站会不会有问题【对比以前，我现在的能力对做门户有哪些新的积累？】
 对比最新的门户网站技术
 
-列表项的编辑、删除、添加行：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】
 form整好（先把template-driven用溜）把他们的布局统一一下
 Introduction to forms in Angular：https://angular.io/guide/forms-overview
 列表再搞一次，后面加按钮、分页【尝试分析代码】
@@ -246,6 +247,7 @@ contact页面里面，label包在外面有什么好处？
 如果机器内存不够前端使用先mock，无论如何要把前端先搞的比较清楚再换机器【2021年五一以后再换机器】
 
 http下载的文件类型做成一个枚举
+添加角色的时候，可以顺带把添加资源权限放在这个页面里面（一种或者多种资源应该都可以），它们之间的联系较紧密。但是在添加菜单页面，就没必要加勾选角色了，这里只负责资源的添加，单一职责。
 
 Angular 2+ Components & Libraries：https://github.com/brillout/awesome-angular-components
 Awesome Angular：https://github.com/PatrickJS/awesome-angular#awesome-angular--
@@ -286,6 +288,11 @@ ng-bootstrap：https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap
 HOW TO ADD BOOTSTRAP 5.1.0 IN ANGULAR 12? https://therichpost.com/how-to-add-bootstrap-5-1-0-in-angular-12/
 ANGULAR 12 IMPLEMENTS BOOTSTRAP 5.1.0 NEW FEATURES：https://therichpost.com/angular-12-implements-bootstrap-5-1-0-new-features/
 
+Bootstrap 5: New changes for the world’s most Used CSS Framework：https://easetemplate.com/bootstrap-5-new-changes-for-the-worlds-most-used-css-framework/
+【一个重要的工程问题】怎样找到boostra 5.1的样式大全以及快速发现自己需要的样式？
+50+ Free Bootstrap 5 Templates：https://cssauthor.com/free-bootstrap-5-templates/
+Essential Bootstrap 5 Cheat Sheets：https://cssauthor.com/bootstrap-5-cheat-sheets/
+
 
 【周六】
 【左侧替换成二级菜单是没有任何问题的，搜一下nv、menu，然后要看一下这个控件，可能没有想的那么简单】然后做如下合并：user、role、component、article
@@ -323,94 +330,6 @@ NgxTreeDnd 可拖拽的 Angular 树组件：https://www.oschina.net/p/ngx-tree-d
 npm 模块安装机制简介：https://www.ruanyifeng.com/blog/2016/01/npm-install.html
 npm install 安装过程分析：https://www.cnblogs.com/everlose/p/12505245.html
 npm包发布流程和如何看插件源码：https://blog.csdn.net/u010377383/article/details/86858517
-
-使用Angular material主题定义自己的组件库的配色体系：https://www.jb51.net/article/169239.htm
-如何实现Angular Material自定义主题：https://juejin.cn/post/6844903894561062926
-Angular Material主题配置：https://www.cnblogs.com/ylp0617/p/6902856.html
-Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
-  https://www.cnblogs.com/nzbin/p/11150811.html
-  https://www.cnblogs.com/nzbin/p/11392311.html
-使用material的下拉框这种组件的意义在哪里呢？
-angular material 8【现在有12了】：
-https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
-https://www.positronx.io/create-angular-material-8-custom-theme/
-https://devconquer.com/angular/angular-material-8-with-angular-8/
-新手合并 Angular 7 + Material 2：https://blog.csdn.net/weixin_42027605/article/details/87180454
-Angular Material：
-  https://www.tutorialspoint.com/angular6/angular6_materials.htm
-  https://www.jianshu.com/p/b5ecc13fde54
-看angular material样式表、看控件（看material，对后端的表）
-看material教程，把红点和圆圈做出来
-Creating Beautiful Apps with Angular Material：
-https://auth0.com/blog/creating-beautiful-apps-with-angular-material/【可以借鉴2个样式】
-https://www.sitepoint.com/angular-material-design-components/
-https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
-Angular Material Tutorials：https://www.concretepage.com/angular-material/
-我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
-ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
-ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
-ng-material-multilevel-menu【这个才是我要找的左侧树形菜单。并且是material的，用了mat-sidenav，思路很好，代码也很值得阅读】：
-https://www.npmjs.com/package/ng-material-multilevel-menu
-https://plugins.codershood.info/#/plugins/ngmm-plugin
-（material）mat-file-upload：https://angularscript.com/file-select-upload-material/
-从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
-Angular Material Table component is full of features and a wide variety of options are available to create data-rich grids in a very optimized way. It provides a lot basic to advance functionalities like filter, sorting, pagination, expand-collapse, custom templating, etc.
-angular material找个时间先升级然后并修复注释的代码
-2.把material的那个主题下载下来实用；
-再看一个material教程
-auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
-【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
-material能否结合bootstrap使用？
-【angular material控件在npm里面的对等物】【整理一下这部分】【是不是根据Dependencies来看与bootstrap的关系？】
-把angular material table弄好后，说不定主题需要再搞一次
-把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
-搜索ng mat以发现更多material控件，例如：
-  https://www.npmjs.com/package/ng-mat-search-bar
-  https://www.npmjs.com/package/ng-mat-icon-bar
-主题的设计和组件的设计风格最好要一致，例如，最好不要用material design的主题，来配合ant design的控件
-再用angular material的menu试一把二级菜单
-二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
-从sidenav再次分析angular material的抽象程度，如果angular material只是封装了结构(标签封装与转换)及行为，那它和样式是解耦的，并且能和其他组件无缝结合【如果只是封装了结构可能还不足以使用，因为组合标签并不难】。再分析其他组件库
-angular的封装是封装出了新的标签和行为（一个控件内部又封装了子控件，才提供了一点功能），要有这个意识
-感觉angular material封装的很怪，提供给我的到底是侧重material design方面的东西多一点，还是易用性方面多一点？感觉没有太多易用性？
-angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
-material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
-Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
-angular material源码：https://github.com/angular/components
-angular的表单已经很强大了，material真的有必要？
-Angular Material 8 | Stepper Tutorial With Examples：
-https://www.freakyjolly.com/angular-material-8-stepper-tutorial-with-examples/
-https://www.freakyjolly.com/angular-material-8-datepicker-tutorial-with-examples/
-https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
-Angular Material 的设计之美【知道自己在干什么很重要】：https://zhuanlan.zhihu.com/p/81174831
-angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
-https://www.cnblogs.com/mttcug/p/7976852.html
-https://segmentfault.com/a/1190000016106262
-material的设计思想还是没有搞明白
-3.学习Sort Header：从这个功能学习官网文档的使用
-https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
-从官网学习angular material！！！：https://material.angular.io/components/categories
-只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
-从官网看事件：https://material.angular.io/components/categories
-关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
-[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
-Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
-material官方全列表：https://material.angular.io/components/dialog/api
-Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
-使用material还有个好处，可以尝试一下换界面的工作量
-angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
-side-nav
-  https://www.devglan.com/angular/material-sidenav-example
-  https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
-  https://code-maze.com/angular-material-navigation/
-mat-form-field（form field） is used to create a wrapper over angular components and is used to apply text styles like underline, bold, hints etc：
-https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
-mat-icon显示不出来是不是因为没有加CSS：https://github.com/angular/components/issues/7948
-angular material toolbar：
-  https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
-  https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
-  https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
-  Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
 
 generating browser application bundles
 
@@ -1090,6 +1009,9 @@ angular.json参数详解(DevKit)：
   https://zhuanlan.zhihu.com/p/369498603
 
 表单分组FormGroup-新建、获取FormGroup的值：https://blog.csdn.net/wjyyhhxit/article/details/91043493
+
+compiling @angular/xxx/xxx : es2015 as esm2015指的是把第三方组件编译成ECMAScript Modules：https://stackoverflow.com/questions/61572153/es2015-vs-esm2015
+es2015就是es6
 
 =================================================================================
 

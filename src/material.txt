@@ -1,0 +1,89 @@
+
+使用Angular material主题定义自己的组件库的配色体系：https://www.jb51.net/article/169239.htm
+如何实现Angular Material自定义主题：https://juejin.cn/post/6844903894561062926
+Angular Material主题配置：https://www.cnblogs.com/ylp0617/p/6902856.html
+Ng-Matero：基于 Angular Material 搭建的中后台管理框架：
+  https://www.cnblogs.com/nzbin/p/11150811.html
+  https://www.cnblogs.com/nzbin/p/11392311.html
+使用material的下拉框这种组件的意义在哪里呢？
+angular material 8【现在有12了】：
+https://www.positronx.io/create-login-ui-template-with-angular-8-material-design/
+https://www.positronx.io/create-angular-material-8-custom-theme/
+https://devconquer.com/angular/angular-material-8-with-angular-8/
+新手合并 Angular 7 + Material 2：https://blog.csdn.net/weixin_42027605/article/details/87180454
+Angular Material：
+  https://www.tutorialspoint.com/angular6/angular6_materials.htm
+  https://www.jianshu.com/p/b5ecc13fde54
+看angular material样式表、看控件（看material，对后端的表）
+看material教程，把红点和圆圈做出来
+Creating Beautiful Apps with Angular Material：
+https://auth0.com/blog/creating-beautiful-apps-with-angular-material/【可以借鉴2个样式】
+https://www.sitepoint.com/angular-material-design-components/
+https://nirajsonawane.github.io/2018/10/27/Angular-Material-Tabs-with-Router/
+Angular Material Tutorials：https://www.concretepage.com/angular-material/
+我的material的树数据还没对上，这个是要做好的【做好二级菜单后，这个功能很重要】
+ng-stepper-nav：https://www.npmjs.com/package/ng-stepper-nav
+ng-material-multilevel-menu：https://github.com/ShankyTiwari/ng-material-multilevel-menu
+ng-material-multilevel-menu【这个才是我要找的左侧树形菜单。并且是material的，用了mat-sidenav，思路很好，代码也很值得阅读】：
+https://www.npmjs.com/package/ng-material-multilevel-menu
+https://plugins.codershood.info/#/plugins/ngmm-plugin
+（material）mat-file-upload：https://angularscript.com/file-select-upload-material/
+从源码看 angular/material2 中 dialog模块的实现：https://www.cnblogs.com/yitim/p/7676050.html
+Angular Material Table component is full of features and a wide variety of options are available to create data-rich grids in a very optimized way. It provides a lot basic to advance functionalities like filter, sorting, pagination, expand-collapse, custom templating, etc.
+angular material找个时间先升级然后并修复注释的代码
+2.把material的那个主题下载下来实用；
+再看一个material教程
+auto-complete首先把功能的整个流程想清楚，然后看ngx-有没有auto-complete，然后再用material都
+【搜索框 + auto-complete】Angular Material 7 - Auto-Complete（里面用到了其他不熟悉的form控件，再看一下）：https://www.tutorialspoint.com/angular_material7/angular_material7_autocomplete.htm
+material能否结合bootstrap使用？
+【angular material控件在npm里面的对等物】【整理一下这部分】【是不是根据Dependencies来看与bootstrap的关系？】
+把angular material table弄好后，说不定主题需要再搞一次
+把angular material所有组件都加进去：https://blog.csdn.net/sinat_38930182/article/details/89338943
+搜索ng mat以发现更多material控件，例如：
+  https://www.npmjs.com/package/ng-mat-search-bar
+  https://www.npmjs.com/package/ng-mat-icon-bar
+主题的设计和组件的设计风格最好要一致，例如，最好不要用material design的主题，来配合ant design的控件
+再用angular material的menu试一把二级菜单
+二级菜单：可以自行写代码确定加载几级。二级菜单封装了动态加载右侧component，还封装了什么？
+从sidenav再次分析angular material的抽象程度，如果angular material只是封装了结构(标签封装与转换)及行为，那它和样式是解耦的，并且能和其他组件无缝结合【如果只是封装了结构可能还不足以使用，因为组合标签并不难】。再分析其他组件库
+angular的封装是封装出了新的标签和行为（一个控件内部又封装了子控件，才提供了一点功能），要有这个意识
+感觉angular material封装的很怪，提供给我的到底是侧重material design方面的东西多一点，还是易用性方面多一点？感觉没有太多易用性？
+angular material虽然不实际使用，但是对前端设计已经后端的数据表的设计以及前端技术提升有重大的意义。先把后端需要哪些表设计对一遍
+material控件与form的配合？material的input和form共存吗？（关系搞清楚后再看要不要二次改造）
+Angular Material Form Validation, Input, Datepicker and Modal：https://code-maze.com/angular-material-form-validation/
+angular material源码：https://github.com/angular/components
+angular的表单已经很强大了，material真的有必要？
+Angular Material 8 | Stepper Tutorial With Examples：
+https://www.freakyjolly.com/angular-material-8-stepper-tutorial-with-examples/
+https://www.freakyjolly.com/angular-material-8-datepicker-tutorial-with-examples/
+https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+Angular Material 的设计之美【知道自己在干什么很重要】：https://zhuanlan.zhihu.com/p/81174831
+angular material的component实现用的是指令【知乎上看看别人的意见】，例如：“The <mat-input>, an Angular Directive”。和我们自定义用component不一样，要注意对比
+https://www.cnblogs.com/mttcug/p/7976852.html
+https://segmentfault.com/a/1190000016106262
+material的设计思想还是没有搞明白
+3.学习Sort Header：从这个功能学习官网文档的使用
+https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+从官网学习angular material！！！：https://material.angular.io/components/categories
+只有在paginator里面看到事件：https://www.tutorialspoint.com/angular_material7/angular_material7_paginator.htm
+从官网看事件：https://material.angular.io/components/categories
+关于angular material的问题：怎么修改控件？如果用主题自己封装控件就不会有这问题
+[Angular Material完全攻略]https://www.tutorialspoint.com/angular_material7/
+Angular Material 2 Quick Reference：https://alligator.io/angular/material-design-angular-reference/
+material官方全列表：https://material.angular.io/components/dialog/api
+Angular 5 Material Dialog Implementation Example：https://www.devglan.com/angular/angular-material-dialog
+使用material还有个好处，可以尝试一下换界面的工作量
+angular material的table是前端分页，不好用。再从前端数据绑定的角度分析一下，table是不是很难用
+side-nav
+  https://www.devglan.com/angular/material-sidenav-example
+  https://www.tutorialspoint.com/angular_material7/angular_material7_sidenav.htm
+  https://code-maze.com/angular-material-navigation/
+mat-form-field（form field） is used to create a wrapper over angular components and is used to apply text styles like underline, bold, hints etc：
+https://www.tutorialspoint.com/angular_material7/angular_material7_form_field.htm
+mat-icon显示不出来是不是因为没有加CSS：https://github.com/angular/components/issues/7948
+angular material toolbar：
+  https://www.dotnettricks.com/learn/angularmaterial/toolbar-component-example
+  https://stackoverflow.com/questions/47250643/angular-5-material-mattoolbar-attempting-to-combine-different-toolbar-modes
+  https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
+  Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
+列表项的编辑、删除、添加行：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】

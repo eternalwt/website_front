@@ -28,6 +28,7 @@
     "ng-material-multilevel-menu": "^5.5.3",
     "ng2-file-upload": "^1.4.0",
     "ng2-pdf-viewer": "^7.0.1",
+    "ngx-bootstrap": "^7.1.2",
     "ngx-doc-viewer": "^2.0.4",
     "ngx-multi-modal": "^2.3.3",
     "ngx-treeview": "^10.0.2",
