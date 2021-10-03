@@ -47,15 +47,12 @@ How to implement an Angular bootstrap table with pagination and filter：
 把我的“material组件”这个模块改造成“第三方主题元素”模块【积累第三方主题元素的资源】
 把material删干净，包括模块引用、下载的包
 Bootstrap 5 Modal：https://www.geeksforgeeks.org/bootstrap-5-modal/
-
+我的ngx-开头的控件，哪些是开源的？要注意跟踪
+github - material-design-for-bootstrap：https://github.com/mdbootstrap/material-design-for-bootstrap（可见bootstrap只是框架，material可以在框架的基础上继续发挥）
+github - mdb-ui-kit：https://github.com/mdbootstrap/mdb-ui-kit
 
 利用Angular7开发一个Radio组件的全过程：https://www.jb51.net/article/165157.htm
 使用Angular7开发一个Radio组件：https://segmentfault.com/a/1190000019644926
-
-
-【看mat-icon的源码】封装了什么东西？
-mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
-mat-checkbox呢？用这个的必要性是什么？业务开发需要的封装是对一个功能点的封装。如果mat-checkbox这种封装功能不是特别强大的话，那就没必要【确认】
 
 1.学习bootstrap；2.用ngx-bootstrap改造现有项目
 写一个功能需要样式时，例如侧边栏，先查官网examples：https://getbootstrap.com/docs/5.1/examples/
@@ -104,8 +101,24 @@ Ngx-Bootstrap Tutorial：https://www.tutorialspoint.com/ngx_bootstrap/index.htm
 Angular ngx bootstrap Pagination Component：https://www.geeksforgeeks.org/angular-ngx-bootstrap-pagination-component/
 Add Bootstrap 4 to Angular 11 UIs With Ng-Bootstrap and Ngx-Bootstrap：https://www.techiediaries.com/angular-bootstrap-ui/
 Slick Carousel（走马灯） In Angular：https://devconquer.com/angular/slick-carousel-in-angular/
+【控件学习】【需要把样式问题过一遍】
+控件也有版本更新的问题，后续注意一下
+Google/Office/PDF Document Viewer In Angular：https://angularscript.com/google-office-pdf-document-viewer/
+ngx-treeview：https://www.npmjs.com/package/ngx-treeview
+angular-tabs-component：https://www.npmjs.com/package/angular-tabs-component
+ng2-file-upload：https://www.cnblogs.com/NeverCtrl-C/p/7778304.html
+Angular File Upload【好像很强大】：https://www.npmjs.com/package/angular-file-upload
+ngx-echarts
+
+httpClientService上传的进度很好控制，下载呢？
+  https://www.ahmedbouchefra.com/angular/angular-9-8-tutorial-example-upload-files-with-formdata-httpclient-rxjs-and-material-progressbar/
+  https://www.positronx.io/angular-file-upload-with-progress-bar-tutorial/
+  https://www.techiediaries.com/angular-file-upload-progress-bar/
 
 首先搞懂一个问题：bootstrap的表格与下载的表格控件最主要的区别是什么？是不是有了bootstrap的进行封装就可以了？
+
+自己动手实现一个 Flex 布局框架：https://segmentfault.com/a/1190000007167682
+angular组件－特殊的瀑布流（原创）：https://segmentfault.com/a/1190000006921007
 
 angular4如何使用Bootstrap的datetimepicker组件：https://blog.csdn.net/qq_34908167/article/details/79913199
 

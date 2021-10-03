@@ -1,4 +1,4 @@
-<div class="col-lg-3 m-auto">
+<div class="col-lg-3 m-auto" style="transform: translateY(50%);">
 
   <h1>系统登录</h1>
 
@@ -7,7 +7,7 @@
       账号：
       <input type="text" formControlName="username" class="form-control">
       <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
-        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
+        <div *ngIf="messageForm.controls.name.errors.required">请输入账号</div>
       </div>
     </label>
 
@@ -15,7 +15,7 @@
       密码：
       <input type="password" formControlName="password" class="form-control">
       <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
-        <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
+        <div *ngIf="messageForm.controls.message.errors.required">请输入密码</div>
       </div>
     </label>
 

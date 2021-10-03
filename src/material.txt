@@ -1,4 +1,66 @@
 
+【看mat-icon的源码】封装了什么东西？
+mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
+mat-checkbox呢？用这个的必要性是什么？业务开发需要的封装是对一个功能点的封装。如果mat-checkbox这种封装功能不是特别强大的话，那就没必要【确认】
+
+Mat-Icon List : 900+ Angular Material Icons：
+https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
+https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
+
+angular material 2：
+  https://material.angular.io/guide/theming
+  https://www.gistia.com/beginners-guide-angular-material-2/（material和bootstrap是两套东西）
+  https://alligator.io/angular/angular-material-2/
+  https://www.mithunvp.com/angular-material-2-angular-cli-webpack/
+  https://coursetro.com/posts/code/29/Working-with-Angular-2-Material
+Angular Material 7 教程：https://www.kaifaxueyuan.com/frontend/angular-material7/angular-material7-home.html
+搞清楚Angular Material的样式定制（只要搞定一个组件就OK了）
+Angular Material 的设计之美：https://juejin.im/post/5d6fb73e518825168d37d500
+【这句话解决了组件样式与主题包的兼容问题，另一个问题是：主题包如何跟angular的目录结构适配】Angular Material 的样式几乎全部写在了 mixin 中，定制起来非常容易：https://juejin.im/post/5d6fb73e518825168d37d500
+Angular Material 给出了多套主题的设置方法，只需要增加样式控制类就可以了。
+Angular Material: Containers with the Layout API【视频】：https://egghead.io/lessons/angularjs-angular-material-containers-with-the-layout-api
+Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
+https://alligator.io/angular/flex-layout/
+【封装的太很真的好用吗？】下面的文章列出了angular flex layout的详细功能和优势：
+  https://www.angularjswiki.com/flexlayout/
+  https://www.angularjswiki.com/flexlayout/basics/
+
+Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
+Angular Material UI Dialog的使用：https://www.jianshu.com/p/bce25fef312e
+
+Angular Material + Bootstrap vs. MDbootstrap for Angular
+Angular Material 7：https://www.tutorialspoint.com/angular_material7/index.htm
+看angular material的代码
+Angular Material Tutorial with examples：https://www.angularjswiki.com/material/
+Angular Material Buttons : Mat-Button Example：
+https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/
+https://appdividend.com/2018/12/25/angular-material-icon-tutorial-with-example/
+Angular Material Series：https://code-maze.com/angular-material-series/
+Creating Beautiful Apps with Angular Material：https://auth0.com/blog/creating-beautiful-apps-with-angular-material/
+Angular Material Tutorial：
+https://www.tutorialspoint.com/angular_material/index.htm
+https://www.wikitechy.com/tutorials/angular-material/
+https://material.angular.io/components/categories
+Angular Material Data Table: A Complete Example (Server Pagination, Filtering, Sorting)【这个有前端(client-side)分页没有后端，matSort没弄好】：
+https://www.concretepage.com/angular-material/angular-material-table-sorting-pagination
+【后端分页】https://blog.angular-university.io/angular-material-data-table/
+Angular 8/7 | Edit/ Add/ Delete Rows in Material Table with using Dialogs inline Row Operation：https://www.freakyjolly.com/angular-7-8-edit-add-delete-rows-in-material-table-with-using-dialogs-inline-row-operation/
+Angular Material Inputs：https://www.concretepage.com/angular-material/angular-material-inputs
+看一个angular material2组件的代码，看一个easyui组件的代码【有了主题后，组件或许没有那么重要？还是反过来？要2方面都能达成，最好是能兼容】
+mat-table的刷新：https://blog.csdn.net/yorksome/article/details/99698080
+mat-table的样式：
+https://stackoverflow.com/questions/45512823/angular4-material-md-table-column-width-autosizing-like-normal-table
+https://stackoverflow.com/questions/48684560/mat-table-auto-fit-column-width-to-bigger-content
+Angular 8/9 Modal Tutorial with Angular Material Dialog：https://www.positronx.io/angular-8-modal-tutorial-with-angular-material-dialog/
+Angular Modal Popup Example | Angular Material Dialog：https://appdividend.com/2019/02/11/angular-modal-tutorial-with-example-angular-material-dialog/
+Angular Material Dialog: A Complete Example【这个里面讲了input】：https://blog.angular-university.io/angular-material-dialog/
+MatDialog（DialogData）：
+https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
+https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
+https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
+Creating UIs with Angular Material Design Components：https://www.sitepoint.com/angular-material-design-components/
+Add AutoComplete in Angular Application using Angular Material：https://www.freakyjolly.com/angular-7-6-add-autocomplete-in-angular-application-using-angular-material/
+
 使用Angular material主题定义自己的组件库的配色体系：https://www.jb51.net/article/169239.htm
 如何实现Angular Material自定义主题：https://juejin.cn/post/6844903894561062926
 Angular Material主题配置：https://www.cnblogs.com/ylp0617/p/6902856.html
@@ -87,3 +149,20 @@ angular material toolbar：
   https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/
   Material 2: Sticky Footer with Mat Sidenav：https://www.thecodecampus.de/blog/material-2-sticky-footer-mat-sidenav/
 列表项的编辑、删除、添加行：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/【是不是涉及到列表的也可以抽一个基类出来？和form一样】
+
+Theming your Angular Material app【注意体会设计思路，5个调色板】：https://material.angular.io/guide/theming#defining-a-custom-theme
+angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
+How to make a custom theme in Angular Material：
+  https://www.positronx.io/create-angular-material-8-custom-theme/
+  https://www.freecodecamp.org/news/how-to-make-a-custom-theme-in-angular-material-d47122a1e361/
+  https://material.angular.io/guide/theming
+  https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
+预定义主题（配合Angular Material components使用）：~@angular/material/prebuilt-themes/indigo-pink.css：
+  https://www.codemeals.com/angular-tutorials/angular-material/
+  https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
+Angular Material: Creating a Custom Theme：
+  https://alligator.io/angular/angular-material-custom-theme/
+  https://coursetro.com/posts/code/116/Create-your-own-Angular-5-Material-Theme
+  https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
+  http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
+

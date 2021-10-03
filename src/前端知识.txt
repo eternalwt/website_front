@@ -39,7 +39,6 @@ https://zhidao.baidu.com/question/1818954979543524068.html
 
 2020前端基础包过面试题：https://zhuanlan.zhihu.com/p/92590306
 
-
 【ES6】for of用法：
   https://blog.csdn.net/w390058785/article/details/80522383
   https://www.cnblogs.com/m2maomao/p/7743143.html
@@ -68,7 +67,6 @@ ES2021：
   https://zhuanlan.zhihu.com/p/386594787
   https://zhuanlan.zhihu.com/p/337369366
 
-
 【我对promise理解到这句话的程度了】有了 Promise 对象，就可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。
 此外，Promise 对象提供统一的接口，使得控制异步操作更加容易：https://www.runoob.com/w3cnote/javascript-promise-object.html
 
@@ -84,7 +82,6 @@ Lern how to split your Angular App into Modules：https://malcoded.com/posts/ang
   2.app.module.ts指定了第一个要加载的component：AppComponent（这个component的selector名字在index.htlm里面也出现了）；
   3.AppComponent只是放一个路由插座，配合app-routing.module.ts里面的路由，显示SPA的第一个有效页面。
   4.如何用好app.module.ts这个模块？以及，app-routing.module.ts这个模块添加多个component的场景是啥？
-
 
 请问一下各位大佬，js的静态方法有啥作用呀，写工具类吗？https://www.zhihu.com/question/423086350/answer/1499324613
 学习Lodash：
@@ -137,6 +134,8 @@ Bootstrap4 Flex（弹性）布局：
 【找到完整的文档】class：form-group、form-control：https://blog.csdn.net/CarryBest/article/details/70338806?utm_source=blogxgwz9
 
 ===========================================================================
+
+Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
 
 DevUI是一支兼具设计视角和工程视角的团队，服务于华为云DevCloud平台：
 https://devui.design/home
@@ -231,8 +230,23 @@ npm install的几种方式区别：https://www.jianshu.com/p/920c1a6e999c
 
 【专门花时间来提升这个能力】【在github上，首先去寻找问题有没有答案，其次尝试提问：1.二级菜单；2.table的后端分页】而不是遇到问题直接就放弃了，那样很难提升
 2019了还可以用angular吗？（学严兴杰分析angular和angular material的issue）：https://www.zhihu.com/question/329973345/answer/728704821
+
 我选择Angular最直接的理由是Ionic4，最好的混合应用框架，没有之一。
 Angular第三方UI组件库------ionic：https://www.cnblogs.com/sna-ling/p/12297355.html
+移动开发：Angular：Ionic 和 NativeScript
+ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。可以帮助您使用 Web 技术，比如 HTML、CSS 和 Javascript 构建接近原生体验的移动应用程序：
+https://www.runoob.com/ionic/ionic-tutorial.html
+多端解决新方案：Flutter
+混合开发（angular+ionic+cordova）【手机app】：https://www.jianshu.com/p/d88686cdab72
+ionic4 和 flutter 哪个更好些？https://v2ex.com/t/570412
+React Native、weex、flutter、Ionic：
+https://www.cnblogs.com/imstudy/p/9466781.html
+https://www.jianshu.com/p/5c981193eb16
+https://segmentfault.com/a/1190000018590996
+Electron 中文文档：https://www.w3cschool.cn/electronmanual/
+import { Events} from '@ionic/angular';
+ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework)：https://www.runoob.com/ionic/ionic-tutorial.html
+
 
 手把手教你搭建自己的Angular组件库：https://zhuanlan.zhihu.com/p/140700137
 前端监控和统计概念：https://zhuanlan.zhihu.com/p/134132381
@@ -733,21 +747,12 @@ https://blog.csdn.net/wen_binobject/article/details/78593660
 
 ===============================================================================
 
-【控件学习】【需要把样式问题过一遍】
-控件也有版本更新的问题，后续注意一下
-Google/Office/PDF Document Viewer In Angular：https://angularscript.com/google-office-pdf-document-viewer/
-ngx-treeview：https://www.npmjs.com/package/ngx-treeview
-angular-tabs-component：https://www.npmjs.com/package/angular-tabs-component
-ng2-file-upload：https://www.cnblogs.com/NeverCtrl-C/p/7778304.html
-Angular File Upload【好像很强大】：https://www.npmjs.com/package/angular-file-upload
-ngx-echarts
-
 这个里面控件看到第6页了：
-https://angularscript.com/category/page/6/
-https://angularscript.com/pretty-checkbox-components-for-angular/
-https://angularscript.com/3d-product-viewer/
-https://angularscript.com/image-carousel-gallery/
-https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwig/
+  https://angularscript.com/category/page/6/
+  https://angularscript.com/pretty-checkbox-components-for-angular/
+  https://angularscript.com/3d-product-viewer/
+  https://angularscript.com/image-carousel-gallery/
+  https://angularscript.com/angular-material-wysiwyg-editor-for-angular-7-matngxwig/
 
 protractor是一个端到端的测试框架，主要用来测试angular和angularJs的应用。Protractor是一个Node.js程序，需要安装Node.js才可运行。Protractor默认使用Jasmine测试框架：
 https://blog.csdn.net/qyl_0316/article/details/86229288
@@ -765,9 +770,6 @@ monaco 编辑器【可以作为代码编辑器使用】：
 
 ==============================================================================================
 
-Mat-Icon List : 900+ Angular Material Icons：
-https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/
-https://stackoverflow.com/questions/50637666/a-list-of-all-mat-icons-angular
 有一个按钮集合叫Font Awesome Icons：https://fontawesome.com/v4.7.0/icons/#
 
 一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
@@ -1141,7 +1143,6 @@ material design的主题 + angular material
 分析各个类别的优缺点
 既然angular material可以自定义theme，那么它能不能和bootstrap主题一起使用？
 
-Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
 primeng是“一个极为完善的开源 Angular UI 组件库”【用到了CDK，有free themes和PrimeNG Theme Designer】：
 https://www.oschina.net/news/102282/primeng-7-0-0-released
 看primeng与主题的配合，应该是配合非bootstrap的主题
@@ -1149,7 +1150,6 @@ PrimeNG源码解析：https://www.jianshu.com/p/54c69413fa1a
 PrimeNG的封装：
 https://www.npmjs.com/package/@al/ng-generic-components
 https://www.npmjs.com/package/@al/ng-navigation-components
-
 
 3.2.jhipster单独研究：
 	https://www.pluralsight.com/courses/scaffolding-spring-boot-and-angular-with-jhipster
@@ -1197,54 +1197,6 @@ Angular 2 Tutorial【还是得完整看一遍以免有明显的知识漏洞】�
 https://www.tutorialspoint.com/angular2/index.htm
 https://www.tektutorialshub.com/angular-2-tutorial/
 
-Angular Material + Bootstrap vs. MDbootstrap for Angular
-Angular Material 7：https://www.tutorialspoint.com/angular_material7/index.htm
-看angular material的代码
-Angular Material Tutorial with examples：https://www.angularjswiki.com/material/
-Angular Material Buttons : Mat-Button Example：
-https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/
-https://appdividend.com/2018/12/25/angular-material-icon-tutorial-with-example/
-Angular Material Series：https://code-maze.com/angular-material-series/
-Creating Beautiful Apps with Angular Material：https://auth0.com/blog/creating-beautiful-apps-with-angular-material/
-Angular Material Tutorial：
-https://www.tutorialspoint.com/angular_material/index.htm
-https://www.wikitechy.com/tutorials/angular-material/
-https://material.angular.io/components/categories
-Angular Material Data Table: A Complete Example (Server Pagination, Filtering, Sorting)【这个有前端(client-side)分页没有后端，matSort没弄好】：
-https://www.concretepage.com/angular-material/angular-material-table-sorting-pagination
-【后端分页】https://blog.angular-university.io/angular-material-data-table/
-Angular 8/7 | Edit/ Add/ Delete Rows in Material Table with using Dialogs inline Row Operation：https://www.freakyjolly.com/angular-7-8-edit-add-delete-rows-in-material-table-with-using-dialogs-inline-row-operation/
-Angular Material Inputs：https://www.concretepage.com/angular-material/angular-material-inputs
-看一个angular material2组件的代码，看一个easyui组件的代码【有了主题后，组件或许没有那么重要？还是反过来？要2方面都能达成，最好是能兼容】
-mat-table的刷新：https://blog.csdn.net/yorksome/article/details/99698080
-mat-table的样式：
-https://stackoverflow.com/questions/45512823/angular4-material-md-table-column-width-autosizing-like-normal-table
-https://stackoverflow.com/questions/48684560/mat-table-auto-fit-column-width-to-bigger-content
-Angular 8/9 Modal Tutorial with Angular Material Dialog：https://www.positronx.io/angular-8-modal-tutorial-with-angular-material-dialog/
-Angular Modal Popup Example | Angular Material Dialog：https://appdividend.com/2019/02/11/angular-modal-tutorial-with-example-angular-material-dialog/
-Angular Material Dialog: A Complete Example【这个里面讲了input】：https://blog.angular-university.io/angular-material-dialog/
-MatDialog（DialogData）：
-https://www.dotnettricks.com/learn/angularmaterial/dialog-component-example
-https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
-https://therichpost.com/open-modal-popup-in-angular-6-with-angularmaterial/
-Creating UIs with Angular Material Design Components：https://www.sitepoint.com/angular-material-design-components/
-Add AutoComplete in Angular Application using Angular Material：https://www.freakyjolly.com/angular-7-6-add-autocomplete-in-angular-application-using-angular-material/
-
-Theming your Angular Material app【注意体会设计思路，5个调色板】：https://material.angular.io/guide/theming#defining-a-custom-theme
-angular Material修改样式的方式：https://blog.csdn.net/weixin_41905137/article/details/84866458
-How to make a custom theme in Angular Material：
-https://www.positronx.io/create-angular-material-8-custom-theme/
-https://www.freecodecamp.org/news/how-to-make-a-custom-theme-in-angular-material-d47122a1e361/
-https://material.angular.io/guide/theming
-https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
-预定义主题（配合Angular Material components使用）：~@angular/material/prebuilt-themes/indigo-pink.css：
-https://www.codemeals.com/angular-tutorials/angular-material/
-https://kyleledbetter.gitbooks.io/angular-material-2/theming.html
-Angular Material: Creating a Custom Theme：
-https://alligator.io/angular/angular-material-custom-theme/
-https://coursetro.com/posts/code/116/Create-your-own-Angular-5-Material-Theme
-https://blog.thoughtram.io/angular/2017/05/23/custom-themes-with-angular-material.html
-http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
 看懂INDIGO与material细节与关联
 color-palette的作用？https://materializecss.com/color.html
 
@@ -1297,24 +1249,6 @@ https://ampersandacademy.com/tutorials/java/angular-material-6-free-theme
 这个网站有现成的：https://startangular.com/
 模板之家上的模板也看得过去（好像还是没有AdminLTE完善），例如下面的，除了不能更新以外，还有什么优劣势？
 http://www.cssmoban.com/cssthemes/9311.shtml
-
-angular material 2：
-https://material.angular.io/guide/theming
-https://www.gistia.com/beginners-guide-angular-material-2/（material和bootstrap是两套东西）
-https://alligator.io/angular/angular-material-2/
-https://www.mithunvp.com/angular-material-2-angular-cli-webpack/
-https://coursetro.com/posts/code/29/Working-with-Angular-2-Material
-Angular Material 7 教程：https://www.kaifaxueyuan.com/frontend/angular-material7/angular-material7-home.html
-搞清楚Angular Material的样式定制（只要搞定一个组件就OK了）
-Angular Material 的设计之美：https://juejin.im/post/5d6fb73e518825168d37d500
-【这句话解决了组件样式与主题包的兼容问题，另一个问题是：主题包如何跟angular的目录结构适配】Angular Material 的样式几乎全部写在了 mixin 中，定制起来非常容易：https://juejin.im/post/5d6fb73e518825168d37d500
-Angular Material 给出了多套主题的设置方法，只需要增加样式控制类就可以了。
-Angular Material: Containers with the Layout API【视频】：https://egghead.io/lessons/angularjs-angular-material-containers-with-the-layout-api
-Angular Material 并没有布局组件。但是不用担心，官方出品了一款基于指令布局的神器 flex-layout，它是专门为 Angular 设计的：https://github.com/angular/flex-layout
-https://alligator.io/angular/flex-layout/
-【封装的太很真的好用吗？】下面的文章列出了angular flex layout的详细功能和优势：
-https://www.angularjswiki.com/flexlayout/
-https://www.angularjswiki.com/flexlayout/basics/
 
 先从一个小点入手：ng-bootstrap怎么定制样式？
 ng-bootstrap是一个angular UI bootstrap库：http://www.fly63.com/nav/1157
@@ -1390,9 +1324,9 @@ Angular团队的组件开发套件(CDK)，component dev kit：https://stackoverf
 CDK 的文档位于 Angular Material 库中：https://zhuanlan.zhihu.com/p/57581861
 The Angular Material CDK provides us with tools to build awesome and high-quality
 10分钟快速上手angular cdk【cdk怎么老和material一起出现】：
-https://hackernoon.com/a-first-look-into-the-angular-cdk-67e68807ed9b
-https://www.jianshu.com/p/0e8ae6506e7a
-https://www.cnblogs.com/wangmiao2606/p/10179287.html
+  https://hackernoon.com/a-first-look-into-the-angular-cdk-67e68807ed9b
+  https://www.jianshu.com/p/0e8ae6506e7a
+  https://www.cnblogs.com/wangmiao2606/p/10179287.html
 How to create a custom dropdown using Angular CDK：http://www.prideparrot.com/blog/archive/2019/3/how_to_create_custom_dropdown_cdk
 Angular 7 Drag and Drop example Angular Material CDK：https://grokonez.com/frontend/angular/angular-7/angular-7-drag-and-drop-example-angular-material-cdk
 Angular 6 - Use Angular Elements to build Custom Elements example：https://grokonez.com/frontend/angular/angular-6-elements-use-angular-elements-example-to-build-custom-elements-example
@@ -1567,13 +1501,7 @@ https://blog.csdn.net/guiyunfan94/article/details/70670203
 看一下每个页面是怎么设置样式的，就能前进一大步
 
 如何自己实现一个 React 框架：https://pomb.us/build-your-own-react/
-
-Angular Material 教程之布局篇【这几篇可以极大提升material使用水平】：https://blog.csdn.net/henrypt/article/details/89214435
 小试 Material Design：一大波养眼妹纸：https://segmentfault.com/a/1190000002389036
-Angular Material UI Dialog的使用：https://www.jianshu.com/p/bce25fef312e
-
-自己动手实现一个 Flex 布局框架：https://segmentfault.com/a/1190000007167682
-angular组件－特殊的瀑布流（原创）：https://segmentfault.com/a/1190000006921007
 
 CREATING A SINGLETON SERVICE IN ANGULAR2：https://octoperf.com/blog/2016/03/29/singleton-service-using-angular2/
 单例服务：https://angular.cn/guide/singleton-services
@@ -1611,14 +1539,9 @@ angular源码分析之StaticInjector：
 https://segmentfault.com/a/1190000017382929
 https://zhuanlan.zhihu.com/p/52415789
 
-httpClientService上传的进度很好控制，下载呢？
-https://www.ahmedbouchefra.com/angular/angular-9-8-tutorial-example-upload-files-with-formdata-httpclient-rxjs-and-material-progressbar/
-https://www.positronx.io/angular-file-upload-with-progress-bar-tutorial/
-https://www.techiediaries.com/angular-file-upload-progress-bar/
-
 也谈基于NodeJS的全栈式开发：
-https://www.cnblogs.com/webvision/p/4766315.html
-https://www.cnblogs.com/itrena/p/5926850.html
+  https://www.cnblogs.com/webvision/p/4766315.html
+  https://www.cnblogs.com/itrena/p/5926850.html
 
 Implement a single-page application with Angular 2：https://developer.ibm.com/tutorials/wa-implement-a-single-page-application-with-angular2/
 
@@ -1652,8 +1575,8 @@ Flex 布局新旧混合写法详解（兼容微信）：https://segmentfault.com
 css display:flex 属性：https://www.jianshu.com/p/d9373a86b748
 阮一峰：CSS定位详解：http://www.ruanyifeng.com/blog/2019/11/css-position.html
 为什么 CSS 这么难学？
-https://www.zhihu.com/question/66167982/answer/239709754
-https://www.zhihu.com/question/322443498/answer/683118910
+  https://www.zhihu.com/question/66167982/answer/239709754
+  https://www.zhihu.com/question/322443498/answer/683118910
 搞懂grid比table好的方面。grid是在CSS中实现，而table是在HTML中实现的
 HTML布局四剑客-Flex,Grid,Table,Float：https://www.cnblogs.com/BigJ/p/layouts.html
 position,float,flex,grid,table前端页面布局方式分析及选择：https://blog.csdn.net/feiyu_may/article/details/83341013
@@ -1662,8 +1585,8 @@ A Complete Guide to Flexbox：
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 A Complete Guide to Grid：
-https://css-tricks.com/snippets/css/complete-guide-grid/
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+  https://css-tricks.com/snippets/css/complete-guide-grid/
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 学懂grid布局：这篇就够了(译)：https://zhuanlan.zhihu.com/p/60883744
 精读《用 css grid 重新思考布局》：https://zhuanlan.zhihu.com/p/86519309
 flex：思考一下别人设计的合理性（完备、正交）
@@ -1999,7 +1922,6 @@ https://blog.csdn.net/weixin_30376083/article/details/97981623
 Angular 2.0支持原生的Shadow DOM，也可以通过模拟(emulated)的方式来支持它，通过设置每个component的encapsulation属性，可以决定每个组件的css的影响范围。
 搞清楚Web Components现状
 使用 Angular 打造框架无关的 web 组件：https://zhuanlan.zhihu.com/p/98621475
-If 'mat-panel-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
 Web Components 入门实例教程：
 https://www.webcomponents.org/introduction
 https://www.robinwieruch.de/web-components-tutorial/
@@ -2261,9 +2183,6 @@ https://www.zhihu.com/question/24276657/answer/68081021
 Component infrastructure and Material Design components for Angular：https://github.com/angular/components
 bootstrap 是 css 框架，当然也提供了不少 js 插件。而 ng-bootstrap 和 ng-zorro 是基于 angular 的组件库，与 bootstrap 不是一类东西：https://www.zhihu.com/question/65750588/answer/234349815
 
-
-移动开发：Angular：Ionic 和 NativeScript
-
 【重点不是比较各种组件包，而是理解背后的设计思路，这样随便用哪一种都OK】
 在我更新 ng-zorro-antd 8.x 之后，我发现 zorro 的菜单组件的使用已经和 Angular Material 一样了。可见优秀的设计理念会被广泛借鉴。
 先看看ng-zorro的定制主题：https://ng.ant.design/docs/customize-theme/zh
@@ -2284,7 +2203,6 @@ https://blog.csdn.net/shuididishui007/article/details/81047880
 3.两者的组合
 4.第三方组件
 5.如果用别人的组件，别人的组件更新后，好不好升级：https://ng-matero.github.io/ng-matero/#/helpers
-ionic3
 
 ================================================================================
 
@@ -2323,10 +2241,6 @@ nodejs是不会凉的：https://www.zhihu.com/question/313414600
 
 要能定位this指向的问题【找this的文章训练一下自己】。通过this代码打断点，打印this等方式来定位找不到方法的问题
 
-ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。
-可以帮助您使用 Web 技术，比如 HTML、CSS 和 Javascript 构建接近原生体验的移动应用程序：
-https://www.runoob.com/ionic/ionic-tutorial.html
-
 最简单Angular2教程：使用第三方样式库及模块优化用：
 https://baijiahao.baidu.com/s?id=1632162274145605497&wfr=spider&for=pc
 
@@ -2347,15 +2261,6 @@ Angular also includes the benefits taken from ES6:
 	Simpler Routing
 
 张润：ng-zorro很大，速度慢。用bootstrap的
-
-多端解决新方案：Flutter
-混合开发（angular+ionic+cordova）【手机app】：https://www.jianshu.com/p/d88686cdab72
-ionic4 和 flutter 哪个更好些？https://v2ex.com/t/570412
-React Native、weex、flutter、Ionic：
-https://www.cnblogs.com/imstudy/p/9466781.html
-https://www.jianshu.com/p/5c981193eb16
-https://segmentfault.com/a/1190000018590996
-Electron 中文文档：https://www.w3cschool.cn/electronmanual/
 
 Date的util，要始终抓住format这一点
 
@@ -2475,8 +2380,6 @@ localstorage以及生成组件/服务指定文件夹：https://blog.csdn.net/u01
 比 EventBus 更高效的事件总线（BusUtils）：https://www.jianshu.com/p/68f670380d86
 Angular5集成eventbus：https://www.jianshu.com/p/d0284ec886c3
 Angular之打造自己的事件总线：https://blog.51cto.com/aonaufly/2403150
-
-import { Events} from '@ionic/angular';
 
 初步部署个人博客到github：https://www.jianshu.com/p/022863eabbb7
 
@@ -2968,8 +2871,6 @@ https://segmentfault.com/a/1190000016655736
 https://segmentfault.com/a/1190000017780020?utm_source=tag-newest
 
 NgForm很有意思，invalid等自动检测，深入读一下代码
-
-ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework)：https://www.runoob.com/ionic/ionic-tutorial.html
 
 注意观察一下：现代前端框架显示时候的自适应都做了哪些适应（产品设计）
 
