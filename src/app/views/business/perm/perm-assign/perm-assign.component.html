@@ -2,32 +2,9 @@
 <span>菜单权限</span>
 <div>
    <p>角色</p>
-   <div class="dropdown">
-      <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">== 请选择 ==
-          <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">Java</a>
-          </li>
-          <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
-          </li>
-          <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
-          </li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation">
-              <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
-          </li>
-      </ul>
-  </div>
-   <div>
-      <select [(ngModel)]="roleId" name="roleId" (ngModelChange)="getRoleOptions()">
-         <option [ngValue]=""></option>
-         <option *ngFor="let role of roleList" [value]="role.id">{{role.roleName}}</option>
-      </select>
-   </div>
+   <select [(ngModel)]="roleId" name="roleId" (ngModelChange)="getRoleOptions()" class="form-select" aria-label="Default select example">
+      <option *ngFor="let role of roleList" [value]="role.id">{{role.roleName}}</option>
+    </select>
    <p>权限</p>
    <div>
       <ng-container *ngFor="let menu of menuList">

@@ -2,17 +2,13 @@
     <tr>
         <td>菜单名称</td>
         <td>
-            <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "菜单名称" [(ngModel)]="menuName">
-             </mat-form-field>
+            <input placeholder="菜单名称" [(ngModel)]="menuName">
         </td>
     </tr>
     <tr>
         <td>菜单路径</td>
         <td>
-            <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "相对URL，例：home" [(ngModel)]="menuUrl">
-             </mat-form-field>
+            <input placeholder="相对URL，例：home" [(ngModel)]="menuUrl">
         </td>
     </tr>
     <tr>
@@ -47,34 +43,36 @@
     <tr>
         <td>菜单图标</td>
         <td>
-            <mat-form-field class = "tp-full-width">
-                <input matInput placeholder = "" [(ngModel)]="menuIcon">
-             </mat-form-field>
+            <input placeholder = "" [(ngModel)]="menuIcon">
         </td>
     </tr>
     <tr>
         <td>菜单序号</td>
         <td>
-            <mat-form-field class = "tp-full-width">
-                <input matInput type="number" placeholder = "排序" [(ngModel)]="menuSort">
-             </mat-form-field>
+            <input type="number" placeholder="排序" [(ngModel)]="menuSort">
         </td>
     </tr>
     <tr>
         <td>是否启用</td>
         <td>
-            <mat-radio-group class = "tp-radio-group" [(ngModel)]="inUse">
+            <ng-container *ngFor="let state of stateList">
+                <input class="form-check-input" type="radio" [value]="state">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    {{state}}
+                </label>
+            </ng-container>
+                
+            <!-- <mat-radio-group class = "tp-radio-group" [(ngModel)]="inUse">
                 <mat-radio-button class = "tp-radio-button"
                    *ngFor = "let state of stateList" [value]="state">
                    {{state}}
                 </mat-radio-button>
-             </mat-radio-group>
+             </mat-radio-group> -->
         </td>
     </tr>
 </table>
 
-<button mat-raised-button color="accent" (click)="addMenu()">
-    添加
- </button>
+<button (click)="addMenu()" class="btn btn-primary">添加</button>
 
 
+ todo 菜单图标添加、用ngx-bootstrap的弹出框

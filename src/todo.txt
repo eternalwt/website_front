@@ -5,13 +5,20 @@
 
 ================================================================================
 
+checkbox、radio统一测一遍
 权限配置、添加菜单页面
 联系信息里面textarea的高度为啥不对？grid-template-columns、grid-template-rows的作用以及是否可以直接用bootstrap的flex功能来代替？【梳理我的代码里面用到的这些东西】
 CSS grid-template-columns用法及代码示例：https://vimsky.com/examples/usage/css-grid-template-columns-property.html
 先看原生bootstrap table
+把bootstrap官方的header搬过来，就可以让我的样式好不少。搜索框样式及功能，先改造bootstrap
 分配权限页面的checkbox写好
-上ngx-bootstrap的table，学习ngx-bootstrap
-菜单：
+上ngx-bootstrap的table，学习ngx-bootstrap。ngx-bootstrap里面有17个组件，原生bootstrap 5.1.1有23个：
+  https://www.npmjs.com/package/ngx-bootstrap
+  https://getbootstrap.com/docs/5.1/components/accordion/
+ngx-bootstrap的modal是要用的
+ngx-bootstrap竟然没有table。。。
+DataPicker如何启用中文？
+菜单【添加菜单这个页面涉及到很多知识点，每一个搞懂都能往前一步】：
   1.“菜单管理”的设计思路可能要变（最近对权限有了更多理解后）；2.添加菜单的功能修改完善一下【就着这个页面，把布局调整再搞一轮】；3.“添加菜单”作为菜单管理的子菜单。菜单也能授予默认可以使用的角色
 form-control、form-group的样式再看一下
 改完后改表格，或许到表格就进入控件了【先用原生表格熟悉一下】
@@ -23,7 +30,6 @@ How to implement an Angular bootstrap table with pagination and filter：
 看看我对label的使用有没有问题【已登录页、添加用户、添加角色、contact页面都过一遍】。修改权限配置页面样式、修改contact页面样式【和添加角色一致起来】。角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
 修改添加用户登录样式及使用的组件，添加记住我【后续继续搞第三方登录】。测一下添加用户的角色能不能写进入，换了checkbox
 坐下角那个头像的图片已下载，使用本地路径
-把bootstrap官方的header搬过来，就可以让我的样式好不少。搜索框样式及功能，先改造bootstrap
 1.把文本框改成bootstrap风格；2.把按钮改过来【contact页面】
 修改表格，研究bootstrap下的表格，把功能做完善
 把涉及到弹框的地方先改过来，并且确认控件
@@ -36,6 +42,10 @@ How to implement an Angular bootstrap table with pagination and filter：
 图标icon、svg单独学习一下
 把我的“material组件”这个模块改造成“第三方主题元素”模块
 把material删干净，包括模块引用、下载的包
+
+利用Angular7开发一个Radio组件的全过程：https://www.jb51.net/article/165157.htm
+使用Angular7开发一个Radio组件：https://segmentfault.com/a/1190000019644926
+
 
 【看mat-icon的源码】封装了什么东西？
 mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
