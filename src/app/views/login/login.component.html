@@ -5,7 +5,7 @@
   <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
     <label>
       账号：
-      <input type="text" formControlName="username">
+      <input type="text" formControlName="username" class="form-control">
       <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
         <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
       </div>
@@ -13,7 +13,7 @@
 
     <label>
       密码：
-      <input type="password" formControlName="password">
+      <input type="password" formControlName="password" class="form-control">
       <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
         <div *ngIf="messageForm.controls.message.errors.required">A password is required</div>
       </div>
