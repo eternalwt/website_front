@@ -9,6 +9,7 @@
   https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
 
 添加菜单页面的下拉框搞好【ngx-bootstrap文档】
+前端验证码
 checkbox、radio统一测一遍
 权限配置、添加菜单页面
 联系信息里面textarea的高度为啥不对？grid-template-columns、grid-template-rows的作用以及是否可以直接用bootstrap的flex功能来代替？【梳理我的代码里面用到的这些东西】
@@ -190,7 +191,13 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 
 【晚上】git clone一下我的新库
 
-关注前端基础设施
+手把手教你搭建自己的Angular组件库：https://zhuanlan.zhihu.com/p/140700137
+前端组件库大合集：https://blog.csdn.net/qq_23876873/java/article/details/90726412
+【译】在Angular中自定义表单控件：
+  https://zhuanlan.zhihu.com/p/96901982
+  https://www.zhihu.com/question/48213163/answer/109694920
+Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/109608048
+
 
 【看代码】我以前引入的ngx-treeview等组件，他们里面有没有用到jQuery？升级bootstrap 5.1后会不会有问题？
 先看一遍bootstrap5.1是什么样的，看ngx-bootstrp有哪些组件，然后看bootstrap5.1中哪些在ngx-bootstrap中做了封装，哪些没有做封装，没有封装的部分为什么没做封装？（是不好封装还是不是通用的没必要封装？）

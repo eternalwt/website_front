@@ -2,8 +2,22 @@
 把 promise + RxJS 写通，just try
 RxJS的另外四种实现方式（后记）—— 同时实现管道和链式编程：https://blog.csdn.net/oYiGeHui/article/details/82821125
 一道面试题引起的思考：https://www.cnblogs.com/chenjg/p/10006502.html
+JS ES6函数式编程：https://www.jianshu.com/p/795b27d32e9a
+思考一下 JS 的 filter 的 thisArg 参数。map函数也有第二个参数的问题
+JS中reduce函数的使用方法和实例（对这些常用的操作要有一定程度的记忆）：https://www.imooc.com/article/13800
+设计闭包（Closure）的初衷是为了解决什么问题？（在解决异步编程的内存管理问题上十分有意义）：https://www.zhihu.com/question/51402215/answer/2132512781
+前端开发函数式编程入门：https://mp.weixin.qq.com/s/NOJcSpqUrbVO3ptkLFg29g
+JS中 reduce() 的用法【注意里面的高级用法】：https://www.cnblogs.com/amujoe/p/11376940.html
+angular 中使用 axios 发起 http 请求：https://www.cnblogs.com/monkey-K/p/11621801.html
+js数组求和【先用join然后eval的方式】：https://www.cnblogs.com/lixiaoyao-1/p/8985723.html
+js代码编辑器？
+angular http 节流：https://blog.csdn.net/weixin_30849403/article/details/102348306
+bind 函数的实现原理：https://zhuanlan.zhihu.com/p/38968174
+Y：https://segmentfault.com/a/1190000012286537
 
-ng generate class Hero
+【理解原理】bootstrap 如何让div内部垂直居中？
+  https://www.zhihu.com/question/45608967
+  https://blog.csdn.net/qq_43546676/article/details/104380758
 
 ckeditor:
   upload:
@@ -247,17 +261,10 @@ Electron 中文文档：https://www.w3cschool.cn/electronmanual/
 import { Events} from '@ionic/angular';
 ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework)：https://www.runoob.com/ionic/ionic-tutorial.html
 
+关注前端基础设施
 
-手把手教你搭建自己的Angular组件库：https://zhuanlan.zhihu.com/p/140700137
 前端监控和统计概念：https://zhuanlan.zhihu.com/p/134132381
 Angular2的依赖注入是怎么实现的？https://www2.zhihu.com/question/265773703/answer/298969485
-
-【译】在Angular中自定义表单控件：
-https://zhuanlan.zhihu.com/p/96901982
-https://www.zhihu.com/question/48213163/answer/109694920
-Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/109608048
-
-前端组件库大合集：https://blog.csdn.net/qq_23876873/java/article/details/90726412
 
 1.为啥span、label不能设置width？【能否从这个问题学到CSS知识？】
 https://blog.csdn.net/dyr_1203/article/details/74942828
@@ -499,6 +506,111 @@ Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个�
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
 
 angular 扫描没有用的component【自己写工具】
+
+【封装js控件综合练习】
+js实现日历：
+https://www.cnblogs.com/can-i-do/p/11074620.html
+https://www.cnblogs.com/JRliu/p/8884801.html
+原生js实现轮播图：https://www.cnblogs.com/zhuzhenwei918/p/6416880.html
+如何使一个div能够铺满整个页面？ && 模态框的制作 && outerHTML：https://www.cnblogs.com/zhuzhenwei918/p/6417804.html
+原生js实现一个侧滑删除取消组件（item slide）：https://www.cnblogs.com/timetimetime/p/10998802.html
+原生js实现tab选项卡：
+https://www.cnblogs.com/limz/p/5822815.html
+https://www.cnblogs.com/zzgyq/p/6509911.html
+JS组件系列——封装自己的JS组件，你也可以：https://www.cnblogs.com/landeanfen/p/5124542.html
+原生 js 实现一个前端路由 router：
+https://cloud.tencent.com/developer/article/1538016
+https://codecocoa.com/t/37616
+Angular+PhotoSwipe实现图片预览组件：https://cloud.tencent.com/developer/article/1422286
+原生js组件化开发简单轮播图实例代码：https://www.yjro.com/301735.html
+原生js封装：https://recomm.cnblogs.com/blogpost/10505071
+使用原生js编写一个简单的框选功能方法：https://www.jb51.net/article/161132.htm
+纯原生组件化-模块化的探索：https://www.cnblogs.com/jiasm/p/9250795.html
+如何设计一个优秀的表格和按钮区域的联动？
+
+原生js实现Promise：https://www.cnblogs.com/shizhouyu/p/11670124.html
+Angular使用Promise解决多个异步回调问题：https://blog.csdn.net/sunscheung/article/details/77834609
+fetch貌似用到promise：https://nodejs.dev/understanding-javascript-promises
+JS里面bind方法的实现【是不是可以替代闭包的一些使用场景？】【再看一遍函数对象就能理解了。函数对象是不是本来就有个this指针？】：
+https://www.jianshu.com/p/563b415eba66
+https://www.jianshu.com/p/7030376af23c
+匿名函数自调用(IIFE)：https://blog.csdn.net/u013575441/article/details/50063403
+call()、apply()、bind() 都是用来重定义 this 这个对象的：https://www.runoob.com/w3cnote/js-call-apply-bind.html
+解决async/await滥用产生的困境：https://zhuanlan.zhihu.com/p/138331544
+Javascript中数组方法reduce的妙用之处：https://www.jianshu.com/p/b415e46b4c8a
+前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
+头条前端面试：https://zhuanlan.zhihu.com/p/148939073
+如何设计一个JavaScript插件系统：https://zhuanlan.zhihu.com/p/231848209
+
+难道不是应该先把ng-zorro和对应的主题搞清楚吗
+【看一下】用指令来获取焦点：<button class="btn btn-primary" (click)="clickSelect()" SwEnterButton>查询</button>
+@delon/abc(Angular Business Componets) 所有组件都基于 Antd Design 风格 每一个组件都可以单独导入
+
+typescript类型的使用：menuList: Array<{path: string, isSelect: boolean,queryParams:any }> = [];
+Angular 实现了部分HTML5标准常规属性，例如：required、maxlength 等等：http://www.cppcns.com/ruanjian/java/232528.html
+为啥编译时就能发现mybatis xml类型错误？resultType="com.sw.pse.vo.AsmBuildProjectVo"
+
+Angular 的模块间通信：https://www.infoq.cn/article/angular-component-communication
+
+angular项目国际化配置（ngx-translate）：
+https://www.cnblogs.com/shcrk/p/9215923.html
+https://www.jianshu.com/p/9c3834b9feed
+https://www.cnblogs.com/otblog/p/11966164.html
+
+Angular Schematics：
+https://www.telerik.com/blogs/the-what-and-how-of-angular-schematics-the-super-simple-version
+https://www.digitalocean.com/community/tutorials/angular-angular-cli-schematics
+https://javascript-conference.com/blog/how-to-create-your-own-angular-schematics/
+Angular 首个路线图发布：https://zhuanlan.zhihu.com/p/177011570
+循序渐进教你实现一个完整的node的EventEmitter模块：https://segmentfault.com/a/1190000015762318
+为什么要使用 package-lock.json：
+https://zhuanlan.zhihu.com/p/89093696
+https://www.zhihu.com/question/62331583/answer/275248129
+https://segmentfault.com/a/1190000022579808
+vue+ssr开发门户：https://www.zhihu.com/question/397174054
+微信小程序为什么不用HTML5、CSS，自己搞了个WXML、WXSS：https://www.zhihu.com/question/51809406/answer/1416465888
+前端怎么才能找到项目做？https://www.zhihu.com/question/392328321/answer/1398645212
+angular-cli在dependencies里面声明，typescript在devdependencies里面声明
+Fast：微软发布的Web Components：https://fast.design/docs/introduction/
+
+做好笔记：
+1.需要全局安装的node，typescript和angular是全局安装吗？【每做一步都需要非常仔细】
+2.node_modules放到项目目录下，并加入gitignore，防止项目间互相污染（要查找全局路径确认没有）
+3.关注在哪个路径下使用npm命令
+第一个问题，我有用到angular.json吗？
+1.搜angular node_modules；
+2.
+downloadjs、font_awesome、raphael、ts-md5、webuploader、ngx-color-picker、cropperjs
+
+在package.json中指定node_modules的路径：
+http://www.huati365.com/answer/9MmbBEd3PkdQKYQ
+https://www.cnblogs.com/xilego/p/6906601.html
+
+直到今天，才意识到admin-lte可以npm安装。这个发现虽然晚，但是非常重要：https://www.npmjs.com/search?q=admin-lte
+npm下直接搜admin也能搜到很多东西：https://www.npmjs.com/search?q=admin
+
+angular弹出框的原理再梳理一遍：自定义控件'sw-modal-frame'，前段写ng-content，ng-content通过select=".modalheader"（类名）在其他控件中使用
+前端路由系统一定要搞的非常熟：PlatformLocation
+1.dynamic component的原理：https://www.cnblogs.com/keatkeat/p/6349485.html
+2.看一下代码中的dynamic-container（只有ts没有html标签）
+看看公司代码前端是如何抽公共service的，抽了哪些
+Angular 4.x LocationStrategy：https://segmentfault.com/a/1190000009238481
+18 个精选的 Angular 开源项目：https://www.jianshu.com/p/c8d45d30f341
+初步使用angular，建议去看看最佳实践https://github.com/johnpapa/angular-styleguide,里面列举了很多标准用法。
+比较简洁的：https://github.com/marmelab/ng-admin
+比较炫的：https://github.com/beeman/loopback-angular-admin
+强烈推荐 GitHub 上值得前端学习的开源实战项目：https://segmentfault.com/a/1190000019488576?utm_source=tag-newest
+前端、测试开发都可以考虑
+2020 年你应该知道的 8 种前端 JavaScript 趋势和工具：
+https://www.jianshu.com/p/8f064d69d206
+https://segmentfault.com/a/1190000021104670
+https://developer.51cto.com/art/201911/605402.htm
+
+在 Anuglar 中杜绝 zone.js 有多大可行性？：https://www.zhihu.com/question/271306792/answer/360264292
+一文弄懂 Angular 变更检测：https://zhuanlan.zhihu.com/p/110118375
+zone.js 虽然方便，但是如果团队中没有 Hold 住的人会掉入性能问题的坑，如果你使用了很多第三方的类库，在 document 和 body 上绑定了很多事件（比如 click，mouseover ），我们刚开始升级 ng1 和 ng2 混合的时候就遇到了性能问题，点击一个事件，触发了10次脏检查，一旦理解了他的原理就可以轻松避免踩坑，同时你在做组件的时候也会考虑使用 ngZone.runOutsideAngular  绑定一些事件来提高性能，但是这个对于初学者肯定是不友好的：https://www.zhihu.com/question/355760849/answer/938934606
+
+脏检测得好好学习一下：https://www.zhihu.com/search?type=content&q=%E8%84%8F%E6%A3%80%E6%B5%8B
 
 angular 共享模块：
 https://blog.csdn.net/xwnxwn/article/details/82012502
@@ -3270,3 +3382,219 @@ https://blog.csdn.net/yilanyoumeng3/article/details/96473797
 1.CSS实现div高度填满剩余空间
 
 px和em的区别：https://blog.csdn.net/chenjuan1993/article/details/81356497
+
+============================================================================
+
+聊聊技术选型 - Angular2 vs Vue2：https://juejin.im/post/58cab85b44d9040069f38f7a
+
+现在前端已经分化为几种很不一样的角色了，在招聘的时候首先要搞清楚自己需要的是哪种角色。这几种角色虽然都是在webkit这个平台上写代码，但除过语言因素之外，其它的知识体系完全不一样。
+以NodeJS为主的web中间件工程师（API数据的聚合能力，一丢丢前端组件的同构能力，还要具备一些与传统后端一样的能力）
+SPA工程师（掌握React、Angular、Vue等框架，能够实现复杂用户交互）
+重构工程师（熟练掌握HTML和CSS，能够将设计图还原为静态HTML页面）
+数据可视化工程师（掌握D3等框架，熟悉一些常见的统计算法）
+GIS前端工程师（不太清楚需要掌握什么，但如果你想做地图应用的话）
+3D前端工程师（熟练掌握threejs等工具，熟悉编写GLSL shader，熟悉OpenGL ES，熟悉计算机图形学相关算法等等）
+链接：https://www.zhihu.com/question/321955801/answer/672782038
+
+
+E2E : Why to use Protractor over Selenium for Angular Apps：https://blog.imaginea.com/e2e-why-to-use-protractor-over-selenium-for-angular-apps/
+
+Useful pipes for Angular：https://github.com/fknop/angular-pipes
+ES2020、angular 10 正式发布：https://zhuanlan.zhihu.com/p/159433258
+
+ES6新特性：Javascript中的Reflect对象：
+https://zhuanlan.zhihu.com/p/92700557
+https://www.cnblogs.com/diligenceday/p/5474126.html
+https://blog.csdn.net/u013707249/article/details/78842602
+现代JavaScript教程：https://javascript.info/
+
+Angular2+ 获取、操作DOM元素：https://blog.csdn.net/idomyway/article/details/83656366
+
+Angular Flex Layout Tutorial：
+https://www.angularjswiki.com/flexlayout/
+https://tburleson-layouts-demos.firebaseapp.com/
+https://www.digitalocean.com/community/tutorials/angular-flex-layout
+
+angular路由复用要解决的问题（翻墙《How to use RouteReuseStrategy in Angular app - Medium》）：https://www.jianshu.com/p/c9c47dacc20d
+Angular路由复用：
+https://www.imooc.com/wenda/detail/580947
+https://www.jianshu.com/p/d377ff1d4837
+https://blog.csdn.net/jstljspservlet/article/details/89081545
+How to implement RouteReuseStrategy shouldDetach for specific routes in Angular 2：https://stackoverflow.com/questions/41280471/how-to-implement-routereusestrategy-shoulddetach-for-specific-routes-in-angular
+
+Angular 组件库 NG-NEST：
+https://www.ngnest.com/index/docs/zh_CN/ng-nest
+https://zhuanlan.zhihu.com/p/143815952?from_voters_page=true
+https://zhuanlan.zhihu.com/p/163074507
+
+ng-notadd 基于 Angular 的企业级中后台开发框架：https://my.oschina.net/zhdong/blog/3006755
+
+从零开始构建 Angular 组件库：
+https://zhuanlan.zhihu.com/p/51856353
+https://zhuanlan.zhihu.com/p/140700137
+https://zhuanlan.zhihu.com/p/36863723
+https://zhuanlan.zhihu.com/p/50647962
+
+redux
+
+ngDoCheck：数变更检测(zone.js) 发生的时候被调用，很频繁的被调用，只要视图有变化都会触发：https://www.cnblogs.com/webhmy/p/9435117.html
+
+我们的系统用的是 Font Awesome 图标：http://www.fontawesome.com.cn/
+
+看一下angular的这两个validator：compose、composeAsync
+Validators.compose：https://www.cnblogs.com/lucky-heng/p/11110579.html
+angular2----使用swiper做轮播图：https://www.cnblogs.com/maochunyan/p/7550988.html
+简讯：Angular 中文文档已同步翻译至 v10 正式版：https://zhuanlan.zhihu.com/p/151398090
+前端三大框架逻辑复用横评：https://zhuanlan.zhihu.com/p/208249521
+看一下两个文件上传控件的封装
+WebUploader 是由Baidu WebFE(FEX)团队开发的现代文件上传组件：https://www.oschina.net/p/webuploader?hmsr=aladdin1e1
+
+delon库代码地址https://github.com/ng-alain/delon 至少我们项目里面关于权限控制，路由服用标签完全是参考的delon库里面的代码【再看一下怎么使用】：https://blog.csdn.net/wuyuxing24/article/details/82730838
+
+了解text-indent属性
+<input> 标签的 accept 属性：https://www.w3school.com.cn/tags/att_input_accept.asp
+自定义文件上传的界面，还是使用了type为file的input：
+<span class="input-group-btn">
+	<button type="button" class="btn  btn-primary" (click)="fileZip.click()">选择文件</button>
+	<input type="file" style="display: none" class="zipFile" #fileZip accept="application/zip"
+    (change)="zipFileChange($event)">
+</span>
+CSS自定义文件上传按钮：
+https://www.cnblogs.com/ranran/p/3685032.html
+https://www.jianshu.com/p/65b013ade4ab
+https://blog.csdn.net/weixin_34248705/article/details/88018740
+
+为什么大家都用i标签<i></i>用作小图标?https://www.cnblogs.com/limeiky/p/6210829.html
+html 里面的 role 属性详解：https://www.cnblogs.com/nanyubeidou/p/5814868.html
+aria-hidden属性引发的思考：https://zhuanlan.zhihu.com/p/75211551
+
+SwDragModal：使用directive来实现div的拖拽
+
+Angular 4.x 支持的内建validators：
+https://angular.io/api/forms/Validators
+https://segmentfault.com/a/1190000009053752
+https://angular.io/guide/form-validation
+
+#handoverDate是用于下面的ngClass：
+<sw-date [onClose]="false" [range]="false" name="handoverDate" [(ngModel)]="formValue.handoverDate" #handoverDate="ngModel" [format]="'YYYY-MM-DD'" 
+[ngClass]="{'input-error' : handoverDate.errors?.required && (handoverDate.touched)}" (change)="batchSetInvalidDate($event)"></sw-date>
+
+word-wrap: break-word;
+
+DataGrip及破解：
+https://zhuanlan.zhihu.com/p/162798892
+http://www.pc0359.cn/downinfo/176350.html
+
+jeDate V6.5.0 是一款原生JS开发的 不依赖任何第三方库 大众化的日期控件：https://gitee.com/arts1986/jeDate?utm_source=aladin&utm_campaign=repo
+
+为什么我停止使用 Redux：https://dev.to/g_abud/why-i-quit-redux-1knl
+
+angular生命周期钩子【再看一下每个钩子使用场景】：https://www.cnblogs.com/yw0219/p/7789253.html
+
+28 个JavaScript编程黑科技，装逼指南，高逼格代码，让你惊叹不已：https://zhuanlan.zhihu.com/p/262533240
+现在开始为你的Angular应用编写测试：https://zhuanlan.zhihu.com/p/266627934
+We all know that JavaScript is the synchronous and single-threaded programming language. That is to say, only one task can perform at any point in time.【那为什么发2个rxjs请求看起来像异步？】浏览器多线程和js单线程【根据这个文章的讲解应该是浏览器起了多个“http请求线程”。只有先区分开两者，才能彻底搞懂JS的单线程、同步】：https://blog.csdn.net/github_34514750/article/details/76577663
+虽然js单线程的，但是浏览器内部不是单线程的，以此js才实现了异步【讲的真好】：https://blog.csdn.net/jingjingchen1014/article/details/96142466
+浏览器的多线程机制（转）：https://blog.csdn.net/zshake/article/details/80303110
+使用RxJS管理异步函数的执行顺序：https://blog.csdn.net/yorksome/article/details/103574767
+异步复杂到什么程度才需要使用rxjs？【还是要看一下rxjs的原理，发两个请求的时候第一个请求是如何返回和等待的（第二个也立马执行了），是怎么封装fetch功能的】
+https://www.zhihu.com/question/324275662/answer/682533147
+https://www.zhihu.com/question/303073602/answer/543082088
+RxJS 源码解析 — 理解响应式兼函数式编程库的设计思想：https://zhuanlan.zhihu.com/p/240287653
+如何用rxjs 优雅的实现 链式异步调用？https://www.zhihu.com/question/280544741/answer/414791372
+https://zhuanlan.zhihu.com/p/23464709
+https://zhuanlan.zhihu.com/p/25059824
+
+怎样在RxJS Observable中使用Async-Await：
+https://blog.csdn.net/weixin_30918415/article/details/99324886
+https://blog.csdn.net/zwbhust/article/details/105629229
+https://segmentfault.com/q/1010000021615842
+如何用rxjs实现async await的功能？https://segmentfault.com/q/1010000021615842
+
+4.看一下动态加载component的内容【这个是代码继续重构的基础】
+5.【看一下系统的菜单初始化：SwMenus.location()】
+终于体会了，用form的好处之一是可以方便控制下方按钮的状态
+两个第一次！_开源angular组件库 传npm包：https://zhuanlan.zhihu.com/p/52320578
+
+如何写一个最简单的 React 实现（英文），作者讲解如何自己实现一个最简单的 React，支持 JSX 语法和一些基本 API，压缩后代码不超过 1KB。本文可以用来了解 React 原理：https://zserge.com/posts/worst-react-ever/
+
+Redux最大的问题就是它本应该是一个小众的解决方案，硬生生被理论粉与名词流吹成了大众的最佳实践，因而带来了极为严重的理论与实践的gap。【Redux数据流管理架构有什么致命缺陷,未来会如何改进?】
+https://www.zhihu.com/question/277623017/answer/1517983092
+
+Angular使用总结 --- 通过指令动态添加组件：https://www.cnblogs.com/shapeY/archive/2004/01/13/9275042.html
+querySelector() 方法是html DOM原生的：https://www.runoob.com/jsref/met-element-queryselector.html
+
+Argon Dashboard Angular - FREE DASHBOARD FOR BOOTSTRAP 4 AND ANGULAR 10：https://www.creative-tim.com/product/argon-dashboard-angular
+Esbuild 为什么那么快：https://zhuanlan.zhihu.com/p/379164359
+
+bootstrap 5 tutorial：
+	https://themesberg.com/blog/tutorial/bootstrap-5-tutorial
+	https://webdesigntips.blog/web-design/javascript/bootstrap-5-tutorial-how-to-create-a-simple-web-page-using-bootstrap-5/
+	https://getbootstrap.com/docs/5.0/getting-started/introduction/
+	https://mdbootstrap.com/docs/standard/bootstrap-5/
+如何评价Bootstrap 5？
+	https://www.zhihu.com/question/422896925/answer/1676392884
+	https://www.zhihu.com/question/432143376/answer/1648791980
+
+Angular、React、Vue，谁能成为2021年JavaScript最佳框架？
+	https://zhuanlan.zhihu.com/p/210684223
+	https://cloud.tencent.com/developer/article/1744294
+
+Angular 11：
+	https://blog.csdn.net/huiskai/article/details/109429888
+	https://www.sohu.com/a/433100220_463987
+	https://www.oschina.net/news/119090/angular-11-0-0-next-5-released?utm_source=oschina-chrome-extension
+
+移除 View Engine 转用 Ivy，盘点Angular 12的重要更新：https://mp.weixin.qq.com/s/t6c8AlwEy3keKkzAL9QyeA
+
+十二大流行的Angular UI库：https://www.sohu.com/a/461090804_185201
+2021年最值得推荐的7个Angular前端组件库 - DevUI：https://zhuanlan.zhihu.com/p/366176889
+值得推荐的七种好用的Angular组件库（Clarity）：https://www.sohu.com/a/435294461_185201
+从零开始构建 Angular 组件库：https://zhuanlan.zhihu.com/p/51856353
+
+前端值得看的源码：https://www.zhihu.com/question/429287896
+一个 JavaScript 写的 HTML5 视频播放器，可以在网页上播放视频。特点是功能较全，支持外挂字幕文件 moovie.js： https://github.com/BMSVieira/moovie.js
+前端页面中使用Spectrum 绘制调色板：https://blog.csdn.net/qq_34182808/article/details/79992225
+
+两个UI元素：
+	1.滑块验证码；2.可显示密码的密码框
+精读《DOM diff 原理详解》：https://zhuanlan.zhihu.com/p/362539108
+前端验证码（输入框）组件
+
+三种图表技术SVG、Canvas、WebGL 3D比较【SVG的理论是什么】：
+	https://www.cnblogs.com/liutianzeng/p/11322009.html
+	https://www.zhihu.com/question/19690014
+	https://www.zhihu.com/question/411177060/answer/1544437917
+	https://www.w3school.com.cn/html/html5_canvas_vs_svg.asp
+
+Mustache.js前端模板引擎源码解读：https://www.cnblogs.com/axes/p/4192234.html
+编写一个简单的JavaScript模板引擎：https://zhuanlan.zhihu.com/p/38565975
+artTemplate模板引擎的源码拜读：https://www.bbsmax.com/A/n2d991wwdD/
+手写Promise：https://zhuanlan.zhihu.com/p/138255563
+实现一个简单的JavaScript模块打包器：https://zhuanlan.zhihu.com/p/190180412
+前端开发中有什么经典的轮子值得自己去实现一遍？https://www.zhihu.com/question/29380608/answer/65298472
+
+p5.js：
+	https://zhuanlan.zhihu.com/p/60867950
+	https://www.oschina.net/p/p5js?hmsr=aladdin1e1
+	https://p5js.org/
+
+RxJS 源码解析(一): Observable & Subscription：https://zhuanlan.zhihu.com/p/157897829
+
+前端抽屉效果：
+	https://www.17sucai.com/pins/tag/7183.html
+	https://www.cnblogs.com/yelanggu/p/9516419.html
+
+一个轻量级的 Web Components 开发框架，用于快速开发 Web Components 组件FicusJS: https://github.com/ficusjs/ficusjs
+
+如何评价开源H5编辑器H5-Dooring?https://www.zhihu.com/question/437652548/answer/1891392908
+
+Node.js Tutorial：
+	https://www.tutorialspoint.com/nodejs/index.htm
+	https://www.guru99.com/node-js-tutorial.html
+
+2020年 JavaScript 明星项目：https://risingstars.js.org/2020/zh#section-angular
+
+angular7 路由路径中的" # "：https://blog.csdn.net/weixin_42959829/article/details/95589700
+
+angular6根据environments配置文件：https://www.jb51.net/article/157425.htm
