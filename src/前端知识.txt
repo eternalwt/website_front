@@ -14,6 +14,9 @@ js代码编辑器？
 angular http 节流：https://blog.csdn.net/weixin_30849403/article/details/102348306
 bind 函数的实现原理：https://zhuanlan.zhihu.com/p/38968174
 Y：https://segmentfault.com/a/1190000012286537
+RxJS: map, flatMap和flatMapLatest的区别：https://segmentfault.com/a/1190000011070872?utm_source=tag-newest
+函数防抖与节流：https://segmentfault.com/a/1190000002764479
+AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
 
 【理解原理】bootstrap 如何让div内部垂直居中？
   https://www.zhihu.com/question/45608967
@@ -972,16 +975,11 @@ tensorflow.js：
 https://www.javascriptjanuary.com/blog/artificial-intelligence-in-javascript-with-tensorflowjs
 https://www.analyticsvidhya.com/blog/2019/06/build-machine-learning-model-in-your-browser-tensorflow-js-deeplearn-js/
 
-
 能否配置apps区分项目
-RxJS: map, flatMap和flatMapLatest的区别：https://segmentfault.com/a/1190000011070872?utm_source=tag-newest
-函数防抖与节流：https://segmentfault.com/a/1190000002764479
 
 前端yarn：
-https://blog.csdn.net/idomyway/article/details/88411836
-https://yarn.bootcss.com/
-
-AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
+  https://blog.csdn.net/idomyway/article/details/88411836
+  https://yarn.bootcss.com/
 
 Angular CLI 在 8.3.0 发布过一个新命令 ng deploy，可以将 Angular 应用部署到远程服务器或云存储上面：https://zhuanlan.zhihu.com/p/126305579
 
@@ -1056,18 +1054,19 @@ https://blog.csdn.net/wf19930209/article/details/79737410
 https://blog.csdn.net/plpldog/article/details/82992779
 关于ngModule：哪些放到exports里面？再看一下根模块【怎么控制组件之间的关系，有没有分层的问题？】
 module的最佳实践：
-https://www.cnblogs.com/myfan/p/7458568.html
-https://www.tinymind.net.cn/articles/e932f2cc2dd096
-https://cloud.tencent.com/developer/section/1489514
-https://www.cnblogs.com/shitoupi/p/6641230.html
+  https://www.cnblogs.com/myfan/p/7458568.html
+  https://www.tinymind.net.cn/articles/e932f2cc2dd096
+  https://cloud.tencent.com/developer/section/1489514
+  https://www.cnblogs.com/shitoupi/p/6641230.html
 Avoiding common confusions with modules in Angular：https://indepth.dev/avoiding-common-confusions-with-modules-in-angular/
+forRoot and forChild Static Methods on the Angular Router：https://www.pluralsight.com/guides/forroot-and-forchild-static-methods-on-the-angular-router
 应用层面来说，你只需要知道，forRoot是用在根模块加载路由配置，而forChild是用在子模块加载路由配置。
 【我怎么知道哪些module需要用forRoot？forRoot与lazy loading结合起来看】
 angular里forRoot的作用【我的理解：1.forRoot可以保证providers里面的service不被多次注入】：
-https://www.cnblogs.com/chen8840/p/9511264.html
-https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
-https://www.cnblogs.com/sea-breeze/p/9106434.html
-https://www.freelancermap.com/freelancer-tips/12255-forroot-forchild-angular
+  https://www.cnblogs.com/chen8840/p/9511264.html
+  https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
+  https://www.cnblogs.com/sea-breeze/p/9106434.html
+  https://www.freelancermap.com/freelancer-tips/12255-forroot-forchild-angular
 观察ModuleWithProviders，我们可以看到providers属性是可选的，他们的区别也是在providers上。我们可以将需要确保完全单例的服务移动到forRoot中去。在主模块中导入模块时通过forRoot方法导入，在子模块中导入模块时直接导入。这样就能确保服务只会注册一次了。【看RouteModule的forRoot代码】：
 https://maoji.github.io/angular2-forroot-forchild/
 根module

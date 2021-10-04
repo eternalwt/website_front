@@ -15,6 +15,9 @@ Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
 Bootstrap 5 Quick Tutorial：https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
 How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bootstrap-5-form/
 
+forRoot还是要尽快搞清楚
+
+ngx-bootstrap的modal是要用的
 权限配置、添加菜单页面
 表格宽度【除了padding外，把空间占满】
 弹出ngx-modal编辑用户。编辑用户、角色做出来
@@ -36,7 +39,6 @@ CSS grid-template-columns用法及代码示例：https://vimsky.com/examples/usa
 上ngx-bootstrap的table，学习ngx-bootstrap。ngx-bootstrap里面有17个组件，原生bootstrap 5.1.1有23个：
   https://www.npmjs.com/package/ngx-bootstrap
   https://getbootstrap.com/docs/5.1/components/accordion/
-ngx-bootstrap的modal是要用的
 ngx-bootstrap竟然没有table。。。
 DataPicker如何启用中文？
 bootstrap在input框中加入icon图标：https://www.cnblogs.com/xiaqilin/p/8987183.html
@@ -108,6 +110,9 @@ bootstrap与ant design是否搭？
 
 关于下载的ngm包：
   1.可以直接用ts写，例如angular material；
+npm 模块安装机制简介：https://www.ruanyifeng.com/blog/2016/01/npm-install.html
+npm install 安装过程分析：https://www.cnblogs.com/everlose/p/12505245.html
+npm包发布流程和如何看插件源码：https://blog.csdn.net/u010377383/article/details/86858517
 
 
 material再搞一轮【单独开一个项目搞】：https://juejin.cn/post/6844903894561062926
@@ -357,16 +362,12 @@ https://www.jianshu.com/p/8cbcd13d07b2
 infinite scroll
 
 加ng-gallery：
-https://www.npmjs.com/package/ng-gallery
-https://www.npmjs.com/package/ngx-gallery-images
+  https://www.npmjs.com/package/ng-gallery
+  https://www.npmjs.com/package/ngx-gallery-images
 ngx-multi-modal【把forRoot看懂再说】：https://www.npmjs.com/package/ngx-multi-modal
 angular-notifier：https://www.npmjs.com/package/angular-notifier
 加ngToast：https://www.npmjs.com/package/ng-toast
 NgxTreeDnd 可拖拽的 Angular 树组件：https://www.oschina.net/p/ngx-tree-dnd
-
-npm 模块安装机制简介：https://www.ruanyifeng.com/blog/2016/01/npm-install.html
-npm install 安装过程分析：https://www.cnblogs.com/everlose/p/12505245.html
-npm包发布流程和如何看插件源码：https://blog.csdn.net/u010377383/article/details/86858517
 
 generating browser application bundles
 
@@ -475,7 +476,6 @@ https://www.c-sharpcorner.com/forums/angular-for-multi-page-application
 了解热力图、箱图、openlayer。发站内消息、短信[用户加手机号、邮箱、IM字段]做好（一个模块）
 dashboard：完成热力图、中国地图（没啥难度，需要的只是行动）
 
-再看看我自定义module里面的forRoot
 forRoot：
   https://www.imwhite.com.cn/2019/05/understand-angular-forroot/
   https://segmentfault.com/a/1190000020148472?utm_source=tag-newest
