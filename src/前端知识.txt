@@ -1268,6 +1268,7 @@ https://www.npmjs.com/package/@al/ng-navigation-components
 
 【自己实现ngFor】
 通过trackBy提高Angular *ngFor性能：https://pdf-lib.org/Home/Details/9931
+ngFor里面内置了index等6个变量：https://www.cloudhadoop.com/angular-ngfor-index/
 
 状态管理单独学习一下
 

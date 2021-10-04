@@ -14,17 +14,9 @@ export class ArticleListComponent implements OnInit {
    */
   dataList: any = [];
 
-  // 要展示的列
-  columnsToDisplay: any = ['title', 'content', 'action'];
-
-  // todo 下面正确的用法参考：https://www.freakyjolly.com/angular-material-table-operations-using-dialog/
-  // @ViewChild(MatSort) sort: MatSort;
-  // @ViewChild(MatPaginator) paginator: MatPaginator;
-
   constructor(
     private dataService: DataService
   ) { }
-
 
   ngOnInit() {
     let pageParam = {pageNum: 1, pageSize: this.pageSize};
