@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
-import { MatSort } from '@angular/material';
 
 @Component({
   selector: 'app-user-list',

@@ -12,6 +12,7 @@ Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
 Bootstrap 5 Quick Tutorial：https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
 How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bootstrap-5-form/
 
+表格宽度
 弹出ngx-modal编辑用户。编辑用户、角色做出来
 1.把弹框(icon列表)和msgBox用上；
 2.表格；

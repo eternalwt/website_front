@@ -1,27 +1,35 @@
-<table style="width:100%" mat-table [dataSource]="dataList" class="mat-elevation-z8">
-    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let dataList; columns: columnsToDisplay"></tr>
 
-    <ng-container matColumnDef="roleName">
-        <th mat-header-cell *matHeaderCellDef style="width:200px;">角色名称</th>
-        <td mat-cell *matCellDef="let element">{{element.roleName}}</td>
-    </ng-container>
-
-    <!-- <ng-container matColumnDef="content">
-        <th mat-header-cell *matHeaderCellDef style="width:350px;">用户数量</th>
-        <td mat-cell *matCellDef="let element">xxx</td>
-    </ng-container> -->
-
-    <ng-container matColumnDef="createTime">
-        <th mat-header-cell *matHeaderCellDef style="width:350px;">创建时间</th>
-        <td mat-cell *matCellDef="let element"> {{element.createTime | date:'yyyy-MM-dd'}}</td>
-    </ng-container>
-
-    <!-- row operation Column -->
-    <!-- <ng-container matColumnDef="content">
-        <th mat-header-cell *matHeaderCellDef style="width:80px;"> Operation </th>
-        <td mat-cell *matCellDef="let element"> {{element.content}} </td>
-    </ng-container> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>角色名称</th>
+            <th>角色描述</th>
+            <th>用户列表</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <!-- <tfoot>
+        <tr>
+            <th>Footer 1</th>
+            <th>Footer 2</th>
+            <th>Footer 3</th>
+            <th>Footer 4</th>
+            <th>Footer 5</th>
+            <th>Footer 6</th>
+        </tr>
+    </tfoot> -->
+    <tbody>
+        <ng-container *ngFor="let role of dataList; let i=index">
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{role.roleName}}</td>
+                <td>{{role.description}}</td>
+                <td></td>
+                <td>{{role.createTime | date:'yyyy-MM-dd'}}</td>
+                <td><a [routerLink]="['../addrole']" [queryParams]="{id:3}">编辑</a></td>
+            </tr>
+        </ng-container>
+    </tbody>
 </table>
-
-<a [routerLink]="['../addrole']" [queryParams]="{id:3}">编辑</a>

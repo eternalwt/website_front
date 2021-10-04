@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from 'src/app/service/data.service';
-import { PageEvent, MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 
 @Component({
   selector: 'app-article-list',
@@ -8,15 +7,11 @@ import { PageEvent, MatPaginator, MatTableDataSource, MatSort } from '@angular/m
   styleUrls: ['./article-list.component.less']
 })
 export class ArticleListComponent implements OnInit {
-  // MatPaginator Inputs
-  length = 100;
-  pageSize = 100;
-  pageSizeOptions: number[] = [5, 10, 20, 50, 200];
 
-  // MatPaginator Output
-  pageEvent: PageEvent;
-
-  // 表格数据
+  pageSize: Number = 10;
+  /**
+   * 表格数据
+   */
   dataList: any = [];
 
   // 要展示的列
@@ -36,20 +31,9 @@ export class ArticleListComponent implements OnInit {
     let param = {condition: {}, pageParam: pageParam};
     this.dataService.listArticle(param).subscribe(res => {
       if (res["data"]["records"]) {
-        this.dataList = new MatTableDataSource(res["data"]["records"]);
-        
-        // this.dataList.sort = this.sort;
-        // this.dataList.paginator = this.paginator;
+        this.dataList = res["data"]["records"];
       }
     });
   }
-
-  pageOptionChange(evt?) {
-    // debugger;
-    // console.log(this.pageEvent);
-    // alert("page change!");
-  }
-
-  openDialog(action: any,element: any) {}
 
 }

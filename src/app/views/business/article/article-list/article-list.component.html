@@ -1,42 +1,39 @@
-<button mat-button (click)="openDialog('Add',{})" mat-flat-button color="primary">Add Row</button>
+<!-- <button mat-button (click)="openDialog('Add',{})" mat-flat-button color="primary">Add Row</button> -->
 
-<table style="width:100%" mat-table [dataSource]="dataList" matSort class="mat-elevation-z8">
-    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let dataList; columns: columnsToDisplay"></tr>
-
-    <!-- Position Column -->
-    <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef style="width:200px;">Title</th>
-        <td mat-cell *matCellDef="let element">{{element.title}}</td>
-    </ng-container>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="content">
-        <th mat-header-cell *matHeaderCellDef style="width:350px;">Content</th>
-        <td mat-cell *matCellDef="let element"> {{element.content}}</td>
-    </ng-container>
-
-    <!-- Action Column -->
-    <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef> Action </th>
-        <td mat-cell *matCellDef="let element" class="action-link"> 
-          <a style="cursor: pointer;" (click)="openDialog('Update',element)">Edit</a> | 
-          <a style="cursor: pointer;" (click)="openDialog('Delete',element)">Delete</a>  
-        </td>
-      </ng-container>
-    
-    <!-- row operation Column -->
-    <!-- <ng-container matColumnDef="content">
-        <th mat-header-cell *matHeaderCellDef style="width:80px;"> Operation </th>
-        <td mat-cell *matCellDef="let element"> {{element.content}} </td>
-    </ng-container> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>标题</th>
+            <th>分类</th>
+            <th>创建人</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <!-- <tfoot>
+        <tr>
+            <th>Footer 1</th>
+            <th>Footer 2</th>
+            <th>Footer 3</th>
+            <th>Footer 4</th>
+            <th>Footer 5</th>
+            <th>Footer 6</th>
+        </tr>
+    </tfoot> -->
+    <tbody>
+        <ng-container *ngFor="let article of dataList; let i=index">
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{article.title}}</td>
+                <td></td>
+                <td>todo</td>
+                <td>{{article.createTime | date:'yyyy-MM-dd'}}</td>
+                <td></td>
+            </tr>
+        </ng-container>
+    </tbody>
 </table>
-<mat-paginator style="width: 100%;"
-   [pageSizeOptions] = "pageSizeOptions"
-   (page) = "pageOptionChange()">
-   <!-- "pageEvent = pageOptionChange()" -->
-</mat-paginator>
+
 TODO action换成icon，并给提示
-<!-- [length] = "length"
-[pageSize] = "pageSize" -->
-<!-- showFirstLastButtons -->
+

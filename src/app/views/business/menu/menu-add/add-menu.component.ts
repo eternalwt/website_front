@@ -18,24 +18,6 @@ export class FileFlatNode {
      public expandable: boolean, public filename: string, public level: number, public type: any) {}
 }
 
-// const TREE_DATA = JSON.stringify({
-//   Documents: {
-//      angular: {
-//         src: {
-//            compiler: 'ts',
-//            core: 'ts'
-//         }
-//      },
-//      material2: {
-//         src: {
-//            button: 'ts',
-//            checkbox: 'ts',
-//            input: 'ts'
-//         }
-//      }
-//   }
-// });
-
 const TREE_DATA = JSON.stringify({
    Documents: {
       angular: {

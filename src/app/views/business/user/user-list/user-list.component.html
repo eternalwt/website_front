@@ -1,6 +1,7 @@
 <table class="table table-striped">
     <thead>
         <tr>
+            <th>#</th>
             <th>账号</th>
             <th>角色【用磁贴样式】</th>
             <th>部门</th>
@@ -15,11 +16,13 @@
             <th>Footer 3</th>
             <th>Footer 4</th>
             <th>Footer 5</th>
+            <th>Footer 6</th>
         </tr>
     </tfoot> -->
     <tbody>
-        <ng-container *ngFor="let user of dataList">
+        <ng-container *ngFor="let user of dataList; let i=index">
             <tr>
+                <td>{{i+1}}</td>
                 <td>{{user.userName}}</td>
                 <td></td>
                 <td></td>
