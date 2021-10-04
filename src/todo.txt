@@ -4,6 +4,9 @@
 
 ================================================================================
 
+AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5【确认可行性，并且选取3-5家厂商，后续进行合作】：https://www.npmjs.com/package/@adminkit/core
+【感觉功能还是略显简陋，没有二级菜单，并且感觉界面精致感不够】ngx-admin(含Nebular)也是一直在更新的，可以考虑跟进：https://github.com/akveo/ngx-admin
+
 Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
 
 7 New Features to Look Out For in Bootstrap 5：
@@ -12,7 +15,8 @@ Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
 Bootstrap 5 Quick Tutorial：https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
 How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bootstrap-5-form/
 
-表格宽度
+权限配置、添加菜单页面
+表格宽度【除了padding外，把空间占满】
 弹出ngx-modal编辑用户。编辑用户、角色做出来
 1.把弹框(icon列表)和msgBox用上；
 2.表格；
@@ -24,7 +28,6 @@ search框的icon
 添加菜单页面的下拉框搞好【ngx-bootstrap文档】
 前端验证码
 checkbox、radio统一测一遍
-权限配置、添加菜单页面
 联系信息里面textarea的高度为啥不对？grid-template-columns、grid-template-rows的作用以及是否可以直接用bootstrap的flex功能来代替？【梳理我的代码里面用到的这些东西】
 CSS grid-template-columns用法及代码示例：https://vimsky.com/examples/usage/css-grid-template-columns-property.html
 先看原生bootstrap table
@@ -48,8 +51,6 @@ How to implement an Angular bootstrap table with pagination and filter：
   https://mdbootstrap.com/docs/angular/tables/basic/
 看看我对label的使用有没有问题【已登录页、添加用户、添加角色、contact页面都过一遍】。修改权限配置页面样式、修改contact页面样式【和添加角色一致起来】。角色权限那个地方，右侧区域找一个模板。要求至少勾选一个角色吗？
 修改添加用户登录样式及使用的组件，添加记住我【后续继续搞第三方登录】。测一下添加用户的角色能不能写进入，换了checkbox
-坐下角那个头像的图片已下载，使用本地路径
-1.把文本框改成bootstrap风格；2.把按钮改过来【contact页面】
 修改表格，研究bootstrap下的表格，把功能做完善
 把涉及到弹框的地方先改过来，并且确认控件
 把登录页面改成bootstrap的：https://getbootstrap.com/docs/5.1/examples/sign-in/
@@ -217,7 +218,6 @@ Exploring Bootstrap 5 with Angular - Creating Dropdown：https://codeomelet.com/
   https://zhuanlan.zhihu.com/p/96901982
   https://www.zhihu.com/question/48213163/answer/109694920
 Angular2 应该使用什么样的CSS框架？https://www.zhihu.com/question/46414912/answer/109608048
-
 
 【看代码】我以前引入的ngx-treeview等组件，他们里面有没有用到jQuery？升级bootstrap 5.1后会不会有问题？
 先看一遍bootstrap5.1是什么样的，看ngx-bootstrp有哪些组件，然后看bootstrap5.1中哪些在ngx-bootstrap中做了封装，哪些没有做封装，没有封装的部分为什么没做封装？（是不好封装还是不是通用的没必要封装？）
@@ -428,7 +428,6 @@ GitHub开源的10个超棒后台管理面板：https://blog.csdn.net/m0_38106923
 angular6 中使用bootstrap【引入非常简单】：https://www.cnblogs.com/king94Boy/p/9669284.html
 漫谈 Angular 定制主题的四种方式：https://zhuanlan.zhihu.com/p/72178646
 angular实现皮肤主题切换的方案：https://segmentfault.com/a/1190000017751854
-六种主题风格的Angular10+和Nebular后台管理模板：https://www.moyouyouw.cn/code/1385.html
 基于Angular 8和Bootstrap 4实现动态主题切换：https://www.cnblogs.com/daxnet/p/dynamic-theme-with-angular-8-and-bootstrap.html
 
 JHipster：它的后端基于SpringMVC。前端用户Angular做它的前端框架，它实现了Angular1和Angular2两个版本，选择范围比较广。可以利用它快速搭建应用框架。
@@ -546,7 +545,8 @@ AdminLTE的表格没有设置一页多少条的功能
 AdminLTE的Advanced Form值得学习一下
 目前（2020.03.07）来看，使用adminLTE（缺少的控件找ngx-）是一个稳妥的方案。看了ngx-admin、ng-alain以及更多通用模板后再看
 【最快的搭AdminLTE的办法是用别人改造成的angular版开源的，直接测试、直接开搞，很轻量没有损失】
-2.看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说：https://akveo.github.io/nebular/
+看看ngx-admin搭配ng-bootstrap怎么样，ngx-admin先搭配自己的Nebular，不够用再说：https://akveo.github.io/nebular/
+六种主题风格的Angular10+和Nebular后台管理模板：https://www.moyouyouw.cn/code/1385.html
 
 3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial：https://www.techiediaries.com/angular-bootstrap/
 ngx-admin-lte：https://github.com/TwanoO67/ngx-admin-lte
@@ -721,6 +721,7 @@ echarts比较简单的一个教程：https://www.runoob.com/echarts/echarts-pie.
   echarts：把图形再熟悉一下，动手一下
   上传图片（前端上传组件研究一下）、导入excel（比较几种导入的方式）；3.word、pdf预览搞定【处于框架思维时，细节思维又消失了，觉得细节麻烦。要能同时保持两种思维】
   每玩一个控件都要关注：1.样式；2.事件；3.源码及二次开发；
+  ngx-bootstrap-multiselect-dropdown：https://github.com/mihste84/ngx-bootstrap-multiselect-dropdown
 
 学习设计风格（ant、material、其他），在这个基础上再去理解主题和控件，看搭不搭
 
@@ -733,14 +734,12 @@ ng-bootstrap：
 https://github.com/ng-bootstrap/ng-bootstrap
 https://ng-bootstrap.github.io/#/home
 别人在github上的angular项目（特性教学）【看看有没有UI】：
-https://github.com/PatrickJS/angular-starter
-https://github.com/Ismaestro/angular8-example-app
-https://github.com/ui-router/angular
+  https://github.com/PatrickJS/angular-starter
+  https://github.com/Ismaestro/angular8-example-app
+  https://github.com/ui-router/angular
 
 一旦确定了设计风格和主题，那么每引入一个第三方控件，在选型和引入写代码时，必不可少的两个步骤：1.要保持设计风格一致；2.要保证样式和色系等一致
-【双管齐下】
-  1.用现有的material项目练技术
-  2.根据功能点多方位评估ng-alain这样的主题的能力
+2.根据功能点多方位评估ng-alain这样的主题的能力
 
 开发OA和开发互联网应用前端和后端技术栈都是不同的
 
@@ -751,17 +750,6 @@ Flex布局和Bootstrap布局两者的比较（flex布局协助5等分，7等分�
 Bootstrap 3 与 Bootstrap 4 最大的区别就是 Bootstrap 4 使用弹性盒子来布局：https://www.runoob.com/bootstrap4/bootstrap4-flex.html
 Bootstrap4之弹性盒子详解（flexbox）：https://blog.csdn.net/qq_42451979/article/details/80753153
 bootstrap的flex布局比使用原生的方便在哪里？每一个设施相比原生的都好在哪里？
-又思考了一下以前做项目卡在哪里。再看看angular material与样式的关系，最好是能自己封装一些控件，这样才能完全hold住
-bootstrap学习要关注：1.思想（几个分布各解决什么问题）；2.components与angular的结合：
-https://www.tutorialspoint.com/bootstrap4/index.htm
-https://www.bootstrapdash.com/bootstrap-4-tutorial/introduction/
-https://qhmit.com/
-https://www.runoob.com/bootstrap4/bootstrap4-tutorial.html
-测试：要用2年以前的浏览器版本来测
-
-【25号】
-调样式(indigo-pink.css)：1.表格布局；2.按钮样式统一（先改成contact us里面的样式）；4.我的toolbar颜色是怎么配出来的？5.表格的样式
-现在用的样式，就是angular material的样式：@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 推动不了，是不是应该先看mybatis源码了？
 多tab页路由复用
