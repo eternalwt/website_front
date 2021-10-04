@@ -4,10 +4,17 @@
 
 ================================================================================
 
+Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
+
 7 New Features to Look Out For in Bootstrap 5：
   https://www.makeuseof.com/new-features-to-look-out-for-in-bootstrap-5/
   https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
+Bootstrap 5 Quick Tutorial：https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
+How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bootstrap-5-form/
 
+icon的弹出框怎么设计的？
+我的菜单表icon能否复用？
+search框的icon
 添加菜单页面的下拉框搞好【ngx-bootstrap文档】
 前端验证码
 checkbox、radio统一测一遍
@@ -51,6 +58,7 @@ Bootstrap 5 Modal：https://www.geeksforgeeks.org/bootstrap-5-modal/
 我的ngx-开头的控件，哪些是开源的？要注意跟踪
 github - material-design-for-bootstrap：https://github.com/mdbootstrap/material-design-for-bootstrap（可见bootstrap只是框架，material可以在框架的基础上继续发挥）
 github - mdb-ui-kit：https://github.com/mdbootstrap/mdb-ui-kit
+加一个footer
 
 利用Angular7开发一个Radio组件的全过程：https://www.jb51.net/article/165157.htm
 使用Angular7开发一个Radio组件：https://segmentfault.com/a/1190000019644926
@@ -61,6 +69,7 @@ github - mdb-ui-kit：https://github.com/mdbootstrap/mdb-ui-kit
 1.安装ngx-bootstrap，逐个替换现有页面
 2.把material移到另一个工程中，或者直接删掉【删除之前要看源码】
 3.再用主题美化功能。主题提升的是设计感和品位，开发的时候样式布局还是先根据业务来，参考多个主题中的元素，每个主题中的东西只会用到一小部分。
+多个主题，怎么比较他们的优劣？从哪些方面？
 
 【20210922】今天晚上又仔细想了一下，或许现阶段最可行的方式是这样的：
   1.解决下面列出的问题：功能往前推进；
@@ -188,6 +197,10 @@ https://fireship.io/lessons/basics-reactive-forms-in-angular/
 1.菜单权限再看看后端是否需要拦截
 2.side-menu是不是可以用于菜单树（能否做多级）；
 继续推进前端鉴权【使用EventEmitter】
+Angular Pure Bootstrap 5 Sidenav：https://techincent.com/angular-pure-bootstrap-5-sidenav/
+How to Add a Responsive Sidebar Navigation Menu to Your Angular App：https://careydevelopment.us/blog/how-to-add-a-responsive-sidebar-navigation-menu-to-your-angular-app
+Angular: How to Override Bootstrap's Default Colors and Create Your Own Theme：https://careydevelopment.us/blog/angular-how-to-override-bootstraps-default-colors-and-create-your-own-theme
+Exploring Bootstrap 5 with Angular - Creating Dropdown：https://codeomelet.com/posts/exploring-bootstrap-5-with-angular-creating-dropdown
 
 【晚上】git clone一下我的新库
 
@@ -239,6 +252,7 @@ Input, Change, ngModelChange事件的区别：https://www.cnblogs.com/juliazhang
 如果不能构建公司那种可以直接参考别人的代码复制使用的组件库，那么就达不到大规模添加功能和代码的程度。我离这个标准还差的远。
 【下一步最打紧的是搞清楚控件代码的阅读、修改、调试】
 
+关于门户网站，我是不是方向错了？既不用去思考angular怎么适配多页程序，也不用去考虑react怎么开发门户，是不是可以直接使用thymeleaf等模板技术？
 门户网站群建设的技术要点：https://zhuanlan.zhihu.com/p/398718963
 智慧门户单点系统的研究【可以看到门户网站有哪些模块】：https://zhuanlan.zhihu.com/p/408071690
 门户网站的突破，可以上B站学习：https://search.bilibili.com/all?keyword=%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&from_source=nav_search_new
@@ -1034,6 +1048,17 @@ angular.json参数详解(DevKit)：
 
 compiling @angular/xxx/xxx : es2015 as esm2015指的是把第三方组件编译成ECMAScript Modules：https://stackoverflow.com/questions/61572153/es2015-vs-esm2015
 es2015就是es6
+
+Angular: How to Add Bootstrap Icons to Your Project：https://careydevelopment.us/blog/angular-how-to-add-bootstrap-icons-to-your-project
+我看有一个文章是把icon放在span里面。Icons are designed to be used with inline elements (we like the <i> tag for brevity, but using a <span> is more semantically correct)：https://mdbootstrap.com/docs/b5/angular/content-styles/icons/
+SVG 教程：https://www.runoob.com/svg/svg-tutorial.html
+23 Best Sites for Free SVG Files (Cricut & Silhouette)：https://www.cutcutcraft.com/free-svg-images-cricut-silhouette/
+font awesome:
+  https://v5.bootcss.com/docs/extend/icons/
+  https://www.npmjs.com/package/angular-font-awesome
+  https://fontawesome.com/
+有一个按钮集合叫Font Awesome Icons：https://fontawesome.com/v4.7.0/icons/#
+我们的系统用的是 Font Awesome 图标：http://www.fontawesome.com.cn/
 
 =================================================================================
 

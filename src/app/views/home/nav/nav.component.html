@@ -8,8 +8,8 @@
     <ng-container *ngFor="let item of menuList">
       <li class="nav-item">
         <a href="#" class="nav-link link-dark" aria-current="page" [routerLink]="item.url">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          {{item.icon}}{{item.menuName}}
+          <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> -->
+          <i class={{item.icon}} style="margin-right:5px;"></i>{{item.menuName}}
         </a>
       </li>
     </ng-container>

@@ -580,7 +580,7 @@ Fast：微软发布的Web Components：https://fast.design/docs/introduction/
 第一个问题，我有用到angular.json吗？
 1.搜angular node_modules；
 2.
-downloadjs、font_awesome、raphael、ts-md5、webuploader、ngx-color-picker、cropperjs
+downloadjs、raphael、ts-md5、webuploader、ngx-color-picker、cropperjs
 
 在package.json中指定node_modules的路径：
 http://www.huati365.com/answer/9MmbBEd3PkdQKYQ
@@ -686,10 +686,10 @@ Angular9 中的模板类型检查：https://zhuanlan.zhihu.com/p/139372758
 
 几款前端开源模板：https://blog.csdn.net/sinat_40770656/article/details/95058150
 Top Angular Open Source Projects：
-https://dev.to/anaflatlogic/top-angular-open-source-projects-gbj
-https://awesomeopensource.com/projects/angular-material
-https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-projects
-https://flatlogic.com/blog/top-angular-open-source-projects/
+  https://dev.to/anaflatlogic/top-angular-open-source-projects-gbj
+  https://awesomeopensource.com/projects/angular-material
+  https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-projects
+  https://flatlogic.com/blog/top-angular-open-source-projects/
 
 如果想要深入学习angular，首先应该学习typescript
 
@@ -881,8 +881,6 @@ monaco 编辑器【可以作为代码编辑器使用】：
   https://zhuanlan.zhihu.com/p/47746336
 
 ==============================================================================================
-
-有一个按钮集合叫Font Awesome Icons：https://fontawesome.com/v4.7.0/icons/#
 
 一定要有组件思维，尽可能的封装组件。组件套下载的库组件，递进思维
 提升概念把握能力及对应的抽象思维能力：bar图、饼图、折线图的dimension、source、series等的概念
@@ -3438,8 +3436,6 @@ https://zhuanlan.zhihu.com/p/50647962
 redux
 
 ngDoCheck：数变更检测(zone.js) 发生的时候被调用，很频繁的被调用，只要视图有变化都会触发：https://www.cnblogs.com/webhmy/p/9435117.html
-
-我们的系统用的是 Font Awesome 图标：http://www.fontawesome.com.cn/
 
 看一下angular的这两个validator：compose、composeAsync
 Validators.compose：https://www.cnblogs.com/lucky-heng/p/11110579.html
