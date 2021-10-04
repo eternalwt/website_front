@@ -2,6 +2,7 @@
 【看mat-icon的源码】封装了什么东西？
 mat-sidenav-container、mat-sidenav、mat-sidenav-content除了封装了样式还封装了什么？感觉丧失了灵活性，并且是个黑箱。这种东西不像bootstrap是大众的，维护成本更高。
 mat-checkbox呢？用这个的必要性是什么？业务开发需要的封装是对一个功能点的封装。如果mat-checkbox这种封装功能不是特别强大的话，那就没必要【确认】
+mat-grid-list提供了哪些封装？使用的必要性何在？
 
 Mat-Icon List : 900+ Angular Material Icons：
 https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/

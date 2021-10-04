@@ -13,8 +13,15 @@ export class AddRoleComponent implements OnInit {
   editMode: boolean = false;
   id: number = 0;
 
-  roleName: string; // 角色名称
-  roleDesc: string; // 角色描述
+  /**
+   * 角色名称
+   */
+  roleName: string;
+
+  /**
+   * 角色描述
+   */
+  roleDesc: string;
 
   constructor(
     private dataService: DataService,

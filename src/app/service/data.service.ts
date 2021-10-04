@@ -37,6 +37,10 @@ export class DataService {
     return this.http.post(environment.baseUrl + "user/list", param);
   }
 
+  listUserDetail(param) {
+    // todo 添加角色的获取，然后替换user-list.component.ts里面的listUser方法
+  }
+
   addRole(param) {
     return this.http.post(environment.baseUrl + "role/add", param);
   }

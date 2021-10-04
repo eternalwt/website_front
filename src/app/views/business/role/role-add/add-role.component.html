@@ -1,4 +1,4 @@
-<form #form="ngForm" class="tp-form" (ngSubmit)="onSubmit(form.value)">
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
    <div class="wrapper">
       <div>
          <label>角色名称</label>
@@ -6,7 +6,6 @@
       <div>
          <input type="text" name="roleName" [(ngModel)]="roleName" class="form-control">
       </div>
-   
       <div>
          <label>角色描述</label>
       </div>

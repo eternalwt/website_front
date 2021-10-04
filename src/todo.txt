@@ -12,8 +12,13 @@ Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
 Bootstrap 5 Quick Tutorial：https://www.linkedin.com/pulse/bootstrap-5-quick-tutorial-abid-anjum
 How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bootstrap-5-form/
 
+弹出ngx-modal编辑用户。编辑用户、角色做出来
+1.把弹框(icon列表)和msgBox用上；
+2.表格；
+3.消息中心是用右上方红点还是用toast之类的？
+把公司里面那种上方2行三列的搜索做出来
+
 icon的弹出框怎么设计的？
-我的菜单表icon能否复用？
 search框的icon
 添加菜单页面的下拉框搞好【ngx-bootstrap文档】
 前端验证码
@@ -30,6 +35,7 @@ CSS grid-template-columns用法及代码示例：https://vimsky.com/examples/usa
 ngx-bootstrap的modal是要用的
 ngx-bootstrap竟然没有table。。。
 DataPicker如何启用中文？
+bootstrap在input框中加入icon图标：https://www.cnblogs.com/xiaqilin/p/8987183.html
 菜单【添加菜单这个页面涉及到很多知识点，每一个搞懂都能往前一步】：
   1.“菜单管理”的设计思路可能要变（最近对权限有了更多理解后）；2.添加菜单的功能修改完善一下【就着这个页面，把布局调整再搞一轮】；3.“添加菜单”作为菜单管理的子菜单。菜单也能授予默认可以使用的角色
 form-control、form-group的样式再看一下

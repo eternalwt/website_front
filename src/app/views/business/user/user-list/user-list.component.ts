@@ -10,20 +10,17 @@ import { MatSort } from '@angular/material';
 export class UserListComponent implements OnInit {
 
   pageSize = 10;
-  // 表格数据
-  dataList: any = [];
 
-  // 要展示的列
-  columnsToDisplay: any = ['userName', 'createTime'];
+  /**
+   * 表格数据
+   */
+  dataList: any = [];
 
   constructor(
     private dataService: DataService
   ) { }
 
-  // @ViewChild(MatSort) sort: MatSort;
-
   ngOnInit() {
-    // this.dataList.sort = this.sort;
 
     let pageParam = {pageNum: 1, pageSize: this.pageSize};
     this.dataService.listUser(pageParam).subscribe(res => {

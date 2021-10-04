@@ -1,30 +1,31 @@
-<table style="width:100%" mat-table [dataSource]="dataList" matSort class="mat-elevation-z8">
-    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let dataList; columns: columnsToDisplay"></tr>
-
-    <ng-container matColumnDef="userName">
-        <th mat-header-cell *matHeaderCellDef style="width:200px;">账号</th>
-        <td mat-cell *matCellDef="let element">{{element.userName}}</td>
-    </ng-container>
-
-    <!-- <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef style="width:200px;">角色</th>
-        <td mat-cell *matCellDef="let element"></td>
-    </ng-container>
-
-    <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef style="width:200px;">状态</th>
-        <td mat-cell *matCellDef="let element"></td>
-    </ng-container> -->
-
-    <ng-container matColumnDef="createTime">
-        <th mat-header-cell *matHeaderCellDef style="width:350px;">创建时间</th>
-        <td mat-cell *matCellDef="let element"> {{element.createTime | date:'yyyy-MM-dd'}}</td>
-    </ng-container>
-
-    <!-- row operation Column -->
-    <!-- <ng-container matColumnDef="content">
-        <th mat-header-cell *matHeaderCellDef style="width:80px;"> Operation </th>
-        <td mat-cell *matCellDef="let element"> {{element.content}} </td>
-    </ng-container> -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>账号</th>
+            <th>角色【用磁贴样式】</th>
+            <th>部门</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <!-- <tfoot>
+        <tr>
+            <th>Footer 1</th>
+            <th>Footer 2</th>
+            <th>Footer 3</th>
+            <th>Footer 4</th>
+            <th>Footer 5</th>
+        </tr>
+    </tfoot> -->
+    <tbody>
+        <ng-container *ngFor="let user of dataList">
+            <tr>
+                <td>{{user.userName}}</td>
+                <td></td>
+                <td></td>
+                <td>{{user.createTime | date:'yyyy-MM-dd'}}</td>
+                <td></td>
+            </tr>
+        </ng-container>
+    </tbody>
 </table>
