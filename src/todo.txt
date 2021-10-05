@@ -7,6 +7,8 @@
 AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5【确认可行性，并且选取3-5家厂商，后续进行合作】：https://www.npmjs.com/package/@adminkit/core
 【感觉功能还是略显简陋，没有二级菜单，并且感觉界面精致感不够】ngx-admin(含Nebular)也是一直在更新的，可以考虑跟进：https://github.com/akveo/ngx-admin
 
+再搞几个月才能上前端模板，再搞几个月必须上前端模板
+
 Bootstrap 5教程:https://v5.bootcss.com/docs/extend/icons/
 
 7 New Features to Look Out For in Bootstrap 5：
