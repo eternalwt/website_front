@@ -2,6 +2,8 @@
 
 【互联网项目和接项目体现了两个思路：一个是探索性的，一个是确定性的，指导思想要定下来】
 
+争取2022年底开源
+
 ================================================================================
 
 AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5【确认可行性，并且选取3-5家厂商，后续进行合作】：https://www.npmjs.com/package/@adminkit/core
@@ -19,7 +21,8 @@ How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bo
 
 forRoot还是要尽快搞清楚
 
-我的验证码都还没做，这都是事
+我的验证码都还没做，这都是事情
+先把表格和分页写通，再考虑封装控件的事。
 ngx-bootstrap的modal是要用的
 权限配置、添加菜单页面
 表格宽度【除了padding外，把空间占满】

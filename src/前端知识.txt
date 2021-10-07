@@ -93,6 +93,7 @@ ES2021：
 如何写一个自己的npm包：https://www.jianshu.com/p/fafc88e74764
 
 再看英文版router-outlet的解释
+angular 9到12的新特性学习
 Angular：都 2021 年了，你为啥还没用 Angular：https://juejin.cn/post/6959373663040700446
 How ANGULAR Trigger index.html And Start Working：https://dev.to/casperns/how-angular-trigger-indexhtml-and-start-working-1l46
 Lern how to split your Angular App into Modules：https://malcoded.com/posts/angular-fundamentals-modules/
