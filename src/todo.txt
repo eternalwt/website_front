@@ -19,6 +19,7 @@ How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bo
 
 forRoot还是要尽快搞清楚
 
+我的验证码都还没做，这都是事
 ngx-bootstrap的modal是要用的
 权限配置、添加菜单页面
 表格宽度【除了padding外，把空间占满】
@@ -26,7 +27,8 @@ ngx-bootstrap的modal是要用的
 1.把弹框(icon列表)和msgBox用上；
 2.表格；
 3.消息中心是用右上方红点还是用toast之类的？
-把公司里面那种上方2行三列的搜索做出来
+把公司里面那种上方2行三列的搜索做出来【很简单，要动手】
+苏博登录页有个footer
 
 icon的弹出框怎么设计的？
 search框的icon

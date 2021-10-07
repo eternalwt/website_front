@@ -1,5 +1,6 @@
 ﻿
 把 promise + RxJS 写通，just try
+Deep Dive into Reactive Programming with RxJS：https://www.infoq.com/articles/reactive-programming-rxjs/
 RxJS的另外四种实现方式（后记）—— 同时实现管道和链式编程：https://blog.csdn.net/oYiGeHui/article/details/82821125
 一道面试题引起的思考：https://www.cnblogs.com/chenjg/p/10006502.html
 JS ES6函数式编程：https://www.jianshu.com/p/795b27d32e9a
@@ -17,6 +18,7 @@ Y：https://segmentfault.com/a/1190000012286537
 RxJS: map, flatMap和flatMapLatest的区别：https://segmentfault.com/a/1190000011070872?utm_source=tag-newest
 函数防抖与节流：https://segmentfault.com/a/1190000002764479
 AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
+确认：有了rxjs后可以统一异步，不再需要显式promise、async/await
 
 【理解原理】bootstrap 如何让div内部垂直居中？
   https://www.zhihu.com/question/45608967
@@ -3380,6 +3382,11 @@ https://blog.csdn.net/yilanyoumeng3/article/details/96473797
 1.CSS实现div高度填满剩余空间
 
 px和em的区别：https://blog.csdn.net/chenjuan1993/article/details/81356497
+
+
+前端以前只关注了代码规范扫描，没有关注重构的自动化分析（插件）
+视觉化查看网页样式及标注 - Visual Inspector Chrome 扩展：https://www.jianshu.com/p/5da3a9d40704
+webStorm用起来（对比vscode？）：https://blog.csdn.net/u011321546/article/details/80731575
 
 ============================================================================
 
