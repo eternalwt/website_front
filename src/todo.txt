@@ -21,6 +21,7 @@ How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bo
 
 forRoot还是要尽快搞清楚
 
+确定对话框（添加用户）、multidropdown、表格分页
 我的验证码都还没做，这都是事情
 先把表格和分页写通，再考虑封装控件的事。
 ngx-bootstrap的modal是要用的
@@ -31,7 +32,9 @@ ngx-bootstrap的modal是要用的
 2.表格；
 3.消息中心是用右上方红点还是用toast之类的？
 把公司里面那种上方2行三列的搜索做出来【很简单，要动手】
-苏博登录页有个footer
+把登录页footer的样式问题解决（参考demo以及我已有的代码）
+ngx-bootstrap的pagination没有每页数量，这是一个缺陷
+还没完全搞清楚，再研究一段时间，或许一个解决方案是我自己在bootstrap或者ngx-bootstrap的基础上快速封装控件（研究一下这种可能性）
 
 icon的弹出框怎么设计的？
 search框的icon
