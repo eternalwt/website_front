@@ -152,6 +152,13 @@ Bootstrap4 Flex（弹性）布局：
   https://www.runoob.com/bootstrap4/bootstrap4-flex.html
   https://blog.csdn.net/qq_27870421/article/details/97433718
 【找到完整的文档】class：form-group、form-control：https://blog.csdn.net/CarryBest/article/details/70338806?utm_source=blogxgwz9
+jsDelivr 是一个免费、开源的加速CDN公共服务，托管了许多大大小小的项目：https://www.cnblogs.com/murenziwei/p/12747311.html
+popper.js：https://popper.js.org/
+Free themes for Bootstrap：https://bootswatch.com/
+Bootsnipp【组件不够需要自己写之前，先从这个网站找一下】：https://bootsnipp.com/
+bootstrap.bundle.js是干嘛的？
+using Bootstrap as a module：https://getbootstrap.com/docs/5.1/getting-started/javascript/#using-bootstrap-as-a-module
+CSS3 box-sizing 属性：https://www.runoob.com/cssref/css3-pr-box-sizing.html
 
 ===========================================================================
 
@@ -202,26 +209,26 @@ position: absolute;与float、块级元素等概念的关系？
 
 练习一下写div+css布局：https://zhuanlan.zhihu.com/p/102150359
 看一些div布局加深理解：
-https://c.runoob.com/codedemo/2917
-http://www.divcss5.com/wenji/w588.shtml
-https://blog.csdn.net/zhousenshan/article/details/82708554
-https://blog.csdn.net/m0_38134431/article/details/84372226
-https://blog.csdn.net/qq_34283987/article/details/77896035
-https://www.cnblogs.com/yszr/p/9339809.html
+  https://c.runoob.com/codedemo/2917
+  http://www.divcss5.com/wenji/w588.shtml
+  https://blog.csdn.net/zhousenshan/article/details/82708554
+  https://blog.csdn.net/m0_38134431/article/details/84372226
+  https://blog.csdn.net/qq_34283987/article/details/77896035
+  https://www.cnblogs.com/yszr/p/9339809.html
 感觉搞懂布局后，我可以看CSS3了
 104道 CSS 面试题，助你查漏补缺：https://zhuanlan.zhihu.com/p/114257330
 剖析一些经典的CSS布局问题，为前端开发+面试保驾护航：https://zhuanlan.zhihu.com/p/86525538
 tr\td顶部对齐，怎么分析这个问题？
 
 html5九宫格【先自己想想怎么实现】：
-https://www.jb51.net/web/446346.html
-https://www.cnblogs.com/padding1015/p/9566443.html
-https://blog.csdn.net/u012260672/article/details/50922459
-https://www.yudouyudou.com/jiaochengheji/Html_css/1525.html
+  https://www.jb51.net/web/446346.html
+  https://www.cnblogs.com/padding1015/p/9566443.html
+  https://blog.csdn.net/u012260672/article/details/50922459
+  https://www.yudouyudou.com/jiaochengheji/Html_css/1525.html
 
 前端重新学习（5）DOM与DOM2、DOM3区别以及DOM2新特性：
-https://blog.csdn.net/qq_16546829/article/details/81289055
-https://www.cnblogs.com/YangqinCao/p/5491183.html
+  https://blog.csdn.net/qq_16546829/article/details/81289055
+  https://www.cnblogs.com/YangqinCao/p/5491183.html
 
 图片自动放大缩小，模拟”心脏跳动”：https://www.iteye.com/blog/hbiao68-2323044
 图片滚动剖析：https://www.iteye.com/blog/hbiao68-2289438
@@ -230,8 +237,8 @@ https://www.cnblogs.com/YangqinCao/p/5491183.html
 精确化测试——基于依赖关系的变动检测原理：https://zhuanlan.zhihu.com/p/260761387
 
 ngx两个treeview：
-https://www.npmjs.com/package/@mthomas564/ngx-treeview
-https://www.npmjs.com/package/prospeum-ngx-treeview
+  https://www.npmjs.com/package/@mthomas564/ngx-treeview
+  https://www.npmjs.com/package/prospeum-ngx-treeview
 自定义下拉框：1.定位方式；2.多功能
 ng-select：https://www.npmjs.com/package/@ng-select/ng-select
 Angular Multi-Select Dropdown：https://www.npmjs.com/package/ng-multiselect-dropdown

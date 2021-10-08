@@ -21,6 +21,7 @@ How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bo
 
 forRoot还是要尽快搞清楚
 
+把原因的对话框干掉，先用alert，再重构
 确定对话框（添加用户）、multidropdown、表格分页
 我的验证码都还没做，这都是事情
 先把表格和分页写通，再考虑封装控件的事。
@@ -35,6 +36,8 @@ ngx-bootstrap的modal是要用的
 把登录页footer的样式问题解决（参考demo以及我已有的代码）
 ngx-bootstrap的pagination没有每页数量，这是一个缺陷
 还没完全搞清楚，再研究一段时间，或许一个解决方案是我自己在bootstrap或者ngx-bootstrap的基础上快速封装控件（研究一下这种可能性）
+卸载插件要从命令行卸载，要看卸载了哪些依赖，对比文件；同样安装依赖也一样，要慎重。
+npm install应该主要侧重于库，例如二维码；组件应该是业务逻辑功能的封装。再思考一下这个问题
 
 icon的弹出框怎么设计的？
 search框的icon
