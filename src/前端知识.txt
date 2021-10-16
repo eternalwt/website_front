@@ -19,6 +19,26 @@ RxJS: map, flatMap和flatMapLatest的区别：https://segmentfault.com/a/1190000
 函数防抖与节流：https://segmentfault.com/a/1190000002764479
 AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
 确认：有了rxjs后可以统一异步，不再需要显式promise、async/await
+异步函数如何使用缓存？[16]需要密集计算的函数，可以部署缓存（memoizing），用来提高性能。本文介绍了函数缓存的概念和实现：https://stackfull.dev/memoizing-async-functions-in-javascript
+Mithril.js[24]：一个非常易用的轻量级前端框架，只做了 DOM 的包装层，没有加任何其他接口，体积小，加载快，并且支持组件和前端路由。开发小型页面，明显优于 React：Mithril.js: https://mithril.js.org/index.html
+大公司里怎样开发和部署前端代码？https://www.zhihu.com/question/20790576/answer/523775863
+
+Angular WeUI【可以不用，但是可以学】：https://gitee.com/hellokitty21125/angular-weui
+angular常见的服务：日志类服务、心跳服务、网络请求服务：https://segmentfault.com/a/1190000014175073
+ng-rx-websocket：https://www.npmjs.com/package/ng-rx-websocket
+Websocket实现心跳：
+	https://blog.csdn.net/qq_15798421/article/details/118977634
+	https://blog.csdn.net/wanghaoalain/article/details/104194189
+	https://blog.csdn.net/Real_Bird/article/details/77119897?utm_source=blogkpcl14
+	https://blog.csdn.net/qq_15798421/article/details/119576328
+Angular 图片预览组件(photoswipe)：
+	https://blog.csdn.net/liwan09/article/details/107687926
+	https://www.jianshu.com/p/40b7c7c2f18d
+	https://zhuanlan.zhihu.com/p/76343722
+URL 链接中的 utm_source（Urchin Tracking Module）有什么用：
+	https://zhangzifan.com/t/6919.html
+	https://blog.csdn.net/weixin_34149796/article/details/86255913
+	https://baijiahao.baidu.com/s?id=1665390101251579901&wfr=spider&for=pc
 
 【理解原理】bootstrap 如何让div内部垂直居中？
   https://www.zhihu.com/question/45608967
@@ -562,6 +582,13 @@ Javascript中数组方法reduce的妙用之处：https://www.jianshu.com/p/b415e
 typescript类型的使用：menuList: Array<{path: string, isSelect: boolean,queryParams:any }> = [];
 Angular 实现了部分HTML5标准常规属性，例如：required、maxlength 等等：http://www.cppcns.com/ruanjian/java/232528.html
 为啥编译时就能发现mybatis xml类型错误？resultType="com.sw.pse.vo.AsmBuildProjectVo"
+
+为什么国内用Angular的相对较少，感觉中大型项目Angular真的好用到爆？https://www.zhihu.com/question/490370414/answer/2159541538
+angular material还有个问题要注意下：是不是和angular有所绑定？如果答案是肯定的，那更加不能用
+
+A practical guide to learning front end development for beginners
+【这个比较少，试试先把这个里面的关键部分搞定，看看能有什么提升】：https://www.freecodecamp.org/news/a-practical-guide-to-learning-front-end-development-for-beginners-da6516505e41/
+Front-end Developer Handbook 2019：https://frontendmasters.com/books/front-end-handbook/2019/
 
 Angular 的模块间通信：https://www.infoq.cn/article/angular-component-communication
 
@@ -3596,7 +3623,13 @@ RxJS 源码解析(一): Observable & Subscription：https://zhuanlan.zhihu.com/p
 	https://www.17sucai.com/pins/tag/7183.html
 	https://www.cnblogs.com/yelanggu/p/9516419.html
 
+Angular4日期时间控件 --- laydate：https://www.jianshu.com/p/573c9b135505
+angular 实现时间段选择组件：https://www.cnblogs.com/wbg21521/p/6774434.html
+带有日历和日期范围的Angular 10物料日期选择器：https://blog.csdn.net/weixin_26746861/article/details/108177983
+Angular 2/4 +日期时间选择器组件：https://www.angular365.cn/angular-datetimepicker/
+
 一个轻量级的 Web Components 开发框架，用于快速开发 Web Components 组件FicusJS: https://github.com/ficusjs/ficusjs
+Web Component message-box[36]：https://github.com/kingcc/message-box
 
 如何评价开源H5编辑器H5-Dooring?https://www.zhihu.com/question/437652548/answer/1891392908
 
@@ -3609,3 +3642,10 @@ Node.js Tutorial：
 angular7 路由路径中的" # "：https://blog.csdn.net/weixin_42959829/article/details/95589700
 
 angular6根据environments配置文件：https://www.jb51.net/article/157425.htm
+
+10 万人的大场馆如何“画座位”？【可能需要综合canvas、svg、echarts等，找到一个合理的方案】：
+	https://www.pianshen.com/article/86171147609/
+	https://www.jianshu.com/p/199b1637af19
+	https://www.cnblogs.com/xgqfrms/p/12102557.html
+剧场视线设计：https://wenku.baidu.com/view/da6265fbae1ffc4ffe4733687e21af45b307febb.html	
+

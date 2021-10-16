@@ -382,6 +382,11 @@ angular-notifier：https://www.npmjs.com/package/angular-notifier
 加ngToast：https://www.npmjs.com/package/ng-toast
 NgxTreeDnd 可拖拽的 Angular 树组件：https://www.oschina.net/p/ngx-tree-dnd
 
+ngx-captcha：
+  https://www.npmjs.com/package/ngx-captcha
+  https://www.npmjs.com/package/@binssoft/ngx-captcha
+  https://www.npmjs.com/package/ngx-canvas-captcha
+
 generating browser application bundles
 
 angular 自定义组件：
