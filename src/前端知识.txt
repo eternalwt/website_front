@@ -23,9 +23,11 @@ AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
 Mithril.js[24]：一个非常易用的轻量级前端框架，只做了 DOM 的包装层，没有加任何其他接口，体积小，加载快，并且支持组件和前端路由。开发小型页面，明显优于 React：Mithril.js: https://mithril.js.org/index.html
 大公司里怎样开发和部署前端代码？https://www.zhihu.com/question/20790576/answer/523775863
 
+如何创建可扩展和可维护的前端架构：https://mp.weixin.qq.com/s/02LgQVe6q4o-Zd00xsXGgw
+
 Angular WeUI【可以不用，但是可以学】：https://gitee.com/hellokitty21125/angular-weui
 angular常见的服务：日志类服务、心跳服务、网络请求服务：https://segmentfault.com/a/1190000014175073
-ng-rx-websocket：https://www.npmjs.com/package/ng-rx-websocket
+ng-rx-websocket【做了哪方面的封装？有必要吗？】：https://www.npmjs.com/package/ng-rx-websocket
 Websocket实现心跳：
 	https://blog.csdn.net/qq_15798421/article/details/118977634
 	https://blog.csdn.net/wanghaoalain/article/details/104194189
@@ -256,6 +258,8 @@ html5九宫格【先自己想想怎么实现】：
 
 精确化测试——基于依赖关系的变动检测原理：https://zhuanlan.zhihu.com/p/260761387
 
+@ckeditor/ckeditor5-angular 的图片上传：https://www.cnblogs.com/jsbi/p/11643647.html
+
 ngx两个treeview：
   https://www.npmjs.com/package/@mthomas564/ngx-treeview
   https://www.npmjs.com/package/prospeum-ngx-treeview
@@ -351,7 +355,6 @@ span是内联元素，能够根据内容的宽度自动伸展和收缩，并且�
 2.如果用span，换行怎么搞？
 3.如果不用span，换行怎么搞？
 4.统一这个页面的样式
-
 
 CSS3 :last-child 选择器：
 http://caibaojian.com/w3c/cssref/selector_last-child.html

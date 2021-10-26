@@ -3,7 +3,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../../service/data.service';
 import { StorageService } from 'src/app/service/storage.service';
 import { Router } from '@angular/router';
-import { MessageBoxService } from '../../service/message-box.service';
 
 @Component({
   selector: 'app-login',
@@ -22,7 +21,6 @@ export class LoginComponent implements OnInit {
     private dataService: DataService,
     private storageService: StorageService,
     private router: Router,
-    private MessageBoxService: MessageBoxService
   ) { }
 
   ngOnInit() {
@@ -43,6 +41,7 @@ export class LoginComponent implements OnInit {
 
   }
   
+  // todo 验证码
 
   onSubmit() {
     this.submitted = true;
@@ -71,8 +70,7 @@ export class LoginComponent implements OnInit {
         });
 
       } else {
-        // alert("登录失败：" + res["msg"]);// todo msgBox
-        this.MessageBoxService.showMsg("登录失败", res["msg"]);
+        alert("登录失败：" + res["msg"]);// todo msgBox
       }
     });
   }

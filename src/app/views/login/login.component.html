@@ -9,12 +9,18 @@
           <div *ngIf="messageForm.controls.name.errors.required">请输入账号</div>
         </div>
       </label>
-
       <label>
         密码：
         <input type="password" formControlName="password" class="form-control">
         <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
           <div *ngIf="messageForm.controls.message.errors.required">请输入密码</div>
+        </div>
+      </label>
+      <label>
+        验证码：
+        <input type="text" formControlName="verifyCode" class="form-control">
+        <div *ngIf="submitted && messageForm.controls.verifyCode.errors" class="error">
+          <div *ngIf="messageForm.controls.message.errors.required">请输入验证码</div>
         </div>
       </label>
 

@@ -6,6 +6,10 @@
 
 ================================================================================
 
+【坚持】就算再难至少坚持到2022年底，看看效果
+
+前端还是要多看，感觉做的很困难，内容也很多。先把NG ALAIN、DevUI、ng-zorro等看一遍，在我现在对前端选项的心得的基础上看能否用上【把做项目和学习分开】：http://ng.ant.design/docs/recommendation/zh
+
 AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5【确认可行性，并且选取3-5家厂商，后续进行合作】：https://www.npmjs.com/package/@adminkit/core
 【感觉功能还是略显简陋，没有二级菜单，并且感觉界面精致感不够】ngx-admin(含Nebular)也是一直在更新的，可以考虑跟进：https://github.com/akveo/ngx-admin
 
@@ -21,14 +25,16 @@ How to Create a Multiple Steps Form with Bootstrap 5：https://designmodo.com/bo
 
 forRoot还是要尽快搞清楚
 
-把原因的对话框干掉，先用alert，再重构
+前端要注意：如果我先自己搞样式每个模块单独套bootstrap 5的样式进度太慢的话，是不是可以再试一次直接套bootstrap 5（要找一套好的开源模板，根据云风的选项模式）模板然后修改局部？这样做的依据是现在已经对bootstrap的抽象及使用模式有了新的思考
+
+把todo再搞一轮
+把公司的对话框、表格、树、复杂下拉、时间选择控件搞过来，并利用bootstrap5进行重构
+把原有的对话框干掉，先用alert，再重构
 确定对话框（添加用户）、multidropdown、表格分页
-我的验证码都还没做，这都是事情
 先把表格和分页写通，再考虑封装控件的事。
-ngx-bootstrap的modal是要用的
+ngx-bootstrap的modal是要用的。弹出ngx-modal编辑用户。编辑用户、角色做出来
 权限配置、添加菜单页面
 表格宽度【除了padding外，把空间占满】
-弹出ngx-modal编辑用户。编辑用户、角色做出来
 1.把弹框(icon列表)和msgBox用上；
 2.表格；
 3.消息中心是用右上方红点还是用toast之类的？
@@ -39,7 +45,7 @@ ngx-bootstrap的pagination没有每页数量，这是一个缺陷
 卸载插件要从命令行卸载，要看卸载了哪些依赖，对比文件；同样安装依赖也一样，要慎重。
 npm install应该主要侧重于库，例如二维码；组件应该是业务逻辑功能的封装。再思考一下这个问题
 
-icon的弹出框怎么设计的？
+icon的弹出框怎么设计的？【如果不知道，就看公司代码】
 search框的icon
 添加菜单页面的下拉框搞好【ngx-bootstrap文档】
 前端验证码
@@ -156,8 +162,6 @@ httpClientService上传的进度很好控制，下载呢？
 自己动手实现一个 Flex 布局框架：https://segmentfault.com/a/1190000007167682
 angular组件－特殊的瀑布流（原创）：https://segmentfault.com/a/1190000006921007
 
-angular4如何使用Bootstrap的datetimepicker组件：https://blog.csdn.net/qq_34908167/article/details/79913199
-
 【下一步，重点】直接对着控件搜样式，逐个学习，例如：ngx-treeview、样式
 Angular5 自定义scrollbar样式之 ngx-malihu-scrollbar：https://www.shuzhiduo.com/A/obzbAGLjdE/
 将项目中的ng2-tree组件替换成ngx-tree
@@ -189,6 +193,7 @@ Angular Authentication With JSON Web Tokens (JWT): The Complete Guide：https://
 Angular Json Pipe Example：https://www.concretepage.com/angular-2/angular-2-json-pipe-example
 Angular 12/11 Multiple File Upload Tutorial Example：https://www.tutsmake.com/angular-11-multiple-file-upload-tutorial-example/
 Angular 12/11 Date Range Picker Tutorial Example：https://www.tutsmake.com/angular-11-date-range-picker-tutorial-example/
+angular4如何使用Bootstrap的datetimepicker组件：https://blog.csdn.net/qq_34908167/article/details/79913199
 Angular 12 File Upload with Progress Bar using REST Apis Example：https://www.tutsmake.com/angular-12-file-upload-with-progress-bar-example/
 貌似有了auth_permission表后就不需要auth_role_permission表了？
 ng build --prod的报错解决掉【有报错吗？】
