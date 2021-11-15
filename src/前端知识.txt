@@ -23,6 +23,10 @@ AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
 Mithril.js[24]：一个非常易用的轻量级前端框架，只做了 DOM 的包装层，没有加任何其他接口，体积小，加载快，并且支持组件和前端路由。开发小型页面，明显优于 React：Mithril.js: https://mithril.js.org/index.html
 大公司里怎样开发和部署前端代码？https://www.zhihu.com/question/20790576/answer/523775863
 
+2019最新Web前端经典面试试题及答案：https://blog.csdn.net/xm1037782843/article/details/80708533
+前端经典面试题——Angular、主流框架和服务器相关问题：https://wenku.baidu.com/view/016eafbe33126edb6f1aff00bed5b9f3f90f72a3.html
+简单介绍Angular单元测试之事件触发的实现：https://www.linuxprobe.com/angular-linux-input.html
+
 如何创建可扩展和可维护的前端架构：https://mp.weixin.qq.com/s/02LgQVe6q4o-Zd00xsXGgw
 
 Angular WeUI【可以不用，但是可以学】：https://gitee.com/hellokitty21125/angular-weui
@@ -73,8 +77,8 @@ The Material Design color system can help you create a color theme that reflects
 HTML哪些是块级元素，哪些是行内元素：https://www.cnblogs.com/yxm440/p/7667539.html
 
 自适应宽度的2个文章：
-https://bbs.csdn.net/topics/390698953?list=31152598
-https://zhidao.baidu.com/question/1818954979543524068.html
+  https://bbs.csdn.net/topics/390698953?list=31152598
+  https://zhidao.baidu.com/question/1818954979543524068.html
 
 手写系列文章：https://zhuanlan.zhihu.com/p/257046071
 
@@ -138,6 +142,7 @@ Lern how to split your Angular App into Modules：https://malcoded.com/posts/ang
   https://github.com/jashkenas/underscore
 
 全局node_modules路径：C:\Users\gao\AppData\Roaming\npm\node_modules
+那些你应该说再见的 npm 祖传老库：https://mp.weixin.qq.com/s/kq4IAGCcUcGSbfoXKSun3w
 
 Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/117616/open-source-svg-icon-library-for-bootstrap
 潮流前端周刊（第 3 期）：https://zhuanlan.zhihu.com/p/256068764
@@ -182,7 +187,7 @@ bootstrap.bundle.js是干嘛的？
 using Bootstrap as a module：https://getbootstrap.com/docs/5.1/getting-started/javascript/#using-bootstrap-as-a-module
 CSS3 box-sizing 属性：https://www.runoob.com/cssref/css3-pr-box-sizing.html
 
-===========================================================================
+==================================================================================================================================================
 
 Comparing material2 vs. ng-bootstrap vs. ngx-bootstrap vs. primeng：https://npmcompare.com/compare/material2,ng-bootstrap,ngx-bootstrap,primeng
 
@@ -379,6 +384,7 @@ Javascript中数组方法reduce的妙用之处：https://www.jianshu.com/p/b415e
 
 JavaScript中的Event Loop（事件循环）机制：https://zhuanlan.zhihu.com/p/145383822
 头条前端面试：https://zhuanlan.zhihu.com/p/148939073
+大前端开发中的路由管理之二：web篇：https://mp.weixin.qq.com/s/PdPyWvA6IsdM3rDOe6nGIg
 
 网页布局都有哪种？一般都用什么布局？https://zhuanlan.zhihu.com/p/202748637
 或许这就是下一代组件库：https://zhuanlan.zhihu.com/p/252824872
@@ -542,6 +548,8 @@ Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个�
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
 
 angular 扫描没有用的component【自己写工具】
+
+设计系统（Design System），设计和开发之间的“DevOps”：https://www.cnblogs.com/dotey/p/design-system.html
 
 【封装js控件综合练习】
 js实现日历：

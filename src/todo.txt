@@ -8,6 +8,9 @@
 
 【坚持】就算再难至少坚持到2022年底，看看效果
 
+最全的Angular组件库列表：https://ngnice.com/docs/resources
+【译】Angular v13 正式发布：https://zhuanlan.zhihu.com/p/429724953
+
 前端还是要多看，感觉做的很困难，内容也很多。先把NG ALAIN、DevUI、ng-zorro等看一遍，在我现在对前端选项的心得的基础上看能否用上【把做项目和学习分开】：http://ng.ant.design/docs/recommendation/zh
 
 AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5【确认可行性，并且选取3-5家厂商，后续进行合作】：https://www.npmjs.com/package/@adminkit/core
@@ -133,6 +136,12 @@ npm 模块安装机制简介：https://www.ruanyifeng.com/blog/2016/01/npm-insta
 npm install 安装过程分析：https://www.cnblogs.com/everlose/p/12505245.html
 npm包发布流程和如何看插件源码：https://blog.csdn.net/u010377383/article/details/86858517
 
+angular多文件上传：
+	https://www.joshmorony.com/multi-file-upload-with-ionic-angular-client-side/
+	https://andrewhalil.com/2021/06/29/how-to-implement-multiple-file-uploads-in-angular-applications/
+	https://www.devglan.com/angular/angular-multiple-file-upload
+	https://www.bezkoder.com/angular-11-multiple-file-upload/
+	https://www.bezkoder.com/angular-multiple-files-upload/
 
 material再搞一轮【单独开一个项目搞】：https://juejin.cn/post/6844903894561062926
 
