@@ -92,6 +92,8 @@ github - material-design-for-bootstrap：https://github.com/mdbootstrap/material
 github - mdb-ui-kit：https://github.com/mdbootstrap/mdb-ui-kit
 加一个footer
 
+我的前端登录和密码也加icon
+
 利用Angular7开发一个Radio组件的全过程：https://www.jb51.net/article/165157.htm
 使用Angular7开发一个Radio组件：https://segmentfault.com/a/1190000019644926
 
@@ -112,6 +114,8 @@ github - mdb-ui-kit：https://github.com/mdbootstrap/mdb-ui-kit
 【方法】
   1.注重每个细节问题：单点突破；
   2.整体切换：解耦
+
+DevUI开源的故事：https://zhuanlan.zhihu.com/p/431860301
 
 我的路走偏了，现在确定的路线：以ngx-bootstrap控件为主体，引入bootstrap和其他ngx控件。先把这一条路打通，做一个可用的产品，不要在乎cdk、ng-alain之类的概念。并且确认如下问题：
   1.ngx-admin-lte里面有些什么东西，能否适配最新的bootstrap5；
@@ -333,6 +337,8 @@ ng-bootstrap 组件集中 tabset 组件的实现分析：https://www.cnblogs.com
 angular4——带搜索的下拉框：https://blog.csdn.net/wgp15732622312/article/details/77150051
 
 通过做前端，顺手打通微信小程序能力
+
+浅谈Angular文字折叠展开组件的原理分析：https://www.jb51.net/article/128978.htm
 
 NG-ZORRO (Ant Design Of Angular) 9.0.0 正式版发布：https://zhuanlan.zhihu.com/p/131307814
 

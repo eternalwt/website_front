@@ -23,6 +23,8 @@ AST in Modern JavaScript：https://zhuanlan.zhihu.com/p/32189701
 Mithril.js[24]：一个非常易用的轻量级前端框架，只做了 DOM 的包装层，没有加任何其他接口，体积小，加载快，并且支持组件和前端路由。开发小型页面，明显优于 React：Mithril.js: https://mithril.js.org/index.html
 大公司里怎样开发和部署前端代码？https://www.zhihu.com/question/20790576/answer/523775863
 
+【翻译】Airbnb JavaScript Style Guide：https://blog.csdn.net/sinat_22014829/article/details/75386160
+
 2019最新Web前端经典面试试题及答案：https://blog.csdn.net/xm1037782843/article/details/80708533
 前端经典面试题——Angular、主流框架和服务器相关问题：https://wenku.baidu.com/view/016eafbe33126edb6f1aff00bed5b9f3f90f72a3.html
 简单介绍Angular单元测试之事件触发的实现：https://www.linuxprobe.com/angular-linux-input.html
@@ -115,6 +117,16 @@ ES2021：
 【我对promise理解到这句话的程度了】有了 Promise 对象，就可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。
 此外，Promise 对象提供统一的接口，使得控制异步操作更加容易：https://www.runoob.com/w3cnote/javascript-promise-object.html
 
+rxjs的场景【lodash】：
+  https://www.zhihu.com/question/301907588/answer/531135889
+  https://zhuanlan.zhihu.com/p/23305264
+  https://zhuanlan.zhihu.com/p/55739909
+  https://www.zhihu.com/question/303073602/answer/543082088
+  https://www.zhihu.com/question/324275662/answer/682533147
+  https://zhuanlan.zhihu.com/p/23464709
+200行代码理解 RxJS 的核心概念：https://zhuanlan.zhihu.com/p/146795979
+
+
 【第一个重要问题：如何下载、修改npm组件的源码？】
 如何写一个自己的npm包：https://www.jianshu.com/p/fafc88e74764
 
@@ -145,6 +157,16 @@ Lern how to split your Angular App into Modules：https://malcoded.com/posts/ang
 那些你应该说再见的 npm 祖传老库：https://mp.weixin.qq.com/s/kq4IAGCcUcGSbfoXKSun3w
 
 Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/117616/open-source-svg-icon-library-for-bootstrap
+公司项目中的前端icon iconfont是通过iconfong.json文件维护了icon列表：
+	https://blog.csdn.net/joyvonlee/article/details/103668579
+	https://blog.csdn.net/enthan809882/article/details/102883684
+
+SVG Tutorial：
+	https://www.tutorialspoint.com/svg/index.htm
+	http://tutorials.jenkov.com/svg/index.html
+	https://flaviocopes.com/svg/
+	https://cssauthor.com/svg-tutorials/
+
 潮流前端周刊（第 3 期）：https://zhuanlan.zhihu.com/p/256068764
 
 常用 npm 包：
@@ -156,6 +178,7 @@ Bootstrap 开源 SVG 图标库 Bootstrap Icons：https://www.oschina.net/news/11
 2018年你需要知道的13个JavaScript工具库：https://zhuanlan.zhihu.com/p/38795426
 
 前端项目的搭建，以及遇到问题的处理，是否需要再总结一下？这次升级angular12又遇到问题了
+微前端
 
 Bootstrap 4: 对比普通网格和 Flexbox 网格：https://www.oschina.net/translate/boostrap-4-regular-vs-flex-grid
 Flex布局和Bootstrap布局两者的比较：https://www.cnblogs.com/sexintercourse/p/6732109.html
@@ -305,6 +328,9 @@ ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App 
 
 关注前端基础设施
 
+从 Angular 移植到 React，代码量减少了 20%：https://mp.weixin.qq.com/s/x6_wAfZqlsUpqIRtpibnsw
+前端表格列的显示/隐藏【组件要有这功能】
+
 前端监控和统计概念：https://zhuanlan.zhihu.com/p/134132381
 Angular2的依赖注入是怎么实现的？https://www2.zhihu.com/question/265773703/answer/298969485
 
@@ -420,24 +446,26 @@ https://segmentfault.com/a/1190000010252809
 
 ramda一款实用的 JavaScript 函数式编程库：https://ramda.cn/
 
-rxjs及后端响应式编程要突破
+前端开发实战：RxJS与内存泄漏：http://www.zyiz.net/tech/detail-140201.html
+前端常见内存泄漏及解决方案：https://blog.csdn.net/weixin_46837985/article/details/114109460
+谈一谈我在前端开发的时候遇到的过的内存泄漏：https://www.jianshu.com/p/7efe8d4a06cb
+万恶的前端内存泄漏及万善的解决方案：https://segmentfault.com/a/1190000038816646
 教你如何用Angular更好地管理RxJS订阅：https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_10197676254062920223%22%7D&n_type=1&p_from=3
+
 跟踪代码来看http rxjs的实现
-前端开发实战：RxJS与内存泄漏：https://zhuanlan.zhihu.com/p/149283084
 【本周学习任务】rxjs的响应式搞清楚（里面讲到了rxjs的优势，例如 isolate the application state）：
 https://codingcompiler.com/rxjs-tutorial/
-Observable的优势2是可以提供一种统一的编程方式（我自己总结的）：https://scotch.io/tutorials/angular-2-http-requests-with-observables
-https://www.devglan.com/javascript/rxjs-tutorial
-https://www.tutorialspoint.com/rxjs/index.htm
+Angular 2 HTTP Requests with Observables：
+  https://scotch.io/tutorials/angular-2-http-requests-with-observables
+  https://www.devglan.com/javascript/rxjs-tutorial
+  https://www.tutorialspoint.com/rxjs/index.htm
 subscribe有2种，公司代码里面用的第二种：
     subscribe(observer?: PartialObserver<T>): Subscription;
     subscribe(next?: (value: T) => void, error?: (error: any) => void, complete?: () => void): Subscription;
-关键：Observable啥时候发射值？
 RxJS 和响应式编程简介：https://zhuanlan.zhihu.com/p/144950471
 Observable 的简单实现：
-https://zhuanlan.zhihu.com/p/34927042
-https://zhuanlan.zhihu.com/p/110007033
-pipe()作为一种链接运算符的方法
+  https://zhuanlan.zhihu.com/p/34927042
+  https://zhuanlan.zhihu.com/p/110007033
 RxJS的API列表：https://zhuanlan.zhihu.com/p/25383159
 rxjs取消订阅的几个文章：
 https://limeii.github.io/2019/08/rxjs-unsubscribe/
@@ -456,6 +484,7 @@ https://www.jianshu.com/p/da9934d6143c
 input$.subscribe((event: any) => {
 });
 从语法角度来讲和 subscribe({ next, error, complete }) 是一样的
+
 【看一下这些名字很诱人的章节】：
 Breakout Game：https://www.learnrxjs.io/learn-rxjs/recipes/breakout-game
 Car Racing Game：https://www.learnrxjs.io/learn-rxjs/recipes/car-racing-game
@@ -483,8 +512,8 @@ autoLogin(): Promise<any> {
 响应式编程入门指南 - 通俗易懂 RxJS：https://zhuanlan.zhihu.com/p/102446217
 通俗的方式理解RxJS：https://segmentfault.com/a/1190000008464065
 Hot vs Cold Observables：
-https://segmentfault.com/a/1190000011052037
-https://angular-2-training-book.rangle.io/observables/cold_vs_hot_observables
+  https://segmentfault.com/a/1190000011052037
+  https://angular-2-training-book.rangle.io/observables/cold_vs_hot_observables
 Rxjs的zip和switchMap方法：https://blog.csdn.net/weixin_39460408/article/details/80995242
 【Rxjs】实例讲解zip和combineLatest操作符的区别：https://blog.csdn.net/u010176097/article/details/102579886
 [译] RxJS: 理解 publish 和 share 操作符：https://zhuanlan.zhihu.com/p/33225623
@@ -515,9 +544,44 @@ http从observable到subscription都看清楚
 rxjs源码分析
 Observable详解：https://segmentfault.com/a/1190000008809168
 在Angular2中使用Observable对象（RxJS）：
-https://blog.csdn.net/yuemei_1991/article/details/76408868
-https://blog.csdn.net/qq_30970807/article/details/53771521
-https://blog.csdn.net/xnyssxy/article/details/79868928
+  https://blog.csdn.net/yuemei_1991/article/details/76408868
+  https://blog.csdn.net/qq_30970807/article/details/53771521
+  https://blog.csdn.net/xnyssxy/article/details/79868928
+
+
+响应式编程：
+1.看rxjs的cold、hot：
+	https://cloud.tencent.com/developer/article/1360031
+2.把cold、hot的实现看懂，有助于理解流式计算
+import { HttpClient } from '@angular/common/http'; // todo 怎么封装的rxjs？怎么创建的Observable？import {from, of, fromEvent, interval} from 'rxjs';
+激动人心的 Angular HttpClient的源码解析：
+	https://www.jb51.net/article/118292.htm
+	https://blog.csdn.net/weixin_34270865/article/details/88063151
+A subject is equivalent to an EventEmitter，再看angular里面的EventEmitter
+Subject、Schedulers再看看：https://www.javatpoint.com/rxjs
+重新理解 rxjs 的事件流：https://www.tangshuang.net/7676.html
+Rxjs，fromEvent处理多个事件：https://www.it1352.com/1895926.html
+RxJS实战六 处理屏幕触摸事件：https://zhuanlan.zhihu.com/p/161205030
+在Rx JS中触发自定义事件：https://www.orcode.com/question/741002_k66a37.html
+能否直接用rxjs代替stream操作？（from的例子）：https://www.tutorialspoint.com/rxjs/rxjs_latest_updates.htm
+
+【把这些看完后，把前端保存的rxjs相关的逐步干掉】
+看看如何根据fromEvent这个operator创建Observable，就能有一个更加深入的理解：
+	https://www.javatpoint.com/rxjs-fromevent-creation-operator
+	https://www.geeksforgeeks.org/how-to-create-observable-data-stream-using-fromevent-method-in-angularjs/
+看看Subject，亦能深化对rxjs使用场景的理解。
+Subject可不可以理解为hot Observable？Subject底层实现？
+BehaviorSubject、ReplaySubject、AsyncSubject及各自场景
+debounce、debounceTime operator跟背压有关吗？
+throttle opeator可以限流？
+publishLast，以及operator是rxjs里面很大的一块内容。retry是怎么实现的？感觉rxjs就是一大坨封装
+支持回压的前提是 pipeline 必须是推模型。Observable(RxJava 1), Flowable, Flux - 支持，Observable(RxJava 2) - 不支持。看看rxjs支不支持
+执行subscribe方法后，返回一个Subscription。看看热Observable里面使用unsubscribe方法的场景。
+rxjs封装了ajax方法，返回Observable，这样使用起来就很简单了
+rxjs与webSocket有没有关系？
+RxJS同步、异步：angular的http里面都用到asyncScheduler把？再看schedulers的更多用法
+我的理解reactive programming和流式计算在很多思路上是一致的，搞懂rxjs源码，就能在很大程度上搞懂流式计算。
+
 
 继续看angular最佳实践、组件编写
 看弹框的样式，看右侧的样式
@@ -548,6 +612,8 @@ Angular 下载zip文件并重命名文件（把file彻底搞懂）【抽一个�
 如何优雅的使用 Angular 表单验证：https://zhuanlan.zhihu.com/p/51467181
 
 angular 扫描没有用的component【自己写工具】
+5 Ways to Instantly Test JavaScript in Browsers：https://www.browserstack.com/guide/how-to-test-javascript-in-browsers
+
 
 设计系统（Design System），设计和开发之间的“DevOps”：https://www.cnblogs.com/dotey/p/design-system.html
 
